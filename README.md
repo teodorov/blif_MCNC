@@ -1,2 +1,3 @@
 # blif_MCNC
-source http://cadlab.cs.ucla.edu/~kirill/
+sources: 
+ - http://cadlab.cs.ucla.edu/~kirill/
