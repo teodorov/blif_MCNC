@@ -1,0 +1,2895 @@
+# Benchmark "TOP" written by ABC on Thu May 21 18:20:28 2015
+.model TOP
+.inputs i_0_ i_1_ i_2_ i_3_ i_4_ i_5_ i_6_ i_7_ i_8_ i_9_
+.outputs o_0_ o_1_ o_2_ o_3_ o_4_ o_5_ o_6_ o_7_ o_8_ o_9_
+.names n23 n179 n245 o_0_
+111 0
+.names n24 n118 n23
+11 1
+.names n25 n85 n107 n24
+111 1
+.names n26 n60 n75 n25
+111 1
+.names n27 n39 n49 n26
+111 1
+.names n37 n34 n28 n27
+-00 1
+0-0 1
+.names n29 n31 n28
+11 1
+.names n30 i_9_ n29
+10 1
+.names i_0_ i_1_ i_2_ n30
+101 1
+.names n32 n33 n31
+11 1
+.names i_6_ i_7_ i_8_ n32
+011 1
+.names i_3_ i_4_ i_5_ n33
+011 1
+.names n35 n36 n34
+11 1
+.names i_3_ i_4_ i_5_ n35
+010 1
+.names i_6_ i_7_ i_8_ n36
+010 1
+.names n38 i_9_ n37
+10 1
+.names i_0_ i_1_ i_2_ n38
+110 1
+.names n46 n44 n40 n39
+-00 1
+0-0 1
+.names n41 n33 n43 n40
+111 1
+.names n42 i_9_ n41
+11 1
+.names i_6_ i_7_ i_8_ n42
+000 1
+.names i_0_ i_1_ i_2_ n43
+001 1
+.names n45 i_9_ n44
+10 1
+.names i_0_ i_1_ i_2_ n45
+100 1
+.names n47 n48 n46
+11 1
+.names i_3_ i_4_ i_5_ n47
+100 1
+.names i_6_ i_7_ i_8_ n48
+101 1
+.names n55 n50 n54 n49
+-10 1
+0-0 1
+.names n51 n52 n50
+00 1
+.names n30 n35 n51
+11 1
+.names n45 n53 n52
+11 1
+.names i_3_ i_4_ i_5_ n53
+101 1
+.names n59 n55 n57 n54
+-11 1
+1-1 1
+.names n56 i_9_ n55
+11 1
+.names i_6_ i_7_ i_8_ n56
+110 1
+.names n38 n58 n57
+11 1
+.names i_3_ i_4_ i_5_ n58
+111 1
+.names n36 i_9_ n59
+11 1
+.names n61 n66 n71 n60
+100 1
+.names n64 n41 n62 n61
+-00 1
+0-0 1
+.names n29 n33 n63 n62
+111 1
+.names i_6_ i_7_ i_8_ n63
+001 1
+.names n35 n65 n64
+11 1
+.names i_0_ i_1_ i_2_ n65
+011 1
+.names n67 n68 n66
+11 1
+.names n43 i_9_ n67
+10 1
+.names n69 n70 n68
+11 1
+.names i_6_ i_7_ i_8_ n69
+100 1
+.names i_3_ i_4_ i_5_ n70
+001 1
+.names n29 n72 n71
+11 1
+.names n73 n74 n72
+11 1
+.names i_3_ i_4_ i_5_ n73
+110 1
+.names i_6_ i_7_ i_8_ n74
+111 1
+.names n76 n80 n83 n75
+100 1
+.names n79 n55 n77 n76
+-00 1
+0-0 1
+.names n67 n78 n77
+11 1
+.names n33 n69 n78
+11 1
+.names n33 n65 n79
+11 1
+.names n81 n82 n80
+11 1
+.names n69 i_9_ n81
+11 1
+.names n45 n47 n82
+11 1
+.names n67 n84 n83
+11 1
+.names n69 n73 n84
+11 1
+.names n86 n95 n99 n85
+111 1
+.names n87 n91 n93 n86
+100 1
+.names n90 n89 n88 n87
+-00 1
+0-0 1
+.names n29 n33 n42 n88
+111 1
+.names n32 i_9_ n89
+11 1
+.names n30 n70 n90
+11 1
+.names n29 n92 n91
+11 1
+.names n36 n53 n92
+11 1
+.names n37 n94 n93
+11 1
+.names n70 n63 n94
+11 1
+.names n98 n44 n96 n95
+-00 1
+0-0 1
+.names n97 n33 n42 n96
+111 1
+.names n65 i_9_ n97
+10 1
+.names n33 n48 n98
+11 1
+.names n106 n104 n100 n99
+-00 1
+0-0 1
+.names n101 n102 n100
+11 1
+.names n48 i_9_ n101
+11 1
+.names n33 n103 n102
+11 1
+.names i_0_ i_1_ i_2_ n103
+010 1
+.names n105 i_9_ n104
+10 1
+.names i_0_ i_1_ i_2_ n105
+000 1
+.names n32 n35 n106
+11 1
+.names n108 n110 n114 n107
+111 1
+.names n94 n44 n109 n108
+-00 1
+0-0 1
+.names n59 n47 n103 n109
+111 1
+.names n113 n44 n111 n110
+-00 1
+0-0 1
+.names n101 n112 n111
+11 1
+.names n38 n73 n112
+11 1
+.names n53 n69 n113
+11 1
+.names n117 n89 n115 n114
+-00 1
+0-0 1
+.names n116 n33 n105 n115
+111 1
+.names n63 i_9_ n116
+11 1
+.names n70 n65 n117
+11 1
+.names n119 n152 n165 n118
+111 1
+.names n120 n131 n138 n119
+111 1
+.names n121 n127 n129 n120
+100 1
+.names n126 n124 n122 n121
+-00 1
+0-0 1
+.names n104 n123 n122
+11 1
+.names n35 n48 n123
+11 1
+.names n125 i_9_ n124
+10 1
+.names i_0_ i_1_ i_2_ n125
+111 1
+.names n47 n56 n126
+11 1
+.names n67 n128 n127
+11 1
+.names n32 n73 n128
+11 1
+.names n124 n130 n129
+11 1
+.names n42 n58 n130
+11 1
+.names n132 n136 n131
+11 1
+.names n135 n59 n133 n132
+-00 1
+0-0 1
+.names n55 n134 n133
+11 1
+.names n43 n73 n134
+11 1
+.names n35 n103 n135
+11 1
+.names n102 n137 n41 n136
+--0 1
+00- 1
+.names n58 n103 n137
+11 1
+.names n139 n147 n150 n138
+110 1
+.names n140 n143 n145 n139
+000 1
+.names n141 n142 n140
+11 1
+.names n103 i_9_ n141
+10 1
+.names n36 n47 n142
+11 1
+.names n67 n144 n143
+11 1
+.names n33 n36 n144
+11 1
+.names n81 n146 n145
+11 1
+.names n58 n65 n146
+11 1
+.names n149 n81 n148 n147
+-00 1
+0-0 1
+.names n104 n126 n148
+11 1
+.names n47 n43 n149
+11 1
+.names n116 n30 n151 n150
+111 1
+.names i_3_ i_4_ i_5_ n151
+000 1
+.names n153 n160 n162 n152
+111 1
+.names n154 n156 n157 n153
+100 1
+.names n144 n29 n155 n154
+-00 1
+0-0 1
+.names n124 n56 n53 n155
+111 1
+.names n44 n32 n47 n156
+111 1
+.names n158 n159 n157
+11 1
+.names n45 n70 n158
+11 1
+.names n74 i_9_ n159
+11 1
+.names n44 n34 n161 n160
+-00 1
+0-0 1
+.names n101 n137 n161
+11 1
+.names n106 n44 n163 n162
+-00 1
+0-0 1
+.names n81 n164 n163
+11 1
+.names n33 n45 n164
+11 1
+.names n166 n173 n176 n165
+111 1
+.names n167 n171 n172 n166
+100 1
+.names n170 n44 n168 n167
+-00 1
+0-0 1
+.names n97 n169 n168
+11 1
+.names n48 n58 n169
+11 1
+.names n36 n151 n170
+11 1
+.names n79 n101 n171
+11 1
+.names n97 n47 n63 n172
+111 1
+.names n102 n81 n174 n173
+-00 1
+0-0 1
+.names n89 n175 n174
+11 1
+.names n73 n103 n175
+11 1
+.names n177 n178 n97 n176
+--0 1
+00- 1
+.names n47 n74 n177
+11 1
+.names n35 n69 n178
+11 1
+.names n180 n214 n179
+11 1
+.names n181 n194 n206 n180
+111 1
+.names n182 n189 n191 n181
+111 1
+.names n183 n187 n188 n182
+100 1
+.names n186 n41 n184 n183
+-00 1
+0-0 1
+.names n124 n185 n184
+11 1
+.names n56 n73 n185
+11 1
+.names n58 n125 n186
+11 1
+.names n89 n30 n73 n187
+111 1
+.names n37 n56 n151 n188
+111 1
+.names n175 n55 n190 n189
+-00 1
+0-0 1
+.names n141 n56 n53 n190
+111 1
+.names n193 n55 n192 n191
+-00 1
+0-0 1
+.names n89 n33 n38 n192
+111 1
+.names n47 n105 n193
+11 1
+.names n195 n199 n204 n194
+111 1
+.names n198 n44 n196 n195
+-00 1
+0-0 1
+.names n116 n197 n196
+11 1
+.names n43 n151 n197
+11 1
+.names n33 n56 n198
+11 1
+.names n200 n202 n203 n199
+000 1
+.names n201 n158 n41 n200
+-11 1
+1-1 1
+.names n65 n151 n201
+11 1
+.names n101 n164 n202
+11 1
+.names n29 n198 n203
+11 1
+.names n116 n82 n205 n204
+-00 1
+0-- 1
+.names n35 n125 n205
+11 1
+.names n207 n211 n212 n206
+100 1
+.names n210 n67 n208 n207
+-00 1
+0-0 1
+.names n81 n209 n208
+11 1
+.names n53 n125 n209
+11 1
+.names n32 n58 n210
+11 1
+.names n55 n33 n38 n211
+111 1
+.names n101 n213 n212
+11 1
+.names n58 n105 n213
+11 1
+.names n215 n231 n240 n214
+111 1
+.names n216 n223 n227 n215
+111 1
+.names n217 n220 n221 n216
+100 1
+.names n90 n81 n218 n217
+-00 1
+0-0 1
+.names n44 n219 n218
+11 1
+.names n58 n69 n219
+11 1
+.names n41 n53 n65 n220
+111 1
+.names n29 n222 n221
+11 1
+.names n53 n74 n222
+11 1
+.names n226 n97 n224 n223
+-00 1
+0-0 1
+.names n104 n225 n224
+11 1
+.names n56 n58 n225
+11 1
+.names n58 n74 n226
+11 1
+.names n228 n229 n227
+00 1
+.names n141 n56 n151 n228
+111 1
+.names n67 n230 n229
+11 1
+.names n48 n53 n230
+11 1
+.names n232 n235 n237 n231
+111 1
+.names n134 n101 n233 n232
+-00 1
+0-0 1
+.names n81 n234 n233
+11 1
+.names n35 n43 n234
+11 1
+.names n97 n78 n236 n235
+-00 1
+0-0 1
+.names n59 n193 n236
+11 1
+.names n90 n101 n238 n237
+-00 1
+0-0 1
+.names n29 n239 n238
+11 1
+.names n58 n63 n239
+11 1
+.names n178 n124 n241 n240
+-01 1
+0-1 1
+.names n244 n41 n242 n241
+-00 1
+0-0 1
+.names n37 n243 n242
+11 1
+.names n69 n151 n243
+11 1
+.names n30 n33 n244
+11 1
+.names n246 n306 n245
+11 1
+.names n247 n268 n279 n246
+111 1
+.names n248 n254 n264 n247
+111 1
+.names n249 n251 n253 n248
+100 1
+.names n234 n89 n250 n249
+-00 1
+0-0 1
+.names n44 n243 n250
+11 1
+.names n101 n252 n251
+11 1
+.names n30 n58 n252
+11 1
+.names n97 n36 n70 n253
+111 1
+.names n255 n259 n254
+11 1
+.names n256 n257 n258 n255
+000 1
+.names n37 n239 n256
+11 1
+.names n104 n36 n73 n257
+111 1
+.names n41 n47 n65 n258
+111 1
+.names n260 n261 n263 n259
+000 1
+.names n104 n73 n63 n260
+111 1
+.names n67 n262 n261
+11 1
+.names n47 n69 n262
+11 1
+.names n116 n201 n263
+11 1
+.names n265 n266 n267 n264
+000 1
+.names n81 n30 n151 n265
+111 1
+.names n67 n123 n266
+11 1
+.names n141 n210 n267
+11 1
+.names n269 n275 n277 n268
+111 1
+.names n270 n273 n274 n269
+100 1
+.names n272 n159 n271 n270
+-00 1
+0-0 1
+.names n55 n45 n58 n271
+111 1
+.names n38 n47 n272
+11 1
+.names n41 n103 n151 n273
+111 1
+.names n52 n89 n274
+11 1
+.names n142 n124 n276 n275
+-00 1
+0-0 1
+.names n44 n230 n276
+11 1
+.names n137 n55 n278 n277
+-00 1
+0-0 1
+.names n124 n32 n70 n278
+111 1
+.names n280 n292 n299 n279
+111 1
+.names n281 n286 n289 n280
+111 1
+.names n282 n284 n285 n281
+100 1
+.names n186 n283 n89 n282
+--0 1
+00- 1
+.names n33 n125 n283
+11 1
+.names n29 n47 n42 n284
+111 1
+.names n55 n112 n285
+11 1
+.names n144 n141 n287 n286
+-00 1
+0-0 1
+.names n89 n288 n287
+11 1
+.names n35 n38 n288
+11 1
+.names n291 n59 n290 n289
+-00 1
+0-0 1
+.names n159 n201 n290
+11 1
+.names n43 n58 n291
+11 1
+.names n293 n295 n297 n292
+100 1
+.names n159 n134 n294 n293
+-00 1
+0-0 1
+.names n124 n225 n294
+11 1
+.names n89 n296 n295
+11 1
+.names n35 n105 n296
+11 1
+.names n116 n298 n297
+11 1
+.names n73 n105 n298
+11 1
+.names n300 n303 n305 n299
+100 1
+.names n302 n97 n301 n300
+-00 1
+0-0 1
+.names n81 n45 n73 n301
+111 1
+.names n35 n63 n302
+11 1
+.names n159 n304 n303
+11 1
+.names n70 n103 n304
+11 1
+.names n159 n47 n65 n305
+111 1
+.names n307 n322 n342 n306
+111 1
+.names n308 n316 n318 n307
+111 1
+.names n309 n312 n314 n308
+111 1
+.names n311 n124 n310 n309
+-00 1
+0-0 1
+.names n29 n33 n74 n310
+111 1
+.names n63 n151 n311
+11 1
+.names n170 n141 n313 n312
+-00 1
+0-0 1
+.names n89 n103 n151 n313
+111 1
+.names n252 n59 n315 n314
+-00 1
+0-0 1
+.names n67 n302 n315
+11 1
+.names n198 n124 n317 n316
+-00 1
+0-0 1
+.names n104 n42 n73 n317
+111 1
+.names n321 n104 n319 n318
+-00 1
+0-0 1
+.names n81 n320 n319
+11 1
+.names n43 n70 n320
+11 1
+.names n70 n74 n321
+11 1
+.names n323 n329 n340 n322
+111 1
+.names n324 n327 n328 n323
+100 1
+.names n198 n141 n325 n324
+-00 1
+0-0 1
+.names n37 n326 n325
+11 1
+.names n35 n56 n326
+11 1
+.names n59 n73 n125 n327
+111 1
+.names n37 n56 n70 n328
+111 1
+.names n330 n334 n337 n329
+111 1
+.names n331 n332 n333 n330
+000 1
+.names n89 n134 n331
+11 1
+.names n51 n89 n332
+11 1
+.names n67 n92 n333
+11 1
+.names n116 n52 n335 n334
+-00 1
+0-0 1
+.names n37 n336 n335
+11 1
+.names n48 n151 n336
+11 1
+.names n339 n67 n338 n337
+-00 1
+0-0 1
+.names n81 n193 n338
+11 1
+.names n32 n53 n339
+11 1
+.names n158 n341 n89 n340
+--0 1
+00- 1
+.names n53 n103 n341
+11 1
+.names n343 n350 n352 n342
+111 1
+.names n344 n346 n348 n343
+111 1
+.names n222 n37 n345 n344
+-00 1
+0-0 1
+.names n29 n73 n63 n345
+111 1
+.names n320 n55 n347 n346
+-00 1
+0-0 1
+.names n51 n159 n347
+11 1
+.names n90 n116 n349 n348
+-00 1
+0-0 1
+.names n37 n42 n73 n349
+111 1
+.names n226 n37 n351 n350
+-00 1
+0-0 1
+.names n44 n42 n73 n351
+111 1
+.names n326 n29 n353 n352
+-00 1
+0-0 1
+.names n67 n56 n70 n353
+111 1
+.names n355 n480 o_1_
+11 0
+.names n356 n393 n425 n355
+111 1
+.names n357 n369 n380 n356
+111 1
+.names n358 n364 n367 n357
+111 1
+.names n359 n362 n363 n358
+100 1
+.names n283 n41 n360 n359
+-00 1
+0-0 1
+.names n124 n361 n360
+11 1
+.names n42 n151 n361
+11 1
+.names n101 n30 n151 n362
+111 1
+.names n97 n219 n363
+11 1
+.names n272 n116 n365 n364
+-00 1
+0-0 1
+.names n124 n366 n365
+11 1
+.names n36 n58 n366
+11 1
+.names n230 n37 n368 n367
+-00 1
+0-0 1
+.names n29 n210 n368
+11 1
+.names n370 n375 n378 n369
+111 1
+.names n371 n373 n374 n370
+100 1
+.names n135 n116 n372 n371
+-00 1
+0-0 1
+.names n34 n97 n372
+11 1
+.names n41 n38 n70 n373
+111 1
+.names n141 n321 n374
+11 1
+.names n102 n89 n376 n375
+-00 1
+0-0 1
+.names n141 n377 n376
+11 1
+.names n42 n53 n377
+11 1
+.names n341 n41 n379 n378
+-00 1
+0-0 1
+.names n81 n304 n379
+11 1
+.names n381 n387 n391 n380
+111 1
+.names n382 n384 n385 n381
+010 1
+.names n383 n159 n382
+01 1
+.names n105 n70 n197 n383
+-00 1
+0-0 1
+.names n283 n89 n290 n384
+-00 1
+0-0 1
+.names n386 n146 n59 n385
+-11 1
+1-1 1
+.names n73 n65 n386
+11 1
+.names n388 n221 n390 n387
+100 1
+.names n230 n29 n389 n388
+-00 1
+0-0 1
+.names n159 n30 n73 n389
+111 1
+.names n44 n33 n63 n390
+111 1
+.names n392 n208 n310 n391
+100 1
+.names n170 n141 n218 n392
+-00 1
+0-0 1
+.names n394 n404 n415 n393
+111 1
+.names n395 n401 n139 n394
+111 1
+.names n396 n399 n400 n395
+100 1
+.names n398 n44 n397 n396
+-00 1
+0-0 1
+.names n104 n32 n151 n397
+111 1
+.names n48 n70 n398
+11 1
+.names n130 n141 n399
+11 1
+.names n101 n103 n151 n400
+111 1
+.names n226 n104 n402 n401
+-01 1
+0-1 1
+.names n320 n59 n403 n402
+-00 1
+0-0 1
+.names n37 n33 n74 n403
+111 1
+.names n405 n410 n413 n404
+111 1
+.names n406 n408 n409 n405
+100 1
+.names n272 n55 n407 n406
+-00 1
+0-0 1
+.names n124 n230 n407
+11 1
+.names n104 n185 n408
+11 1
+.names n29 n113 n409
+11 1
+.names n412 n81 n411 n410
+-00 1
+0-0 1
+.names n141 n35 n42 n411
+111 1
+.names n43 n53 n412
+11 1
+.names n239 n414 n67 n413
+--0 1
+00- 1
+.names n35 n74 n414
+11 1
+.names n416 n421 n423 n415
+111 1
+.names n417 n419 n420 n416
+100 1
+.names n243 n67 n418 n417
+-00 1
+0-0 1
+.names n59 n213 n418
+11 1
+.names n101 n209 n419
+11 1
+.names n41 n70 n105 n420
+111 1
+.names n244 n116 n422 n421
+-00 1
+0-0 1
+.names n89 n146 n422
+11 1
+.names n222 n97 n424 n423
+-00 1
+0-0 1
+.names n81 n103 n151 n424
+111 1
+.names n426 n448 n460 n425
+111 1
+.names n427 n432 n437 n426
+111 1
+.names n428 n430 n431 n427
+100 1
+.names n134 n59 n429 n428
+-00 1
+0-0 1
+.names n41 n53 n105 n429
+111 1
+.names n116 n70 n125 n430
+111 1
+.names n44 n123 n431
+11 1
+.names n433 n435 n436 n432
+100 1
+.names n252 n81 n434 n433
+-00 1
+0-0 1
+.names n41 n149 n434
+11 1
+.names n84 n97 n435
+11 1
+.names n29 n68 n436
+11 1
+.names n438 n443 n446 n437
+111 1
+.names n439 n440 n442 n438
+000 1
+.names n55 n35 n45 n439
+111 1
+.names n41 n441 n440
+11 1
+.names n47 n125 n441
+11 1
+.names n97 n210 n442
+11 1
+.names n444 n445 n443
+00 1
+.names n29 n225 n444
+11 1
+.names n41 n33 n38 n445
+111 1
+.names n414 n104 n447 n446
+-00 1
+0-0 1
+.names n44 n32 n151 n447
+111 1
+.names n449 n455 n448
+11 1
+.names n450 n452 n454 n449
+110 1
+.names n272 n89 n451 n450
+-00 1
+0-0 1
+.names n97 n326 n451
+11 1
+.names n213 n89 n453 n452
+-00 1
+0-0 1
+.names n41 n197 n453
+11 1
+.names n97 n170 n454
+11 1
+.names n456 n457 n458 n455
+111 1
+.names n90 n89 n319 n456
+-00 1
+0-0 1
+.names n113 n37 n88 n457
+-00 1
+0-0 1
+.names n336 n124 n459 n458
+-00 1
+0-0 1
+.names n116 n45 n58 n459
+111 1
+.names n461 n466 n474 n460
+111 1
+.names n462 n464 n465 n461
+110 1
+.names n113 n67 n463 n462
+-00 1
+0-0 1
+.names n41 n52 n463
+11 1
+.names n213 n244 n41 n464
+--0 1
+00- 1
+.names n104 n169 n465
+11 1
+.names n467 n469 n472 n466
+111 1
+.names n169 n67 n468 n467
+-00 1
+0-0 1
+.names n141 n56 n70 n468
+111 1
+.names n471 n141 n470 n469
+-00 1
+0-0 1
+.names n41 n296 n470
+11 1
+.names n42 n70 n471
+11 1
+.names n149 n55 n473 n472
+-00 1
+0-0 1
+.names n44 n36 n73 n473
+111 1
+.names n475 n477 n479 n474
+110 1
+.names n123 n29 n476 n475
+-00 1
+0-0 1
+.names n97 n262 n476
+11 1
+.names n336 n67 n478 n477
+-00 1
+0-0 1
+.names n104 n56 n70 n478
+111 1
+.names n116 n186 n479
+11 1
+.names n481 n497 n512 n480
+111 1
+.names n482 n488 n493 n481
+111 1
+.names n483 n485 n487 n482
+110 1
+.names n135 n89 n484 n483
+-00 1
+0-0 1
+.names n101 n386 n484
+11 1
+.names n185 n29 n486 n485
+-00 1
+0-0 1
+.names n67 n219 n486
+11 1
+.names n89 n53 n105 n487
+111 1
+.names n489 n490 n491 n488
+000 1
+.names n55 n341 n489
+11 1
+.names n37 n178 n490
+11 1
+.names n101 n492 n491
+11 1
+.names n38 n53 n492
+11 1
+.names n494 n495 n496 n493
+000 1
+.names n159 n105 n151 n494
+111 1
+.names n159 n244 n495
+11 1
+.names n116 n234 n496
+11 1
+.names n498 n503 n508 n497
+111 1
+.names n499 n501 n502 n498
+100 1
+.names n205 n55 n500 n499
+-00 1
+0-0 1
+.names n29 n56 n70 n500
+111 1
+.names n112 n116 n501
+11 1
+.names n44 n32 n70 n502
+111 1
+.names n504 n506 n507 n503
+100 1
+.names n130 n37 n505 n504
+-00 1
+0-0 1
+.names n124 n32 n151 n505
+111 1
+.names n81 n213 n506
+11 1
+.names n67 n377 n507
+11 1
+.names n509 n28 n511 n508
+100 1
+.names n134 n116 n510 n509
+-00 1
+0-0 1
+.names n44 n336 n510
+11 1
+.names n97 n47 n42 n511
+111 1
+.names n513 n519 n528 n512
+111 1
+.names n514 n517 n518 n513
+100 1
+.names n222 n67 n515 n514
+-00 1
+0-0 1
+.names n81 n516 n515
+11 1
+.names n125 n151 n516
+11 1
+.names n51 n59 n517
+11 1
+.names n44 n361 n518
+11 1
+.names n520 n524 n526 n519
+111 1
+.names n521 n522 n523 n520
+000 1
+.names n67 n471 n521
+11 1
+.names n89 n252 n522
+11 1
+.names n55 n70 n125 n523
+111 1
+.names n141 n31 n525 n524
+-00 1
+0-0 1
+.names n116 n73 n125 n525
+111 1
+.names n361 n104 n527 n526
+-00 1
+0-0 1
+.names n89 n298 n527
+11 1
+.names n244 n81 n529 n528
+-00 1
+0-0 1
+.names n124 n321 n529
+11 1
+.names n531 n572 n634 o_2_
+111 0
+.names n532 n548 n562 n531
+111 1
+.names n512 n533 n544 n532
+111 1
+.names n534 n540 n542 n533
+111 1
+.names n535 n537 n538 n534
+100 1
+.names n492 n59 n536 n535
+-00 1
+0-0 1
+.names n37 n92 n536
+11 1
+.names n37 n126 n537
+11 1
+.names n59 n539 n538
+11 1
+.names n38 n151 n539
+11 1
+.names n90 n55 n541 n540
+-00 1
+0-0 1
+.names n81 n296 n541
+11 1
+.names n164 n41 n543 n542
+-00 1
+0-0 1
+.names n59 n38 n70 n543
+111 1
+.names n545 n546 n547 n544
+000 1
+.names n52 n101 n545
+11 1
+.names n116 n516 n546
+11 1
+.names n124 n123 n547
+11 1
+.names n549 n559 n561 n548
+110 1
+.names n550 n555 n557 n549
+111 1
+.names n551 n553 n554 n550
+100 1
+.names n141 n46 n552 n551
+-00 1
+0-0 1
+.names n124 n56 n151 n552
+111 1
+.names n79 n81 n553
+11 1
+.names n59 n45 n58 n554
+111 1
+.names n272 n101 n556 n555
+-00 1
+0-0 1
+.names n41 n516 n556
+11 1
+.names n205 n89 n558 n557
+-00 1
+0-0 1
+.names n41 n79 n558
+11 1
+.names n177 n29 n560 n559
+-00 1
+0-0 1
+.names n67 n32 n47 n560
+111 1
+.names n55 n33 n43 n561
+111 1
+.names n563 n569 n571 n562
+110 1
+.names n564 n566 n568 n563
+111 1
+.names n159 n134 n565 n564
+-00 1
+0-0 1
+.names n116 n45 n73 n565
+111 1
+.names n177 n67 n567 n566
+-00 1
+0-0 1
+.names n55 n33 n105 n567
+111 1
+.names n175 n116 n101 n568
+-00 1
+0-- 1
+.names n116 n79 n570 n569
+-00 1
+0-0 1
+.names n124 n32 n47 n570
+111 1
+.names n141 n398 n571
+11 1
+.names n573 n594 n616 n572
+111 1
+.names n574 n449 n589 n573
+111 1
+.names n575 n582 n574
+11 1
+.names n576 n578 n580 n575
+111 1
+.names n186 n159 n577 n576
+-00 1
+0-0 1
+.names n37 n35 n42 n577
+111 1
+.names n175 n81 n579 n578
+-00 1
+0-0 1
+.names n116 n35 n45 n579
+111 1
+.names n252 n116 n581 n580
+-00 1
+0-0 1
+.names n89 n149 n581
+11 1
+.names n583 n584 n587 n582
+111 1
+.names n412 n116 n459 n583
+-00 1
+0-0 1
+.names n585 n586 n584
+00 1
+.names n141 n32 n70 n585
+111 1
+.names n44 n47 n42 n586
+111 1
+.names n116 n64 n588 n587
+-00 1
+0-0 1
+.names n104 n377 n588
+11 1
+.names n124 n593 n590 n589
+-11 1
+0-1 1
+.names n303 n591 n592 n590
+000 1
+.names n141 n302 n591
+11 1
+.names n55 n45 n73 n592
+111 1
+.names n42 n47 n113 n593
+-00 1
+0-0 1
+.names n595 n606 n611 n594
+111 1
+.names n596 n602 n604 n595
+111 1
+.names n597 n598 n600 n596
+100 1
+.names n141 n72 n185 n597
+-00 1
+0-- 1
+.names n97 n599 n598
+11 1
+.names n48 n73 n599
+11 1
+.names n41 n601 n600
+11 1
+.names n45 n151 n601
+11 1
+.names n102 n116 n603 n602
+-00 1
+0-0 1
+.names n55 n103 n151 n603
+111 1
+.names n142 n104 n605 n604
+-00 1
+0-0 1
+.names n101 n244 n605
+11 1
+.names n607 n609 n610 n606
+100 1
+.names n412 n55 n608 n607
+-00 1
+0-0 1
+.names n89 n492 n608
+11 1
+.names n117 n159 n609
+11 1
+.names n81 n105 n151 n610
+111 1
+.names n612 n614 n615 n611
+100 1
+.names n366 n97 n613 n612
+-00 1
+0-0 1
+.names n101 n158 n613
+11 1
+.names n34 n141 n614
+11 1
+.names n101 n53 n105 n615
+111 1
+.names n617 n622 n628 n616
+111 1
+.names n277 n618 n621 n617
+110 1
+.names n620 n124 n619 n618
+-00 1
+1-0 1
+.names n377 n339 n44 n619
+-11 1
+1-1 1
+.names n69 n74 n33 n620
+--0 1
+00- 1
+.names n414 n226 n29 n621
+-11 1
+1-1 1
+.names n623 n626 n627 n622
+100 1
+.names n84 n29 n624 n623
+-00 1
+0-0 1
+.names n104 n625 n624
+11 1
+.names n74 n151 n625
+11 1
+.names n81 n288 n626
+11 1
+.names n44 n262 n627
+11 1
+.names n629 n631 n632 n628
+100 1
+.names n441 n116 n630 n629
+-00 1
+0-0 1
+.names n41 n73 n125 n630
+111 1
+.names n159 n45 n73 n631
+111 1
+.names n55 n633 n632
+11 1
+.names n30 n47 n633
+11 1
+.names n180 n635 n634
+11 1
+.names n636 n642 n653 n635
+111 1
+.names n637 n469 n641 n636
+111 1
+.names n638 n639 n640 n637
+100 1
+.names n213 n41 n430 n638
+-00 1
+0-0 1
+.names n41 n35 n45 n639
+111 1
+.names n124 n222 n640
+11 1
+.names n102 n81 n285 n641
+-00 1
+0-0 1
+.names n643 n648 n651 n642
+111 1
+.names n644 n646 n647 n643
+100 1
+.names n412 n101 n645 n644
+-00 1
+0-0 1
+.names n141 n32 n47 n645
+111 1
+.names n124 n42 n73 n646
+111 1
+.names n29 n178 n647
+11 1
+.names n283 n159 n649 n648
+-00 1
+0-0 1
+.names n37 n650 n649
+11 1
+.names n53 n63 n650
+11 1
+.names n117 n59 n652 n651
+-00 1
+0-0 1
+.names n67 n226 n652
+11 1
+.names n654 n657 n659 n653
+110 1
+.names n492 n55 n655 n654
+-01 1
+0-1 1
+.names n516 n55 n656 n655
+-00 1
+0-0 1
+.names n124 n35 n42 n656
+111 1
+.names n441 n159 n658 n657
+-00 1
+0-0 1
+.names n89 n197 n658
+11 1
+.names n67 n126 n659
+11 1
+.names n661 n704 o_3_
+11 0
+.names n635 n662 n686 n661
+111 1
+.names n663 n672 n682 n662
+111 1
+.names n664 n669 n671 n663
+111 1
+.names n665 n667 n668 n664
+100 1
+.names n89 n112 n666 n665
+-00 1
+0-0 1
+.names n55 n135 n666
+11 1
+.names n89 n516 n667
+11 1
+.names n29 n243 n668
+11 1
+.names n341 n59 n670 n669
+-00 1
+0-0 1
+.names n89 n35 n45 n670
+111 1
+.names n186 n441 n55 n671
+--0 1
+00- 1
+.names n673 n678 n680 n672
+111 1
+.names n674 n676 n677 n673
+100 1
+.names n142 n29 n675 n674
+-00 1
+0-0 1
+.names n81 n30 n73 n675
+111 1
+.names n41 n90 n676
+11 1
+.names n67 n361 n677
+11 1
+.names n336 n104 n679 n678
+-00 1
+0-0 1
+.names n37 n366 n679
+11 1
+.names n492 n41 n681 n680
+-00 1
+0-0 1
+.names n124 n170 n681
+11 1
+.names n683 n684 n685 n682
+110 1
+.names n44 n34 n274 n683
+-00 1
+0-0 1
+.names n486 n418 n684
+00 1
+.names n178 n177 n104 n685
+-11 1
+1-1 1
+.names n687 n694 n700 n686
+111 1
+.names n688 n691 n692 n687
+111 1
+.names n311 n104 n689 n688
+-01 1
+0-1 1
+.names n205 n159 n690 n689
+-00 1
+0-0 1
+.names n82 n101 n690
+11 1
+.names n366 n104 n267 n691
+-00 1
+0-0 1
+.names n98 n37 n693 n692
+-00 1
+0-0 1
+.names n41 n320 n693
+11 1
+.names n695 n697 n699 n694
+110 1
+.names n298 n41 n696 n695
+-00 1
+0-0 1
+.names n59 n30 n73 n696
+111 1
+.names n128 n97 n698 n697
+-00 1
+0-0 1
+.names n81 n47 n103 n698
+111 1
+.names n104 n35 n42 n699
+111 1
+.names n275 n701 n703 n700
+100 1
+.names n702 n104 n701
+01 1
+.names n599 n650 n702
+00 1
+.names n101 n55 n304 n703
+-11 1
+1-1 1
+.names n705 n739 n777 n704
+111 1
+.names n497 n706 n722 n705
+111 1
+.names n707 n712 n717 n706
+111 1
+.names n708 n709 n711 n707
+110 1
+.names n372 n429 n708
+00 1
+.names n177 n141 n710 n709
+-00 1
+0-0 1
+.names n67 n42 n73 n710
+111 1
+.names n633 n492 n81 n711
+-11 1
+1-1 1
+.names n713 n715 n716 n712
+100 1
+.names n78 n37 n714 n713
+-00 1
+0-0 1
+.names n141 n414 n714
+11 1
+.names n44 n130 n715
+11 1
+.names n159 n539 n716
+11 1
+.names n718 n720 n721 n717
+100 1
+.names n44 n31 n719 n718
+-00 1
+0-0 1
+.names n52 n59 n719
+11 1
+.names n159 n291 n720
+11 1
+.names n101 n45 n58 n721
+111 1
+.names n723 n729 n734 n722
+111 1
+.names n724 n725 n727 n723
+111 1
+.names n133 n399 n724
+00 1
+.names n128 n29 n726 n725
+-00 1
+0-0 1
+.names n124 n47 n63 n726
+111 1
+.names n163 n284 n728 n727
+001 1
+.names n89 n51 n186 n728
+-00 1
+0-- 1
+.names n730 n732 n733 n729
+100 1
+.names n102 n55 n731 n730
+-00 1
+0-0 1
+.names n141 n36 n70 n731
+111 1
+.names n97 n32 n70 n732
+111 1
+.names n116 n164 n733
+11 1
+.names n735 n737 n738 n734
+100 1
+.names n230 n104 n736 n735
+-00 1
+0-0 1
+.names n59 n30 n151 n736
+111 1
+.names n97 n144 n737
+11 1
+.names n116 n53 n65 n738
+111 1
+.names n740 n760 n767 n739
+111 1
+.names n741 n750 n755 n740
+111 1
+.names n742 n746 n748 n741
+111 1
+.names n743 n744 n745 n742
+100 1
+.names n98 n170 n67 n743
+--0 1
+00- 1
+.names n116 n320 n744
+11 1
+.names n104 n239 n745
+11 1
+.names n141 n92 n747 n746
+-00 1
+0-0 1
+.names n64 n89 n747
+11 1
+.names n175 n59 n749 n748
+-00 1
+0-0 1
+.names n44 n311 n749
+11 1
+.names n751 n753 n754 n750
+100 1
+.names n67 n46 n752 n751
+-00 1
+0-0 1
+.names n101 n53 n65 n752
+111 1
+.names n141 n650 n753
+11 1
+.names n159 n175 n754
+11 1
+.names n756 n758 n759 n755
+100 1
+.names n134 n81 n757 n756
+-00 1
+0-0 1
+.names n59 n149 n757
+11 1
+.names n89 n33 n105 n758
+111 1
+.names n104 n170 n759
+11 1
+.names n761 n763 n765 n760
+111 1
+.names n762 n251 n273 n761
+100 1
+.names n209 n55 n445 n762
+-00 1
+0-0 1
+.names n124 n128 n764 n763
+-00 1
+0-0 1
+.names n37 n32 n47 n764
+111 1
+.names n144 n37 n766 n765
+-00 1
+0-0 1
+.names n101 n70 n125 n766
+111 1
+.names n768 n773 n775 n767
+111 1
+.names n769 n771 n772 n768
+100 1
+.names n272 n41 n770 n769
+-00 1
+0-0 1
+.names n29 n106 n770
+11 1
+.names n116 n30 n73 n771
+111 1
+.names n89 n30 n151 n772
+111 1
+.names n159 n90 n774 n773
+-00 1
+0-0 1
+.names n89 n164 n774
+11 1
+.names n82 n59 n776 n775
+-00 1
+0-0 1
+.names n116 n601 n776
+11 1
+.names n342 n778 n788 n777
+111 1
+.names n779 n784 n786 n778
+111 1
+.names n780 n782 n783 n779
+100 1
+.names n633 n101 n781 n780
+-00 1
+0-0 1
+.names n31 n37 n781
+11 1
+.names n141 n262 n782
+11 1
+.names n41 n135 n783
+11 1
+.names n326 n104 n785 n784
+-00 1
+0-0 1
+.names n44 n73 n63 n785
+111 1
+.names n339 n141 n787 n786
+-00 1
+0-0 1
+.names n124 n36 n70 n787
+111 1
+.names n431 n789 n790 n788
+000 1
+.names n55 n386 n789
+11 1
+.names n29 n35 n42 n790
+111 1
+.names n792 n817 n875 o_4_
+111 0
+.names n548 n793 n322 n792
+111 1
+.names n794 n804 n793
+11 1
+.names n795 n801 n803 n794
+110 1
+.names n796 n797 n799 n795
+111 1
+.names n225 n44 n747 n796
+-00 1
+0-0 1
+.names n492 n116 n798 n797
+-00 1
+0-0 1
+.names n89 n244 n798
+11 1
+.names n601 n89 n800 n799
+-00 1
+0-0 1
+.names n44 n36 n70 n800
+111 1
+.names n336 n29 n802 n801
+-00 1
+0-0 1
+.names n124 n33 n63 n802
+111 1
+.names n67 n185 n803
+11 1
+.names n805 n813 n815 n804
+111 1
+.names n806 n809 n811 n805
+111 1
+.names n808 n116 n807 n806
+-00 1
+0-0 1
+.names n81 n33 n105 n807
+111 1
+.names n30 n53 n808
+11 1
+.names n650 n124 n810 n809
+-00 1
+0-0 1
+.names n97 n339 n810
+11 1
+.names n640 n668 n812 n811
+001 1
+.names n34 n262 n29 n812
+--0 1
+00- 1
+.names n210 n104 n814 n813
+-00 1
+0-0 1
+.names n55 n201 n814
+11 1
+.names n169 n141 n816 n815
+-00 1
+0-0 1
+.names n41 n386 n816
+11 1
+.names n818 n839 n863 n817
+111 1
+.names n819 n829 n834 n818
+111 1
+.names n820 n825 n827 n819
+111 1
+.names n821 n823 n824 n820
+100 1
+.names n412 n59 n822 n821
+-00 1
+0-0 1
+.names n89 n105 n151 n822
+111 1
+.names n101 n201 n823
+11 1
+.names n104 n130 n824
+11 1
+.names n128 n37 n826 n825
+-00 1
+0-0 1
+.names n29 n36 n70 n826
+111 1
+.names n81 n64 n828 n827
+-00 1
+0-0 1
+.names n44 n414 n828
+11 1
+.names n830 n832 n833 n829
+100 1
+.names n116 n117 n831 n830
+-00 1
+0-0 1
+.names n159 n53 n65 n831
+111 1
+.names n116 n341 n832
+11 1
+.names n67 n72 n833
+11 1
+.names n835 n837 n838 n834
+100 1
+.names n128 n104 n836 n835
+-00 1
+0-0 1
+.names n124 n73 n63 n836
+111 1
+.names n55 n808 n837
+11 1
+.names n37 n225 n838
+11 1
+.names n840 n844 n854 n839
+111 1
+.names n248 n654 n841 n840
+111 1
+.names n808 n101 n842 n841
+-01 1
+0-1 1
+.names n539 n89 n843 n842
+-00 1
+0-0 1
+.names n37 n36 n70 n843
+111 1
+.names n845 n850 n852 n844
+111 1
+.names n846 n848 n849 n845
+100 1
+.names n64 n55 n847 n846
+-00 1
+0-0 1
+.names n159 n47 n103 n847
+111 1
+.names n89 n201 n848
+11 1
+.names n97 n225 n849
+11 1
+.names n98 n97 n851 n850
+-00 1
+0-0 1
+.names n81 n601 n851
+11 1
+.names n146 n41 n853 n852
+-00 1
+0-0 1
+.names n101 n601 n853
+11 1
+.names n855 n860 n862 n854
+111 1
+.names n856 n858 n859 n855
+100 1
+.names n90 n59 n857 n856
+-00 1
+0-0 1
+.names n94 n124 n857
+11 1
+.names n29 n302 n858
+11 1
+.names n41 n45 n58 n859
+111 1
+.names n283 n101 n861 n860
+-00 1
+0-0 1
+.names n44 n56 n151 n861
+111 1
+.names n262 n302 n124 n862
+--0 1
+00- 1
+.names n864 n871 n873 n863
+111 1
+.names n865 n868 n870 n864
+100 1
+.names n67 n867 n866 n865
+-10 1
+0-0 1
+.names n178 n84 n44 n866
+-11 1
+1-1 1
+.names n63 n47 n625 n867
+-00 1
+0-0 1
+.names n869 n141 n868
+01 1
+.names n63 n73 n113 n869
+-00 1
+0-0 1
+.names n599 n339 n37 n870
+-11 1
+1-1 1
+.names n872 n733 n781 n871
+100 1
+.names n492 n41 n667 n872
+-00 1
+0-0 1
+.names n874 n238 n510 n873
+100 1
+.names n205 n116 n202 n874
+-00 1
+0-0 1
+.names n876 n426 n448 n875
+111 1
+.names n877 n885 n890 n876
+111 1
+.names n878 n881 n883 n877
+111 1
+.names n879 n229 n297 n878
+100 1
+.names n209 n41 n880 n879
+-00 1
+0-0 1
+.names n124 n239 n880
+11 1
+.names n414 n37 n882 n881
+-00 1
+0-0 1
+.names n124 n398 n882
+11 1
+.names n414 n97 n884 n883
+-00 1
+0-0 1
+.names n37 n625 n884
+11 1
+.names n886 n887 n889 n885
+110 1
+.names n659 n666 n886
+00 1
+.names n141 n84 n888 n887
+-00 1
+0-0 1
+.names n41 n117 n888
+11 1
+.names n89 n70 n125 n889
+111 1
+.names n891 n893 n895 n890
+111 1
+.names n296 n55 n892 n891
+-00 1
+0-0 1
+.names n89 n38 n70 n892
+111 1
+.names n205 n41 n894 n893
+-00 1
+0-0 1
+.names n141 n599 n894
+11 1
+.names n339 n104 n896 n895
+-00 1
+0-0 1
+.names n101 n35 n45 n896
+111 1
+.names n898 n951 n1002 o_5_
+111 0
+.names n899 n911 n932 n898
+111 1
+.names n900 n107 n589 n899
+111 1
+.names n901 n906 n908 n900
+111 1
+.names n902 n904 n905 n901
+000 1
+.names n903 n37 n902
+01 1
+.names n53 n56 n84 n903
+-00 1
+0-0 1
+.names n625 n46 n29 n904
+-11 1
+1-1 1
+.names n398 n31 n97 n905
+-11 1
+1-1 1
+.names n907 n639 n652 n906
+100 1
+.names n361 n104 n459 n907
+-00 1
+0-0 1
+.names n57 n910 n909 n908
+-11 1
+0-1 1
+.names n158 n89 n187 n909
+-00 1
+0-0 1
+.names n101 n159 n910
+00 1
+.names n912 n922 n927 n911
+111 1
+.names n913 n918 n920 n912
+111 1
+.names n914 n916 n917 n913
+100 1
+.names n144 n44 n915 n914
+-00 1
+0-0 1
+.names n97 n377 n915
+11 1
+.names n59 n164 n916
+11 1
+.names n101 n105 n151 n917
+111 1
+.names n130 n67 n919 n918
+-00 1
+0-0 1
+.names n101 n33 n43 n919
+111 1
+.names n234 n41 n921 n920
+-00 1
+0-0 1
+.names n101 n296 n921
+11 1
+.names n923 n925 n926 n922
+100 1
+.names n137 n59 n924 n923
+-00 1
+0-0 1
+.names n89 n291 n924
+11 1
+.names n141 n42 n73 n925
+111 1
+.names n37 n123 n926
+11 1
+.names n928 n930 n931 n927
+100 1
+.names n226 n124 n929 n928
+-00 1
+0-0 1
+.names n159 n209 n929
+11 1
+.names n37 n219 n930
+11 1
+.names n68 n124 n931
+11 1
+.names n933 n941 n946 n932
+111 1
+.names n934 n937 n939 n933
+111 1
+.names n935 n800 n810 n934
+100 1
+.names n186 n81 n936 n935
+-00 1
+0-0 1
+.names n55 n73 n125 n936
+111 1
+.names n283 n81 n938 n937
+-00 1
+0-0 1
+.names n89 n209 n938
+11 1
+.names n124 n34 n940 n939
+-00 1
+0-0 1
+.names n101 n205 n940
+11 1
+.names n942 n944 n945 n941
+100 1
+.names n141 n106 n943 n942
+-00 1
+0-0 1
+.names n97 n361 n943
+11 1
+.names n29 n32 n70 n944
+111 1
+.names n141 n222 n945
+11 1
+.names n947 n949 n950 n946
+100 1
+.names n633 n159 n948 n947
+-00 1
+0-0 1
+.names n81 n272 n948
+11 1
+.names n41 n82 n949
+11 1
+.names n44 n226 n950
+11 1
+.names n952 n975 n994 n951
+111 1
+.names n953 n962 n885 n952
+111 1
+.names n954 n959 n953
+11 1
+.names n955 n957 n954
+11 1
+.names n117 n55 n956 n955
+-00 1
+0-0 1
+.names n104 n33 n42 n956
+111 1
+.names n104 n46 n958 n957
+-00 1
+0-0 1
+.names n29 n47 n63 n958
+111 1
+.names n960 n435 n444 n959
+100 1
+.names n146 n101 n961 n960
+-00 1
+0-0 1
+.names n37 n302 n961
+11 1
+.names n963 n971 n962
+11 1
+.names n964 n968 n969 n963
+111 1
+.names n965 n966 n967 n964
+000 1
+.names n55 n146 n965
+11 1
+.names n101 n186 n966
+11 1
+.names n159 n164 n967
+11 1
+.names n222 n67 n451 n968
+-00 1
+0-0 1
+.names n808 n81 n970 n969
+-00 1
+0-0 1
+.names n44 n177 n970
+11 1
+.names n972 n973 n974 n971
+100 1
+.names n298 n55 n212 n972
+-00 1
+0-0 1
+.names n44 n29 n126 n973
+-11 1
+1-1 1
+.names n51 n116 n974
+11 1
+.names n976 n981 n985 n975
+111 1
+.names n977 n979 n980 n976
+100 1
+.names n112 n41 n978 n977
+-00 1
+0-0 1
+.names n97 n106 n978
+11 1
+.names n141 n47 n42 n979
+111 1
+.names n159 n53 n105 n980
+111 1
+.names n982 n807 n836 n981
+100 1
+.names n983 n984 n982
+00 1
+.names n159 n33 n38 n983
+111 1
+.names n97 n33 n63 n984
+111 1
+.names n986 n990 n985
+11 1
+.names n987 n988 n989 n986
+000 1
+.names n59 n234 n987
+11 1
+.names n37 n72 n988
+11 1
+.names n124 n33 n42 n989
+111 1
+.names n991 n992 n993 n990
+000 1
+.names n64 n159 n991
+11 1
+.names n29 n321 n992
+11 1
+.names n89 n808 n993
+11 1
+.names n995 n998 n1000 n994
+111 1
+.names n275 n996 n997 n995
+111 1
+.names n331 n335 n996
+00 1
+.names n178 n124 n295 n997
+-00 1
+0-0 1
+.names n999 n565 n656 n998
+100 1
+.names n441 n55 n785 n999
+-00 1
+0-0 1
+.names n1001 n150 n411 n1000
+100 1
+.names n408 n430 n1001
+00 1
+.names n481 n722 n1003 n1002
+111 1
+.names n1004 n1009 n255 n1003
+111 1
+.names n1005 n1007 n1008 n1004
+100 1
+.names n633 n116 n1006 n1005
+-00 1
+0-0 1
+.names n141 n326 n1006
+11 1
+.names n29 n599 n1007
+11 1
+.names n57 n89 n1008
+11 1
+.names n1010 n1012 n1013 n1009
+100 1
+.names n149 n101 n1011 n1010
+-00 1
+0-0 1
+.names n89 n320 n1011
+11 1
+.names n101 n539 n1012
+11 1
+.names n59 n298 n1013
+11 1
+.names n1015 n1069 n1086 o_6_
+111 0
+.names n1016 n1027 n1048 n1015
+111 1
+.names n1017 n1020 n963 n1016
+111 1
+.names n1018 n518 n470 n1017
+100 1
+.names n1019 n447 n579 n1018
+100 1
+.names n175 n116 n571 n1019
+-00 1
+0-0 1
+.names n1021 n1023 n1025 n1020
+111 1
+.names n678 n737 n1022 n1021
+100 1
+.names n29 n32 n151 n1022
+111 1
+.names n633 n89 n1024 n1023
+-00 1
+0-0 1
+.names n29 n170 n1024
+11 1
+.names n68 n37 n1026 n1025
+-00 1
+0-0 1
+.names n124 n377 n1026
+11 1
+.names n1028 n1038 n1043 n1027
+111 1
+.names n1029 n1034 n1036 n1028
+111 1
+.names n1030 n1032 n1033 n1029
+100 1
+.names n137 n116 n1031 n1030
+-00 1
+0-0 1
+.names n101 n47 n65 n1031
+111 1
+.names n81 n341 n1032
+11 1
+.names n141 n230 n1033
+11 1
+.names n222 n44 n1035 n1034
+-00 1
+0-0 1
+.names n89 n137 n1035
+11 1
+.names n336 n141 n1037 n1036
+-00 1
+0-0 1
+.names n159 n103 n151 n1037
+111 1
+.names n1039 n1041 n1042 n1038
+100 1
+.names n97 n113 n1040 n1039
+-00 1
+0-0 1
+.names n59 n33 n105 n1040
+111 1
+.names n46 n97 n1041
+11 1
+.names n55 n47 n65 n1042
+111 1
+.names n1044 n1046 n1047 n1043
+100 1
+.names n808 n159 n1045 n1044
+-00 1
+0-0 1
+.names n84 n124 n1045
+11 1
+.names n116 n386 n1046
+11 1
+.names n104 n471 n1047
+11 1
+.names n1049 n1059 n1064 n1048
+111 1
+.names n1050 n1055 n1057 n1049
+111 1
+.names n1051 n1053 n1054 n1050
+100 1
+.names n149 n116 n1052 n1051
+-00 1
+0-0 1
+.names n101 n291 n1052
+11 1
+.names n29 n339 n1053
+11 1
+.names n41 n30 n73 n1054
+111 1
+.names n234 n101 n1056 n1055
+-00 1
+0-0 1
+.names n67 n47 n42 n1056
+111 1
+.names n252 n55 n1058 n1057
+-00 1
+0-0 1
+.names n104 n243 n1058
+11 1
+.names n1060 n1062 n1063 n1059
+100 1
+.names n244 n55 n1061 n1060
+-00 1
+0-0 1
+.names n59 n79 n1061
+11 1
+.names n124 n243 n1062
+11 1
+.names n44 n56 n53 n1063
+111 1
+.names n1065 n1067 n1068 n1064
+100 1
+.names n185 n97 n1066 n1065
+-00 1
+0-0 1
+.names n41 n288 n1066
+11 1
+.names n55 n158 n1067
+11 1
+.names n44 n47 n63 n1068
+111 1
+.names n246 n1070 n1085 n1069
+111 1
+.names n1071 n1080 n1070
+11 1
+.names n1072 n1077 n986 n1071
+111 1
+.names n1073 n1075 n1076 n1072
+100 1
+.names n377 n37 n1074 n1073
+-00 1
+0-0 1
+.names n141 n219 n1074
+11 1
+.names n81 n298 n1075
+11 1
+.names n112 n159 n1076
+11 1
+.names n296 n59 n1078 n1077
+-01 1
+0-1 1
+.names n67 n34 n1079 n1078
+-00 1
+0-0 1
+.names n159 n33 n43 n1079
+111 1
+.names n395 n1081 n1084 n1080
+111 1
+.names n159 n137 n1082 n1081
+-01 1
+0-1 1
+.names n412 n89 n1083 n1082
+-00 1
+0-0 1
+.names n104 n33 n74 n1083
+111 1
+.names n488 n544 n1084
+11 1
+.names n706 n804 n1085
+11 1
+.names n1087 n1091 n1096 n1086
+111 1
+.names n1088 n1089 n1090 n1087
+111 1
+.names n414 n67 n419 n1088
+-00 1
+0-0 1
+.names n175 n81 n439 n1089
+-00 1
+0-0 1
+.names n64 n55 n833 n1090
+-00 1
+0-0 1
+.names n1092 n1094 n1095 n1091
+100 1
+.names n516 n159 n1093 n1092
+-00 1
+0-0 1
+.names n59 n33 n38 n1093
+111 1
+.names n116 n291 n1094
+11 1
+.names n41 n304 n1095
+11 1
+.names n1097 n1099 n1102 n1096
+111 1
+.names n321 n97 n1098 n1097
+-00 1
+0-0 1
+.names n81 n38 n70 n1098
+111 1
+.names n926 n1100 n1101 n1099
+001 1
+.names n141 n366 n1100
+11 1
+.names n124 n92 n219 n1101
+-00 1
+0-- 1
+.names n106 n198 n67 n1102
+--0 1
+00- 1
+.names n1104 n1115 o_7_
+11 0
+.names n1105 n562 n794 n1104
+111 1
+.names n1106 n1111 n1113 n1105
+111 1
+.names n1107 n1108 n1109 n1106
+111 1
+.names n528 n832 n861 n1107
+100 1
+.names n142 n37 n950 n1108
+-00 1
+0-0 1
+.names n134 n41 n1110 n1109
+-00 1
+0-0 1
+.names n82 n89 n1110
+11 1
+.names n198 n97 n1112 n1111
+-00 1
+0-0 1
+.names n141 n625 n1112
+11 1
+.names n296 n116 n1114 n1113
+-00 1
+0-0 1
+.names n67 n33 n74 n1114
+111 1
+.names n1116 n1149 n1165 n1115
+111 1
+.names n1117 n1127 n1137 n1116
+111 1
+.names n1118 n1123 n1125 n1117
+111 1
+.names n1119 n1121 n1122 n1118
+100 1
+.names n130 n97 n1120 n1119
+-00 1
+0-0 1
+.names n44 n68 n1120
+11 1
+.names n41 n51 n1121
+11 1
+.names n59 n601 n1122
+11 1
+.names n130 n29 n1124 n1123
+-00 1
+0-0 1
+.names n37 n32 n70 n1124
+111 1
+.names n633 n41 n1126 n1125
+-00 1
+0-0 1
+.names n37 n311 n1126
+11 1
+.names n1128 n1133 n1135 n1127
+111 1
+.names n1129 n1131 n1132 n1128
+100 1
+.names n599 n67 n1130 n1129
+-00 1
+0-0 1
+.names n55 n291 n1130
+11 1
+.names n67 n36 n73 n1131
+111 1
+.names n89 n53 n65 n1132
+111 1
+.names n142 n44 n1134 n1133
+-00 1
+0-0 1
+.names n29 n56 n151 n1134
+111 1
+.names n64 n59 n1136 n1135
+-00 1
+0-0 1
+.names n128 n141 n1136
+11 1
+.names n1138 n1140 n1142 n1137
+111 1
+.names n1139 n429 n434 n1138
+100 1
+.names n186 n55 n484 n1139
+-00 1
+0-0 1
+.names n1141 n203 n266 n1140
+100 1
+.names n233 n506 n1141
+00 1
+.names n1143 n1147 n1148 n1142
+111 1
+.names n1144 n1145 n1146 n1143
+001 1
+.names n106 n124 n1144
+11 1
+.names n81 n112 n1145
+11 1
+.names n288 n539 n116 n1146
+--0 1
+00- 1
+.names n714 n978 n1147
+00 1
+.names n516 n101 n980 n1148
+-00 1
+0-0 1
+.names n307 n1150 n1160 n1149
+111 1
+.names n1151 n1156 n1158 n1150
+111 1
+.names n1152 n1154 n1155 n1151
+100 1
+.names n193 n116 n1153 n1152
+-00 1
+0-0 1
+.names n59 n35 n45 n1153
+111 1
+.names n97 n73 n63 n1154
+111 1
+.names n55 n47 n103 n1155
+111 1
+.names n89 n79 n1157 n1156
+-00 1
+0-0 1
+.names n159 n45 n58 n1157
+111 1
+.names n226 n141 n1159 n1158
+-00 1
+0-0 1
+.names n116 n158 n1159
+11 1
+.names n1072 n1161 n1163 n1160
+111 1
+.names n101 n64 n1162 n1161
+-00 1
+0-0 1
+.names n141 n361 n1162
+11 1
+.names n104 n31 n1164 n1163
+-00 1
+0-0 1
+.names n67 n326 n1164
+11 1
+.names n1166 n1179 n1184 n1165
+111 1
+.names n1167 n1171 n788 n1166
+111 1
+.names n1168 n1169 n1170 n1167
+111 1
+.names n190 n333 n1168
+00 1
+.names n122 n525 n1169
+00 1
+.names n341 n59 n609 n1170
+-00 1
+0-0 1
+.names n1172 n1176 n1177 n1171
+111 1
+.names n1173 n1174 n1175 n1172
+000 1
+.names n89 n304 n1173
+11 1
+.names n55 n283 n1174
+11 1
+.names n116 n33 n43 n1175
+111 1
+.names n252 n55 n892 n1176
+-00 1
+0-0 1
+.names n492 n159 n1178 n1177
+-00 1
+0-0 1
+.names n37 n198 n1178
+11 1
+.names n466 n1180 n1183 n1179
+110 1
+.names n124 n1182 n1181 n1180
+-11 1
+0-1 1
+.names n285 n328 n1181
+00 1
+.names n73 n36 n98 n1182
+-00 1
+0-0 1
+.names n326 n78 n44 n1183
+-11 1
+1-1 1
+.names n694 n954 n959 n1184
+111 1
+.names n1186 n1187 n1220 o_8_
+111 0
+.names n214 n662 n1086 n1186
+111 1
+.names n1105 n1188 n1208 n1187
+111 1
+.names n1189 n1199 n1207 n1188
+111 1
+.names n1190 n1195 n1197 n1189
+111 1
+.names n1191 n1193 n1194 n1190
+100 1
+.names n210 n37 n1192 n1191
+-00 1
+0-0 1
+.names n44 n321 n1192
+11 1
+.names n104 n302 n1193
+11 1
+.names n124 n625 n1194
+11 1
+.names n159 n82 n1196 n1195
+-00 1
+0-0 1
+.names n29 n361 n1196
+11 1
+.names n142 n97 n1198 n1197
+-00 1
+0-0 1
+.names n101 n441 n1198
+11 1
+.names n1200 n1203 n1205 n1199
+111 1
+.names n46 n37 n1201 n1200
+-01 1
+0-1 1
+.names n252 n159 n1202 n1201
+-00 1
+0-0 1
+.names n55 n288 n1202
+11 1
+.names n210 n124 n1204 n1203
+-00 1
+0-0 1
+.names n37 n36 n73 n1204
+111 1
+.names n441 n59 n1206 n1205
+-00 1
+0-0 1
+.names n29 n36 n73 n1206
+111 1
+.names n259 n493 n990 n1207
+111 1
+.names n1209 n1217 n1219 n1208
+110 1
+.names n1210 n1215 n1216 n1209
+111 1
+.names n1211 n1213 n1214 n1210
+100 1
+.names n137 n81 n1212 n1211
+-00 1
+0-0 1
+.names n159 n70 n125 n1212
+111 1
+.names n72 n97 n1213
+11 1
+.names n59 n53 n105 n1214
+111 1
+.names n177 n29 n608 n1215
+-00 1
+0-0 1
+.names n98 n29 n837 n1216
+-00 1
+0-0 1
+.names n272 n59 n1218 n1217
+-00 1
+0-0 1
+.names n124 n169 n1218
+11 1
+.names n29 n650 n1219
+11 1
+.names n1221 n1223 n1220
+11 1
+.names n1222 n474 n582 n1221
+111 1
+.names n890 n971 n1222
+11 1
+.names n1224 n1234 n1244 n1223
+111 1
+.names n1225 n1230 n1232 n1224
+111 1
+.names n1226 n1228 n1229 n1225
+100 1
+.names n144 n104 n1227 n1226
+-00 1
+0-0 1
+.names n94 n141 n1227
+11 1
+.names n67 n311 n1228
+11 1
+.names n101 n70 n105 n1229
+111 1
+.names n102 n59 n1231 n1230
+-00 1
+0-0 1
+.names n141 n243 n1231
+11 1
+.names n67 n31 n1233 n1232
+-00 1
+0-0 1
+.names n89 n33 n43 n1233
+111 1
+.names n1235 n1240 n1242 n1234
+111 1
+.names n1236 n1238 n1239 n1235
+100 1
+.names n178 n67 n1237 n1236
+-00 1
+0-0 1
+.names n159 n193 n1237
+11 1
+.names n116 n53 n105 n1238
+111 1
+.names n89 n73 n125 n1239
+111 1
+.names n341 n101 n1241 n1240
+-00 1
+0-0 1
+.names n159 n234 n1241
+11 1
+.names n320 n159 n1243 n1242
+-00 1
+0-0 1
+.names n141 n311 n1243
+11 1
+.names n1245 n1248 n1253 n1244
+111 1
+.names n44 n702 n1246 n1245
+-11 1
+0-1 1
+.names n517 n527 n1247 n1246
+000 1
+.names n650 n94 n97 n1247
+-11 1
+1-1 1
+.names n1249 n1251 n1252 n1248
+100 1
+.names n252 n41 n1250 n1249
+-00 1
+0-0 1
+.names n116 n146 n1250
+11 1
+.names n44 n128 n1251
+11 1
+.names n59 n633 n1252
+11 1
+.names n1254 n1255 n1256 n1253
+100 1
+.names n366 n29 n440 n1254
+-00 1
+0-0 1
+.names n37 n32 n151 n1255
+111 1
+.names n59 n808 n1256
+11 1
+.names n1258 n1288 n1208 o_9_
+111 0
+.names n1259 n1270 n1280 n1258
+111 1
+.names n1260 n1077 n520 n1259
+111 1
+.names n1261 n1266 n1268 n1260
+111 1
+.names n1262 n1264 n1265 n1261
+100 1
+.names n321 n67 n1263 n1262
+-00 1
+0-0 1
+.names n101 n193 n1263
+11 1
+.names n104 n56 n151 n1264
+111 1
+.names n89 n70 n105 n1265
+111 1
+.names n141 n123 n1267 n1266
+-00 1
+0-0 1
+.names n41 n33 n105 n1267
+111 1
+.names n104 n68 n1269 n1268
+-00 1
+0-0 1
+.names n55 n197 n1269
+11 1
+.names n1271 n1276 n1278 n1270
+111 1
+.names n1272 n1274 n1275 n1271
+100 1
+.names n158 n59 n1273 n1272
+-00 1
+0-0 1
+.names n159 n601 n1273
+11 1
+.names n81 n386 n1274
+11 1
+.names n141 n33 n74 n1275
+111 1
+.names n142 n67 n1277 n1276
+-00 1
+0-0 1
+.names n98 n141 n1277
+11 1
+.names n412 n159 n1279 n1278
+-00 1
+0-0 1
+.names n67 n35 n42 n1279
+111 1
+.names n1281 n1283 n1287 n1280
+111 1
+.names n539 n81 n1282 n1281
+-00 1
+0-0 1
+.names n29 n471 n1282
+11 1
+.names n1284 n1285 n1286 n1283
+100 1
+.names n185 n471 n37 n1284
+--0 1
+00- 1
+.names n101 n38 n70 n1285
+111 1
+.names n29 n78 n1286
+11 1
+.names n169 n366 n44 n1287
+--0 1
+00- 1
+.names n1289 n1290 n1303 n1288
+111 1
+.names n687 n877 n575 n1289
+111 1
+.names n85 n1291 n461 n1290
+111 1
+.names n1292 n1297 n1299 n1291
+111 1
+.names n1293 n1294 n1295 n1292
+111 1
+.names n222 n37 n265 n1293
+-00 1
+0-0 1
+.names n414 n104 n560 n1294
+-00 1
+0-0 1
+.names n135 n910 n1296 n1295
+-10 1
+0-0 1
+.names n92 n68 n97 n1296
+-11 1
+1-1 1
+.names n1298 n645 n716 n1297
+100 1
+.names n441 n89 n1100 n1298
+-00 1
+0-0 1
+.names n1300 n1301 n1302 n1299
+100 1
+.names n205 n209 n59 n1300
+--0 1
+00- 1
+.names n116 n283 n1301
+11 1
+.names n159 n288 n1302
+11 1
+.names n975 n994 n1166 n1303
+111 1
+.end

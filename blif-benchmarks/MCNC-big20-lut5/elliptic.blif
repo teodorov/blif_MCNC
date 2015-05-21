@@ -1,0 +1,1101 @@
+# Benchmark "TOP" written by ABC on Thu May 21 18:20:26 2015
+.model TOP
+.inputs PCLK PRESET Preset_0_0_ Pinp_0_0_ Pinp_1_1_ Pinp_2_2_ Pinp_3_3_ \
+ Pinp_4_4_ Pinp_5_5_ Pinp_6_6_ Pinp_7_7_ Pinp_8_8_ Pinp_9_9_ Pinp_10_10_ \
+ Pinp_11_11_ Pinp_12_12_ Pinp_13_13_ Pinp_14_14_ Pinp_15_15_
+.outputs PDN Pover_0_0_
+
+.latch        n44    N_N8199  2
+.latch        n49    N_N9280  2
+.latch        n54    N_N8803  2
+.latch        n59    N_N8240  2
+.latch        n64    N_N8274  2
+.latch        n69    N_N8198  2
+.latch        n74    N_N8239  2
+.latch        n79    N_N8615  2
+.latch        n84    N_N7703  2
+.latch        n89    N_N8273  2
+.latch        n94    N_N8366  2
+.latch        n99    N_N8272  2
+.latch       n104    N_N8238  2
+.latch       n109    N_N8531  2
+.latch       n114    N_N7983  2
+.latch       n119    N_N8575  2
+.latch       n124    N_N7854  2
+.latch       n129    N_N8237  2
+.latch       n134    N_N8197  2
+.latch       n139    N_N8271  2
+.latch       n144    N_N8530  2
+.latch       n149    N_N8650  2
+.latch       n154    N_N7985  2
+.latch       n159    N_N8710  2
+.latch       n164    N_N8574  2
+.latch       n169    N_N8312  2
+.latch       n174    N_N8270  2
+.latch       n179    N_N8573  2
+.latch       n184    N_N8935  2
+.latch       n189    N_N8649  2
+.latch       n194    N_N8196  2
+.latch       n199    N_N8236  2
+.latch       n204    N_N9244  2
+.latch       n209    N_N8348  2
+.latch       n214    N_N9150  2
+.latch       n219    N_N8648  2
+.latch       n224    N_N8269  2
+.latch       n229    N_N8235  2
+.latch       n234    N_N9275  2
+.latch       n239    N_N8970  2
+.latch       n244    N_N9554  2
+.latch       n249    N_N9013  2
+.latch       n254    N_N8508  2
+.latch       n259    N_N8529  2
+.latch       n264    N_N9242  2
+.latch       n269    N_N8572  2
+.latch       n274    N_N8571  2
+.latch       n279    N_N9436  2
+.latch       n284    N_N8528  2
+.latch       n289    N_N8796  2
+.latch       n294    N_N7770  2
+.latch       n299    N_N9357  2
+.latch       n304    N_N8685  2
+.latch       n309    N_N9296  2
+.latch       n314    N_N9555  2
+.latch       n319    N_N7628  2
+.latch       n324    N_N9510  2
+.latch       n329    N_N9578  2
+.latch       n334    N_N8447  2
+.latch       n339    N_N9437  2
+.latch       n344    N_N7771  2
+.latch     n349_1    N_N8570  2
+.latch       n354    N_N8647  2
+.latch       n359    N_N7704  2
+.latch       n364    N_N8646  2
+.latch       n369    N_N7629  2
+.latch       n374    NDN3_11  2
+.latch       n379    NDN3_12  2
+.latch       n384    N_N8037  2
+.latch       n389    NDN3_16  2
+.latch       n394    NDN3_17  2
+.latch       n399    NDN3_19  2
+.latch     n404_1    NDN3_22  2
+.latch       n409    NDN3_25  2
+.latch       n414    NDN3_26  2
+.latch       n419    N_N7584  2
+.latch       n424    NDN3_28  2
+.latch       n429    NDN3_29  2
+.latch       n434    NDN3_40  2
+.latch       n439    NDN3_39  2
+.latch       n444    NDN3_42  2
+.latch       n449    NDN3_44  2
+.latch       n454    NDN3_46  2
+.latch       n459    N_N9358  2
+.latch       n464    N_N9539  2
+.latch       n469    N_N9556  2
+.latch       n474    N_N7306  2
+.latch       n479    NEN3_16  2
+.latch       n484    N_N9160  2
+.latch       n489    NEN3_19  2
+.latch       n494    NEN3_22  2
+.latch       n499    N_N8930  2
+.latch       n504    NEN3_28  2
+.latch       n509    N_N9438  2
+.latch       n514    NEN3_34  2
+.latch       n519    NEN3_36  2
+.latch       n524    NEN3_39  2
+.latch       n529    N_N7961  2
+.latch       n534     NLC1_2  2
+.latch       n539    N_N9359  2
+.latch       n544    N_N7476  2
+.latch       n549    N_N8577  2
+.latch       n554    N_N9289  2
+.latch       n559    N_N9557  2
+.latch       n564    N_N7630  2
+.latch       n569    N_N9161  2
+.latch       n574    N_N8691  2
+.latch       n579    N_N9439  2
+.latch     n584_1    N_N8798  2
+.latch       n589    N_N8869  2
+.latch       n594    N_N9360  2
+.latch       n599    N_N8911  2
+.latch       n604    N_N9290  2
+.latch       n609    N_N9558  2
+.latch       n614    N_N8993  2
+.latch       n619    N_N9162  2
+.latch       n624    N_N9034  2
+.latch       n629    N_N9440  2
+.latch       n634    N_N9361  2
+.latch       n639    N_N9298  2
+.latch       n644    N_N9559  2
+.latch       n649    N_N9163  2
+.latch       n654    N_N9550  2
+.latch       n659        PDN  2
+.latch       n663    N_N8171  2
+.latch       n668    N_N8173  2
+.latch       n673    N_N9011  2
+.latch       n678    N_N9552  2
+.latch       n683    N_N7701  2
+.latch       n688    N_N8964  2
+.latch       n693    N_N9291  2
+.latch       n698    N_N9560  2
+.latch       n703    N_N7627  2
+.latch       n708    N_N8913  2
+.latch       n713    N_N8756  2
+.latch       n718    N_N9164  2
+.latch       n723    N_N8016  2
+.latch       n728    N_N9441  2
+.latch       n733    N_N8847  2
+.latch       n738    N_N8631  2
+.latch       n743    N_N9362  2
+.latch       n748 Pover_0_0_  2
+.latch       n752     NDN1_4  2
+.latch       n757    N_N8561  2
+.latch       n762    N_N9292  2
+.latch       n767    N_N9561  2
+.latch       n772    NGFDN_3  2
+.latch       n777    N_N9165  2
+.latch       n782    N_N9442  2
+.latch       n787    N_N7768  2
+.latch       n792    N_N8118  2
+.latch       n797     NDN2_2  2
+.latch       n802    N_N8875  2
+.latch       n807    N_N7852  2
+.latch       n812    N_N7582  2
+.latch       n817    N_N9331  2
+.latch       n822    N_N9363  2
+.latch       n827    N_N9294  2
+.latch       n832     NDN3_2  2
+.latch       n837     NDN3_4  2
+.latch       n842     NDN3_7  2
+.latch       n847     NDN3_9  2
+.latch       n852    N_N9410  2
+.latch       n857    N_N8613  2
+.latch       n862    N_N8972  2
+.latch       n867    N_N9247  2
+.latch       n872    N_N9166  2
+.latch       n877    N_N8968  2
+.latch       n882    NAK3_13  2
+.latch       n887    N_N8668  2
+.latch       n892    N_N8923  2
+.latch       n897    N_N7769  2
+.latch       n902    N_N8933  2
+.latch       n907    N_N7702  2
+.latch       n912    N_N8978  2
+.latch       n917    N_N8141  2
+.latch       n922    N_N8200  2
+.latch       n927    N_N8929  2
+.latch       n932    N_N7853  2
+.latch       n937    N_N9031  2
+.latch     n942_1    N_N8241  2
+.latch       n947    N_N7583  2
+.latch       n952    NSr3_13  2
+.latch     n957_1    N_N9248  2
+.latch     n962_1    NSr3_14  2
+.latch       n967    NSr3_20  2
+.latch       n972    N_N9198  2
+.latch       n977    NSr3_23  2
+.latch       n982    NSr3_30  2
+.latch       n987    NSr3_35  2
+.latch       n992    NSr3_37  2
+.latch       n997    NSr3_38  2
+.latch      n1002     NSr1_2  2
+.latch      n1007    N_N8603  2
+
+.names n606 N_N8199 n44
+11 1
+.names Preset_0_0_ NLC1_2 NDN2_2 NSr1_2 PRESET n606
+----1 0
+1001- 0
+.names n606 N_N9280 n49
+11 1
+.names n606 N_N8803 n54
+11 1
+.names n606 N_N8240 n59
+11 1
+.names n606 N_N8274 n64
+11 1
+.names n606 N_N8198 n69
+11 1
+.names n606 N_N8239 n74
+11 1
+.names n606 N_N8615 n79
+11 1
+.names n606 N_N7703 n84
+11 1
+.names n606 N_N8273 n89
+11 1
+.names n606 N_N8366 n94
+11 1
+.names n606 N_N8272 n99
+11 1
+.names n606 N_N8238 n104
+11 1
+.names n606 N_N8531 n109
+11 1
+.names n606 N_N7983 n114
+11 1
+.names n606 N_N8575 n119
+11 1
+.names n606 N_N7854 n124
+11 1
+.names n606 N_N8237 n129
+11 1
+.names n606 N_N8197 n134
+11 1
+.names n606 N_N8271 n139
+11 1
+.names n606 N_N8530 n144
+11 1
+.names n606 N_N8650 n149
+11 1
+.names n606 N_N7985 n154
+11 1
+.names n606 N_N8710 n159
+11 1
+.names n606 N_N8574 n164
+11 1
+.names n606 N_N8312 n169
+11 1
+.names n606 N_N8270 n174
+11 1
+.names n606 N_N8573 n179
+11 1
+.names n606 N_N8935 n184
+11 1
+.names n606 N_N8649 n189
+11 1
+.names n606 N_N8196 n194
+11 1
+.names n606 N_N8236 n199
+11 1
+.names n606 N_N9244 n204
+11 1
+.names n606 N_N8348 n209
+11 1
+.names n606 N_N9150 n214
+11 1
+.names n606 N_N8648 n219
+11 1
+.names n606 N_N8269 n224
+11 1
+.names n606 N_N8235 n229
+11 1
+.names n606 N_N9275 n234
+11 1
+.names n606 N_N8970 n239
+11 1
+.names n606 N_N9554 n244
+11 1
+.names n606 N_N9013 n249
+11 1
+.names n606 N_N8508 n254
+11 1
+.names n606 N_N8529 n259
+11 1
+.names n606 N_N9242 n264
+11 1
+.names n606 N_N8572 n269
+11 1
+.names n606 N_N8571 n274
+11 1
+.names n606 N_N9436 n279
+11 1
+.names n606 N_N8528 n284
+11 1
+.names n606 N_N8796 n289
+11 1
+.names n606 N_N7770 n294
+11 1
+.names n606 N_N9357 n299
+11 1
+.names n606 N_N8685 n304
+11 1
+.names n606 N_N9296 n309
+11 1
+.names n606 N_N9555 n314
+11 1
+.names n606 N_N7628 n319
+11 1
+.names n606 N_N9510 n324
+11 1
+.names PRESET N_N9578 n664 n329
+--1 1
+01- 1
+.names PRESET Preset_0_0_ NLC1_2 NDN2_2 NSr1_2 n664
+01001 1
+.names n606 N_N8447 n334
+11 1
+.names n606 N_N9437 n339
+11 1
+.names n606 N_N7771 n344
+11 1
+.names n606 N_N8570 n349_1
+11 1
+.names n606 N_N8647 n354
+11 1
+.names n606 N_N7704 n359
+11 1
+.names n606 N_N8646 n364
+11 1
+.names n606 N_N7629 n369
+11 1
+.names NDN3_9 NDN3_11 NGFDN_3 PRESET n374
+-100 1
+1-00 1
+.names NDN3_12 NDN3_11 PRESET NGFDN_3 n379
+-100 1
+1-00 1
+.names n606 N_N8037 n384
+11 1
+.names NEN3_16 NDN3_16 PRESET NGFDN_3 n389
+-100 1
+1-00 1
+.names NDN3_17 NDN3_16 PRESET NGFDN_3 n394
+-100 1
+1-00 1
+.names NEN3_19 NDN3_19 PRESET NGFDN_3 n399
+-100 1
+1-00 1
+.names NEN3_22 NDN3_22 PRESET NGFDN_3 n404_1
+-100 1
+1-00 1
+.names NDN3_25 NDN3_22 PRESET NGFDN_3 n409
+-100 1
+1-00 1
+.names NDN3_26 NDN3_25 PRESET NGFDN_3 n414
+-100 1
+1-00 1
+.names n606 N_N7584 n419
+11 1
+.names NEN3_28 NDN3_28 PRESET NGFDN_3 n424
+-100 1
+1-00 1
+.names NDN3_29 NDN3_28 PRESET NGFDN_3 n429
+-100 1
+1-00 1
+.names NDN3_39 NDN3_40 PRESET NGFDN_3 n434
+-100 1
+1-00 1
+.names NEN3_39 NDN3_39 PRESET NGFDN_3 n439
+-100 1
+1-00 1
+.names NDN3_42 NDN3_40 PRESET NGFDN_3 n444
+-100 1
+1-00 1
+.names NDN3_44 NDN3_42 PRESET NGFDN_3 n449
+-100 1
+1-00 1
+.names NDN3_46 NDN3_44 PRESET NGFDN_3 n454
+-100 1
+1-00 1
+.names n606 N_N9358 n459
+11 1
+.names n606 N_N9539 n464
+11 1
+.names n606 N_N9556 n469
+11 1
+.names n694 PRESET n474
+10 1
+.names n695 n705 N_N9011 N_N8964 N_N8913 n694
+10000 1
+11001 1
+.names n696 n700 N_N8847 N_N8631 N_N8561 n695
+01000 1
+11001 1
+.names n697 N_N9034 n696
+10 1
+.names n698_1 N_N8911 N_N8993 N_N8978 N_N9031 n697
+10000 1
+.names n699 N_N8933 n698_1
+10 1
+.names N_N8798 N_N8869 N_N8923 N_N8603 n699
+0001 1
+.names n701 n702 N_N8993 N_N9034 N_N9031 n700
+01000 1
+11100 1
+.names n698_1 N_N8911 N_N8978 n701
+100 1
+.names n703_1 n699 N_N8911 N_N8933 N_N8978 n702
+10000 1
+11010 1
+.names n704 N_N8798 N_N8869 N_N8923 N_N8603 n703_1
+10000 1
+.names N_N7306 N_N9247 N_N9248 n704
+011 1
+.names n697 N_N9034 N_N8847 N_N8631 N_N8561 n705
+10000 1
+.names NSr3_14 NEN3_16 NGFDN_3 PRESET n479
+-100 1
+0-00 1
+.names PRESET N_N9160 n664 n484
+--1 1
+01- 1
+.names NSr3_20 NEN3_19 NGFDN_3 PRESET n489
+-100 1
+0-00 1
+.names NSr3_23 NEN3_22 NGFDN_3 PRESET n494
+-100 1
+0-00 1
+.names N_N8930 n810 n711 n499
+-11 1
+1-1 1
+.names n712 PRESET n711
+10 1
+.names n807_1 n713_1 N_N9198 n712
+-11 1
+1-1 1
+.names n806 n748_1 n764 n785 n714 n713_1
+-1111 0
+1---- 0
+.names n715 n725 n733_1 n738_1 n743_1 n714
+11111 1
+.names n716 n721 n723_1 N_N8930 n715
+1110 1
+.names N_N9294 n717 n719 n720 n718_1 n716
+-0000 1
+0-000 1
+.names NDN3_29 NSr3_35 n717
+11 1
+.names N_N8685 NDN3_17 NSr3_20 n718_1
+111 1
+.names NEN3_34 N_N8118 NSr3_37 n719
+111 1
+.names NDN3_12 N_N8577 NSr3_13 n720
+111 1
+.names NEN3_36 N_N7701 NSr3_38 N_N7702 n722 n721
+---11 0
+111-- 0
+.names NDN3_26 NSr3_30 n722
+11 1
+.names N_N7704 NSr3_13 NSr3_14 N_N7703 n724 n723_1
+---11 0
+101-- 0
+.names NDN3_19 NSr3_23 n724
+11 1
+.names n726 n727 n729 n731 n725
+1111 1
+.names n717 N_N9331 N_N8803 n724 n726
+--11 0
+11-- 0
+.names NEN3_36 N_N8173 NSr3_38 n728_1 N_N7961 n727
+---11 0
+111-- 0
+.names NDN3_12 NSr3_13 n728_1
+11 1
+.names n730 N_N7768 n722 N_N7769 n729
+--11 0
+11-- 0
+.names NEN3_34 NSr3_37 n730
+11 1
+.names N_N7771 NSr3_13 NSr3_14 N_N7770 n732 n731
+---11 0
+101-- 0
+.names NDN3_17 NSr3_20 n732
+11 1
+.names n734 n735 n736 n737 n733_1
+1111 1
+.names n730 N_N8875 n717 N_N8613 n734
+--11 0
+11-- 0
+.names n722 N_N8141 N_N7983 n724 n735
+--11 0
+11-- 0
+.names NEN3_36 N_N7627 NSr3_38 N_N7628 n732 n736
+---11 0
+111-- 0
+.names NDN3_12 N_N7630 N_N7629 NSr3_14 NSr3_13 n737
+--110 0
+11--1 0
+.names n739 n740 n741 n742 n738_1
+1111 1
+.names n728_1 N_N8691 n717 N_N8968 n739
+--11 0
+11-- 0
+.names NEN3_36 N_N8016 NSr3_38 N_N8447 n732 n740
+---11 0
+111-- 0
+.names n730 N_N7582 n722 N_N7583 n741
+--11 0
+11-- 0
+.names N_N7584 NSr3_13 NSr3_14 N_N7985 n724 n742
+---11 0
+101-- 0
+.names n744 n745 n746 n747 n743_1
+1111 1
+.names n730 N_N9539 n728_1 N_N9410 n744
+--11 0
+11-- 0
+.names N_N9296 NEN3_36 NSr3_38 N_N9298 n724 n745
+---11 0
+111-- 0
+.names n717 N_N9289 n722 N_N9290 n746
+--11 0
+11-- 0
+.names N_N9292 NSr3_13 NSr3_14 N_N9291 n732 n747
+---11 0
+101-- 0
+.names n749 n754 n759 n748_1
+111 1
+.names n750 n751 n752_1 n753 n749
+1111 1
+.names n722 N_N9242 N_N9013 n724 n750
+--11 0
+11-- 0
+.names n728_1 N_N8650 n717 N_N8796 n751
+--11 0
+11-- 0
+.names N_N8646 NEN3_36 NSr3_38 N_N8647 n730 n752_1
+---11 0
+111-- 0
+.names N_N8649 NSr3_13 NSr3_14 n732 N_N8648 n753
+---11 0
+101-- 0
+.names n755 n756 n757_1 n758 n754
+1111 1
+.names n732 N_N9559 N_N9558 n724 n755
+--11 0
+11-- 0
+.names N_N9554 NEN3_36 NSr3_38 n730 N_N9555 n756
+---11 0
+111-- 0
+.names n717 N_N9556 n722 N_N9557 n757_1
+--11 0
+11-- 0
+.names N_N9560 NSr3_14 N_N9561 NDN3_12 NSr3_13 n758
+--111 0
+11--0 0
+.names n760 n761 n762_1 n763 n759
+1111 1
+.names n722 N_N8970 N_N9150 n724 n760
+--11 0
+11-- 0
+.names N_N8570 NEN3_36 NSr3_38 N_N8571 n730 n761
+---11 0
+111-- 0
+.names n717 N_N8572 N_N8573 n732 n762_1
+--11 0
+11-- 0
+.names N_N8574 NSr3_14 NDN3_12 N_N8575 NSr3_13 n763
+--111 0
+11--0 0
+.names n765 n770 n775 n780 n764
+1111 1
+.names n766 n767_1 n768 n769 n765
+1111 1
+.names n728_1 N_N8241 N_N8312 n717 n766
+--11 0
+11-- 0
+.names N_N8240 NSr3_13 NSr3_14 n732 N_N8239 n767_1
+---11 0
+101-- 0
+.names N_N8235 NEN3_36 NSr3_38 N_N8236 n730 n768
+---11 0
+111-- 0
+.names n722 N_N8237 N_N8238 n724 n769
+--11 0
+11-- 0
+.names n771 n772_1 n773 n774 n770
+1111 1
+.names n728_1 N_N9442 N_N9550 n732 n771
+--11 0
+11-- 0
+.names N_N9441 NSr3_13 NSr3_14 N_N9440 n724 n772_1
+---11 0
+101-- 0
+.names N_N9436 NEN3_36 NSr3_38 n730 N_N9437 n773
+---11 0
+111-- 0
+.names n717 N_N9438 n722 N_N9439 n774
+--11 0
+11-- 0
+.names n776 n777_1 n778 n779 n775
+1111 1
+.names N_N8508 NEN3_36 NSr3_38 N_N8348 n717 n776
+---11 0
+111-- 0
+.names n730 N_N8269 N_N8270 n722 n777_1
+--11 0
+11-- 0
+.names n732 N_N8272 n724 N_N8271 n778
+--11 0
+11-- 0
+.names N_N8273 NSr3_14 NDN3_12 N_N8274 NSr3_13 n779
+--111 0
+11--0 0
+.names n781 n782_1 n783 n784 n780
+1111 1
+.names n717 N_N9275 N_N9244 n722 n781
+--11 0
+11-- 0
+.names n728_1 N_N8615 n724 N_N8935 n782_1
+--11 0
+11-- 0
+.names N_N8528 NEN3_36 NSr3_38 N_N8529 n730 n783
+---11 0
+111-- 0
+.names N_N8531 NSr3_13 NSr3_14 n732 N_N8530 n784
+---11 0
+101-- 0
+.names n786 n791 n796 n801 n785
+1111 1
+.names n787_1 n788 n789 n790 n786
+1111 1
+.names N_N9578 NEN3_36 NSr3_38 N_N9166 n728_1 n787_1
+---11 0
+111-- 0
+.names N_N9165 NSr3_13 NSr3_14 N_N9164 n732 n788
+---11 0
+101-- 0
+.names n730 N_N9160 n717 N_N9161 n789
+--11 0
+11-- 0
+.names n722 N_N9162 n724 N_N9163 n790
+--11 0
+11-- 0
+.names n792_1 n793 n794 n795 n791
+1111 1
+.names n728_1 N_N9363 N_N9552 n732 n792_1
+--11 0
+11-- 0
+.names N_N9362 NSr3_13 NSr3_14 N_N9361 n724 n793
+---11 0
+101-- 0
+.names N_N9357 NEN3_36 NSr3_38 n730 N_N9358 n794
+---11 0
+111-- 0
+.names n717 N_N9359 n722 N_N9360 n795
+--11 0
+11-- 0
+.names n797_1 n798 n799 n800 n796
+1111 1
+.names N_N9510 NSr3_13 NSr3_14 n722 N_N8972 n797_1
+---11 0
+101-- 0
+.names NEN3_36 N_N8171 NSr3_38 N_N8756 n730 n798
+---11 0
+111-- 0
+.names n717 N_N7852 n724 N_N7853 n799
+--11 0
+11-- 0
+.names n728_1 N_N8037 N_N7854 n732 n800
+--11 0
+11-- 0
+.names n802_1 n803 n804 n805 n801
+1111 1
+.names n730 N_N8710 N_N9280 n732 n802_1
+--11 0
+11-- 0
+.names n728_1 N_N8200 N_N8366 n722 n803
+--11 0
+11-- 0
+.names N_N8196 NEN3_36 NSr3_38 N_N8197 n717 n804
+---11 0
+111-- 0
+.names N_N8199 NSr3_13 NSr3_14 n724 N_N8198 n805
+---11 0
+101-- 0
+.names N_N8930 N_N8929 n806
+10 1
+.names NSr3_14 NDN3_12 n808 NSr3_13 n809 n807_1
+-0111 1
+0-101 1
+.names n724 n732 n722 n717 n808
+0000 1
+.names NSr3_38 NEN3_36 n730 n809
+-00 1
+0-0 1
+.names n713_1 n807_1 N_N9198 n810
+101 1
+.names NSr3_30 NEN3_28 NGFDN_3 PRESET n504
+-100 1
+0-00 1
+.names n606 N_N9438 n509
+11 1
+.names NSr3_35 NEN3_34 NGFDN_3 PRESET n514
+-100 1
+0-00 1
+.names NSr3_37 NEN3_36 NGFDN_3 PRESET n519
+-100 1
+0-00 1
+.names NSr3_38 NEN3_39 NGFDN_3 PRESET n524
+-100 1
+0-00 1
+.names n606 N_N7961 n529
+11 1
+.names NSr1_2 NLC1_2 PDN PRESET n534
+-100 1
+1-00 1
+.names n606 N_N9359 n539
+11 1
+.names Preset_0_0_ NLC1_2 N_N7476 NSr1_2 PRESET n544
+--100 1
+-11-0 1
+00-10 1
+.names n606 N_N8577 n549
+11 1
+.names n606 N_N9289 n554
+11 1
+.names n606 N_N9557 n559
+11 1
+.names n606 N_N7630 n564
+11 1
+.names PRESET N_N9161 n664 n569
+--1 1
+01- 1
+.names n606 N_N8691 n574
+11 1
+.names n606 N_N9439 n579
+11 1
+.names n829 n828 N_N8798 PRESET n584_1
+-110 1
+0--0 1
+.names n704 n810 N_N9247 n712 N_N8668 n828
+---00 0
+-10-- 0
+1---- 0
+.names n832_1 n831 N_N8798 n830 n786 n829
+---00 0
+-11-- 0
+1---- 0
+.names N_N9247 n807_1 N_N8668 N_N9198 n713_1 n830
+--000 0
+-00-0 0
+00-11 0
+.names n713_1 N_N8668 N_N9198 n807_1 n831
+100- 1
+.names n704 N_N8798 N_N8603 n832_1
+101 1
+110 1
+.names n834 n828 N_N8869 PRESET n589
+-110 1
+0--0 1
+.names n835 n831 N_N8869 n830 n743_1 n834
+---00 0
+-11-- 0
+1---- 0
+.names N_N8798 N_N8923 N_N8603 n704 N_N8869 n835
+--011 1
+-1-11 1
+00110 1
+1--11 1
+.names n606 N_N9360 n594
+11 1
+.names n838 n828 N_N8911 PRESET n599
+-110 1
+0--0 1
+.names n839 n831 N_N8911 n830 n791 n838
+---00 0
+-11-- 0
+1---- 0
+.names n698_1 n704 N_N8911 n839
+011 1
+110 1
+.names n606 N_N9290 n604
+11 1
+.names n606 N_N9558 n609
+11 1
+.names n843 n828 N_N8993 PRESET n614
+-110 1
+0--0 1
+.names n844 n831 N_N8993 n770 n830 n843
+---00 0
+-11-- 0
+1---- 0
+.names n701 n704 N_N8993 n844
+011 1
+110 1
+.names PRESET N_N9162 n664 n619
+--1 1
+01- 1
+.names n847_1 n828 N_N9034 PRESET n624
+-110 1
+0--0 1
+.names n848 n831 N_N9034 n754 n830 n847_1
+---00 0
+-11-- 0
+1---- 0
+.names n697 n704 N_N9034 n848
+011 1
+110 1
+.names n606 N_N9440 n629
+11 1
+.names n606 N_N9361 n634
+11 1
+.names n606 N_N9298 n639
+11 1
+.names n606 N_N9559 n644
+11 1
+.names PRESET N_N9163 n664 n649
+--1 1
+01- 1
+.names n606 N_N9550 n654
+11 1
+.names PRESET PDN NSr1_2 n659
+000 1
+.names n606 N_N8171 n663
+11 1
+.names n606 N_N8173 n668
+11 1
+.names n859 n828 N_N9011 PRESET n673
+-110 1
+0--0 1
+.names n860 n831 N_N9011 n749 n830 n859
+---00 0
+-11-- 0
+1---- 0
+.names n861 N_N8964 N_N9011 n704 n860
+-111 1
+0-11 1
+1001 1
+.names n705 N_N8913 n861
+10 1
+.names n606 N_N9552 n678
+11 1
+.names n606 N_N7701 n683
+11 1
+.names n865 n828 N_N8964 PRESET n688
+-110 1
+0--0 1
+.names n866 n831 N_N8964 n759 n830 n865
+---00 0
+-11-- 0
+1---- 0
+.names n861 n704 N_N8964 n866
+011 1
+110 1
+.names n606 N_N9291 n693
+11 1
+.names n606 N_N9560 n698
+11 1
+.names n606 N_N7627 n703
+11 1
+.names n871 n828 N_N8913 PRESET n708
+-110 1
+0--0 1
+.names n872_1 n831 N_N8913 n780 n830 n871
+---00 0
+-11-- 0
+1---- 0
+.names n705 n704 N_N8913 n872_1
+011 1
+110 1
+.names n606 N_N8756 n713
+11 1
+.names PRESET N_N9164 n664 n718
+--1 1
+01- 1
+.names n606 N_N8016 n723
+11 1
+.names n606 N_N9441 n728
+11 1
+.names n878 n828 N_N8847 PRESET n733
+-110 1
+0--0 1
+.names n879 n831 N_N8847 n775 n830 n878
+---00 0
+-11-- 0
+1---- 0
+.names n696 N_N8631 N_N8561 n704 N_N8847 n879
+--111 1
+-1-11 1
+0--11 1
+10010 1
+.names n881 n828 N_N8631 PRESET n738
+-110 1
+0--0 1
+.names n882_1 n831 N_N8631 n765 n830 n881
+---00 0
+-11-- 0
+1---- 0
+.names n696 N_N8561 N_N8631 n704 n882_1
+-111 1
+0-11 1
+1001 1
+.names n606 N_N9362 n743
+11 1
+.names NSr1_2 NDN1_4 Pover_0_0_ PDN PRESET n748
+--100 1
+-11-0 1
+0--00 1
+.names PRESET PDN NDN1_4 n752
+001 1
+.names n887_1 n828 N_N8561 PRESET n757
+-110 1
+0--0 1
+.names n888 n831 N_N8561 n801 n830 n887_1
+---00 0
+-11-- 0
+1---- 0
+.names n696 n704 N_N8561 n888
+011 1
+110 1
+.names n606 N_N9292 n762
+11 1
+.names n606 N_N9561 n767
+11 1
+.names PRESET NDN3_46 NGFDN_3 n772
+010 1
+.names PRESET N_N9165 n664 n777
+--1 1
+01- 1
+.names n606 N_N9442 n782
+11 1
+.names n606 N_N7768 n787
+11 1
+.names n606 N_N8118 n792
+11 1
+.names NSr1_2 NLC1_2 Preset_0_0_ NDN2_2 PRESET n797
+--010 1
+-1-10 1
+0--10 1
+.names n606 N_N8875 n802
+11 1
+.names n606 N_N7852 n807
+11 1
+.names n606 N_N7582 n812
+11 1
+.names n606 N_N9331 n817
+11 1
+.names n606 N_N9363 n822
+11 1
+.names n606 N_N9294 n827
+11 1
+.names n904 PRESET NGFDN_3 n832
+000 1
+.names NSr1_2 N_N7476 Preset_0_0_ NLC1_2 NDN3_2 n904
+--100 1
+-0-10 1
+0---0 1
+.names NDN3_4 NDN3_2 PRESET NGFDN_3 n837
+-100 1
+1-00 1
+.names NDN3_7 NDN3_4 PRESET NGFDN_3 n842
+-100 1
+1-00 1
+.names NDN3_9 NDN3_7 PRESET NGFDN_3 n847
+-100 1
+1-00 1
+.names n606 N_N9410 n852
+11 1
+.names n606 N_N8613 n857
+11 1
+.names n606 N_N8972 n862
+11 1
+.names n810 n694 PRESET N_N9247 N_N9248 n867
+-0011 1
+1-001 1
+.names PRESET N_N9166 n664 n872
+--1 1
+01- 1
+.names n606 N_N8968 n877
+11 1
+.names n712 PRESET n882
+00 1
+.names n711 N_N8668 n887
+11 1
+.names n918 n917_1 n828 N_N8923 PRESET n892
+--110 1
+-1--0 1
+0---0 1
+.names n830 n733_1 n917_1
+00 1
+.names n831 N_N8798 N_N8603 n704 N_N8923 n918
+--011 0
+-0110 0
+-1-11 0
+1---1 0
+.names n606 N_N7769 n897
+11 1
+.names n921 n828 N_N8933 PRESET n902
+-110 1
+0--0 1
+.names n923 n831 N_N8933 n830 n922_1 n921
+---00 0
+-11-- 0
+1---- 0
+.names n716 n721 n723_1 n922_1
+111 1
+.names n699 n704 N_N8933 n923
+011 1
+110 1
+.names n606 N_N7702 n907
+11 1
+.names n927_1 n926 n828 N_N8978 PRESET n912
+--110 1
+-1--0 1
+0---0 1
+.names n830 n725 n926
+00 1
+.names n831 n698_1 N_N8911 n704 N_N8978 n927_1
+--111 0
+-0-11 0
+-1010 0
+1---1 0
+.names n606 N_N8141 n917
+11 1
+.names n606 N_N8200 n922
+11 1
+.names N_N8929 n810 PRESET n927
+-10 1
+1-0 1
+.names n606 N_N7853 n932
+11 1
+.names n933 n828 N_N9031 PRESET n937
+-110 1
+0--0 1
+.names n934 n831 N_N9031 n796 n830 n933
+---00 0
+-11-- 0
+1---- 0
+.names n701 N_N8993 n704 N_N9031 n934
+-111 1
+0-11 1
+1010 1
+.names n606 N_N8241 n942_1
+11 1
+.names n606 N_N7583 n947
+11 1
+.names NSr3_13 NAK3_13 NDN3_12 PRESET PDN n952
+-1100 0
+0--00 0
+.names n711 n939 n957_1
+10 0
+.names n694 N_N9248 n939
+01 1
+.names NSr3_14 NSr3_13 NAK3_13 PDN PRESET n962_1
+-0100 0
+0--00 0
+.names NSr3_20 NAK3_13 NDN3_17 PRESET PDN n967
+-1100 0
+0--00 0
+.names n711 n939 n807_1 n972
+100 0
+.names NSr3_23 NAK3_13 NDN3_19 PRESET PDN n977
+-1100 0
+0--00 0
+.names NSr3_30 NAK3_13 NDN3_26 PRESET PDN n982
+-1100 0
+0--00 0
+.names NSr3_35 NAK3_13 NDN3_29 PRESET PDN n987
+-1100 0
+0--00 0
+.names NSr3_37 NAK3_13 NEN3_34 PRESET PDN n992
+-1100 0
+0--00 0
+.names NSr3_38 NAK3_13 NEN3_36 PRESET PDN n997
+-1100 0
+0--00 0
+.names n949 PRESET PDN n1002
+000 0
+.names NLC1_2 Preset_0_0_ NGFDN_3 NSr1_2 n949
+-001 1
+1-01 1
+.names N_N8603 PRESET n952_1 n951 n828 n1007
+--000 1
+-1--- 1
+1---1 1
+.names n704 n831 N_N8603 n951
+-10 1
+1-1 1
+.names n830 n738_1 n952_1
+00 1
+.end

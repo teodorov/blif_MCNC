@@ -1,0 +1,5706 @@
+# Benchmark "dsip.sim" written by ABC on Thu May 21 18:20:24 2015
+.model dsip.sim
+.inputs key<254> key<253> key<252> key<251> key<250> key<249> key<248> \
+ key<246> key<245> key<244> key<243> key<242> key<241> key<240> key<238> \
+ key<237> key<235> key<234> key<233> key<232> key<230> key<229> key<228> \
+ key<227> key<226> key<225> key<224> key<222> key<221> key<220> key<219> \
+ key<218> key<217> key<216> key<214> key<213> key<212> key<211> key<210> \
+ key<209> key<208> key<206> key<205> key<204> key<203> key<202> key<201> \
+ key<200> key<198> key<197> key<196> key<195> key<194> key<193> key<192> \
+ key<190> key<189> key<188> key<187> key<186> key<185> key<184> key<182> \
+ key<181> key<180> key<179> key<178> key<177> key<176> key<174> key<173> \
+ key<172> key<171> key<170> key<169> key<168> key<166> key<165> key<164> \
+ key<163> key<162> key<161> key<160> key<158> key<157> key<156> key<155> \
+ key<154> key<153> key<152> key<150> key<149> key<148> key<147> key<146> \
+ key<145> key<144> key<142> key<141> key<140> key<139> key<138> key<137> \
+ key<136> key<134> key<133> key<132> key<131> key<130> key<129> key<128> \
+ key<126> key<125> key<124> key<123> key<122> key<121> key<120> key<118> \
+ key<117> key<116> key<115> key<114> key<113> key<112> key<110> key<109> \
+ key<107> key<106> key<105> key<104> key<102> key<101> key<100> key<99> \
+ key<98> key<97> key<96> key<94> key<93> key<92> key<91> key<90> key<89> \
+ key<88> key<86> key<85> key<84> key<83> key<82> key<81> key<80> key<78> \
+ key<77> key<76> key<75> key<74> key<73> key<72> key<70> key<69> key<68> \
+ key<67> key<66> key<65> key<64> key<62> key<61> key<60> key<59> key<58> \
+ key<57> key<56> key<54> key<53> key<52> key<51> key<50> key<49> key<48> \
+ key<46> key<45> key<44> key<43> key<42> key<41> key<40> key<38> key<37> \
+ key<36> key<35> key<34> key<33> key<32> key<30> key<29> key<28> key<27> \
+ key<26> key<25> key<24> key<22> key<21> key<20> key<19> key<18> key<17> \
+ key<16> key<14> key<13> key<12> key<11> key<10> key<9> key<8> key<6> \
+ key<5> key<4> key<3> key<2> key<1> key<0> count<3> count<2> count<1> \
+ count<0> encrypt<0> start<0>
+.outputs KSi<191> KSi<190> KSi<189> KSi<188> KSi<187> KSi<186> KSi<185> \
+ KSi<184> KSi<183> KSi<182> KSi<181> KSi<180> KSi<179> KSi<178> KSi<177> \
+ KSi<176> KSi<175> KSi<174> KSi<173> KSi<172> KSi<171> KSi<170> KSi<169> \
+ KSi<168> KSi<167> KSi<166> KSi<165> KSi<164> KSi<163> KSi<162> KSi<161> \
+ KSi<160> KSi<159> KSi<158> KSi<157> KSi<156> KSi<155> KSi<154> KSi<153> \
+ KSi<152> KSi<151> KSi<150> KSi<149> KSi<148> KSi<147> KSi<146> KSi<145> \
+ KSi<144> KSi<143> KSi<142> KSi<141> KSi<140> KSi<139> KSi<138> KSi<137> \
+ KSi<136> KSi<135> KSi<134> KSi<133> KSi<132> KSi<131> KSi<130> KSi<129> \
+ KSi<128> KSi<127> KSi<126> KSi<125> KSi<124> KSi<123> KSi<122> KSi<121> \
+ KSi<120> KSi<119> KSi<118> KSi<117> KSi<116> KSi<115> KSi<114> KSi<113> \
+ KSi<112> KSi<111> KSi<110> KSi<109> KSi<108> KSi<107> KSi<106> KSi<105> \
+ KSi<104> KSi<103> KSi<102> KSi<101> KSi<100> KSi<99> KSi<98> KSi<97> \
+ KSi<96> KSi<95> KSi<94> KSi<93> KSi<92> KSi<91> KSi<90> KSi<89> KSi<88> \
+ KSi<87> KSi<86> KSi<85> KSi<84> KSi<83> KSi<82> KSi<81> KSi<80> KSi<79> \
+ KSi<78> KSi<77> KSi<76> KSi<75> KSi<74> KSi<73> KSi<72> KSi<71> KSi<70> \
+ KSi<69> KSi<68> KSi<67> KSi<66> KSi<65> KSi<64> KSi<63> KSi<62> KSi<61> \
+ KSi<60> KSi<59> KSi<58> KSi<57> KSi<56> KSi<55> KSi<54> KSi<53> KSi<52> \
+ KSi<51> KSi<50> KSi<49> KSi<48> KSi<47> KSi<46> KSi<45> KSi<44> KSi<43> \
+ KSi<42> KSi<41> KSi<40> KSi<39> KSi<38> KSi<37> KSi<36> KSi<35> KSi<34> \
+ KSi<33> KSi<32> KSi<31> KSi<30> KSi<29> KSi<28> KSi<27> KSi<26> KSi<25> \
+ KSi<24> KSi<23> KSi<22> KSi<21> KSi<20> KSi<19> KSi<18> KSi<17> KSi<16> \
+ KSi<15> KSi<14> KSi<13> KSi<12> KSi<11> KSi<10> KSi<9> KSi<8> KSi<7> \
+ KSi<6> KSi<5> KSi<4> KSi<3> KSi<2> KSi<1> KSi<0> new_count<3> new_count<2> \
+ new_count<1> new_count<0> data_ready<0>
+
+.latch       n852     C<111>  0
+.latch       n857     C<110>  0
+.latch       n862     C<109>  0
+.latch       n867     C<108>  0
+.latch       n872     C<107>  0
+.latch       n877     C<106>  0
+.latch       n882     C<105>  0
+.latch       n887     C<104>  0
+.latch       n892     C<103>  0
+.latch       n897     C<102>  0
+.latch       n902     C<101>  0
+.latch       n907     C<100>  0
+.latch       n912      C<99>  0
+.latch       n917      C<98>  0
+.latch       n922      C<97>  0
+.latch       n927      C<96>  0
+.latch       n932      C<95>  0
+.latch       n937      C<94>  0
+.latch       n942      C<93>  0
+.latch       n947      C<92>  0
+.latch       n952      C<91>  0
+.latch       n957      C<90>  0
+.latch       n962      C<89>  0
+.latch       n967      C<88>  0
+.latch       n972      C<87>  0
+.latch       n977      C<86>  0
+.latch       n982      C<85>  0
+.latch       n987      C<84>  0
+.latch       n992      C<83>  0
+.latch       n997      C<82>  0
+.latch      n1002      C<81>  0
+.latch      n1007      C<80>  0
+.latch      n1012      C<79>  0
+.latch      n1017      C<78>  0
+.latch      n1022      C<77>  0
+.latch      n1027      C<76>  0
+.latch      n1032      C<75>  0
+.latch      n1037      C<74>  0
+.latch      n1042      C<73>  0
+.latch      n1047      C<72>  0
+.latch      n1052      C<71>  0
+.latch      n1057      C<70>  0
+.latch      n1062      C<69>  0
+.latch      n1067      C<68>  0
+.latch      n1072      C<67>  0
+.latch      n1077      C<66>  0
+.latch      n1082      C<65>  0
+.latch      n1087      C<64>  0
+.latch      n1092      C<63>  0
+.latch      n1097      C<62>  0
+.latch      n1102      C<61>  0
+.latch      n1107      C<60>  0
+.latch      n1112      C<59>  0
+.latch      n1117      C<58>  0
+.latch      n1122      C<57>  0
+.latch      n1127      C<56>  0
+.latch      n1132      C<55>  0
+.latch      n1137      C<54>  0
+.latch      n1142      C<53>  0
+.latch      n1147      C<52>  0
+.latch      n1152      C<51>  0
+.latch      n1157      C<50>  0
+.latch      n1162      C<49>  0
+.latch      n1167      C<48>  0
+.latch      n1172      C<47>  0
+.latch      n1177      C<46>  0
+.latch      n1182      C<45>  0
+.latch      n1187      C<44>  0
+.latch      n1192      C<43>  0
+.latch      n1197      C<42>  0
+.latch      n1202      C<41>  0
+.latch      n1207      C<40>  0
+.latch      n1212      C<39>  0
+.latch      n1217      C<38>  0
+.latch      n1222      C<37>  0
+.latch      n1227      C<36>  0
+.latch      n1232      C<35>  0
+.latch      n1237      C<34>  0
+.latch      n1242      C<33>  0
+.latch      n1247      C<32>  0
+.latch      n1252      C<31>  0
+.latch      n1257      C<30>  0
+.latch      n1262      C<29>  0
+.latch      n1267      C<28>  0
+.latch      n1272      C<27>  0
+.latch      n1277      C<26>  0
+.latch      n1282      C<25>  0
+.latch      n1287      C<24>  0
+.latch      n1292      C<23>  0
+.latch      n1297      C<22>  0
+.latch      n1302      C<21>  0
+.latch      n1307      C<20>  0
+.latch      n1312      C<19>  0
+.latch      n1317      C<18>  0
+.latch      n1322      C<17>  0
+.latch      n1327      C<16>  0
+.latch      n1332      C<15>  0
+.latch      n1337      C<14>  0
+.latch      n1342      C<13>  0
+.latch      n1347      C<12>  0
+.latch      n1352      C<11>  0
+.latch      n1357      C<10>  0
+.latch      n1362       C<9>  0
+.latch      n1367       C<8>  0
+.latch      n1372       C<7>  0
+.latch      n1377       C<6>  0
+.latch      n1382       C<5>  0
+.latch      n1387       C<4>  0
+.latch      n1392       C<3>  0
+.latch      n1397       C<2>  0
+.latch      n1402       C<1>  0
+.latch      n1407       C<0>  0
+.latch      n1412     D<111>  0
+.latch      n1417     D<110>  0
+.latch      n1422     D<109>  0
+.latch      n1427     D<108>  0
+.latch      n1432     D<107>  0
+.latch      n1437     D<106>  0
+.latch      n1442     D<105>  0
+.latch      n1447     D<104>  0
+.latch      n1452     D<103>  0
+.latch      n1457     D<102>  0
+.latch      n1462     D<101>  0
+.latch      n1467     D<100>  0
+.latch      n1472      D<99>  0
+.latch      n1477      D<98>  0
+.latch      n1482      D<97>  0
+.latch      n1487      D<96>  0
+.latch      n1492      D<95>  0
+.latch      n1497      D<94>  0
+.latch      n1502      D<93>  0
+.latch      n1507      D<92>  0
+.latch      n1512      D<91>  0
+.latch      n1517      D<90>  0
+.latch      n1522      D<89>  0
+.latch      n1527      D<88>  0
+.latch      n1532      D<87>  0
+.latch      n1537      D<86>  0
+.latch      n1542      D<85>  0
+.latch      n1547      D<84>  0
+.latch      n1552      D<83>  0
+.latch      n1557      D<82>  0
+.latch      n1562      D<81>  0
+.latch      n1567      D<80>  0
+.latch      n1572      D<79>  0
+.latch      n1577      D<78>  0
+.latch      n1582      D<77>  0
+.latch      n1587      D<76>  0
+.latch      n1592      D<75>  0
+.latch      n1597      D<74>  0
+.latch      n1602      D<73>  0
+.latch      n1607      D<72>  0
+.latch      n1612      D<71>  0
+.latch      n1617      D<70>  0
+.latch      n1622      D<69>  0
+.latch      n1627      D<68>  0
+.latch      n1632      D<67>  0
+.latch      n1637      D<66>  0
+.latch      n1642      D<65>  0
+.latch      n1647      D<64>  0
+.latch      n1652      D<63>  0
+.latch      n1657      D<62>  0
+.latch      n1662      D<61>  0
+.latch      n1667      D<60>  0
+.latch      n1672      D<59>  0
+.latch      n1677      D<58>  0
+.latch      n1682      D<57>  0
+.latch      n1687      D<56>  0
+.latch      n1692      D<55>  0
+.latch      n1697      D<54>  0
+.latch      n1702      D<53>  0
+.latch      n1707      D<52>  0
+.latch      n1712      D<51>  0
+.latch      n1717      D<50>  0
+.latch      n1722      D<49>  0
+.latch      n1727      D<48>  0
+.latch      n1732      D<47>  0
+.latch      n1737      D<46>  0
+.latch      n1742      D<45>  0
+.latch      n1747      D<44>  0
+.latch      n1752      D<43>  0
+.latch      n1757      D<42>  0
+.latch      n1762      D<41>  0
+.latch      n1767      D<40>  0
+.latch      n1772      D<39>  0
+.latch      n1777      D<38>  0
+.latch      n1782      D<37>  0
+.latch      n1787      D<36>  0
+.latch      n1792      D<35>  0
+.latch      n1797      D<34>  0
+.latch      n1802      D<33>  0
+.latch      n1807      D<32>  0
+.latch      n1812      D<31>  0
+.latch      n1817      D<30>  0
+.latch      n1822      D<29>  0
+.latch      n1827      D<28>  0
+.latch      n1832      D<27>  0
+.latch      n1837      D<26>  0
+.latch      n1842      D<25>  0
+.latch      n1847      D<24>  0
+.latch      n1852      D<23>  0
+.latch      n1857      D<22>  0
+.latch      n1862      D<21>  0
+.latch      n1867      D<20>  0
+.latch      n1872      D<19>  0
+.latch      n1877      D<18>  0
+.latch      n1882      D<17>  0
+.latch      n1887      D<16>  0
+.latch      n1892      D<15>  0
+.latch      n1897      D<14>  0
+.latch      n1902      D<13>  0
+.latch      n1907      D<12>  0
+.latch      n1912      D<11>  0
+.latch      n1917      D<10>  0
+.latch      n1922       D<9>  0
+.latch      n1927       D<8>  0
+.latch      n1932       D<7>  0
+.latch      n1937       D<6>  0
+.latch      n1942       D<5>  0
+.latch      n1947       D<4>  0
+.latch      n1952       D<3>  0
+.latch      n1957       D<2>  0
+.latch      n1962       D<1>  0
+.latch      n1967       D<0>  0
+
+.names n1100 n1111 new_count<3>
+01 0
+.names n1101 count<3> n1100
+01 1
+.names n1102_1 n1108 n1101
+11 1
+.names n1103 n1105 n1102_1
+00 1
+.names n1104 encrypt<0> n1103
+00 1
+.names count<1> count<0> n1104
+00 1
+.names n1106 n1107_1 n1105
+01 1
+.names count<1> count<0> n1106
+11 1
+.names encrypt<0> start<0> n1107_1
+10 1
+.names n1109 n1110 n1108
+00 1
+.names n1107_1 count<2> n1109
+10 1
+.names count<2> encrypt<0> n1110
+10 1
+.names n1112_1 n1117_1 n1111
+10 1
+.names n1113 n1116 n1112_1
+00 1
+.names n1114 n1107_1 n1113
+11 1
+.names n1106 n1115 n1114
+11 1
+.names count<3> count<2> n1115
+01 1
+.names encrypt<0> start<0> n1116
+01 1
+.names n1118 n1119 n1117_1
+11 1
+.names n1104 count<2> n1118
+10 1
+.names count<3> encrypt<0> n1119
+00 1
+.names n1121 n1125 new_count<2>
+10 0
+.names n1122_1 n1124 n1121
+10 1
+.names n1123 n1116 n1122_1
+00 1
+.names n1118 encrypt<0> n1123
+10 1
+.names n1109 n1106 n1124
+11 1
+.names n1102_1 count<2> n1125
+01 1
+.names n1127_1 n1132_1 new_count<1>
+00 1
+.names n1128 start<0> n1127_1
+10 1
+.names n1129 n1131 n1128
+00 1
+.names n1130 encrypt<0> n1129
+00 1
+.names count<1> count<0> n1130
+01 1
+10 1
+.names n1107_1 n1130 n1131
+11 1
+.names n1128 new_count<0> n1132_1
+10 1
+.names n1116 n1134 new_count<0>
+00 0
+.names count<0> start<0> n1134
+00 1
+.names n1136 n1151 data_ready<0>
+00 0
+.names n1137_1 n1150 n1136
+01 1
+.names n1138 n1118 n1137_1
+00 1
+.names n1139 n1149 n1138
+00 1
+.names n1140 n1147_1 n1139
+00 1
+.names n1141 count<2> n1140
+11 1
+.names n1142_1 n1143 n1141
+01 1
+.names n1118 count<3> n1142_1
+10 1
+.names n1114 n1144 n1143
+00 1
+.names n1145 n1146 n1144
+11 1
+.names count<3> count<2> n1145
+11 1
+.names count<1> count<0> n1146
+10 1
+.names n1148 count<1> n1147_1
+10 1
+.names count<3> count<2> n1148
+00 1
+.names n1147_1 n1106 n1149
+00 1
+.names n1106 n1107_1 n1150
+11 1
+.names n1141 n1152_1 n1151
+01 1
+.names n1104 n1153 n1152_1
+11 1
+.names encrypt<0> start<0> n1153
+00 1
+.names n1155 n1168 n852
+10 0
+.names n1156 n1158 n1155
+01 1
+.names n1157_1 C<110> n1156
+11 1
+.names n1137_1 n1153 n1157_1
+01 1
+.names n1159 n1166 n1158
+10 1
+.names n1160 n1162_1 n1159
+01 1
+.names n1161 C<0> n1160
+11 1
+.names n1141 n1107_1 n1161
+01 1
+.names n1163 n1165 n1162_1
+00 1
+.names n1164 key<56> n1163
+11 1
+.names encrypt<0> start<0> n1164
+11 1
+.names n1116 key<227> n1165
+11 1
+.names n1167_1 C<1> n1166
+11 1
+.names n1141 n1107_1 n1167_1
+11 1
+.names n1169 C<109> n1168
+11 1
+.names n1137_1 n1153 n1169
+11 1
+.names n1171 n1180 n857
+10 0
+.names n1172_1 n1173 n1171
+01 1
+.names n1157_1 C<109> n1172_1
+11 1
+.names n1174 n1179 n1173
+10 1
+.names n1175 n1176 n1174
+01 1
+.names n1161 C<111> n1175
+11 1
+.names n1177_1 n1178 n1176
+00 1
+.names n1164 key<227> n1177_1
+11 1
+.names n1116 key<235> n1178
+11 1
+.names n1167_1 C<0> n1179
+11 1
+.names n1169 C<108> n1180
+11 1
+.names n1182_1 n1191 n862
+10 0
+.names n1183 n1184 n1182_1
+01 1
+.names n1157_1 C<108> n1183
+11 1
+.names n1185 n1190 n1184
+10 1
+.names n1186 n1187_1 n1185
+01 1
+.names n1161 C<110> n1186
+11 1
+.names n1188 n1189 n1187_1
+00 1
+.names n1164 key<235> n1188
+11 1
+.names n1116 key<243> n1189
+11 1
+.names n1167_1 C<111> n1190
+11 1
+.names n1169 C<107> n1191
+11 1
+.names n1193 n1202_1 n867
+10 0
+.names n1194 n1195 n1193
+01 1
+.names n1157_1 C<107> n1194
+11 1
+.names n1196 n1201 n1195
+10 1
+.names n1197_1 n1198 n1196
+01 1
+.names n1161 C<109> n1197_1
+11 1
+.names n1199 n1200 n1198
+00 1
+.names n1164 key<243> n1199
+11 1
+.names n1116 key<251> n1200
+11 1
+.names n1167_1 C<110> n1201
+11 1
+.names n1169 C<106> n1202_1
+11 1
+.names n1204 n1213 n872
+10 0
+.names n1205 n1206 n1204
+01 1
+.names n1157_1 C<106> n1205
+11 1
+.names n1207_1 n1212_1 n1206
+10 1
+.names n1208 n1209 n1207_1
+01 1
+.names n1161 C<108> n1208
+11 1
+.names n1210 n1211 n1209
+00 1
+.names n1164 key<251> n1210
+11 1
+.names n1116 key<194> n1211
+11 1
+.names n1167_1 C<109> n1212_1
+11 1
+.names n1169 C<105> n1213
+11 1
+.names n1215 n1224 n877
+10 0
+.names n1216 n1217_1 n1215
+01 1
+.names n1157_1 C<105> n1216
+11 1
+.names n1218 n1223 n1217_1
+10 1
+.names n1219 n1220 n1218
+01 1
+.names n1161 C<107> n1219
+11 1
+.names n1221 n1222_1 n1220
+00 1
+.names n1164 key<194> n1221
+11 1
+.names n1116 key<202> n1222_1
+11 1
+.names n1167_1 C<108> n1223
+11 1
+.names n1169 C<104> n1224
+11 1
+.names n1226 n1235 n882
+10 0
+.names n1227_1 n1228 n1226
+01 1
+.names n1157_1 C<104> n1227_1
+11 1
+.names n1229 n1234 n1228
+10 1
+.names n1230 n1231 n1229
+01 1
+.names n1161 C<106> n1230
+11 1
+.names n1232_1 n1233 n1231
+00 1
+.names n1164 key<202> n1232_1
+11 1
+.names n1116 key<210> n1233
+11 1
+.names n1167_1 C<107> n1234
+11 1
+.names n1169 C<103> n1235
+11 1
+.names n1237_1 n1246 n887
+10 0
+.names n1238 n1239 n1237_1
+01 1
+.names n1157_1 C<103> n1238
+11 1
+.names n1240 n1245 n1239
+10 1
+.names n1241 n1242_1 n1240
+01 1
+.names n1161 C<105> n1241
+11 1
+.names n1243 n1244 n1242_1
+00 1
+.names n1164 key<210> n1243
+11 1
+.names n1116 key<218> n1244
+11 1
+.names n1167_1 C<106> n1245
+11 1
+.names n1169 C<102> n1246
+11 1
+.names n1248 n1257_1 n892
+10 0
+.names n1249 n1250 n1248
+01 1
+.names n1157_1 C<102> n1249
+11 1
+.names n1251 n1256 n1250
+10 1
+.names n1252_1 n1253 n1251
+01 1
+.names n1161 C<104> n1252_1
+11 1
+.names n1254 n1255 n1253
+00 1
+.names n1164 key<218> n1254
+11 1
+.names n1116 key<226> n1255
+11 1
+.names n1167_1 C<105> n1256
+11 1
+.names n1169 C<101> n1257_1
+11 1
+.names n1259 n1268 n897
+10 0
+.names n1260 n1261 n1259
+01 1
+.names n1157_1 C<101> n1260
+11 1
+.names n1262_1 n1267_1 n1261
+10 1
+.names n1263 n1264 n1262_1
+01 1
+.names n1161 C<103> n1263
+11 1
+.names n1265 n1266 n1264
+00 1
+.names n1164 key<226> n1265
+11 1
+.names n1116 key<234> n1266
+11 1
+.names n1167_1 C<104> n1267_1
+11 1
+.names n1169 C<100> n1268
+11 1
+.names n1270 n1279 n902
+10 0
+.names n1271 n1272_1 n1270
+01 1
+.names n1157_1 C<100> n1271
+11 1
+.names n1273 n1278 n1272_1
+10 1
+.names n1274 n1275 n1273
+01 1
+.names n1161 C<102> n1274
+11 1
+.names n1276 n1277_1 n1275
+00 1
+.names n1164 key<234> n1276
+11 1
+.names n1116 key<242> n1277_1
+11 1
+.names n1167_1 C<103> n1278
+11 1
+.names n1169 C<99> n1279
+11 1
+.names n1281 n1290 n907
+10 0
+.names n1282_1 n1283 n1281
+01 1
+.names n1157_1 C<99> n1282_1
+11 1
+.names n1284 n1289 n1283
+10 1
+.names n1285 n1286 n1284
+01 1
+.names n1161 C<101> n1285
+11 1
+.names n1287_1 n1288 n1286
+00 1
+.names n1164 key<242> n1287_1
+11 1
+.names n1116 key<250> n1288
+11 1
+.names n1167_1 C<102> n1289
+11 1
+.names n1169 C<98> n1290
+11 1
+.names n1292_1 n1301 n912
+10 0
+.names n1293 n1294 n1292_1
+01 1
+.names n1157_1 C<98> n1293
+11 1
+.names n1295 n1300 n1294
+10 1
+.names n1296 n1297_1 n1295
+01 1
+.names n1161 C<100> n1296
+11 1
+.names n1298 n1299 n1297_1
+00 1
+.names n1164 key<250> n1298
+11 1
+.names n1116 key<193> n1299
+11 1
+.names n1167_1 C<101> n1300
+11 1
+.names n1169 C<97> n1301
+11 1
+.names n1303 n1312_1 n917
+10 0
+.names n1304 n1305 n1303
+01 1
+.names n1157_1 C<97> n1304
+11 1
+.names n1306 n1311 n1305
+10 1
+.names n1307_1 n1308 n1306
+01 1
+.names n1161 C<99> n1307_1
+11 1
+.names n1309 n1310 n1308
+00 1
+.names n1164 key<193> n1309
+11 1
+.names n1116 key<201> n1310
+11 1
+.names n1167_1 C<100> n1311
+11 1
+.names n1169 C<96> n1312_1
+11 1
+.names n1314 n1323 n922
+10 0
+.names n1315 n1316 n1314
+01 1
+.names n1157_1 C<96> n1315
+11 1
+.names n1317_1 n1322_1 n1316
+10 1
+.names n1318 n1319 n1317_1
+01 1
+.names n1161 C<98> n1318
+11 1
+.names n1320 n1321 n1319
+00 1
+.names n1164 key<201> n1320
+11 1
+.names n1116 key<209> n1321
+11 1
+.names n1167_1 C<99> n1322_1
+11 1
+.names n1169 C<95> n1323
+11 1
+.names n1325 n1334 n927
+10 0
+.names n1326 n1327_1 n1325
+01 1
+.names n1157_1 C<95> n1326
+11 1
+.names n1328 n1333 n1327_1
+10 1
+.names n1329 n1330 n1328
+01 1
+.names n1161 C<97> n1329
+11 1
+.names n1331 n1332_1 n1330
+00 1
+.names n1164 key<209> n1331
+11 1
+.names n1116 key<217> n1332_1
+11 1
+.names n1167_1 C<98> n1333
+11 1
+.names n1169 C<94> n1334
+11 1
+.names n1336 n1345 n932
+10 0
+.names n1337_1 n1338 n1336
+01 1
+.names n1157_1 C<94> n1337_1
+11 1
+.names n1339 n1344 n1338
+10 1
+.names n1340 n1341 n1339
+01 1
+.names n1161 C<96> n1340
+11 1
+.names n1342_1 n1343 n1341
+00 1
+.names n1164 key<217> n1342_1
+11 1
+.names n1116 key<225> n1343
+11 1
+.names n1167_1 C<97> n1344
+11 1
+.names n1169 C<93> n1345
+11 1
+.names n1347_1 n1356 n937
+10 0
+.names n1348 n1349 n1347_1
+01 1
+.names n1157_1 C<93> n1348
+11 1
+.names n1350 n1355 n1349
+10 1
+.names n1351 n1352_1 n1350
+01 1
+.names n1161 C<95> n1351
+11 1
+.names n1353 n1354 n1352_1
+00 1
+.names n1164 key<225> n1353
+11 1
+.names n1116 key<233> n1354
+11 1
+.names n1167_1 C<96> n1355
+11 1
+.names n1169 C<92> n1356
+11 1
+.names n1358 n1367_1 n942
+10 0
+.names n1359 n1360 n1358
+01 1
+.names n1157_1 C<92> n1359
+11 1
+.names n1361 n1366 n1360
+10 1
+.names n1362_1 n1363 n1361
+01 1
+.names n1161 C<94> n1362_1
+11 1
+.names n1364 n1365 n1363
+00 1
+.names n1164 key<233> n1364
+11 1
+.names n1116 key<241> n1365
+11 1
+.names n1167_1 C<95> n1366
+11 1
+.names n1169 C<91> n1367_1
+11 1
+.names n1369 n1378 n947
+10 0
+.names n1370 n1371 n1369
+01 1
+.names n1157_1 C<91> n1370
+11 1
+.names n1372_1 n1377_1 n1371
+10 1
+.names n1373 n1374 n1372_1
+01 1
+.names n1161 C<93> n1373
+11 1
+.names n1375 n1376 n1374
+00 1
+.names n1164 key<241> n1375
+11 1
+.names n1116 key<249> n1376
+11 1
+.names n1167_1 C<94> n1377_1
+11 1
+.names n1169 C<90> n1378
+11 1
+.names n1380 n1389 n952
+10 0
+.names n1381 n1382_1 n1380
+01 1
+.names n1157_1 C<90> n1381
+11 1
+.names n1383 n1388 n1382_1
+10 1
+.names n1384 n1385 n1383
+01 1
+.names n1161 C<92> n1384
+11 1
+.names n1386 n1387_1 n1385
+00 1
+.names n1164 key<249> n1386
+11 1
+.names n1116 key<192> n1387_1
+11 1
+.names n1167_1 C<93> n1388
+11 1
+.names n1169 C<89> n1389
+11 1
+.names n1391 n1400 n957
+10 0
+.names n1392_1 n1393 n1391
+01 1
+.names n1157_1 C<89> n1392_1
+11 1
+.names n1394 n1399 n1393
+10 1
+.names n1395 n1396 n1394
+01 1
+.names n1161 C<91> n1395
+11 1
+.names n1397_1 n1398 n1396
+00 1
+.names n1164 key<192> n1397_1
+11 1
+.names n1116 key<200> n1398
+11 1
+.names n1167_1 C<92> n1399
+11 1
+.names n1169 C<88> n1400
+11 1
+.names n1402_1 n1411 n962
+10 0
+.names n1403 n1404 n1402_1
+01 1
+.names n1157_1 C<88> n1403
+11 1
+.names n1405 n1410 n1404
+10 1
+.names n1406 n1407_1 n1405
+01 1
+.names n1161 C<90> n1406
+11 1
+.names n1408 n1409 n1407_1
+00 1
+.names n1164 key<200> n1408
+11 1
+.names n1116 key<208> n1409
+11 1
+.names n1167_1 C<91> n1410
+11 1
+.names n1169 C<87> n1411
+11 1
+.names n1413 n1422_1 n967
+10 0
+.names n1414 n1415 n1413
+01 1
+.names n1157_1 C<87> n1414
+11 1
+.names n1416 n1421 n1415
+10 1
+.names n1417_1 n1418 n1416
+01 1
+.names n1161 C<89> n1417_1
+11 1
+.names n1419 n1420 n1418
+00 1
+.names n1164 key<208> n1419
+11 1
+.names n1116 key<216> n1420
+11 1
+.names n1167_1 C<90> n1421
+11 1
+.names n1169 C<86> n1422_1
+11 1
+.names n1424 n1433 n972
+10 0
+.names n1425 n1426 n1424
+01 1
+.names n1157_1 C<86> n1425
+11 1
+.names n1427_1 n1432_1 n1426
+10 1
+.names n1428 n1429 n1427_1
+01 1
+.names n1161 C<88> n1428
+11 1
+.names n1430 n1431 n1429
+00 1
+.names n1164 key<216> n1430
+11 1
+.names n1116 key<224> n1431
+11 1
+.names n1167_1 C<89> n1432_1
+11 1
+.names n1169 C<85> n1433
+11 1
+.names n1435 n1444 n977
+10 0
+.names n1436 n1437_1 n1435
+01 1
+.names n1157_1 C<85> n1436
+11 1
+.names n1438 n1443 n1437_1
+10 1
+.names n1439 n1440 n1438
+01 1
+.names n1161 C<87> n1439
+11 1
+.names n1441 n1442_1 n1440
+00 1
+.names n1164 key<224> n1441
+11 1
+.names n1116 key<232> n1442_1
+11 1
+.names n1167_1 C<88> n1443
+11 1
+.names n1169 C<84> n1444
+11 1
+.names n1446 n1455 n982
+10 0
+.names n1447_1 n1448 n1446
+01 1
+.names n1157_1 C<84> n1447_1
+11 1
+.names n1449 n1454 n1448
+10 1
+.names n1450 n1451 n1449
+01 1
+.names n1161 C<86> n1450
+11 1
+.names n1452_1 n1453 n1451
+00 1
+.names n1164 key<232> n1452_1
+11 1
+.names n1116 key<240> n1453
+11 1
+.names n1167_1 C<87> n1454
+11 1
+.names n1169 C<83> n1455
+11 1
+.names n1457_1 n1466 n987
+10 0
+.names n1458 n1459 n1457_1
+01 1
+.names n1157_1 C<83> n1458
+11 1
+.names n1460 n1465 n1459
+10 1
+.names n1461 n1462_1 n1460
+01 1
+.names n1161 C<85> n1461
+11 1
+.names n1463 n1464 n1462_1
+00 1
+.names n1164 key<240> n1463
+11 1
+.names n1116 key<248> n1464
+11 1
+.names n1167_1 C<86> n1465
+11 1
+.names n1169 C<82> n1466
+11 1
+.names n1468 n1477_1 n992
+10 0
+.names n1469 n1470 n1468
+01 1
+.names n1157_1 C<82> n1469
+11 1
+.names n1471 n1476 n1470
+10 1
+.names n1472_1 n1473 n1471
+01 1
+.names n1161 C<84> n1472_1
+11 1
+.names n1474 n1475 n1473
+00 1
+.names n1164 key<248> n1474
+11 1
+.names n1116 key<163> n1475
+11 1
+.names n1167_1 C<85> n1476
+11 1
+.names n1169 C<81> n1477_1
+11 1
+.names n1479 n1488 n997
+10 0
+.names n1480 n1481 n1479
+01 1
+.names n1157_1 C<81> n1480
+11 1
+.names n1482_1 n1487_1 n1481
+10 1
+.names n1483 n1484 n1482_1
+01 1
+.names n1161 C<83> n1483
+11 1
+.names n1485 n1486 n1484
+00 1
+.names n1164 key<163> n1485
+11 1
+.names n1116 key<171> n1486
+11 1
+.names n1167_1 C<84> n1487_1
+11 1
+.names n1169 C<80> n1488
+11 1
+.names n1490 n1499 n1002
+10 0
+.names n1491 n1492_1 n1490
+01 1
+.names n1157_1 C<80> n1491
+11 1
+.names n1493 n1498 n1492_1
+10 1
+.names n1494 n1495 n1493
+01 1
+.names n1161 C<82> n1494
+11 1
+.names n1496 n1497_1 n1495
+00 1
+.names n1164 key<171> n1496
+11 1
+.names n1116 key<179> n1497_1
+11 1
+.names n1167_1 C<83> n1498
+11 1
+.names n1169 C<79> n1499
+11 1
+.names n1501 n1510 n1007
+10 0
+.names n1502_1 n1503 n1501
+01 1
+.names n1157_1 C<79> n1502_1
+11 1
+.names n1504 n1509 n1503
+10 1
+.names n1505 n1506 n1504
+01 1
+.names n1161 C<81> n1505
+11 1
+.names n1507_1 n1508 n1506
+00 1
+.names n1164 key<179> n1507_1
+11 1
+.names n1116 key<187> n1508
+11 1
+.names n1167_1 C<82> n1509
+11 1
+.names n1169 C<78> n1510
+11 1
+.names n1512_1 n1521 n1012
+10 0
+.names n1513 n1514 n1512_1
+01 1
+.names n1157_1 C<78> n1513
+11 1
+.names n1515 n1520 n1514
+10 1
+.names n1516 n1517_1 n1515
+01 1
+.names n1161 C<80> n1516
+11 1
+.names n1518 n1519 n1517_1
+00 1
+.names n1164 key<187> n1518
+11 1
+.names n1116 key<130> n1519
+11 1
+.names n1167_1 C<81> n1520
+11 1
+.names n1169 C<77> n1521
+11 1
+.names n1523 n1532_1 n1017
+10 0
+.names n1524 n1525 n1523
+01 1
+.names n1157_1 C<77> n1524
+11 1
+.names n1526 n1531 n1525
+10 1
+.names n1527_1 n1528 n1526
+01 1
+.names n1161 C<79> n1527_1
+11 1
+.names n1529 n1530 n1528
+00 1
+.names n1164 key<130> n1529
+11 1
+.names n1116 key<138> n1530
+11 1
+.names n1167_1 C<80> n1531
+11 1
+.names n1169 C<76> n1532_1
+11 1
+.names n1534 n1543 n1022
+10 0
+.names n1535 n1536 n1534
+01 1
+.names n1157_1 C<76> n1535
+11 1
+.names n1537_1 n1542_1 n1536
+10 1
+.names n1538 n1539 n1537_1
+01 1
+.names n1161 C<78> n1538
+11 1
+.names n1540 n1541 n1539
+00 1
+.names n1164 key<138> n1540
+11 1
+.names n1116 key<146> n1541
+11 1
+.names n1167_1 C<79> n1542_1
+11 1
+.names n1169 C<75> n1543
+11 1
+.names n1545 n1554 n1027
+10 0
+.names n1546 n1547_1 n1545
+01 1
+.names n1157_1 C<75> n1546
+11 1
+.names n1548 n1553 n1547_1
+10 1
+.names n1549 n1550 n1548
+01 1
+.names n1161 C<77> n1549
+11 1
+.names n1551 n1552_1 n1550
+00 1
+.names n1164 key<146> n1551
+11 1
+.names n1116 key<154> n1552_1
+11 1
+.names n1167_1 C<78> n1553
+11 1
+.names n1169 C<74> n1554
+11 1
+.names n1556 n1565 n1032
+10 0
+.names n1557_1 n1558 n1556
+01 1
+.names n1157_1 C<74> n1557_1
+11 1
+.names n1559 n1564 n1558
+10 1
+.names n1560 n1561 n1559
+01 1
+.names n1161 C<76> n1560
+11 1
+.names n1562_1 n1563 n1561
+00 1
+.names n1164 key<154> n1562_1
+11 1
+.names n1116 key<162> n1563
+11 1
+.names n1167_1 C<77> n1564
+11 1
+.names n1169 C<73> n1565
+11 1
+.names n1567_1 n1576 n1037
+10 0
+.names n1568 n1569 n1567_1
+01 1
+.names n1157_1 C<73> n1568
+11 1
+.names n1570 n1575 n1569
+10 1
+.names n1571 n1572_1 n1570
+01 1
+.names n1161 C<75> n1571
+11 1
+.names n1573 n1574 n1572_1
+00 1
+.names n1164 key<162> n1573
+11 1
+.names n1116 key<170> n1574
+11 1
+.names n1167_1 C<76> n1575
+11 1
+.names n1169 C<72> n1576
+11 1
+.names n1578 n1587_1 n1042
+10 0
+.names n1579 n1580 n1578
+01 1
+.names n1157_1 C<72> n1579
+11 1
+.names n1581 n1586 n1580
+10 1
+.names n1582_1 n1583 n1581
+01 1
+.names n1161 C<74> n1582_1
+11 1
+.names n1584 n1585 n1583
+00 1
+.names n1164 key<170> n1584
+11 1
+.names n1116 key<178> n1585
+11 1
+.names n1167_1 C<75> n1586
+11 1
+.names n1169 C<71> n1587_1
+11 1
+.names n1589 n1598 n1047
+10 0
+.names n1590 n1591 n1589
+01 1
+.names n1157_1 C<71> n1590
+11 1
+.names n1592_1 n1597_1 n1591
+10 1
+.names n1593 n1594 n1592_1
+01 1
+.names n1161 C<73> n1593
+11 1
+.names n1595 n1596 n1594
+00 1
+.names n1164 key<178> n1595
+11 1
+.names n1116 key<186> n1596
+11 1
+.names n1167_1 C<74> n1597_1
+11 1
+.names n1169 C<70> n1598
+11 1
+.names n1600 n1609 n1052
+10 0
+.names n1601 n1602_1 n1600
+01 1
+.names n1157_1 C<70> n1601
+11 1
+.names n1603 n1608 n1602_1
+10 1
+.names n1604 n1605 n1603
+01 1
+.names n1161 C<72> n1604
+11 1
+.names n1606 n1607_1 n1605
+00 1
+.names n1164 key<186> n1606
+11 1
+.names n1116 key<129> n1607_1
+11 1
+.names n1167_1 C<73> n1608
+11 1
+.names n1169 C<69> n1609
+11 1
+.names n1611 n1620 n1057
+10 0
+.names n1612_1 n1613 n1611
+01 1
+.names n1157_1 C<69> n1612_1
+11 1
+.names n1614 n1619 n1613
+10 1
+.names n1615 n1616 n1614
+01 1
+.names n1161 C<71> n1615
+11 1
+.names n1617_1 n1618 n1616
+00 1
+.names n1164 key<129> n1617_1
+11 1
+.names n1116 key<137> n1618
+11 1
+.names n1167_1 C<72> n1619
+11 1
+.names n1169 C<68> n1620
+11 1
+.names n1622_1 n1631 n1062
+10 0
+.names n1623 n1624 n1622_1
+01 1
+.names n1157_1 C<68> n1623
+11 1
+.names n1625 n1630 n1624
+10 1
+.names n1626 n1627_1 n1625
+01 1
+.names n1161 C<70> n1626
+11 1
+.names n1628 n1629 n1627_1
+00 1
+.names n1164 key<137> n1628
+11 1
+.names n1116 key<145> n1629
+11 1
+.names n1167_1 C<71> n1630
+11 1
+.names n1169 C<67> n1631
+11 1
+.names n1633 n1642_1 n1067
+10 0
+.names n1634 n1635 n1633
+01 1
+.names n1157_1 C<67> n1634
+11 1
+.names n1636 n1641 n1635
+10 1
+.names n1637_1 n1638 n1636
+01 1
+.names n1161 C<69> n1637_1
+11 1
+.names n1639 n1640 n1638
+00 1
+.names n1164 key<145> n1639
+11 1
+.names n1116 key<153> n1640
+11 1
+.names n1167_1 C<70> n1641
+11 1
+.names n1169 C<66> n1642_1
+11 1
+.names n1644 n1653 n1072
+10 0
+.names n1645 n1646 n1644
+01 1
+.names n1157_1 C<66> n1645
+11 1
+.names n1647_1 n1652_1 n1646
+10 1
+.names n1648 n1649 n1647_1
+01 1
+.names n1161 C<68> n1648
+11 1
+.names n1650 n1651 n1649
+00 1
+.names n1164 key<153> n1650
+11 1
+.names n1116 key<161> n1651
+11 1
+.names n1167_1 C<69> n1652_1
+11 1
+.names n1169 C<65> n1653
+11 1
+.names n1655 n1664 n1077
+10 0
+.names n1656 n1657_1 n1655
+01 1
+.names n1157_1 C<65> n1656
+11 1
+.names n1658 n1663 n1657_1
+10 1
+.names n1659 n1660 n1658
+01 1
+.names n1161 C<67> n1659
+11 1
+.names n1661 n1662_1 n1660
+00 1
+.names n1164 key<161> n1661
+11 1
+.names n1116 key<169> n1662_1
+11 1
+.names n1167_1 C<68> n1663
+11 1
+.names n1169 C<64> n1664
+11 1
+.names n1666 n1675 n1082
+10 0
+.names n1667_1 n1668 n1666
+01 1
+.names n1157_1 C<64> n1667_1
+11 1
+.names n1669 n1674 n1668
+10 1
+.names n1670 n1671 n1669
+01 1
+.names n1161 C<66> n1670
+11 1
+.names n1672_1 n1673 n1671
+00 1
+.names n1164 key<169> n1672_1
+11 1
+.names n1116 key<177> n1673
+11 1
+.names n1167_1 C<67> n1674
+11 1
+.names n1169 C<63> n1675
+11 1
+.names n1677_1 n1686 n1087
+10 0
+.names n1678 n1679 n1677_1
+01 1
+.names n1157_1 C<63> n1678
+11 1
+.names n1680 n1685 n1679
+10 1
+.names n1681 n1682_1 n1680
+01 1
+.names n1161 C<65> n1681
+11 1
+.names n1683 n1684 n1682_1
+00 1
+.names n1164 key<177> n1683
+11 1
+.names n1116 key<185> n1684
+11 1
+.names n1167_1 C<66> n1685
+11 1
+.names n1169 C<62> n1686
+11 1
+.names n1688 n1697_1 n1092
+10 0
+.names n1689 n1690 n1688
+01 1
+.names n1157_1 C<62> n1689
+11 1
+.names n1691 n1696 n1690
+10 1
+.names n1692_1 n1693 n1691
+01 1
+.names n1161 C<64> n1692_1
+11 1
+.names n1694 n1695 n1693
+00 1
+.names n1164 key<185> n1694
+11 1
+.names n1116 key<128> n1695
+11 1
+.names n1167_1 C<65> n1696
+11 1
+.names n1169 C<61> n1697_1
+11 1
+.names n1699 n1708 n1097
+10 0
+.names n1700 n1701 n1699
+01 1
+.names n1157_1 C<61> n1700
+11 1
+.names n1702_1 n1707_1 n1701
+10 1
+.names n1703 n1704 n1702_1
+01 1
+.names n1161 C<63> n1703
+11 1
+.names n1705 n1706 n1704
+00 1
+.names n1164 key<128> n1705
+11 1
+.names n1116 key<136> n1706
+11 1
+.names n1167_1 C<64> n1707_1
+11 1
+.names n1169 C<60> n1708
+11 1
+.names n1710 n1719 n1102
+10 0
+.names n1711 n1712_1 n1710
+01 1
+.names n1157_1 C<60> n1711
+11 1
+.names n1713 n1718 n1712_1
+10 1
+.names n1714 n1715 n1713
+01 1
+.names n1161 C<62> n1714
+11 1
+.names n1716 n1717_1 n1715
+00 1
+.names n1164 key<136> n1716
+11 1
+.names n1116 key<144> n1717_1
+11 1
+.names n1167_1 C<63> n1718
+11 1
+.names n1169 C<59> n1719
+11 1
+.names n1721 n1730 n1107
+10 0
+.names n1722_1 n1723 n1721
+01 1
+.names n1157_1 C<59> n1722_1
+11 1
+.names n1724 n1729 n1723
+10 1
+.names n1725 n1726 n1724
+01 1
+.names n1161 C<61> n1725
+11 1
+.names n1727_1 n1728 n1726
+00 1
+.names n1164 key<144> n1727_1
+11 1
+.names n1116 key<152> n1728
+11 1
+.names n1167_1 C<62> n1729
+11 1
+.names n1169 C<58> n1730
+11 1
+.names n1732_1 n1741 n1112
+10 0
+.names n1733 n1734 n1732_1
+01 1
+.names n1157_1 C<58> n1733
+11 1
+.names n1735 n1740 n1734
+10 1
+.names n1736 n1737_1 n1735
+01 1
+.names n1161 C<60> n1736
+11 1
+.names n1738 n1739 n1737_1
+00 1
+.names n1164 key<152> n1738
+11 1
+.names n1116 key<160> n1739
+11 1
+.names n1167_1 C<61> n1740
+11 1
+.names n1169 C<57> n1741
+11 1
+.names n1743 n1752_1 n1117
+10 0
+.names n1744 n1745 n1743
+01 1
+.names n1157_1 C<57> n1744
+11 1
+.names n1746 n1751 n1745
+10 1
+.names n1747_1 n1748 n1746
+01 1
+.names n1161 C<59> n1747_1
+11 1
+.names n1749 n1750 n1748
+00 1
+.names n1164 key<160> n1749
+11 1
+.names n1116 key<168> n1750
+11 1
+.names n1167_1 C<60> n1751
+11 1
+.names n1169 C<56> n1752_1
+11 1
+.names n1754 n1763 n1122
+10 0
+.names n1755 n1756 n1754
+01 1
+.names n1157_1 C<56> n1755
+11 1
+.names n1757_1 n1762_1 n1756
+10 1
+.names n1758 n1759 n1757_1
+01 1
+.names n1161 C<58> n1758
+11 1
+.names n1760 n1761 n1759
+00 1
+.names n1164 key<168> n1760
+11 1
+.names n1116 key<176> n1761
+11 1
+.names n1167_1 C<59> n1762_1
+11 1
+.names n1169 C<55> n1763
+11 1
+.names n1765 n1774 n1127
+10 0
+.names n1766 n1767_1 n1765
+01 1
+.names n1157_1 C<55> n1766
+11 1
+.names n1768 n1773 n1767_1
+10 1
+.names n1769 n1770 n1768
+01 1
+.names n1161 C<57> n1769
+11 1
+.names n1771 n1772_1 n1770
+00 1
+.names n1164 key<176> n1771
+11 1
+.names n1116 key<184> n1772_1
+11 1
+.names n1167_1 C<58> n1773
+11 1
+.names n1169 C<54> n1774
+11 1
+.names n1776 n1785 n1132
+10 0
+.names n1777_1 n1778 n1776
+01 1
+.names n1157_1 C<54> n1777_1
+11 1
+.names n1779 n1784 n1778
+10 1
+.names n1780 n1781 n1779
+01 1
+.names n1161 C<56> n1780
+11 1
+.names n1782_1 n1783 n1781
+00 1
+.names n1164 key<184> n1782_1
+11 1
+.names n1116 key<99> n1783
+11 1
+.names n1167_1 C<57> n1784
+11 1
+.names n1169 C<53> n1785
+11 1
+.names n1787_1 n1796 n1137
+10 0
+.names n1788 n1789 n1787_1
+01 1
+.names n1157_1 C<53> n1788
+11 1
+.names n1790 n1795 n1789
+10 1
+.names n1791 n1792_1 n1790
+01 1
+.names n1161 C<55> n1791
+11 1
+.names n1793 n1794 n1792_1
+00 1
+.names n1164 key<99> n1793
+11 1
+.names n1116 key<107> n1794
+11 1
+.names n1167_1 C<56> n1795
+11 1
+.names n1169 C<52> n1796
+11 1
+.names n1798 n1807_1 n1142
+10 0
+.names n1799 n1800 n1798
+01 1
+.names n1157_1 C<52> n1799
+11 1
+.names n1801 n1806 n1800
+10 1
+.names n1802_1 n1803 n1801
+01 1
+.names n1161 C<54> n1802_1
+11 1
+.names n1804 n1805 n1803
+00 1
+.names n1164 key<107> n1804
+11 1
+.names n1116 key<115> n1805
+11 1
+.names n1167_1 C<55> n1806
+11 1
+.names n1169 C<51> n1807_1
+11 1
+.names n1809 n1818 n1147
+10 0
+.names n1810 n1811 n1809
+01 1
+.names n1157_1 C<51> n1810
+11 1
+.names n1812_1 n1817_1 n1811
+10 1
+.names n1813 n1814 n1812_1
+01 1
+.names n1161 C<53> n1813
+11 1
+.names n1815 n1816 n1814
+00 1
+.names n1164 key<115> n1815
+11 1
+.names n1116 key<123> n1816
+11 1
+.names n1167_1 C<54> n1817_1
+11 1
+.names n1169 C<50> n1818
+11 1
+.names n1820 n1829 n1152
+10 0
+.names n1821 n1822_1 n1820
+01 1
+.names n1157_1 C<50> n1821
+11 1
+.names n1823 n1828 n1822_1
+10 1
+.names n1824 n1825 n1823
+01 1
+.names n1161 C<52> n1824
+11 1
+.names n1826 n1827_1 n1825
+00 1
+.names n1164 key<123> n1826
+11 1
+.names n1116 key<66> n1827_1
+11 1
+.names n1167_1 C<53> n1828
+11 1
+.names n1169 C<49> n1829
+11 1
+.names n1831 n1840 n1157
+10 0
+.names n1832_1 n1833 n1831
+01 1
+.names n1157_1 C<49> n1832_1
+11 1
+.names n1834 n1839 n1833
+10 1
+.names n1835 n1836 n1834
+01 1
+.names n1161 C<51> n1835
+11 1
+.names n1837_1 n1838 n1836
+00 1
+.names n1164 key<66> n1837_1
+11 1
+.names n1116 key<74> n1838
+11 1
+.names n1167_1 C<52> n1839
+11 1
+.names n1169 C<48> n1840
+11 1
+.names n1842_1 n1851 n1162
+10 0
+.names n1843 n1844 n1842_1
+01 1
+.names n1157_1 C<48> n1843
+11 1
+.names n1845 n1850 n1844
+10 1
+.names n1846 n1847_1 n1845
+01 1
+.names n1161 C<50> n1846
+11 1
+.names n1848 n1849 n1847_1
+00 1
+.names n1164 key<74> n1848
+11 1
+.names n1116 key<82> n1849
+11 1
+.names n1167_1 C<51> n1850
+11 1
+.names n1169 C<47> n1851
+11 1
+.names n1853 n1862_1 n1167
+10 0
+.names n1854 n1855 n1853
+01 1
+.names n1157_1 C<47> n1854
+11 1
+.names n1856 n1861 n1855
+10 1
+.names n1857_1 n1858 n1856
+01 1
+.names n1161 C<49> n1857_1
+11 1
+.names n1859 n1860 n1858
+00 1
+.names n1164 key<82> n1859
+11 1
+.names n1116 key<90> n1860
+11 1
+.names n1167_1 C<50> n1861
+11 1
+.names n1169 C<46> n1862_1
+11 1
+.names n1864 n1873 n1172
+10 0
+.names n1865 n1866 n1864
+01 1
+.names n1157_1 C<46> n1865
+11 1
+.names n1867_1 n1872_1 n1866
+10 1
+.names n1868 n1869 n1867_1
+01 1
+.names n1161 C<48> n1868
+11 1
+.names n1870 n1871 n1869
+00 1
+.names n1164 key<90> n1870
+11 1
+.names n1116 key<98> n1871
+11 1
+.names n1167_1 C<49> n1872_1
+11 1
+.names n1169 C<45> n1873
+11 1
+.names n1875 n1884 n1177
+10 0
+.names n1876 n1877_1 n1875
+01 1
+.names n1157_1 C<45> n1876
+11 1
+.names n1878 n1883 n1877_1
+10 1
+.names n1879 n1880 n1878
+01 1
+.names n1161 C<47> n1879
+11 1
+.names n1881 n1882_1 n1880
+00 1
+.names n1164 key<98> n1881
+11 1
+.names n1116 key<106> n1882_1
+11 1
+.names n1167_1 C<48> n1883
+11 1
+.names n1169 C<44> n1884
+11 1
+.names n1886 n1895 n1182
+10 0
+.names n1887_1 n1888 n1886
+01 1
+.names n1157_1 C<44> n1887_1
+11 1
+.names n1889 n1894 n1888
+10 1
+.names n1890 n1891 n1889
+01 1
+.names n1161 C<46> n1890
+11 1
+.names n1892_1 n1893 n1891
+00 1
+.names n1164 key<106> n1892_1
+11 1
+.names n1116 key<114> n1893
+11 1
+.names n1167_1 C<47> n1894
+11 1
+.names n1169 C<43> n1895
+11 1
+.names n1897_1 n1906 n1187
+10 0
+.names n1898 n1899 n1897_1
+01 1
+.names n1157_1 C<43> n1898
+11 1
+.names n1900 n1905 n1899
+10 1
+.names n1901 n1902_1 n1900
+01 1
+.names n1161 C<45> n1901
+11 1
+.names n1903 n1904 n1902_1
+00 1
+.names n1164 key<114> n1903
+11 1
+.names n1116 key<122> n1904
+11 1
+.names n1167_1 C<46> n1905
+11 1
+.names n1169 C<42> n1906
+11 1
+.names n1908 n1917_1 n1192
+10 0
+.names n1909 n1910 n1908
+01 1
+.names n1157_1 C<42> n1909
+11 1
+.names n1911 n1916 n1910
+10 1
+.names n1912_1 n1913 n1911
+01 1
+.names n1161 C<44> n1912_1
+11 1
+.names n1914 n1915 n1913
+00 1
+.names n1164 key<122> n1914
+11 1
+.names n1116 key<65> n1915
+11 1
+.names n1167_1 C<45> n1916
+11 1
+.names n1169 C<41> n1917_1
+11 1
+.names n1919 n1928 n1197
+10 0
+.names n1920 n1921 n1919
+01 1
+.names n1157_1 C<41> n1920
+11 1
+.names n1922_1 n1927_1 n1921
+10 1
+.names n1923 n1924 n1922_1
+01 1
+.names n1161 C<43> n1923
+11 1
+.names n1925 n1926 n1924
+00 1
+.names n1164 key<65> n1925
+11 1
+.names n1116 key<73> n1926
+11 1
+.names n1167_1 C<44> n1927_1
+11 1
+.names n1169 C<40> n1928
+11 1
+.names n1930 n1939 n1202
+10 0
+.names n1931 n1932_1 n1930
+01 1
+.names n1157_1 C<40> n1931
+11 1
+.names n1933 n1938 n1932_1
+10 1
+.names n1934 n1935 n1933
+01 1
+.names n1161 C<42> n1934
+11 1
+.names n1936 n1937_1 n1935
+00 1
+.names n1164 key<73> n1936
+11 1
+.names n1116 key<81> n1937_1
+11 1
+.names n1167_1 C<43> n1938
+11 1
+.names n1169 C<39> n1939
+11 1
+.names n1941 n1950 n1207
+10 0
+.names n1942_1 n1943 n1941
+01 1
+.names n1157_1 C<39> n1942_1
+11 1
+.names n1944 n1949 n1943
+10 1
+.names n1945 n1946 n1944
+01 1
+.names n1161 C<41> n1945
+11 1
+.names n1947_1 n1948 n1946
+00 1
+.names n1164 key<81> n1947_1
+11 1
+.names n1116 key<89> n1948
+11 1
+.names n1167_1 C<42> n1949
+11 1
+.names n1169 C<38> n1950
+11 1
+.names n1952_1 n1961 n1212
+10 0
+.names n1953 n1954 n1952_1
+01 1
+.names n1157_1 C<38> n1953
+11 1
+.names n1955 n1960 n1954
+10 1
+.names n1956 n1957_1 n1955
+01 1
+.names n1161 C<40> n1956
+11 1
+.names n1958 n1959 n1957_1
+00 1
+.names n1164 key<89> n1958
+11 1
+.names n1116 key<97> n1959
+11 1
+.names n1167_1 C<41> n1960
+11 1
+.names n1169 C<37> n1961
+11 1
+.names n1963 n1972 n1217
+10 0
+.names n1964 n1965 n1963
+01 1
+.names n1157_1 C<37> n1964
+11 1
+.names n1966 n1971 n1965
+10 1
+.names n1967_1 n1968 n1966
+01 1
+.names n1161 C<39> n1967_1
+11 1
+.names n1969 n1970 n1968
+00 1
+.names n1164 key<97> n1969
+11 1
+.names n1116 key<105> n1970
+11 1
+.names n1167_1 C<40> n1971
+11 1
+.names n1169 C<36> n1972
+11 1
+.names n1974 n1983 n1222
+10 0
+.names n1975 n1976 n1974
+01 1
+.names n1157_1 C<36> n1975
+11 1
+.names n1977 n1982 n1976
+10 1
+.names n1978 n1979 n1977
+01 1
+.names n1161 C<38> n1978
+11 1
+.names n1980 n1981 n1979
+00 1
+.names n1164 key<105> n1980
+11 1
+.names n1116 key<113> n1981
+11 1
+.names n1167_1 C<39> n1982
+11 1
+.names n1169 C<35> n1983
+11 1
+.names n1985 n1994 n1227
+10 0
+.names n1986 n1987 n1985
+01 1
+.names n1157_1 C<35> n1986
+11 1
+.names n1988 n1993 n1987
+10 1
+.names n1989 n1990 n1988
+01 1
+.names n1161 C<37> n1989
+11 1
+.names n1991 n1992 n1990
+00 1
+.names n1164 key<113> n1991
+11 1
+.names n1116 key<121> n1992
+11 1
+.names n1167_1 C<38> n1993
+11 1
+.names n1169 C<34> n1994
+11 1
+.names n1996 n2005 n1232
+10 0
+.names n1997 n1998 n1996
+01 1
+.names n1157_1 C<34> n1997
+11 1
+.names n1999 n2004 n1998
+10 1
+.names n2000 n2001 n1999
+01 1
+.names n1161 C<36> n2000
+11 1
+.names n2002 n2003 n2001
+00 1
+.names n1164 key<121> n2002
+11 1
+.names n1116 key<64> n2003
+11 1
+.names n1167_1 C<37> n2004
+11 1
+.names n1169 C<33> n2005
+11 1
+.names n2007 n2016 n1237
+10 0
+.names n2008 n2009 n2007
+01 1
+.names n1157_1 C<33> n2008
+11 1
+.names n2010 n2015 n2009
+10 1
+.names n2011 n2012 n2010
+01 1
+.names n1161 C<35> n2011
+11 1
+.names n2013 n2014 n2012
+00 1
+.names n1164 key<64> n2013
+11 1
+.names n1116 key<72> n2014
+11 1
+.names n1167_1 C<36> n2015
+11 1
+.names n1169 C<32> n2016
+11 1
+.names n2018 n2027 n1242
+10 0
+.names n2019 n2020 n2018
+01 1
+.names n1157_1 C<32> n2019
+11 1
+.names n2021 n2026 n2020
+10 1
+.names n2022 n2023 n2021
+01 1
+.names n1161 C<34> n2022
+11 1
+.names n2024 n2025 n2023
+00 1
+.names n1164 key<72> n2024
+11 1
+.names n1116 key<80> n2025
+11 1
+.names n1167_1 C<35> n2026
+11 1
+.names n1169 C<31> n2027
+11 1
+.names n2029 n2038 n1247
+10 0
+.names n2030 n2031 n2029
+01 1
+.names n1157_1 C<31> n2030
+11 1
+.names n2032 n2037 n2031
+10 1
+.names n2033 n2034 n2032
+01 1
+.names n1161 C<33> n2033
+11 1
+.names n2035 n2036 n2034
+00 1
+.names n1164 key<80> n2035
+11 1
+.names n1116 key<88> n2036
+11 1
+.names n1167_1 C<34> n2037
+11 1
+.names n1169 C<30> n2038
+11 1
+.names n2040 n2049 n1252
+10 0
+.names n2041 n2042 n2040
+01 1
+.names n1157_1 C<30> n2041
+11 1
+.names n2043 n2048 n2042
+10 1
+.names n2044 n2045 n2043
+01 1
+.names n1161 C<32> n2044
+11 1
+.names n2046 n2047 n2045
+00 1
+.names n1164 key<88> n2046
+11 1
+.names n1116 key<96> n2047
+11 1
+.names n1167_1 C<33> n2048
+11 1
+.names n1169 C<29> n2049
+11 1
+.names n2051 n2060 n1257
+10 0
+.names n2052 n2053 n2051
+01 1
+.names n1157_1 C<29> n2052
+11 1
+.names n2054 n2059 n2053
+10 1
+.names n2055 n2056 n2054
+01 1
+.names n1161 C<31> n2055
+11 1
+.names n2057 n2058 n2056
+00 1
+.names n1164 key<96> n2057
+11 1
+.names n1116 key<104> n2058
+11 1
+.names n1167_1 C<32> n2059
+11 1
+.names n1169 C<28> n2060
+11 1
+.names n2062 n2071 n1262
+10 0
+.names n2063 n2064 n2062
+01 1
+.names n1157_1 C<28> n2063
+11 1
+.names n2065 n2070 n2064
+10 1
+.names n2066 n2067 n2065
+01 1
+.names n1161 C<30> n2066
+11 1
+.names n2068 n2069 n2067
+00 1
+.names n1164 key<104> n2068
+11 1
+.names n1116 key<112> n2069
+11 1
+.names n1167_1 C<31> n2070
+11 1
+.names n1169 C<27> n2071
+11 1
+.names n2073 n2082 n1267
+10 0
+.names n2074 n2075 n2073
+01 1
+.names n1157_1 C<27> n2074
+11 1
+.names n2076 n2081 n2075
+10 1
+.names n2077 n2078 n2076
+01 1
+.names n1161 C<29> n2077
+11 1
+.names n2079 n2080 n2078
+00 1
+.names n1164 key<112> n2079
+11 1
+.names n1116 key<120> n2080
+11 1
+.names n1167_1 C<30> n2081
+11 1
+.names n1169 C<26> n2082
+11 1
+.names n2084 n2093 n1272
+10 0
+.names n2085 n2086 n2084
+01 1
+.names n1157_1 C<26> n2085
+11 1
+.names n2087 n2092 n2086
+10 1
+.names n2088 n2089 n2087
+01 1
+.names n1161 C<28> n2088
+11 1
+.names n2090 n2091 n2089
+00 1
+.names n1164 key<120> n2090
+11 1
+.names n1116 key<35> n2091
+11 1
+.names n1167_1 C<29> n2092
+11 1
+.names n1169 C<25> n2093
+11 1
+.names n2095 n2104 n1277
+10 0
+.names n2096 n2097 n2095
+01 1
+.names n1157_1 C<25> n2096
+11 1
+.names n2098 n2103 n2097
+10 1
+.names n2099 n2100 n2098
+01 1
+.names n1161 C<27> n2099
+11 1
+.names n2101 n2102 n2100
+00 1
+.names n1164 key<35> n2101
+11 1
+.names n1116 key<43> n2102
+11 1
+.names n1167_1 C<28> n2103
+11 1
+.names n1169 C<24> n2104
+11 1
+.names n2106 n2115 n1282
+10 0
+.names n2107 n2108 n2106
+01 1
+.names n1157_1 C<24> n2107
+11 1
+.names n2109 n2114 n2108
+10 1
+.names n2110 n2111 n2109
+01 1
+.names n1161 C<26> n2110
+11 1
+.names n2112 n2113 n2111
+00 1
+.names n1164 key<43> n2112
+11 1
+.names n1116 key<51> n2113
+11 1
+.names n1167_1 C<27> n2114
+11 1
+.names n1169 C<23> n2115
+11 1
+.names n2117 n2126 n1287
+10 0
+.names n2118 n2119 n2117
+01 1
+.names n1157_1 C<23> n2118
+11 1
+.names n2120 n2125 n2119
+10 1
+.names n2121 n2122 n2120
+01 1
+.names n1161 C<25> n2121
+11 1
+.names n2123 n2124 n2122
+00 1
+.names n1164 key<51> n2123
+11 1
+.names n1116 key<59> n2124
+11 1
+.names n1167_1 C<26> n2125
+11 1
+.names n1169 C<22> n2126
+11 1
+.names n2128 n2137 n1292
+10 0
+.names n2129 n2130 n2128
+01 1
+.names n1157_1 C<22> n2129
+11 1
+.names n2131 n2136 n2130
+10 1
+.names n2132 n2133 n2131
+01 1
+.names n1161 C<24> n2132
+11 1
+.names n2134 n2135 n2133
+00 1
+.names n1164 key<59> n2134
+11 1
+.names n1116 key<2> n2135
+11 1
+.names n1167_1 C<25> n2136
+11 1
+.names n1169 C<21> n2137
+11 1
+.names n2139 n2148 n1297
+10 0
+.names n2140 n2141 n2139
+01 1
+.names n1157_1 C<21> n2140
+11 1
+.names n2142 n2147 n2141
+10 1
+.names n2143 n2144 n2142
+01 1
+.names n1161 C<23> n2143
+11 1
+.names n2145 n2146 n2144
+00 1
+.names n1164 key<2> n2145
+11 1
+.names n1116 key<10> n2146
+11 1
+.names n1167_1 C<24> n2147
+11 1
+.names n1169 C<20> n2148
+11 1
+.names n2150 n2159 n1302
+10 0
+.names n2151 n2152 n2150
+01 1
+.names n1157_1 C<20> n2151
+11 1
+.names n2153 n2158 n2152
+10 1
+.names n2154 n2155 n2153
+01 1
+.names n1161 C<22> n2154
+11 1
+.names n2156 n2157 n2155
+00 1
+.names n1164 key<10> n2156
+11 1
+.names n1116 key<18> n2157
+11 1
+.names n1167_1 C<23> n2158
+11 1
+.names n1169 C<19> n2159
+11 1
+.names n2161 n2170 n1307
+10 0
+.names n2162 n2163 n2161
+01 1
+.names n1157_1 C<19> n2162
+11 1
+.names n2164 n2169 n2163
+10 1
+.names n2165 n2166 n2164
+01 1
+.names n1161 C<21> n2165
+11 1
+.names n2167 n2168 n2166
+00 1
+.names n1164 key<18> n2167
+11 1
+.names n1116 key<26> n2168
+11 1
+.names n1167_1 C<22> n2169
+11 1
+.names n1169 C<18> n2170
+11 1
+.names n2172 n2181 n1312
+10 0
+.names n2173 n2174 n2172
+01 1
+.names n1157_1 C<18> n2173
+11 1
+.names n2175 n2180 n2174
+10 1
+.names n2176 n2177 n2175
+01 1
+.names n1161 C<20> n2176
+11 1
+.names n2178 n2179 n2177
+00 1
+.names n1164 key<26> n2178
+11 1
+.names n1116 key<34> n2179
+11 1
+.names n1167_1 C<21> n2180
+11 1
+.names n1169 C<17> n2181
+11 1
+.names n2183 n2192 n1317
+10 0
+.names n2184 n2185 n2183
+01 1
+.names n1157_1 C<17> n2184
+11 1
+.names n2186 n2191 n2185
+10 1
+.names n2187 n2188 n2186
+01 1
+.names n1161 C<19> n2187
+11 1
+.names n2189 n2190 n2188
+00 1
+.names n1164 key<34> n2189
+11 1
+.names n1116 key<42> n2190
+11 1
+.names n1167_1 C<20> n2191
+11 1
+.names n1169 C<16> n2192
+11 1
+.names n2194 n2203 n1322
+10 0
+.names n2195 n2196 n2194
+01 1
+.names n1157_1 C<16> n2195
+11 1
+.names n2197 n2202 n2196
+10 1
+.names n2198 n2199 n2197
+01 1
+.names n1161 C<18> n2198
+11 1
+.names n2200 n2201 n2199
+00 1
+.names n1164 key<42> n2200
+11 1
+.names n1116 key<50> n2201
+11 1
+.names n1167_1 C<19> n2202
+11 1
+.names n1169 C<15> n2203
+11 1
+.names n2205 n2214 n1327
+10 0
+.names n2206 n2207 n2205
+01 1
+.names n1157_1 C<15> n2206
+11 1
+.names n2208 n2213 n2207
+10 1
+.names n2209 n2210 n2208
+01 1
+.names n1161 C<17> n2209
+11 1
+.names n2211 n2212 n2210
+00 1
+.names n1164 key<50> n2211
+11 1
+.names n1116 key<58> n2212
+11 1
+.names n1167_1 C<18> n2213
+11 1
+.names n1169 C<14> n2214
+11 1
+.names n2216 n2225 n1332
+10 0
+.names n2217 n2218 n2216
+01 1
+.names n1157_1 C<14> n2217
+11 1
+.names n2219 n2224 n2218
+10 1
+.names n2220 n2221 n2219
+01 1
+.names n1161 C<16> n2220
+11 1
+.names n2222 n2223 n2221
+00 1
+.names n1164 key<58> n2222
+11 1
+.names n1116 key<1> n2223
+11 1
+.names n1167_1 C<17> n2224
+11 1
+.names n1169 C<13> n2225
+11 1
+.names n2227 n2236 n1337
+10 0
+.names n2228 n2229 n2227
+01 1
+.names n1157_1 C<13> n2228
+11 1
+.names n2230 n2235 n2229
+10 1
+.names n2231 n2232 n2230
+01 1
+.names n1161 C<15> n2231
+11 1
+.names n2233 n2234 n2232
+00 1
+.names n1164 key<1> n2233
+11 1
+.names n1116 key<9> n2234
+11 1
+.names n1167_1 C<16> n2235
+11 1
+.names n1169 C<12> n2236
+11 1
+.names n2238 n2247 n1342
+10 0
+.names n2239 n2240 n2238
+01 1
+.names n1157_1 C<12> n2239
+11 1
+.names n2241 n2246 n2240
+10 1
+.names n2242 n2243 n2241
+01 1
+.names n1161 C<14> n2242
+11 1
+.names n2244 n2245 n2243
+00 1
+.names n1164 key<9> n2244
+11 1
+.names n1116 key<17> n2245
+11 1
+.names n1167_1 C<15> n2246
+11 1
+.names n1169 C<11> n2247
+11 1
+.names n2249 n2258 n1347
+10 0
+.names n2250 n2251 n2249
+01 1
+.names n1157_1 C<11> n2250
+11 1
+.names n2252 n2257 n2251
+10 1
+.names n2253 n2254 n2252
+01 1
+.names n1161 C<13> n2253
+11 1
+.names n2255 n2256 n2254
+00 1
+.names n1164 key<17> n2255
+11 1
+.names n1116 key<25> n2256
+11 1
+.names n1167_1 C<14> n2257
+11 1
+.names n1169 C<10> n2258
+11 1
+.names n2260 n2269 n1352
+10 0
+.names n2261 n2262 n2260
+01 1
+.names n1157_1 C<10> n2261
+11 1
+.names n2263 n2268 n2262
+10 1
+.names n2264 n2265 n2263
+01 1
+.names n1161 C<12> n2264
+11 1
+.names n2266 n2267 n2265
+00 1
+.names n1164 key<25> n2266
+11 1
+.names n1116 key<33> n2267
+11 1
+.names n1167_1 C<13> n2268
+11 1
+.names n1169 C<9> n2269
+11 1
+.names n2271 n2280 n1357
+10 0
+.names n2272 n2273 n2271
+01 1
+.names n1157_1 C<9> n2272
+11 1
+.names n2274 n2279 n2273
+10 1
+.names n2275 n2276 n2274
+01 1
+.names n1161 C<11> n2275
+11 1
+.names n2277 n2278 n2276
+00 1
+.names n1164 key<33> n2277
+11 1
+.names n1116 key<41> n2278
+11 1
+.names n1167_1 C<12> n2279
+11 1
+.names n1169 C<8> n2280
+11 1
+.names n2282 n2291 n1362
+10 0
+.names n2283 n2284 n2282
+01 1
+.names n1157_1 C<8> n2283
+11 1
+.names n2285 n2290 n2284
+10 1
+.names n2286 n2287 n2285
+01 1
+.names n1161 C<10> n2286
+11 1
+.names n2288 n2289 n2287
+00 1
+.names n1164 key<41> n2288
+11 1
+.names n1116 key<49> n2289
+11 1
+.names n1167_1 C<11> n2290
+11 1
+.names n1169 C<7> n2291
+11 1
+.names n2293 n2302 n1367
+10 0
+.names n2294 n2295 n2293
+01 1
+.names n1157_1 C<7> n2294
+11 1
+.names n2296 n2301 n2295
+10 1
+.names n2297 n2298 n2296
+01 1
+.names n1161 C<9> n2297
+11 1
+.names n2299 n2300 n2298
+00 1
+.names n1164 key<49> n2299
+11 1
+.names n1116 key<57> n2300
+11 1
+.names n1167_1 C<10> n2301
+11 1
+.names n1169 C<6> n2302
+11 1
+.names n2304 n2313 n1372
+10 0
+.names n2305 n2306 n2304
+01 1
+.names n1157_1 C<6> n2305
+11 1
+.names n2307 n2312 n2306
+10 1
+.names n2308 n2309 n2307
+01 1
+.names n1161 C<8> n2308
+11 1
+.names n2310 n2311 n2309
+00 1
+.names n1164 key<57> n2310
+11 1
+.names n1116 key<0> n2311
+11 1
+.names n1167_1 C<9> n2312
+11 1
+.names n1169 C<5> n2313
+11 1
+.names n2315 n2324 n1377
+10 0
+.names n2316 n2317 n2315
+01 1
+.names n1157_1 C<5> n2316
+11 1
+.names n2318 n2323 n2317
+10 1
+.names n2319 n2320 n2318
+01 1
+.names n1161 C<7> n2319
+11 1
+.names n2321 n2322 n2320
+00 1
+.names n1164 key<0> n2321
+11 1
+.names n1116 key<8> n2322
+11 1
+.names n1167_1 C<8> n2323
+11 1
+.names n1169 C<4> n2324
+11 1
+.names n2326 n2335 n1382
+10 0
+.names n2327 n2328 n2326
+01 1
+.names n1157_1 C<4> n2327
+11 1
+.names n2329 n2334 n2328
+10 1
+.names n2330 n2331 n2329
+01 1
+.names n1161 C<6> n2330
+11 1
+.names n2332 n2333 n2331
+00 1
+.names n1164 key<8> n2332
+11 1
+.names n1116 key<16> n2333
+11 1
+.names n1167_1 C<7> n2334
+11 1
+.names n1169 C<3> n2335
+11 1
+.names n2337 n2346 n1387
+10 0
+.names n2338 n2339 n2337
+01 1
+.names n1157_1 C<3> n2338
+11 1
+.names n2340 n2345 n2339
+10 1
+.names n2341 n2342 n2340
+01 1
+.names n1161 C<5> n2341
+11 1
+.names n2343 n2344 n2342
+00 1
+.names n1164 key<16> n2343
+11 1
+.names n1116 key<24> n2344
+11 1
+.names n1167_1 C<6> n2345
+11 1
+.names n1169 C<2> n2346
+11 1
+.names n2348 n2357 n1392
+10 0
+.names n2349 n2350 n2348
+01 1
+.names n1157_1 C<2> n2349
+11 1
+.names n2351 n2356 n2350
+10 1
+.names n2352 n2353 n2351
+01 1
+.names n1161 C<4> n2352
+11 1
+.names n2354 n2355 n2353
+00 1
+.names n1164 key<24> n2354
+11 1
+.names n1116 key<32> n2355
+11 1
+.names n1167_1 C<5> n2356
+11 1
+.names n1169 C<1> n2357
+11 1
+.names n2359 n2368 n1397
+10 0
+.names n2360 n2361 n2359
+01 1
+.names n1157_1 C<1> n2360
+11 1
+.names n2362 n2367 n2361
+10 1
+.names n2363 n2364 n2362
+01 1
+.names n1161 C<3> n2363
+11 1
+.names n2365 n2366 n2364
+00 1
+.names n1164 key<32> n2365
+11 1
+.names n1116 key<40> n2366
+11 1
+.names n1167_1 C<4> n2367
+11 1
+.names n1169 C<0> n2368
+11 1
+.names n2370 n2379 n1402
+10 0
+.names n2371 n2372 n2370
+01 1
+.names n1157_1 C<0> n2371
+11 1
+.names n2373 n2378 n2372
+10 1
+.names n2374 n2375 n2373
+01 1
+.names n1161 C<2> n2374
+11 1
+.names n2376 n2377 n2375
+00 1
+.names n1164 key<40> n2376
+11 1
+.names n1116 key<48> n2377
+11 1
+.names n1167_1 C<3> n2378
+11 1
+.names n1169 C<111> n2379
+11 1
+.names n2381 n2390 n1407
+10 0
+.names n2382 n2383 n2381
+01 1
+.names n1157_1 C<111> n2382
+11 1
+.names n2384 n2389 n2383
+10 1
+.names n2385 n2386 n2384
+01 1
+.names n1161 C<1> n2385
+11 1
+.names n2387 n2388 n2386
+00 1
+.names n1164 key<48> n2387
+11 1
+.names n1116 key<56> n2388
+11 1
+.names n1167_1 C<2> n2389
+11 1
+.names n1169 C<110> n2390
+11 1
+.names n2392 n2401 n1412
+10 0
+.names n2393 n2394 n2392
+01 1
+.names n1157_1 D<110> n2393
+11 1
+.names n2395 n2400 n2394
+10 1
+.names n2396 n2397 n2395
+01 1
+.names n1161 D<0> n2396
+11 1
+.names n2398 n2399 n2397
+00 1
+.names n1164 key<62> n2398
+11 1
+.names n1116 key<195> n2399
+11 1
+.names n1167_1 D<1> n2400
+11 1
+.names n1169 D<109> n2401
+11 1
+.names n2403 n2412 n1417
+10 0
+.names n2404 n2405 n2403
+01 1
+.names n1157_1 D<109> n2404
+11 1
+.names n2406 n2411 n2405
+10 1
+.names n2407 n2408 n2406
+01 1
+.names n1161 D<111> n2407
+11 1
+.names n2409 n2410 n2408
+00 1
+.names n1164 key<195> n2409
+11 1
+.names n1116 key<203> n2410
+11 1
+.names n1167_1 D<0> n2411
+11 1
+.names n1169 D<108> n2412
+11 1
+.names n2414 n2423 n1422
+10 0
+.names n2415 n2416 n2414
+01 1
+.names n1157_1 D<108> n2415
+11 1
+.names n2417 n2422 n2416
+10 1
+.names n2418 n2419 n2417
+01 1
+.names n1161 D<110> n2418
+11 1
+.names n2420 n2421 n2419
+00 1
+.names n1164 key<203> n2420
+11 1
+.names n1116 key<211> n2421
+11 1
+.names n1167_1 D<111> n2422
+11 1
+.names n1169 D<107> n2423
+11 1
+.names n2425 n2434 n1427
+10 0
+.names n2426 n2427 n2425
+01 1
+.names n1157_1 D<107> n2426
+11 1
+.names n2428 n2433 n2427
+10 1
+.names n2429 n2430 n2428
+01 1
+.names n1161 D<109> n2429
+11 1
+.names n2431 n2432 n2430
+00 1
+.names n1164 key<211> n2431
+11 1
+.names n1116 key<219> n2432
+11 1
+.names n1167_1 D<110> n2433
+11 1
+.names n1169 D<106> n2434
+11 1
+.names n2436 n2445 n1432
+10 0
+.names n2437 n2438 n2436
+01 1
+.names n1157_1 D<106> n2437
+11 1
+.names n2439 n2444 n2438
+10 1
+.names n2440 n2441 n2439
+01 1
+.names n1161 D<108> n2440
+11 1
+.names n2442 n2443 n2441
+00 1
+.names n1164 key<219> n2442
+11 1
+.names n1116 key<196> n2443
+11 1
+.names n1167_1 D<109> n2444
+11 1
+.names n1169 D<105> n2445
+11 1
+.names n2447 n2456 n1437
+10 0
+.names n2448 n2449 n2447
+01 1
+.names n1157_1 D<105> n2448
+11 1
+.names n2450 n2455 n2449
+10 1
+.names n2451 n2452 n2450
+01 1
+.names n1161 D<107> n2451
+11 1
+.names n2453 n2454 n2452
+00 1
+.names n1164 key<196> n2453
+11 1
+.names n1116 key<204> n2454
+11 1
+.names n1167_1 D<108> n2455
+11 1
+.names n1169 D<104> n2456
+11 1
+.names n2458 n2467 n1442
+10 0
+.names n2459 n2460 n2458
+01 1
+.names n1157_1 D<104> n2459
+11 1
+.names n2461 n2466 n2460
+10 1
+.names n2462 n2463 n2461
+01 1
+.names n1161 D<106> n2462
+11 1
+.names n2464 n2465 n2463
+00 1
+.names n1164 key<204> n2464
+11 1
+.names n1116 key<212> n2465
+11 1
+.names n1167_1 D<107> n2466
+11 1
+.names n1169 D<103> n2467
+11 1
+.names n2469 n2478 n1447
+10 0
+.names n2470 n2471 n2469
+01 1
+.names n1157_1 D<103> n2470
+11 1
+.names n2472 n2477 n2471
+10 1
+.names n2473 n2474 n2472
+01 1
+.names n1161 D<105> n2473
+11 1
+.names n2475 n2476 n2474
+00 1
+.names n1164 key<212> n2475
+11 1
+.names n1116 key<220> n2476
+11 1
+.names n1167_1 D<106> n2477
+11 1
+.names n1169 D<102> n2478
+11 1
+.names n2480 n2489 n1452
+10 0
+.names n2481 n2482 n2480
+01 1
+.names n1157_1 D<102> n2481
+11 1
+.names n2483 n2488 n2482
+10 1
+.names n2484 n2485 n2483
+01 1
+.names n1161 D<104> n2484
+11 1
+.names n2486 n2487 n2485
+00 1
+.names n1164 key<220> n2486
+11 1
+.names n1116 key<228> n2487
+11 1
+.names n1167_1 D<105> n2488
+11 1
+.names n1169 D<101> n2489
+11 1
+.names n2491 n2500 n1457
+10 0
+.names n2492 n2493 n2491
+01 1
+.names n1157_1 D<101> n2492
+11 1
+.names n2494 n2499 n2493
+10 1
+.names n2495 n2496 n2494
+01 1
+.names n1161 D<103> n2495
+11 1
+.names n2497 n2498 n2496
+00 1
+.names n1164 key<228> n2497
+11 1
+.names n1116 key<172> n2498
+11 1
+.names n1167_1 D<104> n2499
+11 1
+.names n1169 D<100> n2500
+11 1
+.names n2502 n2511 n1462
+10 0
+.names n2503 n2504 n2502
+01 1
+.names n1157_1 D<100> n2503
+11 1
+.names n2505 n2510 n2504
+10 1
+.names n2506 n2507 n2505
+01 1
+.names n1161 D<102> n2506
+11 1
+.names n2508 n2509 n2507
+00 1
+.names n1164 key<172> n2508
+11 1
+.names n1116 key<244> n2509
+11 1
+.names n1167_1 D<103> n2510
+11 1
+.names n1169 D<99> n2511
+11 1
+.names n2513 n2522 n1467
+10 0
+.names n2514 n2515 n2513
+01 1
+.names n1157_1 D<99> n2514
+11 1
+.names n2516 n2521 n2515
+10 1
+.names n2517 n2518 n2516
+01 1
+.names n1161 D<101> n2517
+11 1
+.names n2519 n2520 n2518
+00 1
+.names n1164 key<244> n2519
+11 1
+.names n1116 key<252> n2520
+11 1
+.names n1167_1 D<102> n2521
+11 1
+.names n1169 D<98> n2522
+11 1
+.names n2524 n2533 n1472
+10 0
+.names n2525 n2526 n2524
+01 1
+.names n1157_1 D<98> n2525
+11 1
+.names n2527 n2532 n2526
+10 1
+.names n2528 n2529 n2527
+01 1
+.names n1161 D<100> n2528
+11 1
+.names n2530 n2531 n2529
+00 1
+.names n1164 key<252> n2530
+11 1
+.names n1116 key<197> n2531
+11 1
+.names n1167_1 D<101> n2532
+11 1
+.names n1169 D<97> n2533
+11 1
+.names n2535 n2544 n1477
+10 0
+.names n2536 n2537 n2535
+01 1
+.names n1157_1 D<97> n2536
+11 1
+.names n2538 n2543 n2537
+10 1
+.names n2539 n2540 n2538
+01 1
+.names n1161 D<99> n2539
+11 1
+.names n2541 n2542 n2540
+00 1
+.names n1164 key<197> n2541
+11 1
+.names n1116 key<205> n2542
+11 1
+.names n1167_1 D<100> n2543
+11 1
+.names n1169 D<96> n2544
+11 1
+.names n2546 n2555 n1482
+10 0
+.names n2547 n2548 n2546
+01 1
+.names n1157_1 D<96> n2547
+11 1
+.names n2549 n2554 n2548
+10 1
+.names n2550 n2551 n2549
+01 1
+.names n1161 D<98> n2550
+11 1
+.names n2552 n2553 n2551
+00 1
+.names n1164 key<205> n2552
+11 1
+.names n1116 key<213> n2553
+11 1
+.names n1167_1 D<99> n2554
+11 1
+.names n1169 D<95> n2555
+11 1
+.names n2557 n2566 n1487
+10 0
+.names n2558 n2559 n2557
+01 1
+.names n1157_1 D<95> n2558
+11 1
+.names n2560 n2565 n2559
+10 1
+.names n2561 n2562 n2560
+01 1
+.names n1161 D<97> n2561
+11 1
+.names n2563 n2564 n2562
+00 1
+.names n1164 key<213> n2563
+11 1
+.names n1116 key<221> n2564
+11 1
+.names n1167_1 D<98> n2565
+11 1
+.names n1169 D<94> n2566
+11 1
+.names n2568 n2577 n1492
+10 0
+.names n2569 n2570 n2568
+01 1
+.names n1157_1 D<94> n2569
+11 1
+.names n2571 n2576 n2570
+10 1
+.names n2572 n2573 n2571
+01 1
+.names n1161 D<96> n2572
+11 1
+.names n2574 n2575 n2573
+00 1
+.names n1164 key<221> n2574
+11 1
+.names n1116 key<229> n2575
+11 1
+.names n1167_1 D<97> n2576
+11 1
+.names n1169 D<93> n2577
+11 1
+.names n2579 n2588 n1497
+10 0
+.names n2580 n2581 n2579
+01 1
+.names n1157_1 D<93> n2580
+11 1
+.names n2582 n2587 n2581
+10 1
+.names n2583 n2584 n2582
+01 1
+.names n1161 D<95> n2583
+11 1
+.names n2585 n2586 n2584
+00 1
+.names n1164 key<229> n2585
+11 1
+.names n1116 key<237> n2586
+11 1
+.names n1167_1 D<96> n2587
+11 1
+.names n1169 D<92> n2588
+11 1
+.names n2590 n2599 n1502
+10 0
+.names n2591 n2592 n2590
+01 1
+.names n1157_1 D<92> n2591
+11 1
+.names n2593 n2598 n2592
+10 1
+.names n2594 n2595 n2593
+01 1
+.names n1161 D<94> n2594
+11 1
+.names n2596 n2597 n2595
+00 1
+.names n1164 key<237> n2596
+11 1
+.names n1116 key<245> n2597
+11 1
+.names n1167_1 D<95> n2598
+11 1
+.names n1169 D<91> n2599
+11 1
+.names n2601 n2610 n1507
+10 0
+.names n2602 n2603 n2601
+01 1
+.names n1157_1 D<91> n2602
+11 1
+.names n2604 n2609 n2603
+10 1
+.names n2605 n2606 n2604
+01 1
+.names n1161 D<93> n2605
+11 1
+.names n2607 n2608 n2606
+00 1
+.names n1164 key<245> n2607
+11 1
+.names n1116 key<253> n2608
+11 1
+.names n1167_1 D<94> n2609
+11 1
+.names n1169 D<90> n2610
+11 1
+.names n2612 n2621 n1512
+10 0
+.names n2613 n2614 n2612
+01 1
+.names n1157_1 D<90> n2613
+11 1
+.names n2615 n2620 n2614
+10 1
+.names n2616 n2617 n2615
+01 1
+.names n1161 D<92> n2616
+11 1
+.names n2618 n2619 n2617
+00 1
+.names n1164 key<253> n2618
+11 1
+.names n1116 key<198> n2619
+11 1
+.names n1167_1 D<93> n2620
+11 1
+.names n1169 D<89> n2621
+11 1
+.names n2623 n2632 n1517
+10 0
+.names n2624 n2625 n2623
+01 1
+.names n1157_1 D<89> n2624
+11 1
+.names n2626 n2631 n2625
+10 1
+.names n2627 n2628 n2626
+01 1
+.names n1161 D<91> n2627
+11 1
+.names n2629 n2630 n2628
+00 1
+.names n1164 key<198> n2629
+11 1
+.names n1116 key<206> n2630
+11 1
+.names n1167_1 D<92> n2631
+11 1
+.names n1169 D<88> n2632
+11 1
+.names n2634 n2643 n1522
+10 0
+.names n2635 n2636 n2634
+01 1
+.names n1157_1 D<88> n2635
+11 1
+.names n2637 n2642 n2636
+10 1
+.names n2638 n2639 n2637
+01 1
+.names n1161 D<90> n2638
+11 1
+.names n2640 n2641 n2639
+00 1
+.names n1164 key<206> n2640
+11 1
+.names n1116 key<214> n2641
+11 1
+.names n1167_1 D<91> n2642
+11 1
+.names n1169 D<87> n2643
+11 1
+.names n2645 n2654 n1527
+10 0
+.names n2646 n2647 n2645
+01 1
+.names n1157_1 D<87> n2646
+11 1
+.names n2648 n2653 n2647
+10 1
+.names n2649 n2650 n2648
+01 1
+.names n1161 D<89> n2649
+11 1
+.names n2651 n2652 n2650
+00 1
+.names n1164 key<214> n2651
+11 1
+.names n1116 key<222> n2652
+11 1
+.names n1167_1 D<90> n2653
+11 1
+.names n1169 D<86> n2654
+11 1
+.names n2656 n2665 n1532
+10 0
+.names n2657 n2658 n2656
+01 1
+.names n1157_1 D<86> n2657
+11 1
+.names n2659 n2664 n2658
+10 1
+.names n2660 n2661 n2659
+01 1
+.names n1161 D<88> n2660
+11 1
+.names n2662 n2663 n2661
+00 1
+.names n1164 key<222> n2662
+11 1
+.names n1116 key<230> n2663
+11 1
+.names n1167_1 D<89> n2664
+11 1
+.names n1169 D<85> n2665
+11 1
+.names n2667 n2676 n1537
+10 0
+.names n2668 n2669 n2667
+01 1
+.names n1157_1 D<85> n2668
+11 1
+.names n2670 n2675 n2669
+10 1
+.names n2671 n2672 n2670
+01 1
+.names n1161 D<87> n2671
+11 1
+.names n2673 n2674 n2672
+00 1
+.names n1164 key<230> n2673
+11 1
+.names n1116 key<238> n2674
+11 1
+.names n1167_1 D<88> n2675
+11 1
+.names n1169 D<84> n2676
+11 1
+.names n2678 n2687 n1542
+10 0
+.names n2679 n2680 n2678
+01 1
+.names n1157_1 D<84> n2679
+11 1
+.names n2681 n2686 n2680
+10 1
+.names n2682 n2683 n2681
+01 1
+.names n1161 D<86> n2682
+11 1
+.names n2684 n2685 n2683
+00 1
+.names n1164 key<238> n2684
+11 1
+.names n1116 key<246> n2685
+11 1
+.names n1167_1 D<87> n2686
+11 1
+.names n1169 D<83> n2687
+11 1
+.names n2689 n2698 n1547
+10 0
+.names n2690 n2691 n2689
+01 1
+.names n1157_1 D<83> n2690
+11 1
+.names n2692 n2697 n2691
+10 1
+.names n2693 n2694 n2692
+01 1
+.names n1161 D<85> n2693
+11 1
+.names n2695 n2696 n2694
+00 1
+.names n1164 key<246> n2695
+11 1
+.names n1116 key<254> n2696
+11 1
+.names n1167_1 D<86> n2697
+11 1
+.names n1169 D<82> n2698
+11 1
+.names n2700 n2709 n1552
+10 0
+.names n2701 n2702 n2700
+01 1
+.names n1157_1 D<82> n2701
+11 1
+.names n2703 n2708 n2702
+10 1
+.names n2704 n2705 n2703
+01 1
+.names n1161 D<84> n2704
+11 1
+.names n2706 n2707 n2705
+00 1
+.names n1164 key<254> n2706
+11 1
+.names n1116 key<131> n2707
+11 1
+.names n1167_1 D<85> n2708
+11 1
+.names n1169 D<81> n2709
+11 1
+.names n2711 n2720 n1557
+10 0
+.names n2712 n2713 n2711
+01 1
+.names n1157_1 D<81> n2712
+11 1
+.names n2714 n2719 n2713
+10 1
+.names n2715 n2716 n2714
+01 1
+.names n1161 D<83> n2715
+11 1
+.names n2717 n2718 n2716
+00 1
+.names n1164 key<131> n2717
+11 1
+.names n1116 key<139> n2718
+11 1
+.names n1167_1 D<84> n2719
+11 1
+.names n1169 D<80> n2720
+11 1
+.names n2722 n2731 n1562
+10 0
+.names n2723 n2724 n2722
+01 1
+.names n1157_1 D<80> n2723
+11 1
+.names n2725 n2730 n2724
+10 1
+.names n2726 n2727 n2725
+01 1
+.names n1161 D<82> n2726
+11 1
+.names n2728 n2729 n2727
+00 1
+.names n1164 key<139> n2728
+11 1
+.names n1116 key<147> n2729
+11 1
+.names n1167_1 D<83> n2730
+11 1
+.names n1169 D<79> n2731
+11 1
+.names n2733 n2742 n1567
+10 0
+.names n2734 n2735 n2733
+01 1
+.names n1157_1 D<79> n2734
+11 1
+.names n2736 n2741 n2735
+10 1
+.names n2737 n2738 n2736
+01 1
+.names n1161 D<81> n2737
+11 1
+.names n2739 n2740 n2738
+00 1
+.names n1164 key<147> n2739
+11 1
+.names n1116 key<155> n2740
+11 1
+.names n1167_1 D<82> n2741
+11 1
+.names n1169 D<78> n2742
+11 1
+.names n2744 n2753 n1572
+10 0
+.names n2745 n2746 n2744
+01 1
+.names n1157_1 D<78> n2745
+11 1
+.names n2747 n2752 n2746
+10 1
+.names n2748 n2749 n2747
+01 1
+.names n1161 D<80> n2748
+11 1
+.names n2750 n2751 n2749
+00 1
+.names n1164 key<155> n2750
+11 1
+.names n1116 key<132> n2751
+11 1
+.names n1167_1 D<81> n2752
+11 1
+.names n1169 D<77> n2753
+11 1
+.names n2755 n2764 n1577
+10 0
+.names n2756 n2757 n2755
+01 1
+.names n1157_1 D<77> n2756
+11 1
+.names n2758 n2763 n2757
+10 1
+.names n2759 n2760 n2758
+01 1
+.names n1161 D<79> n2759
+11 1
+.names n2761 n2762 n2760
+00 1
+.names n1164 key<132> n2761
+11 1
+.names n1116 key<140> n2762
+11 1
+.names n1167_1 D<80> n2763
+11 1
+.names n1169 D<76> n2764
+11 1
+.names n2766 n2775 n1582
+10 0
+.names n2767 n2768 n2766
+01 1
+.names n1157_1 D<76> n2767
+11 1
+.names n2769 n2774 n2768
+10 1
+.names n2770 n2771 n2769
+01 1
+.names n1161 D<78> n2770
+11 1
+.names n2772 n2773 n2771
+00 1
+.names n1164 key<140> n2772
+11 1
+.names n1116 key<148> n2773
+11 1
+.names n1167_1 D<79> n2774
+11 1
+.names n1169 D<75> n2775
+11 1
+.names n2777 n2786 n1587
+10 0
+.names n2778 n2779 n2777
+01 1
+.names n1157_1 D<75> n2778
+11 1
+.names n2780 n2785 n2779
+10 1
+.names n2781 n2782 n2780
+01 1
+.names n1161 D<77> n2781
+11 1
+.names n2783 n2784 n2782
+00 1
+.names n1164 key<148> n2783
+11 1
+.names n1116 key<156> n2784
+11 1
+.names n1167_1 D<78> n2785
+11 1
+.names n1169 D<74> n2786
+11 1
+.names n2788 n2797 n1592
+10 0
+.names n2789 n2790 n2788
+01 1
+.names n1157_1 D<74> n2789
+11 1
+.names n2791 n2796 n2790
+10 1
+.names n2792 n2793 n2791
+01 1
+.names n1161 D<76> n2792
+11 1
+.names n2794 n2795 n2793
+00 1
+.names n1164 key<156> n2794
+11 1
+.names n1116 key<164> n2795
+11 1
+.names n1167_1 D<77> n2796
+11 1
+.names n1169 D<73> n2797
+11 1
+.names n2799 n2807 n1597
+10 0
+.names n2800 n2801 n2799
+01 1
+.names n1157_1 D<73> n2800
+11 1
+.names n2802 n2806 n2801
+10 1
+.names n2803 n2804 n2802
+01 1
+.names n1161 D<75> n2803
+11 1
+.names n2498 n2805 n2804
+00 1
+.names n1164 key<164> n2805
+11 1
+.names n1167_1 D<76> n2806
+11 1
+.names n1169 D<72> n2807
+11 1
+.names n2809 n2817 n1602
+10 0
+.names n2810 n2811 n2809
+01 1
+.names n1157_1 D<72> n2810
+11 1
+.names n2812 n2816 n2811
+10 1
+.names n2813 n2814 n2812
+01 1
+.names n1161 D<74> n2813
+11 1
+.names n2508 n2815 n2814
+00 1
+.names n1116 key<180> n2815
+11 1
+.names n1167_1 D<75> n2816
+11 1
+.names n1169 D<71> n2817
+11 1
+.names n2819 n2828 n1607
+10 0
+.names n2820 n2821 n2819
+01 1
+.names n1157_1 D<71> n2820
+11 1
+.names n2822 n2827 n2821
+10 1
+.names n2823 n2824 n2822
+01 1
+.names n1161 D<73> n2823
+11 1
+.names n2825 n2826 n2824
+00 1
+.names n1164 key<180> n2825
+11 1
+.names n1116 key<188> n2826
+11 1
+.names n1167_1 D<74> n2827
+11 1
+.names n1169 D<70> n2828
+11 1
+.names n2830 n2839 n1612
+10 0
+.names n2831 n2832 n2830
+01 1
+.names n1157_1 D<70> n2831
+11 1
+.names n2833 n2838 n2832
+10 1
+.names n2834 n2835 n2833
+01 1
+.names n1161 D<72> n2834
+11 1
+.names n2836 n2837 n2835
+00 1
+.names n1164 key<188> n2836
+11 1
+.names n1116 key<133> n2837
+11 1
+.names n1167_1 D<73> n2838
+11 1
+.names n1169 D<69> n2839
+11 1
+.names n2841 n2850 n1617
+10 0
+.names n2842 n2843 n2841
+01 1
+.names n1157_1 D<69> n2842
+11 1
+.names n2844 n2849 n2843
+10 1
+.names n2845 n2846 n2844
+01 1
+.names n1161 D<71> n2845
+11 1
+.names n2847 n2848 n2846
+00 1
+.names n1164 key<133> n2847
+11 1
+.names n1116 key<141> n2848
+11 1
+.names n1167_1 D<72> n2849
+11 1
+.names n1169 D<68> n2850
+11 1
+.names n2852 n2861 n1622
+10 0
+.names n2853 n2854 n2852
+01 1
+.names n1157_1 D<68> n2853
+11 1
+.names n2855 n2860 n2854
+10 1
+.names n2856 n2857 n2855
+01 1
+.names n1161 D<70> n2856
+11 1
+.names n2858 n2859 n2857
+00 1
+.names n1164 key<141> n2858
+11 1
+.names n1116 key<149> n2859
+11 1
+.names n1167_1 D<71> n2860
+11 1
+.names n1169 D<67> n2861
+11 1
+.names n2863 n2872 n1627
+10 0
+.names n2864 n2865 n2863
+01 1
+.names n1157_1 D<67> n2864
+11 1
+.names n2866 n2871 n2865
+10 1
+.names n2867 n2868 n2866
+01 1
+.names n1161 D<69> n2867
+11 1
+.names n2869 n2870 n2868
+00 1
+.names n1164 key<149> n2869
+11 1
+.names n1116 key<157> n2870
+11 1
+.names n1167_1 D<70> n2871
+11 1
+.names n1169 D<66> n2872
+11 1
+.names n2874 n2883 n1632
+10 0
+.names n2875 n2876 n2874
+01 1
+.names n1157_1 D<66> n2875
+11 1
+.names n2877 n2882 n2876
+10 1
+.names n2878 n2879 n2877
+01 1
+.names n1161 D<68> n2878
+11 1
+.names n2880 n2881 n2879
+00 1
+.names n1164 key<157> n2880
+11 1
+.names n1116 key<165> n2881
+11 1
+.names n1167_1 D<69> n2882
+11 1
+.names n1169 D<65> n2883
+11 1
+.names n2885 n2894 n1637
+10 0
+.names n2886 n2887 n2885
+01 1
+.names n1157_1 D<65> n2886
+11 1
+.names n2888 n2893 n2887
+10 1
+.names n2889 n2890 n2888
+01 1
+.names n1161 D<67> n2889
+11 1
+.names n2891 n2892 n2890
+00 1
+.names n1164 key<165> n2891
+11 1
+.names n1116 key<173> n2892
+11 1
+.names n1167_1 D<68> n2893
+11 1
+.names n1169 D<64> n2894
+11 1
+.names n2896 n2905 n1642
+10 0
+.names n2897 n2898 n2896
+01 1
+.names n1157_1 D<64> n2897
+11 1
+.names n2899 n2904 n2898
+10 1
+.names n2900 n2901 n2899
+01 1
+.names n1161 D<66> n2900
+11 1
+.names n2902 n2903 n2901
+00 1
+.names n1164 key<173> n2902
+11 1
+.names n1116 key<181> n2903
+11 1
+.names n1167_1 D<67> n2904
+11 1
+.names n1169 D<63> n2905
+11 1
+.names n2907 n2916 n1647
+10 0
+.names n2908 n2909 n2907
+01 1
+.names n1157_1 D<63> n2908
+11 1
+.names n2910 n2915 n2909
+10 1
+.names n2911 n2912 n2910
+01 1
+.names n1161 D<65> n2911
+11 1
+.names n2913 n2914 n2912
+00 1
+.names n1164 key<181> n2913
+11 1
+.names n1116 key<189> n2914
+11 1
+.names n1167_1 D<66> n2915
+11 1
+.names n1169 D<62> n2916
+11 1
+.names n2918 n2927 n1652
+10 0
+.names n2919 n2920 n2918
+01 1
+.names n1157_1 D<62> n2919
+11 1
+.names n2921 n2926 n2920
+10 1
+.names n2922 n2923 n2921
+01 1
+.names n1161 D<64> n2922
+11 1
+.names n2924 n2925 n2923
+00 1
+.names n1164 key<189> n2924
+11 1
+.names n1116 key<134> n2925
+11 1
+.names n1167_1 D<65> n2926
+11 1
+.names n1169 D<61> n2927
+11 1
+.names n2929 n2938 n1657
+10 0
+.names n2930 n2931 n2929
+01 1
+.names n1157_1 D<61> n2930
+11 1
+.names n2932 n2937 n2931
+10 1
+.names n2933 n2934 n2932
+01 1
+.names n1161 D<63> n2933
+11 1
+.names n2935 n2936 n2934
+00 1
+.names n1164 key<134> n2935
+11 1
+.names n1116 key<142> n2936
+11 1
+.names n1167_1 D<64> n2937
+11 1
+.names n1169 D<60> n2938
+11 1
+.names n2940 n2949 n1662
+10 0
+.names n2941 n2942 n2940
+01 1
+.names n1157_1 D<60> n2941
+11 1
+.names n2943 n2948 n2942
+10 1
+.names n2944 n2945 n2943
+01 1
+.names n1161 D<62> n2944
+11 1
+.names n2946 n2947 n2945
+00 1
+.names n1164 key<142> n2946
+11 1
+.names n1116 key<150> n2947
+11 1
+.names n1167_1 D<63> n2948
+11 1
+.names n1169 D<59> n2949
+11 1
+.names n2951 n2960 n1667
+10 0
+.names n2952 n2953 n2951
+01 1
+.names n1157_1 D<59> n2952
+11 1
+.names n2954 n2959 n2953
+10 1
+.names n2955 n2956 n2954
+01 1
+.names n1161 D<61> n2955
+11 1
+.names n2957 n2958 n2956
+00 1
+.names n1164 key<150> n2957
+11 1
+.names n1116 key<158> n2958
+11 1
+.names n1167_1 D<62> n2959
+11 1
+.names n1169 D<58> n2960
+11 1
+.names n2962 n2971 n1672
+10 0
+.names n2963 n2964 n2962
+01 1
+.names n1157_1 D<58> n2963
+11 1
+.names n2965 n2970 n2964
+10 1
+.names n2966 n2967 n2965
+01 1
+.names n1161 D<60> n2966
+11 1
+.names n2968 n2969 n2967
+00 1
+.names n1164 key<158> n2968
+11 1
+.names n1116 key<166> n2969
+11 1
+.names n1167_1 D<61> n2970
+11 1
+.names n1169 D<57> n2971
+11 1
+.names n2973 n2982 n1677
+10 0
+.names n2974 n2975 n2973
+01 1
+.names n1157_1 D<57> n2974
+11 1
+.names n2976 n2981 n2975
+10 1
+.names n2977 n2978 n2976
+01 1
+.names n1161 D<59> n2977
+11 1
+.names n2979 n2980 n2978
+00 1
+.names n1164 key<166> n2979
+11 1
+.names n1116 key<174> n2980
+11 1
+.names n1167_1 D<60> n2981
+11 1
+.names n1169 D<56> n2982
+11 1
+.names n2984 n2993 n1682
+10 0
+.names n2985 n2986 n2984
+01 1
+.names n1157_1 D<56> n2985
+11 1
+.names n2987 n2992 n2986
+10 1
+.names n2988 n2989 n2987
+01 1
+.names n1161 D<58> n2988
+11 1
+.names n2990 n2991 n2989
+00 1
+.names n1164 key<174> n2990
+11 1
+.names n1116 key<182> n2991
+11 1
+.names n1167_1 D<59> n2992
+11 1
+.names n1169 D<55> n2993
+11 1
+.names n2995 n3004 n1687
+10 0
+.names n2996 n2997 n2995
+01 1
+.names n1157_1 D<55> n2996
+11 1
+.names n2998 n3003 n2997
+10 1
+.names n2999 n3000 n2998
+01 1
+.names n1161 D<57> n2999
+11 1
+.names n3001 n3002 n3000
+00 1
+.names n1164 key<182> n3001
+11 1
+.names n1116 key<190> n3002
+11 1
+.names n1167_1 D<58> n3003
+11 1
+.names n1169 D<54> n3004
+11 1
+.names n3006 n3015 n1692
+10 0
+.names n3007 n3008 n3006
+01 1
+.names n1157_1 D<54> n3007
+11 1
+.names n3009 n3014 n3008
+10 1
+.names n3010 n3011 n3009
+01 1
+.names n1161 D<56> n3010
+11 1
+.names n3012 n3013 n3011
+00 1
+.names n1164 key<190> n3012
+11 1
+.names n1116 key<67> n3013
+11 1
+.names n1167_1 D<57> n3014
+11 1
+.names n1169 D<53> n3015
+11 1
+.names n3017 n3026 n1697
+10 0
+.names n3018 n3019 n3017
+01 1
+.names n1157_1 D<53> n3018
+11 1
+.names n3020 n3025 n3019
+10 1
+.names n3021 n3022 n3020
+01 1
+.names n1161 D<55> n3021
+11 1
+.names n3023 n3024 n3022
+00 1
+.names n1164 key<67> n3023
+11 1
+.names n1116 key<75> n3024
+11 1
+.names n1167_1 D<56> n3025
+11 1
+.names n1169 D<52> n3026
+11 1
+.names n3028 n3037 n1702
+10 0
+.names n3029 n3030 n3028
+01 1
+.names n1157_1 D<52> n3029
+11 1
+.names n3031 n3036 n3030
+10 1
+.names n3032 n3033 n3031
+01 1
+.names n1161 D<54> n3032
+11 1
+.names n3034 n3035 n3033
+00 1
+.names n1164 key<75> n3034
+11 1
+.names n1116 key<83> n3035
+11 1
+.names n1167_1 D<55> n3036
+11 1
+.names n1169 D<51> n3037
+11 1
+.names n3039 n3048 n1707
+10 0
+.names n3040 n3041 n3039
+01 1
+.names n1157_1 D<51> n3040
+11 1
+.names n3042 n3047 n3041
+10 1
+.names n3043 n3044 n3042
+01 1
+.names n1161 D<53> n3043
+11 1
+.names n3045 n3046 n3044
+00 1
+.names n1164 key<83> n3045
+11 1
+.names n1116 key<91> n3046
+11 1
+.names n1167_1 D<54> n3047
+11 1
+.names n1169 D<50> n3048
+11 1
+.names n3050 n3059 n1712
+10 0
+.names n3051 n3052 n3050
+01 1
+.names n1157_1 D<50> n3051
+11 1
+.names n3053 n3058 n3052
+10 1
+.names n3054 n3055 n3053
+01 1
+.names n1161 D<52> n3054
+11 1
+.names n3056 n3057 n3055
+00 1
+.names n1164 key<91> n3056
+11 1
+.names n1116 key<68> n3057
+11 1
+.names n1167_1 D<53> n3058
+11 1
+.names n1169 D<49> n3059
+11 1
+.names n3061 n3070 n1717
+10 0
+.names n3062 n3063 n3061
+01 1
+.names n1157_1 D<49> n3062
+11 1
+.names n3064 n3069 n3063
+10 1
+.names n3065 n3066 n3064
+01 1
+.names n1161 D<51> n3065
+11 1
+.names n3067 n3068 n3066
+00 1
+.names n1164 key<68> n3067
+11 1
+.names n1116 key<76> n3068
+11 1
+.names n1167_1 D<52> n3069
+11 1
+.names n1169 D<48> n3070
+11 1
+.names n3072 n3081 n1722
+10 0
+.names n3073 n3074 n3072
+01 1
+.names n1157_1 D<48> n3073
+11 1
+.names n3075 n3080 n3074
+10 1
+.names n3076 n3077 n3075
+01 1
+.names n1161 D<50> n3076
+11 1
+.names n3078 n3079 n3077
+00 1
+.names n1164 key<76> n3078
+11 1
+.names n1116 key<84> n3079
+11 1
+.names n1167_1 D<51> n3080
+11 1
+.names n1169 D<47> n3081
+11 1
+.names n3083 n3092 n1727
+10 0
+.names n3084 n3085 n3083
+01 1
+.names n1157_1 D<47> n3084
+11 1
+.names n3086 n3091 n3085
+10 1
+.names n3087 n3088 n3086
+01 1
+.names n1161 D<49> n3087
+11 1
+.names n3089 n3090 n3088
+00 1
+.names n1164 key<84> n3089
+11 1
+.names n1116 key<92> n3090
+11 1
+.names n1167_1 D<50> n3091
+11 1
+.names n1169 D<46> n3092
+11 1
+.names n3094 n3103 n1732
+10 0
+.names n3095 n3096 n3094
+01 1
+.names n1157_1 D<46> n3095
+11 1
+.names n3097 n3102 n3096
+10 1
+.names n3098 n3099 n3097
+01 1
+.names n1161 D<48> n3098
+11 1
+.names n3100 n3101 n3099
+00 1
+.names n1164 key<92> n3100
+11 1
+.names n1116 key<100> n3101
+11 1
+.names n1167_1 D<49> n3102
+11 1
+.names n1169 D<45> n3103
+11 1
+.names n3105 n3114 n1737
+10 0
+.names n3106 n3107 n3105
+01 1
+.names n1157_1 D<45> n3106
+11 1
+.names n3108 n3113 n3107
+10 1
+.names n3109 n3110 n3108
+01 1
+.names n1161 D<47> n3109
+11 1
+.names n3111 n3112 n3110
+00 1
+.names n1164 key<100> n3111
+11 1
+.names n1116 key<44> n3112
+11 1
+.names n1167_1 D<48> n3113
+11 1
+.names n1169 D<44> n3114
+11 1
+.names n3116 n3125 n1742
+10 0
+.names n3117 n3118 n3116
+01 1
+.names n1157_1 D<44> n3117
+11 1
+.names n3119 n3124 n3118
+10 1
+.names n3120 n3121 n3119
+01 1
+.names n1161 D<46> n3120
+11 1
+.names n3122 n3123 n3121
+00 1
+.names n1164 key<44> n3122
+11 1
+.names n1116 key<116> n3123
+11 1
+.names n1167_1 D<47> n3124
+11 1
+.names n1169 D<43> n3125
+11 1
+.names n3127 n3136 n1747
+10 0
+.names n3128 n3129 n3127
+01 1
+.names n1157_1 D<43> n3128
+11 1
+.names n3130 n3135 n3129
+10 1
+.names n3131 n3132 n3130
+01 1
+.names n1161 D<45> n3131
+11 1
+.names n3133 n3134 n3132
+00 1
+.names n1164 key<116> n3133
+11 1
+.names n1116 key<124> n3134
+11 1
+.names n1167_1 D<46> n3135
+11 1
+.names n1169 D<42> n3136
+11 1
+.names n3138 n3147 n1752
+10 0
+.names n3139 n3140 n3138
+01 1
+.names n1157_1 D<42> n3139
+11 1
+.names n3141 n3146 n3140
+10 1
+.names n3142 n3143 n3141
+01 1
+.names n1161 D<44> n3142
+11 1
+.names n3144 n3145 n3143
+00 1
+.names n1164 key<124> n3144
+11 1
+.names n1116 key<69> n3145
+11 1
+.names n1167_1 D<45> n3146
+11 1
+.names n1169 D<41> n3147
+11 1
+.names n3149 n3158 n1757
+10 0
+.names n3150 n3151 n3149
+01 1
+.names n1157_1 D<41> n3150
+11 1
+.names n3152 n3157 n3151
+10 1
+.names n3153 n3154 n3152
+01 1
+.names n1161 D<43> n3153
+11 1
+.names n3155 n3156 n3154
+00 1
+.names n1164 key<69> n3155
+11 1
+.names n1116 key<77> n3156
+11 1
+.names n1167_1 D<44> n3157
+11 1
+.names n1169 D<40> n3158
+11 1
+.names n3160 n3169 n1762
+10 0
+.names n3161 n3162 n3160
+01 1
+.names n1157_1 D<40> n3161
+11 1
+.names n3163 n3168 n3162
+10 1
+.names n3164 n3165 n3163
+01 1
+.names n1161 D<42> n3164
+11 1
+.names n3166 n3167 n3165
+00 1
+.names n1164 key<77> n3166
+11 1
+.names n1116 key<85> n3167
+11 1
+.names n1167_1 D<43> n3168
+11 1
+.names n1169 D<39> n3169
+11 1
+.names n3171 n3180 n1767
+10 0
+.names n3172 n3173 n3171
+01 1
+.names n1157_1 D<39> n3172
+11 1
+.names n3174 n3179 n3173
+10 1
+.names n3175 n3176 n3174
+01 1
+.names n1161 D<41> n3175
+11 1
+.names n3177 n3178 n3176
+00 1
+.names n1164 key<85> n3177
+11 1
+.names n1116 key<93> n3178
+11 1
+.names n1167_1 D<42> n3179
+11 1
+.names n1169 D<38> n3180
+11 1
+.names n3182 n3191 n1772
+10 0
+.names n3183 n3184 n3182
+01 1
+.names n1157_1 D<38> n3183
+11 1
+.names n3185 n3190 n3184
+10 1
+.names n3186 n3187 n3185
+01 1
+.names n1161 D<40> n3186
+11 1
+.names n3188 n3189 n3187
+00 1
+.names n1164 key<93> n3188
+11 1
+.names n1116 key<101> n3189
+11 1
+.names n1167_1 D<41> n3190
+11 1
+.names n1169 D<37> n3191
+11 1
+.names n3193 n3202 n1777
+10 0
+.names n3194 n3195 n3193
+01 1
+.names n1157_1 D<37> n3194
+11 1
+.names n3196 n3201 n3195
+10 1
+.names n3197 n3198 n3196
+01 1
+.names n1161 D<39> n3197
+11 1
+.names n3199 n3200 n3198
+00 1
+.names n1164 key<101> n3199
+11 1
+.names n1116 key<109> n3200
+11 1
+.names n1167_1 D<40> n3201
+11 1
+.names n1169 D<36> n3202
+11 1
+.names n3204 n3213 n1782
+10 0
+.names n3205 n3206 n3204
+01 1
+.names n1157_1 D<36> n3205
+11 1
+.names n3207 n3212 n3206
+10 1
+.names n3208 n3209 n3207
+01 1
+.names n1161 D<38> n3208
+11 1
+.names n3210 n3211 n3209
+00 1
+.names n1164 key<109> n3210
+11 1
+.names n1116 key<117> n3211
+11 1
+.names n1167_1 D<39> n3212
+11 1
+.names n1169 D<35> n3213
+11 1
+.names n3215 n3224 n1787
+10 0
+.names n3216 n3217 n3215
+01 1
+.names n1157_1 D<35> n3216
+11 1
+.names n3218 n3223 n3217
+10 1
+.names n3219 n3220 n3218
+01 1
+.names n1161 D<37> n3219
+11 1
+.names n3221 n3222 n3220
+00 1
+.names n1164 key<117> n3221
+11 1
+.names n1116 key<125> n3222
+11 1
+.names n1167_1 D<38> n3223
+11 1
+.names n1169 D<34> n3224
+11 1
+.names n3226 n3235 n1792
+10 0
+.names n3227 n3228 n3226
+01 1
+.names n1157_1 D<34> n3227
+11 1
+.names n3229 n3234 n3228
+10 1
+.names n3230 n3231 n3229
+01 1
+.names n1161 D<36> n3230
+11 1
+.names n3232 n3233 n3231
+00 1
+.names n1164 key<125> n3232
+11 1
+.names n1116 key<70> n3233
+11 1
+.names n1167_1 D<37> n3234
+11 1
+.names n1169 D<33> n3235
+11 1
+.names n3237 n3246 n1797
+10 0
+.names n3238 n3239 n3237
+01 1
+.names n1157_1 D<33> n3238
+11 1
+.names n3240 n3245 n3239
+10 1
+.names n3241 n3242 n3240
+01 1
+.names n1161 D<35> n3241
+11 1
+.names n3243 n3244 n3242
+00 1
+.names n1164 key<70> n3243
+11 1
+.names n1116 key<78> n3244
+11 1
+.names n1167_1 D<36> n3245
+11 1
+.names n1169 D<32> n3246
+11 1
+.names n3248 n3257 n1802
+10 0
+.names n3249 n3250 n3248
+01 1
+.names n1157_1 D<32> n3249
+11 1
+.names n3251 n3256 n3250
+10 1
+.names n3252 n3253 n3251
+01 1
+.names n1161 D<34> n3252
+11 1
+.names n3254 n3255 n3253
+00 1
+.names n1164 key<78> n3254
+11 1
+.names n1116 key<86> n3255
+11 1
+.names n1167_1 D<35> n3256
+11 1
+.names n1169 D<31> n3257
+11 1
+.names n3259 n3268 n1807
+10 0
+.names n3260 n3261 n3259
+01 1
+.names n1157_1 D<31> n3260
+11 1
+.names n3262 n3267 n3261
+10 1
+.names n3263 n3264 n3262
+01 1
+.names n1161 D<33> n3263
+11 1
+.names n3265 n3266 n3264
+00 1
+.names n1164 key<86> n3265
+11 1
+.names n1116 key<94> n3266
+11 1
+.names n1167_1 D<34> n3267
+11 1
+.names n1169 D<30> n3268
+11 1
+.names n3270 n3279 n1812
+10 0
+.names n3271 n3272 n3270
+01 1
+.names n1157_1 D<30> n3271
+11 1
+.names n3273 n3278 n3272
+10 1
+.names n3274 n3275 n3273
+01 1
+.names n1161 D<32> n3274
+11 1
+.names n3276 n3277 n3275
+00 1
+.names n1164 key<94> n3276
+11 1
+.names n1116 key<102> n3277
+11 1
+.names n1167_1 D<33> n3278
+11 1
+.names n1169 D<29> n3279
+11 1
+.names n3281 n3290 n1817
+10 0
+.names n3282 n3283 n3281
+01 1
+.names n1157_1 D<29> n3282
+11 1
+.names n3284 n3289 n3283
+10 1
+.names n3285 n3286 n3284
+01 1
+.names n1161 D<31> n3285
+11 1
+.names n3287 n3288 n3286
+00 1
+.names n1164 key<102> n3287
+11 1
+.names n1116 key<110> n3288
+11 1
+.names n1167_1 D<32> n3289
+11 1
+.names n1169 D<28> n3290
+11 1
+.names n3292 n3301 n1822
+10 0
+.names n3293 n3294 n3292
+01 1
+.names n1157_1 D<28> n3293
+11 1
+.names n3295 n3300 n3294
+10 1
+.names n3296 n3297 n3295
+01 1
+.names n1161 D<30> n3296
+11 1
+.names n3298 n3299 n3297
+00 1
+.names n1164 key<110> n3298
+11 1
+.names n1116 key<118> n3299
+11 1
+.names n1167_1 D<31> n3300
+11 1
+.names n1169 D<27> n3301
+11 1
+.names n3303 n3312 n1827
+10 0
+.names n3304 n3305 n3303
+01 1
+.names n1157_1 D<27> n3304
+11 1
+.names n3306 n3311 n3305
+10 1
+.names n3307 n3308 n3306
+01 1
+.names n1161 D<29> n3307
+11 1
+.names n3309 n3310 n3308
+00 1
+.names n1164 key<118> n3309
+11 1
+.names n1116 key<126> n3310
+11 1
+.names n1167_1 D<30> n3311
+11 1
+.names n1169 D<26> n3312
+11 1
+.names n3314 n3323 n1832
+10 0
+.names n3315 n3316 n3314
+01 1
+.names n1157_1 D<26> n3315
+11 1
+.names n3317 n3322 n3316
+10 1
+.names n3318 n3319 n3317
+01 1
+.names n1161 D<28> n3318
+11 1
+.names n3320 n3321 n3319
+00 1
+.names n1164 key<126> n3320
+11 1
+.names n1116 key<3> n3321
+11 1
+.names n1167_1 D<29> n3322
+11 1
+.names n1169 D<25> n3323
+11 1
+.names n3325 n3334 n1837
+10 0
+.names n3326 n3327 n3325
+01 1
+.names n1157_1 D<25> n3326
+11 1
+.names n3328 n3333 n3327
+10 1
+.names n3329 n3330 n3328
+01 1
+.names n1161 D<27> n3329
+11 1
+.names n3331 n3332 n3330
+00 1
+.names n1164 key<3> n3331
+11 1
+.names n1116 key<11> n3332
+11 1
+.names n1167_1 D<28> n3333
+11 1
+.names n1169 D<24> n3334
+11 1
+.names n3336 n3345 n1842
+10 0
+.names n3337 n3338 n3336
+01 1
+.names n1157_1 D<24> n3337
+11 1
+.names n3339 n3344 n3338
+10 1
+.names n3340 n3341 n3339
+01 1
+.names n1161 D<26> n3340
+11 1
+.names n3342 n3343 n3341
+00 1
+.names n1164 key<11> n3342
+11 1
+.names n1116 key<19> n3343
+11 1
+.names n1167_1 D<27> n3344
+11 1
+.names n1169 D<23> n3345
+11 1
+.names n3347 n3356 n1847
+10 0
+.names n3348 n3349 n3347
+01 1
+.names n1157_1 D<23> n3348
+11 1
+.names n3350 n3355 n3349
+10 1
+.names n3351 n3352 n3350
+01 1
+.names n1161 D<25> n3351
+11 1
+.names n3353 n3354 n3352
+00 1
+.names n1164 key<19> n3353
+11 1
+.names n1116 key<27> n3354
+11 1
+.names n1167_1 D<26> n3355
+11 1
+.names n1169 D<22> n3356
+11 1
+.names n3358 n3367 n1852
+10 0
+.names n3359 n3360 n3358
+01 1
+.names n1157_1 D<22> n3359
+11 1
+.names n3361 n3366 n3360
+10 1
+.names n3362 n3363 n3361
+01 1
+.names n1161 D<24> n3362
+11 1
+.names n3364 n3365 n3363
+00 1
+.names n1164 key<27> n3364
+11 1
+.names n1116 key<4> n3365
+11 1
+.names n1167_1 D<25> n3366
+11 1
+.names n1169 D<21> n3367
+11 1
+.names n3369 n3378 n1857
+10 0
+.names n3370 n3371 n3369
+01 1
+.names n1157_1 D<21> n3370
+11 1
+.names n3372 n3377 n3371
+10 1
+.names n3373 n3374 n3372
+01 1
+.names n1161 D<23> n3373
+11 1
+.names n3375 n3376 n3374
+00 1
+.names n1164 key<4> n3375
+11 1
+.names n1116 key<12> n3376
+11 1
+.names n1167_1 D<24> n3377
+11 1
+.names n1169 D<20> n3378
+11 1
+.names n3380 n3389 n1862
+10 0
+.names n3381 n3382 n3380
+01 1
+.names n1157_1 D<20> n3381
+11 1
+.names n3383 n3388 n3382
+10 1
+.names n3384 n3385 n3383
+01 1
+.names n1161 D<22> n3384
+11 1
+.names n3386 n3387 n3385
+00 1
+.names n1164 key<12> n3386
+11 1
+.names n1116 key<20> n3387
+11 1
+.names n1167_1 D<23> n3388
+11 1
+.names n1169 D<19> n3389
+11 1
+.names n3391 n3400 n1867
+10 0
+.names n3392 n3393 n3391
+01 1
+.names n1157_1 D<19> n3392
+11 1
+.names n3394 n3399 n3393
+10 1
+.names n3395 n3396 n3394
+01 1
+.names n1161 D<21> n3395
+11 1
+.names n3397 n3398 n3396
+00 1
+.names n1164 key<20> n3397
+11 1
+.names n1116 key<28> n3398
+11 1
+.names n1167_1 D<22> n3399
+11 1
+.names n1169 D<18> n3400
+11 1
+.names n3402 n3411 n1872
+10 0
+.names n3403 n3404 n3402
+01 1
+.names n1157_1 D<18> n3403
+11 1
+.names n3405 n3410 n3404
+10 1
+.names n3406 n3407 n3405
+01 1
+.names n1161 D<20> n3406
+11 1
+.names n3408 n3409 n3407
+00 1
+.names n1164 key<28> n3408
+11 1
+.names n1116 key<36> n3409
+11 1
+.names n1167_1 D<21> n3410
+11 1
+.names n1169 D<17> n3411
+11 1
+.names n3413 n3421 n1877
+10 0
+.names n3414 n3415 n3413
+01 1
+.names n1157_1 D<17> n3414
+11 1
+.names n3416 n3420 n3415
+10 1
+.names n3417 n3418 n3416
+01 1
+.names n1161 D<19> n3417
+11 1
+.names n3112 n3419 n3418
+00 1
+.names n1164 key<36> n3419
+11 1
+.names n1167_1 D<20> n3420
+11 1
+.names n1169 D<16> n3421
+11 1
+.names n3423 n3431 n1882
+10 0
+.names n3424 n3425 n3423
+01 1
+.names n1157_1 D<16> n3424
+11 1
+.names n3426 n3430 n3425
+10 1
+.names n3427 n3428 n3426
+01 1
+.names n1161 D<18> n3427
+11 1
+.names n3122 n3429 n3428
+00 1
+.names n1116 key<52> n3429
+11 1
+.names n1167_1 D<19> n3430
+11 1
+.names n1169 D<15> n3431
+11 1
+.names n3433 n3442 n1887
+10 0
+.names n3434 n3435 n3433
+01 1
+.names n1157_1 D<15> n3434
+11 1
+.names n3436 n3441 n3435
+10 1
+.names n3437 n3438 n3436
+01 1
+.names n1161 D<17> n3437
+11 1
+.names n3439 n3440 n3438
+00 1
+.names n1164 key<52> n3439
+11 1
+.names n1116 key<60> n3440
+11 1
+.names n1167_1 D<18> n3441
+11 1
+.names n1169 D<14> n3442
+11 1
+.names n3444 n3453 n1892
+10 0
+.names n3445 n3446 n3444
+01 1
+.names n1157_1 D<14> n3445
+11 1
+.names n3447 n3452 n3446
+10 1
+.names n3448 n3449 n3447
+01 1
+.names n1161 D<16> n3448
+11 1
+.names n3450 n3451 n3449
+00 1
+.names n1164 key<60> n3450
+11 1
+.names n1116 key<5> n3451
+11 1
+.names n1167_1 D<17> n3452
+11 1
+.names n1169 D<13> n3453
+11 1
+.names n3455 n3464 n1897
+10 0
+.names n3456 n3457 n3455
+01 1
+.names n1157_1 D<13> n3456
+11 1
+.names n3458 n3463 n3457
+10 1
+.names n3459 n3460 n3458
+01 1
+.names n1161 D<15> n3459
+11 1
+.names n3461 n3462 n3460
+00 1
+.names n1164 key<5> n3461
+11 1
+.names n1116 key<13> n3462
+11 1
+.names n1167_1 D<16> n3463
+11 1
+.names n1169 D<12> n3464
+11 1
+.names n3466 n3475 n1902
+10 0
+.names n3467 n3468 n3466
+01 1
+.names n1157_1 D<12> n3467
+11 1
+.names n3469 n3474 n3468
+10 1
+.names n3470 n3471 n3469
+01 1
+.names n1161 D<14> n3470
+11 1
+.names n3472 n3473 n3471
+00 1
+.names n1164 key<13> n3472
+11 1
+.names n1116 key<21> n3473
+11 1
+.names n1167_1 D<15> n3474
+11 1
+.names n1169 D<11> n3475
+11 1
+.names n3477 n3486 n1907
+10 0
+.names n3478 n3479 n3477
+01 1
+.names n1157_1 D<11> n3478
+11 1
+.names n3480 n3485 n3479
+10 1
+.names n3481 n3482 n3480
+01 1
+.names n1161 D<13> n3481
+11 1
+.names n3483 n3484 n3482
+00 1
+.names n1164 key<21> n3483
+11 1
+.names n1116 key<29> n3484
+11 1
+.names n1167_1 D<14> n3485
+11 1
+.names n1169 D<10> n3486
+11 1
+.names n3488 n3497 n1912
+10 0
+.names n3489 n3490 n3488
+01 1
+.names n1157_1 D<10> n3489
+11 1
+.names n3491 n3496 n3490
+10 1
+.names n3492 n3493 n3491
+01 1
+.names n1161 D<12> n3492
+11 1
+.names n3494 n3495 n3493
+00 1
+.names n1164 key<29> n3494
+11 1
+.names n1116 key<37> n3495
+11 1
+.names n1167_1 D<13> n3496
+11 1
+.names n1169 D<9> n3497
+11 1
+.names n3499 n3508 n1917
+10 0
+.names n3500 n3501 n3499
+01 1
+.names n1157_1 D<9> n3500
+11 1
+.names n3502 n3507 n3501
+10 1
+.names n3503 n3504 n3502
+01 1
+.names n1161 D<11> n3503
+11 1
+.names n3505 n3506 n3504
+00 1
+.names n1164 key<37> n3505
+11 1
+.names n1116 key<45> n3506
+11 1
+.names n1167_1 D<12> n3507
+11 1
+.names n1169 D<8> n3508
+11 1
+.names n3510 n3519 n1922
+10 0
+.names n3511 n3512 n3510
+01 1
+.names n1157_1 D<8> n3511
+11 1
+.names n3513 n3518 n3512
+10 1
+.names n3514 n3515 n3513
+01 1
+.names n1161 D<10> n3514
+11 1
+.names n3516 n3517 n3515
+00 1
+.names n1164 key<45> n3516
+11 1
+.names n1116 key<53> n3517
+11 1
+.names n1167_1 D<11> n3518
+11 1
+.names n1169 D<7> n3519
+11 1
+.names n3521 n3530 n1927
+10 0
+.names n3522 n3523 n3521
+01 1
+.names n1157_1 D<7> n3522
+11 1
+.names n3524 n3529 n3523
+10 1
+.names n3525 n3526 n3524
+01 1
+.names n1161 D<9> n3525
+11 1
+.names n3527 n3528 n3526
+00 1
+.names n1164 key<53> n3527
+11 1
+.names n1116 key<61> n3528
+11 1
+.names n1167_1 D<10> n3529
+11 1
+.names n1169 D<6> n3530
+11 1
+.names n3532 n3541 n1932
+10 0
+.names n3533 n3534 n3532
+01 1
+.names n1157_1 D<6> n3533
+11 1
+.names n3535 n3540 n3534
+10 1
+.names n3536 n3537 n3535
+01 1
+.names n1161 D<8> n3536
+11 1
+.names n3538 n3539 n3537
+00 1
+.names n1164 key<61> n3538
+11 1
+.names n1116 key<6> n3539
+11 1
+.names n1167_1 D<9> n3540
+11 1
+.names n1169 D<5> n3541
+11 1
+.names n3543 n3552 n1937
+10 0
+.names n3544 n3545 n3543
+01 1
+.names n1157_1 D<5> n3544
+11 1
+.names n3546 n3551 n3545
+10 1
+.names n3547 n3548 n3546
+01 1
+.names n1161 D<7> n3547
+11 1
+.names n3549 n3550 n3548
+00 1
+.names n1164 key<6> n3549
+11 1
+.names n1116 key<14> n3550
+11 1
+.names n1167_1 D<8> n3551
+11 1
+.names n1169 D<4> n3552
+11 1
+.names n3554 n3563 n1942
+10 0
+.names n3555 n3556 n3554
+01 1
+.names n1157_1 D<4> n3555
+11 1
+.names n3557 n3562 n3556
+10 1
+.names n3558 n3559 n3557
+01 1
+.names n1161 D<6> n3558
+11 1
+.names n3560 n3561 n3559
+00 1
+.names n1164 key<14> n3560
+11 1
+.names n1116 key<22> n3561
+11 1
+.names n1167_1 D<7> n3562
+11 1
+.names n1169 D<3> n3563
+11 1
+.names n3565 n3574 n1947
+10 0
+.names n3566 n3567 n3565
+01 1
+.names n1157_1 D<3> n3566
+11 1
+.names n3568 n3573 n3567
+10 1
+.names n3569 n3570 n3568
+01 1
+.names n1161 D<5> n3569
+11 1
+.names n3571 n3572 n3570
+00 1
+.names n1164 key<22> n3571
+11 1
+.names n1116 key<30> n3572
+11 1
+.names n1167_1 D<6> n3573
+11 1
+.names n1169 D<2> n3574
+11 1
+.names n3576 n3585 n1952
+10 0
+.names n3577 n3578 n3576
+01 1
+.names n1157_1 D<2> n3577
+11 1
+.names n3579 n3584 n3578
+10 1
+.names n3580 n3581 n3579
+01 1
+.names n1161 D<4> n3580
+11 1
+.names n3582 n3583 n3581
+00 1
+.names n1164 key<30> n3582
+11 1
+.names n1116 key<38> n3583
+11 1
+.names n1167_1 D<5> n3584
+11 1
+.names n1169 D<1> n3585
+11 1
+.names n3587 n3596 n1957
+10 0
+.names n3588 n3589 n3587
+01 1
+.names n1157_1 D<1> n3588
+11 1
+.names n3590 n3595 n3589
+10 1
+.names n3591 n3592 n3590
+01 1
+.names n1161 D<3> n3591
+11 1
+.names n3593 n3594 n3592
+00 1
+.names n1164 key<38> n3593
+11 1
+.names n1116 key<46> n3594
+11 1
+.names n1167_1 D<4> n3595
+11 1
+.names n1169 D<0> n3596
+11 1
+.names n3598 n3607 n1962
+10 0
+.names n3599 n3600 n3598
+01 1
+.names n1157_1 D<0> n3599
+11 1
+.names n3601 n3606 n3600
+10 1
+.names n3602 n3603 n3601
+01 1
+.names n1161 D<2> n3602
+11 1
+.names n3604 n3605 n3603
+00 1
+.names n1164 key<46> n3604
+11 1
+.names n1116 key<54> n3605
+11 1
+.names n1167_1 D<3> n3606
+11 1
+.names n1169 D<111> n3607
+11 1
+.names n3609 n3618 n1967
+10 0
+.names n3610 n3611 n3609
+01 1
+.names n1157_1 D<111> n3610
+11 1
+.names n3612 n3617 n3611
+10 1
+.names n3613 n3614 n3612
+01 1
+.names n1161 D<1> n3613
+11 1
+.names n3615 n3616 n3614
+00 1
+.names n1164 key<54> n3615
+11 1
+.names n1116 key<62> n3616
+11 1
+.names n1167_1 D<2> n3617
+11 1
+.names n1169 D<110> n3618
+11 1
+.names D<87> KSi<191>
+1 1
+.names D<84> KSi<190>
+1 1
+.names D<91> KSi<189>
+1 1
+.names D<105> KSi<188>
+1 1
+.names D<87> KSi<187>
+1 1
+.names D<101> KSi<186>
+1 1
+.names D<108> KSi<185>
+1 1
+.names D<89> KSi<184>
+1 1
+.names D<111> KSi<183>
+1 1
+.names D<94> KSi<182>
+1 1
+.names D<104> KSi<181>
+1 1
+.names D<99> KSi<180>
+1 1
+.names D<103> KSi<179>
+1 1
+.names D<88> KSi<178>
+1 1
+.names D<100> KSi<177>
+1 1
+.names D<106> KSi<176>
+1 1
+.names D<95> KSi<175>
+1 1
+.names D<85> KSi<174>
+1 1
+.names D<110> KSi<173>
+1 1
+.names D<102> KSi<172>
+1 1
+.names D<92> KSi<171>
+1 1
+.names D<86> KSi<170>
+1 1
+.names D<107> KSi<169>
+1 1
+.names D<104> KSi<168>
+1 1
+.names D<59> KSi<167>
+1 1
+.names D<56> KSi<166>
+1 1
+.names D<63> KSi<165>
+1 1
+.names D<77> KSi<164>
+1 1
+.names D<69> KSi<163>
+1 1
+.names D<73> KSi<162>
+1 1
+.names D<80> KSi<161>
+1 1
+.names D<61> KSi<160>
+1 1
+.names D<83> KSi<159>
+1 1
+.names D<66> KSi<158>
+1 1
+.names D<76> KSi<157>
+1 1
+.names D<71> KSi<156>
+1 1
+.names D<75> KSi<155>
+1 1
+.names D<60> KSi<154>
+1 1
+.names D<70> KSi<153>
+1 1
+.names D<78> KSi<152>
+1 1
+.names D<67> KSi<151>
+1 1
+.names D<57> KSi<150>
+1 1
+.names D<82> KSi<149>
+1 1
+.names D<74> KSi<148>
+1 1
+.names D<64> KSi<147>
+1 1
+.names D<58> KSi<146>
+1 1
+.names D<79> KSi<145>
+1 1
+.names D<68> KSi<144>
+1 1
+.names D<31> KSi<143>
+1 1
+.names D<28> KSi<142>
+1 1
+.names D<35> KSi<141>
+1 1
+.names D<49> KSi<140>
+1 1
+.names D<31> KSi<139>
+1 1
+.names D<45> KSi<138>
+1 1
+.names D<52> KSi<137>
+1 1
+.names D<33> KSi<136>
+1 1
+.names D<55> KSi<135>
+1 1
+.names D<38> KSi<134>
+1 1
+.names D<48> KSi<133>
+1 1
+.names D<43> KSi<132>
+1 1
+.names D<47> KSi<131>
+1 1
+.names D<32> KSi<130>
+1 1
+.names D<44> KSi<129>
+1 1
+.names D<50> KSi<128>
+1 1
+.names D<39> KSi<127>
+1 1
+.names D<29> KSi<126>
+1 1
+.names D<54> KSi<125>
+1 1
+.names D<46> KSi<124>
+1 1
+.names D<36> KSi<123>
+1 1
+.names D<30> KSi<122>
+1 1
+.names D<51> KSi<121>
+1 1
+.names D<40> KSi<120>
+1 1
+.names D<3> KSi<119>
+1 1
+.names D<0> KSi<118>
+1 1
+.names D<7> KSi<117>
+1 1
+.names D<21> KSi<116>
+1 1
+.names D<13> KSi<115>
+1 1
+.names D<17> KSi<114>
+1 1
+.names D<24> KSi<113>
+1 1
+.names D<5> KSi<112>
+1 1
+.names D<27> KSi<111>
+1 1
+.names D<10> KSi<110>
+1 1
+.names D<20> KSi<109>
+1 1
+.names D<15> KSi<108>
+1 1
+.names D<19> KSi<107>
+1 1
+.names D<4> KSi<106>
+1 1
+.names D<16> KSi<105>
+1 1
+.names D<22> KSi<104>
+1 1
+.names D<11> KSi<103>
+1 1
+.names D<1> KSi<102>
+1 1
+.names D<26> KSi<101>
+1 1
+.names D<18> KSi<100>
+1 1
+.names D<8> KSi<99>
+1 1
+.names D<2> KSi<98>
+1 1
+.names D<23> KSi<97>
+1 1
+.names D<12> KSi<96>
+1 1
+.names C<85> KSi<95>
+1 1
+.names C<96> KSi<94>
+1 1
+.names C<103> KSi<93>
+1 1
+.names C<110> KSi<92>
+1 1
+.names C<90> KSi<91>
+1 1
+.names C<109> KSi<90>
+1 1
+.names C<91> KSi<89>
+1 1
+.names C<109> KSi<88>
+1 1
+.names C<87> KSi<87>
+1 1
+.names C<95> KSi<86>
+1 1
+.names C<102> KSi<85>
+1 1
+.names C<106> KSi<84>
+1 1
+.names C<93> KSi<83>
+1 1
+.names C<104> KSi<82>
+1 1
+.names C<89> KSi<81>
+1 1
+.names C<98> KSi<80>
+1 1
+.names C<111> KSi<79>
+1 1
+.names C<86> KSi<78>
+1 1
+.names C<88> KSi<77>
+1 1
+.names C<84> KSi<76>
+1 1
+.names C<107> KSi<75>
+1 1
+.names C<94> KSi<74>
+1 1
+.names C<100> KSi<73>
+1 1
+.names C<97> KSi<72>
+1 1
+.names C<57> KSi<71>
+1 1
+.names C<68> KSi<70>
+1 1
+.names C<75> KSi<69>
+1 1
+.names C<82> KSi<68>
+1 1
+.names C<62> KSi<67>
+1 1
+.names C<71> KSi<66>
+1 1
+.names C<63> KSi<65>
+1 1
+.names C<81> KSi<64>
+1 1
+.names C<59> KSi<63>
+1 1
+.names C<67> KSi<62>
+1 1
+.names C<74> KSi<61>
+1 1
+.names C<78> KSi<60>
+1 1
+.names C<65> KSi<59>
+1 1
+.names C<76> KSi<58>
+1 1
+.names C<61> KSi<57>
+1 1
+.names C<70> KSi<56>
+1 1
+.names C<83> KSi<55>
+1 1
+.names C<58> KSi<54>
+1 1
+.names C<60> KSi<53>
+1 1
+.names C<56> KSi<52>
+1 1
+.names C<79> KSi<51>
+1 1
+.names C<66> KSi<50>
+1 1
+.names C<72> KSi<49>
+1 1
+.names C<69> KSi<48>
+1 1
+.names C<29> KSi<47>
+1 1
+.names C<40> KSi<46>
+1 1
+.names C<47> KSi<45>
+1 1
+.names C<54> KSi<44>
+1 1
+.names C<34> KSi<43>
+1 1
+.names C<43> KSi<42>
+1 1
+.names C<35> KSi<41>
+1 1
+.names C<53> KSi<40>
+1 1
+.names C<31> KSi<39>
+1 1
+.names C<39> KSi<38>
+1 1
+.names C<46> KSi<37>
+1 1
+.names C<50> KSi<36>
+1 1
+.names C<37> KSi<35>
+1 1
+.names C<48> KSi<34>
+1 1
+.names C<33> KSi<33>
+1 1
+.names C<42> KSi<32>
+1 1
+.names C<55> KSi<31>
+1 1
+.names C<30> KSi<30>
+1 1
+.names C<32> KSi<29>
+1 1
+.names C<28> KSi<28>
+1 1
+.names C<51> KSi<27>
+1 1
+.names C<38> KSi<26>
+1 1
+.names C<44> KSi<25>
+1 1
+.names C<41> KSi<24>
+1 1
+.names C<1> KSi<23>
+1 1
+.names C<12> KSi<22>
+1 1
+.names C<19> KSi<21>
+1 1
+.names C<26> KSi<20>
+1 1
+.names C<6> KSi<19>
+1 1
+.names C<15> KSi<18>
+1 1
+.names C<7> KSi<17>
+1 1
+.names C<25> KSi<16>
+1 1
+.names C<3> KSi<15>
+1 1
+.names C<11> KSi<14>
+1 1
+.names C<18> KSi<13>
+1 1
+.names C<22> KSi<12>
+1 1
+.names C<9> KSi<11>
+1 1
+.names C<20> KSi<10>
+1 1
+.names C<5> KSi<9>
+1 1
+.names C<14> KSi<8>
+1 1
+.names C<27> KSi<7>
+1 1
+.names C<2> KSi<6>
+1 1
+.names C<4> KSi<5>
+1 1
+.names C<0> KSi<4>
+1 1
+.names C<23> KSi<3>
+1 1
+.names C<10> KSi<2>
+1 1
+.names C<16> KSi<1>
+1 1
+.names C<13> KSi<0>
+1 1
+.end

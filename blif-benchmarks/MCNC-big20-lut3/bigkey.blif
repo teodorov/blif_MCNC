@@ -1,0 +1,4430 @@
+# Benchmark "TOP" written by ABC on Thu May 21 18:20:13 2015
+.model TOP
+.inputs Pstart_0_ Pkey_255_ Pkey_254_ Pkey_253_ Pkey_252_ Pkey_251_ \
+ Pkey_250_ Pkey_249_ Pkey_248_ Pkey_247_ Pkey_246_ Pkey_245_ Pkey_244_ \
+ Pkey_243_ Pkey_242_ Pkey_241_ Pkey_240_ Pkey_239_ Pkey_238_ Pkey_237_ \
+ Pkey_236_ Pkey_235_ Pkey_234_ Pkey_233_ Pkey_232_ Pkey_231_ Pkey_230_ \
+ Pkey_229_ Pkey_228_ Pkey_227_ Pkey_226_ Pkey_225_ Pkey_224_ Pkey_223_ \
+ Pkey_222_ Pkey_221_ Pkey_220_ Pkey_219_ Pkey_218_ Pkey_217_ Pkey_216_ \
+ Pkey_215_ Pkey_214_ Pkey_213_ Pkey_212_ Pkey_211_ Pkey_210_ Pkey_209_ \
+ Pkey_208_ Pkey_207_ Pkey_206_ Pkey_205_ Pkey_204_ Pkey_203_ Pkey_202_ \
+ Pkey_201_ Pkey_200_ Pkey_199_ Pkey_198_ Pkey_197_ Pkey_196_ Pkey_195_ \
+ Pkey_194_ Pkey_193_ Pkey_192_ Pkey_191_ Pkey_190_ Pkey_189_ Pkey_188_ \
+ Pkey_187_ Pkey_186_ Pkey_185_ Pkey_184_ Pkey_183_ Pkey_182_ Pkey_181_ \
+ Pkey_180_ Pkey_179_ Pkey_178_ Pkey_177_ Pkey_176_ Pkey_175_ Pkey_174_ \
+ Pkey_173_ Pkey_172_ Pkey_171_ Pkey_170_ Pkey_169_ Pkey_168_ Pkey_167_ \
+ Pkey_166_ Pkey_165_ Pkey_164_ Pkey_163_ Pkey_162_ Pkey_161_ Pkey_160_ \
+ Pkey_159_ Pkey_158_ Pkey_157_ Pkey_156_ Pkey_155_ Pkey_154_ Pkey_153_ \
+ Pkey_152_ Pkey_151_ Pkey_150_ Pkey_149_ Pkey_148_ Pkey_147_ Pkey_146_ \
+ Pkey_145_ Pkey_144_ Pkey_143_ Pkey_142_ Pkey_141_ Pkey_140_ Pkey_139_ \
+ Pkey_138_ Pkey_137_ Pkey_136_ Pkey_135_ Pkey_134_ Pkey_133_ Pkey_132_ \
+ Pkey_131_ Pkey_130_ Pkey_129_ Pkey_128_ Pkey_127_ Pkey_126_ Pkey_125_ \
+ Pkey_124_ Pkey_123_ Pkey_122_ Pkey_121_ Pkey_120_ Pkey_119_ Pkey_118_ \
+ Pkey_117_ Pkey_116_ Pkey_115_ Pkey_114_ Pkey_113_ Pkey_112_ Pkey_111_ \
+ Pkey_110_ Pkey_109_ Pkey_108_ Pkey_107_ Pkey_106_ Pkey_105_ Pkey_104_ \
+ Pkey_103_ Pkey_102_ Pkey_101_ Pkey_100_ Pkey_99_ Pkey_98_ Pkey_97_ \
+ Pkey_96_ Pkey_95_ Pkey_94_ Pkey_93_ Pkey_92_ Pkey_91_ Pkey_90_ Pkey_89_ \
+ Pkey_88_ Pkey_87_ Pkey_86_ Pkey_85_ Pkey_84_ Pkey_83_ Pkey_82_ Pkey_81_ \
+ Pkey_80_ Pkey_79_ Pkey_78_ Pkey_77_ Pkey_76_ Pkey_75_ Pkey_74_ Pkey_73_ \
+ Pkey_72_ Pkey_71_ Pkey_70_ Pkey_69_ Pkey_68_ Pkey_67_ Pkey_66_ Pkey_65_ \
+ Pkey_64_ Pkey_63_ Pkey_62_ Pkey_61_ Pkey_60_ Pkey_59_ Pkey_58_ Pkey_57_ \
+ Pkey_56_ Pkey_55_ Pkey_54_ Pkey_53_ Pkey_52_ Pkey_51_ Pkey_50_ Pkey_49_ \
+ Pkey_48_ Pkey_47_ Pkey_46_ Pkey_45_ Pkey_44_ Pkey_43_ Pkey_42_ Pkey_41_ \
+ Pkey_40_ Pkey_39_ Pkey_38_ Pkey_37_ Pkey_36_ Pkey_35_ Pkey_34_ Pkey_33_ \
+ Pkey_32_ Pkey_31_ Pkey_30_ Pkey_29_ Pkey_28_ Pkey_27_ Pkey_26_ Pkey_25_ \
+ Pkey_24_ Pkey_23_ Pkey_22_ Pkey_21_ Pkey_20_ Pkey_19_ Pkey_18_ Pkey_17_ \
+ Pkey_16_ Pkey_15_ Pkey_14_ Pkey_13_ Pkey_12_ Pkey_11_ Pkey_10_ Pkey_9_ \
+ Pkey_8_ Pkey_7_ Pkey_6_ Pkey_5_ Pkey_4_ Pkey_3_ Pkey_2_ Pkey_1_ Pkey_0_ \
+ Pencrypt_0_ Pcount_3_ Pcount_2_ Pcount_1_ Pcount_0_ PCLK
+.outputs Pnew_count_3_ Pnew_count_2_ Pnew_count_1_ Pnew_count_0_ \
+ Pdata_ready_0_ PKSi_191_ PKSi_190_ PKSi_189_ PKSi_188_ PKSi_187_ PKSi_186_ \
+ PKSi_185_ PKSi_184_ PKSi_183_ PKSi_182_ PKSi_181_ PKSi_180_ PKSi_179_ \
+ PKSi_178_ PKSi_177_ PKSi_176_ PKSi_175_ PKSi_174_ PKSi_173_ PKSi_172_ \
+ PKSi_171_ PKSi_170_ PKSi_169_ PKSi_168_ PKSi_167_ PKSi_166_ PKSi_165_ \
+ PKSi_164_ PKSi_163_ PKSi_162_ PKSi_161_ PKSi_160_ PKSi_159_ PKSi_158_ \
+ PKSi_157_ PKSi_156_ PKSi_155_ PKSi_154_ PKSi_153_ PKSi_152_ PKSi_151_ \
+ PKSi_150_ PKSi_149_ PKSi_148_ PKSi_147_ PKSi_146_ PKSi_145_ PKSi_144_ \
+ PKSi_143_ PKSi_142_ PKSi_141_ PKSi_140_ PKSi_139_ PKSi_138_ PKSi_137_ \
+ PKSi_136_ PKSi_135_ PKSi_134_ PKSi_133_ PKSi_132_ PKSi_131_ PKSi_130_ \
+ PKSi_129_ PKSi_128_ PKSi_127_ PKSi_126_ PKSi_125_ PKSi_124_ PKSi_123_ \
+ PKSi_122_ PKSi_121_ PKSi_120_ PKSi_119_ PKSi_118_ PKSi_117_ PKSi_116_ \
+ PKSi_115_ PKSi_114_ PKSi_113_ PKSi_112_ PKSi_111_ PKSi_110_ PKSi_109_ \
+ PKSi_108_ PKSi_107_ PKSi_106_ PKSi_105_ PKSi_104_ PKSi_103_ PKSi_102_ \
+ PKSi_101_ PKSi_100_ PKSi_99_ PKSi_98_ PKSi_97_ PKSi_96_ PKSi_95_ PKSi_94_ \
+ PKSi_93_ PKSi_92_ PKSi_91_ PKSi_90_ PKSi_89_ PKSi_88_ PKSi_87_ PKSi_86_ \
+ PKSi_85_ PKSi_84_ PKSi_83_ PKSi_82_ PKSi_81_ PKSi_80_ PKSi_79_ PKSi_78_ \
+ PKSi_77_ PKSi_76_ PKSi_75_ PKSi_74_ PKSi_73_ PKSi_72_ PKSi_71_ PKSi_70_ \
+ PKSi_69_ PKSi_68_ PKSi_67_ PKSi_66_ PKSi_65_ PKSi_64_ PKSi_63_ PKSi_62_ \
+ PKSi_61_ PKSi_60_ PKSi_59_ PKSi_58_ PKSi_57_ PKSi_56_ PKSi_55_ PKSi_54_ \
+ PKSi_53_ PKSi_52_ PKSi_51_ PKSi_50_ PKSi_49_ PKSi_48_ PKSi_47_ PKSi_46_ \
+ PKSi_45_ PKSi_44_ PKSi_43_ PKSi_42_ PKSi_41_ PKSi_40_ PKSi_39_ PKSi_38_ \
+ PKSi_37_ PKSi_36_ PKSi_35_ PKSi_34_ PKSi_33_ PKSi_32_ PKSi_31_ PKSi_30_ \
+ PKSi_29_ PKSi_28_ PKSi_27_ PKSi_26_ PKSi_25_ PKSi_24_ PKSi_23_ PKSi_22_ \
+ PKSi_21_ PKSi_20_ PKSi_19_ PKSi_18_ PKSi_17_ PKSi_16_ PKSi_15_ PKSi_14_ \
+ PKSi_13_ PKSi_12_ PKSi_11_ PKSi_10_ PKSi_9_ PKSi_8_ PKSi_7_ PKSi_6_ \
+ PKSi_5_ PKSi_4_ PKSi_3_ PKSi_2_ PKSi_1_ PKSi_0_
+
+.latch     n922_1   PKSi_79_  2
+.latch       n926   PKSi_92_  2
+.latch     n930_1      [333]  2
+.latch     n935_1    N_N2737  2
+.latch     n940_1   PKSi_75_  2
+.latch     n944_1   PKSi_84_  2
+.latch     n948_1    N_N2741  2
+.latch       n953   PKSi_82_  2
+.latch       n957   PKSi_93_  2
+.latch       n961   PKSi_85_  2
+.latch       n965    N_N2746  2
+.latch     n970_1   PKSi_73_  2
+.latch     n974_1    N_N2749  2
+.latch       n979   PKSi_80_  2
+.latch       n983   PKSi_72_  2
+.latch       n987   PKSi_94_  2
+.latch       n991   PKSi_86_  2
+.latch       n995   PKSi_74_  2
+.latch       n999   PKSi_83_  2
+.latch      n1003    N_N2757  2
+.latch    n1008_1   PKSi_89_  2
+.latch    n1012_1   PKSi_91_  2
+.latch    n1016_1   PKSi_81_  2
+.latch    n1020_1   PKSi_77_  2
+.latch    n1024_1   PKSi_87_  2
+.latch    n1028_1   PKSi_78_  2
+.latch    n1032_1   PKSi_95_  2
+.latch    n1036_1   PKSi_76_  2
+.latch    n1040_1   PKSi_55_  2
+.latch    n1044_1   PKSi_68_  2
+.latch    n1048_1   PKSi_64_  2
+.latch    n1052_1    N_N2770  2
+.latch      n1057   PKSi_51_  2
+.latch      n1061   PKSi_60_  2
+.latch      n1065    N_N2774  2
+.latch    n1070_1   PKSi_58_  2
+.latch    n1074_1   PKSi_69_  2
+.latch    n1078_1   PKSi_61_  2
+.latch    n1082_1    N_N2779  2
+.latch      n1087   PKSi_49_  2
+.latch      n1091   PKSi_66_  2
+.latch      n1095   PKSi_56_  2
+.latch      n1099   PKSi_48_  2
+.latch      n1103   PKSi_70_  2
+.latch      n1107   PKSi_62_  2
+.latch      n1111   PKSi_50_  2
+.latch      n1115   PKSi_59_  2
+.latch      n1119    N_N2789  2
+.latch    n1124_1   PKSi_65_  2
+.latch    n1128_1   PKSi_67_  2
+.latch    n1132_1   PKSi_57_  2
+.latch    n1136_1   PKSi_53_  2
+.latch    n1140_1   PKSi_63_  2
+.latch    n1144_1   PKSi_54_  2
+.latch    n1148_1   PKSi_71_  2
+.latch    n1152_1   PKSi_52_  2
+.latch    n1156_1   PKSi_31_  2
+.latch    n1160_1   PKSi_44_  2
+.latch      n1164   PKSi_40_  2
+.latch      n1168    N_N2802  2
+.latch      n1173   PKSi_27_  2
+.latch      n1177   PKSi_36_  2
+.latch      n1181    N_N2806  2
+.latch      n1186   PKSi_34_  2
+.latch      n1190   PKSi_45_  2
+.latch      n1194   PKSi_37_  2
+.latch      n1198    N_N2811  2
+.latch      n1203   PKSi_25_  2
+.latch      n1207   PKSi_42_  2
+.latch      n1211   PKSi_32_  2
+.latch      n1215   PKSi_24_  2
+.latch      n1219   PKSi_46_  2
+.latch      n1223   PKSi_38_  2
+.latch      n1227   PKSi_26_  2
+.latch      n1231   PKSi_35_  2
+.latch      n1235    N_N2821  2
+.latch      n1240   PKSi_41_  2
+.latch      n1244   PKSi_43_  2
+.latch      n1248   PKSi_33_  2
+.latch      n1252   PKSi_29_  2
+.latch      n1256   PKSi_39_  2
+.latch      n1260   PKSi_30_  2
+.latch      n1264   PKSi_47_  2
+.latch      n1268   PKSi_28_  2
+.latch      n1272    PKSi_7_  2
+.latch      n1276   PKSi_20_  2
+.latch      n1280   PKSi_16_  2
+.latch    n1284_1    N_N2834  2
+.latch    n1289_1    PKSi_3_  2
+.latch    n1293_1   PKSi_12_  2
+.latch    n1297_1    N_N2838  2
+.latch    n1302_1   PKSi_10_  2
+.latch    n1306_1   PKSi_21_  2
+.latch    n1310_1   PKSi_13_  2
+.latch    n1314_1    N_N2843  2
+.latch    n1319_1    PKSi_1_  2
+.latch    n1323_1   PKSi_18_  2
+.latch    n1327_1    PKSi_8_  2
+.latch    n1331_1    PKSi_0_  2
+.latch    n1335_1   PKSi_22_  2
+.latch    n1339_1   PKSi_14_  2
+.latch    n1343_1    PKSi_2_  2
+.latch    n1347_1   PKSi_11_  2
+.latch    n1351_1    N_N2853  2
+.latch    n1356_1   PKSi_17_  2
+.latch    n1360_1   PKSi_19_  2
+.latch    n1364_1    PKSi_9_  2
+.latch    n1368_1    PKSi_5_  2
+.latch    n1372_1   PKSi_15_  2
+.latch    n1376_1    PKSi_6_  2
+.latch    n1380_1   PKSi_23_  2
+.latch    n1384_1    PKSi_4_  2
+.latch    n1388_1  PKSi_183_  2
+.latch    n1392_1  PKSi_173_  2
+.latch    n1396_1    N_N2865  2
+.latch    n1401_1  PKSi_185_  2
+.latch    n1405_1  PKSi_169_  2
+.latch    n1409_1  PKSi_176_  2
+.latch    n1413_1  PKSi_188_  2
+.latch    n1417_1      [253]  2
+.latch    n1422_1  PKSi_179_  2
+.latch    n1426_1  PKSi_172_  2
+.latch    n1430_1  PKSi_186_  2
+.latch    n1434_1  PKSi_177_  2
+.latch    n1438_1  PKSi_180_  2
+.latch    n1442_1    N_N2877  2
+.latch    n1447_1    N_N2879  2
+.latch    n1452_1    N_N2881  2
+.latch    n1457_1  PKSi_175_  2
+.latch    n1461_1  PKSi_182_  2
+.latch    n1465_1    N_N2885  2
+.latch    n1470_1  PKSi_171_  2
+.latch    n1474_1  PKSi_189_  2
+.latch    n1478_1    N_N2889  2
+.latch    n1483_1  PKSi_184_  2
+.latch    n1487_1  PKSi_178_  2
+.latch    n1491_1      [234]  2
+.latch    n1496_1  PKSi_170_  2
+.latch    n1500_1  PKSi_174_  2
+.latch    n1504_1  PKSi_190_  2
+.latch    n1508_1  PKSi_159_  2
+.latch    n1512_1  PKSi_149_  2
+.latch    n1516_1    N_N2899  2
+.latch    n1521_1  PKSi_161_  2
+.latch    n1525_1  PKSi_145_  2
+.latch    n1529_1  PKSi_152_  2
+.latch    n1533_1  PKSi_164_  2
+.latch    n1537_1  PKSi_157_  2
+.latch    n1541_1  PKSi_155_  2
+.latch    n1545_1  PKSi_148_  2
+.latch    n1549_1  PKSi_162_  2
+.latch    n1553_1    N_N2909  2
+.latch    n1558_1  PKSi_156_  2
+.latch    n1562_1  PKSi_153_  2
+.latch    n1566_1  PKSi_163_  2
+.latch    n1570_1  PKSi_144_  2
+.latch    n1574_1  PKSi_151_  2
+.latch    n1578_1  PKSi_158_  2
+.latch    n1582_1    N_N2917  2
+.latch    n1587_1  PKSi_147_  2
+.latch    n1591_1  PKSi_165_  2
+.latch    n1595_1    N_N2921  2
+.latch    n1600_1  PKSi_160_  2
+.latch    n1604_1  PKSi_154_  2
+.latch    n1608_1  PKSi_167_  2
+.latch    n1612_1  PKSi_146_  2
+.latch    n1616_1  PKSi_150_  2
+.latch    n1620_1  PKSi_166_  2
+.latch    n1624_1  PKSi_135_  2
+.latch    n1628_1  PKSi_125_  2
+.latch    n1632_1    N_N2931  2
+.latch    n1637_1  PKSi_137_  2
+.latch    n1641_1  PKSi_121_  2
+.latch    n1645_1  PKSi_128_  2
+.latch    n1649_1  PKSi_140_  2
+.latch    n1653_1  PKSi_133_  2
+.latch    n1657_1  PKSi_131_  2
+.latch    n1661_1  PKSi_124_  2
+.latch    n1665_1  PKSi_138_  2
+.latch    n1669_1  PKSi_129_  2
+.latch    n1673_1  PKSi_132_  2
+.latch    n1677_1    N_N2943  2
+.latch    n1682_1    N_N2945  2
+.latch    n1687_1  PKSi_120_  2
+.latch    n1691_1  PKSi_127_  2
+.latch    n1695_1  PKSi_134_  2
+.latch    n1699_1    N_N2950  2
+.latch    n1704_1  PKSi_123_  2
+.latch    n1708_1  PKSi_141_  2
+.latch    n1712_1    N_N2954  2
+.latch    n1717_1  PKSi_136_  2
+.latch    n1721_1  PKSi_130_  2
+.latch    n1725_1      [282]  2
+.latch    n1730_1  PKSi_122_  2
+.latch    n1734_1  PKSi_126_  2
+.latch    n1738_1  PKSi_142_  2
+.latch      n1742  PKSi_111_  2
+.latch    n1746_1  PKSi_101_  2
+.latch    n1750_1    N_N2964  2
+.latch      n1755  PKSi_113_  2
+.latch      n1759   PKSi_97_  2
+.latch      n1763  PKSi_104_  2
+.latch      n1767  PKSi_116_  2
+.latch      n1771  PKSi_109_  2
+.latch      n1775  PKSi_107_  2
+.latch      n1779  PKSi_100_  2
+.latch      n1783  PKSi_114_  2
+.latch      n1787  PKSi_105_  2
+.latch      n1791  PKSi_108_  2
+.latch      n1795    N_N2976  2
+.latch    n1800_1  PKSi_115_  2
+.latch    n1804_1   PKSi_96_  2
+.latch    n1808_1  PKSi_103_  2
+.latch    n1812_1  PKSi_110_  2
+.latch    n1816_1    N_N2982  2
+.latch      n1821   PKSi_99_  2
+.latch      n1825  PKSi_117_  2
+.latch      n1829    N_N2986  2
+.latch    n1834_1  PKSi_112_  2
+.latch    n1838_1  PKSi_106_  2
+.latch    n1842_1  PKSi_119_  2
+.latch    n1846_1   PKSi_98_  2
+.latch    n1850_1  PKSi_102_  2
+.latch    n1854_1  PKSi_118_  2
+
+.names Pencrypt_0_ n1135 Pstart_0_ Pnew_count_3_
+-00 1
+0-1 1
+.names Pcount_3_ n1136 n1140 n1135
+-11 1
+0-1 1
+.names Pcount_1_ Pencrypt_0_ n1137 n1136
+-10 1
+0-0 1
+.names n1139 n1138 Pencrypt_0_ n1137
+-01 1
+0-0 1
+.names Pcount_2_ Pcount_1_ Pcount_0_ n1138
+111 1
+.names Pcount_2_ Pcount_0_ n1139
+00 1
+.names Pencrypt_0_ n1143 n1141 n1140
+-00 1
+0-0 1
+.names n1142 Pencrypt_0_ Pcount_3_ n1141
+100 1
+.names Pcount_2_ Pcount_1_ Pcount_0_ n1142
+000 1
+.names n1138 Pcount_3_ n1143
+10 1
+.names n1151 Pcount_2_ n1145 Pnew_count_2_
+--0 1
+01- 1
+.names Pencrypt_0_ n1142 n1146 n1145
+-01 1
+1-1 1
+.names n1150 n1147 n1149 n1146
+-00 1
+1-0 1
+.names n1148 Pstart_0_ Pcount_0_ n1147
+001 1
+.names Pcount_2_ Pcount_1_ n1148
+00 1
+.names Pstart_0_ Pencrypt_0_ n1149
+10 1
+.names Pcount_2_ Pencrypt_0_ Pcount_1_ n1150
+-01 1
+1-1 1
+.names Pcount_1_ Pencrypt_0_ n1152 n1151
+-10 1
+0-0 1
+.names Pstart_0_ Pencrypt_0_ Pcount_0_ n1152
+010 1
+.names n1154 n1149 n1156 Pnew_count_1_
+000 0
+.names n1155 n1152 Pcount_1_ n1154
+-11 1
+1-0 1
+.names Pstart_0_ Pencrypt_0_ Pcount_0_ n1155
+-00 1
+011 1
+.names Pencrypt_0_ Pcount_1_ Pcount_0_ n1156
+011 1
+.names Pcount_0_ Pencrypt_0_ Pstart_0_ Pnew_count_0_
+-01 1
+0-0 1
+.names n1141 Pstart_0_ n1159 Pdata_ready_0_
+--1 1
+10- 1
+.names n1160 Pstart_0_ Pencrypt_0_ n1159
+101 1
+.names n1138 Pcount_3_ n1160
+11 1
+.names n1162 n1168_1 n1177_1 n922_1
+011 0
+.names n1163 PKSi_79_ PKSi_183_ n1162
+101 1
+110 1
+.names n1164_1 Pstart_0_ Pencrypt_0_ n1163
+101 1
+.names n1143 n1165 n1166 n1164_1
+000 1
+.names n1142 Pcount_3_ n1165
+10 1
+.names n1167 Pcount_3_ Pcount_2_ n1166
+111 1
+.names Pcount_1_ Pcount_0_ n1167
+10 1
+.names n1176 n1169 n1170 n1168_1
+-00 1
+0-0 1
+.names Pencrypt_0_ n1164_1 Pstart_0_ n1169
+-00 1
+0-0 1
+.names n1174 n1171 n1175 n1170
+-10 1
+1-1 1
+.names n1160 n1172 n1173_1 n1171
+011 1
+.names Pcount_3_ Pcount_0_ n1148 n1172
+--0 1
+11- 1
+.names Pstart_0_ Pencrypt_0_ n1173_1
+00 1
+.names n1172 n1160 n1173_1 n1174
+-11 1
+0-1 1
+.names PKSi_79_ PKSi_183_ n1175
+00 1
+.names PKSi_79_ PKSi_183_ n1176
+11 1
+.names Pkey_227_ n1149 n1178 n1177_1
+-00 1
+0-0 1
+.names n1179 Pkey_56_ n1178
+11 1
+.names Pstart_0_ Pencrypt_0_ n1179
+11 1
+.names n1181_1 n1182 n1186_1 n926
+011 0
+.names n1163 PKSi_92_ PKSi_173_ n1181_1
+101 1
+110 1
+.names n1185 n1169 n1183 n1182
+-00 1
+0-0 1
+.names n1174 n1171 n1184 n1183
+-10 1
+1-1 1
+.names PKSi_92_ PKSi_173_ n1184
+00 1
+.names PKSi_92_ PKSi_173_ n1185
+11 1
+.names Pkey_235_ n1149 n1187 n1186_1
+-00 1
+0-0 1
+.names n1179 Pkey_227_ n1187
+11 1
+.names n1189 n1190_1 n1194_1 n930_1
+011 0
+.names n1163 [333] N_N2865 n1189
+101 1
+110 1
+.names n1193 n1169 n1191 n1190_1
+-00 1
+0-0 1
+.names n1174 n1171 n1192 n1191
+-10 1
+1-1 1
+.names [333] N_N2865 n1192
+00 1
+.names [333] N_N2865 n1193
+11 1
+.names Pkey_243_ n1149 n1195 n1194_1
+-00 1
+0-0 1
+.names n1179 Pkey_235_ n1195
+11 1
+.names n1197 n1198_1 n1202 n935_1
+011 0
+.names n1163 N_N2737 PKSi_185_ n1197
+101 1
+110 1
+.names n1201 n1169 n1199 n1198_1
+-00 1
+0-0 1
+.names n1174 n1171 n1200 n1199
+-10 1
+1-1 1
+.names N_N2737 PKSi_185_ n1200
+00 1
+.names N_N2737 PKSi_185_ n1201
+11 1
+.names Pkey_251_ n1149 n1203_1 n1202
+-00 1
+0-0 1
+.names n1179 Pkey_243_ n1203_1
+11 1
+.names n1205 n1206 n1210 n940_1
+011 0
+.names n1163 PKSi_75_ PKSi_169_ n1205
+101 1
+110 1
+.names n1209 n1169 n1207_1 n1206
+-00 1
+0-0 1
+.names n1174 n1171 n1208 n1207_1
+-10 1
+1-1 1
+.names PKSi_75_ PKSi_169_ n1208
+00 1
+.names PKSi_75_ PKSi_169_ n1209
+11 1
+.names Pkey_194_ n1149 n1211_1 n1210
+-00 1
+0-0 1
+.names n1179 Pkey_251_ n1211_1
+11 1
+.names n1213 n1214 n1218 n944_1
+011 0
+.names n1163 PKSi_84_ PKSi_176_ n1213
+101 1
+110 1
+.names n1217 n1169 n1215_1 n1214
+-00 1
+0-0 1
+.names n1174 n1171 n1216 n1215_1
+-10 1
+1-1 1
+.names PKSi_84_ PKSi_176_ n1216
+00 1
+.names PKSi_84_ PKSi_176_ n1217
+11 1
+.names Pkey_202_ n1149 n1219_1 n1218
+-00 1
+0-0 1
+.names n1179 Pkey_194_ n1219_1
+11 1
+.names n1221 n1222 n1226 n948_1
+011 0
+.names n1163 N_N2741 PKSi_188_ n1221
+101 1
+110 1
+.names n1225 n1169 n1223_1 n1222
+-00 1
+0-0 1
+.names n1174 n1171 n1224 n1223_1
+-10 1
+1-1 1
+.names N_N2741 PKSi_188_ n1224
+00 1
+.names N_N2741 PKSi_188_ n1225
+11 1
+.names Pkey_210_ n1149 n1227_1 n1226
+-00 1
+0-0 1
+.names n1179 Pkey_202_ n1227_1
+11 1
+.names n1229 n1230 n1234 n953
+011 0
+.names n1163 PKSi_82_ [253] n1229
+101 1
+110 1
+.names n1233 n1169 n1231_1 n1230
+-00 1
+0-0 1
+.names n1174 n1171 n1232 n1231_1
+-10 1
+1-1 1
+.names PKSi_82_ [253] n1232
+00 1
+.names PKSi_82_ [253] n1233
+11 1
+.names Pkey_218_ n1149 n1235_1 n1234
+-00 1
+0-0 1
+.names n1179 Pkey_210_ n1235_1
+11 1
+.names n1237 n1238 n1242 n957
+011 0
+.names n1163 PKSi_93_ PKSi_179_ n1237
+101 1
+110 1
+.names n1241 n1169 n1239 n1238
+-00 1
+0-0 1
+.names n1174 n1171 n1240_1 n1239
+-10 1
+1-1 1
+.names PKSi_93_ PKSi_179_ n1240_1
+00 1
+.names PKSi_93_ PKSi_179_ n1241
+11 1
+.names Pkey_226_ n1149 n1243 n1242
+-00 1
+0-0 1
+.names n1179 Pkey_218_ n1243
+11 1
+.names n1245 n1246 n1250 n961
+011 0
+.names n1163 PKSi_85_ PKSi_172_ n1245
+101 1
+110 1
+.names n1249 n1169 n1247 n1246
+-00 1
+0-0 1
+.names n1174 n1171 n1248_1 n1247
+-10 1
+1-1 1
+.names PKSi_85_ PKSi_172_ n1248_1
+00 1
+.names PKSi_85_ PKSi_172_ n1249
+11 1
+.names Pkey_234_ n1149 n1251 n1250
+-00 1
+0-0 1
+.names n1179 Pkey_226_ n1251
+11 1
+.names n1253 n1254 n1258 n965
+011 0
+.names n1163 N_N2746 PKSi_186_ n1253
+101 1
+110 1
+.names n1257 n1169 n1255 n1254
+-00 1
+0-0 1
+.names n1174 n1171 n1256_1 n1255
+-10 1
+1-1 1
+.names N_N2746 PKSi_186_ n1256_1
+00 1
+.names N_N2746 PKSi_186_ n1257
+11 1
+.names Pkey_242_ n1149 n1259 n1258
+-00 1
+0-0 1
+.names n1179 Pkey_234_ n1259
+11 1
+.names n1261 n1262 n1266 n970_1
+011 0
+.names n1163 PKSi_73_ PKSi_177_ n1261
+101 1
+110 1
+.names n1265 n1169 n1263 n1262
+-00 1
+0-0 1
+.names n1174 n1171 n1264_1 n1263
+-10 1
+1-1 1
+.names PKSi_73_ PKSi_177_ n1264_1
+00 1
+.names PKSi_73_ PKSi_177_ n1265
+11 1
+.names Pkey_250_ n1149 n1267 n1266
+-00 1
+0-0 1
+.names n1179 Pkey_242_ n1267
+11 1
+.names n1269 n1270 n1274 n974_1
+011 0
+.names n1163 N_N2749 PKSi_180_ n1269
+101 1
+110 1
+.names n1273 n1169 n1271 n1270
+-00 1
+0-0 1
+.names n1174 n1171 n1272_1 n1271
+-10 1
+1-1 1
+.names N_N2749 PKSi_180_ n1272_1
+00 1
+.names N_N2749 PKSi_180_ n1273
+11 1
+.names Pkey_193_ n1149 n1275 n1274
+-00 1
+0-0 1
+.names n1179 Pkey_250_ n1275
+11 1
+.names n1277 n1278 n1282 n979
+011 0
+.names n1163 PKSi_80_ N_N2877 n1277
+101 1
+110 1
+.names n1281 n1169 n1279 n1278
+-00 1
+0-0 1
+.names n1174 n1171 n1280_1 n1279
+-10 1
+1-1 1
+.names PKSi_80_ N_N2877 n1280_1
+00 1
+.names PKSi_80_ N_N2877 n1281
+11 1
+.names Pkey_201_ n1149 n1283 n1282
+-00 1
+0-0 1
+.names n1179 Pkey_193_ n1283
+11 1
+.names n1285 n1286 n1290 n983
+011 0
+.names n1163 PKSi_72_ N_N2879 n1285
+101 1
+110 1
+.names n1289 n1169 n1287 n1286
+-00 1
+0-0 1
+.names n1174 n1171 n1288 n1287
+-10 1
+1-1 1
+.names PKSi_72_ N_N2879 n1288
+00 1
+.names PKSi_72_ N_N2879 n1289
+11 1
+.names Pkey_209_ n1149 n1291 n1290
+-00 1
+0-0 1
+.names n1179 Pkey_201_ n1291
+11 1
+.names n1293 n1294 n1298 n987
+011 0
+.names n1163 PKSi_94_ N_N2881 n1293
+101 1
+110 1
+.names n1297 n1169 n1295 n1294
+-00 1
+0-0 1
+.names n1174 n1171 n1296 n1295
+-10 1
+1-1 1
+.names PKSi_94_ N_N2881 n1296
+00 1
+.names PKSi_94_ N_N2881 n1297
+11 1
+.names Pkey_217_ n1149 n1299 n1298
+-00 1
+0-0 1
+.names n1179 Pkey_209_ n1299
+11 1
+.names n1301 n1302 n1306 n991
+011 0
+.names n1163 PKSi_86_ PKSi_175_ n1301
+101 1
+110 1
+.names n1305 n1169 n1303 n1302
+-00 1
+0-0 1
+.names n1174 n1171 n1304 n1303
+-10 1
+1-1 1
+.names PKSi_86_ PKSi_175_ n1304
+00 1
+.names PKSi_86_ PKSi_175_ n1305
+11 1
+.names Pkey_225_ n1149 n1307 n1306
+-00 1
+0-0 1
+.names n1179 Pkey_217_ n1307
+11 1
+.names n1309 n1310 n1314 n995
+011 0
+.names n1163 PKSi_74_ PKSi_182_ n1309
+101 1
+110 1
+.names n1313 n1169 n1311 n1310
+-00 1
+0-0 1
+.names n1174 n1171 n1312 n1311
+-10 1
+1-1 1
+.names PKSi_74_ PKSi_182_ n1312
+00 1
+.names PKSi_74_ PKSi_182_ n1313
+11 1
+.names Pkey_233_ n1149 n1315 n1314
+-00 1
+0-0 1
+.names n1179 Pkey_225_ n1315
+11 1
+.names n1317 n1318 n1322 n999
+011 0
+.names n1163 PKSi_83_ N_N2885 n1317
+101 1
+110 1
+.names n1321 n1169 n1319 n1318
+-00 1
+0-0 1
+.names n1174 n1171 n1320 n1319
+-10 1
+1-1 1
+.names PKSi_83_ N_N2885 n1320
+00 1
+.names PKSi_83_ N_N2885 n1321
+11 1
+.names Pkey_241_ n1149 n1323 n1322
+-00 1
+0-0 1
+.names n1179 Pkey_233_ n1323
+11 1
+.names n1325 n1326 n1330 n1003
+011 0
+.names n1163 N_N2757 PKSi_171_ n1325
+101 1
+110 1
+.names n1329 n1169 n1327 n1326
+-00 1
+0-0 1
+.names n1174 n1171 n1328 n1327
+-10 1
+1-1 1
+.names N_N2757 PKSi_171_ n1328
+00 1
+.names N_N2757 PKSi_171_ n1329
+11 1
+.names Pkey_249_ n1149 n1331 n1330
+-00 1
+0-0 1
+.names n1179 Pkey_241_ n1331
+11 1
+.names n1333 n1334 n1338 n1008_1
+011 0
+.names n1163 PKSi_89_ PKSi_189_ n1333
+101 1
+110 1
+.names n1337 n1169 n1335 n1334
+-00 1
+0-0 1
+.names n1174 n1171 n1336 n1335
+-10 1
+1-1 1
+.names PKSi_89_ PKSi_189_ n1336
+00 1
+.names PKSi_89_ PKSi_189_ n1337
+11 1
+.names Pkey_192_ n1149 n1339 n1338
+-00 1
+0-0 1
+.names n1179 Pkey_249_ n1339
+11 1
+.names n1341 n1342 n1346 n1012_1
+011 0
+.names n1163 PKSi_91_ N_N2889 n1341
+101 1
+110 1
+.names n1345 n1169 n1343 n1342
+-00 1
+0-0 1
+.names n1174 n1171 n1344 n1343
+-10 1
+1-1 1
+.names PKSi_91_ N_N2889 n1344
+00 1
+.names PKSi_91_ N_N2889 n1345
+11 1
+.names Pkey_200_ n1149 n1347 n1346
+-00 1
+0-0 1
+.names n1179 Pkey_192_ n1347
+11 1
+.names n1349 n1350 n1354 n1016_1
+011 0
+.names n1163 PKSi_81_ PKSi_184_ n1349
+101 1
+110 1
+.names n1353 n1169 n1351 n1350
+-00 1
+0-0 1
+.names n1174 n1171 n1352 n1351
+-10 1
+1-1 1
+.names PKSi_81_ PKSi_184_ n1352
+00 1
+.names PKSi_81_ PKSi_184_ n1353
+11 1
+.names Pkey_208_ n1149 n1355 n1354
+-00 1
+0-0 1
+.names n1179 Pkey_200_ n1355
+11 1
+.names n1357 n1358 n1362 n1020_1
+011 0
+.names n1163 PKSi_77_ PKSi_178_ n1357
+101 1
+110 1
+.names n1361 n1169 n1359 n1358
+-00 1
+0-0 1
+.names n1174 n1171 n1360 n1359
+-10 1
+1-1 1
+.names PKSi_77_ PKSi_178_ n1360
+00 1
+.names PKSi_77_ PKSi_178_ n1361
+11 1
+.names Pkey_216_ n1149 n1363 n1362
+-00 1
+0-0 1
+.names n1179 Pkey_208_ n1363
+11 1
+.names n1365 n1366 n1370 n1024_1
+011 0
+.names n1163 PKSi_87_ [234] n1365
+101 1
+110 1
+.names n1369 n1169 n1367 n1366
+-00 1
+0-0 1
+.names n1174 n1171 n1368 n1367
+-10 1
+1-1 1
+.names PKSi_87_ [234] n1368
+00 1
+.names PKSi_87_ [234] n1369
+11 1
+.names Pkey_224_ n1149 n1371 n1370
+-00 1
+0-0 1
+.names n1179 Pkey_216_ n1371
+11 1
+.names n1373 n1374 n1378 n1028_1
+011 0
+.names n1163 PKSi_78_ PKSi_170_ n1373
+101 1
+110 1
+.names n1377 n1169 n1375 n1374
+-00 1
+0-0 1
+.names n1174 n1171 n1376 n1375
+-10 1
+1-1 1
+.names PKSi_78_ PKSi_170_ n1376
+00 1
+.names PKSi_78_ PKSi_170_ n1377
+11 1
+.names Pkey_232_ n1149 n1379 n1378
+-00 1
+0-0 1
+.names n1179 Pkey_224_ n1379
+11 1
+.names n1381 n1382 n1386 n1032_1
+011 0
+.names n1163 PKSi_95_ PKSi_174_ n1381
+101 1
+110 1
+.names n1385 n1169 n1383 n1382
+-00 1
+0-0 1
+.names n1174 n1171 n1384 n1383
+-10 1
+1-1 1
+.names PKSi_95_ PKSi_174_ n1384
+00 1
+.names PKSi_95_ PKSi_174_ n1385
+11 1
+.names Pkey_240_ n1149 n1387 n1386
+-00 1
+0-0 1
+.names n1179 Pkey_232_ n1387
+11 1
+.names n1389 n1390 n1394 n1036_1
+011 0
+.names n1163 PKSi_76_ PKSi_190_ n1389
+101 1
+110 1
+.names n1393 n1169 n1391 n1390
+-00 1
+0-0 1
+.names n1174 n1171 n1392 n1391
+-10 1
+1-1 1
+.names PKSi_76_ PKSi_190_ n1392
+00 1
+.names PKSi_76_ PKSi_190_ n1393
+11 1
+.names Pkey_248_ n1149 n1395 n1394
+-00 1
+0-0 1
+.names n1179 Pkey_240_ n1395
+11 1
+.names n1397 n1398 n1402 n1040_1
+011 0
+.names n1163 PKSi_55_ PKSi_159_ n1397
+101 1
+110 1
+.names n1401 n1169 n1399 n1398
+-00 1
+0-0 1
+.names n1174 n1171 n1400 n1399
+-10 1
+1-1 1
+.names PKSi_55_ PKSi_159_ n1400
+00 1
+.names PKSi_55_ PKSi_159_ n1401
+11 1
+.names Pkey_163_ n1149 n1403 n1402
+-00 1
+0-0 1
+.names n1179 Pkey_248_ n1403
+11 1
+.names n1405 n1406 n1410 n1044_1
+011 0
+.names n1163 PKSi_68_ PKSi_149_ n1405
+101 1
+110 1
+.names n1409 n1169 n1407 n1406
+-00 1
+0-0 1
+.names n1174 n1171 n1408 n1407
+-10 1
+1-1 1
+.names PKSi_68_ PKSi_149_ n1408
+00 1
+.names PKSi_68_ PKSi_149_ n1409
+11 1
+.names Pkey_171_ n1149 n1411 n1410
+-00 1
+0-0 1
+.names n1179 Pkey_163_ n1411
+11 1
+.names n1413 n1414 n1418 n1048_1
+011 0
+.names n1163 PKSi_64_ N_N2899 n1413
+101 1
+110 1
+.names n1417 n1169 n1415 n1414
+-00 1
+0-0 1
+.names n1174 n1171 n1416 n1415
+-10 1
+1-1 1
+.names PKSi_64_ N_N2899 n1416
+00 1
+.names PKSi_64_ N_N2899 n1417
+11 1
+.names Pkey_179_ n1149 n1419 n1418
+-00 1
+0-0 1
+.names n1179 Pkey_171_ n1419
+11 1
+.names n1421 n1422 n1426 n1052_1
+011 0
+.names n1163 N_N2770 PKSi_161_ n1421
+101 1
+110 1
+.names n1425 n1169 n1423 n1422
+-00 1
+0-0 1
+.names n1174 n1171 n1424 n1423
+-10 1
+1-1 1
+.names N_N2770 PKSi_161_ n1424
+00 1
+.names N_N2770 PKSi_161_ n1425
+11 1
+.names Pkey_187_ n1149 n1427 n1426
+-00 1
+0-0 1
+.names n1179 Pkey_179_ n1427
+11 1
+.names n1429 n1430 n1434 n1057
+011 0
+.names n1163 PKSi_51_ PKSi_145_ n1429
+101 1
+110 1
+.names n1433 n1169 n1431 n1430
+-00 1
+0-0 1
+.names n1174 n1171 n1432 n1431
+-10 1
+1-1 1
+.names PKSi_51_ PKSi_145_ n1432
+00 1
+.names PKSi_51_ PKSi_145_ n1433
+11 1
+.names Pkey_130_ n1149 n1435 n1434
+-00 1
+0-0 1
+.names n1179 Pkey_187_ n1435
+11 1
+.names n1437 n1438 n1442 n1061
+011 0
+.names n1163 PKSi_60_ PKSi_152_ n1437
+101 1
+110 1
+.names n1441 n1169 n1439 n1438
+-00 1
+0-0 1
+.names n1174 n1171 n1440 n1439
+-10 1
+1-1 1
+.names PKSi_60_ PKSi_152_ n1440
+00 1
+.names PKSi_60_ PKSi_152_ n1441
+11 1
+.names Pkey_138_ n1149 n1443 n1442
+-00 1
+0-0 1
+.names n1179 Pkey_130_ n1443
+11 1
+.names n1445 n1446 n1450 n1065
+011 0
+.names n1163 N_N2774 PKSi_164_ n1445
+101 1
+110 1
+.names n1449 n1169 n1447 n1446
+-00 1
+0-0 1
+.names n1174 n1171 n1448 n1447
+-10 1
+1-1 1
+.names N_N2774 PKSi_164_ n1448
+00 1
+.names N_N2774 PKSi_164_ n1449
+11 1
+.names Pkey_146_ n1149 n1451 n1450
+-00 1
+0-0 1
+.names n1179 Pkey_138_ n1451
+11 1
+.names n1453 n1454 n1458 n1070_1
+011 0
+.names n1163 PKSi_58_ PKSi_157_ n1453
+101 1
+110 1
+.names n1457 n1169 n1455 n1454
+-00 1
+0-0 1
+.names n1174 n1171 n1456 n1455
+-10 1
+1-1 1
+.names PKSi_58_ PKSi_157_ n1456
+00 1
+.names PKSi_58_ PKSi_157_ n1457
+11 1
+.names Pkey_154_ n1149 n1459 n1458
+-00 1
+0-0 1
+.names n1179 Pkey_146_ n1459
+11 1
+.names n1461 n1462 n1466 n1074_1
+011 0
+.names n1163 PKSi_69_ PKSi_155_ n1461
+101 1
+110 1
+.names n1465 n1169 n1463 n1462
+-00 1
+0-0 1
+.names n1174 n1171 n1464 n1463
+-10 1
+1-1 1
+.names PKSi_69_ PKSi_155_ n1464
+00 1
+.names PKSi_69_ PKSi_155_ n1465
+11 1
+.names Pkey_162_ n1149 n1467 n1466
+-00 1
+0-0 1
+.names n1179 Pkey_154_ n1467
+11 1
+.names n1469 n1470 n1474 n1078_1
+011 0
+.names n1163 PKSi_61_ PKSi_148_ n1469
+101 1
+110 1
+.names n1473 n1169 n1471 n1470
+-00 1
+0-0 1
+.names n1174 n1171 n1472 n1471
+-10 1
+1-1 1
+.names PKSi_61_ PKSi_148_ n1472
+00 1
+.names PKSi_61_ PKSi_148_ n1473
+11 1
+.names Pkey_170_ n1149 n1475 n1474
+-00 1
+0-0 1
+.names n1179 Pkey_162_ n1475
+11 1
+.names n1477 n1478 n1482 n1082_1
+011 0
+.names n1163 N_N2779 PKSi_162_ n1477
+101 1
+110 1
+.names n1481 n1169 n1479 n1478
+-00 1
+0-0 1
+.names n1174 n1171 n1480 n1479
+-10 1
+1-1 1
+.names N_N2779 PKSi_162_ n1480
+00 1
+.names N_N2779 PKSi_162_ n1481
+11 1
+.names Pkey_178_ n1149 n1483 n1482
+-00 1
+0-0 1
+.names n1179 Pkey_170_ n1483
+11 1
+.names n1485 n1486 n1490 n1087
+011 0
+.names n1163 PKSi_49_ N_N2909 n1485
+101 1
+110 1
+.names n1489 n1169 n1487 n1486
+-00 1
+0-0 1
+.names n1174 n1171 n1488 n1487
+-10 1
+1-1 1
+.names PKSi_49_ N_N2909 n1488
+00 1
+.names PKSi_49_ N_N2909 n1489
+11 1
+.names Pkey_186_ n1149 n1491 n1490
+-00 1
+0-0 1
+.names n1179 Pkey_178_ n1491
+11 1
+.names n1493 n1494 n1498 n1091
+011 0
+.names n1163 PKSi_66_ PKSi_156_ n1493
+101 1
+110 1
+.names n1497 n1169 n1495 n1494
+-00 1
+0-0 1
+.names n1174 n1171 n1496 n1495
+-10 1
+1-1 1
+.names PKSi_66_ PKSi_156_ n1496
+00 1
+.names PKSi_66_ PKSi_156_ n1497
+11 1
+.names Pkey_129_ n1149 n1499 n1498
+-00 1
+0-0 1
+.names n1179 Pkey_186_ n1499
+11 1
+.names n1501 n1502 n1506 n1095
+011 0
+.names n1163 PKSi_56_ PKSi_153_ n1501
+101 1
+110 1
+.names n1505 n1169 n1503 n1502
+-00 1
+0-0 1
+.names n1174 n1171 n1504 n1503
+-10 1
+1-1 1
+.names PKSi_56_ PKSi_153_ n1504
+00 1
+.names PKSi_56_ PKSi_153_ n1505
+11 1
+.names Pkey_137_ n1149 n1507 n1506
+-00 1
+0-0 1
+.names n1179 Pkey_129_ n1507
+11 1
+.names n1509 n1510 n1514 n1099
+011 0
+.names n1163 PKSi_48_ PKSi_163_ n1509
+101 1
+110 1
+.names n1513 n1169 n1511 n1510
+-00 1
+0-0 1
+.names n1174 n1171 n1512 n1511
+-10 1
+1-1 1
+.names PKSi_48_ PKSi_163_ n1512
+00 1
+.names PKSi_48_ PKSi_163_ n1513
+11 1
+.names Pkey_145_ n1149 n1515 n1514
+-00 1
+0-0 1
+.names n1179 Pkey_137_ n1515
+11 1
+.names n1517 n1518 n1522 n1103
+011 0
+.names n1163 PKSi_70_ PKSi_144_ n1517
+101 1
+110 1
+.names n1521 n1169 n1519 n1518
+-00 1
+0-0 1
+.names n1174 n1171 n1520 n1519
+-10 1
+1-1 1
+.names PKSi_70_ PKSi_144_ n1520
+00 1
+.names PKSi_70_ PKSi_144_ n1521
+11 1
+.names Pkey_153_ n1149 n1523 n1522
+-00 1
+0-0 1
+.names n1179 Pkey_145_ n1523
+11 1
+.names n1525 n1526 n1530 n1107
+011 0
+.names n1163 PKSi_62_ PKSi_151_ n1525
+101 1
+110 1
+.names n1529 n1169 n1527 n1526
+-00 1
+0-0 1
+.names n1174 n1171 n1528 n1527
+-10 1
+1-1 1
+.names PKSi_62_ PKSi_151_ n1528
+00 1
+.names PKSi_62_ PKSi_151_ n1529
+11 1
+.names Pkey_161_ n1149 n1531 n1530
+-00 1
+0-0 1
+.names n1179 Pkey_153_ n1531
+11 1
+.names n1533 n1534 n1538 n1111
+011 0
+.names n1163 PKSi_50_ PKSi_158_ n1533
+101 1
+110 1
+.names n1537 n1169 n1535 n1534
+-00 1
+0-0 1
+.names n1174 n1171 n1536 n1535
+-10 1
+1-1 1
+.names PKSi_50_ PKSi_158_ n1536
+00 1
+.names PKSi_50_ PKSi_158_ n1537
+11 1
+.names Pkey_169_ n1149 n1539 n1538
+-00 1
+0-0 1
+.names n1179 Pkey_161_ n1539
+11 1
+.names n1541 n1542 n1546 n1115
+011 0
+.names n1163 PKSi_59_ N_N2917 n1541
+101 1
+110 1
+.names n1545 n1169 n1543 n1542
+-00 1
+0-0 1
+.names n1174 n1171 n1544 n1543
+-10 1
+1-1 1
+.names PKSi_59_ N_N2917 n1544
+00 1
+.names PKSi_59_ N_N2917 n1545
+11 1
+.names Pkey_177_ n1149 n1547 n1546
+-00 1
+0-0 1
+.names n1179 Pkey_169_ n1547
+11 1
+.names n1549 n1550 n1554 n1119
+011 0
+.names n1163 N_N2789 PKSi_147_ n1549
+101 1
+110 1
+.names n1553 n1169 n1551 n1550
+-00 1
+0-0 1
+.names n1174 n1171 n1552 n1551
+-10 1
+1-1 1
+.names N_N2789 PKSi_147_ n1552
+00 1
+.names N_N2789 PKSi_147_ n1553
+11 1
+.names Pkey_185_ n1149 n1555 n1554
+-00 1
+0-0 1
+.names n1179 Pkey_177_ n1555
+11 1
+.names n1557 n1558 n1562 n1124_1
+011 0
+.names n1163 PKSi_65_ PKSi_165_ n1557
+101 1
+110 1
+.names n1561 n1169 n1559 n1558
+-00 1
+0-0 1
+.names n1174 n1171 n1560 n1559
+-10 1
+1-1 1
+.names PKSi_65_ PKSi_165_ n1560
+00 1
+.names PKSi_65_ PKSi_165_ n1561
+11 1
+.names Pkey_128_ n1149 n1563 n1562
+-00 1
+0-0 1
+.names n1179 Pkey_185_ n1563
+11 1
+.names n1565 n1566 n1570 n1128_1
+011 0
+.names n1163 PKSi_67_ N_N2921 n1565
+101 1
+110 1
+.names n1569 n1169 n1567 n1566
+-00 1
+0-0 1
+.names n1174 n1171 n1568 n1567
+-10 1
+1-1 1
+.names PKSi_67_ N_N2921 n1568
+00 1
+.names PKSi_67_ N_N2921 n1569
+11 1
+.names Pkey_136_ n1149 n1571 n1570
+-00 1
+0-0 1
+.names n1179 Pkey_128_ n1571
+11 1
+.names n1573 n1574 n1578 n1132_1
+011 0
+.names n1163 PKSi_57_ PKSi_160_ n1573
+101 1
+110 1
+.names n1577 n1169 n1575 n1574
+-00 1
+0-0 1
+.names n1174 n1171 n1576 n1575
+-10 1
+1-1 1
+.names PKSi_57_ PKSi_160_ n1576
+00 1
+.names PKSi_57_ PKSi_160_ n1577
+11 1
+.names Pkey_144_ n1149 n1579 n1578
+-00 1
+0-0 1
+.names n1179 Pkey_136_ n1579
+11 1
+.names n1581 n1582 n1586 n1136_1
+011 0
+.names n1163 PKSi_53_ PKSi_154_ n1581
+101 1
+110 1
+.names n1585 n1169 n1583 n1582
+-00 1
+0-0 1
+.names n1174 n1171 n1584 n1583
+-10 1
+1-1 1
+.names PKSi_53_ PKSi_154_ n1584
+00 1
+.names PKSi_53_ PKSi_154_ n1585
+11 1
+.names Pkey_152_ n1149 n1587 n1586
+-00 1
+0-0 1
+.names n1179 Pkey_144_ n1587
+11 1
+.names n1589 n1590 n1594 n1140_1
+011 0
+.names n1163 PKSi_63_ PKSi_167_ n1589
+101 1
+110 1
+.names n1593 n1169 n1591 n1590
+-00 1
+0-0 1
+.names n1174 n1171 n1592 n1591
+-10 1
+1-1 1
+.names PKSi_63_ PKSi_167_ n1592
+00 1
+.names PKSi_63_ PKSi_167_ n1593
+11 1
+.names Pkey_160_ n1149 n1595 n1594
+-00 1
+0-0 1
+.names n1179 Pkey_152_ n1595
+11 1
+.names n1597 n1598 n1602 n1144_1
+011 0
+.names n1163 PKSi_54_ PKSi_146_ n1597
+101 1
+110 1
+.names n1601 n1169 n1599 n1598
+-00 1
+0-0 1
+.names n1174 n1171 n1600 n1599
+-10 1
+1-1 1
+.names PKSi_54_ PKSi_146_ n1600
+00 1
+.names PKSi_54_ PKSi_146_ n1601
+11 1
+.names Pkey_168_ n1149 n1603 n1602
+-00 1
+0-0 1
+.names n1179 Pkey_160_ n1603
+11 1
+.names n1605 n1606 n1610 n1148_1
+011 0
+.names n1163 PKSi_71_ PKSi_150_ n1605
+101 1
+110 1
+.names n1609 n1169 n1607 n1606
+-00 1
+0-0 1
+.names n1174 n1171 n1608 n1607
+-10 1
+1-1 1
+.names PKSi_71_ PKSi_150_ n1608
+00 1
+.names PKSi_71_ PKSi_150_ n1609
+11 1
+.names Pkey_176_ n1149 n1611 n1610
+-00 1
+0-0 1
+.names n1179 Pkey_168_ n1611
+11 1
+.names n1613 n1614 n1618 n1152_1
+011 0
+.names n1163 PKSi_52_ PKSi_166_ n1613
+101 1
+110 1
+.names n1617 n1169 n1615 n1614
+-00 1
+0-0 1
+.names n1174 n1171 n1616 n1615
+-10 1
+1-1 1
+.names PKSi_52_ PKSi_166_ n1616
+00 1
+.names PKSi_52_ PKSi_166_ n1617
+11 1
+.names Pkey_184_ n1149 n1619 n1618
+-00 1
+0-0 1
+.names n1179 Pkey_176_ n1619
+11 1
+.names n1621 n1622 n1626 n1156_1
+011 0
+.names n1163 PKSi_31_ PKSi_135_ n1621
+101 1
+110 1
+.names n1625 n1169 n1623 n1622
+-00 1
+0-0 1
+.names n1174 n1171 n1624 n1623
+-10 1
+1-1 1
+.names PKSi_31_ PKSi_135_ n1624
+00 1
+.names PKSi_31_ PKSi_135_ n1625
+11 1
+.names Pkey_99_ n1149 n1627 n1626
+-00 1
+0-0 1
+.names n1179 Pkey_184_ n1627
+11 1
+.names n1629 n1630 n1634 n1160_1
+011 0
+.names n1163 PKSi_44_ PKSi_125_ n1629
+101 1
+110 1
+.names n1633 n1169 n1631 n1630
+-00 1
+0-0 1
+.names n1174 n1171 n1632 n1631
+-10 1
+1-1 1
+.names PKSi_44_ PKSi_125_ n1632
+00 1
+.names PKSi_44_ PKSi_125_ n1633
+11 1
+.names Pkey_107_ n1149 n1635 n1634
+-00 1
+0-0 1
+.names n1179 Pkey_99_ n1635
+11 1
+.names n1637 n1638 n1642 n1164
+011 0
+.names n1163 PKSi_40_ N_N2931 n1637
+101 1
+110 1
+.names n1641 n1169 n1639 n1638
+-00 1
+0-0 1
+.names n1174 n1171 n1640 n1639
+-10 1
+1-1 1
+.names PKSi_40_ N_N2931 n1640
+00 1
+.names PKSi_40_ N_N2931 n1641
+11 1
+.names Pkey_115_ n1149 n1643 n1642
+-00 1
+0-0 1
+.names n1179 Pkey_107_ n1643
+11 1
+.names n1645 n1646 n1650 n1168
+011 0
+.names n1163 N_N2802 PKSi_137_ n1645
+101 1
+110 1
+.names n1649 n1169 n1647 n1646
+-00 1
+0-0 1
+.names n1174 n1171 n1648 n1647
+-10 1
+1-1 1
+.names N_N2802 PKSi_137_ n1648
+00 1
+.names N_N2802 PKSi_137_ n1649
+11 1
+.names Pkey_123_ n1149 n1651 n1650
+-00 1
+0-0 1
+.names n1179 Pkey_115_ n1651
+11 1
+.names n1653 n1654 n1658 n1173
+011 0
+.names n1163 PKSi_27_ PKSi_121_ n1653
+101 1
+110 1
+.names n1657 n1169 n1655 n1654
+-00 1
+0-0 1
+.names n1174 n1171 n1656 n1655
+-10 1
+1-1 1
+.names PKSi_27_ PKSi_121_ n1656
+00 1
+.names PKSi_27_ PKSi_121_ n1657
+11 1
+.names Pkey_66_ n1149 n1659 n1658
+-00 1
+0-0 1
+.names n1179 Pkey_123_ n1659
+11 1
+.names n1661 n1662 n1666 n1177
+011 0
+.names n1163 PKSi_36_ PKSi_128_ n1661
+101 1
+110 1
+.names n1665 n1169 n1663 n1662
+-00 1
+0-0 1
+.names n1174 n1171 n1664 n1663
+-10 1
+1-1 1
+.names PKSi_36_ PKSi_128_ n1664
+00 1
+.names PKSi_36_ PKSi_128_ n1665
+11 1
+.names Pkey_74_ n1149 n1667 n1666
+-00 1
+0-0 1
+.names n1179 Pkey_66_ n1667
+11 1
+.names n1669 n1670 n1674 n1181
+011 0
+.names n1163 N_N2806 PKSi_140_ n1669
+101 1
+110 1
+.names n1673 n1169 n1671 n1670
+-00 1
+0-0 1
+.names n1174 n1171 n1672 n1671
+-10 1
+1-1 1
+.names N_N2806 PKSi_140_ n1672
+00 1
+.names N_N2806 PKSi_140_ n1673
+11 1
+.names Pkey_82_ n1149 n1675 n1674
+-00 1
+0-0 1
+.names n1179 Pkey_74_ n1675
+11 1
+.names n1677 n1678 n1682 n1186
+011 0
+.names n1163 PKSi_34_ PKSi_133_ n1677
+101 1
+110 1
+.names n1681 n1169 n1679 n1678
+-00 1
+0-0 1
+.names n1174 n1171 n1680 n1679
+-10 1
+1-1 1
+.names PKSi_34_ PKSi_133_ n1680
+00 1
+.names PKSi_34_ PKSi_133_ n1681
+11 1
+.names Pkey_90_ n1149 n1683 n1682
+-00 1
+0-0 1
+.names n1179 Pkey_82_ n1683
+11 1
+.names n1685 n1686 n1690 n1190
+011 0
+.names n1163 PKSi_45_ PKSi_131_ n1685
+101 1
+110 1
+.names n1689 n1169 n1687 n1686
+-00 1
+0-0 1
+.names n1174 n1171 n1688 n1687
+-10 1
+1-1 1
+.names PKSi_45_ PKSi_131_ n1688
+00 1
+.names PKSi_45_ PKSi_131_ n1689
+11 1
+.names Pkey_98_ n1149 n1691 n1690
+-00 1
+0-0 1
+.names n1179 Pkey_90_ n1691
+11 1
+.names n1693 n1694 n1698 n1194
+011 0
+.names n1163 PKSi_37_ PKSi_124_ n1693
+101 1
+110 1
+.names n1697 n1169 n1695 n1694
+-00 1
+0-0 1
+.names n1174 n1171 n1696 n1695
+-10 1
+1-1 1
+.names PKSi_37_ PKSi_124_ n1696
+00 1
+.names PKSi_37_ PKSi_124_ n1697
+11 1
+.names Pkey_106_ n1149 n1699 n1698
+-00 1
+0-0 1
+.names n1179 Pkey_98_ n1699
+11 1
+.names n1701 n1702 n1706 n1198
+011 0
+.names n1163 N_N2811 PKSi_138_ n1701
+101 1
+110 1
+.names n1705 n1169 n1703 n1702
+-00 1
+0-0 1
+.names n1174 n1171 n1704 n1703
+-10 1
+1-1 1
+.names N_N2811 PKSi_138_ n1704
+00 1
+.names N_N2811 PKSi_138_ n1705
+11 1
+.names Pkey_114_ n1149 n1707 n1706
+-00 1
+0-0 1
+.names n1179 Pkey_106_ n1707
+11 1
+.names n1709 n1710 n1714 n1203
+011 0
+.names n1163 PKSi_25_ PKSi_129_ n1709
+101 1
+110 1
+.names n1713 n1169 n1711 n1710
+-00 1
+0-0 1
+.names n1174 n1171 n1712 n1711
+-10 1
+1-1 1
+.names PKSi_25_ PKSi_129_ n1712
+00 1
+.names PKSi_25_ PKSi_129_ n1713
+11 1
+.names Pkey_122_ n1149 n1715 n1714
+-00 1
+0-0 1
+.names n1179 Pkey_114_ n1715
+11 1
+.names n1717 n1718 n1722 n1207
+011 0
+.names n1163 PKSi_42_ PKSi_132_ n1717
+101 1
+110 1
+.names n1721 n1169 n1719 n1718
+-00 1
+0-0 1
+.names n1174 n1171 n1720 n1719
+-10 1
+1-1 1
+.names PKSi_42_ PKSi_132_ n1720
+00 1
+.names PKSi_42_ PKSi_132_ n1721
+11 1
+.names Pkey_65_ n1149 n1723 n1722
+-00 1
+0-0 1
+.names n1179 Pkey_122_ n1723
+11 1
+.names n1725 n1726 n1730 n1211
+011 0
+.names n1163 PKSi_32_ N_N2943 n1725
+101 1
+110 1
+.names n1729 n1169 n1727 n1726
+-00 1
+0-0 1
+.names n1174 n1171 n1728 n1727
+-10 1
+1-1 1
+.names PKSi_32_ N_N2943 n1728
+00 1
+.names PKSi_32_ N_N2943 n1729
+11 1
+.names Pkey_73_ n1149 n1731 n1730
+-00 1
+0-0 1
+.names n1179 Pkey_65_ n1731
+11 1
+.names n1733 n1734 n1738 n1215
+011 0
+.names n1163 PKSi_24_ N_N2945 n1733
+101 1
+110 1
+.names n1737 n1169 n1735 n1734
+-00 1
+0-0 1
+.names n1174 n1171 n1736 n1735
+-10 1
+1-1 1
+.names PKSi_24_ N_N2945 n1736
+00 1
+.names PKSi_24_ N_N2945 n1737
+11 1
+.names Pkey_81_ n1149 n1739 n1738
+-00 1
+0-0 1
+.names n1179 Pkey_73_ n1739
+11 1
+.names n1741 n1742_1 n1746 n1219
+011 0
+.names n1163 PKSi_46_ PKSi_120_ n1741
+101 1
+110 1
+.names n1745 n1169 n1743 n1742_1
+-00 1
+0-0 1
+.names n1174 n1171 n1744 n1743
+-10 1
+1-1 1
+.names PKSi_46_ PKSi_120_ n1744
+00 1
+.names PKSi_46_ PKSi_120_ n1745
+11 1
+.names Pkey_89_ n1149 n1747 n1746
+-00 1
+0-0 1
+.names n1179 Pkey_81_ n1747
+11 1
+.names n1749 n1750 n1754 n1223
+011 0
+.names n1163 PKSi_38_ PKSi_127_ n1749
+101 1
+110 1
+.names n1753 n1169 n1751 n1750
+-00 1
+0-0 1
+.names n1174 n1171 n1752 n1751
+-10 1
+1-1 1
+.names PKSi_38_ PKSi_127_ n1752
+00 1
+.names PKSi_38_ PKSi_127_ n1753
+11 1
+.names Pkey_97_ n1149 n1755_1 n1754
+-00 1
+0-0 1
+.names n1179 Pkey_89_ n1755_1
+11 1
+.names n1757 n1758 n1762 n1227
+011 0
+.names n1163 PKSi_26_ PKSi_134_ n1757
+101 1
+110 1
+.names n1761 n1169 n1759_1 n1758
+-00 1
+0-0 1
+.names n1174 n1171 n1760 n1759_1
+-10 1
+1-1 1
+.names PKSi_26_ PKSi_134_ n1760
+00 1
+.names PKSi_26_ PKSi_134_ n1761
+11 1
+.names Pkey_105_ n1149 n1763_1 n1762
+-00 1
+0-0 1
+.names n1179 Pkey_97_ n1763_1
+11 1
+.names n1765 n1766 n1770 n1231
+011 0
+.names n1163 PKSi_35_ N_N2950 n1765
+101 1
+110 1
+.names n1769 n1169 n1767_1 n1766
+-00 1
+0-0 1
+.names n1174 n1171 n1768 n1767_1
+-10 1
+1-1 1
+.names PKSi_35_ N_N2950 n1768
+00 1
+.names PKSi_35_ N_N2950 n1769
+11 1
+.names Pkey_113_ n1149 n1771_1 n1770
+-00 1
+0-0 1
+.names n1179 Pkey_105_ n1771_1
+11 1
+.names n1773 n1774 n1778 n1235
+011 0
+.names n1163 N_N2821 PKSi_123_ n1773
+101 1
+110 1
+.names n1777 n1169 n1775_1 n1774
+-00 1
+0-0 1
+.names n1174 n1171 n1776 n1775_1
+-10 1
+1-1 1
+.names N_N2821 PKSi_123_ n1776
+00 1
+.names N_N2821 PKSi_123_ n1777
+11 1
+.names Pkey_121_ n1149 n1779_1 n1778
+-00 1
+0-0 1
+.names n1179 Pkey_113_ n1779_1
+11 1
+.names n1781 n1782 n1786 n1240
+011 0
+.names n1163 PKSi_41_ PKSi_141_ n1781
+101 1
+110 1
+.names n1785 n1169 n1783_1 n1782
+-00 1
+0-0 1
+.names n1174 n1171 n1784 n1783_1
+-10 1
+1-1 1
+.names PKSi_41_ PKSi_141_ n1784
+00 1
+.names PKSi_41_ PKSi_141_ n1785
+11 1
+.names Pkey_64_ n1149 n1787_1 n1786
+-00 1
+0-0 1
+.names n1179 Pkey_121_ n1787_1
+11 1
+.names n1789 n1790 n1794 n1244
+011 0
+.names n1163 PKSi_43_ N_N2954 n1789
+101 1
+110 1
+.names n1793 n1169 n1791_1 n1790
+-00 1
+0-0 1
+.names n1174 n1171 n1792 n1791_1
+-10 1
+1-1 1
+.names PKSi_43_ N_N2954 n1792
+00 1
+.names PKSi_43_ N_N2954 n1793
+11 1
+.names Pkey_72_ n1149 n1795_1 n1794
+-00 1
+0-0 1
+.names n1179 Pkey_64_ n1795_1
+11 1
+.names n1797 n1798 n1802 n1248
+011 0
+.names n1163 PKSi_33_ PKSi_136_ n1797
+101 1
+110 1
+.names n1801 n1169 n1799 n1798
+-00 1
+0-0 1
+.names n1174 n1171 n1800 n1799
+-10 1
+1-1 1
+.names PKSi_33_ PKSi_136_ n1800
+00 1
+.names PKSi_33_ PKSi_136_ n1801
+11 1
+.names Pkey_80_ n1149 n1803 n1802
+-00 1
+0-0 1
+.names n1179 Pkey_72_ n1803
+11 1
+.names n1805 n1806 n1810 n1252
+011 0
+.names n1163 PKSi_29_ PKSi_130_ n1805
+101 1
+110 1
+.names n1809 n1169 n1807 n1806
+-00 1
+0-0 1
+.names n1174 n1171 n1808 n1807
+-10 1
+1-1 1
+.names PKSi_29_ PKSi_130_ n1808
+00 1
+.names PKSi_29_ PKSi_130_ n1809
+11 1
+.names Pkey_88_ n1149 n1811 n1810
+-00 1
+0-0 1
+.names n1179 Pkey_80_ n1811
+11 1
+.names n1813 n1814 n1818 n1256
+011 0
+.names n1163 PKSi_39_ [282] n1813
+101 1
+110 1
+.names n1817 n1169 n1815 n1814
+-00 1
+0-0 1
+.names n1174 n1171 n1816 n1815
+-10 1
+1-1 1
+.names PKSi_39_ [282] n1816
+00 1
+.names PKSi_39_ [282] n1817
+11 1
+.names Pkey_96_ n1149 n1819 n1818
+-00 1
+0-0 1
+.names n1179 Pkey_88_ n1819
+11 1
+.names n1821_1 n1822 n1826 n1260
+011 0
+.names n1163 PKSi_30_ PKSi_122_ n1821_1
+101 1
+110 1
+.names n1825_1 n1169 n1823 n1822
+-00 1
+0-0 1
+.names n1174 n1171 n1824 n1823
+-10 1
+1-1 1
+.names PKSi_30_ PKSi_122_ n1824
+00 1
+.names PKSi_30_ PKSi_122_ n1825_1
+11 1
+.names Pkey_104_ n1149 n1827 n1826
+-00 1
+0-0 1
+.names n1179 Pkey_96_ n1827
+11 1
+.names n1829_1 n1830 n1834 n1264
+011 0
+.names n1163 PKSi_47_ PKSi_126_ n1829_1
+101 1
+110 1
+.names n1833 n1169 n1831 n1830
+-00 1
+0-0 1
+.names n1174 n1171 n1832 n1831
+-10 1
+1-1 1
+.names PKSi_47_ PKSi_126_ n1832
+00 1
+.names PKSi_47_ PKSi_126_ n1833
+11 1
+.names Pkey_112_ n1149 n1835 n1834
+-00 1
+0-0 1
+.names n1179 Pkey_104_ n1835
+11 1
+.names n1837 n1838 n1842 n1268
+011 0
+.names n1163 PKSi_28_ PKSi_142_ n1837
+101 1
+110 1
+.names n1841 n1169 n1839 n1838
+-00 1
+0-0 1
+.names n1174 n1171 n1840 n1839
+-10 1
+1-1 1
+.names PKSi_28_ PKSi_142_ n1840
+00 1
+.names PKSi_28_ PKSi_142_ n1841
+11 1
+.names Pkey_120_ n1149 n1843 n1842
+-00 1
+0-0 1
+.names n1179 Pkey_112_ n1843
+11 1
+.names n1845 n1846 n1850 n1272
+011 0
+.names n1163 PKSi_7_ PKSi_111_ n1845
+101 1
+110 1
+.names n1849 n1169 n1847 n1846
+-00 1
+0-0 1
+.names n1174 n1171 n1848 n1847
+-10 1
+1-1 1
+.names PKSi_7_ PKSi_111_ n1848
+00 1
+.names PKSi_7_ PKSi_111_ n1849
+11 1
+.names Pkey_35_ n1149 n1851 n1850
+-00 1
+0-0 1
+.names n1179 Pkey_120_ n1851
+11 1
+.names n1853 n1854 n1858 n1276
+011 0
+.names n1163 PKSi_20_ PKSi_101_ n1853
+101 1
+110 1
+.names n1857 n1169 n1855 n1854
+-00 1
+0-0 1
+.names n1174 n1171 n1856 n1855
+-10 1
+1-1 1
+.names PKSi_20_ PKSi_101_ n1856
+00 1
+.names PKSi_20_ PKSi_101_ n1857
+11 1
+.names Pkey_43_ n1149 n1859 n1858
+-00 1
+0-0 1
+.names n1179 Pkey_35_ n1859
+11 1
+.names n1861 n1862 n1866 n1280
+011 0
+.names n1163 PKSi_16_ N_N2964 n1861
+101 1
+110 1
+.names n1865 n1169 n1863 n1862
+-00 1
+0-0 1
+.names n1174 n1171 n1864 n1863
+-10 1
+1-1 1
+.names PKSi_16_ N_N2964 n1864
+00 1
+.names PKSi_16_ N_N2964 n1865
+11 1
+.names Pkey_51_ n1149 n1867 n1866
+-00 1
+0-0 1
+.names n1179 Pkey_43_ n1867
+11 1
+.names n1869 n1870 n1874 n1284_1
+011 0
+.names n1163 N_N2834 PKSi_113_ n1869
+101 1
+110 1
+.names n1873 n1169 n1871 n1870
+-00 1
+0-0 1
+.names n1174 n1171 n1872 n1871
+-10 1
+1-1 1
+.names N_N2834 PKSi_113_ n1872
+00 1
+.names N_N2834 PKSi_113_ n1873
+11 1
+.names Pkey_59_ n1149 n1875 n1874
+-00 1
+0-0 1
+.names n1179 Pkey_51_ n1875
+11 1
+.names n1877 n1878 n1882 n1289_1
+011 0
+.names n1163 PKSi_3_ PKSi_97_ n1877
+101 1
+110 1
+.names n1881 n1169 n1879 n1878
+-00 1
+0-0 1
+.names n1174 n1171 n1880 n1879
+-10 1
+1-1 1
+.names PKSi_3_ PKSi_97_ n1880
+00 1
+.names PKSi_3_ PKSi_97_ n1881
+11 1
+.names Pkey_2_ n1149 n1883 n1882
+-00 1
+0-0 1
+.names n1179 Pkey_59_ n1883
+11 1
+.names n1885 n1886 n1890 n1293_1
+011 0
+.names n1163 PKSi_12_ PKSi_104_ n1885
+101 1
+110 1
+.names n1889 n1169 n1887 n1886
+-00 1
+0-0 1
+.names n1174 n1171 n1888 n1887
+-10 1
+1-1 1
+.names PKSi_12_ PKSi_104_ n1888
+00 1
+.names PKSi_12_ PKSi_104_ n1889
+11 1
+.names Pkey_10_ n1149 n1891 n1890
+-00 1
+0-0 1
+.names n1179 Pkey_2_ n1891
+11 1
+.names n1893 n1894 n1898 n1297_1
+011 0
+.names n1163 N_N2838 PKSi_116_ n1893
+101 1
+110 1
+.names n1897 n1169 n1895 n1894
+-00 1
+0-0 1
+.names n1174 n1171 n1896 n1895
+-10 1
+1-1 1
+.names N_N2838 PKSi_116_ n1896
+00 1
+.names N_N2838 PKSi_116_ n1897
+11 1
+.names Pkey_18_ n1149 n1899 n1898
+-00 1
+0-0 1
+.names n1179 Pkey_10_ n1899
+11 1
+.names n1901 n1902 n1906 n1302_1
+011 0
+.names n1163 PKSi_10_ PKSi_109_ n1901
+101 1
+110 1
+.names n1905 n1169 n1903 n1902
+-00 1
+0-0 1
+.names n1174 n1171 n1904 n1903
+-10 1
+1-1 1
+.names PKSi_10_ PKSi_109_ n1904
+00 1
+.names PKSi_10_ PKSi_109_ n1905
+11 1
+.names Pkey_26_ n1149 n1907 n1906
+-00 1
+0-0 1
+.names n1179 Pkey_18_ n1907
+11 1
+.names n1909 n1910 n1914 n1306_1
+011 0
+.names n1163 PKSi_21_ PKSi_107_ n1909
+101 1
+110 1
+.names n1913 n1169 n1911 n1910
+-00 1
+0-0 1
+.names n1174 n1171 n1912 n1911
+-10 1
+1-1 1
+.names PKSi_21_ PKSi_107_ n1912
+00 1
+.names PKSi_21_ PKSi_107_ n1913
+11 1
+.names Pkey_34_ n1149 n1915 n1914
+-00 1
+0-0 1
+.names n1179 Pkey_26_ n1915
+11 1
+.names n1917 n1918 n1922 n1310_1
+011 0
+.names n1163 PKSi_13_ PKSi_100_ n1917
+101 1
+110 1
+.names n1921 n1169 n1919 n1918
+-00 1
+0-0 1
+.names n1174 n1171 n1920 n1919
+-10 1
+1-1 1
+.names PKSi_13_ PKSi_100_ n1920
+00 1
+.names PKSi_13_ PKSi_100_ n1921
+11 1
+.names Pkey_42_ n1149 n1923 n1922
+-00 1
+0-0 1
+.names n1179 Pkey_34_ n1923
+11 1
+.names n1925 n1926 n1930 n1314_1
+011 0
+.names n1163 N_N2843 PKSi_114_ n1925
+101 1
+110 1
+.names n1929 n1169 n1927 n1926
+-00 1
+0-0 1
+.names n1174 n1171 n1928 n1927
+-10 1
+1-1 1
+.names N_N2843 PKSi_114_ n1928
+00 1
+.names N_N2843 PKSi_114_ n1929
+11 1
+.names Pkey_50_ n1149 n1931 n1930
+-00 1
+0-0 1
+.names n1179 Pkey_42_ n1931
+11 1
+.names n1933 n1934 n1938 n1319_1
+011 0
+.names n1163 PKSi_1_ PKSi_105_ n1933
+101 1
+110 1
+.names n1937 n1169 n1935 n1934
+-00 1
+0-0 1
+.names n1174 n1171 n1936 n1935
+-10 1
+1-1 1
+.names PKSi_1_ PKSi_105_ n1936
+00 1
+.names PKSi_1_ PKSi_105_ n1937
+11 1
+.names Pkey_58_ n1149 n1939 n1938
+-00 1
+0-0 1
+.names n1179 Pkey_50_ n1939
+11 1
+.names n1941 n1942 n1946 n1323_1
+011 0
+.names n1163 PKSi_18_ PKSi_108_ n1941
+101 1
+110 1
+.names n1945 n1169 n1943 n1942
+-00 1
+0-0 1
+.names n1174 n1171 n1944 n1943
+-10 1
+1-1 1
+.names PKSi_18_ PKSi_108_ n1944
+00 1
+.names PKSi_18_ PKSi_108_ n1945
+11 1
+.names Pkey_1_ n1149 n1947 n1946
+-00 1
+0-0 1
+.names n1179 Pkey_58_ n1947
+11 1
+.names n1949 n1950 n1954 n1327_1
+011 0
+.names n1163 PKSi_8_ N_N2976 n1949
+101 1
+110 1
+.names n1953 n1169 n1951 n1950
+-00 1
+0-0 1
+.names n1174 n1171 n1952 n1951
+-10 1
+1-1 1
+.names PKSi_8_ N_N2976 n1952
+00 1
+.names PKSi_8_ N_N2976 n1953
+11 1
+.names Pkey_9_ n1149 n1955 n1954
+-00 1
+0-0 1
+.names n1179 Pkey_1_ n1955
+11 1
+.names n1957 n1958 n1962 n1331_1
+011 0
+.names n1163 PKSi_0_ PKSi_115_ n1957
+101 1
+110 1
+.names n1961 n1169 n1959 n1958
+-00 1
+0-0 1
+.names n1174 n1171 n1960 n1959
+-10 1
+1-1 1
+.names PKSi_0_ PKSi_115_ n1960
+00 1
+.names PKSi_0_ PKSi_115_ n1961
+11 1
+.names Pkey_17_ n1149 n1963 n1962
+-00 1
+0-0 1
+.names n1179 Pkey_9_ n1963
+11 1
+.names n1965 n1966 n1970 n1335_1
+011 0
+.names n1163 PKSi_22_ PKSi_96_ n1965
+101 1
+110 1
+.names n1969 n1169 n1967 n1966
+-00 1
+0-0 1
+.names n1174 n1171 n1968 n1967
+-10 1
+1-1 1
+.names PKSi_22_ PKSi_96_ n1968
+00 1
+.names PKSi_22_ PKSi_96_ n1969
+11 1
+.names Pkey_25_ n1149 n1971 n1970
+-00 1
+0-0 1
+.names n1179 Pkey_17_ n1971
+11 1
+.names n1973 n1974 n1978 n1339_1
+011 0
+.names n1163 PKSi_14_ PKSi_103_ n1973
+101 1
+110 1
+.names n1977 n1169 n1975 n1974
+-00 1
+0-0 1
+.names n1174 n1171 n1976 n1975
+-10 1
+1-1 1
+.names PKSi_14_ PKSi_103_ n1976
+00 1
+.names PKSi_14_ PKSi_103_ n1977
+11 1
+.names Pkey_33_ n1149 n1979 n1978
+-00 1
+0-0 1
+.names n1179 Pkey_25_ n1979
+11 1
+.names n1981 n1982 n1986 n1343_1
+011 0
+.names n1163 PKSi_2_ PKSi_110_ n1981
+101 1
+110 1
+.names n1985 n1169 n1983 n1982
+-00 1
+0-0 1
+.names n1174 n1171 n1984 n1983
+-10 1
+1-1 1
+.names PKSi_2_ PKSi_110_ n1984
+00 1
+.names PKSi_2_ PKSi_110_ n1985
+11 1
+.names Pkey_41_ n1149 n1987 n1986
+-00 1
+0-0 1
+.names n1179 Pkey_33_ n1987
+11 1
+.names n1989 n1990 n1994 n1347_1
+011 0
+.names n1163 PKSi_11_ N_N2982 n1989
+101 1
+110 1
+.names n1993 n1169 n1991 n1990
+-00 1
+0-0 1
+.names n1174 n1171 n1992 n1991
+-10 1
+1-1 1
+.names PKSi_11_ N_N2982 n1992
+00 1
+.names PKSi_11_ N_N2982 n1993
+11 1
+.names Pkey_49_ n1149 n1995 n1994
+-00 1
+0-0 1
+.names n1179 Pkey_41_ n1995
+11 1
+.names n1997 n1998 n2002 n1351_1
+011 0
+.names n1163 N_N2853 PKSi_99_ n1997
+101 1
+110 1
+.names n2001 n1169 n1999 n1998
+-00 1
+0-0 1
+.names n1174 n1171 n2000 n1999
+-10 1
+1-1 1
+.names N_N2853 PKSi_99_ n2000
+00 1
+.names N_N2853 PKSi_99_ n2001
+11 1
+.names Pkey_57_ n1149 n2003 n2002
+-00 1
+0-0 1
+.names n1179 Pkey_49_ n2003
+11 1
+.names n2005 n2006 n2010 n1356_1
+011 0
+.names n1163 PKSi_17_ PKSi_117_ n2005
+101 1
+110 1
+.names n2009 n1169 n2007 n2006
+-00 1
+0-0 1
+.names n1174 n1171 n2008 n2007
+-10 1
+1-1 1
+.names PKSi_17_ PKSi_117_ n2008
+00 1
+.names PKSi_17_ PKSi_117_ n2009
+11 1
+.names Pkey_0_ n1149 n2011 n2010
+-00 1
+0-0 1
+.names n1179 Pkey_57_ n2011
+11 1
+.names n2013 n2014 n2018 n1360_1
+011 0
+.names n1163 PKSi_19_ N_N2986 n2013
+101 1
+110 1
+.names n2017 n1169 n2015 n2014
+-00 1
+0-0 1
+.names n1174 n1171 n2016 n2015
+-10 1
+1-1 1
+.names PKSi_19_ N_N2986 n2016
+00 1
+.names PKSi_19_ N_N2986 n2017
+11 1
+.names Pkey_8_ n1149 n2019 n2018
+-00 1
+0-0 1
+.names n1179 Pkey_0_ n2019
+11 1
+.names n2021 n2022 n2026 n1364_1
+011 0
+.names n1163 PKSi_9_ PKSi_112_ n2021
+101 1
+110 1
+.names n2025 n1169 n2023 n2022
+-00 1
+0-0 1
+.names n1174 n1171 n2024 n2023
+-10 1
+1-1 1
+.names PKSi_9_ PKSi_112_ n2024
+00 1
+.names PKSi_9_ PKSi_112_ n2025
+11 1
+.names Pkey_16_ n1149 n2027 n2026
+-00 1
+0-0 1
+.names n1179 Pkey_8_ n2027
+11 1
+.names n2029 n2030 n2034 n1368_1
+011 0
+.names n1163 PKSi_5_ PKSi_106_ n2029
+101 1
+110 1
+.names n2033 n1169 n2031 n2030
+-00 1
+0-0 1
+.names n1174 n1171 n2032 n2031
+-10 1
+1-1 1
+.names PKSi_5_ PKSi_106_ n2032
+00 1
+.names PKSi_5_ PKSi_106_ n2033
+11 1
+.names Pkey_24_ n1149 n2035 n2034
+-00 1
+0-0 1
+.names n1179 Pkey_16_ n2035
+11 1
+.names n2037 n2038 n2042 n1372_1
+011 0
+.names n1163 PKSi_15_ PKSi_119_ n2037
+101 1
+110 1
+.names n2041 n1169 n2039 n2038
+-00 1
+0-0 1
+.names n1174 n1171 n2040 n2039
+-10 1
+1-1 1
+.names PKSi_15_ PKSi_119_ n2040
+00 1
+.names PKSi_15_ PKSi_119_ n2041
+11 1
+.names Pkey_32_ n1149 n2043 n2042
+-00 1
+0-0 1
+.names n1179 Pkey_24_ n2043
+11 1
+.names n2045 n2046 n2050 n1376_1
+011 0
+.names n1163 PKSi_6_ PKSi_98_ n2045
+101 1
+110 1
+.names n2049 n1169 n2047 n2046
+-00 1
+0-0 1
+.names n1174 n1171 n2048 n2047
+-10 1
+1-1 1
+.names PKSi_6_ PKSi_98_ n2048
+00 1
+.names PKSi_6_ PKSi_98_ n2049
+11 1
+.names Pkey_40_ n1149 n2051 n2050
+-00 1
+0-0 1
+.names n1179 Pkey_32_ n2051
+11 1
+.names n2053 n2054 n2058 n1380_1
+011 0
+.names n1163 PKSi_23_ PKSi_102_ n2053
+101 1
+110 1
+.names n2057 n1169 n2055 n2054
+-00 1
+0-0 1
+.names n1174 n1171 n2056 n2055
+-10 1
+1-1 1
+.names PKSi_23_ PKSi_102_ n2056
+00 1
+.names PKSi_23_ PKSi_102_ n2057
+11 1
+.names Pkey_48_ n1149 n2059 n2058
+-00 1
+0-0 1
+.names n1179 Pkey_40_ n2059
+11 1
+.names n2061 n2062 n2066 n1384_1
+011 0
+.names n1163 PKSi_4_ PKSi_118_ n2061
+101 1
+110 1
+.names n2065 n1169 n2063 n2062
+-00 1
+0-0 1
+.names n1174 n1171 n2064 n2063
+-10 1
+1-1 1
+.names PKSi_4_ PKSi_118_ n2064
+00 1
+.names PKSi_4_ PKSi_118_ n2065
+11 1
+.names Pkey_56_ n1149 n2067 n2066
+-00 1
+0-0 1
+.names n1179 Pkey_48_ n2067
+11 1
+.names n2069 n2071 n2074 n1388_1
+011 0
+.names n2070 PKSi_79_ PKSi_183_ n2069
+101 1
+110 1
+.names n1164_1 Pstart_0_ Pencrypt_0_ n2070
+001 1
+.names n1176 n2072 n2073 n2071
+-00 1
+0-0 1
+.names Pencrypt_0_ n1164_1 Pstart_0_ n2072
+-10 1
+0-0 1
+.names n1174 n1171 n1175 n2073
+-11 1
+1-0 1
+.names Pkey_195_ n1149 n2075 n2074
+-00 1
+0-0 1
+.names n1179 Pkey_62_ n2075
+11 1
+.names n2077 n2078 n2080 n1392_1
+011 0
+.names n2070 PKSi_92_ PKSi_173_ n2077
+101 1
+110 1
+.names n1185 n2072 n2079 n2078
+-00 1
+0-0 1
+.names n1174 n1171 n1184 n2079
+-11 1
+1-0 1
+.names Pkey_203_ n1149 n2081 n2080
+-00 1
+0-0 1
+.names n1179 Pkey_195_ n2081
+11 1
+.names n2083 n2084 n2086 n1396_1
+011 0
+.names n2070 [333] N_N2865 n2083
+101 1
+110 1
+.names n1193 n2072 n2085 n2084
+-00 1
+0-0 1
+.names n1174 n1171 n1192 n2085
+-11 1
+1-0 1
+.names Pkey_211_ n1149 n2087 n2086
+-00 1
+0-0 1
+.names n1179 Pkey_203_ n2087
+11 1
+.names n2089 n2090 n2092 n1401_1
+011 0
+.names n2070 N_N2737 PKSi_185_ n2089
+101 1
+110 1
+.names n1201 n2072 n2091 n2090
+-00 1
+0-0 1
+.names n1174 n1171 n1200 n2091
+-11 1
+1-0 1
+.names Pkey_219_ n1149 n2093 n2092
+-00 1
+0-0 1
+.names n1179 Pkey_211_ n2093
+11 1
+.names n2095 n2096 n2098 n1405_1
+011 0
+.names n2070 PKSi_75_ PKSi_169_ n2095
+101 1
+110 1
+.names n1209 n2072 n2097 n2096
+-00 1
+0-0 1
+.names n1174 n1171 n1208 n2097
+-11 1
+1-0 1
+.names Pkey_196_ n1149 n2099 n2098
+-00 1
+0-0 1
+.names n1179 Pkey_219_ n2099
+11 1
+.names n2101 n2102 n2104 n1409_1
+011 0
+.names n2070 PKSi_84_ PKSi_176_ n2101
+101 1
+110 1
+.names n1217 n2072 n2103 n2102
+-00 1
+0-0 1
+.names n1174 n1171 n1216 n2103
+-11 1
+1-0 1
+.names Pkey_204_ n1149 n2105 n2104
+-00 1
+0-0 1
+.names n1179 Pkey_196_ n2105
+11 1
+.names n2107 n2108 n2110 n1413_1
+011 0
+.names n2070 N_N2741 PKSi_188_ n2107
+101 1
+110 1
+.names n1225 n2072 n2109 n2108
+-00 1
+0-0 1
+.names n1174 n1171 n1224 n2109
+-11 1
+1-0 1
+.names Pkey_212_ n1149 n2111 n2110
+-00 1
+0-0 1
+.names n1179 Pkey_204_ n2111
+11 1
+.names n2113 n2114 n2116 n1417_1
+011 0
+.names n2070 PKSi_82_ [253] n2113
+101 1
+110 1
+.names n1233 n2072 n2115 n2114
+-00 1
+0-0 1
+.names n1174 n1171 n1232 n2115
+-11 1
+1-0 1
+.names Pkey_220_ n1149 n2117 n2116
+-00 1
+0-0 1
+.names n1179 Pkey_212_ n2117
+11 1
+.names n2119 n2120 n2122 n1422_1
+011 0
+.names n2070 PKSi_93_ PKSi_179_ n2119
+101 1
+110 1
+.names n1241 n2072 n2121 n2120
+-00 1
+0-0 1
+.names n1174 n1171 n1240_1 n2121
+-11 1
+1-0 1
+.names Pkey_228_ n1149 n2123 n2122
+-00 1
+0-0 1
+.names n1179 Pkey_220_ n2123
+11 1
+.names n2125 n2126 n2128 n1426_1
+011 0
+.names n2070 PKSi_85_ PKSi_172_ n2125
+101 1
+110 1
+.names n1249 n2072 n2127 n2126
+-00 1
+0-0 1
+.names n1174 n1171 n1248_1 n2127
+-11 1
+1-0 1
+.names Pkey_228_ n1179 n2129 n2128
+-00 1
+0-0 1
+.names n1149 Pkey_172_ n2129
+11 1
+.names n2131 n2132 n2134 n1430_1
+011 0
+.names n2070 N_N2746 PKSi_186_ n2131
+101 1
+110 1
+.names n1257 n2072 n2133 n2132
+-00 1
+0-0 1
+.names n1174 n1171 n1256_1 n2133
+-11 1
+1-0 1
+.names Pkey_244_ n1149 n2135 n2134
+-00 1
+0-0 1
+.names n1179 Pkey_172_ n2135
+11 1
+.names n2137 n2138 n2140 n1434_1
+011 0
+.names n2070 PKSi_73_ PKSi_177_ n2137
+101 1
+110 1
+.names n1265 n2072 n2139 n2138
+-00 1
+0-0 1
+.names n1174 n1171 n1264_1 n2139
+-11 1
+1-0 1
+.names Pkey_252_ n1149 n2141 n2140
+-00 1
+0-0 1
+.names n1179 Pkey_244_ n2141
+11 1
+.names n2143 n2144 n2146 n1438_1
+011 0
+.names n2070 N_N2749 PKSi_180_ n2143
+101 1
+110 1
+.names n1273 n2072 n2145 n2144
+-00 1
+0-0 1
+.names n1174 n1171 n1272_1 n2145
+-11 1
+1-0 1
+.names Pkey_197_ n1149 n2147 n2146
+-00 1
+0-0 1
+.names n1179 Pkey_252_ n2147
+11 1
+.names n2149 n2150 n2152 n1442_1
+011 0
+.names n2070 PKSi_80_ N_N2877 n2149
+101 1
+110 1
+.names n1281 n2072 n2151 n2150
+-00 1
+0-0 1
+.names n1174 n1171 n1280_1 n2151
+-11 1
+1-0 1
+.names Pkey_205_ n1149 n2153 n2152
+-00 1
+0-0 1
+.names n1179 Pkey_197_ n2153
+11 1
+.names n2155 n2156 n2158 n1447_1
+011 0
+.names n2070 PKSi_72_ N_N2879 n2155
+101 1
+110 1
+.names n1289 n2072 n2157 n2156
+-00 1
+0-0 1
+.names n1174 n1171 n1288 n2157
+-11 1
+1-0 1
+.names Pkey_213_ n1149 n2159 n2158
+-00 1
+0-0 1
+.names n1179 Pkey_205_ n2159
+11 1
+.names n2161 n2162 n2164 n1452_1
+011 0
+.names n2070 PKSi_94_ N_N2881 n2161
+101 1
+110 1
+.names n1297 n2072 n2163 n2162
+-00 1
+0-0 1
+.names n1174 n1171 n1296 n2163
+-11 1
+1-0 1
+.names Pkey_221_ n1149 n2165 n2164
+-00 1
+0-0 1
+.names n1179 Pkey_213_ n2165
+11 1
+.names n2167 n2168 n2170 n1457_1
+011 0
+.names n2070 PKSi_86_ PKSi_175_ n2167
+101 1
+110 1
+.names n1305 n2072 n2169 n2168
+-00 1
+0-0 1
+.names n1174 n1171 n1304 n2169
+-11 1
+1-0 1
+.names Pkey_229_ n1149 n2171 n2170
+-00 1
+0-0 1
+.names n1179 Pkey_221_ n2171
+11 1
+.names n2173 n2174 n2176 n1461_1
+011 0
+.names n2070 PKSi_74_ PKSi_182_ n2173
+101 1
+110 1
+.names n1313 n2072 n2175 n2174
+-00 1
+0-0 1
+.names n1174 n1171 n1312 n2175
+-11 1
+1-0 1
+.names Pkey_237_ n1149 n2177 n2176
+-00 1
+0-0 1
+.names n1179 Pkey_229_ n2177
+11 1
+.names n2179 n2180 n2182 n1465_1
+011 0
+.names n2070 PKSi_83_ N_N2885 n2179
+101 1
+110 1
+.names n1321 n2072 n2181 n2180
+-00 1
+0-0 1
+.names n1174 n1171 n1320 n2181
+-11 1
+1-0 1
+.names Pkey_245_ n1149 n2183 n2182
+-00 1
+0-0 1
+.names n1179 Pkey_237_ n2183
+11 1
+.names n2185 n2186 n2188 n1470_1
+011 0
+.names n2070 N_N2757 PKSi_171_ n2185
+101 1
+110 1
+.names n1329 n2072 n2187 n2186
+-00 1
+0-0 1
+.names n1174 n1171 n1328 n2187
+-11 1
+1-0 1
+.names Pkey_253_ n1149 n2189 n2188
+-00 1
+0-0 1
+.names n1179 Pkey_245_ n2189
+11 1
+.names n2191 n2192 n2194 n1474_1
+011 0
+.names n2070 PKSi_89_ PKSi_189_ n2191
+101 1
+110 1
+.names n1337 n2072 n2193 n2192
+-00 1
+0-0 1
+.names n1174 n1171 n1336 n2193
+-11 1
+1-0 1
+.names Pkey_198_ n1149 n2195 n2194
+-00 1
+0-0 1
+.names n1179 Pkey_253_ n2195
+11 1
+.names n2197 n2198 n2200 n1478_1
+011 0
+.names n2070 PKSi_91_ N_N2889 n2197
+101 1
+110 1
+.names n1345 n2072 n2199 n2198
+-00 1
+0-0 1
+.names n1174 n1171 n1344 n2199
+-11 1
+1-0 1
+.names Pkey_206_ n1149 n2201 n2200
+-00 1
+0-0 1
+.names n1179 Pkey_198_ n2201
+11 1
+.names n2203 n2204 n2206 n1483_1
+011 0
+.names n2070 PKSi_81_ PKSi_184_ n2203
+101 1
+110 1
+.names n1353 n2072 n2205 n2204
+-00 1
+0-0 1
+.names n1174 n1171 n1352 n2205
+-11 1
+1-0 1
+.names Pkey_214_ n1149 n2207 n2206
+-00 1
+0-0 1
+.names n1179 Pkey_206_ n2207
+11 1
+.names n2209 n2210 n2212 n1487_1
+011 0
+.names n2070 PKSi_77_ PKSi_178_ n2209
+101 1
+110 1
+.names n1361 n2072 n2211 n2210
+-00 1
+0-0 1
+.names n1174 n1171 n1360 n2211
+-11 1
+1-0 1
+.names Pkey_222_ n1149 n2213 n2212
+-00 1
+0-0 1
+.names n1179 Pkey_214_ n2213
+11 1
+.names n2215 n2216 n2218 n1491_1
+011 0
+.names n2070 PKSi_87_ [234] n2215
+101 1
+110 1
+.names n1369 n2072 n2217 n2216
+-00 1
+0-0 1
+.names n1174 n1171 n1368 n2217
+-11 1
+1-0 1
+.names Pkey_230_ n1149 n2219 n2218
+-00 1
+0-0 1
+.names n1179 Pkey_222_ n2219
+11 1
+.names n2221 n2222 n2224 n1496_1
+011 0
+.names n2070 PKSi_78_ PKSi_170_ n2221
+101 1
+110 1
+.names n1377 n2072 n2223 n2222
+-00 1
+0-0 1
+.names n1174 n1171 n1376 n2223
+-11 1
+1-0 1
+.names Pkey_238_ n1149 n2225 n2224
+-00 1
+0-0 1
+.names n1179 Pkey_230_ n2225
+11 1
+.names n2227 n2228 n2230 n1500_1
+011 0
+.names n2070 PKSi_95_ PKSi_174_ n2227
+101 1
+110 1
+.names n1385 n2072 n2229 n2228
+-00 1
+0-0 1
+.names n1174 n1171 n1384 n2229
+-11 1
+1-0 1
+.names Pkey_246_ n1149 n2231 n2230
+-00 1
+0-0 1
+.names n1179 Pkey_238_ n2231
+11 1
+.names n2233 n2234 n2236 n1504_1
+011 0
+.names n2070 PKSi_76_ PKSi_190_ n2233
+101 1
+110 1
+.names n1393 n2072 n2235 n2234
+-00 1
+0-0 1
+.names n1174 n1171 n1392 n2235
+-11 1
+1-0 1
+.names Pkey_254_ n1149 n2237 n2236
+-00 1
+0-0 1
+.names n1179 Pkey_246_ n2237
+11 1
+.names n2239 n2240 n2242 n1508_1
+011 0
+.names n2070 PKSi_55_ PKSi_159_ n2239
+101 1
+110 1
+.names n1401 n2072 n2241 n2240
+-00 1
+0-0 1
+.names n1174 n1171 n1400 n2241
+-11 1
+1-0 1
+.names Pkey_131_ n1149 n2243 n2242
+-00 1
+0-0 1
+.names n1179 Pkey_254_ n2243
+11 1
+.names n2245 n2246 n2248 n1512_1
+011 0
+.names n2070 PKSi_68_ PKSi_149_ n2245
+101 1
+110 1
+.names n1409 n2072 n2247 n2246
+-00 1
+0-0 1
+.names n1174 n1171 n1408 n2247
+-11 1
+1-0 1
+.names Pkey_139_ n1149 n2249 n2248
+-00 1
+0-0 1
+.names n1179 Pkey_131_ n2249
+11 1
+.names n2251 n2252 n2254 n1516_1
+011 0
+.names n2070 PKSi_64_ N_N2899 n2251
+101 1
+110 1
+.names n1417 n2072 n2253 n2252
+-00 1
+0-0 1
+.names n1174 n1171 n1416 n2253
+-11 1
+1-0 1
+.names Pkey_147_ n1149 n2255 n2254
+-00 1
+0-0 1
+.names n1179 Pkey_139_ n2255
+11 1
+.names n2257 n2258 n2260 n1521_1
+011 0
+.names n2070 N_N2770 PKSi_161_ n2257
+101 1
+110 1
+.names n1425 n2072 n2259 n2258
+-00 1
+0-0 1
+.names n1174 n1171 n1424 n2259
+-11 1
+1-0 1
+.names Pkey_155_ n1149 n2261 n2260
+-00 1
+0-0 1
+.names n1179 Pkey_147_ n2261
+11 1
+.names n2263 n2264 n2266 n1525_1
+011 0
+.names n2070 PKSi_51_ PKSi_145_ n2263
+101 1
+110 1
+.names n1433 n2072 n2265 n2264
+-00 1
+0-0 1
+.names n1174 n1171 n1432 n2265
+-11 1
+1-0 1
+.names Pkey_132_ n1149 n2267 n2266
+-00 1
+0-0 1
+.names n1179 Pkey_155_ n2267
+11 1
+.names n2269 n2270 n2272 n1529_1
+011 0
+.names n2070 PKSi_60_ PKSi_152_ n2269
+101 1
+110 1
+.names n1441 n2072 n2271 n2270
+-00 1
+0-0 1
+.names n1174 n1171 n1440 n2271
+-11 1
+1-0 1
+.names Pkey_140_ n1149 n2273 n2272
+-00 1
+0-0 1
+.names n1179 Pkey_132_ n2273
+11 1
+.names n2275 n2276 n2278 n1533_1
+011 0
+.names n2070 N_N2774 PKSi_164_ n2275
+101 1
+110 1
+.names n1449 n2072 n2277 n2276
+-00 1
+0-0 1
+.names n1174 n1171 n1448 n2277
+-11 1
+1-0 1
+.names Pkey_148_ n1149 n2279 n2278
+-00 1
+0-0 1
+.names n1179 Pkey_140_ n2279
+11 1
+.names n2281 n2282 n2284 n1537_1
+011 0
+.names n2070 PKSi_58_ PKSi_157_ n2281
+101 1
+110 1
+.names n1457 n2072 n2283 n2282
+-00 1
+0-0 1
+.names n1174 n1171 n1456 n2283
+-11 1
+1-0 1
+.names Pkey_156_ n1149 n2285 n2284
+-00 1
+0-0 1
+.names n1179 Pkey_148_ n2285
+11 1
+.names n2287 n2288 n2290 n1541_1
+011 0
+.names n2070 PKSi_69_ PKSi_155_ n2287
+101 1
+110 1
+.names n1465 n2072 n2289 n2288
+-00 1
+0-0 1
+.names n1174 n1171 n1464 n2289
+-11 1
+1-0 1
+.names Pkey_164_ n1149 n2291 n2290
+-00 1
+0-0 1
+.names n1179 Pkey_156_ n2291
+11 1
+.names n2293 n2294 n2296 n1545_1
+011 0
+.names n2070 PKSi_61_ PKSi_148_ n2293
+101 1
+110 1
+.names n1473 n2072 n2295 n2294
+-00 1
+0-0 1
+.names n1174 n1171 n1472 n2295
+-11 1
+1-0 1
+.names Pkey_164_ n1179 n2129 n2296
+-00 1
+0-0 1
+.names n2298 n2299 n2301 n1549_1
+011 0
+.names n2070 N_N2779 PKSi_162_ n2298
+101 1
+110 1
+.names n1481 n2072 n2300 n2299
+-00 1
+0-0 1
+.names n1174 n1171 n1480 n2300
+-11 1
+1-0 1
+.names Pkey_180_ n1149 n2135 n2301
+-00 1
+0-0 1
+.names n2303 n2304 n2306 n1553_1
+011 0
+.names n2070 PKSi_49_ N_N2909 n2303
+101 1
+110 1
+.names n1489 n2072 n2305 n2304
+-00 1
+0-0 1
+.names n1174 n1171 n1488 n2305
+-11 1
+1-0 1
+.names Pkey_188_ n1149 n2307 n2306
+-00 1
+0-0 1
+.names n1179 Pkey_180_ n2307
+11 1
+.names n2309 n2310 n2312 n1558_1
+011 0
+.names n2070 PKSi_66_ PKSi_156_ n2309
+101 1
+110 1
+.names n1497 n2072 n2311 n2310
+-00 1
+0-0 1
+.names n1174 n1171 n1496 n2311
+-11 1
+1-0 1
+.names Pkey_133_ n1149 n2313 n2312
+-00 1
+0-0 1
+.names n1179 Pkey_188_ n2313
+11 1
+.names n2315 n2316 n2318 n1562_1
+011 0
+.names n2070 PKSi_56_ PKSi_153_ n2315
+101 1
+110 1
+.names n1505 n2072 n2317 n2316
+-00 1
+0-0 1
+.names n1174 n1171 n1504 n2317
+-11 1
+1-0 1
+.names Pkey_141_ n1149 n2319 n2318
+-00 1
+0-0 1
+.names n1179 Pkey_133_ n2319
+11 1
+.names n2321 n2322 n2324 n1566_1
+011 0
+.names n2070 PKSi_48_ PKSi_163_ n2321
+101 1
+110 1
+.names n1513 n2072 n2323 n2322
+-00 1
+0-0 1
+.names n1174 n1171 n1512 n2323
+-11 1
+1-0 1
+.names Pkey_149_ n1149 n2325 n2324
+-00 1
+0-0 1
+.names n1179 Pkey_141_ n2325
+11 1
+.names n2327 n2328 n2330 n1570_1
+011 0
+.names n2070 PKSi_70_ PKSi_144_ n2327
+101 1
+110 1
+.names n1521 n2072 n2329 n2328
+-00 1
+0-0 1
+.names n1174 n1171 n1520 n2329
+-11 1
+1-0 1
+.names Pkey_157_ n1149 n2331 n2330
+-00 1
+0-0 1
+.names n1179 Pkey_149_ n2331
+11 1
+.names n2333 n2334 n2336 n1574_1
+011 0
+.names n2070 PKSi_62_ PKSi_151_ n2333
+101 1
+110 1
+.names n1529 n2072 n2335 n2334
+-00 1
+0-0 1
+.names n1174 n1171 n1528 n2335
+-11 1
+1-0 1
+.names Pkey_165_ n1149 n2337 n2336
+-00 1
+0-0 1
+.names n1179 Pkey_157_ n2337
+11 1
+.names n2339 n2340 n2342 n1578_1
+011 0
+.names n2070 PKSi_50_ PKSi_158_ n2339
+101 1
+110 1
+.names n1537 n2072 n2341 n2340
+-00 1
+0-0 1
+.names n1174 n1171 n1536 n2341
+-11 1
+1-0 1
+.names Pkey_173_ n1149 n2343 n2342
+-00 1
+0-0 1
+.names n1179 Pkey_165_ n2343
+11 1
+.names n2345 n2346 n2348 n1582_1
+011 0
+.names n2070 PKSi_59_ N_N2917 n2345
+101 1
+110 1
+.names n1545 n2072 n2347 n2346
+-00 1
+0-0 1
+.names n1174 n1171 n1544 n2347
+-11 1
+1-0 1
+.names Pkey_181_ n1149 n2349 n2348
+-00 1
+0-0 1
+.names n1179 Pkey_173_ n2349
+11 1
+.names n2351 n2352 n2354 n1587_1
+011 0
+.names n2070 N_N2789 PKSi_147_ n2351
+101 1
+110 1
+.names n1553 n2072 n2353 n2352
+-00 1
+0-0 1
+.names n1174 n1171 n1552 n2353
+-11 1
+1-0 1
+.names Pkey_189_ n1149 n2355 n2354
+-00 1
+0-0 1
+.names n1179 Pkey_181_ n2355
+11 1
+.names n2357 n2358 n2360 n1591_1
+011 0
+.names n2070 PKSi_65_ PKSi_165_ n2357
+101 1
+110 1
+.names n1561 n2072 n2359 n2358
+-00 1
+0-0 1
+.names n1174 n1171 n1560 n2359
+-11 1
+1-0 1
+.names Pkey_134_ n1149 n2361 n2360
+-00 1
+0-0 1
+.names n1179 Pkey_189_ n2361
+11 1
+.names n2363 n2364 n2366 n1595_1
+011 0
+.names n2070 PKSi_67_ N_N2921 n2363
+101 1
+110 1
+.names n1569 n2072 n2365 n2364
+-00 1
+0-0 1
+.names n1174 n1171 n1568 n2365
+-11 1
+1-0 1
+.names Pkey_142_ n1149 n2367 n2366
+-00 1
+0-0 1
+.names n1179 Pkey_134_ n2367
+11 1
+.names n2369 n2370 n2372 n1600_1
+011 0
+.names n2070 PKSi_57_ PKSi_160_ n2369
+101 1
+110 1
+.names n1577 n2072 n2371 n2370
+-00 1
+0-0 1
+.names n1174 n1171 n1576 n2371
+-11 1
+1-0 1
+.names Pkey_150_ n1149 n2373 n2372
+-00 1
+0-0 1
+.names n1179 Pkey_142_ n2373
+11 1
+.names n2375 n2376 n2378 n1604_1
+011 0
+.names n2070 PKSi_53_ PKSi_154_ n2375
+101 1
+110 1
+.names n1585 n2072 n2377 n2376
+-00 1
+0-0 1
+.names n1174 n1171 n1584 n2377
+-11 1
+1-0 1
+.names Pkey_158_ n1149 n2379 n2378
+-00 1
+0-0 1
+.names n1179 Pkey_150_ n2379
+11 1
+.names n2381 n2382 n2384 n1608_1
+011 0
+.names n2070 PKSi_63_ PKSi_167_ n2381
+101 1
+110 1
+.names n1593 n2072 n2383 n2382
+-00 1
+0-0 1
+.names n1174 n1171 n1592 n2383
+-11 1
+1-0 1
+.names Pkey_166_ n1149 n2385 n2384
+-00 1
+0-0 1
+.names n1179 Pkey_158_ n2385
+11 1
+.names n2387 n2388 n2390 n1612_1
+011 0
+.names n2070 PKSi_54_ PKSi_146_ n2387
+101 1
+110 1
+.names n1601 n2072 n2389 n2388
+-00 1
+0-0 1
+.names n1174 n1171 n1600 n2389
+-11 1
+1-0 1
+.names Pkey_174_ n1149 n2391 n2390
+-00 1
+0-0 1
+.names n1179 Pkey_166_ n2391
+11 1
+.names n2393 n2394 n2396 n1616_1
+011 0
+.names n2070 PKSi_71_ PKSi_150_ n2393
+101 1
+110 1
+.names n1609 n2072 n2395 n2394
+-00 1
+0-0 1
+.names n1174 n1171 n1608 n2395
+-11 1
+1-0 1
+.names Pkey_182_ n1149 n2397 n2396
+-00 1
+0-0 1
+.names n1179 Pkey_174_ n2397
+11 1
+.names n2399 n2400 n2402 n1620_1
+011 0
+.names n2070 PKSi_52_ PKSi_166_ n2399
+101 1
+110 1
+.names n1617 n2072 n2401 n2400
+-00 1
+0-0 1
+.names n1174 n1171 n1616 n2401
+-11 1
+1-0 1
+.names Pkey_190_ n1149 n2403 n2402
+-00 1
+0-0 1
+.names n1179 Pkey_182_ n2403
+11 1
+.names n2405 n2406 n2408 n1624_1
+011 0
+.names n2070 PKSi_31_ PKSi_135_ n2405
+101 1
+110 1
+.names n1625 n2072 n2407 n2406
+-00 1
+0-0 1
+.names n1174 n1171 n1624 n2407
+-11 1
+1-0 1
+.names Pkey_67_ n1149 n2409 n2408
+-00 1
+0-0 1
+.names n1179 Pkey_190_ n2409
+11 1
+.names n2411 n2412 n2414 n1628_1
+011 0
+.names n2070 PKSi_44_ PKSi_125_ n2411
+101 1
+110 1
+.names n1633 n2072 n2413 n2412
+-00 1
+0-0 1
+.names n1174 n1171 n1632 n2413
+-11 1
+1-0 1
+.names Pkey_75_ n1149 n2415 n2414
+-00 1
+0-0 1
+.names n1179 Pkey_67_ n2415
+11 1
+.names n2417 n2418 n2420 n1632_1
+011 0
+.names n2070 PKSi_40_ N_N2931 n2417
+101 1
+110 1
+.names n1641 n2072 n2419 n2418
+-00 1
+0-0 1
+.names n1174 n1171 n1640 n2419
+-11 1
+1-0 1
+.names Pkey_83_ n1149 n2421 n2420
+-00 1
+0-0 1
+.names n1179 Pkey_75_ n2421
+11 1
+.names n2423 n2424 n2426 n1637_1
+011 0
+.names n2070 N_N2802 PKSi_137_ n2423
+101 1
+110 1
+.names n1649 n2072 n2425 n2424
+-00 1
+0-0 1
+.names n1174 n1171 n1648 n2425
+-11 1
+1-0 1
+.names Pkey_91_ n1149 n2427 n2426
+-00 1
+0-0 1
+.names n1179 Pkey_83_ n2427
+11 1
+.names n2429 n2430 n2432 n1641_1
+011 0
+.names n2070 PKSi_27_ PKSi_121_ n2429
+101 1
+110 1
+.names n1657 n2072 n2431 n2430
+-00 1
+0-0 1
+.names n1174 n1171 n1656 n2431
+-11 1
+1-0 1
+.names Pkey_68_ n1149 n2433 n2432
+-00 1
+0-0 1
+.names n1179 Pkey_91_ n2433
+11 1
+.names n2435 n2436 n2438 n1645_1
+011 0
+.names n2070 PKSi_36_ PKSi_128_ n2435
+101 1
+110 1
+.names n1665 n2072 n2437 n2436
+-00 1
+0-0 1
+.names n1174 n1171 n1664 n2437
+-11 1
+1-0 1
+.names Pkey_76_ n1149 n2439 n2438
+-00 1
+0-0 1
+.names n1179 Pkey_68_ n2439
+11 1
+.names n2441 n2442 n2444 n1649_1
+011 0
+.names n2070 N_N2806 PKSi_140_ n2441
+101 1
+110 1
+.names n1673 n2072 n2443 n2442
+-00 1
+0-0 1
+.names n1174 n1171 n1672 n2443
+-11 1
+1-0 1
+.names Pkey_84_ n1149 n2445 n2444
+-00 1
+0-0 1
+.names n1179 Pkey_76_ n2445
+11 1
+.names n2447 n2448 n2450 n1653_1
+011 0
+.names n2070 PKSi_34_ PKSi_133_ n2447
+101 1
+110 1
+.names n1681 n2072 n2449 n2448
+-00 1
+0-0 1
+.names n1174 n1171 n1680 n2449
+-11 1
+1-0 1
+.names Pkey_92_ n1149 n2451 n2450
+-00 1
+0-0 1
+.names n1179 Pkey_84_ n2451
+11 1
+.names n2453 n2454 n2456 n1657_1
+011 0
+.names n2070 PKSi_45_ PKSi_131_ n2453
+101 1
+110 1
+.names n1689 n2072 n2455 n2454
+-00 1
+0-0 1
+.names n1174 n1171 n1688 n2455
+-11 1
+1-0 1
+.names Pkey_100_ n1149 n2457 n2456
+-00 1
+0-0 1
+.names n1179 Pkey_92_ n2457
+11 1
+.names n2459 n2460 n2462 n1661_1
+011 0
+.names n2070 PKSi_37_ PKSi_124_ n2459
+101 1
+110 1
+.names n1697 n2072 n2461 n2460
+-00 1
+0-0 1
+.names n1174 n1171 n1696 n2461
+-11 1
+1-0 1
+.names Pkey_100_ n1179 n2463 n2462
+-00 1
+0-0 1
+.names n1149 Pkey_44_ n2463
+11 1
+.names n2465 n2466 n2468 n1665_1
+011 0
+.names n2070 N_N2811 PKSi_138_ n2465
+101 1
+110 1
+.names n1705 n2072 n2467 n2466
+-00 1
+0-0 1
+.names n1174 n1171 n1704 n2467
+-11 1
+1-0 1
+.names Pkey_116_ n1149 n2469 n2468
+-00 1
+0-0 1
+.names n1179 Pkey_44_ n2469
+11 1
+.names n2471 n2472 n2474 n1669_1
+011 0
+.names n2070 PKSi_25_ PKSi_129_ n2471
+101 1
+110 1
+.names n1713 n2072 n2473 n2472
+-00 1
+0-0 1
+.names n1174 n1171 n1712 n2473
+-11 1
+1-0 1
+.names Pkey_124_ n1149 n2475 n2474
+-00 1
+0-0 1
+.names n1179 Pkey_116_ n2475
+11 1
+.names n2477 n2478 n2480 n1673_1
+011 0
+.names n2070 PKSi_42_ PKSi_132_ n2477
+101 1
+110 1
+.names n1721 n2072 n2479 n2478
+-00 1
+0-0 1
+.names n1174 n1171 n1720 n2479
+-11 1
+1-0 1
+.names Pkey_69_ n1149 n2481 n2480
+-00 1
+0-0 1
+.names n1179 Pkey_124_ n2481
+11 1
+.names n2483 n2484 n2486 n1677_1
+011 0
+.names n2070 PKSi_32_ N_N2943 n2483
+101 1
+110 1
+.names n1729 n2072 n2485 n2484
+-00 1
+0-0 1
+.names n1174 n1171 n1728 n2485
+-11 1
+1-0 1
+.names Pkey_77_ n1149 n2487 n2486
+-00 1
+0-0 1
+.names n1179 Pkey_69_ n2487
+11 1
+.names n2489 n2490 n2492 n1682_1
+011 0
+.names n2070 PKSi_24_ N_N2945 n2489
+101 1
+110 1
+.names n1737 n2072 n2491 n2490
+-00 1
+0-0 1
+.names n1174 n1171 n1736 n2491
+-11 1
+1-0 1
+.names Pkey_85_ n1149 n2493 n2492
+-00 1
+0-0 1
+.names n1179 Pkey_77_ n2493
+11 1
+.names n2495 n2496 n2498 n1687_1
+011 0
+.names n2070 PKSi_46_ PKSi_120_ n2495
+101 1
+110 1
+.names n1745 n2072 n2497 n2496
+-00 1
+0-0 1
+.names n1174 n1171 n1744 n2497
+-11 1
+1-0 1
+.names Pkey_93_ n1149 n2499 n2498
+-00 1
+0-0 1
+.names n1179 Pkey_85_ n2499
+11 1
+.names n2501 n2502 n2504 n1691_1
+011 0
+.names n2070 PKSi_38_ PKSi_127_ n2501
+101 1
+110 1
+.names n1753 n2072 n2503 n2502
+-00 1
+0-0 1
+.names n1174 n1171 n1752 n2503
+-11 1
+1-0 1
+.names Pkey_101_ n1149 n2505 n2504
+-00 1
+0-0 1
+.names n1179 Pkey_93_ n2505
+11 1
+.names n2507 n2508 n2510 n1695_1
+011 0
+.names n2070 PKSi_26_ PKSi_134_ n2507
+101 1
+110 1
+.names n1761 n2072 n2509 n2508
+-00 1
+0-0 1
+.names n1174 n1171 n1760 n2509
+-11 1
+1-0 1
+.names Pkey_109_ n1149 n2511 n2510
+-00 1
+0-0 1
+.names n1179 Pkey_101_ n2511
+11 1
+.names n2513 n2514 n2516 n1699_1
+011 0
+.names n2070 PKSi_35_ N_N2950 n2513
+101 1
+110 1
+.names n1769 n2072 n2515 n2514
+-00 1
+0-0 1
+.names n1174 n1171 n1768 n2515
+-11 1
+1-0 1
+.names Pkey_117_ n1149 n2517 n2516
+-00 1
+0-0 1
+.names n1179 Pkey_109_ n2517
+11 1
+.names n2519 n2520 n2522 n1704_1
+011 0
+.names n2070 N_N2821 PKSi_123_ n2519
+101 1
+110 1
+.names n1777 n2072 n2521 n2520
+-00 1
+0-0 1
+.names n1174 n1171 n1776 n2521
+-11 1
+1-0 1
+.names Pkey_125_ n1149 n2523 n2522
+-00 1
+0-0 1
+.names n1179 Pkey_117_ n2523
+11 1
+.names n2525 n2526 n2528 n1708_1
+011 0
+.names n2070 PKSi_41_ PKSi_141_ n2525
+101 1
+110 1
+.names n1785 n2072 n2527 n2526
+-00 1
+0-0 1
+.names n1174 n1171 n1784 n2527
+-11 1
+1-0 1
+.names Pkey_70_ n1149 n2529 n2528
+-00 1
+0-0 1
+.names n1179 Pkey_125_ n2529
+11 1
+.names n2531 n2532 n2534 n1712_1
+011 0
+.names n2070 PKSi_43_ N_N2954 n2531
+101 1
+110 1
+.names n1793 n2072 n2533 n2532
+-00 1
+0-0 1
+.names n1174 n1171 n1792 n2533
+-11 1
+1-0 1
+.names Pkey_78_ n1149 n2535 n2534
+-00 1
+0-0 1
+.names n1179 Pkey_70_ n2535
+11 1
+.names n2537 n2538 n2540 n1717_1
+011 0
+.names n2070 PKSi_33_ PKSi_136_ n2537
+101 1
+110 1
+.names n1801 n2072 n2539 n2538
+-00 1
+0-0 1
+.names n1174 n1171 n1800 n2539
+-11 1
+1-0 1
+.names Pkey_86_ n1149 n2541 n2540
+-00 1
+0-0 1
+.names n1179 Pkey_78_ n2541
+11 1
+.names n2543 n2544 n2546 n1721_1
+011 0
+.names n2070 PKSi_29_ PKSi_130_ n2543
+101 1
+110 1
+.names n1809 n2072 n2545 n2544
+-00 1
+0-0 1
+.names n1174 n1171 n1808 n2545
+-11 1
+1-0 1
+.names Pkey_94_ n1149 n2547 n2546
+-00 1
+0-0 1
+.names n1179 Pkey_86_ n2547
+11 1
+.names n2549 n2550 n2552 n1725_1
+011 0
+.names n2070 PKSi_39_ [282] n2549
+101 1
+110 1
+.names n1817 n2072 n2551 n2550
+-00 1
+0-0 1
+.names n1174 n1171 n1816 n2551
+-11 1
+1-0 1
+.names Pkey_102_ n1149 n2553 n2552
+-00 1
+0-0 1
+.names n1179 Pkey_94_ n2553
+11 1
+.names n2555 n2556 n2558 n1730_1
+011 0
+.names n2070 PKSi_30_ PKSi_122_ n2555
+101 1
+110 1
+.names n1825_1 n2072 n2557 n2556
+-00 1
+0-0 1
+.names n1174 n1171 n1824 n2557
+-11 1
+1-0 1
+.names Pkey_110_ n1149 n2559 n2558
+-00 1
+0-0 1
+.names n1179 Pkey_102_ n2559
+11 1
+.names n2561 n2562 n2564 n1734_1
+011 0
+.names n2070 PKSi_47_ PKSi_126_ n2561
+101 1
+110 1
+.names n1833 n2072 n2563 n2562
+-00 1
+0-0 1
+.names n1174 n1171 n1832 n2563
+-11 1
+1-0 1
+.names Pkey_118_ n1149 n2565 n2564
+-00 1
+0-0 1
+.names n1179 Pkey_110_ n2565
+11 1
+.names n2567 n2568 n2570 n1738_1
+011 0
+.names n2070 PKSi_28_ PKSi_142_ n2567
+101 1
+110 1
+.names n1841 n2072 n2569 n2568
+-00 1
+0-0 1
+.names n1174 n1171 n1840 n2569
+-11 1
+1-0 1
+.names Pkey_126_ n1149 n2571 n2570
+-00 1
+0-0 1
+.names n1179 Pkey_118_ n2571
+11 1
+.names n2573 n2574 n2576 n1742
+011 0
+.names n2070 PKSi_7_ PKSi_111_ n2573
+101 1
+110 1
+.names n1849 n2072 n2575 n2574
+-00 1
+0-0 1
+.names n1174 n1171 n1848 n2575
+-11 1
+1-0 1
+.names Pkey_3_ n1149 n2577 n2576
+-00 1
+0-0 1
+.names n1179 Pkey_126_ n2577
+11 1
+.names n2579 n2580 n2582 n1746_1
+011 0
+.names n2070 PKSi_20_ PKSi_101_ n2579
+101 1
+110 1
+.names n1857 n2072 n2581 n2580
+-00 1
+0-0 1
+.names n1174 n1171 n1856 n2581
+-11 1
+1-0 1
+.names Pkey_11_ n1149 n2583 n2582
+-00 1
+0-0 1
+.names n1179 Pkey_3_ n2583
+11 1
+.names n2585 n2586 n2588 n1750_1
+011 0
+.names n2070 PKSi_16_ N_N2964 n2585
+101 1
+110 1
+.names n1865 n2072 n2587 n2586
+-00 1
+0-0 1
+.names n1174 n1171 n1864 n2587
+-11 1
+1-0 1
+.names Pkey_19_ n1149 n2589 n2588
+-00 1
+0-0 1
+.names n1179 Pkey_11_ n2589
+11 1
+.names n2591 n2592 n2594 n1755
+011 0
+.names n2070 N_N2834 PKSi_113_ n2591
+101 1
+110 1
+.names n1873 n2072 n2593 n2592
+-00 1
+0-0 1
+.names n1174 n1171 n1872 n2593
+-11 1
+1-0 1
+.names Pkey_27_ n1149 n2595 n2594
+-00 1
+0-0 1
+.names n1179 Pkey_19_ n2595
+11 1
+.names n2597 n2598 n2600 n1759
+011 0
+.names n2070 PKSi_3_ PKSi_97_ n2597
+101 1
+110 1
+.names n1881 n2072 n2599 n2598
+-00 1
+0-0 1
+.names n1174 n1171 n1880 n2599
+-11 1
+1-0 1
+.names Pkey_4_ n1149 n2601 n2600
+-00 1
+0-0 1
+.names n1179 Pkey_27_ n2601
+11 1
+.names n2603 n2604 n2606 n1763
+011 0
+.names n2070 PKSi_12_ PKSi_104_ n2603
+101 1
+110 1
+.names n1889 n2072 n2605 n2604
+-00 1
+0-0 1
+.names n1174 n1171 n1888 n2605
+-11 1
+1-0 1
+.names Pkey_12_ n1149 n2607 n2606
+-00 1
+0-0 1
+.names n1179 Pkey_4_ n2607
+11 1
+.names n2609 n2610 n2612 n1767
+011 0
+.names n2070 N_N2838 PKSi_116_ n2609
+101 1
+110 1
+.names n1897 n2072 n2611 n2610
+-00 1
+0-0 1
+.names n1174 n1171 n1896 n2611
+-11 1
+1-0 1
+.names Pkey_20_ n1149 n2613 n2612
+-00 1
+0-0 1
+.names n1179 Pkey_12_ n2613
+11 1
+.names n2615 n2616 n2618 n1771
+011 0
+.names n2070 PKSi_10_ PKSi_109_ n2615
+101 1
+110 1
+.names n1905 n2072 n2617 n2616
+-00 1
+0-0 1
+.names n1174 n1171 n1904 n2617
+-11 1
+1-0 1
+.names Pkey_28_ n1149 n2619 n2618
+-00 1
+0-0 1
+.names n1179 Pkey_20_ n2619
+11 1
+.names n2621 n2622 n2624 n1775
+011 0
+.names n2070 PKSi_21_ PKSi_107_ n2621
+101 1
+110 1
+.names n1913 n2072 n2623 n2622
+-00 1
+0-0 1
+.names n1174 n1171 n1912 n2623
+-11 1
+1-0 1
+.names Pkey_36_ n1149 n2625 n2624
+-00 1
+0-0 1
+.names n1179 Pkey_28_ n2625
+11 1
+.names n2627 n2628 n2630 n1779
+011 0
+.names n2070 PKSi_13_ PKSi_100_ n2627
+101 1
+110 1
+.names n1921 n2072 n2629 n2628
+-00 1
+0-0 1
+.names n1174 n1171 n1920 n2629
+-11 1
+1-0 1
+.names Pkey_36_ n1179 n2463 n2630
+-00 1
+0-0 1
+.names n2632 n2633 n2635 n1783
+011 0
+.names n2070 N_N2843 PKSi_114_ n2632
+101 1
+110 1
+.names n1929 n2072 n2634 n2633
+-00 1
+0-0 1
+.names n1174 n1171 n1928 n2634
+-11 1
+1-0 1
+.names Pkey_52_ n1149 n2469 n2635
+-00 1
+0-0 1
+.names n2637 n2638 n2640 n1787
+011 0
+.names n2070 PKSi_1_ PKSi_105_ n2637
+101 1
+110 1
+.names n1937 n2072 n2639 n2638
+-00 1
+0-0 1
+.names n1174 n1171 n1936 n2639
+-11 1
+1-0 1
+.names Pkey_60_ n1149 n2641 n2640
+-00 1
+0-0 1
+.names n1179 Pkey_52_ n2641
+11 1
+.names n2643 n2644 n2646 n1791
+011 0
+.names n2070 PKSi_18_ PKSi_108_ n2643
+101 1
+110 1
+.names n1945 n2072 n2645 n2644
+-00 1
+0-0 1
+.names n1174 n1171 n1944 n2645
+-11 1
+1-0 1
+.names Pkey_5_ n1149 n2647 n2646
+-00 1
+0-0 1
+.names n1179 Pkey_60_ n2647
+11 1
+.names n2649 n2650 n2652 n1795
+011 0
+.names n2070 PKSi_8_ N_N2976 n2649
+101 1
+110 1
+.names n1953 n2072 n2651 n2650
+-00 1
+0-0 1
+.names n1174 n1171 n1952 n2651
+-11 1
+1-0 1
+.names Pkey_13_ n1149 n2653 n2652
+-00 1
+0-0 1
+.names n1179 Pkey_5_ n2653
+11 1
+.names n2655 n2656 n2658 n1800_1
+011 0
+.names n2070 PKSi_0_ PKSi_115_ n2655
+101 1
+110 1
+.names n1961 n2072 n2657 n2656
+-00 1
+0-0 1
+.names n1174 n1171 n1960 n2657
+-11 1
+1-0 1
+.names Pkey_21_ n1149 n2659 n2658
+-00 1
+0-0 1
+.names n1179 Pkey_13_ n2659
+11 1
+.names n2661 n2662 n2664 n1804_1
+011 0
+.names n2070 PKSi_22_ PKSi_96_ n2661
+101 1
+110 1
+.names n1969 n2072 n2663 n2662
+-00 1
+0-0 1
+.names n1174 n1171 n1968 n2663
+-11 1
+1-0 1
+.names Pkey_29_ n1149 n2665 n2664
+-00 1
+0-0 1
+.names n1179 Pkey_21_ n2665
+11 1
+.names n2667 n2668 n2670 n1808_1
+011 0
+.names n2070 PKSi_14_ PKSi_103_ n2667
+101 1
+110 1
+.names n1977 n2072 n2669 n2668
+-00 1
+0-0 1
+.names n1174 n1171 n1976 n2669
+-11 1
+1-0 1
+.names Pkey_37_ n1149 n2671 n2670
+-00 1
+0-0 1
+.names n1179 Pkey_29_ n2671
+11 1
+.names n2673 n2674 n2676 n1812_1
+011 0
+.names n2070 PKSi_2_ PKSi_110_ n2673
+101 1
+110 1
+.names n1985 n2072 n2675 n2674
+-00 1
+0-0 1
+.names n1174 n1171 n1984 n2675
+-11 1
+1-0 1
+.names Pkey_45_ n1149 n2677 n2676
+-00 1
+0-0 1
+.names n1179 Pkey_37_ n2677
+11 1
+.names n2679 n2680 n2682 n1816_1
+011 0
+.names n2070 PKSi_11_ N_N2982 n2679
+101 1
+110 1
+.names n1993 n2072 n2681 n2680
+-00 1
+0-0 1
+.names n1174 n1171 n1992 n2681
+-11 1
+1-0 1
+.names Pkey_53_ n1149 n2683 n2682
+-00 1
+0-0 1
+.names n1179 Pkey_45_ n2683
+11 1
+.names n2685 n2686 n2688 n1821
+011 0
+.names n2070 N_N2853 PKSi_99_ n2685
+101 1
+110 1
+.names n2001 n2072 n2687 n2686
+-00 1
+0-0 1
+.names n1174 n1171 n2000 n2687
+-11 1
+1-0 1
+.names Pkey_61_ n1149 n2689 n2688
+-00 1
+0-0 1
+.names n1179 Pkey_53_ n2689
+11 1
+.names n2691 n2692 n2694 n1825
+011 0
+.names n2070 PKSi_17_ PKSi_117_ n2691
+101 1
+110 1
+.names n2009 n2072 n2693 n2692
+-00 1
+0-0 1
+.names n1174 n1171 n2008 n2693
+-11 1
+1-0 1
+.names Pkey_6_ n1149 n2695 n2694
+-00 1
+0-0 1
+.names n1179 Pkey_61_ n2695
+11 1
+.names n2697 n2698 n2700 n1829
+011 0
+.names n2070 PKSi_19_ N_N2986 n2697
+101 1
+110 1
+.names n2017 n2072 n2699 n2698
+-00 1
+0-0 1
+.names n1174 n1171 n2016 n2699
+-11 1
+1-0 1
+.names Pkey_14_ n1149 n2701 n2700
+-00 1
+0-0 1
+.names n1179 Pkey_6_ n2701
+11 1
+.names n2703 n2704 n2706 n1834_1
+011 0
+.names n2070 PKSi_9_ PKSi_112_ n2703
+101 1
+110 1
+.names n2025 n2072 n2705 n2704
+-00 1
+0-0 1
+.names n1174 n1171 n2024 n2705
+-11 1
+1-0 1
+.names Pkey_22_ n1149 n2707 n2706
+-00 1
+0-0 1
+.names n1179 Pkey_14_ n2707
+11 1
+.names n2709 n2710 n2712 n1838_1
+011 0
+.names n2070 PKSi_5_ PKSi_106_ n2709
+101 1
+110 1
+.names n2033 n2072 n2711 n2710
+-00 1
+0-0 1
+.names n1174 n1171 n2032 n2711
+-11 1
+1-0 1
+.names Pkey_30_ n1149 n2713 n2712
+-00 1
+0-0 1
+.names n1179 Pkey_22_ n2713
+11 1
+.names n2715 n2716 n2718 n1842_1
+011 0
+.names n2070 PKSi_15_ PKSi_119_ n2715
+101 1
+110 1
+.names n2041 n2072 n2717 n2716
+-00 1
+0-0 1
+.names n1174 n1171 n2040 n2717
+-11 1
+1-0 1
+.names Pkey_38_ n1149 n2719 n2718
+-00 1
+0-0 1
+.names n1179 Pkey_30_ n2719
+11 1
+.names n2721 n2722 n2724 n1846_1
+011 0
+.names n2070 PKSi_6_ PKSi_98_ n2721
+101 1
+110 1
+.names n2049 n2072 n2723 n2722
+-00 1
+0-0 1
+.names n1174 n1171 n2048 n2723
+-11 1
+1-0 1
+.names Pkey_46_ n1149 n2725 n2724
+-00 1
+0-0 1
+.names n1179 Pkey_38_ n2725
+11 1
+.names n2727 n2728 n2730 n1850_1
+011 0
+.names n2070 PKSi_23_ PKSi_102_ n2727
+101 1
+110 1
+.names n2057 n2072 n2729 n2728
+-00 1
+0-0 1
+.names n1174 n1171 n2056 n2729
+-11 1
+1-0 1
+.names Pkey_54_ n1149 n2731 n2730
+-00 1
+0-0 1
+.names n1179 Pkey_46_ n2731
+11 1
+.names n2733 n2734 n2736 n1854_1
+011 0
+.names n2070 PKSi_4_ PKSi_118_ n2733
+101 1
+110 1
+.names n2065 n2072 n2735 n2734
+-00 1
+0-0 1
+.names n1174 n1171 n2064 n2735
+-11 1
+1-0 1
+.names Pkey_62_ n1149 n2737 n2736
+-00 1
+0-0 1
+.names n1179 Pkey_54_ n2737
+11 1
+.names [234] PKSi_191_
+1 1
+.names [234] PKSi_187_
+1 1
+.names [253] PKSi_181_
+1 1
+.names [253] PKSi_168_
+1 1
+.names [282] PKSi_143_
+1 1
+.names [282] PKSi_139_
+1 1
+.names [333] PKSi_90_
+1 1
+.names [333] PKSi_88_
+1 1
+.end

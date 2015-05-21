@@ -1,0 +1,2941 @@
+# Benchmark "TOP" written by ABC on Thu May 21 18:20:35 2015
+.model TOP
+.inputs a b c d e f g h i j k l m n
+.outputs r2 s2 t2 u2 n2 o2 p2 q2 h2 i2 j2 k2 m2 l2
+.names n31 n270 r2
+10 0
+.names n32 n188 n31
+11 1
+.names n33 n115 n32
+11 1
+.names n34 n106 n33
+10 1
+.names n35 n62 n34
+00 1
+.names n36 n60 n35
+01 1
+.names n37 n50 n36
+00 1
+.names n38 n48 n37
+11 1
+.names n39 n n38
+01 1
+.names n40 n45 n39
+11 1
+.names n41 n43 n40
+00 1
+.names n42 i n41
+10 1
+.names k m n42
+10 1
+.names n44 m n43
+10 1
+.names j k n44
+10 1
+.names n46 n47 n45
+00 1
+.names n42 l n46
+10 1
+.names n42 j n47
+10 1
+.names n49 g n48
+11 1
+.names f h n49
+11 1
+.names n51 n58 n50
+01 1
+.names n52 n56 n51
+00 1
+.names n53 n55 n52
+11 1
+.names n54 l n53
+11 1
+.names i j n54
+10 1
+.names m n n55
+01 1
+.names n57 n n56
+11 1
+.names n42 i n57
+11 1
+.names n59 h n58
+10 1
+.names f g n59
+11 1
+.names n61 b n60
+11 1
+.names d e n61
+01 1
+.names n63 n100 n62
+00 1
+.names n64 n80 n63
+01 1
+.names n65 n78 n64
+01 1
+.names n66 n73 n65
+11 1
+.names n67 n71 n66
+10 1
+.names n68 n69 n67
+00 1
+.names n44 g n68
+11 1
+.names n70 i n69
+10 1
+.names g h n70
+11 1
+.names n72 j n71
+10 1
+.names g h n72
+01 1
+.names n74 n76 n73
+00 1
+.names n75 g n74
+11 1
+.names i j n75
+01 1
+.names n77 g n76
+11 1
+.names h i n77
+01 1
+.names n79 l n78
+11 1
+.names m n n79
+10 1
+.names n81 n90 n80
+01 1
+.names n82 n89 n81
+01 1
+.names n83 n87 n82
+10 1
+.names n84 n86 n83
+00 1
+.names n85 g n84
+11 1
+.names i k n85
+11 1
+.names n70 j n86
+11 1
+.names n88 g n87
+11 1
+.names j k n88
+01 1
+.names n79 l n89
+10 1
+.names n91 n98 n90
+10 1
+.names n92 n95 n91
+00 1
+.names n93 n79 n92
+11 1
+.names n94 g n93
+10 1
+.names h k n94
+11 1
+.names n96 n97 n95
+11 1
+.names n54 g n96
+11 1
+.names n79 k n97
+11 1
+.names n74 n99 n98
+11 1
+.names n79 k n99
+10 1
+.names n101 n104 n100
+00 1
+.names n102 n61 n101
+11 1
+.names n103 c n102
+10 1
+.names a b n103
+11 1
+.names n105 e n104
+11 1
+.names a b n105
+01 1
+.names n107 n113 n106
+01 1
+.names n108 n111 n107
+00 1
+.names n38 n109 n108
+11 1
+.names n110 h n109
+11 1
+.names e g n110
+01 1
+.names n51 n112 n111
+01 1
+.names n110 h n112
+10 1
+.names n114 d n113
+10 1
+.names b c n114
+11 1
+.names n116 n126 n115
+01 1
+.names n117 n124 n116
+01 1
+.names n36 n118 n117
+11 1
+.names n119 n121 n118
+00 1
+.names n38 n120 n119
+11 1
+.names n49 g n120
+10 1
+.names n51 n122 n121
+01 1
+.names n123 h n122
+10 1
+.names f g n123
+10 1
+.names n125 b n124
+11 1
+.names c d n125
+01 1
+.names n127 n148 n126
+01 1
+.names n128 n143 n127
+00 1
+.names n129 n140 n128
+00 1
+.names n130 n139 n129
+01 1
+.names n131 n136 n130
+11 1
+.names n132 n135 n131
+10 1
+.names n133 n134 n132
+00 1
+.names n44 h n133
+11 1
+.names n77 k n134
+11 1
+.names n94 l n135
+10 1
+.names n137 n138 n136
+00 1
+.names n94 j n137
+10 1
+.names n94 i n138
+10 1
+.names m n n139
+00 1
+.names n141 n142 n140
+11 1
+.names n77 j n141
+10 1
+.names n139 l n142
+11 1
+.names n144 n146 n143
+00 1
+.names n145 c n144
+11 1
+.names e f n145
+01 1
+.names n147 f n146
+11 1
+.names c d n147
+10 1
+.names n149 n169 n148
+01 1
+.names n150 n168 n149
+01 1
+.names n151 n158 n150
+01 1
+.names n152 n157 n151
+01 1
+.names n153 n156 n152
+00 1
+.names n154 n n153
+11 1
+.names n155 m n154
+10 1
+.names j l n155
+01 1
+.names n55 k n156
+11 1
+.names n77 g n157
+10 1
+.names n159 n162 n158
+01 1
+.names n160 n156 n159
+01 1
+.names n71 n161 n160
+00 1
+.names n72 i n161
+10 1
+.names n163 n166 n162
+00 1
+.names n164 n165 n163
+11 1
+.names n55 k n164
+10 1
+.names n72 j n165
+11 1
+.names n93 n167 n166
+11 1
+.names n55 l n167
+10 1
+.names n145 b n168
+11 1
+.names n170 n183 n169
+01 1
+.names n171 n181 n170
+01 1
+.names n172 n176 n171
+01 1
+.names n173 n156 n172
+01 1
+.names n174 n175 n173
+00 1
+.names n49 i n174
+10 1
+.names n49 j n175
+10 1
+.names n177 n179 n176
+00 1
+.names n167 n178 n177
+11 1
+.names n49 k n178
+11 1
+.names n164 n180 n179
+11 1
+.names n49 j n180
+11 1
+.names n182 b n181
+11 1
+.names d e n182
+10 1
+.names n184 n187 n183
+00 1
+.names n153 n185 n184
+11 1
+.names n181 n186 n185
+11 1
+.names n77 f n186
+11 1
+.names n185 n156 n187
+11 1
+.names n189 n227 n188
+11 1
+.names n190 n216 n189
+00 1
+.names n191 n211 n190
+01 1
+.names n192 n208 n191
+11 1
+.names n193 n204 n192
+10 1
+.names n194 n201 n193
+11 1
+.names n195 n199 n194
+10 1
+.names n196 n198 n195
+00 1
+.names n197 h n196
+11 1
+.names j l n197
+10 1
+.names n85 l n198
+10 1
+.names n200 l n199
+11 1
+.names h i n200
+10 1
+.names n202 n203 n201
+00 1
+.names n75 l n202
+11 1
+.names n44 l n203
+11 1
+.names n205 n207 n204
+00 1
+.names n206 n77 n205
+00 1
+.names n88 l n206
+10 1
+.names n88 l n207
+00 1
+.names n209 n210 n208
+00 1
+.names n54 k n209
+11 1
+.names n75 k n210
+10 1
+.names n212 n215 n211
+10 1
+.names n213 n79 n212
+11 1
+.names n214 a n213
+11 1
+.names b d n214
+11 1
+.names n110 f n215
+0- 1
+.names n217 n223 n216
+00 1
+.names n218 n221 n217
+00 1
+.names n212 n219 n218
+11 1
+.names n220 l n219
+11 1
+.names h j n220
+10 1
+.names n222 n213 n221
+11 1
+.names n94 n79 n222
+11 1
+.names n224 n226 n223
+00 1
+.names n225 e n224
+10 1
+.names f g n225
+00 1
+.names n123 e n226
+10 1
+.names n228 n249 n227
+10 1
+.names n229 n239 n228
+01 1
+.names n230 n235 n229
+00 1
+.names n231 n234 n230
+00 1
+.names n232 n57 n231
+11 1
+.names n233 n n232
+11 1
+.names n114 e n233
+11 1
+.names n52 n233 n234
+11 1
+.names n236 n238 n235
+00 1
+.names n237 h n236
+10 1
+.names f g n237
+01 1
+.names n225 h n238
+10 1
+.names n240 n246 n239
+00 1
+.names n241 n243 n240
+01 1
+.names n242 n46 n241
+10 1
+.names n41 n47 n242
+00 1
+.names n232 n244 n243
+10 1
+.names n245 g n244
+0- 1
+.names f h n245
+01 1
+.names n247 n244 n246
+10 1
+.names n248 n233 n247
+11 1
+.names n43 n n248
+11 1
+.names n250 n268 n249
+01 1
+.names n251 n256 n250
+01 1
+.names n252 n255 n251
+01 1
+.names n253 n254 n252
+00 1
+.names n154 n n253
+10 1
+.names n139 k n254
+11 1
+.names n77 f n255
+10 1
+.names n257 n261 n256
+01 1
+.names n258 n254 n257
+01 1
+.names n259 n260 n258
+00 1
+.names n245 i n259
+10 1
+.names n245 j n260
+10 1
+.names n262 n265 n261
+00 1
+.names n263 n264 n262
+11 1
+.names n139 k n263
+10 1
+.names n245 j n264
+11 1
+.names n266 n267 n265
+11 1
+.names n139 l n266
+10 1
+.names n245 k n267
+11 1
+.names n269 e n268
+11 1
+.names c d n269
+11 1
+.names n271 n280 n270
+01 1
+.names n272 n276 n271
+00 1
+.names n273 n274 n272
+11 1
+.names n191 n79 n273
+01 1
+.names n275 d n274
+10 1
+.names e g n275
+11 1
+.names n277 n279 n276
+01 1
+.names n278 n222 n277
+00 1
+.names n219 n79 n278
+11 1
+.names n61 g n279
+10 1
+.names n114 a n280
+11 1
+.names n282 n405 s2
+10 0
+.names n283 n367 n282
+10 1
+.names n284 n329 n283
+11 1
+.names n285 n306 n284
+11 1
+.names n286 n304 n285
+10 1
+.names n287 n294 n286
+00 1
+.names n288 n293 n287
+01 1
+.names n289 n291 n288
+00 1
+.names n38 n290 n289
+11 1
+.names n49 e n290
+10 1
+.names n51 n292 n291
+01 1
+.names n145 h n292
+10 1
+.names n114 d n293
+11 1
+.names n295 n299 n294
+00 1
+.names n296 n297 n295
+00 1
+.names n130 n55 n296
+01 1
+.names n141 n298 n297
+11 1
+.names n55 l n298
+11 1
+.names n300 n302 n299
+00 1
+.names n301 n113 n300
+11 1
+.names n110 f n301
+11 1
+.names n303 f n302
+11 1
+.names b c n303
+01 1
+.names n128 n305 n304
+01 1
+.names n125 f n305
+11 1
+.names n307 n328 n306
+10 1
+.names n308 n317 n307
+01 1
+.names n309 n316 n308
+01 1
+.names n310 n311 n309
+01 1
+.names n252 n186 n310
+01 1
+.names n312 n313 n311
+01 1
+.names n173 n254 n312
+01 1
+.names n314 n315 n313
+00 1
+.names n263 n180 n314
+11 1
+.names n266 n178 n315
+11 1
+.names n269 e n316
+10 1
+.names n318 n325 n317
+00 1
+.names n319 n324 n318
+11 1
+.names n320 n323 n319
+11 1
+.names n321 n n320
+10 1
+.names n322 j n321
+10 1
+.names k m n322
+11 1
+.names n59 i n323
+11 1
+.names n125 a n324
+11 1
+.names n320 n326 n325
+11 1
+.names n324 n327 n326
+11 1
+.names n110 i n327
+11 1
+.names n150 n144 n328
+01 1
+.names n188 n330 n329
+10 1
+.names n331 n366 n330
+01 1
+.names n332 n365 n331
+00 1
+.names n333 n n332
+00 1
+.names n334 n356 n333
+11 1
+.names n335 n345 n334
+11 1
+.names n336 n340 n335
+00 1
+.names n337 n275 n336
+11 1
+.names n338 j n337
+11 1
+.names n339 k n338
+10 1
+.names l m n339
+11 1
+.names n341 n344 n340
+01 1
+.names n342 n343 n341
+00 1
+.names n339 j n342
+11 1
+.names n44 m n343
+11 1
+.names n275 i n344
+10 1
+.names n346 n351 n345
+00 1
+.names n347 n350 n346
+01 1
+.names n348 n349 n347
+00 1
+.names n197 m n348
+11 1
+.names n339 i n349
+10 1
+.names n275 h n350
+11 1
+.names n352 n355 n351
+01 1
+.names n353 n354 n352
+00 1
+.names n275 i n353
+11 1
+.names n275 j n354
+10 1
+.names n322 l n355
+10 1
+.names n357 n362 n356
+10 1
+.names n358 n361 n357
+00 1
+.names n359 n360 n358
+11 1
+.names n339 i n359
+11 1
+.names n275 h n360
+10 1
+.names n321 n353 n361
+11 1
+.names n363 n364 n362
+11 1
+.names n339 j n363
+10 1
+.names n72 e n364
+11 1
+.names n97 n364 n365
+11 1
+.names n105 d n366
+11 1
+.names n368 n324 n367
+01 1
+.names n369 n387 n368
+11 1
+.names n370 n386 n369
+00 1
+.names n371 n n370
+00 1
+.names n372 n380 n371
+11 1
+.names n373 n378 n372
+10 1
+.names n374 n375 n373
+00 1
+.names n347 n48 n374
+01 1
+.names n376 n355 n375
+01 1
+.names n323 n377 n376
+00 1
+.names n59 j n377
+10 1
+.names n341 n379 n378
+01 1
+.names n59 i n379
+10 1
+.names n381 n385 n380
+10 1
+.names n382 n383 n381
+00 1
+.names n58 n359 n382
+11 1
+.names n338 n384 n383
+11 1
+.names n59 j n384
+11 1
+.names n120 n363 n385
+11 1
+.names n97 n120 n386
+11 1
+.names n388 n399 n387
+01 1
+.names n389 n n388
+00 1
+.names n390 n393 n389
+01 1
+.names n391 n110 n390
+01 1
+.names n392 n337 n391
+00 1
+.names n341 i n392
+00 1
+.names n394 n395 n393
+01 1
+.names n347 n109 n394
+01 1
+.names n396 n397 n395
+00 1
+.names n112 n359 n396
+11 1
+.names n363 n398 n397
+11 1
+.names n72 e n398
+10 1
+.names n400 n404 n399
+00 1
+.names n401 n402 n400
+10 1
+.names n355 n n401
+10 1
+.names n327 n403 n402
+00 1
+.names n110 j n403
+10 1
+.names n97 n398 n404
+11 1
+.names n406 n416 n405
+01 1
+.names n407 n410 n406
+10 1
+.names n408 n409 n407
+00 1
+.names n273 n301 n408
+11 1
+.names n277 n226 n409
+01 1
+.names n63 n411 n410
+00 1
+.names n412 n414 n411
+00 1
+.names n413 f n412
+11 1
+.names d e n413
+11 1
+.names n415 d n414
+11 1
+.names e f n415
+10 1
+.names n303 a n416
+11 1
+.names n418 n442 t2
+11 0
+.names n419 n433 n418
+11 1
+.names n420 n427 n419
+00 1
+.names n421 n426 n420
+01 1
+.names n422 n424 n421
+00 1
+.names n273 n423 n422
+11 1
+.names n275 f n423
+11 1
+.names n277 n425 n424
+01 1
+.names n123 e n425
+11 1
+.names n147 a n426
+11 1
+.names n428 n102 n427
+01 1
+.names n429 n431 n428
+00 1
+.names n273 n430 n429
+11 1
+.names n59 d n430
+10 1
+.names n277 n432 n431
+01 1
+.names n123 d n432
+10 1
+.names n434 n436 n433
+00 1
+.names n435 n104 n434
+01 1
+.names n369 n319 n435
+10 1
+.names n437 n440 n436
+01 1
+.names n438 n439 n437
+00 1
+.names n273 n59 n438
+11 1
+.names n277 n123 n439
+01 1
+.names n441 d n440
+11 1
+.names a b n441
+10 1
+.names n443 n486 n442
+10 1
+.names n444 n449 n443
+01 1
+.names n369 n445 n444
+00 1
+.names n446 n447 n445
+00 1
+.names n182 a n446
+11 1
+.names n448 b n447
+11 1
+.names a d n448
+00 1
+.names n450 n464 n449
+11 1
+.names n451 n455 n450
+11 1
+.names n228 n452 n451
+11 1
+.names n453 n454 n452
+00 1
+.names n319 n446 n453
+11 1
+.names n319 n447 n454
+11 1
+.names n456 n460 n455
+00 1
+.names n309 n457 n456
+00 1
+.names n458 n459 n457
+00 1
+.names n147 e n458
+11 1
+.names n125 e n459
+11 1
+.names n461 n463 n460
+01 1
+.names n171 n462 n461
+10 1
+.names n152 n186 n462
+01 1
+.names n303 e n463
+11 1
+.names n465 n467 n464
+00 1
+.names n128 n466 n465
+01 1
+.names n415 c n466
+11 1
+.names n468 n60 n467
+01 1
+.names n469 n479 n468
+11 1
+.names n470 n471 n469
+01 1
+.names n152 n76 n470
+01 1
+.names n472 n475 n471
+01 1
+.names n473 n156 n472
+01 1
+.names n69 n474 n473
+00 1
+.names n70 j n474
+10 1
+.names n476 n477 n475
+00 1
+.names n86 n164 n476
+11 1
+.names n167 n478 n477
+11 1
+.names n94 g n478
+11 1
+.names n480 n481 n479
+01 1
+.names n152 n255 n480
+01 1
+.names n482 n483 n481
+01 1
+.names n258 n156 n482
+01 1
+.names n484 n485 n483
+00 1
+.names n264 n164 n484
+11 1
+.names n267 n167 n485
+11 1
+.names n487 n124 n486
+01 1
+.names n488 n490 n487
+01 1
+.names n295 n489 n488
+00 1
+.names n423 n425 n489
+00 1
+.names n491 n493 n490
+00 1
+.names n38 n492 n491
+11 1
+.names n245 g n492
+11 1
+.names n51 n236 n493
+01 1
+.names n495 n533 u2
+01 0
+.names n496 n79 n495
+01 1
+.names n497 n524 n496
+10 1
+.names n498 n516 n497
+00 1
+.names n499 n514 n498
+01 1
+.names n500 n506 n499
+11 1
+.names n501 n505 n500
+00 1
+.names n502 n48 n501
+01 1
+.names n503 n504 n502
+11 1
+.names n445 n102 n503
+10 1
+.names n416 n324 n504
+00 1
+.names n109 n324 n505
+11 1
+.names n507 n513 n506
+00 1
+.names n508 n492 n507
+01 1
+.names n509 n213 n508
+10 1
+.names n510 n512 n509
+00 1
+.names n511 e n510
+11 1
+.names a c n511
+11 1
+.names n61 a n512
+11 1
+.names n350 n426 n513
+11 1
+.names n515 l n514
+10 1
+.names i j n515
+11 1
+.names n517 n203 n516
+01 1
+.names n518 n523 n517
+10 1
+.names n519 n520 n518
+01 1
+.names n502 n323 n519
+01 1
+.names n521 n326 n520
+00 1
+.names n508 n522 n521
+01 1
+.names n237 i n522
+11 1
+.names n353 n426 n523
+11 1
+.names n525 n53 n524
+01 1
+.names n526 n532 n525
+10 1
+.names n527 n528 n526
+01 1
+.names n502 n120 n527
+01 1
+.names n529 n531 n528
+00 1
+.names n508 n530 n529
+01 1
+.names n245 g n530
+10 1
+.names n324 n398 n531
+11 1
+.names n364 n426 n532
+11 1
+.names n534 n561 n533
+01 1
+.names n535 n n534
+00 1
+.names n536 n538 n535
+01 1
+.names n525 n537 n536
+01 1
+.names n322 i n537
+11 1
+.names n539 n545 n538
+01 1
+.names n540 n359 n539
+01 1
+.names n541 n542 n540
+01 1
+.names n502 n58 n541
+01 1
+.names n543 n544 n542
+00 1
+.names n508 n236 n543
+01 1
+.names n112 n324 n544
+11 1
+.names n546 n550 n545
+00 1
+.names n547 n458 n546
+01 1
+.names n548 n549 n547
+00 1
+.names n39 n48 n548
+01 1
+.names n57 n58 n549
+11 1
+.names n551 n559 n550
+00 1
+.names n552 n557 n551
+10 1
+.names n553 n555 n552
+00 1
+.names n348 n554 n553
+11 1
+.names n70 i n554
+11 1
+.names n338 n556 n555
+11 1
+.names n515 g n556
+11 1
+.names n363 n558 n557
+11 1
+.names n72 i n558
+11 1
+.names n104 n560 n559
+00 1
+.names n415 b n560
+11 1
+.names n562 n574 n561
+11 1
+.names n563 n565 n562
+11 1
+.names n106 n564 n563
+00 1
+.names n36 n181 n564
+01 1
+.names n566 n567 n565
+00 1
+.names n518 n401 n566
+01 1
+.names n568 n571 n567
+00 1
+.names n569 n570 n568
+00 1
+.names n38 n350 n569
+11 1
+.names n51 n360 n570
+01 1
+.names n124 n572 n571
+00 1
+.names n573 b n572
+11 1
+.names c d n573
+00 1
+.names n575 n593 n574
+11 1
+.names n576 n585 n575
+11 1
+.names n577 n582 n576
+11 1
+.names n452 n578 n577
+11 1
+.names n579 n580 n578
+00 1
+.names n319 n102 n579
+11 1
+.names n581 n213 n580
+11 1
+.names n320 n522 n581
+11 1
+.names n318 n583 n582
+01 1
+.names n325 n584 n583
+00 1
+.names n320 n523 n584
+11 1
+.names n586 n590 n585
+11 1
+.names n587 n589 n586
+00 1
+.names n588 n97 n587
+11 1
+.names n559 n96 n588
+01 1
+.names n319 n416 n589
+11 1
+.names n591 n592 n590
+00 1
+.names n581 n512 n591
+11 1
+.names n581 n510 n592
+11 1
+.names n594 n622 n593
+10 1
+.names n595 n607 n594
+01 1
+.names n596 n603 n595
+00 1
+.names n597 n598 n596
+01 1
+.names n252 n76 n597
+01 1
+.names n599 n600 n598
+01 1
+.names n473 n254 n599
+01 1
+.names n601 n602 n600
+00 1
+.names n263 n86 n601
+11 1
+.names n266 n478 n602
+11 1
+.names n604 n605 n603
+11 1
+.names n305 n466 n604
+00 1
+.names n144 n606 n605
+00 1
+.names n125 e n606
+10 1
+.names n608 n614 n607
+01 1
+.names n609 n559 n608
+00 1
+.names n610 n613 n609
+10 1
+.names n611 n612 n610
+00 1
+.names n89 n84 n611
+11 1
+.names n76 n78 n612
+11 1
+.names n97 n558 n613
+11 1
+.names n615 n619 n614
+10 1
+.names n616 n618 n615
+00 1
+.names n358 n617 n616
+11 1
+.names n426 n n617
+10 1
+.names n401 n523 n618
+11 1
+.names n620 n621 n619
+11 1
+.names n53 n139 n620
+11 1
+.names n58 n458 n621
+11 1
+.names n469 n623 n622
+00 1
+.names n624 n302 n623
+10 1
+.names n560 n625 n624
+00 1
+.names n303 e n625
+10 1
+.names n627 n743 n2
+11 0
+.names n628 n698 n627
+11 1
+.names n629 n646 n628
+01 1
+.names n630 n79 n629
+01 1
+.names n631 n643 n630
+00 1
+.names n632 n641 n631
+01 1
+.names n633 n640 n632
+10 1
+.names n634 n635 n633
+01 1
+.names n502 n379 n634
+01 1
+.names n636 n638 n635
+00 1
+.names n508 n637 n636
+01 1
+.names n237 i n637
+10 1
+.names n639 i n638
+10 1
+.names n324 n110 n639
+11 1
+.names n344 n426 n640
+11 1
+.names n642 l n641
+11 1
+.names j k n642
+11 1
+.names n644 n85 n643
+01 1
+.names n540 n645 n644
+10 1
+.names n360 n426 n645
+11 1
+.names n647 n672 n646
+11 1
+.names n648 n665 n647
+10 1
+.names n649 n658 n648
+00 1
+.names n650 n401 n649
+01 1
+.names n651 n652 n650
+01 1
+.names n502 n377 n651
+01 1
+.names n653 n655 n652
+01 1
+.names n508 n654 n653
+01 1
+.names n237 j n654
+10 1
+.names n656 n657 n655
+00 1
+.names n559 n76 n656
+01 1
+.names n639 j n657
+10 1
+.names n659 n136 n658
+00 1
+.names n660 n664 n659
+00 1
+.names n661 n139 n660
+01 1
+.names n662 n143 n661
+11 1
+.names n604 n663 n662
+10 1
+.names n123 c n663
+11 1
+.names n302 n55 n664
+11 1
+.names n666 n473 n665
+00 1
+.names n667 n671 n666
+00 1
+.names n668 n156 n667
+01 1
+.names n669 n670 n668
+11 1
+.names n624 n60 n669
+10 1
+.names n113 n124 n670
+00 1
+.names n254 n606 n671
+11 1
+.names n575 n673 n672
+11 1
+.names n674 n689 n673
+01 1
+.names n675 n156 n674
+01 1
+.names n676 n684 n675
+11 1
+.names n677 n681 n676
+01 1
+.names n678 n71 n677
+01 1
+.names n679 n233 n678
+10 1
+.names n168 n680 n679
+00 1
+.names n214 f n680
+11 1
+.names n682 n683 n681
+00 1
+.names n260 n60 n682
+11 1
+.names n181 n175 n683
+11 1
+.names n685 n686 n684
+01 1
+.names n678 n161 n685
+01 1
+.names n687 n688 n686
+00 1
+.names n259 n60 n687
+11 1
+.names n181 n174 n688
+11 1
+.names n690 n696 n689
+00 1
+.names n691 n559 n690
+00 1
+.names n692 n695 n691
+00 1
+.names n73 n693 n692
+01 1
+.names n694 n n693
+10 1
+.names n322 l n694
+11 1
+.names n89 n87 n695
+11 1
+.names n401 n697 n696
+11 1
+.names n354 n426 n697
+11 1
+.names n699 n719 n698
+11 1
+.names n700 n711 n699
+01 1
+.names n701 n44 n700
+01 1
+.names n702 n710 n701
+00 1
+.names n703 n79 n702
+01 1
+.names n704 n708 n703
+10 1
+.names n705 n706 n704
+01 1
+.names n509 n492 n705
+01 1
+.names n513 n707 n706
+00 1
+.names n48 n446 n707
+11 1
+.names n709 n324 n708
+01 1
+.names n109 n48 n709
+00 1
+.names n212 n492 n710
+11 1
+.names n712 n717 n711
+00 1
+.names n713 n715 n712
+01 1
+.names n714 n447 n713
+10 1
+.names n102 n416 n714
+00 1
+.names n48 n716 n715
+11 1
+.names n79 n44 n716
+11 1
+.names n718 n104 n717
+11 1
+.names n86 n99 n718
+11 1
+.names n720 n738 n719
+10 1
+.names n721 n731 n720
+01 1
+.names n722 n248 n721
+01 1
+.names n723 n727 n722
+00 1
+.names n724 n554 n723
+01 1
+.names n725 n670 n724
+11 1
+.names n726 n625 n725
+10 1
+.names n60 n560 n726
+00 1
+.names n728 i n727
+01 1
+.names n729 n730 n728
+00 1
+.names n60 n245 n729
+11 1
+.names n181 n49 n730
+11 1
+.names n732 n735 n731
+00 1
+.names n733 n558 n732
+01 1
+.names n247 n734 n733
+00 1
+.names n248 n679 n734
+10 1
+.names n736 n737 n735
+11 1
+.names n43 n n736
+10 1
+.names n554 n606 n737
+11 1
+.names n739 n742 n738
+01 1
+.names n740 n741 n739
+00 1
+.names n661 n263 n740
+01 1
+.names n164 n302 n741
+11 1
+.names n515 h n742
+11 1
+.names n744 n751 n743
+00 1
+.names n745 n749 n744
+01 1
+.names n746 n710 n745
+00 1
+.names n747 n79 n746
+01 1
+.names n500 n748 n747
+11 1
+.names n705 n513 n748
+00 1
+.names n750 l n749
+11 1
+.names i j n750
+00 1
+.names n752 n753 n751
+11 1
+.names n559 n69 n752
+01 1
+.names n363 n n753
+10 1
+.names n755 n798 o2
+11 0
+.names n756 n785 n755
+11 1
+.names n757 n778 n756
+11 1
+.names n758 n768 n757
+01 1
+.names n759 n401 n758
+01 1
+.names n760 n767 n759
+10 1
+.names n761 n766 n760
+00 1
+.names n762 n220 n761
+01 1
+.names n763 n765 n762
+00 1
+.names n764 n324 n763
+01 1
+.names n426 e n764
+01 1
+.names n426 e n765
+11 1
+.names n508 n260 n766
+01 1
+.names n502 n175 n767
+01 1
+.names n769 n770 n768
+00 1
+.names n659 n134 n769
+01 1
+.names n771 n559 n770
+00 1
+.names n772 n777 n771
+10 1
+.names n773 n775 n772
+01 1
+.names n774 n69 n773
+11 1
+.names n78 n88 n774
+11 1
+.names n92 n776 n775
+00 1
+.names n89 n137 n776
+11 1
+.names n320 n554 n777
+11 1
+.names n779 n784 n778
+00 1
+.names n499 n780 n779
+00 1
+.names n781 n782 n780
+00 1
+.names n208 n79 n781
+01 1
+.names n78 n783 n782
+11 1
+.names n750 k n783
+11 1
+.names n525 n97 n784
+01 1
+.names n786 n797 n785
+10 1
+.names n787 n792 n786
+00 1
+.names n788 n791 n787
+01 1
+.names n789 n790 n788
+00 1
+.names n661 n254 n789
+01 1
+.names n156 n302 n790
+11 1
+.names n54 h n791
+11 1
+.names n793 n156 n792
+01 1
+.names n794 n185 n793
+10 1
+.names n795 n796 n794
+00 1
+.names n678 n157 n795
+01 1
+.names n255 n60 n796
+11 1
+.names n666 n76 n797
+01 1
+.names n698 n799 n798
+10 1
+.names n800 n47 n799
+01 1
+.names n801 n806 n800
+00 1
+.names n802 n554 n801
+11 1
+.names n803 n805 n802
+00 1
+.names n804 n606 n803
+00 1
+.names n668 n n804
+01 1
+.names n668 n n805
+11 1
+.names n807 n n806
+01 1
+.names n727 n808 n807
+00 1
+.names n678 n558 n808
+01 1
+.names n810 n822 p2
+01 0
+.names n811 j n810
+01 1
+.names n812 n820 n811
+00 1
+.names n813 n42 n812
+01 1
+.names n814 n817 n813
+11 1
+.names n815 n816 n814
+00 1
+.names n802 n76 n815
+11 1
+.names n793 n n816
+01 1
+.names n818 n819 n817
+00 1
+.names n802 n69 n818
+11 1
+.names n684 n n819
+01 1
+.names n525 n821 n820
+01 1
+.names n322 n n821
+10 1
+.names n823 n699 n822
+11 1
+.names n824 n849 n823
+11 1
+.names n825 n842 n824
+11 1
+.names n826 n838 n825
+00 1
+.names n827 n559 n826
+00 1
+.names n828 n834 n827
+01 1
+.names n829 n76 n828
+01 1
+.names n830 n833 n829
+10 1
+.names n831 n832 n830
+00 1
+.names n338 n n831
+10 1
+.names n97 n197 n832
+11 1
+.names n641 n79 n833
+11 1
+.names n835 n837 n834
+00 1
+.names n836 n74 n835
+01 1
+.names n78 n99 n836
+00 1
+.names n97 n165 n837
+11 1
+.names n839 n86 n838
+01 1
+.names n840 n841 n839
+00 1
+.names n668 n164 n840
+01 1
+.names n263 n606 n841
+11 1
+.names n843 n847 n842
+00 1
+.names n788 n844 n843
+00 1
+.names n845 n846 n844
+00 1
+.names n77 j n845
+11 1
+.names n75 h n846
+11 1
+.names n633 n848 n847
+01 1
+.names n341 n n848
+00 1
+.names n850 n857 n849
+01 1
+.names n644 n851 n850
+00 1
+.names n852 n854 n851
+00 1
+.names n78 n853 n852
+11 1
+.names i k n853
+10 1
+.names n855 n856 n854
+10 1
+.names n515 k n855
+11 1
+.names n79 l n856
+0- 1
+.names n858 n859 n857
+01 1
+.names n659 n133 n858
+01 1
+.names n860 n866 n859
+01 1
+.names n861 n164 n860
+01 1
+.names n862 n863 n861
+01 1
+.names n678 n165 n862
+01 1
+.names n864 n865 n863
+00 1
+.names n264 n60 n864
+11 1
+.names n181 n180 n865
+11 1
+.names n867 n869 n866
+00 1
+.names n868 n342 n867
+11 1
+.names n617 n344 n868
+11 1
+.names n868 n343 n869
+11 1
+.names n871 n918 q2
+10 0
+.names n872 n743 n871
+11 1
+.names n873 n917 n872
+10 1
+.names n874 n910 n873
+10 1
+.names n875 n896 n874
+11 1
+.names n876 n877 n875
+01 1
+.names n517 n774 n876
+01 1
+.names n878 n885 n877
+01 1
+.names n879 n882 n878
+00 1
+.names n880 n881 n879
+00 1
+.names n661 n142 n880
+01 1
+.names n298 n302 n881
+11 1
+.names n883 n884 n882
+11 1
+.names n141 n133 n883
+00 1
+.names n137 n134 n884
+00 1
+.names n886 n892 n885
+10 1
+.names n887 n889 n886
+10 1
+.names n184 n888 n887
+00 1
+.names n532 n753 n888
+11 1
+.names n831 n890 n889
+11 1
+.names n426 n891 n890
+11 1
+.names n275 j n891
+11 1
+.names n893 n895 n892
+01 1
+.names n894 n71 n893
+10 1
+.names n68 n93 n894
+00 1
+.names n559 n78 n895
+01 1
+.names n897 n901 n896
+00 1
+.names n644 n898 n897
+01 1
+.names n899 n79 n898
+01 1
+.names n202 n900 n899
+00 1
+.names n515 l n900
+11 1
+.names n802 n902 n901
+10 1
+.names n903 n907 n902
+10 1
+.names n904 n905 n903
+00 1
+.names n154 n76 n904
+11 1
+.names n474 n906 n905
+11 1
+.names n42 l n906
+11 1
+.names n86 n908 n907
+11 1
+.names n909 m n908
+10 1
+.names k l n909
+01 1
+.names n911 n641 n910
+01 1
+.names n912 n915 n911
+00 1
+.names n913 n55 n912
+01 1
+.names n684 n914 n913
+10 1
+.names n668 n69 n914
+01 1
+.names n916 n606 n915
+11 1
+.names n69 n139 n916
+11 1
+.names n814 n906 n917
+01 1
+.names n919 n949 n918
+00 1
+.names n920 n941 n919
+10 1
+.names n921 n923 n920
+01 1
+.names n922 n694 n921
+01 1
+.names n525 n588 n922
+10 1
+.names n924 n934 n923
+10 1
+.names n925 n926 n924
+01 1
+.names n526 n363 n925
+01 1
+.names n927 n929 n926
+00 1
+.names n661 n928 n927
+01 1
+.names n846 n906 n928
+11 1
+.names n930 n931 n929
+10 1
+.names n559 n342 n930
+01 1
+.names n76 n932 n931
+00 1
+.names n933 i n932
+10 1
+.names g h n933
+10 1
+.names n935 n338 n934
+01 1
+.names n936 n937 n935
+01 1
+.names n502 n384 n936
+01 1
+.names n938 n940 n937
+00 1
+.names n508 n939 n938
+01 1
+.names n237 j n939
+11 1
+.names n639 j n940
+11 1
+.names n942 n n941
+01 1
+.names n943 n946 n942
+01 1
+.names n944 n906 n943
+01 1
+.names n676 n945 n944
+10 1
+.names n302 n846 n945
+11 1
+.names n947 n948 n946
+00 1
+.names n794 n154 n947
+01 1
+.names n861 n908 n948
+01 1
+.names n942 n n949
+11 1
+.names n951 n1018 h2
+10 0
+.names n952 n1006 n951
+11 1
+.names n953 n990 n952
+10 1
+.names n954 n955 n953
+01 1
+.names n369 n416 n954
+01 1
+.names n956 n972 n955
+11 1
+.names n957 n962 n956
+11 1
+.names n958 n960 n957
+10 1
+.names n615 n959 n958
+11 1
+.names n584 n696 n959
+00 1
+.names n961 n513 n960
+11 1
+.names n347 n n961
+00 1
+.names n866 n963 n962
+11 1
+.names n964 n965 n963
+11 1
+.names n889 n888 n964
+00 1
+.names n966 n971 n965
+00 1
+.names n967 n968 n966
+11 1
+.names n48 n142 n967
+11 1
+.names n969 n970 n968
+11 1
+.names n573 e n969
+11 1
+.names n54 k n970
+10 1
+.names n365 n426 n971
+11 1
+.names n973 n979 n972
+10 1
+.names n974 n592 n973
+10 1
+.names n589 n975 n974
+00 1
+.names n976 n978 n975
+11 1
+.names n142 n977 n976
+11 1
+.names n75 k n977
+11 1
+.names n58 n969 n978
+11 1
+.names n980 n989 n979
+01 1
+.names n981 n987 n980
+00 1
+.names n982 n985 n981
+11 1
+.names n983 n n982
+10 1
+.names n984 i n983
+10 1
+.names g h n984
+00 1
+.names n986 m n985
+10 1
+.names k l n986
+00 1
+.names n988 n139 n987
+11 1
+.names n558 n641 n988
+11 1
+.names n573 f n989
+10 1
+.names n991 n510 n990
+01 1
+.names n992 n1005 n991
+00 1
+.names n993 n n992
+00 1
+.names n994 n1000 n993
+11 1
+.names n995 n999 n994
+10 1
+.names n996 n997 n995
+00 1
+.names n347 n492 n996
+01 1
+.names n998 n355 n997
+01 1
+.names n522 n654 n998
+00 1
+.names n341 n637 n999
+01 1
+.names n1001 n1004 n1000
+10 1
+.names n1002 n1003 n1001
+00 1
+.names n236 n359 n1002
+11 1
+.names n338 n939 n1003
+11 1
+.names n530 n363 n1004
+11 1
+.names n530 n97 n1005
+11 1
+.names n1007 n1016 n1006
+00 1
+.names n1008 n1015 n1007
+01 1
+.names n1009 n1010 n1008
+00 1
+.names n273 n237 n1009
+11 1
+.names n1011 g n1010
+00 1
+.names n1012 n1014 n1011
+00 1
+.names n219 n1013 n1012
+11 1
+.names n79 f n1013
+10 1
+.names n222 f n1014
+10 1
+.names n280 d n1015
+11 1
+.names n407 n1017 n1016
+01 1
+.names n269 a n1017
+11 1
+.names n1019 n1020 n1018
+01 1
+.names n428 n331 n1019
+11 1
+.names n114 a n1020
+10 1
+.names n1022 n1031 i2
+11 0
+.names n1023 n1025 n1022
+10 1
+.names n427 n1024 n1023
+00 1
+.names n421 n504 n1024
+00 1
+.names n1026 n416 n1025
+01 1
+.names n1027 n1029 n1026
+00 1
+.names n273 n1028 n1027
+11 1
+.names n275 f n1028
+10 1
+.names n1011 n1030 n1029
+01 1
+.names e g n1030
+10 1
+.names n1032 n1087 n1031
+11 1
+.names n1033 n1084 n1032
+11 1
+.names n1034 n1057 n1033
+11 1
+.names n1035 n1054 n1034
+11 1
+.names n169 n1036 n1035
+11 1
+.names n1037 n1047 n1036
+11 1
+.names n1038 n1044 n1037
+00 1
+.names n1039 n1042 n1038
+11 1
+.names n1040 n1028 n1039
+11 1
+.names n1041 n n1040
+11 1
+.names n269 b n1041
+10 1
+.names n906 n1043 n1042
+11 1
+.names n75 h n1043
+10 1
+.names n1045 n316 n1044
+11 1
+.names n1046 n970 n1045
+11 1
+.names n492 n142 n1046
+11 1
+.names n1048 n1051 n1047
+00 1
+.names n1049 n1050 n1048
+11 1
+.names n210 n58 n1049
+11 1
+.names n266 n268 n1050
+11 1
+.names n1052 n1053 n1051
+11 1
+.names n293 n423 n1052
+11 1
+.names n985 n1043 n1053
+11 1
+.names n1055 n1056 n1054
+00 1
+.names n469 n124 n1055
+01 1
+.names n150 n680 n1056
+01 1
+.names n956 n1058 n1057
+11 1
+.names n1059 n1082 n1058
+10 1
+.names n1060 n1072 n1059
+11 1
+.names n1061 n1067 n1060
+11 1
+.names n1062 n1066 n1061
+00 1
+.names n1063 n1065 n1062
+11 1
+.names n1064 n293 n1063
+11 1
+.names n110 f n1064
+10 1
+.names n791 n908 n1065
+11 1
+.names n1042 n1063 n1066
+11 1
+.names n1068 n1070 n1067
+00 1
+.names n976 n1069 n1068
+11 1
+.names n236 n316 n1069
+11 1
+.names n976 n1071 n1070
+11 1
+.names n236 n459 n1071
+11 1
+.names n591 n1073 n1072
+01 1
+.names n1074 n1078 n1073
+00 1
+.names n1075 n1076 n1074
+11 1
+.names n142 n855 n1075
+11 1
+.names n530 n1077 n1076
+11 1
+.names n573 e n1077
+10 1
+.names n1079 n1081 n1078
+11 1
+.names n238 n1080 n1079
+11 1
+.names i l n1080
+00 1
+.names n263 n1077 n1081
+11 1
+.names n38 n1083 n1082
+11 1
+.names n293 n364 n1083
+11 1
+.names n189 n1085 n1084
+10 1
+.names n1086 n1041 n1085
+01 1
+.names n107 n461 n1086
+11 1
+.names n1088 n1098 n1087
+00 1
+.names n1089 e n1088
+01 1
+.names n1090 n1091 n1089
+00 1
+.names n490 n214 n1090
+01 1
+.names n1092 n1097 n1091
+01 1
+.names n1093 n1095 n1092
+00 1
+.names n57 n1094 n1093
+11 1
+.names g n n1094
+01 1
+.names n53 n1096 n1095
+11 1
+.names n55 g n1096
+10 1
+.names n293 h n1097
+10 1
+.names n991 n512 n1098
+01 1
+.names n1100 n1113 j2
+11 0
+.names n1101 n1111 n1100
+11 1
+.names n1102 n1110 n1101
+10 1
+.names n1103 n1104 n1102
+00 1
+.names n1045 n459 n1103
+11 1
+.names n1105 n1108 n1104
+11 1
+.names n1106 n554 n1105
+11 1
+.names n78 n1107 n1106
+11 1
+.names j k n1107
+00 1
+.names n1020 n1109 n1108
+11 1
+.names n182 f n1109
+11 1
+.names n1039 n1065 n1110
+11 1
+.names n1044 n1112 n1111
+01 1
+.names n975 n1062 n1112
+00 1
+.names n1114 n1127 n1113
+11 1
+.names n1115 n1121 n1114
+11 1
+.names n1116 n1117 n1115
+10 1
+.names n1066 n1068 n1116
+00 1
+.names n1118 n1119 n1117
+11 1
+.names n236 n142 n1118
+11 1
+.names n459 n1120 n1119
+11 1
+.names n515 k n1120
+10 1
+.names n1122 n1125 n1121
+00 1
+.names n1123 n1108 n1122
+11 1
+.names n1124 n558 n1123
+11 1
+.names n203 n79 n1124
+11 1
+.names n1039 n1126 n1125
+11 1
+.names n845 n908 n1126
+11 1
+.names n1074 n1128 n1127
+00 1
+.names n1129 n1130 n1128
+11 1
+.names n983 n139 n1129
+11 1
+.names n989 n1131 n1130
+11 1
+.names n1107 l n1131
+10 1
+.names n1133 n1145 k2
+11 0
+.names n1100 n1134 n1133
+11 1
+.names n1135 n1141 n1134
+11 1
+.names n1136 n1139 n1135
+10 1
+.names n1070 n1137 n1136
+00 1
+.names n1052 n1138 n1137
+11 1
+.names n742 n906 n1138
+11 1
+.names n1075 n1140 n1139
+11 1
+.names n268 n48 n1140
+11 1
+.names n1038 n1142 n1141
+00 1
+.names n1143 n1144 n1142
+11 1
+.names n833 n554 n1143
+11 1
+.names n280 n412 n1144
+11 1
+.names n1078 n1146 n1145
+00 1
+.names n1075 n1147 n1146
+11 1
+.names n530 n969 n1147
+11 1
+.names n1133 n1149 m2
+11 0
+.names n1150 n1114 n1149
+11 1
+.names n1151 n1158 n1150
+11 1
+.names n1152 n1153 n1151
+10 1
+.names n1047 n966 n1152
+10 1
+.names n1154 n774 n1153
+11 1
+.names n1155 n1156 n1154
+11 1
+.names n932 n1020 n1155
+11 1
+.names n1157 f n1156
+10 1
+.names d e n1157
+00 1
+.names n979 n1159 n1158
+00 1
+.names n1160 n750 n1159
+01 1
+.names n1161 n1164 n1160
+00 1
+.names n1162 n1163 n1161
+11 1
+.names n142 k n1162
+10 1
+.names n530 n316 n1163
+11 1
+.names n1165 n1166 n1164
+11 1
+.names n224 h n1165
+11 1
+.names n908 n1041 n1166
+11 1
+.names n1168 n1362 l2
+11 0
+.names n1169 n1288 n1168
+11 1
+.names n1170 n1226 n1169
+01 1
+.names n1171 n1225 n1170
+00 1
+.names n1172 n1202 n1171
+01 1
+.names n1173 h n1172
+01 1
+.names n1174 n1188 n1173
+11 1
+.names n1175 n1185 n1174
+10 1
+.names n1176 n1180 n1175
+00 1
+.names n1177 n79 n1176
+01 1
+.names n1156 n1178 n1177
+00 1
+.names n1179 f n1178
+10 1
+.names a e n1179
+00 1
+.names n1181 n1184 n1180
+01 1
+.names n1182 n1183 n1181
+00 1
+.names n55 b n1182
+10 1
+.names n139 c n1183
+10 1
+.names n970 e n1184
+10 1
+.names n1186 n1187 n1185
+01 1
+.names n466 n147 n1186
+00 1
+.names n263 j n1187
+10 1
+.names n1189 n1195 n1188
+11 1
+.names n1190 n1192 n1189
+00 1
+.names n164 n1191 n1190
+11 1
+.names n269 j n1191
+00 1
+.names n1193 n1194 n1192
+11 1
+.names n415 b n1193
+10 1
+.names n55 j n1194
+11 1
+.names n1196 n1198 n1195
+00 1
+.names n1197 n573 n1196
+11 1
+.names n139 i n1197
+10 1
+.names n1199 n1200 n1198
+11 1
+.names n1107 m n1199
+10 1
+.names n1201 n n1200
+11 1
+.names b e n1201
+11 1
+.names n1203 n1221 n1202
+10 1
+.names n1204 n1210 n1203
+01 1
+.names n1205 n55 n1204
+01 1
+.names n1206 n1209 n1205
+10 1
+.names n1207 n1208 n1206
+00 1
+.names n68 e n1207
+10 1
+.names n225 b n1208
+10 1
+.names n1193 j n1209
+10 1
+.names n1211 n1219 n1210
+10 1
+.names n1212 n1214 n1211
+01 1
+.names n1213 n167 n1212
+11 1
+.names n74 k n1213
+00 1
+.names n1215 n1218 n1214
+00 1
+.names n1216 n1217 n1215
+11 1
+.names n54 m n1216
+10 1
+.names n573 n n1217
+10 1
+.names n1197 n147 n1218
+11 1
+.names n1220 n853 n1219
+01 1
+.names n266 n89 n1220
+00 1
+.names n1222 i n1221
+00 1
+.names n1223 n1224 n1222
+00 1
+.names n831 j n1223
+10 1
+.names n55 n269 n1224
+10 1
+.names n1173 h n1225
+11 1
+.names n1227 n1262 n1226
+10 1
+.names n1228 n1243 n1227
+00 1
+.names n1229 n139 n1228
+01 1
+.names n1230 n1240 n1229
+10 1
+.names n1231 n1237 n1230
+01 1
+.names n1232 n1233 n1231
+00 1
+.names n83 n141 n1232
+10 1
+.names n1234 n1236 n1233
+00 1
+.names n1235 f n1234
+10 1
+.names c e n1235
+10 1
+.names n415 c n1236
+10 1
+.names n1238 n1239 n1237
+00 1
+.names n69 n1234 n1238
+11 1
+.names n112 n1120 n1239
+11 1
+.names n1241 j n1240
+00 1
+.names n1242 n932 n1241
+00 1
+.names n268 n323 n1242
+11 1
+.names n1244 n79 n1243
+01 1
+.names n1245 n1260 n1244
+10 1
+.names n1246 n1255 n1245
+11 1
+.names n1247 n1251 n1246
+11 1
+.names n1248 n1249 n1247
+00 1
+.names n350 n970 n1248
+11 1
+.names n68 n1250 n1249
+11 1
+.names n182 a n1250
+10 1
+.names n1252 n1254 n1251
+00 1
+.names n749 n1253 n1252
+11 1
+.names n415 h n1253
+10 1
+.names n1193 n125 n1254
+11 1
+.names n1256 n1257 n1255
+01 1
+.names n1144 i n1256
+10 1
+.names n1258 n1131 n1257
+10 1
+.names n122 n1259 n1258
+00 1
+.names a b n1259
+00 1
+.names n1261 j n1260
+01 1
+.names n1177 n238 n1261
+10 1
+.names n1263 n n1262
+01 1
+.names n1264 n1276 n1263
+11 1
+.names n1265 n1274 n1264
+10 1
+.names n1266 n1269 n1265
+01 1
+.names n1052 n1267 n1266
+11 1
+.names n1268 h n1267
+11 1
+.names i m n1268
+00 1
+.names n1270 n1272 n1269
+00 1
+.names n560 n1271 n1270
+11 1
+.names n1268 h n1271
+10 1
+.names n1193 n1273 n1272
+11 1
+.names n1268 k n1273
+10 1
+.names n1275 n1193 n1274
+01 1
+.names n57 n47 n1275
+00 1
+.names n1277 n1283 n1276
+10 1
+.names n1278 n1280 n1277
+01 1
+.names n1279 n1199 n1278
+01 1
+.names n69 n558 n1279
+00 1
+.names n1281 n1282 n1280
+00 1
+.names n791 n985 n1281
+11 1
+.names n43 n186 n1282
+11 1
+.names n1284 n1052 n1283
+01 1
+.names n1285 n1287 n1284
+10 1
+.names n41 n1286 n1285
+00 1
+.names n77 m n1286
+10 1
+.names n1268 l n1287
+11 1
+.names n1289 n1325 n1288
+00 1
+.names n1290 n n1289
+00 1
+.names n1291 n1319 n1290
+11 1
+.names n1292 n1313 n1291
+10 1
+.names n1293 n1301 n1292
+11 1
+.names n1294 n1298 n1293
+10 1
+.names n1295 n1297 n1294
+00 1
+.names n1296 n323 n1295
+11 1
+.names n43 n268 n1296
+11 1
+.names n1144 n321 n1297
+11 1
+.names n1299 n1267 n1298
+01 1
+.names n1236 n1300 n1299
+00 1
+.names n225 c n1300
+10 1
+.names n1302 n1307 n1301
+11 1
+.names n1303 n1306 n1302
+00 1
+.names n1304 n1305 n1303
+01 1
+.names n301 n430 n1304
+00 1
+.names n742 n694 n1305
+11 1
+.names n120 n1199 n1306
+11 1
+.names n1308 n1310 n1307
+00 1
+.names n1309 n1216 n1308
+01 1
+.names n989 n1300 n1309
+00 1
+.names n1311 n1273 n1310
+01 1
+.names n236 n1312 n1311
+00 1
+.names n573 g n1312
+11 1
+.names n1314 n1316 n1313
+01 1
+.names n1315 n1177 n1314
+11 1
+.names n1144 n1250 n1315
+00 1
+.names n1317 g n1316
+00 1
+.names n322 n1318 n1317
+00 1
+.names j m n1318
+01 1
+.names n1320 n1324 n1319
+10 1
+.names n1277 n1321 n1320
+10 1
+.names n1322 n1271 n1321
+01 1
+.names n604 n1323 n1322
+10 1
+.names n125 g n1323
+10 1
+.names n1284 n1300 n1324
+01 1
+.names n1326 f n1325
+01 1
+.names n1327 n1356 n1326
+10 1
+.names n1328 n1344 n1327
+11 1
+.names n1329 n1339 n1328
+10 1
+.names n1330 n1336 n1329
+10 1
+.names n1331 n1335 n1330
+00 1
+.names n1332 n742 n1331
+11 1
+.names n694 n1333 n1332
+11 1
+.names n1334 n n1333
+10 1
+.names a g n1334
+01 1
+.names n969 n1096 n1335
+11 1
+.names n1337 n1250 n1336
+01 1
+.names n97 n1338 n1337
+00 1
+.names n79 h n1338
+10 1
+.names n1340 n1343 n1339
+01 1
+.names n1341 n1342 n1340
+00 1
+.names n298 b n1341
+10 1
+.names n142 c n1342
+10 1
+.names n855 h n1343
+11 1
+.names n1345 n1350 n1344
+00 1
+.names n1346 n1349 n1345
+01 1
+.names n1347 n753 n1346
+10 1
+.names n1348 n1182 n1347
+10 1
+.names n156 n298 n1348
+00 1
+.names h i n1349
+00 1
+.names n1351 n79 n1350
+01 1
+.names n1352 n1355 n1351
+10 1
+.names n1353 n1354 n1352
+00 1
+.names n1250 i n1353
+10 1
+.names n573 b n1354
+10 1
+.names n280 n1157 n1355
+11 1
+.names n1357 n139 n1356
+01 1
+.names n1358 n1361 n1357
+00 1
+.names n1359 g n1358
+00 1
+.names n1360 n573 n1359
+00 1
+.names n970 h n1360
+11 1
+.names n1360 n573 n1361
+10 1
+.names n1363 n1406 n1362
+01 1
+.names n1364 n1405 n1363
+00 1
+.names n1365 n1390 n1364
+01 1
+.names n1366 g n1365
+01 1
+.names n1367 n1385 n1366
+10 1
+.names n1368 n1382 n1367
+10 1
+.names n1369 n1379 n1368
+10 1
+.names n1370 n1373 n1369
+11 1
+.names n1371 n1372 n1370
+00 1
+.names n1077 n55 n1371
+11 1
+.names n989 n1197 n1372
+11 1
+.names n1374 n1376 n1373
+00 1
+.names n1271 n1375 n1374
+11 1
+.names c e n1375
+00 1
+.names n1271 n1377 n1376
+11 1
+.names n1378 n n1377
+11 1
+.names b e n1378
+00 1
+.names n1380 n855 n1379
+11 1
+.names n78 n1381 n1380
+11 1
+.names n114 h n1381
+01 1
+.names n1383 n1360 n1382
+11 1
+.names n1384 n79 n1383
+01 1
+.names n293 a n1384
+10 1
+.names n1386 d n1385
+00 1
+.names n1387 n1388 n1386
+00 1
+.names n1075 h n1387
+11 1
+.names n1120 n1389 n1388
+11 1
+.names n139 h n1389
+10 1
+.names n1391 n1397 n1390
+11 1
+.names n1392 n1395 n1391
+00 1
+.names n1393 n1394 n1392
+01 1
+.names n1384 n145 n1393
+11 1
+.names n99 j n1394
+11 1
+.names n1075 n1396 n1395
+11 1
+.names n573 h n1396
+01 1
+.names n1398 n1401 n1397
+00 1
+.names n1399 h n1398
+00 1
+.names n1400 n97 n1399
+00 1
+.names n1197 c n1400
+11 1
+.names n1402 n1234 n1401
+01 1
+.names n1403 n1404 n1402
+00 1
+.names n1197 k n1403
+11 1
+.names n139 n750 n1404
+10 1
+.names n1366 g n1405
+11 1
+.names n1407 n1472 n1406
+10 1
+.names n1408 n1430 n1407
+01 1
+.names n1409 i n1408
+01 1
+.names n1410 n1425 n1409
+10 1
+.names n1411 n1424 n1410
+10 1
+.names n1412 n1420 n1411
+11 1
+.names n1413 n1417 n1412
+01 1
+.names n1414 n1415 n1413
+01 1
+.names n412 c n1414
+11 1
+.names n641 n1416 n1415
+11 1
+.names n55 h n1416
+11 1
+.names n1418 n1419 n1417
+00 1
+.names n47 n1217 n1418
+11 1
+.names n263 n1300 n1419
+11 1
+.names n1421 n1423 n1420
+00 1
+.names n1052 n1422 n1421
+10 1
+.names n164 n167 n1422
+00 1
+.names n1299 n266 n1423
+01 1
+.names n1261 n79 n1424
+01 1
+.names n1426 n139 n1425
+01 1
+.names n1427 n1429 n1426
+00 1
+.names n1428 j n1427
+01 1
+.names n1234 n1312 n1428
+00 1
+.names n268 n58 n1429
+11 1
+.names n1431 n1449 n1430
+11 1
+.names n1432 n1448 n1431
+10 1
+.names n1433 n1438 n1432
+01 1
+.names n1434 n268 n1433
+01 1
+.names n1435 n1437 n1434
+00 1
+.names n1436 n379 n1435
+01 1
+.names n254 n142 n1436
+00 1
+.names n266 n323 n1437
+11 1
+.names n1439 n1444 n1438
+11 1
+.names n1440 n1443 n1439
+00 1
+.names n1441 n1013 n1440
+01 1
+.names n625 n1442 n1441
+00 1
+.names n1375 a n1442
+10 1
+.names n1075 n109 n1443
+11 1
+.names n1445 n1447 n1444
+00 1
+.names n1446 n855 n1445
+11 1
+.names n492 n78 n1446
+11 1
+.names n401 n1043 n1447
+11 1
+.names n1314 n89 n1448
+01 1
+.names n1450 n1457 n1449
+01 1
+.names n1451 n55 n1450
+01 1
+.names n1452 n1456 n1451
+10 1
+.names n1453 n1455 n1452
+10 1
+.names n988 n1454 n1453
+00 1
+.names b c n1454
+00 1
+.names n1193 d n1455
+10 1
+.names n1052 j n1456
+10 1
+.names n1458 n1465 n1457
+11 1
+.names n1459 n1461 n1458
+01 1
+.names n1460 n1197 n1459
+01 1
+.names n1140 n292 n1460
+00 1
+.names n1462 n1464 n1461
+00 1
+.names n1144 n1463 n1462
+10 1
+.names n99 n1338 n1463
+00 1
+.names n164 n175 n1464
+11 1
+.names n1466 n1469 n1465
+00 1
+.names n1467 n266 n1466
+01 1
+.names n1428 n1468 n1467
+10 1
+.names n932 c n1468
+10 1
+.names n1470 n1208 n1469
+01 1
+.names n1471 n167 n1470
+10 1
+.names n156 n1194 n1471
+00 1
+.names n1473 f n1472
+00 1
+.names n1474 n1484 n1473
+01 1
+.names n1475 n1483 n1474
+01 1
+.names n1476 n1482 n1475
+10 1
+.names n1477 n1481 n1476
+10 1
+.names n1478 n1479 n1477
+00 1
+.names n156 j n1478
+10 1
+.names n55 n1480 n1479
+11 1
+.names h j n1480
+00 1
+.names n1194 h n1481
+11 1
+.names n1471 i n1482
+01 1
+.names n293 e n1483
+10 1
+.names n1485 n1486 n1484
+01 1
+.names n1386 c n1485
+01 1
+.names n1487 n1492 n1486
+01 1
+.names n1488 h n1487
+00 1
+.names n1489 n1491 n1488
+00 1
+.names n1120 n1490 n1489
+11 1
+.names n55 b n1490
+11 1
+.names n167 i n1491
+10 1
+.names n1493 n1496 n1492
+00 1
+.names n1494 n1096 n1493
+01 1
+.names n1495 n125 n1494
+00 1
+.names n303 e n1495
+00 1
+.names n1497 n1338 n1496
+11 1
+.names n749 n448 n1497
+10 1
+.end

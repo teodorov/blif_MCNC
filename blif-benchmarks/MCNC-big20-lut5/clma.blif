@@ -1,0 +1,10954 @@
+# Benchmark "TOP" written by ABC on Thu May 21 18:20:17 2015
+.model TOP
+.inputs Pi416 Pi415 Pi414 Pi413 Pi412 Pi411 Pi410 Pi409 Pi408 Pi407 Pi406 \
+ Pi405 Pi404 Pi403 Pi402 Pi401 Pi400 Pi399 Pi398 Pi397 Pi396 Pi395 Pi394 \
+ Pi393 Pi392 Pi391 Pi390 Pi389 Pi388 Pi387 Pi386 Pi385 Pi384 Pi383 Pi382 \
+ Pi381 Pi380 Pi379 Pi378 Pi377 Pi376 Pi375 Pi374 Pi373 Pi372 Pi371 Pi370 \
+ Pi369 Pi368 Pi367 Pi366 Pi365 Pi364 Pi363 Pi362 Pi361 Pi360 Pi359 Pi358 \
+ Pi357 Pi356 Pi355 Pi354 Pi353 Pi352 Pi351 Pi350 Pi349 Pi348 Pi347 Pi346 \
+ Pi345 Pi344 Pi343 Pi342 Pi341 Pi340 Pi339 Pi338 Pi337 Pi336 Pi335 Pi334 \
+ Pi333 Pi332 Pi331 Pi330 Pi329 Pi328 Pi327 Pi326 Pi325 Pi324 Pi323 Pi322 \
+ Pi321 Pi320 Pi319 Pi318 Pi317 Pi316 Pi315 Pi314 Pi313 Pi312 Pi311 Pi310 \
+ Pi309 Pi308 Pi307 Pi306 Pi305 Pi304 Pi303 Pi302 Pi301 Pi300 Pi299 Pi298 \
+ Pi297 Pi296 Pi295 Pi294 Pi293 Pi292 Pi291 Pi290 Pi289 Pi288 Pi287 Pi286 \
+ Pi285 Pi284 Pi283 Pi282 Pi281 Pi280 Pi279 Pi278 Pi277 Pi276 Pi275 Pi274 \
+ Pi273 Pi272 Pi271 Pi270 Pi269 Pi268 Pi267 Pi266 Pi265 Pi264 Pi263 Pi262 \
+ Pi261 Pi260 Pi259 Pi258 Pi257 Pi256 Pi255 Pi254 Pi253 Pi252 Pi251 Pi250 \
+ Pi249 Pi248 Pi247 Pi246 Pi245 Pi244 Pi243 Pi242 Pi241 Pi240 Pi239 Pi238 \
+ Pi237 Pi236 Pi235 Pi234 Pi233 Pi232 Pi231 Pi230 Pi229 Pi228 Pi227 Pi226 \
+ Pi225 Pi224 Pi223 Pi222 Pi221 Pi220 Pi219 Pi218 Pi217 Pi216 Pi215 Pi214 \
+ Pi213 Pi212 Pi211 Pi210 Pi209 Pi208 Pi207 Pi206 Pi205 Pi204 Pi203 Pi202 \
+ Pi201 Pi200 Pi199 Pi198 Pi197 Pi196 Pi195 Pi194 Pi193 Pi192 Pi191 Pi190 \
+ Pi189 Pi188 Pi187 Pi186 Pi185 Pi184 Pi183 Pi182 Pi181 Pi180 Pi179 Pi178 \
+ Pi177 Pi176 Pi175 Pi174 Pi173 Pi172 Pi171 Pi170 Pi169 Pi168 Pi167 Pi166 \
+ Pi165 Pi164 Pi163 Pi162 Pi161 Pi160 Pi159 Pi158 Pi157 Pi156 Pi155 Pi154 \
+ Pi153 Pi152 Pi151 Pi150 Pi149 Pi148 Pi147 Pi146 Pi145 Pi144 Pi143 Pi142 \
+ Pi141 Pi140 Pi139 Pi138 Pi137 Pi136 Pi135 Pi134 Pi133 Pi132 Pi131 Pi130 \
+ Pi129 Pi128 Pi127 Pi126 Pi125 Pi124 Pi123 Pi122 Pi121 Pi120 Pi119 Pi118 \
+ Pi117 Pi116 Pi115 Pi114 Pi113 Pi112 Pi111 Pi110 Pi109 Pi108 Pi107 Pi106 \
+ Pi105 Pi104 Pi103 Pi102 Pi101 Pi100 Pi99 Pi98 Pi97 Pi96 Pi95 Pi94 Pi93 \
+ Pi92 Pi91 Pi90 Pi89 Pi88 Pi87 Pi86 Pi85 Pi84 Pi83 Pi82 Pi81 Pi80 Pi79 Pi78 \
+ Pi77 Pi76 Pi75 Pi74 Pi73 Pi72 Pi71 Pi70 Pi69 Pi68 Pi67 Pi66 Pi65 Pi64 Pi63 \
+ Pi62 Pi61 Pi60 Pi59 Pi58 Pi57 Pi56 Pi55 Pi54 Pi53 Pi52 Pi51 Pi50 Pi49 Pi28 \
+ Pi27 Pi26 Pi25 Pi24 Pi23 Pi22 Pi21 Pi20 Pi19 Pi18 Pi17 Pi16 Pi15 PCLK
+.outputs P__cmxir_1 P__cmxir_0 P__cmxig_1 P__cmxig_0 P__cmxcl_1 P__cmxcl_0 \
+ P__cmx1ad_35 P__cmx1ad_34 P__cmx1ad_33 P__cmx1ad_32 P__cmx1ad_31 \
+ P__cmx1ad_30 P__cmx1ad_29 P__cmx1ad_28 P__cmx1ad_27 P__cmx1ad_26 \
+ P__cmx1ad_25 P__cmx1ad_24 P__cmx1ad_23 P__cmx1ad_22 P__cmx1ad_21 \
+ P__cmx1ad_20 P__cmx1ad_19 P__cmx1ad_18 P__cmx1ad_17 P__cmx1ad_16 \
+ P__cmx1ad_15 P__cmx1ad_14 P__cmx1ad_13 P__cmx1ad_12 P__cmx1ad_11 \
+ P__cmx1ad_10 P__cmx1ad_9 P__cmx1ad_8 P__cmx1ad_7 P__cmx1ad_6 P__cmx1ad_5 \
+ P__cmx1ad_4 P__cmx1ad_3 P__cmx1ad_2 P__cmx1ad_1 P__cmx1ad_0 P__cmx0ad_35 \
+ P__cmx0ad_34 P__cmx0ad_33 P__cmx0ad_32 P__cmx0ad_31 P__cmx0ad_30 \
+ P__cmx0ad_29 P__cmx0ad_28 P__cmx0ad_27 P__cmx0ad_26 P__cmx0ad_25 \
+ P__cmx0ad_24 P__cmx0ad_23 P__cmx0ad_22 P__cmx0ad_21 P__cmx0ad_20 \
+ P__cmx0ad_19 P__cmx0ad_18 P__cmx0ad_17 P__cmx0ad_16 P__cmx0ad_15 \
+ P__cmx0ad_14 P__cmx0ad_13 P__cmx0ad_12 P__cmx0ad_11 P__cmx0ad_10 \
+ P__cmx0ad_9 P__cmx0ad_8 P__cmx0ad_7 P__cmx0ad_6 P__cmx0ad_5 P__cmx0ad_4 \
+ P__cmx0ad_3 P__cmx0ad_2 P__cmx0ad_1 P__cmx0ad_0 P__cmnxcp_1 P__cmnxcp_0 \
+ P__cmndst1p0 P__cmndst0p0
+
+.latch       n932       Ni48  2
+.latch       n937       Ni47  2
+.latch     n942_1       Ni46  2
+.latch     n947_1       Ni45  2
+.latch     n952_1       Ni44  2
+.latch     n957_1       Ni43  2
+.latch       n962       Ni42  2
+.latch     n967_1       Ni41  2
+.latch     n972_1       Ni40  2
+.latch       n977       Ni39  2
+.latch     n982_1       Ni38  2
+.latch     n987_1       Ni37  2
+.latch       n992       Ni36  2
+.latch     n997_1       Ni35  2
+.latch      n1002       Ni34  2
+.latch    n1007_1       Ni33  2
+.latch      n1012       Ni32  2
+.latch    n1017_1       Ni31  2
+.latch    n1022_1       Ni30  2
+.latch      n1027        n18  2
+.latch    n1032_1       Ni14  2
+.latch    n1037_1       Ni13  2
+.latch      n1042       Ni12  2
+.latch    n1047_1       Ni11  2
+.latch    n1052_1       Ni10  2
+.latch      n1057        Ni9  2
+.latch    n1062_1        Ni8  2
+.latch    n1067_1        Ni7  2
+.latch      n1072        Ni6  2
+.latch      n1077        Ni5  2
+.latch      n1082        Ni4  2
+.latch      n1086        Ni3  2
+.latch    n1091_1        Ni2  2
+
+.names n567 P__cmxcl_1 P__cmxig_1 P__cmxir_1
+110 1
+.names n568 Ni11 n567
+10 1
+.names n569 Ni12 n568
+10 1
+.names Ni14 Ni13 n569
+10 1
+.names Ni3 Ni2 P__cmxcl_1
+00 1
+.names Ni33 n18 P__cmxig_1
+11 1
+.names n573 n576 P__cmxir_0
+10 1
+.names n574 P__cmxcl_1 n573
+11 1
+.names n575 Ni7 n574
+10 1
+.names Ni9 Ni8 n575
+00 1
+.names Pi25 P__cmxig_0 Ni10 Ni9 n576
+-110 1
+0-00 1
+.names Ni33 n18 P__cmxig_0
+01 1
+.names P__cmx1ad_9 Pi255 P__cmx1ad_31
+11 1
+.names n580 P__cmxcl_1 P__cmx1ad_9
+11 1
+.names n581 n582 n580
+11 1
+.names Ni12 Ni11 n581
+00 1
+.names Ni14 Ni13 n582
+11 1
+.names P__cmx1ad_9 Pi254 P__cmx1ad_30
+11 1
+.names P__cmx1ad_9 Pi253 P__cmx1ad_29
+11 1
+.names P__cmx1ad_9 Pi252 P__cmx1ad_28
+11 1
+.names P__cmx1ad_9 Pi251 P__cmx1ad_27
+11 1
+.names P__cmx1ad_9 Pi250 P__cmx1ad_26
+11 1
+.names P__cmx1ad_9 Pi249 P__cmx1ad_25
+11 1
+.names P__cmx1ad_9 Pi248 P__cmx1ad_24
+11 1
+.names P__cmx1ad_9 Pi247 P__cmx1ad_23
+11 1
+.names P__cmx1ad_9 Pi246 P__cmx1ad_22
+11 1
+.names P__cmx1ad_9 Pi245 P__cmx1ad_21
+11 1
+.names P__cmx1ad_9 Pi244 P__cmx1ad_20
+11 1
+.names P__cmx1ad_9 Pi243 P__cmx1ad_19
+11 1
+.names P__cmx1ad_9 Pi242 P__cmx1ad_18
+11 1
+.names P__cmx1ad_9 Pi241 P__cmx1ad_17
+11 1
+.names P__cmx1ad_9 Pi240 P__cmx1ad_16
+11 1
+.names P__cmx1ad_9 Pi27 Pi26 P__cmx1ad_15
+111 1
+.names P__cmx1ad_9 Pi27 Pi26 P__cmx1ad_14
+101 1
+110 1
+.names P__cmx1ad_9 n601 P__cmx1ad_13
+10 1
+.names Pi27 Pi26 n601
+00 1
+.names P__cmx1ad_9 Pi27 P__cmx1ad_12
+10 1
+.names P__cmx1ad_9 Pi239 P__cmx1ad_7
+11 1
+.names P__cmx1ad_9 Pi238 P__cmx1ad_6
+11 1
+.names P__cmx1ad_9 Pi237 P__cmx1ad_5
+11 1
+.names P__cmx1ad_9 Pi236 P__cmx1ad_4
+11 1
+.names P__cmx1ad_9 Pi235 P__cmx1ad_3
+11 1
+.names P__cmx1ad_9 Pi234 P__cmx1ad_2
+11 1
+.names P__cmx1ad_9 Pi233 P__cmx1ad_1
+11 1
+.names P__cmx1ad_9 Pi232 P__cmx1ad_0
+11 1
+.names P__cmx0ad_9 Pi72 P__cmx0ad_31
+11 1
+.names n613 P__cmxcl_1 Ni7 P__cmx0ad_9
+110 1
+.names n614 Ni8 n613
+10 1
+.names Ni10 Ni9 n614
+11 1
+.names P__cmx0ad_9 Pi71 P__cmx0ad_30
+11 1
+.names P__cmx0ad_9 Pi70 P__cmx0ad_29
+11 1
+.names P__cmx0ad_9 Pi69 P__cmx0ad_28
+11 1
+.names P__cmx0ad_9 Pi68 P__cmx0ad_27
+11 1
+.names P__cmx0ad_9 Pi67 P__cmx0ad_26
+11 1
+.names P__cmx0ad_9 Pi66 P__cmx0ad_25
+11 1
+.names P__cmx0ad_9 Pi65 P__cmx0ad_24
+11 1
+.names P__cmx0ad_9 Pi64 P__cmx0ad_23
+11 1
+.names P__cmx0ad_9 Pi63 P__cmx0ad_22
+11 1
+.names P__cmx0ad_9 Pi62 P__cmx0ad_21
+11 1
+.names P__cmx0ad_9 Pi61 P__cmx0ad_20
+11 1
+.names P__cmx0ad_9 Pi60 P__cmx0ad_19
+11 1
+.names P__cmx0ad_9 Pi59 P__cmx0ad_18
+11 1
+.names P__cmx0ad_9 Pi58 P__cmx0ad_17
+11 1
+.names P__cmx0ad_9 Pi57 P__cmx0ad_16
+11 1
+.names P__cmx0ad_9 Pi24 Pi23 P__cmx0ad_15
+111 1
+.names P__cmx0ad_9 Pi24 Pi23 P__cmx0ad_14
+101 1
+110 1
+.names P__cmx0ad_9 n633 P__cmx0ad_13
+10 1
+.names Pi24 Pi23 n633
+00 1
+.names P__cmx0ad_9 Pi24 P__cmx0ad_12
+10 1
+.names P__cmx0ad_9 Pi56 P__cmx0ad_7
+11 1
+.names P__cmx0ad_9 Pi55 P__cmx0ad_6
+11 1
+.names P__cmx0ad_9 Pi54 P__cmx0ad_5
+11 1
+.names P__cmx0ad_9 Pi53 P__cmx0ad_4
+11 1
+.names P__cmx0ad_9 Pi52 P__cmx0ad_3
+11 1
+.names P__cmx0ad_9 Pi51 P__cmx0ad_2
+11 1
+.names P__cmx0ad_9 Pi50 P__cmx0ad_1
+11 1
+.names P__cmx0ad_9 Pi49 P__cmx0ad_0
+11 1
+.names n657 n644 n656 n652 P__cmnxcp_1
+-100 0
+0-00 0
+.names n649 n650 n651 n645 n644
+---1 0
+101- 0
+.names Ni36 Ni41 n646 Ni32 Ni31 n645
+-0111 1
+0-101 1
+.names n647 Ni6 Ni5 n646
+101 1
+.names n1091_1 Ni4 n647
+10 1
+.names Ni3 Ni2 n1091_1
+10 1
+.names n1091_1 Ni4 n649
+11 1
+.names Ni36 Ni41 Ni32 Ni31 n650
+-111 0
+1-01 0
+.names Ni6 Ni5 n651
+10 1
+.names n654 Ni12 n655 n653 P__cmxcl_1 n652
+--111 1
+11--1 1
+.names n568 Ni11 n653
+11 1
+.names Pi26 Pi27 Ni14 Ni13 Ni11 n654
+-1100 1
+00000 1
+.names Pi27 Pi26 n655
+01 1
+.names n647 n651 Ni33 Ni31 Ni30 n656
+11110 1
+.names Ni33 Ni30 n657
+11 1
+.names n662 n659 P__cmxcl_1 n666 n646 P__cmnxcp_0
+---11 1
+-01-- 1
+1---- 1
+.names n660 n661 Pi23 Ni10 Pi24 n659
+-1-11 0
+-1000 0
+1-1-0 0
+.names n575 Ni10 Ni7 n660
+111 1
+.names Ni9 Ni8 Ni7 n661
+010 1
+.names n665 n663 Ni33 n664 Ni4 n662
+-1011 1
+1--10 1
+.names n650 Ni30 n663
+01 1
+.names n651 n1091_1 n664
+11 1
+.names Ni33 Ni31 Ni30 n665
+010 1
+.names Ni36 Ni41 n667 Ni33 Ni32 n666
+-0101 1
+0-100 1
+.names Ni31 Ni30 n667
+11 1
+.names n669 Ni43 Ni42 P__cmndst1p0
+010 1
+.names Ni32 Ni30 n669
+11 1
+.names n671 n672 P__cmndst0p0
+10 1
+.names Ni38 Ni37 n671
+10 1
+.names Ni32 Ni30 n672
+01 1
+.names n674 n675 Ni48 Ni30 Pi22 n932
+--1-1 1
+-1-10 1
+01--0 1
+1-10- 1
+.names Ni32 Ni31 n674
+11 1
+.names Ni48 Pi20 Ni47 n675
+-10 1
+1-1 1
+.names Ni47 n651 n677 Ni4 n678 n937
+-1101 0
+0---1 0
+.names n674 Ni30 n677
+10 1
+.names Ni30 n1091_1 Ni47 n674 Pi22 n678
+---00 0
+-01-- 0
+1---0 0
+.names Pi20 n681 n680 Ni46 Ni45 n942_1
+--011 1
+-0-1- 1
+1-0-0 1
+.names Ni32 Ni31 Ni30 Pi21 n680
+---1 1
+010- 1
+.names Ni32 Ni31 Ni30 Pi21 n681
+---1 0
+010- 0
+.names Ni45 n651 n647 n683 n947_1
+-111 0
+0--1 0
+.names Ni32 Ni31 Ni30 Ni45 Pi21 n683
+---01 1
+010-- 1
+.names n686 n685 Ni44 n952_1
+-01 1
+1-- 1
+.names n669 Ni31 n685
+10 1
+.names Ni33 Ni32 Ni31 Ni30 n686
+1101 1
+.names Ni31 n698 n688 n669 n957_1
+-100 0
+1--1 0
+.names n696 n692 n689 Pi20 n688
+-000 0
+0-01 0
+.names n690 Ni43 Ni41 n689
+111 1
+.names n691 Pi16 n690
+11 1
+.names Pi19 Pi17 n691
+00 1
+.names n695 n694 n693 Ni40 n692
+-110 0
+1-11 0
+.names Ni42 Ni44 Ni41 Ni43 n693
+-101 0
+1--1 0
+.names Pi16 Ni41 Pi19 Ni43 Pi17 n694
+-0110 0
+1-110 0
+11011 0
+.names Pi16 Ni41 Pi19 Ni43 Pi17 n695
+-0011 0
+1-011 0
+11110 0
+.names n695 n694 n697 Ni40 n696
+-110 0
+1-11 0
+.names Ni42 Ni44 Ni41 Ni43 n697
+-001 0
+1--1 0
+.names Ni41 Pi16 Ni43 n699 n698
+-111 0
+0-11 0
+.names Pi19 Pi17 n699
+11 1
+.names n701 n708 n711 n962
+000 0
+.names n706 n702 Pi20 Pi18 Pi17 n701
+-1110 1
+1-010 1
+.names n703 n705 Ni44 Ni43 Ni40 n702
+01111 1
+.names Ni31 n704 n669 n703
+-01 1
+1-1 1
+.names Ni38 Ni37 Ni44 Ni39 Ni32 n704
+-1001 1
+-1111 1
+1-001 1
+1-111 1
+.names Ni42 Ni41 n705
+00 1
+.names Ni30 Ni32 n707 n706
+-01 1
+0-1 1
+.names n705 Ni44 Ni43 Ni40 n707
+1011 1
+.names n709 n704 Ni30 n710 n703 n708
+-1100 1
+0--00 1
+.names Ni42 Ni43 Ni44 Ni39 n709
+-101 1
+-110 1
+0--- 1
+.names Ni43 Ni42 Ni38 Ni37 Ni30 n710
+11000 1
+.names n703 Pi16 Ni43 Ni42 Ni41 n711
+00101 1
+.names Ni41 n717 n713 Ni7 n720 n967_1
+--001 1
+-0-11 1
+1---0 1
+.names n719 n717 n714 n580 n613 n713
+--011 1
+-1--0 1
+1--01 1
+.names n686 Pi24 n715 n716 n714
+--11 0
+00-1 0
+.names Pi27 Ni33 Ni32 n685 n715
+---0 1
+011- 1
+.names Ni32 Ni31 Ni30 Ni41 n716
+---0 1
+101- 1
+.names Ni41 n718 n580 n717
+-11 1
+0-0 1
+.names Ni41 Pi27 n685 Ni33 n716 n718
+--0-1 1
+-0-11 1
+0--01 1
+.names Ni41 Pi24 n685 Ni33 n716 n719
+--0-1 1
+-0-01 1
+0--11 1
+.names P__cmxcl_1 n721 n720
+11 1
+.names Ni6 Ni5 Ni4 n721
+000 1
+.names Ni40 n727 n723 Ni7 n720 n972_1
+--001 1
+-0-11 1
+1---0 1
+.names n729 n727 n724 n580 n613 n723
+--011 1
+-1--0 1
+1--01 1
+.names n686 Pi23 n725 n726 n724
+--11 0
+00-1 0
+.names Pi26 Ni33 Ni32 n685 n725
+---0 1
+011- 1
+.names Ni32 Ni31 Ni30 Ni40 n726
+---0 1
+101- 1
+.names Ni40 n728 n580 n727
+-11 1
+0-0 1
+.names Ni40 Pi26 n685 Ni33 n726 n728
+--0-1 1
+-0-11 1
+0--01 1
+.names Ni40 Pi23 n685 Ni33 n726 n729
+--0-1 1
+-0-01 1
+0--11 1
+.names n732 Ni39 n731 Ni32 n977
+--10 1
+01-- 1
+.names n657 Ni31 n731
+10 1
+.names Ni32 Ni31 Ni30 n732
+001 1
+.names n734 n739 n741 n742 n982_1
+1010 0
+.names n672 n738 Pi15 n735 n734
+---1 0
+011- 0
+.names Ni30 Ni32 Ni35 n736 n737 n735
+-1111 1
+0-111 1
+.names Pi19 Pi17 n736
+01 1
+.names Ni38 Ni36 n737
+10 1
+.names Ni38 Ni36 n738
+11 1
+.names n740 n737 Pi20 Ni39 n672 n739
+-1010 1
+-1100 1
+1---0 1
+.names Ni38 Ni37 n740
+11 1
+.names n732 n699 n672 n737 n741
+-101 0
+1--- 0
+.names Ni30 Ni32 Ni35 n743 n737 n742
+-1011 1
+0-011 1
+.names Pi19 Pi17 n743
+10 1
+.names n755 n752 n745 Pi18 Pi17 n987_1
+--0-- 1
+-0-10 1
+0--10 1
+.names Ni30 n751 n750 n749 n746 n745
+-0001 1
+1--01 1
+.names Ni32 Ni30 Pi15 n748 n747 n746
+---00 1
+--1-0 1
+01--0 1
+.names Ni43 Ni42 n732 Ni44 Ni39 n747
+-1100 1
+-1111 1
+1-100 1
+1-111 1
+.names Ni38 Ni37 Ni36 n748
+101 1
+.names Ni38 Ni44 Ni39 n669 Ni37 n749
+-0011 1
+-1111 1
+0--11 1
+.names Ni38 Ni37 n750
+01 1
+.names Ni43 Ni42 Ni44 Ni39 Ni37 n751
+-1001 1
+-1111 1
+1-001 1
+1-111 1
+.names n753 n754 Pi20 Ni39 Ni38 n752
+11001 0
+11111 0
+.names Ni35 Ni32 n753
+11 1
+.names Ni37 Ni36 n754
+00 1
+.names n754 n756 Pi20 Ni39 n755
+1100 0
+1111 0
+.names Ni38 Ni35 Ni30 n756
+110 1
+.names n720 Ni36 n767 n766 n758 n992
+----1 1
+--01- 1
+01--- 1
+.names Pi24 n580 n764 n765 n759 n758
+--001 1
+-0--1 1
+1--01 1
+.names n763 Pi24 n761 n760 n613 n759
+--011 1
+11-11 1
+.names n720 Ni7 n760
+10 1
+.names Ni32 Ni36 n731 n580 n762 n761
+--001 1
+-0-01 1
+1--01 1
+.names Ni32 Ni31 Ni30 Ni36 n762
+---0 1
+001- 1
+.names n732 Ni33 n763
+10 1
+.names n762 n731 Pi27 Ni32 n764
+-110 0
+0--- 0
+.names Pi27 Ni33 n732 n762 n765
+--01 1
+01-1 1
+.names Ni33 Ni32 n764 n580 Ni36 n766
+---01 1
+--01- 1
+00--1 1
+.names n720 n613 Ni7 n767
+-10 1
+0-- 1
+.names n720 Ni35 n767 n776 n769 n997_1
+----1 1
+--00- 1
+01--- 1
+.names Pi23 n580 n774 n775 n770 n769
+--001 1
+-0--1 1
+1--01 1
+.names n763 Pi23 n771 n760 n613 n770
+--011 1
+11-11 1
+.names n773 n731 n772 n580 n771
+-010 1
+0-10 1
+.names Ni32 Ni31 Ni30 Ni35 n772
+---0 1
+001- 1
+.names Ni35 Ni32 n773
+10 1
+.names n772 n731 Pi26 Ni32 n774
+-110 0
+0--- 0
+.names Pi26 Ni33 n732 n772 n775
+--01 1
+01-1 1
+.names n763 n580 n774 Ni35 n776
+--10 1
+-0-0 1
+011- 1
+.names n1203 n1061 n778 Ni10 n573 n1002
+--011 1
+-0--1 1
+0---- 1
+.names n567 n1018 n779 Pi15 n902 n778
+--100 1
+-1-10 1
+0---0 1
+.names n901 n895 n891 n896 n780 n779
+-1000 1
+0--00 1
+.names n845 n867 n883 n781 Pi20 n780
+---10 0
+110-1 0
+.names n844 n843 n837 n818 n782 n781
+-1011 1
+0--11 1
+.names n796 n817 n807 n816 n783 n782
+--011 1
+-0--1 1
+0--11 1
+.names n796 n690 n801 n806 n784 n783
+--010 1
+-0--0 1
+0--10 1
+.names n794 n785 n796 n800 n784
+-111 1
+0--1 1
+.names n793 n786 Ni34 n18 n785
+-010 1
+1100 1
+.names n787 n791 n786
+10 1
+.names n790 n788 n705 n789 n750 n787
+-0110 1
+1--10 1
+.names Ni42 Ni45 Ni44 Ni43 Ni47 n788
+-0100 0
+1---- 0
+.names Ni42 Ni43 Ni47 Ni45 n789
+-100 1
+0-00 1
+.names Ni36 Ni38 Ni39 Ni37 n790
+-010 1
+1--0 1
+.names n788 n705 n792 n791
+-01 1
+1-1 1
+.names Ni37 Ni36 n792
+01 1
+.names Ni32 Ni31 Ni30 n793
+000 1
+.names Ni33 Ni34 n795 n786 n797 n794
+--0-1 1
+-0-01 1
+0--11 1
+.names n796 n793 n18 n795
+111 1
+.names Pi22 Pi21 n796
+11 1
+.names Ni34 n799 n798 n797
+-10 1
+0-0 1
+.names Pi21 Pi22 Ni34 n798
+-01 1
+0-1 1
+.names Ni32 Ni31 Ni30 n799
+000 1
+.names n691 Pi16 n800
+10 1
+.names n793 n802 Ni34 n18 n801
+-010 1
+1100 1
+.names n792 n790 n804 n803 n802
+--11 1
+01-1 1
+.names n750 n789 n803
+01 1
+.names Ni41 n788 n805 n804
+-01 1
+1-1 1
+.names Ni47 Ni45 Ni43 Ni42 n805
+0000 1
+.names Ni33 Ni34 n795 n802 n797 n806
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n808 Ni34 n18 n807
+-010 1
+1100 1
+.names n809 n813 n815 n808
+001 1
+.names Ni37 n789 n810 Ni38 n812 n809
+--011 1
+-0--1 1
+1--01 1
+.names Ni40 n788 n705 n811 n810
+-011 1
+1--1 1
+.names Ni47 Ni45 Ni43 Ni42 Ni41 n811
+00000 1
+.names Ni36 Ni35 n812
+01 1
+.names n789 n810 n814 Ni35 n813
+-010 1
+0--0 1
+.names Ni38 Ni39 n754 n814
+-01 1
+1-1 1
+.names Ni36 Ni38 Ni37 n810 n815
+--01 1
+-1-1 1
+0-0- 1
+.names Ni33 Ni34 n795 n808 n797 n816
+--0-1 1
+-0-01 1
+0--11 1
+.names n736 Pi16 n817
+10 1
+.names n796 n836 n828 n835 n819 n818
+--010 1
+-0--0 1
+0--10 1
+.names n826 n820 n796 n827 n819
+-111 1
+0--1 1
+.names n793 n821 Ni34 n18 n820
+-010 1
+1100 1
+.names n822 n824 n825 n821
+001 1
+.names Ni37 n789 n823 Ni38 n812 n822
+--011 1
+-0--1 1
+1--01 1
+.names n788 Ni41 Ni40 n805 n823
+---0 0
+100- 0
+.names n789 n823 n814 Ni35 n824
+-010 1
+0--0 1
+.names Ni36 Ni38 Ni37 n823 n825
+--01 1
+-1-1 1
+0-0- 1
+.names Ni33 Ni34 n795 n821 n797 n826
+--0-1 1
+-0-01 1
+0--11 1
+.names n736 Pi16 n827
+11 1
+.names n793 n829 Ni34 n18 n828
+-010 1
+1100 1
+.names n830 n833 n834 n829
+001 1
+.names Ni37 n789 n831 Ni38 n832 n830
+--011 1
+-0--1 1
+1--01 1
+.names n788 Ni41 Ni40 n805 n831
+---0 0
+101- 0
+.names Ni36 Ni35 n832
+00 1
+.names n789 n831 n814 Ni35 n833
+-011 1
+0--1 1
+.names Ni36 Ni38 Ni37 n831 n834
+--01 1
+-1-1 1
+0-0- 1
+.names Ni33 Ni34 n795 n829 n797 n835
+--0-1 1
+-0-01 1
+0--11 1
+.names n743 Pi16 n836
+11 1
+.names n793 n796 n838 Ni34 n18 n837
+-1010 1
+11100 1
+.names n839 n841 n842 n838
+001 1
+.names Ni37 n789 n840 Ni38 n832 n839
+--011 1
+-0--1 1
+1--01 1
+.names Ni40 n788 n705 n811 n840
+-011 1
+0--1 1
+.names n789 n814 n840 Ni35 n841
+-101 1
+0--1 1
+.names Ni36 Ni38 Ni37 n840 n842
+--01 1
+-1-1 1
+0-0- 1
+.names Ni33 Ni34 n795 n838 n797 n843
+--0-1 1
+-0-01 1
+0--11 1
+.names n743 Pi16 n844
+10 1
+.names n796 n817 n859 n866 n846 n845
+--011 1
+-0--1 1
+0--11 1
+.names n796 n690 n855 n858 n847 n846
+--010 1
+-0--0 1
+0--10 1
+.names n854 n848 n796 n800 n847
+-111 1
+0--1 1
+.names n793 n849 Ni34 n18 n848
+-010 1
+1100 1
+.names n850 n853 n849
+10 1
+.names n852 n851 n705 n750 n789 n850
+-0101 1
+1--01 1
+.names Ni42 Ni45 Ni44 Ni43 Ni47 n851
+-0000 0
+1---- 0
+.names Ni36 Ni38 Ni39 Ni37 n852
+-000 1
+1--0 1
+.names n851 n705 n792 n853
+-01 1
+1-1 1
+.names Ni33 Ni34 n795 n849 n797 n854
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n856 Ni34 n18 n855
+-010 1
+1100 1
+.names n792 n852 n857 n803 n856
+--11 1
+01-1 1
+.names Ni41 n851 n805 n857
+-01 1
+1-1 1
+.names Ni33 Ni34 n795 n856 n797 n858
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n860 Ni34 n18 n859
+-010 1
+1100 1
+.names n861 n863 n865 n860
+001 1
+.names Ni37 n789 n862 Ni38 n812 n861
+--011 1
+-0--1 1
+1--01 1
+.names Ni40 n851 n705 n811 n862
+-011 1
+1--1 1
+.names n789 n862 n864 Ni35 n863
+-010 1
+0--0 1
+.names Ni38 Ni39 n754 n864
+-11 1
+1-1 1
+.names Ni36 Ni38 Ni37 n862 n865
+--01 1
+-1-1 1
+0-0- 1
+.names Ni33 Ni34 n795 n860 n797 n866
+--0-1 1
+-0-01 1
+0--11 1
+.names n796 n836 n876 n882 n868 n867
+--010 1
+-0--0 1
+0--10 1
+.names n875 n869 n796 n827 n868
+-111 1
+0--1 1
+.names n793 n870 Ni34 n18 n869
+-010 1
+1100 1
+.names n871 n873 n874 n870
+001 1
+.names Ni37 n789 n872 Ni38 n812 n871
+--011 1
+-0--1 1
+1--01 1
+.names n851 Ni41 Ni40 n805 n872
+---0 0
+100- 0
+.names n789 n872 n864 Ni35 n873
+-010 1
+0--0 1
+.names Ni36 Ni38 Ni37 n872 n874
+--01 1
+-1-1 1
+0-0- 1
+.names Ni33 Ni34 n795 n870 n797 n875
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n877 Ni34 n18 n876
+-010 1
+1100 1
+.names n878 n880 n881 n877
+001 1
+.names Ni37 n789 n879 Ni38 n832 n878
+--011 1
+-0--1 1
+1--01 1
+.names n851 Ni41 Ni40 n805 n879
+---0 0
+101- 0
+.names n789 n879 n864 Ni35 n880
+-011 1
+0--1 1
+.names Ni36 Ni38 Ni37 n879 n881
+--01 1
+-1-1 1
+0-0- 1
+.names Ni33 Ni34 n795 n877 n797 n882
+--0-1 1
+-0-01 1
+0--11 1
+.names n890 n884 n796 n844 n883
+-111 1
+0--1 1
+.names n793 n885 Ni34 n18 n884
+-010 1
+1100 1
+.names n886 n888 n889 n885
+001 1
+.names Ni37 n789 n887 Ni38 n832 n886
+--011 1
+-0--1 1
+1--01 1
+.names Ni40 n851 n705 n811 n887
+-011 1
+0--1 1
+.names n789 n864 n887 Ni35 n888
+-101 1
+0--1 1
+.names Ni36 Ni38 Ni37 n887 n889
+--01 1
+-1-1 1
+0-0- 1
+.names Ni33 Ni34 n795 n885 n797 n890
+--0-1 1
+-0-01 1
+0--11 1
+.names n892 n796 n891
+11 1
+.names n793 n893 Ni34 n18 n892
+-010 1
+1100 1
+.names Ni36 n811 n894 n893
+-11 1
+0-1 1
+.names Ni38 n811 n803 n894
+-11 1
+0-1 1
+.names Ni33 Ni34 n795 n893 n797 n895
+--0-1 1
+-0-01 1
+0--11 1
+.names n900 n897 n796 n699 Pi16 n896
+-1111 1
+0--11 1
+.names n793 n898 Ni34 n18 n897
+-010 1
+1100 1
+.names Ni36 n805 n899 n898
+-11 1
+0-1 1
+.names Ni37 n805 Ni38 n789 n899
+-111 1
+0-01 1
+.names Ni33 Ni34 n795 n898 n797 n900
+--0-1 1
+-0-01 1
+0--11 1
+.names n699 Pi16 n901
+10 1
+.names n1011 n991 n971 Pi20 n903 n902
+--001 1
+-0-11 1
+0---1 1
+.names n965 n936 n904 Pi20 n567 n903
+--000 1
+-0-10 1
+0---0 1
+.names n905 n917 n922 n927 n904
+1001 1
+.names n916 n913 n906 n836 n827 n905
+--01- 0
+-1--1 0
+0---1 0
+.names n912 n910 n911 n907 n906
+-110 1
+0-10 1
+.names Ni34 n908 n795 Ni33 n907
+-111 1
+1-11 1
+.names n909 n833 n908
+10 1
+.names Ni37 n831 Ni38 n789 n909
+-111 1
+0-01 1
+.names n793 n908 Ni34 n910
+-00 1
+0-0 1
+.names n797 n795 Ni34 Ni33 n911
+-110 0
+0--- 0
+.names n796 n18 n912
+10 1
+.names Ni34 n914 n795 Ni33 n913
+-111 1
+1-11 1
+.names n915 n824 n914
+10 1
+.names Ni37 n823 Ni38 n789 n915
+-111 1
+0-01 1
+.names n793 n912 n914 Ni34 n911 n916
+--001 1
+-0--1 1
+0--01 1
+.names n911 n921 n912 n918 n844 n917
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n919 n795 Ni33 n918
+-111 1
+1-11 1
+.names n920 n841 n919
+10 1
+.names Ni37 n840 Ni38 n789 n920
+-111 1
+0-01 1
+.names n793 n919 Ni34 n921
+-00 1
+0-0 1
+.names n911 n926 n912 n923 n817 n922
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n924 n795 Ni33 n923
+-111 1
+1-11 1
+.names n925 n813 n924
+10 1
+.names Ni37 n810 Ni38 n789 n925
+-111 1
+0-01 1
+.names n793 n924 Ni34 n926
+-00 1
+0-0 1
+.names n932_1 n690 n928 n800 n927
+--01 0
+01-- 0
+.names Ni33 n795 Ni34 n930 n929 n928
+--001 1
+-0--1 1
+0---1 1
+.names n793 n912 n930 Ni34 n911 n929
+--001 1
+-0--1 1
+0--01 1
+.names n787 n931 n930
+10 1
+.names n788 n705 n748 n931
+-01 1
+1-1 1
+.names n912 n935 n911 n933 n932_1
+-110 1
+0-10 1
+.names Ni34 n934 n795 Ni33 n933
+-111 1
+1-11 1
+.names n748 n790 n804 n803 n934
+--11 1
+01-1 1
+.names n793 n934 Ni34 n935
+-00 1
+0-0 1
+.names n937_1 n947 n952 n957 n936
+1001 1
+.names n946 n943 n938 n836 n827 n937_1
+--01- 0
+-1--1 0
+0---1 0
+.names n912 n942 n911 n939 n938
+-110 1
+0-10 1
+.names Ni34 n940 n795 Ni33 n939
+-111 1
+1-11 1
+.names n941 n880 n940
+10 1
+.names Ni37 n879 Ni38 n789 n941
+-111 1
+0-01 1
+.names n793 n940 Ni34 n942
+-00 1
+0-0 1
+.names Ni34 n944 n795 Ni33 n943
+-111 1
+1-11 1
+.names n945 n873 n944
+10 1
+.names Ni37 n872 Ni38 n789 n945
+-111 1
+0-01 1
+.names n793 n912 n944 Ni34 n911 n946
+--001 1
+-0--1 1
+0--01 1
+.names n911 n951 n912 n948 n844 n947
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n949 n795 Ni33 n948
+-111 1
+1-11 1
+.names n950 n888 n949
+10 1
+.names Ni37 n887 Ni38 n789 n950
+-111 1
+0-01 1
+.names n793 n949 Ni34 n951
+-00 1
+0-0 1
+.names n911 n956 n912 n953 n817 n952
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n954 n795 Ni33 n953
+-111 1
+1-11 1
+.names n955 n863 n954
+10 1
+.names Ni37 n862 Ni38 n789 n955
+-111 1
+0-01 1
+.names n793 n954 Ni34 n956
+-00 1
+0-0 1
+.names n962_1 n690 n958 n800 n957
+--01 0
+01-- 0
+.names Ni33 n795 Ni34 n960 n959 n958
+--001 1
+-0--1 1
+0---1 1
+.names n793 n912 n960 Ni34 n911 n959
+--001 1
+-0--1 1
+0--01 1
+.names n850 n961 n960
+10 1
+.names n851 n705 n748 n961
+-01 1
+1-1 1
+.names Ni33 n795 Ni34 n964 n963 n962_1
+--001 1
+-0--1 1
+0---1 1
+.names n793 n912 n964 Ni34 n911 n963
+--001 1
+-0--1 1
+0--01 1
+.names n748 n852 n857 n803 n964
+--11 1
+01-1 1
+.names n699 n969 n966 Pi16 Pi15 n965
+--101 1
+-1-11 1
+0---1 1
+.names n912 n968 n911 n967 n966
+-110 1
+0-10 1
+.names Ni34 n894 n795 Ni33 n967
+-111 1
+1-11 1
+.names n793 n894 Ni34 n968
+-00 1
+0-0 1
+.names Ni33 n899 Ni34 n795 n970 n969
+---01 1
+-00-1 1
+0---1 1
+.names n793 n912 n899 Ni34 n911 n970
+--001 1
+-0--1 1
+0--01 1
+.names n817 n981 n972 n984 n978 n971
+-1110 1
+0-110 1
+.names n836 n977_1 n911 n976 n973 n972
+-0100 1
+0---0 1
+.names n911 n975 n912 n974 n827 n973
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n821 n795 Ni33 n974
+-111 1
+1-11 1
+.names n793 n821 Ni34 n975
+-00 1
+0-0 1
+.names Ni34 n829 n795 Ni33 n976
+-111 1
+1-11 1
+.names Ni34 n793 n829 n912 n977_1
+-111 1
+1--1 1
+.names n911 n980 n912 n979 n844 n978
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n838 n795 Ni33 n979
+-111 1
+1-11 1
+.names n793 n838 Ni34 n980
+-00 1
+0-0 1
+.names n912 n983 n911 n982 n981
+-110 1
+0-10 1
+.names Ni34 n808 n795 Ni33 n982
+-111 1
+1-11 1
+.names n793 n808 Ni34 n983
+-00 1
+0-0 1
+.names n795 n690 n990 n988 n985 n984
+--110 1
+-0--0 1
+0--10 1
+.names n911 n987 n912 n986 n800 n985
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n786 n795 Ni33 n986
+-111 1
+1-11 1
+.names n793 n786 Ni34 n987
+-00 1
+0-0 1
+.names n912 n989 n911 n988
+-11 1
+0-1 1
+.names n793 n802 Ni34 n989
+-00 1
+0-0 1
+.names Ni33 Ni34 n802 n990
+-00 1
+0-- 1
+.names n817 n1001 n992_1 n1004 n998 n991
+-1110 1
+0-110 1
+.names n836 n997 n911 n996 n993 n992_1
+-0100 1
+0---0 1
+.names n911 n995 n912 n994 n827 n993
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n870 n795 Ni33 n994
+-111 1
+1-11 1
+.names n793 n870 Ni34 n995
+-00 1
+0-0 1
+.names Ni34 n877 n795 Ni33 n996
+-111 1
+1-11 1
+.names Ni34 n793 n877 n912 n997
+-111 1
+1--1 1
+.names n911 n1000 n912 n999 n844 n998
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n885 n795 Ni33 n999
+-111 1
+1-11 1
+.names n793 n885 Ni34 n1000
+-00 1
+0-0 1
+.names n912 n1003 n911 n1002_1 n1001
+-110 1
+0-10 1
+.names Ni34 n860 n795 Ni33 n1002_1
+-111 1
+1-11 1
+.names n793 n860 Ni34 n1003
+-00 1
+0-0 1
+.names n795 n690 n1010 n1008 n1005 n1004
+--110 1
+-0--0 1
+0--10 1
+.names n911 n1007 n912 n1006 n800 n1005
+---11 1
+-01-1 1
+0---1 1
+.names Ni34 n849 n795 Ni33 n1006
+-111 1
+1-11 1
+.names n793 n849 Ni34 n1007
+-00 1
+0-0 1
+.names n912 n1009 n911 n1008
+-11 1
+0-1 1
+.names n793 n856 Ni34 n1009
+-00 1
+0-0 1
+.names Ni33 Ni34 n856 n1010
+-00 1
+0-- 1
+.names n699 n1015 n1012_1 Pi16 Pi15 n1011
+--100 1
+-1-10 1
+0---0 1
+.names n912 n1014 n911 n1013 n1012_1
+-110 1
+0-10 1
+.names Ni34 n893 n795 Ni33 n1013
+-111 1
+1-11 1
+.names n793 n893 Ni34 n1014
+-00 1
+0-0 1
+.names n912 n1017 n911 n1016 n1015
+-110 1
+0-10 1
+.names Ni34 n898 n795 Ni33 n1016
+-111 1
+1-11 1
+.names n793 n898 Ni34 n1017
+-00 1
+0-0 1
+.names n901 n1057_1 n1056 n1058 n1019 n1018
+-1000 1
+0--00 1
+.names n1038 n1047 n1053 n1020 Pi20 n1019
+---10 0
+110-1 0
+.names n844 n1037 n1036 n1030 n1021 n1020
+-1011 1
+0--11 1
+.names n796 n817 n1028 n1029 n1022 n1021
+--011 1
+-0--1 1
+0--11 1
+.names n796 n690 n1026 n1027_1 n1023 n1022
+--010 1
+-0--0 1
+0--10 1
+.names n1025 n1024 n796 n800 n1023
+-111 1
+0--1 1
+.names n793 n930 Ni34 n18 n1024
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n930 n797 n1025
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n934 Ni34 n18 n1026
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n934 n797 n1027_1
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n924 Ni34 n18 n1028
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n924 n797 n1029
+--0-1 1
+-0-01 1
+0--11 1
+.names n796 n836 n1034 n1035 n1031 n1030
+--010 1
+-0--0 1
+0--10 1
+.names n1033 n1032 n796 n827 n1031
+-111 1
+0--1 1
+.names n793 n914 Ni34 n18 n1032
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n914 n797 n1033
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n908 Ni34 n18 n1034
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n908 n797 n1035
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n796 n919 Ni34 n18 n1036
+-1010 1
+11100 1
+.names Ni33 Ni34 n795 n919 n797 n1037
+--0-1 1
+-0-01 1
+0--11 1
+.names n796 n817 n1045 n1046 n1039 n1038
+--011 1
+-0--1 1
+0--11 1
+.names n796 n690 n1043 n1044 n1040 n1039
+--010 1
+-0--0 1
+0--10 1
+.names n1042_1 n1041 n796 n800 n1040
+-111 1
+0--1 1
+.names n793 n960 Ni34 n18 n1041
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n960 n797 n1042_1
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n964 Ni34 n18 n1043
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n964 n797 n1044
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n954 Ni34 n18 n1045
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n954 n797 n1046
+--0-1 1
+-0-01 1
+0--11 1
+.names n796 n836 n1051 n1052 n1048 n1047
+--010 1
+-0--0 1
+0--10 1
+.names n1050 n1049 n796 n827 n1048
+-111 1
+0--1 1
+.names n793 n944 Ni34 n18 n1049
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n944 n797 n1050
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n940 Ni34 n18 n1051
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n940 n797 n1052
+--0-1 1
+-0-01 1
+0--11 1
+.names n1055 n1054 n796 n844 n1053
+-111 1
+0--1 1
+.names n793 n949 Ni34 n18 n1054
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n949 n797 n1055
+--0-1 1
+-0-01 1
+0--11 1
+.names n793 n796 n894 Ni34 n18 n1056
+-1010 1
+11100 1
+.names Ni33 Ni34 n795 n894 n797 n1057_1
+--0-1 1
+-0-01 1
+0--11 1
+.names n1060 n1059 n796 n699 Pi16 n1058
+-1111 1
+0--11 1
+.names n793 n899 Ni34 n18 n1059
+-010 1
+1100 1
+.names Ni33 Ni34 n795 n899 n797 n1060
+--0-1 1
+-0-01 1
+0--11 1
+.names n1172 n1114 n1062 n567 Ni10 n1061
+-0010 0
+1---- 0
+.names Pi15 n1104 n1094 Pi16 n1063 n1062
+--111 1
+-1-01 1
+1---1 1
+.names n1093 n1090 n1083 n1064 n1063
+-011 1
+0--1 1
+.names n1082_1 n1078 n1065 Pi17 n1064
+-011 1
+0--1 1
+.names Pi25 n1076 n1028 n1066 n1071 n1065
+--011 1
+-0--1 1
+0--11 1
+.names Ni33 n1070 Ni34 n924 n1067 n1066
+--001 1
+-0--1 1
+0---1 1
+.names Ni34 n1069 n924 n1068 n1067
+-011 1
+0-01 1
+.names n799 n793 Ni33 n18 Ni34 n1068
+-1111 0
+0---1 0
+.names P__cmxig_0 n793 Pi25 Ni34 n1069
+1110 1
+.names n793 Pi25 n18 n1070
+111 1
+.names n1075 n1073 n1074 n1072_1 n798 n1071
+-0100 1
+0---0 1
+.names n793 n894 Pi25 Ni34 n18 n1072_1
+-0110 1
+11100 1
+.names Ni34 n894 n1070 Ni33 n1073
+-111 1
+1-11 1
+.names Ni34 n1069 n894 n1068 n1074
+-011 1
+0-01 1
+.names n796 Pi19 n1075
+11 1
+.names n1077_1 Pi19 n1076
+10 1
+.names n796 Pi20 n1077_1
+10 1
+.names n1080 n1079 n1045 Pi25 n1081 n1078
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n954 n1070 Ni33 n1079
+-111 1
+1-11 1
+.names Ni34 n1069 n954 n1068 n1080
+-011 1
+0-01 1
+.names n796 Pi20 Pi19 n1081
+110 1
+.names Pi16 Pi15 n1082_1
+01 1
+.names n1084 n1087 n798 n1083
+000 1
+.names n1086_1 n1085 n1032 Pi25 n1076 n1084
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n914 n1070 Ni33 n1085
+-111 1
+1-11 1
+.names Ni34 n1069 n914 n1068 n1086_1
+-011 1
+0-01 1
+.names n1089 n1088 n1059 Pi25 n1075 n1087
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n899 n1070 Ni33 n1088
+-111 1
+1-11 1
+.names Ni34 n1069 n899 n1068 n1089
+-011 1
+0-01 1
+.names n1092 n1091 n1049 Pi25 n1081 n1090
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n944 n1070 Ni33 n1091
+-111 1
+1-11 1
+.names Ni34 n1069 n944 n1068 n1092
+-011 1
+0-01 1
+.names Pi16 Pi15 n1093
+11 1
+.names Pi25 n1081 n869 n1102 n1095 n1094
+--011 1
+-0--1 1
+0--11 1
+.names n1075 n1100 n1099 n1096 n798 n1095
+-1000 1
+0--00 1
+.names n1098 n1097 n820 Pi25 n1076 n1096
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n821 n1070 Ni33 n1097
+-111 1
+1-11 1
+.names Ni34 n1069 n821 n1068 n1098
+-011 1
+0-01 1
+.names n897 Pi25 n1099
+11 1
+.names Ni33 n1070 Ni34 n898 n1101 n1100
+--001 1
+-0--1 1
+0---1 1
+.names Ni34 n1069 n898 n1068 n1101
+-011 1
+0-01 1
+.names Ni33 n1070 Ni34 n870 n1103 n1102
+--001 1
+-0--1 1
+0---1 1
+.names Ni34 n1069 n870 n1068 n1103
+-011 1
+0-01 1
+.names n1105 n1108 n1111 n798 n1104
+0000 1
+.names n859 Pi25 n1106 n1081 n1105
+--01 1
+11-1 1
+.names Ni33 n1070 Ni34 n860 n1107 n1106
+--001 1
+-0--1 1
+0---1 1
+.names Ni34 n1069 n860 n1068 n1107
+-011 1
+0-01 1
+.names n892 Pi25 n1109 n1075 n1108
+--01 1
+11-1 1
+.names Ni33 n1070 Ni34 n893 n1110 n1109
+--001 1
+-0--1 1
+0---1 1
+.names Ni34 n1069 n893 n1068 n1110
+-011 1
+0-01 1
+.names n1113 n1112 n807 Pi25 n1076 n1111
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n808 n1070 Ni33 n1112
+-111 1
+1-11 1
+.names Ni34 n1069 n808 n1068 n1113
+-011 1
+0-01 1
+.names Pi15 n1158 n1145 Pi16 n1115 n1114
+--111 1
+-1-01 1
+1---1 1
+.names Pi15 n1132 n1116 Pi16 Pi17 n1115
+--100 1
+-1-10 1
+0---0 1
+.names n1131 n1130 n1128 n1124 n1117 n1116
+-0101 1
+0--01 1
+.names Pi25 n1081 n1041 n1122 n1118 n1117
+--011 1
+-0--1 1
+0--11 1
+.names n1076 n1120 n1121 n1119 n798 n1118
+-0100 1
+0---0 1
+.names n1024 Pi25 n1119
+11 1
+.names Ni34 n930 n1070 Ni33 n1120
+-111 1
+1-11 1
+.names Ni34 n1069 n930 n1068 n1121
+-011 1
+0-01 1
+.names Ni33 n1070 Ni34 n960 n1123 n1122
+--001 1
+-0--1 1
+0---1 1
+.names Ni34 n1069 n960 n1068 n1123
+-011 1
+0-01 1
+.names n1126 n1125 n1054 Pi25 n1127 n1124
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n949 n1070 Ni33 n1125
+-111 1
+1-11 1
+.names Ni34 n1069 n949 n1068 n1126
+-011 1
+0-01 1
+.names n796 Pi20 Pi19 n1127
+111 1
+.names Ni33 n1070 Ni34 n919 n1129 n1128
+--001 1
+-0--1 1
+0---1 1
+.names Ni34 n1069 n919 n1068 n1129
+-011 1
+0-01 1
+.names n793 n919 Pi25 Ni34 n18 n1130
+-0110 1
+11100 1
+.names n1077_1 Pi19 n1131
+11 1
+.names n1133 n1136 n1139 n1142 n798 n1132
+00000 1
+.names n1135 n1134 n1051 Pi25 n1127 n1133
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n940 n1070 Ni33 n1134
+-111 1
+1-11 1
+.names Ni34 n1069 n940 n1068 n1135
+-011 1
+0-01 1
+.names n1138 n1137 n1034 Pi25 n1131 n1136
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n908 n1070 Ni33 n1137
+-111 1
+1-11 1
+.names Ni34 n1069 n908 n1068 n1138
+-011 1
+0-01 1
+.names n1141 n1140 n1043 Pi25 n1081 n1139
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n964 n1070 Ni33 n1140
+-111 1
+1-11 1
+.names Ni34 n1069 n964 n1068 n1141
+-011 1
+0-01 1
+.names n1144 n1143 n1026 Pi25 n1076 n1142
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n934 n1070 Ni33 n1143
+-111 1
+1-11 1
+.names Ni34 n1069 n934 n1068 n1144
+-011 1
+0-01 1
+.names n1081 n1156 n1153 n1146 n1150 n1145
+-1100 1
+0-100 1
+.names n1149 n876 Pi25 n1147 n1127 n1146
+---01 1
+-11-1 1
+1---1 1
+.names n1069 n877 n1148 n1147
+-01 1
+0-1 1
+.names Ni34 n877 n1068 n1148
+-11 1
+0-1 1
+.names Ni34 n877 n1070 Ni33 n1149
+-111 1
+1-11 1
+.names n1152 n1151 n828 Pi25 n1131 n1150
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n829 n1070 Ni33 n1151
+-111 1
+1-11 1
+.names Ni34 n1069 n829 n1068 n1152
+-011 1
+0-01 1
+.names Pi25 n1076 n801 n1154 n798 n1153
+--010 1
+-0--0 1
+0--10 1
+.names n1070 n990 n1155 n1154
+-11 1
+0-1 1
+.names Ni34 n1069 n802 n1068 n1155
+-011 1
+0-01 1
+.names n1157 n1010 n1070 n855 Pi25 n1156
+---11 0
+-01-- 0
+0---- 0
+.names Ni34 n1069 n856 n1068 n1157
+-011 1
+0-01 1
+.names n1131 n1171 n1169 n1166 n1159 n1158
+-0101 1
+0--01 1
+.names Pi25 n1081 n848 n1164 n1160 n1159
+--011 1
+-0--1 1
+0--11 1
+.names n1076 n1162 n1163 n1161 n798 n1160
+-0100 1
+0---0 1
+.names n785 Pi25 n1161
+11 1
+.names Ni34 n786 n1070 Ni33 n1162
+-111 1
+1-11 1
+.names Ni34 n1069 n786 n1068 n1163
+-011 1
+0-01 1
+.names Ni33 n1070 Ni34 n849 n1165 n1164
+--001 1
+-0--1 1
+0---1 1
+.names Ni34 n1069 n849 n1068 n1165
+-011 1
+0-01 1
+.names n1168 n1167 n884 Pi25 n1127 n1166
+--111 1
+-1--1 1
+0---1 1
+.names Ni34 n885 n1070 Ni33 n1167
+-111 1
+1-11 1
+.names Ni34 n1069 n885 n1068 n1168
+-011 1
+0-01 1
+.names Ni33 n1070 Ni34 n838 n1170 n1169
+--001 1
+-0--1 1
+0---1 1
+.names Ni34 n1069 n838 n1068 n1170
+-011 1
+0-01 1
+.names n793 n838 Pi25 Ni34 n18 n1171
+-0110 1
+11100 1
+.names n1173 n1188 n567 Ni10 n1172
+0000 1
+.names n836 n1185 n1187 n1174 n1173
+-101 1
+0-01 1
+.names n1175 n1178 n1179 n1183 n1184 n1174
+00100 1
+.names n1003 n1177 n1176 n983 n817 n1175
+--101 1
+01--1 1
+.names n1077_1 Pi25 n1176
+11 1
+.names n796 Pi25 Pi20 n1177
+111 1
+.names n1000 n1177 n1176 n980 n844 n1178
+--101 1
+01--1 1
+.names n1182 n1017 n1014 Pi16 n1180 n1179
+--101 1
+-1--1 1
+0---1 1
+.names Ni34 n1181 Pi15 n798 n1180
+-000 1
+0-00 1
+.names n796 Pi25 n1181
+10 1
+.names n699 n796 Pi25 n1182
+111 1
+.names n1009 n1177 n1176 n989 n690 n1183
+--101 1
+01--1 1
+.names n1007 n1177 n1176 n987 n800 n1184
+--101 1
+01--1 1
+.names n793 n1176 n829 Ni34 n1186 n1185
+--000 1
+-0--0 1
+0--00 1
+.names Ni34 n793 n877 n1177 n1186
+-111 1
+1--1 1
+.names n995 n1177 n1176 n975 n827 n1187
+--101 1
+01--1 1
+.names n1189 n1193 n1194 n1195 n1188
+1001 1
+.names n1192 n836 n827 n1190 n1189
+--10 0
+01-- 0
+.names n793 n1176 n914 Ni34 n1191 n1190
+--000 1
+-0--0 1
+0--00 1
+.names Ni34 n793 n944 n1177 n1191
+-111 1
+1--1 1
+.names n942 n1177 n1176 n910 n1192
+--10 0
+01-- 0
+.names n951 n1177 n1176 n921 n844 n1193
+--101 1
+01--1 1
+.names n956 n1177 n1176 n926 n817 n1194
+--101 1
+01--1 1
+.names n800 n1198 n1200 n1196 n1195
+-110 1
+0-10 1
+.names n1197 n935 n1176 n690 n1196
+-011 1
+1--1 1
+.names Ni34 n793 n964 n1177 n1197
+-111 1
+1--1 1
+.names n793 n1176 n930 Ni34 n1199 n1198
+--000 1
+-0--0 1
+0--00 1
+.names Ni34 n793 n960 n1177 n1199
+-111 1
+1--1 1
+.names n1201 n968 Pi16 n1202 n1200
+-101 1
+0--1 1
+.names Ni34 n793 n899 n1182 n1201
+-111 1
+1--1 1
+.names Ni34 n1181 Pi15 n798 n1202
+-010 1
+0-10 1
+.names P__cmxcl_1 n574 n1204 Ni34 n1203
+-001 0
+0--1 0
+.names n1220 n1233 n1205 n567 Pi17 n1204
+--111 1
+10-10 1
+.names n1219 n1217 n1216 n1206 n1205
+-101 1
+0--1 1
+.names n1213 n1210 n1207 Pi16 Pi15 n1206
+--000 0
+-0-11 0
+0--01 0
+.names Ni34 n1081 n860 n1068 n1208 n1207
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1076 n808 n1068 n1209 n1208
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1075 n893 n1068 n798 n1209
+--110 1
+-0--0 1
+0--10 1
+.names Ni34 n1081 n944 n1068 n1211 n1210
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1076 n914 n1068 n1212 n1211
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1075 n899 n1068 n798 n1212
+--110 1
+-0--0 1
+0--10 1
+.names Ni34 n1081 n954 n1068 n1214 n1213
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1076 n924 n1068 n1215 n1214
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1075 n894 n1068 n798 n1215
+--110 1
+-0--0 1
+0--10 1
+.names n1068 n870 Ni34 n1081 n1216
+-011 1
+0--1 1
+.names Ni34 n1076 n821 n1068 n1218 n1217
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1075 n898 n1068 n798 n1218
+--110 1
+-0--0 1
+0--10 1
+.names Pi16 Pi15 n1219
+10 1
+.names n1229 n1225 n1221 Pi16 Pi15 n1220
+--011 0
+-0-00 0
+0--01 0
+.names Ni34 n1127 n940 n1068 n1222 n1221
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1131 n908 n1068 n1223 n1222
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1081 n964 n1068 n1224 n1223
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1076 n934 n1068 n798 n1224
+--110 1
+-0--0 1
+0--10 1
+.names Ni34 n1127 n885 n1068 n1226 n1225
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1131 n838 n1068 n1227 n1226
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1081 n849 n1068 n1228 n1227
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1076 n786 n1068 n798 n1228
+--110 1
+-0--0 1
+0--10 1
+.names Ni34 n1127 n949 n1068 n1230 n1229
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1131 n919 n1068 n1231 n1230
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1081 n960 n1068 n1232 n1231
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1076 n930 n1068 n798 n1232
+--110 1
+-0--0 1
+0--10 1
+.names n1148 n1127 n1234 n1219 n1233
+--01 1
+01-1 1
+.names Ni34 n1131 n829 n1068 n1235 n1234
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1081 n856 n1068 n1236 n1235
+--111 1
+-0--1 1
+0--11 1
+.names Ni34 n1076 n802 n1068 n798 n1236
+--110 1
+-0--0 1
+0--10 1
+.names n573 n1560 n1643 n1368 n1238 n1007_1
+-0000 0
+0---0 0
+.names Ni33 n1239 P__cmxcl_1 n1238
+-11 1
+1-0 1
+.names n1324 n1240 n1367 n574 n1239
+-010 1
+0--0 1
+.names n1280 n1321 n1241 n1299 Pi20 n1240
+--110 1
+01-11 1
+.names n1278 n1242 n1270 n1241
+-11 1
+0-1 1
+.names n743 n1262 n1243 Pi16 n1265 n1242
+--101 1
+-1-11 1
+0---1 1
+.names n812 n1260 n1244 n1243
+-11 1
+1-1 1
+.names n1259 n1245 n1254 n1244
+-11 1
+1-1 1
+.names Ni40 n1252 n1246 n1245
+-11 1
+1-1 1
+.names Ni41 n1247 n1251 n1246
+-11 1
+1-1 1
+.names n1250 n1249 n1248 n1247
+-11 1
+0-1 1
+.names Ni46 Ni47 Ni48 Ni45 n1248
+-110 0
+1--1 0
+.names Ni46 Ni47 Ni48 Ni45 n1249
+-100 1
+0--1 1
+.names Ni44 Ni43 n1250
+10 1
+.names n1249 n1250 Ni42 n1248 n1251
+---0 0
+011- 0
+.names Ni41 n1253 n1251 n1252
+-11 1
+1-1 1
+.names Ni43 Ni44 Ni42 n1249 n1248 n1253
+---11 1
+-01-1 1
+1---1 1
+.names n1258 n1256 n1255 n1254
+-10 1
+0-0 1
+.names n1249 n1248 Ni39 Ni38 Ni37 n1255
+-0001 1
+0-101 1
+.names n1257 Ni42 n1249 n1248 n1256
+--11 1
+11-1 1
+.names Ni44 Ni43 n1257
+00 1
+.names Ni39 Ni38 Ni37 Ni36 n1258
+1000 1
+.names n814 n740 n1259
+00 1
+.names n671 n1245 n1261 n1260
+-10 1
+0-0 1
+.names n1256 Ni38 Ni37 n1261
+000 1
+.names n1264 n1259 n1263 n1254 n1262
+-101 1
+1-01 1
+.names n1264 n671 n1261 n812 n1263
+--10 1
+01-0 1
+.names Ni41 Ni40 n1253 n1247 n1264
+--11 1
+01-1 1
+.names n1269 n800 n690 n1266 n1265
+--10 0
+01-- 0
+.names n1267 n1259 n748 n1268 n1254 n1266
+-1001 1
+1--01 1
+.names Ni41 n1253 n1247 n1267
+-11 1
+0-1 1
+.names n1256 n792 Ni38 n1268
+010 1
+.names n1246 n1259 n748 n1268 n1254 n1269
+-1001 1
+1--01 1
+.names n796 n1271 n1275 n1270
+-11 1
+0-1 1
+.names n1274 n793 Ni34 Ni33 n1272 n1271
+----0 0
+0100- 0
+.names Ni33 n750 n1256 n1255 n1273 n1272
+--101 1
+-1-01 1
+0---1 1
+.names Ni32 Ni31 Ni30 Ni33 n1273
+---0 1
+000- 1
+.names n750 n1251 n1255 n1274
+-10 1
+1-0 1
+.names Pi22 n1277 n1276 n1273 Pi21 n1275
+--010 1
+-0-11 1
+1---1 1
+.names n793 Ni46 Ni45 n1276
+111 1
+.names n793 n1248 n1277
+10 1
+.names n1279 n796 n1278
+11 1
+.names n793 Ni34 Ni33 n1279
+110 1
+.names n1281 n1278 n1280
+01 1
+.names n743 n1292 n1282 Pi16 n1296 n1281
+--101 1
+-1-11 1
+0---1 1
+.names n1283 n1291 n1282
+10 1
+.names n1290 n1285 n1284 n1288 n1283
+-101 1
+1--1 1
+.names n1252 Ni40 n1284
+00 1
+.names n1286 n1251 n1285
+11 1
+.names n1287 n1249 n1247 Ni42 Ni41 n1286
+--010 0
+00-00 0
+.names n1248 n1257 n1287
+10 1
+.names n1289 n1256 n1255 n1288
+-10 1
+0-0 1
+.names Ni39 Ni38 Ni37 Ni36 n1289
+0000 1
+.names n864 n740 n1290
+00 1
+.names n1261 n1285 n1284 n671 n812 n1291
+--110 1
+-0-10 1
+1---0 1
+.names n812 n1295 n1293 n1292
+-11 1
+1-1 1
+.names Ni40 n1253 n1290 n1294 n1288 n1293
+--1-1 1
+-1-11 1
+1--11 1
+.names Ni41 n1253 n1286 n1294
+-11 1
+0-1 1
+.names Ni40 n671 n1253 n1294 n1261 n1295
+--110 1
+-0--0 1
+1--10 1
+.names n1298 n800 n690 n1297 n1296
+--10 0
+01-- 0
+.names n1290 n748 n1294 n1268 n1288 n1297
+--101 1
+10-01 1
+.names n1290 n748 n1285 n1268 n1288 n1298
+--101 1
+10-01 1
+.names Pi17 n1308 n1319 n1300 Pi16 n1299
+--000 1
+-1--1 1
+0---- 1
+.names n1304 n1301 n1278 Pi20 Pi19 n1300
+-0100 1
+0-110 1
+.names n1259 n1303 n1254 n1302 n1301
+-110 1
+1-10 1
+.names n1261 n1303 n671 n832 n1302
+-010 1
+1--0 1
+.names Ni40 n1252 n1246 n1303
+-11 1
+0-1 1
+.names n1305 n1307 n1304
+10 1
+.names n1290 n1306 n1285 n1288 n1305
+-011 1
+1--1 1
+.names n1252 Ni40 n1306
+01 1
+.names n1261 n1306 n1285 n671 n832 n1307
+--010 1
+-1-10 1
+1---0 1
+.names n1316 n1318 n1278 n1309 n1308
+--10 0
+01-- 0
+.names Pi19 n1313 n1315 n1310 Pi20 n1309
+---10 1
+-10-1 1
+1---- 1
+.names n1312 n1259 n1311 n1254 n1310
+-101 1
+1-01 1
+.names n1312 n671 n1261 n832 n1311
+--10 1
+01-0 1
+.names Ni41 Ni40 n1253 n1247 n1312
+--11 1
+00-1 1
+.names n1290 n1294 n1314 n1288 n1313
+-101 1
+1--1 1
+.names n1253 Ni40 n1314
+01 1
+.names n1314 n1261 n1294 n671 n832 n1315
+--010 1
+-1--0 1
+1--10 1
+.names n1317 n1279 n1271 Pi22 n1316
+--01 0
+01-1 0
+.names Ni38 n1253 n1261 n1255 n1317
+-100 1
+0-00 1
+.names Pi21 Pi19 n1318
+11 1
+.names n1320 n1279 n1271 n1318 Pi22 n1319
+--011 1
+01-11 1
+.names Ni38 n1252 n1255 n1261 n1320
+-100 1
+0-00 1
+.names n796 n1271 n1322 n1321
+-11 1
+0-1 1
+.names Pi22 n1249 n793 n1273 n1323 n1322
+--010 1
+-1-10 1
+1---0 1
+.names Ni45 Ni46 n1273 n793 Pi21 n1323
+--0-0 1
+-1-10 1
+0--10 1
+.names Pi15 n1364 n1344 n1325 n567 n1324
+--101 1
+-1--0 1
+1---1 1
+.names n1321 n1335 n1278 n1326 Pi20 n1325
+---00 1
+-01-1 1
+0---1 1
+.names n844 n1278 n1327 n1329 n1270 n1326
+--111 1
+-0--1 1
+0--11 1
+.names n832 n1260 n1328 n1327
+-11 1
+0-1 1
+.names n1259 n792 n1245 n1254 n1328
+--11 1
+10-1 1
+.names n836 n1330 n1332 n1329
+-11 1
+0-1 1
+.names n1264 n1259 n792 n1254 n1331 n1330
+-1010 1
+1--10 1
+.names n1264 n671 n1261 n832 n1331
+--11 1
+01-1 1
+.names n1334 n800 n690 n1333 n1332
+--10 0
+01-- 0
+.names n1267 n1259 n792 n1254 n1333
+-101 1
+1--1 1
+.names n1246 n1259 n792 n1254 n1334
+-101 1
+1--1 1
+.names n743 n1339 n1336 Pi16 n1341 n1335
+--101 1
+-1-11 1
+0---1 1
+.names n832 n1337 n1338 n1336
+-11 1
+0-1 1
+.names n671 n1285 n1284 n1261 n1337
+-100 1
+0--0 1
+.names n1290 n792 n1284 n1285 n1288 n1338
+--011 1
+10--1 1
+.names n1295 n832 n1293 n792 n1340 n1339
+---10 0
+--0-- 0
+01--- 0
+.names Ni40 n1253 n1294 n1340
+-11 1
+1-1 1
+.names n1343 n800 n690 n1342 n1341
+--10 0
+01-- 0
+.names n1290 n792 n1294 n1288 n1342
+--11 1
+10-1 1
+.names n1290 n792 n1285 n1288 n1343
+--11 1
+10-1 1
+.names Pi17 n1351 n1362 n1345 Pi16 n1344
+--000 1
+-1--1 1
+0---- 1
+.names n1348 n1346 n1278 Pi20 Pi19 n1345
+-0100 1
+0-110 1
+.names n1259 n792 n1303 n1347 n1254 n1346
+--101 1
+10-01 1
+.names n1261 n1303 n671 n812 n1347
+-011 1
+1--1 1
+.names n812 n1349 n1350 n1348
+-11 1
+0-1 1
+.names n671 n1306 n1285 n1261 n1349
+-010 1
+0--0 1
+.names n1290 n792 n1285 n1306 n1288 n1350
+--101 1
+10--1 1
+.names n1361 n1278 n1358 n1354 n1352 n1351
+--100 1
+-0--0 1
+0--00 1
+.names n1271 n1353 n1279 n1318 Pi22 n1352
+-0111 1
+0--11 1
+.names n750 n1253 n1317 n1255 Ni36 n1353
+--100 1
+-1-01 1
+1--01 1
+.names n1355 n1357 n1354
+01 1
+.names n1312 n1259 n792 n1254 n1356 n1355
+-1010 1
+1--10 1
+.names n1312 n671 n1261 n812 n1356
+--11 1
+01-1 1
+.names Pi20 Pi19 n1357
+00 1
+.names n1360 n812 n1313 n792 n1359 n1358
+---10 0
+--0-- 0
+01--- 0
+.names n1294 n1314 n1359
+10 1
+.names n671 n1314 n1294 n1261 n1360
+-010 1
+0--0 1
+.names Pi20 Pi19 n1361
+10 1
+.names n1363 n1279 n1318 Pi22 n1362
+0111 1
+.names n750 n1252 n1320 n1255 Ni36 n1363
+--100 1
+-1-01 1
+1--01 1
+.names n796 n1366 n1272 n1365 n1364
+-011 1
+0--1 1
+.names Pi20 n1322 n1275 n1365
+-11 1
+0-1 1
+.names n1251 n750 n1255 n793 Ni33 n1366
+--110 1
+00-10 1
+.names n567 Pi15 n1367
+11 1
+.names n1531 n1369 n567 Ni10 n1368
+-110 1
+1-11 1
+.names n1472 n1500 n1432 n1370 n1409 n1369
+--101 0
+11--- 0
+.names n1394 n1371 Pi17 Pi16 n1370
+-110 1
+0-10 1
+.names n1391 n1346 n1392 n1372 n1357 n1371
+---11 1
+-01-1 1
+0---1 1
+.names n1387 n1373 n1346 n1279 n1390 n1372
+--011 1
+-1--1 1
+0---1 1
+.names n1384 n1374 n1386 n1373
+-01 1
+0-1 1
+.names Ni40 n1383 n1375 n1381 n1380 n1374
+--111 1
+-1--1 1
+1--11 1
+.names Ni41 n1256 n1376 n1375
+-11 1
+0-1 1
+.names n1379 n1377 n1378 n1376
+-10 1
+0-0 1
+.names n1257 n1249 n1248 n1377
+-11 1
+1-1 1
+.names n1250 n1248 n1249 n705 n1378
+-001 1
+0-01 1
+.names Ni42 Ni41 n1379
+10 1
+.names n1251 Ni38 Ni37 n1255 n1380
+---1 0
+000- 0
+.names Ni41 n1256 n1382 n1381
+-11 1
+0-1 1
+.names Ni42 Ni44 n1249 Ni43 n1248 n1382
+--1-1 1
+-0-01 1
+0--01 1
+.names Ni38 Ni37 n1383
+0- 1
+.names Ni40 n1385 n792 n1375 n1381 n1384
+---11 1
+-00-- 1
+1---1 1
+.names Ni38 Ni39 n754 Ni35 n1385
+-010 1
+1-10 1
+.names Ni34 Ni33 n1386
+01 1
+.names n1388 n1274 n793 Ni34 Ni33 n1387
+-0100 0
+0---- 0
+.names n1389 n750 n1256 n1255 n1273 n1388
+--101 1
+-1-01 1
+0---1 1
+.names Ni34 Ni33 n1389
+11 1
+.names n796 Pi25 n1390
+11 1
+.names n1181 n1272 n1275 n1391
+-11 1
+0-1 1
+.names n1393 n796 n1392
+11 1
+.names n793 Pi25 Ni33 n1393
+100 1
+.names n1361 n1400 n1395 n1365 n1402 n1394
+-1110 1
+0--10 1
+.names n1387 n1396 n1386 n1279 n1348 n1395
+---10 0
+-01-- 0
+0---- 0
+.names n1399 n792 n1383 n1397 n1380 n1396
+---11 1
+001-1 1
+.names Ni40 n1398 n1381 n1397
+-11 1
+1-1 1
+.names Ni41 n1256 n1377 n1398
+-11 1
+0-1 1
+.names Ni38 Ni39 n754 Ni35 n1399
+-110 1
+1-10 1
+.names n1392 n1348 n1401 n1400
+-11 1
+0-1 1
+.names n1181 n1272 n1322 n1401
+-11 1
+0-1 1
+.names n1407 n1363 n1393 n1403 n1408 n1402
+---01 1
+-01-1 1
+1---1 1
+.names n1387 n1404 n1386 n1279 n1363 n1403
+---10 0
+-01-- 0
+0---- 0
+.names n1406 n1381 n1405 n1404
+-11 1
+0-1 1
+.names Ni38 n1381 n1380 n1405
+-11 1
+0-1 1
+.names Ni37 Ni38 Ni36 n1406
+-11 1
+0-1 1
+.names n1272 Pi25 n1407
+00 1
+.names n1318 Pi22 n1408
+11 1
+.names Pi20 n1416 n1410 Pi15 n1409
+-100 1
+0--0 1
+.names n1401 n1339 n1392 n1411 n836 n1410
+---11 1
+-01-1 1
+0---1 1
+.names n1387 n1412 n1339 n1279 n1390 n1411
+--011 1
+-1--1 1
+0---1 1
+.names n1413 n1386 n1412
+01 1
+.names n1415 n792 n1383 n1414 n1380 n1413
+---11 1
+001-1 1
+.names n1382 n1377 Ni41 Ni40 n1414
+-001 0
+0--- 0
+.names Ni38 Ni39 n754 Ni35 n1415
+-111 1
+1-11 1
+.names n844 n1417 n1428 n1421 n1416
+-100 1
+0-00 1
+.names n1392 n1279 n1336 n1418 n1401 n1417
+--111 1
+00-11 1
+.names n1386 n1419 n1387 n1418
+-11 1
+0-1 1
+.names n1415 n792 n1383 n1420 n1380 n1419
+---11 1
+001-1 1
+.names Ni40 n1398 n1381 n1420
+-11 1
+0-1 1
+.names n1427 n1422 n1390 n690 n1421
+-011 1
+0--1 1
+.names n1279 n1342 n1387 n1423 n1422
+-110 1
+0-10 1
+.names n1424 n1386 n1423
+01 1
+.names n1425 n1290 n792 n1426 n1424
+-101 1
+1--1 1
+.names Ni41 n1377 n1382 n1425
+-11 1
+1-1 1
+.names n1289 n1251 n1255 n1426
+-10 1
+0-0 1
+.names n1392 n1342 n1401 n1427
+-11 1
+0-1 1
+.names n1401 n1343 n1392 n1429 n800 n1428
+---01 1
+-01-1 1
+0---1 1
+.names n1279 n1343 n1387 n1430 n1429
+-110 1
+0-10 1
+.names n1431 n1386 n1430
+01 1
+.names n1398 n1290 n792 n1426 n1431
+-101 1
+1--1 1
+.names n1461 n1456 n1433 Pi20 n1471 n1432
+--00- 0
+-1--1 0
+0---1 0
+.names n844 n1441 n1446 n1451 n1434 n1433
+-1000 1
+0-000 1
+.names n1440 n1435 n1390 n836 n1434
+-011 1
+0--1 1
+.names n1279 n1330 n1387 n1436 n1435
+-110 1
+0-10 1
+.names n1437 n1386 n1436
+01 1
+.names n1439 n792 n1383 n1438 n1380 n1437
+---11 1
+001-1 1
+.names Ni40 n1379 n1377 n1378 n1382 n1438
+--101 1
+-0-01 1
+0---1 1
+.names Ni38 Ni39 n754 Ni35 n1439
+-011 1
+1-11 1
+.names n1392 n1330 n1391 n1440
+-11 1
+0-1 1
+.names n1390 n1279 n1327 n1442 n1445 n1441
+--111 1
+-0-11 1
+0---1 1
+.names n1386 n1444 n1443 n1387 n1442
+-111 1
+0--1 1
+.names Ni40 n1383 n1375 n1381 n1380 n1443
+--111 1
+-1--1 1
+0--11 1
+.names Ni40 n1439 n792 n1375 n1381 n1444
+---11 1
+-00-- 1
+0---1 1
+.names n832 n1392 n1260 n1328 n1391 n1445
+--111 1
+-0--1 1
+0--11 1
+.names n1391 n1450 n1447 n1390 n800 n1446
+--011 1
+-1--1 1
+0---1 1
+.names n1387 n1334 n1279 n1448 n1386 n1447
+---01 0
+-01-- 0
+0---- 0
+.names n1259 n792 n1375 n1449 n1448
+--11 1
+10-1 1
+.names n1258 n1251 n1255 n1449
+-10 1
+0-0 1
+.names n1334 n1392 n1450
+01 1
+.names n1391 n1455 n1452 n1390 n690 n1451
+--011 1
+-1--1 1
+0---1 1
+.names n1387 n1333 n1279 n1453 n1386 n1452
+---01 0
+-01-- 0
+0---- 0
+.names n1259 n792 n1454 n1449 n1453
+--11 1
+10-1 1
+.names n1376 n1382 n1454
+11 1
+.names n1333 n1392 n1455
+01 1
+.names n1401 n1358 n1392 n1457 n1361 n1456
+---11 1
+-01-1 1
+0---1 1
+.names n1387 n1458 n1358 n1279 n1390 n1457
+--011 1
+-1--1 1
+0---1 1
+.names n1459 n1386 n1458
+01 1
+.names n1399 n792 n1383 n1460 n1380 n1459
+---11 1
+001-1 1
+.names n1382 n1377 Ni41 Ni40 n1460
+-000 0
+0--- 0
+.names n1357 n1462 n1365 n1467 n1461
+-110 1
+0-10 1
+.names n1391 n1355 n1392 n1463 n1390 n1462
+---01 0
+-01-- 0
+0---- 0
+.names n1279 n1355 n1387 n1464 n1463
+-110 1
+0-10 1
+.names n1465 n1386 n1464
+01 1
+.names n1385 n792 n1383 n1466 n1380 n1465
+---11 1
+001-1 1
+.names Ni40 n1379 n1377 n1378 n1382 n1466
+--101 1
+-0-01 1
+1---1 1
+.names n1407 n1353 n1393 n1468 n1408 n1467
+---01 1
+-01-1 1
+1---1 1
+.names n1279 n1353 n1469 n1387 n1468
+-101 1
+0-01 1
+.names n1382 n1406 n1470 n1386 n1469
+--01 1
+01-1 1
+.names Ni37 n1382 n1251 Ni38 n1255 n1470
+--100 1
+-1-10 1
+1--00 1
+.names Pi17 Pi16 n1471
+11 1
+.names Pi16 Pi17 n1490 n1473 Pi15 n1472
+--101 1
+-0-01 1
+1--01 1
+.names Pi20 n1479 n1482 n1487 n1474 n1473
+-0000 0
+0---- 0
+.names n1401 n1478 n1475 n1390 n836 n1474
+--011 1
+-1--1 1
+0---1 1
+.names n812 n1279 n1295 n1293 n1476 n1475
+--111 1
+-0--1 1
+1--11 1
+.names n1386 n1477 n1387 n1476
+-11 1
+0-1 1
+.names n1415 n1383 n1414 n1380 n1477
+--11 1
+01-1 1
+.names n1295 n812 n1293 n1392 n1478
+--01 1
+00-1 1
+.names n1401 n1480 n1282 n1392 n844 n1479
+--011 1
+-0--1 1
+0---1 1
+.names n1279 n1291 n1283 n1387 n1481 n1480
+-0110 1
+0--10 1
+.names n1383 n1415 n1380 n1420 n1386 n1481
+--0-1 1
+-1-01 1
+0--01 1
+.names n1486 n1483 n1390 n690 n1482
+-011 1
+0--1 1
+.names n1484 n1386 n1387 n1279 n1297 n1483
+---10 0
+--0-- 0
+01--- 0
+.names n1425 n1290 n748 n1485 n1426 n1484
+-1001 1
+1--01 1
+.names n1251 n792 Ni38 n1485
+010 1
+.names n1392 n1297 n1401 n1486
+-11 1
+0-1 1
+.names n1401 n1298 n1392 n1488 n800 n1487
+---01 1
+-01-1 1
+0---1 1
+.names n1489 n1386 n1387 n1279 n1298 n1488
+---10 0
+--0-- 0
+01--- 0
+.names n1398 n1290 n748 n1485 n1426 n1489
+-1001 1
+1--01 1
+.names n1357 n1390 n1491 n1493 n1494 n1490
+--111 1
+-0-11 1
+0---1 1
+.names n1387 n1492 n1386 n1279 n1301 n1491
+---10 0
+-01-- 0
+0---- 0
+.names Ni40 n1385 n1375 n1381 n1374 n1492
+--111 1
+-0--1 1
+1--11 1
+.names n1392 n1301 n1391 n1493
+-11 1
+0-1 1
+.names n1361 n1497 n1495 n1365 n1498 n1494
+-1110 1
+0--10 1
+.names n1279 n1307 n1305 n1387 n1496 n1495
+-0110 1
+0--10 1
+.names n1383 n1399 n1380 n1397 n1386 n1496
+--0-1 1
+-1-01 1
+0--01 1
+.names n1392 n1307 n1305 n1401 n1497
+-011 1
+0--1 1
+.names n1407 n1320 n1393 n1499 n1408 n1498
+---01 1
+-01-1 1
+1---1 1
+.names n1405 n1386 n1387 n1279 n1320 n1499
+---10 0
+--0-- 0
+01--- 0
+.names n1519 n1514 n1501 n1471 Pi20 n1500
+--01- 0
+-1--0 0
+0---0 0
+.names Pi19 n1507 n1502 Pi20 n1511 n1501
+--111 1
+-1-01 1
+1---1 1
+.names n1401 n1504 n1390 n1392 n1503 n1502
+---10 0
+-01-- 0
+0---- 0
+.names n1313 n1315 n1503
+10 1
+.names n1279 n1315 n1313 n1505 n1504
+-011 1
+0--1 1
+.names n1386 n1506 n1387 n1505
+-11 1
+0-1 1
+.names n1399 n1383 n1460 n1380 n1506
+--11 1
+01-1 1
+.names n1391 n1310 n1392 n1508 n1390 n1507
+---01 0
+-01-- 0
+0---- 0
+.names n1279 n1310 n1387 n1509 n1508
+-110 1
+0-10 1
+.names n1510 n1386 n1509
+01 1
+.names n1385 n1383 n1466 n1380 n1510
+--11 1
+01-1 1
+.names n1408 n1512 n1365 n1511
+-11 1
+0-1 1
+.names n1393 n1317 n1407 n1513 n1512
+-101 1
+0-01 1
+.names n1470 n1386 n1387 n1279 n1317 n1513
+---10 0
+--0-- 0
+01--- 0
+.names n1515 n836 n1514
+01 1
+.names n1391 n1262 n1392 n1516 n1390 n1515
+---01 0
+-01-- 0
+0---- 0
+.names n1279 n1262 n1387 n1517 n1516
+-110 1
+0-10 1
+.names n1518 n1386 n1517
+01 1
+.names n1439 n1383 n1438 n1380 n1518
+--11 1
+01-1 1
+.names n1528 n690 n1524 n1520 n844 n1519
+---01 0
+--1-- 0
+01--- 0
+.names n1390 n1279 n1243 n1521 n1523 n1520
+--111 1
+-0-11 1
+0---1 1
+.names n1386 n1522 n1443 n1387 n1521
+-011 1
+0--1 1
+.names n1381 n1375 Ni40 n1439 n1522
+-011 1
+0--1 1
+.names n812 n1392 n1260 n1244 n1391 n1523
+--111 1
+-0--1 1
+1--11 1
+.names n1391 n1527 n1525 n1390 n800 n1524
+--011 1
+-1--1 1
+0---1 1
+.names n1387 n1269 n1279 n1526 n1386 n1525
+---01 0
+-01-- 0
+0---- 0
+.names n1259 n748 n1375 n1485 n1449 n1526
+--101 1
+10-01 1
+.names n1269 n1392 n1527
+01 1
+.names n1391 n1266 n1392 n1529 n1390 n1528
+---01 0
+-01-- 0
+0---- 0
+.names n1387 n1266 n1279 n1530 n1386 n1529
+---01 0
+-01-- 0
+0---- 0
+.names n1259 n748 n1454 n1485 n1449 n1530
+--101 1
+10-01 1
+.names n1547 n1552 n1532 n1536 Pi17 n1531
+--010 0
+01--1 0
+.names n1533 n1219 n1532
+01 1
+.names n1435 n1131 n1535 n1534 n1127 n1533
+---01 0
+--0-- 0
+01--- 0
+.names n1279 n1339 n1387 n1412 n1534
+-110 1
+0-10 1
+.names n1365 n1452 n1076 n1422 n1081 n1535
+---01 0
+-01-- 0
+0---- 0
+.names n1543 n1541 n1537 Pi16 Pi15 n1536
+--1-- 0
+-0-11 0
+0--00 0
+.names n1540 n1539 n1538 n1131 n1082_1 n1537
+--011 1
+-1--1 1
+0---1 1
+.names n1279 n1243 n1521 n1538
+-11 1
+0-1 1
+.names n1480 n1127 n1539
+01 1
+.names n1365 n1525 n1076 n1488 n1081 n1540
+---01 0
+-01-- 0
+0---- 0
+.names n1516 n1131 n1475 n1127 n1542 n1541
+----0 0
+--01- 0
+01--- 0
+.names n1365 n1529 n1076 n1483 n1081 n1542
+---01 0
+-01-- 0
+0---- 0
+.names n1546 n1545 n1131 n1544 n1127 n1543
+---01 0
+-01-- 0
+0---- 0
+.names n1279 n1336 n1418 n1544
+-11 1
+0-1 1
+.names n1279 n1327 n1442 n1545
+-11 1
+0-1 1
+.names n1365 n1447 n1076 n1429 n1081 n1546
+---01 0
+-01-- 0
+0---- 0
+.names n1548 n1551 n1547
+01 1
+.names n1550 n1395 n1081 n1076 n1549 n1548
+---10 0
+-01-- 0
+0---- 0
+.names n1279 n1346 n1387 n1373 n1549
+-110 1
+0-10 1
+.names n1075 n1403 n1365 n1550
+-11 1
+0-1 1
+.names Pi16 Pi15 n1551
+00 1
+.names Pi15 n1558 n1553 Pi16 n1555 n1552
+--100 1
+-1-10 1
+0---0 1
+.names n1554 n1495 n1081 n1076 n1491 n1553
+---10 0
+-01-- 0
+0---- 0
+.names n1075 n1499 n1365 n1554
+-11 1
+0-1 1
+.names n1557 n1556 n1081 n1219 n1555
+-011 1
+0--1 1
+.names n1279 n1358 n1387 n1458 n1556
+-110 1
+0-10 1
+.names n1365 n1468 n1075 n1076 n1463 n1557
+---10 0
+-01-- 0
+0---- 0
+.names n1559 n1508 n1076 n1504 n1081 n1558
+---01 0
+-01-- 0
+0---- 0
+.names n1075 n1513 n1365 n1559
+-11 1
+0-1 1
+.names n1614 n1561 n581 n1642 Ni10 n1560
+-1111 1
+1-110 1
+.names n1592 n1609 n1562 n1570 Pi17 n1561
+--010 0
+10--1 0
+.names n1569 n1127 n1563 n1219 n1562
+--01 1
+01-1 1
+.names n1131 n1568 n1564 n1563
+-11 1
+0-1 1
+.names n1365 n1567 n1081 n1076 n1565 n1564
+---10 0
+-01-- 0
+0---- 0
+.names Ni33 n1453 n1566 n1565
+-11 1
+0-1 1
+.names n1366 n1273 n1566
+01 1
+.names Ni33 n1424 n1566 n1567
+-11 1
+0-1 1
+.names Ni33 n1437 n1566 n1568
+-11 1
+0-1 1
+.names Ni33 n1413 n1566 n1569
+-11 1
+0-1 1
+.names n1585 n1579 n1571 Pi16 Pi15 n1570
+--001 0
+-0-11 0
+0--00 0
+.names n1577 n1127 n1574 n1131 n1572 n1571
+---10 0
+--0-- 0
+01--- 0
+.names Ni33 n1573 n1566 n1572
+-11 1
+0-1 1
+.names n1443 n1522 n1573
+10 1
+.names n1365 n1576 n1081 n1076 n1575 n1574
+---10 0
+-01-- 0
+0---- 0
+.names Ni33 n1526 n1566 n1575
+-11 1
+0-1 1
+.names Ni33 n1489 n1566 n1576
+-11 1
+0-1 1
+.names Ni33 n1578 n1566 n1577
+-11 1
+0-1 1
+.names n1415 n1383 n1420 n1380 n1578
+--11 1
+01-1 1
+.names n1584 n1131 n1583 n1127 n1580 n1579
+----0 0
+--01- 0
+01--- 0
+.names n1365 n1582 n1081 n1076 n1581 n1580
+---10 0
+-01-- 0
+0---- 0
+.names Ni33 n1530 n1566 n1581
+-11 1
+0-1 1
+.names Ni33 n1484 n1566 n1582
+-11 1
+0-1 1
+.names Ni33 n1477 n1566 n1583
+-11 1
+0-1 1
+.names Ni33 n1518 n1566 n1584
+-11 1
+0-1 1
+.names n1591 n1127 n1588 n1131 n1586 n1585
+---10 0
+--0-- 0
+01--- 0
+.names Ni33 n1587 n1566 n1586
+-11 1
+0-1 1
+.names n1443 n1444 n1587
+11 1
+.names n1365 n1590 n1081 n1076 n1589 n1588
+---10 0
+-01-- 0
+0---- 0
+.names Ni33 n1448 n1566 n1589
+-11 1
+0-1 1
+.names Ni33 n1431 n1566 n1590
+-11 1
+0-1 1
+.names Ni33 n1419 n1566 n1591
+-11 1
+0-1 1
+.names n1604 n1599 n1593 Pi16 Pi15 n1592
+--001 0
+-0-00 0
+0--11 0
+.names n1597 n1595 n1081 n1076 n1594 n1593
+---10 0
+-01-- 0
+0---- 0
+.names Ni33 n1492 n1566 n1594
+-11 1
+0-1 1
+.names Ni33 n1596 n1566 n1595
+-11 1
+0-1 1
+.names n1399 n1383 n1397 n1380 n1596
+--11 1
+01-1 1
+.names n1075 n1598 n1365 n1597
+-11 1
+0-1 1
+.names Ni33 n1405 n1566 n1598
+-11 1
+0-1 1
+.names n1603 n1076 n1602 n1081 n1600 n1599
+----0 0
+--01- 0
+01--- 0
+.names n1075 n1566 n1601 n1365 n1600
+-101 1
+0--1 1
+.names n1404 Ni33 n1601
+01 1
+.names Ni33 n1396 n1566 n1602
+-11 1
+0-1 1
+.names Ni33 n1384 n1374 n1566 n1603
+-111 1
+0--1 1
+.names n1608 n1076 n1607 n1081 n1605 n1604
+----0 0
+--01- 0
+01--- 0
+.names n1075 n1606 n1365 n1605
+-11 1
+0-1 1
+.names Ni33 n1470 n1566 n1606
+-11 1
+0-1 1
+.names Ni33 n1506 n1566 n1607
+-11 1
+0-1 1
+.names Ni33 n1510 n1566 n1608
+-11 1
+0-1 1
+.names n1613 n1081 n1610 n1219 n1609
+--01 1
+01-1 1
+.names n1365 n1612 n1075 n1076 n1611 n1610
+---10 0
+-01-- 0
+0---- 0
+.names Ni33 n1465 n1566 n1611
+-11 1
+0-1 1
+.names Ni33 n1406 n1382 n1470 n1566 n1612
+--111 1
+-0-11 1
+0---1 1
+.names Ni33 n1459 n1566 n1613
+-11 1
+0-1 1
+.names n1629 n1631 n1636 n1624 n1615 n1614
+---11 0
+011-- 0
+.names n836 n1623 n1616 n1620 n1615
+-111 1
+0-11 1
+.names n690 n1617 n1619 n1616
+-11 1
+0-1 1
+.names n1618 n1567 n1177 n1176 n1565 n1617
+---10 0
+-01-- 0
+0---- 0
+.names n1181 n1366 n1272 n1365 n1618
+-011 1
+0--1 1
+.names n1618 n699 Pi16 Pi15 n1619
+-0-0 1
+1--0 1
+.names n1622 n800 n1621 n1390 n1620
+--01 0
+01-- 0
+.names n699 n1612 n1566 n1601 Pi16 n1621
+--100 1
+-1--1 1
+0---- 1
+.names n1618 n1590 n1177 n1176 n1589 n1622
+---10 0
+-01-- 0
+0---- 0
+.names n1618 n1568 n1176 n1569 n1177 n1623
+---01 0
+-01-- 0
+0---- 0
+.names n1628 n817 n1626 n844 n1625 n1624
+---10 0
+--1-- 0
+01--- 0
+.names n1618 n1591 n1177 n1176 n1586 n1625
+---10 0
+-01-- 0
+0---- 0
+.names n1627 n827 n1626
+01 1
+.names n1618 n1611 n1176 n1613 n1177 n1627
+---01 0
+-01-- 0
+0---- 0
+.names n1618 n1603 n1176 n1602 n1177 n1628
+---01 0
+-01-- 0
+0---- 0
+.names n1595 n1177 n1630 n817 n1629
+--01 1
+01-1 1
+.names n1176 n1594 n1618 n1630
+-11 1
+0-1 1
+.names n1177 n844 n1577 n1632 n1633 n1631
+--111 1
+-0--1 1
+0--11 1
+.names n1176 n1572 n1618 n1632
+-11 1
+0-1 1
+.names n1635 n836 n827 n1634 n1633
+--10 0
+01-- 0
+.names n1618 n1608 n1176 n1607 n1177 n1634
+---01 0
+-01-- 0
+0---- 0
+.names n1618 n1584 n1176 n1583 n1177 n1635
+---01 0
+-01-- 0
+0---- 0
+.names n691 n1638 n1637 Pi16 n1639 n1636
+--111 1
+-1-01 1
+0---1 1
+.names n1618 n1582 n1177 n1176 n1581 n1637
+---10 0
+-01-- 0
+0---- 0
+.names n1618 n1576 n1177 n1176 n1575 n1638
+---10 0
+-01-- 0
+0---- 0
+.names n1390 n1640 n1641 n1639
+-11 1
+0-1 1
+.names n1606 n1598 n699 Pi16 n1640
+-010 0
+0-11 0
+.names n1618 n699 Pi16 Pi15 n1641
+-0-1 1
+1--1 1
+.names Ni14 Ni13 n1642
+00 1
+.names n581 Ni13 n1692 n1644 Ni10 n1643
+---01 0
+--0-0 0
+10--- 0
+.names n1665 n1687 n1681 n1645 Pi17 n1644
+--010 0
+10--1 0
+.names n1659 n1653 n1646 Pi16 Pi15 n1645
+--001 0
+-0-11 0
+0--00 0
+.names n1652 n1127 n1649 n1131 n1647 n1646
+---10 0
+--0-- 0
+01--- 0
+.names n1386 n1573 n1648 n1647
+-11 1
+0-1 1
+.names n1366 n1388 n1648
+01 1
+.names n1365 n1651 n1081 n1076 n1650 n1649
+---10 0
+-01-- 0
+0---- 0
+.names n1386 n1526 n1648 n1650
+-11 1
+0-1 1
+.names n1386 n1489 n1648 n1651
+-11 1
+0-1 1
+.names n1481 n1648 n1652
+01 1
+.names n1658 n1127 n1131 n1657 n1654 n1653
+----0 0
+--10- 0
+01--- 0
+.names n1365 n1656 n1081 n1076 n1655 n1654
+---10 0
+-01-- 0
+0---- 0
+.names n1386 n1530 n1648 n1655
+-11 1
+0-1 1
+.names n1386 n1484 n1648 n1656
+-11 1
+0-1 1
+.names n1517 n1648 n1657
+01 1
+.names n1386 n1477 n1648 n1658
+-11 1
+0-1 1
+.names n1664 n1127 n1661 n1131 n1660 n1659
+---10 0
+--0-- 0
+01--- 0
+.names n1386 n1587 n1648 n1660
+-11 1
+0-1 1
+.names n1365 n1663 n1076 n1662 n1081 n1661
+---01 0
+-01-- 0
+0---- 0
+.names n1430 n1648 n1662
+01 1
+.names n1386 n1448 n1648 n1663
+-11 1
+0-1 1
+.names n1386 n1419 n1648 n1664
+-11 1
+0-1 1
+.names n1676 n1671 n1666 Pi16 Pi15 n1665
+--001 0
+-0-00 0
+0--11 0
+.names n1669 n1668 n1081 n1076 n1667 n1666
+---10 0
+-01-- 0
+0---- 0
+.names n1386 n1492 n1648 n1667
+-11 1
+0-1 1
+.names n1496 n1648 n1668
+01 1
+.names n1075 n1670 n1365 n1669
+-11 1
+0-1 1
+.names n1386 n1405 n1648 n1670
+-11 1
+0-1 1
+.names n1675 n1081 n1673 n1076 n1672 n1671
+---10 0
+--0-- 0
+01--- 0
+.names n1373 n1648 n1672
+01 1
+.names n1075 n1648 n1674 n1365 n1673
+-101 1
+0--1 1
+.names n1404 n1386 n1674
+01 1
+.names n1386 n1396 n1648 n1675
+-11 1
+0-1 1
+.names n1680 n1081 n1678 n1076 n1677 n1676
+---10 0
+--0-- 0
+01--- 0
+.names n1509 n1648 n1677
+01 1
+.names n1075 n1679 n1365 n1678
+-11 1
+0-1 1
+.names n1386 n1470 n1648 n1679
+-11 1
+0-1 1
+.names n1386 n1506 n1648 n1680
+-11 1
+0-1 1
+.names n1686 n1131 n1685 n1682 n1219 n1681
+---01 1
+--1-1 1
+01--1 1
+.names n1365 n1684 n1076 n1683 n1081 n1682
+---01 0
+-01-- 0
+0---- 0
+.names n1423 n1648 n1683
+01 1
+.names n1386 n1453 n1648 n1684
+-11 1
+0-1 1
+.names n1648 n1412 n1127 n1685
+-11 1
+0-1 1
+.names n1436 n1648 n1686
+01 1
+.names n1691 n1081 n1688 n1219 n1687
+--01 1
+01-1 1
+.names n1076 n1689 n1365 n1690 n1688
+-110 1
+0-10 1
+.names n1464 n1648 n1689
+01 1
+.names n1648 n1469 n1075 n1690
+-11 1
+0-1 1
+.names n1458 n1648 n1691
+01 1
+.names n1705 n1712 n1714 n1700 n1693 n1692
+---11 0
+101-- 0
+.names n690 n1699 n1694 n1619 n1697 n1693
+-1110 1
+0-110 1
+.names n1696 n800 n1695 n1390 n1694
+--01 0
+01-- 0
+.names n699 n1469 n1674 n1648 Pi16 n1695
+--010 1
+-0-11 1
+0---- 1
+.names n1618 n1663 n1176 n1662 n1177 n1696
+---01 0
+-01-- 0
+0---- 0
+.names n1618 n1698 n1686 n1176 n836 n1697
+--011 1
+-1--1 1
+0---1 1
+.names n1648 n1412 n1177 n1698
+-11 1
+0-1 1
+.names n1618 n1684 n1176 n1683 n1177 n1699
+---01 0
+-01-- 0
+0---- 0
+.names n736 n1704 n1703 Pi16 n1701 n1700
+--100 1
+-1-10 1
+0---0 1
+.names n1618 n1702 n1660 n1176 n844 n1701
+--011 1
+-1--1 1
+0---1 1
+.names n1664 n1177 n1702
+01 1
+.names n1618 n1675 n1177 n1176 n1672 n1703
+---10 0
+-01-- 0
+0---- 0
+.names n1618 n1689 n1176 n1691 n1177 n1704
+---01 0
+-01-- 0
+0---- 0
+.names n1711 n690 n1707 n1706 n817 n1705
+---01 0
+--0-- 0
+01--- 0
+.names n1618 n1668 n1177 n1176 n1667 n1706
+---10 0
+-01-- 0
+0---- 0
+.names n1177 n800 n1651 n1708 n1709 n1707
+--111 1
+-0--1 1
+0--11 1
+.names n1176 n1650 n1618 n1708
+-11 1
+0-1 1
+.names n1390 n1710 n1641 n1709
+-11 1
+0-1 1
+.names n1679 n1670 n699 Pi16 n1710
+-010 0
+0-11 0
+.names n1656 n1177 n1618 n1176 n1655 n1711
+---10 0
+--0-- 0
+01--- 0
+.names n1652 n1177 n1713 n844 n1712
+--01 1
+01-1 1
+.names n1176 n1647 n1618 n1713
+-11 1
+0-1 1
+.names n1716 n836 n827 n1715 n1714
+--10 0
+01-- 0
+.names n1680 n1177 n1618 n1176 n1677 n1715
+---10 0
+--0-- 0
+01--- 0
+.names n1658 n1177 n1618 n1176 n1657 n1716
+---10 0
+--0-- 0
+01--- 0
+.names Ni32 n1718 P__cmxcl_1 n2647 n1012
+-011 0
+0-01 0
+.names n2426 n2395 n2081 n1719 n721 n1718
+--100 1
+-1--0 1
+0---0 1
+.names Ni11 n1720 n2034 n2037 n1912 n1719
+-1010 1
+1-010 1
+.names n568 n1865 n1816 Pi15 n1721 n1720
+--110 1
+-1-00 1
+0---0 1
+.names n1785 n1722 n569 Pi15 Ni12 n1721
+-0000 1
+0-010 1
+.names n1390 n1760 n1723 n1774 n1722
+-111 1
+0--1 1
+.names n1754 n836 n827 n1745 n1724 n1723
+----0 0
+--11- 0
+11--- 0
+.names n1737 n800 n690 n1725 n1724
+--11 0
+11-- 0
+.names n1734 n1726 n669 Pi20 n1725
+-101 0
+1-00 0
+.names n1732 n1727 n1733 n1726
+-00 1
+0-0 1
+.names n1729 n1289 n1728 n1730 n1731 n1727
+-0100 1
+1-100 1
+.names Ni43 Ni47 Ni45 n1728
+-10 1
+0-0 1
+.names Ni43 Ni42 Ni47 Ni45 n1729
+--10 1
+01-0 1
+.names Ni47 Ni38 Ni37 n1730
+001 1
+.names Ni43 Ni44 Ni47 Ni42 Ni41 n1731
+-1000 1
+1-000 1
+.names Ni31 Ni30 n1732
+00 1
+.names Ni32 Ni30 n1733
+10 1
+.names n1732 n1735 n1733 n1734
+-00 1
+0-0 1
+.names n1729 n1258 n1728 n1730 n1736 n1735
+-0100 1
+1-100 1
+.names Ni43 Ni44 Ni47 Ni42 Ni41 n1736
+-0000 1
+1-000 1
+.names n1742 n1738 n669 Pi20 n1737
+-101 0
+1-00 0
+.names n1733 n1740 n1732 n1739 n1738
+-111 0
+1--- 0
+.names n1729 n1289 n1730 n1739
+-00 1
+1-0 1
+.names n1728 n1731 n1741 n1740
+100 1
+.names Ni42 Ni43 Ni45 Ni47 Ni41 n1741
+--1-1 1
+-1-01 1
+0--01 1
+.names n1733 n1744 n1732 n1743 n1742
+-111 0
+1--- 0
+.names n1729 n1258 n1730 n1743
+-00 1
+1-0 1
+.names n1728 n1736 n1741 n1744
+100 1
+.names n1751 n1746 n669 Pi20 n1745
+-101 0
+1-00 0
+.names n1733 n1749 n1750 n1732 n1747 n1746
+-1010 0
+1---- 0
+.names n812 n1748 n1747
+11 1
+.names Ni42 Ni43 Ni45 Ni47 Ni38 n1748
+--1-0 1
+-1-00 1
+0--00 1
+.names n1729 n1289 n1728 n1730 n1749
+-010 1
+1-10 1
+.names n1731 n1728 Ni40 n1750
+-00 1
+1-0 1
+.names n1733 n1752 n1753 n1732 n1747 n1751
+-1010 0
+1---- 0
+.names n1729 n1258 n1728 n1730 n1752
+-010 1
+1-10 1
+.names n1736 n1728 Ni40 n1753
+-00 1
+1-0 1
+.names n1758 n1755 n669 Pi20 n1754
+-101 0
+1-00 0
+.names n1733 n1756 n1757 n1732 n1749 n1755
+-0011 0
+1---- 0
+.names n832 n1748 n1756
+11 1
+.names n1731 n1728 Ni40 n1757
+-01 1
+1-1 1
+.names n1733 n1756 n1759 n1732 n1752 n1758
+-0011 0
+1---- 0
+.names n1736 n1728 Ni40 n1759
+-01 1
+1-1 1
+.names n1769 n817 n844 n1761 n1760
+--11 0
+11-- 0
+.names n1766 n1762 n669 Pi20 n1761
+-101 0
+1-00 0
+.names n1733 n1763 n1764 n1732 n1756 n1762
+-0110 0
+1---- 0
+.names Ni40 n1731 n1741 n1728 n1763
+-001 0
+0--- 0
+.names n1729 n1289 n1730 n1765 n1764
+-001 1
+1-01 1
+.names Ni41 Ni42 Ni47 Ni43 Ni45 n1765
+--1-0 1
+-1-00 1
+0--00 1
+.names n1733 n1767 n1768 n1732 n1756 n1766
+-0110 0
+1---- 0
+.names Ni40 n1736 n1741 n1728 n1767
+-001 0
+0--- 0
+.names n1729 n1258 n1730 n1765 n1768
+-001 1
+1-01 1
+.names n1772 n1770 n669 Pi20 n1769
+-101 0
+1-00 0
+.names n1733 n1764 n1771 n1732 n1747 n1770
+-1010 0
+1---- 0
+.names Ni40 n1731 n1741 n1728 n1771
+-001 0
+1--- 0
+.names n1733 n1768 n1773 n1732 n1747 n1772
+-1010 0
+1---- 0
+.names Ni40 n1736 n1741 n1728 n1773
+-001 0
+1--- 0
+.names Pi16 n1182 n1780 n1783 n1775 n1774
+--111 1
+-0--1 1
+0--11 1
+.names n1181 n1776 n1778 n1775
+-11 1
+0-1 1
+.names n1777 n669 n1776
+10 1
+.names n1733 n1732 n1729 n1730 n1777
+-110 0
+1--- 0
+.names Ni32 n1779 Pi21 n1778
+-01 1
+0-0 1
+.names Ni32 Ni45 Ni31 Ni30 Pi22 n1779
+-0000 1
+1---0 1
+.names n1781 n669 n1780
+10 1
+.names n1732 n1782 n1733 n1781
+-00 1
+0-0 1
+.names Ni36 n1748 n1730 n1728 n1782
+-001 1
+1-01 1
+.names Ni32 n1784 Ni31 Ni30 n1783
+-100 0
+1--- 0
+.names Ni36 n1748 n1765 n1730 n1784
+-010 1
+1-10 1
+.names n1390 n1803 n1786 n1775 n1810 n1785
+-1110 1
+0--10 1
+.names n1799 n836 n690 n1796 n1787 n1786
+----0 0
+--11- 0
+11--- 0
+.names n1792 n800 n827 n1788 n1787
+--11 0
+11-- 0
+.names n1791 n1789 n669 Pi20 n1788
+-101 0
+1-00 0
+.names n1733 n1750 n1790 n1732 n1749 n1789
+-0011 0
+1---- 0
+.names n832 n1748 n1790
+01 1
+.names n1733 n1753 n1790 n1732 n1752 n1791
+-0011 0
+1---- 0
+.names n1795 n1793 n669 Pi20 n1792
+-101 0
+1-00 0
+.names n1733 n1740 n1794 n1732 n1739 n1793
+-1011 0
+1---- 0
+.names n792 n1748 n1794
+11 1
+.names n1733 n1744 n1794 n1732 n1743 n1795
+-1011 0
+1---- 0
+.names n1798 n1797 n669 Pi20 n1796
+-101 0
+1-00 0
+.names n1733 n1794 n1732 n1727 n1797
+-011 0
+1--- 0
+.names n1733 n1794 n1732 n1735 n1798
+-011 0
+1--- 0
+.names n1802 n1800 n669 Pi20 n1799
+-101 0
+1-00 0
+.names n1733 n1757 n1801 n1732 n1749 n1800
+-0011 0
+1---- 0
+.names n812 n1748 n1801
+01 1
+.names n1733 n1759 n1801 n1732 n1752 n1802
+-0011 0
+1---- 0
+.names n1807 n817 n844 n1804 n1803
+--11 0
+11-- 0
+.names n1806 n1805 n669 Pi20 n1804
+-101 0
+1-00 0
+.names n1733 n1764 n1801 n1732 n1763 n1805
+-1010 0
+1---- 0
+.names n1733 n1768 n1801 n1732 n1767 n1806
+-1010 0
+1---- 0
+.names n1809 n1808 n669 Pi20 n1807
+-101 0
+1-00 0
+.names n1733 n1771 n1790 n1732 n1764 n1808
+-0011 0
+1---- 0
+.names n1733 n1773 n1790 n1732 n1768 n1809
+-0011 0
+1---- 0
+.names n1814 Pi16 n1811 n1182 n1810
+--01 1
+01-1 1
+.names n1812 n669 n1811
+10 1
+.names n1732 n1813 n1733 n1812
+-00 1
+0-0 1
+.names n1748 n1730 n1765 n1813
+001 1
+.names Ni32 n1815 Ni31 Ni30 n1814
+-100 0
+1--- 0
+.names n1728 n1748 n1730 n1815
+100 1
+.names n1817 n1841 n1847 n1853 n1859 n1816
+10000 1
+.names n817 n1840 n1818 n1827 n1833 n1817
+-0101 1
+0--01 1
+.names n1823 n1826 n1825 n1819 n1818
+--10 0
+01-- 0
+.names Ni32 Ni30 n1809 n18 n1820 n1819
+----0 0
+--00- 0
+11--- 0
+.names n1822 n1821 n1733 n1820
+-00 1
+0-0 1
+.names n1768 n1773 n1790 n1821
+100 1
+.names Ni33 n1730 n1729 n1732 n1822
+-011 1
+0--1 1
+.names Ni32 Ni30 n1824 n1808 n18 n1823
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1771 n1790 n1822 n1764 n1824
+-0011 0
+1---- 0
+.names n1077_1 Pi25 n1825
+10 1
+.names n796 Pi25 Pi20 n1826
+101 1
+.names n1799 n1390 n1828 n836 n1827
+--01 1
+11-1 1
+.names n1831 n1826 n1825 n1829 n1828
+--10 0
+01-- 0
+.names Ni32 Ni30 n1830 n1802 n18 n1829
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1759 n1801 n1822 n1752 n1830
+-0011 0
+1---- 0
+.names Ni32 Ni30 n1832 n1800 n18 n1831
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1757 n1801 n1822 n1749 n1832
+-0011 0
+1---- 0
+.names n1810 n1834 n1778 n1833
+011 1
+.names n1837 n1835 n1839 Pi16 n1834
+-010 0
+0-11 0
+.names n1822 n1813 n1836 n1733 n1835
+-010 1
+0-10 1
+.names n1813 Ni31 Ni32 Ni30 n18 n1836
+--1-0 0
+--11- 0
+10-00 0
+.names n1822 n1815 n1838 n1733 n1837
+-010 1
+0-10 1
+.names n1815 Ni31 Ni32 Ni30 n18 n1838
+--1-0 0
+--11- 0
+10-00 0
+.names n699 n796 n1839
+11 1
+.names n1807 n1390 n1840
+11 1
+.names n1792 n1390 n1842 n800 n1841
+--01 1
+11-1 1
+.names n1845 n1826 n1825 n1843 n1842
+--10 0
+01-- 0
+.names Ni32 Ni30 n1844 n1795 n18 n1843
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1744 n1794 n1822 n1743 n1844
+-1011 0
+1---- 0
+.names Ni32 Ni30 n1846 n1793 n18 n1845
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1740 n1794 n1822 n1739 n1846
+-1011 0
+1---- 0
+.names n1796 n1390 n1848 n690 n1847
+--01 1
+11-1 1
+.names n1851 n1826 n1825 n1849 n1848
+--10 0
+01-- 0
+.names Ni32 Ni30 n1850 n1798 n18 n1849
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1794 n1822 n1735 n1850
+-011 0
+1--- 0
+.names Ni32 Ni30 n1852 n1797 n18 n1851
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1794 n1822 n1727 n1852
+-011 0
+1--- 0
+.names n1788 n1390 n1854 n827 n1853
+--01 1
+11-1 1
+.names n1857 n1826 n1825 n1855 n1854
+--10 0
+01-- 0
+.names Ni32 Ni30 n1856 n1791 n18 n1855
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1753 n1790 n1822 n1752 n1856
+-0011 0
+1---- 0
+.names Ni32 Ni30 n1858 n1789 n18 n1857
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1750 n1790 n1822 n1749 n1858
+-0011 0
+1---- 0
+.names n1804 n1390 n1860 n844 n1859
+--01 1
+11-1 1
+.names n1863 n1826 n1825 n1861 n1860
+--10 0
+01-- 0
+.names Ni32 Ni30 n1862 n1806 n18 n1861
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1768 n1801 n1822 n1767 n1862
+-1010 0
+1---- 0
+.names Ni32 Ni30 n1864 n1805 n18 n1863
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1764 n1801 n1822 n1763 n1864
+-1010 0
+1---- 0
+.names n1866 n1879 n1892 n1899 n1911 n1865
+11011 1
+.names n1873 n827 n1867 n836 n1866
+--01 0
+01-- 0
+.names n1390 n1754 n1868 n1867
+-01 1
+0-1 1
+.names n1871 n1826 n1825 n1869 n1868
+--10 0
+01-- 0
+.names Ni32 Ni30 n1870 n1758 n18 n1869
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1756 n1759 n1822 n1752 n1870
+-0011 0
+1---- 0
+.names Ni32 Ni30 n1872 n1755 n18 n1871
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1756 n1757 n1822 n1749 n1872
+-0011 0
+1---- 0
+.names n1390 n1745 n1874 n1873
+-01 1
+0-1 1
+.names n1877 n1826 n1825 n1875 n1874
+--10 0
+01-- 0
+.names Ni32 Ni30 n1876 n1751 n18 n1875
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1752 n1753 n1822 n1747 n1876
+-1010 0
+1---- 0
+.names Ni32 Ni30 n1878 n1746 n18 n1877
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1749 n1750 n1822 n1747 n1878
+-1010 0
+1---- 0
+.names n1886 n844 n1880 n817 n1879
+--01 0
+01-- 0
+.names n1390 n1769 n1881 n1880
+-01 1
+0-1 1
+.names n1884 n1826 n1825 n1882 n1881
+--10 0
+01-- 0
+.names Ni32 Ni30 n1883 n1772 n18 n1882
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1768 n1773 n1822 n1747 n1883
+-1010 0
+1---- 0
+.names Ni32 Ni30 n1885 n1770 n18 n1884
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1764 n1771 n1822 n1747 n1885
+-1010 0
+1---- 0
+.names n1890 n1825 n1761 n1390 n1887 n1886
+----1 0
+--11- 0
+01--- 0
+.names n1888 n1826 n1887
+01 1
+.names Ni32 Ni30 n1889 n1762 n18 n1888
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1763 n1764 n1822 n1756 n1889
+-0110 0
+1---- 0
+.names Ni32 Ni30 n1891 n1766 n18 n1890
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1767 n1768 n1822 n1756 n1891
+-0110 0
+1---- 0
+.names n1725 n1390 n1893 n690 n1892
+--01 1
+11-1 1
+.names n1897 n1826 n1825 n1894 n1893
+--10 0
+01-- 0
+.names n1895 n1896 n1894
+11 1
+.names n1822 n1735 n1733 n1895
+-00 1
+0-0 1
+.names n1735 Ni31 Ni32 Ni30 n18 n1896
+--1-0 0
+--11- 0
+10-00 0
+.names Ni32 Ni30 n1898 n1726 n18 n1897
+---00 0
+--0-- 0
+11--- 0
+.names n1822 n1727 n1733 n1898
+-00 1
+0-0 1
+.names n1390 n800 n1737 n1906 n1900 n1899
+--011 1
+-0--1 1
+0--11 1
+.names n1904 n1901 n1839 Pi16 n1900
+-010 0
+0-11 0
+.names n1902 n1903 n1901
+11 1
+.names n1822 n1784 n1733 n1902
+-00 1
+0-0 1
+.names n1784 Ni31 Ni32 Ni30 n18 n1903
+--1-0 0
+--11- 0
+10-00 0
+.names n18 n1781 n669 n1905 n1904
+-101 1
+1-01 1
+.names n1822 n1782 n1733 n1905
+-00 1
+0-0 1
+.names n1909 n1826 n1825 n1907 n1906
+--10 0
+01-- 0
+.names Ni32 Ni30 n1908 n1742 n18 n1907
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1744 n1822 n1743 n1908
+-111 0
+1--- 0
+.names Ni32 Ni30 n1910 n1738 n18 n1909
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1740 n1822 n1739 n1910
+-111 0
+1--- 0
+.names Pi16 n1182 n1780 n1783 n1778 n1911
+--111 1
+-0--1 1
+0--11 1
+.names n2032 n1986 n2013 n1954 n1913 n1912
+---11 0
+-11-- 0
+0---- 0
+.names Pi16 n1938 n1914 Pi15 Ni14 n1913
+--111 1
+-1-01 1
+0---1 1
+.names Pi17 n1935 n1931 Pi19 n1915 n1914
+--101 1
+-1-11 1
+1---1 1
+.names n736 n1930 n1788 n1916 n1927 n1915
+--011 1
+-0-11 1
+0---1 1
+.names n1926 n1925 n1917 n1920 n1916
+-101 1
+0-01 1
+.names n1919 n1789 n1918 n1917
+-01 1
+0-1 1
+.names n1177 Pi27 n1918
+11 1
+.names Ni31 Ni33 Ni30 Ni32 n1919
+-011 0
+1--1 0
+.names n1181 n1921 n1922 n1920
+-10 1
+0-0 1
+.names Pi27 n669 n1919 n1777 n1921
+-011 1
+1-11 1
+.names Pi27 n1924 n1923 n1779 Pi21 n1922
+--011 1
+-0--0 1
+0--11 1
+.names Ni33 Ni45 Ni31 Ni30 Ni32 n1923
+---10 1
+--1-0 1
+-1--0 1
+1-01- 1
+.names Ni32 Ni33 Pi27 Ni31 Ni30 n1924
+-1101 1
+0---- 1
+.names n1791 n1919 n1925
+11 1
+.names n1176 Pi27 n1926
+11 1
+.names n699 n1920 n1928 n1927
+-11 1
+0-1 1
+.names n1929 n1814 n1182 Pi27 n1928
+-010 0
+0-11 0
+.names n1732 n1815 n1733 n1919 n1929
+-001 1
+0-01 1
+.names n1390 Pi27 n1930
+10 1
+.names n1934 n1918 n1930 n1796 n1932 n1931
+----0 0
+--11- 0
+01--- 0
+.names n1933 n1926 n1920 n1932
+-01 1
+1-1 1
+.names n1732 n1794 n1735 n1733 n1919 n1933
+--001 1
+-1-01 1
+0--01 1
+.names n1797 n1919 n1934
+11 1
+.names n1930 n1799 n1937 n1936 n1935
+-001 1
+0-01 1
+.names n1802 n1919 n1926 n1920 n1936
+--01 1
+11-1 1
+.names n1919 n1800 n1918 n1937
+-01 1
+0-1 1
+.names n1947 n1943 n1939 Pi19 Pi17 n1938
+--010 0
+-0-01 0
+0---- 0
+.names n1930 n1754 n1940 n1939
+-01 1
+0-1 1
+.names n1941 n1918 n1942 n1926 n1920 n1940
+----0 0
+--01- 0
+01--- 0
+.names n1755 n1919 n1941
+11 1
+.names n1758 n1919 n1942
+11 1
+.names n1930 n1745 n1944 n1943
+-01 1
+0-1 1
+.names n1945 n1918 n1946 n1926 n1920 n1944
+----0 0
+--01- 0
+01--- 0
+.names n1746 n1919 n1945
+11 1
+.names n1751 n1919 n1946
+11 1
+.names Pi27 n1182 n1953 n1952 n1948 n1947
+--110 1
+-0-10 1
+0--10 1
+.names n1949 n1920 n1725 n1930 n691 n1948
+--111 1
+-0--1 1
+0---1 1
+.names n1951 n1177 n1176 n1950 Pi27 n1949
+--101 0
+01--1 0
+.names n1732 n1735 n1733 n1919 n1950
+-001 1
+0-01 1
+.names n1732 n1727 n1733 n1919 n1951
+-001 1
+0-01 1
+.names n1920 n699 n1182 n1780 Pi27 n1952
+--100 0
+01--- 0
+.names n1781 n1919 n1953
+11 1
+.names n1971 n1955 Pi16 Pi15 n1954
+-000 0
+0-01 0
+.names n1964 n1960 n1956 Pi19 Pi17 n1955
+--010 0
+-0-01 0
+0---- 0
+.names n1930 n1761 n1957 n1956
+-01 1
+0-1 1
+.names n1958 n1918 n1959 n1926 n1920 n1957
+----0 0
+--01- 0
+01--- 0
+.names n1762 n1919 n1958
+11 1
+.names n1766 n1919 n1959
+11 1
+.names n1930 n1769 n1961 n1960
+-01 1
+0-1 1
+.names n1962 n1918 n1963 n1926 n1920 n1961
+----0 0
+--01- 0
+01--- 0
+.names n1770 n1919 n1962
+11 1
+.names n1772 n1919 n1963
+11 1
+.names Pi27 n1182 n1970 n1969 n1965 n1964
+--110 1
+-0-10 1
+0--10 1
+.names n1966 n1920 n1737 n1930 n691 n1965
+--111 1
+-0--1 1
+0---1 1
+.names n1968 n1177 n1176 n1967 Pi27 n1966
+--101 0
+01--1 0
+.names n1732 n1744 n1743 n1733 n1919 n1967
+--001 1
+-0-01 1
+0--01 1
+.names n1732 n1740 n1739 n1733 n1919 n1968
+--001 1
+-0-01 1
+0--01 1
+.names n1783 n1182 Pi27 n699 n1920 n1969
+---10 0
+010-- 0
+.names n1732 n1784 n1733 n1919 n1970
+-001 1
+0-01 1
+.names n1980 n1976 n1972 Pi19 Pi17 n1971
+--010 0
+-0-01 0
+0---- 0
+.names n1975 n1918 n1930 n1804 n1973 n1972
+----0 0
+--11- 0
+01--- 0
+.names n1974 n1926 n1920 n1973
+-01 1
+1-1 1
+.names n1806 n1919 n1974
+11 1
+.names n1805 n1919 n1975
+11 1
+.names n1979 n1918 n1930 n1807 n1977 n1976
+----0 0
+--11- 0
+01--- 0
+.names n1978 n1926 n1920 n1977
+-01 1
+1-1 1
+.names n1809 n1919 n1978
+11 1
+.names n1808 n1919 n1979
+11 1
+.names n691 n1930 n1792 n1981 n1984 n1980
+--011 1
+-0-11 1
+0---1 1
+.names n1982 n1918 n1983 n1926 n1920 n1981
+----0 0
+--01- 0
+01--- 0
+.names n1793 n1919 n1982
+11 1
+.names n1795 n1919 n1983
+11 1
+.names n699 n1920 n1985 n1984
+-11 1
+0-1 1
+.names n1919 n669 n1182 n1812 Pi27 n1985
+--0-- 1
+-0-10 1
+1--11 1
+.names Pi16 n2005 n1987 Pi15 Ni14 n1986
+--110 1
+-1-00 1
+0---0 1
+.names n1988 n2001 n2003 n2004 n1987
+1001 1
+.names n691 n2000 n1796 n1989 n1998 n1988
+--010 1
+-0-10 1
+0---0 1
+.names n1933 n1996 n1990 n1934 n1997 n1989
+---01 0
+--0-- 0
+01--- 0
+.names n1181 n1995 n1991 n1990
+-11 1
+0-1 1
+.names n1993 Pi22 n1992 Pi21 n1991
+--00 0
+00-1 0
+.names Ni32 Pi26 Pi27 Ni30 n1919 n1992
+-0011 1
+0---1 1
+.names Pi27 Pi26 n669 n1994 n1919 n1993
+--011 1
+00-11 1
+.names Ni32 Ni45 Ni31 Ni30 n1994
+-000 0
+1--0 0
+.names Pi27 Pi26 n669 n1777 n1919 n1995
+--011 1
+00-11 1
+.names n1077_1 n601 Pi25 n1996
+111 1
+.names n1177 n601 n1997
+11 1
+.names n1999 n1990 n1799 n2000 n743 n1998
+--111 1
+-0--1 1
+0---1 1
+.names n1800 n1802 n1996 n1997 n1919 n1999
+--00- 1
+-1-01 1
+1-0-1 1
+11--1 1
+.names n1390 n601 n2000
+10 1
+.names n2002 n1990 n1788 n2000 n736 n2001
+--111 1
+-0--1 1
+0---1 1
+.names n1789 n1791 n1996 n1997 n1919 n2002
+--00- 1
+-1-01 1
+1-0-1 1
+11--1 1
+.names n1990 n699 n2003
+01 1
+.names n1929 n1814 n1182 n601 n2004
+-010 0
+0-11 0
+.names n2006 n2008 n2010 n2012 n2005
+0001 1
+.names n1990 n1754 n2000 n2007 n743 n2006
+---01 1
+-11-1 1
+0---1 1
+.names n1942 n1996 n1941 n1997 n2007
+--01 0
+01-- 0
+.names n1990 n1745 n2000 n2009 n736 n2008
+---01 1
+-11-1 1
+0---1 1
+.names n1946 n1996 n1945 n1997 n2009
+--01 0
+01-- 0
+.names n1725 n2000 n2011 n691 n2010
+--01 1
+11-1 1
+.names n1951 n1997 n1996 n1950 n1990 n2011
+----0 0
+--10- 0
+01--- 0
+.names n1182 n1953 n1780 n601 n2003 n2012
+--100 1
+-1-10 1
+0---0 1
+.names Pi16 n2020 n2030 n2014 Pi15 n2013
+--010 1
+-1--1 1
+1---- 1
+.names n736 n2000 n1769 n2019 n2015 n2014
+--011 1
+-0-11 1
+0---1 1
+.names n691 n2000 n1737 n2016 n2017 n2015
+--011 1
+-0-11 1
+0---1 1
+.names n1968 n1997 n1996 n1967 n1990 n2016
+----0 0
+--10- 0
+01--- 0
+.names n699 n1990 n2018 n2017
+-11 1
+0-1 1
+.names n1970 n1783 n1182 n601 n2018
+-010 0
+0-11 0
+.names n1990 n1963 n1996 n1962 n1997 n2019
+---01 0
+-01-- 0
+0---- 0
+.names n2025 n2023 n2021 Pi19 Pi17 n2020
+--010 0
+-0-01 0
+0---- 0
+.names n1975 n1997 n2000 n1804 n2022 n2021
+----0 0
+--11- 0
+01--- 0
+.names n1996 n1974 n1990 n2022
+-11 1
+0-1 1
+.names n1979 n1997 n2000 n1807 n2024 n2023
+----0 0
+--11- 0
+01--- 0
+.names n1996 n1978 n1990 n2024
+-11 1
+0-1 1
+.names n691 n2026 n2028 n2003 n2025
+-110 1
+0-10 1
+.names n2000 n1792 n2027 n1990 n2026
+-011 1
+0-11 1
+.names n1793 n1795 n1996 n1997 n1919 n2027
+--00- 1
+-1-01 1
+1-0-1 1
+11--1 1
+.names n2029 n1811 n1182 n601 n2028
+-010 0
+0-11 0
+.names n1812 n1919 n2029
+11 1
+.names n1761 n2000 n2031 n743 n2030
+--01 1
+11-1 1
+.names n1990 n1959 n1996 n1958 n1997 n2031
+---01 0
+-01-- 0
+0---- 0
+.names n2033 Ni13 n2032
+10 1
+.names Ni12 Ni11 n2033
+10 1
+.names n2036 n568 Ni11 n2035 n2034
+-011 1
+1--1 1
+.names n1785 n1722 Pi15 n2035
+-00 1
+0-1 1
+.names Ni13 Ni12 n2036
+11 1
+.names n1082_1 n653 n2073 n2038 Ni10 n2037
+--110 1
+-0--0 1
+0--10 1
+.names n2065 n2056 n2039 Pi16 Pi15 n2038
+--000 0
+-0-10 0
+0--11 0
+.names n2052 n2050 n2040 Pi19 Pi17 n2039
+--010 0
+-0-01 0
+0---- 0
+.names n2049 n1761 n2041 n2040
+-01 1
+0-1 1
+.names n2042 n1959 n2048 n2047 n1958 n2041
+---10 0
+-01-- 0
+0---- 0
+.names n1181 n2046 n2043 n2042
+-11 1
+0-1 1
+.names n2045 Pi22 n2044 Pi21 n2043
+--00 0
+00-1 0
+.names Ni32 Pi26 Pi27 Ni30 n1919 n2044
+-1011 1
+0---1 1
+.names Pi27 Pi26 n669 n1994 n1919 n2045
+--011 1
+01-11 1
+.names Pi27 Pi26 n669 n1777 n1919 n2046
+--011 1
+01-11 1
+.names n1177 n655 n2047
+11 1
+.names n1077_1 n655 Pi25 n2048
+111 1
+.names n1390 n655 n2049
+10 1
+.names n2049 n1769 n2051 n2050
+-01 1
+0-1 1
+.names n2042 n1963 n2048 n2047 n1962 n2051
+---10 0
+-01-- 0
+0---- 0
+.names n691 n2049 n1737 n2053 n2054 n2052
+--011 1
+-0-11 1
+0---1 1
+.names n1968 n2047 n1967 n2048 n2042 n2053
+----0 0
+--01- 0
+01--- 0
+.names n699 n2042 n2055 n2054
+-11 1
+0-1 1
+.names n1970 n1783 n1182 n655 n2055
+-010 0
+0-11 0
+.names n2057 n2059 n2061 n2063 n2064 n2056
+00001 1
+.names n2042 n1754 n2049 n2058 n743 n2057
+---01 1
+-11-1 1
+0---1 1
+.names n1942 n2048 n2047 n1941 n2058
+--10 0
+01-- 0
+.names n2042 n1745 n2049 n2060 n736 n2059
+---01 1
+-11-1 1
+0---1 1
+.names n1946 n2048 n2047 n1945 n2060
+--10 0
+01-- 0
+.names n1725 n2049 n2062 n691 n2061
+--01 1
+11-1 1
+.names n1951 n2047 n1950 n2048 n2042 n2062
+----0 0
+--01- 0
+01--- 0
+.names n2042 n699 n2063
+01 1
+.names n1953 n1780 n1182 n655 n2064
+-010 0
+0-11 0
+.names n2066 n2063 n2070 n2072 n2065
+1001 1
+.names n691 n2049 n1796 n2067 n2068 n2066
+--010 1
+-0-10 1
+0---0 1
+.names n1933 n2048 n2042 n2047 n1934 n2067
+---10 0
+--0-- 0
+01--- 0
+.names n2069 n2042 n1799 n2049 n743 n2068
+--111 1
+-0--1 1
+0---1 1
+.names n1800 n1802 n2047 n2048 n1919 n2069
+--00- 1
+-10-1 1
+1--01 1
+11--1 1
+.names n2071 n2042 n1788 n2049 n736 n2070
+--111 1
+-0--1 1
+0---1 1
+.names n1789 n1791 n2047 n2048 n1919 n2071
+--00- 1
+-10-1 1
+1--01 1
+11--1 1
+.names n1929 n1814 n1182 n655 n2072
+-010 0
+0-11 0
+.names n2074 n2076 n2078 n2063 n2080 n2073
+00001 1
+.names n1804 n2049 n2075 n743 n2074
+--01 1
+11-1 1
+.names n2042 n1974 n2048 n2047 n1975 n2075
+---10 0
+-01-- 0
+0---- 0
+.names n1807 n2049 n2077 n736 n2076
+--01 1
+11-1 1
+.names n2042 n1978 n2048 n2047 n1979 n2077
+---10 0
+-01-- 0
+0---- 0
+.names n2042 n1792 n2049 n2079 n691 n2078
+---01 1
+-11-1 1
+0---1 1
+.names n1983 n2048 n2047 n1982 n2079
+--10 0
+01-- 0
+.names n2029 n1811 n1182 n655 n2080
+-010 0
+0-11 0
+.names n2336 n2082 Ni11 n574 n2081
+-001 1
+0--1 1
+.names n2335 n2121 n2083 n2260 n2220 n2082
+-1011 1
+0--11 1
+.names n1082_1 n2103 n2112 n2084 n2083
+-001 0
+0--- 0
+.names n691 n2085 n2098 n2084
+-11 1
+0-1 1
+.names n2095 n2096 n2094 n2097 n2086 n2085
+----0 0
+--01- 0
+01--- 0
+.names n1991 n2090 n2092 n2087 n2093 n2086
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1793 n1919 n2088 n2087
+-111 1
+1-11 1
+.names n1733 n1740 n1794 n2089 n1739 n2088
+-1011 0
+1---- 0
+.names Ni33 n1730 n1729 n1732 n2089
+-011 1
+1--1 1
+.names n18 n1795 n1919 n2091 n2090
+-111 1
+1-11 1
+.names n1733 n1744 n1794 n2089 n1743 n2091
+-1011 0
+1---- 0
+.names n1077_1 n601 n2092
+11 1
+.names n601 n796 Pi20 n2093
+111 1
+.names Ni32 Ni30 n2088 n1793 n18 n2094
+---00 0
+--0-- 0
+11--- 0
+.names Ni32 Ni30 n2091 n1795 n18 n2095
+---00 0
+--0-- 0
+11--- 0
+.names n1077_1 n601 n2096
+10 1
+.names n601 n796 Pi20 n2097
+011 1
+.names n1839 n2102 n2099 n601 n2101 n2098
+--100 1
+-1-10 1
+0---0 1
+.names n1836 n2100 n2099
+11 1
+.names n2089 n1813 n1733 n2100
+-00 1
+0-0 1
+.names n1991 n699 n2101
+01 1
+.names n18 n1812 n1919 n2100 n2102
+-111 1
+1-11 1
+.names n743 n2107 n2111 n2104 n2103
+-101 0
+0--- 0
+.names n18 n2092 n1974 n2105 n1991 n2104
+--111 1
+-0--1 1
+1--11 1
+.names n2106 n1919 n2105
+11 1
+.names n1733 n1768 n1801 n2089 n1767 n2106
+-1010 0
+1---- 0
+.names n2110 n2096 n2108 n2097 n2107
+--01 0
+01-- 0
+.names Ni32 Ni30 n2109 n1805 n18 n2108
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1764 n1801 n2089 n1763 n2109
+-1010 0
+1---- 0
+.names Ni32 Ni30 n2106 n1806 n18 n2110
+---00 0
+--0-- 0
+11--- 0
+.names n1919 n2109 n1805 n18 n2093 n2111
+--001 1
+-0--1 1
+0---1 1
+.names n736 n2116 n2120 n2113 n2112
+-101 0
+0--- 0
+.names n18 n2092 n1978 n2114 n1991 n2113
+--111 1
+-0--1 1
+1--11 1
+.names n2115 n1919 n2114
+11 1
+.names n1733 n1773 n1790 n2089 n1768 n2115
+-0011 0
+1---- 0
+.names n2119 n2096 n2117 n2097 n2116
+--01 0
+01-- 0
+.names Ni32 Ni30 n2118 n1808 n18 n2117
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1771 n1790 n2089 n1764 n2118
+-0011 0
+1---- 0
+.names Ni32 Ni30 n2115 n1809 n18 n2119
+---00 0
+--0-- 0
+11--- 0
+.names n1919 n2118 n1808 n18 n2093 n2120
+--001 1
+-0--1 1
+0---1 1
+.names n1093 n2202 n2187 n2155 n2122 n2121
+-1100 1
+0--00 1
+.names n1551 n2132 n2141 n2123 n2122
+-010 0
+0--- 0
+.names n743 n2127 n2131 n2124 n2123
+-101 0
+0--- 0
+.names n18 n2092 n1959 n2125 n1991 n2124
+--111 1
+-0--1 1
+1--11 1
+.names n2126 n1919 n2125
+11 1
+.names n1733 n1767 n1768 n2089 n1756 n2126
+-0110 0
+1---- 0
+.names n2130 n2096 n2128 n2097 n2127
+--01 0
+01-- 0
+.names Ni32 Ni30 n2129 n1762 n18 n2128
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1763 n1764 n2089 n1756 n2129
+-0110 0
+1---- 0
+.names Ni32 Ni30 n2126 n1766 n18 n2130
+---00 0
+--0-- 0
+11--- 0
+.names n1919 n2129 n1762 n18 n2093 n2131
+--001 1
+-0--1 1
+0---1 1
+.names n736 n2136 n2140 n2133 n2132
+-101 0
+0--- 0
+.names n18 n2092 n1963 n2134 n1991 n2133
+--111 1
+-0--1 1
+1--11 1
+.names n2135 n1919 n2134
+11 1
+.names n1733 n1768 n1773 n2089 n1747 n2135
+-1010 0
+1---- 0
+.names n2139 n2096 n2137 n2097 n2136
+--01 0
+01-- 0
+.names Ni32 Ni30 n2138 n1770 n18 n2137
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1764 n1771 n2089 n1747 n2138
+-1010 0
+1---- 0
+.names Ni32 Ni30 n2135 n1772 n18 n2139
+---00 0
+--0-- 0
+11--- 0
+.names n1919 n2138 n1770 n18 n2093 n2140
+--001 1
+-0--1 1
+0---1 1
+.names n691 n2147 n2142 n2150 n2141
+-111 1
+0--1 1
+.names n1991 n2145 n2092 n2143 n2093 n2142
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1738 n1919 n2144 n2143
+-111 1
+1-11 1
+.names n1733 n1740 n2089 n1739 n2144
+-111 0
+1--- 0
+.names n18 n1742 n1919 n2146 n2145
+-111 1
+1-11 1
+.names n1733 n1744 n2089 n1743 n2146
+-111 0
+1--- 0
+.names n2149 n2096 n2148 n2097 n2147
+--01 0
+01-- 0
+.names Ni32 Ni30 n2144 n1738 n18 n2148
+---00 0
+--0-- 0
+11--- 0
+.names Ni32 Ni30 n2146 n1742 n18 n2149
+---00 0
+--0-- 0
+11--- 0
+.names n1839 n2153 n2151 n601 n2101 n2150
+--100 1
+-1-10 1
+0---0 1
+.names n1903 n2152 n2151
+11 1
+.names n2089 n1784 n1733 n2152
+-00 1
+0-0 1
+.names n18 n2154 n1919 n2152 n2153
+-111 1
+1-11 1
+.names n1732 n1784 n1733 n2154
+-00 1
+0-0 1
+.names n1219 n2165 n2174 n2156 n2155
+-010 0
+0--- 0
+.names n743 n2160 n2164 n2157 n2156
+-101 0
+0--- 0
+.names n18 n2092 n1942 n2158 n1991 n2157
+--111 1
+-0--1 1
+1--11 1
+.names n2159 n1919 n2158
+11 1
+.names n1733 n1756 n1759 n2089 n1752 n2159
+-0011 0
+1---- 0
+.names n2163 n2096 n2161 n2097 n2160
+--01 0
+01-- 0
+.names Ni32 Ni30 n2162 n1755 n18 n2161
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1756 n1757 n2089 n1749 n2162
+-0011 0
+1---- 0
+.names Ni32 Ni30 n2159 n1758 n18 n2163
+---00 0
+--0-- 0
+11--- 0
+.names n1919 n2162 n1755 n18 n2093 n2164
+--001 1
+-0--1 1
+0---1 1
+.names n736 n2169 n2173 n2166 n2165
+-101 0
+0--- 0
+.names n18 n2092 n1946 n2167 n1991 n2166
+--111 1
+-0--1 1
+1--11 1
+.names n2168 n1919 n2167
+11 1
+.names n1733 n1752 n1753 n2089 n1747 n2168
+-1010 0
+1---- 0
+.names n2172 n2096 n2170 n2097 n2169
+--01 0
+01-- 0
+.names Ni32 Ni30 n2171 n1746 n18 n2170
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1749 n1750 n2089 n1747 n2171
+-1010 0
+1---- 0
+.names Ni32 Ni30 n2168 n1751 n18 n2172
+---00 0
+--0-- 0
+11--- 0
+.names n1919 n2171 n1746 n18 n2093 n2173
+--001 1
+-0--1 1
+0---1 1
+.names n691 n2180 n2175 n2183 n2174
+-111 1
+0--1 1
+.names n1991 n2178 n2092 n2176 n2093 n2175
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1726 n1919 n2177 n2176
+-111 1
+1-11 1
+.names n2089 n1727 n1733 n2177
+-00 1
+0-0 1
+.names n18 n1734 n1919 n2179 n2178
+-111 1
+1-11 1
+.names n2089 n1735 n1733 n2179
+-00 1
+0-0 1
+.names n2182 n2096 n2181 n2097 n2180
+--01 0
+01-- 0
+.names Ni32 Ni30 n2177 n1726 n18 n2181
+---00 0
+--0-- 0
+11--- 0
+.names n1896 n2179 n2182
+11 1
+.names n1839 n2186 n2184 n601 n2101 n2183
+--100 1
+-1-10 1
+0---0 1
+.names Ni32 Ni30 n2185 n1781 n18 n2184
+---00 0
+--0-- 0
+11--- 0
+.names n2089 n1782 n1733 n2185
+-00 1
+0-0 1
+.names n18 n1781 n1919 n2185 n2186
+-111 1
+1-11 1
+.names n736 n2188 n2197 n2187
+-11 1
+0-1 1
+.names n2092 n2189 n2196 n1991 n2192 n2188
+-1011 1
+0-011 1
+.names n18 n1925 n2190 n2189
+-11 1
+1-1 1
+.names n2191 n1919 n2190
+11 1
+.names n1733 n1753 n1790 n2089 n1752 n2191
+-0011 0
+1---- 0
+.names n2195 n2096 n2193 n2097 n2192
+--01 0
+01-- 0
+.names Ni32 Ni30 n2194 n1789 n18 n2193
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1750 n1790 n2089 n1749 n2194
+-0011 0
+1---- 0
+.names Ni32 Ni30 n2191 n1791 n18 n2195
+---00 0
+--0-- 0
+11--- 0
+.names n1919 n2194 n1789 n18 n2093 n2196
+--001 1
+-0--1 1
+0---1 1
+.names n1839 n2200 n2198 n601 n2101 n2197
+--100 1
+-1-10 1
+0---0 1
+.names n1838 n2199 n2198
+11 1
+.names n2089 n1815 n1733 n2199
+-00 1
+0-0 1
+.names n18 n1929 n2201 n2200
+-11 1
+1-1 1
+.names n2089 n1815 n1733 n1919 n2201
+-001 1
+0-01 1
+.names n2212 n2203 Pi19 Pi17 n2202
+-000 0
+0-10 0
+.names n2210 n2096 n2209 n2097 n2204 n2203
+----0 0
+--01- 0
+01--- 0
+.names n1991 n2207 n2092 n2205 n2093 n2204
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1797 n1919 n2206 n2205
+-111 1
+1-11 1
+.names n1733 n1794 n2089 n1727 n2206
+-011 0
+1--- 0
+.names n18 n1933 n2208 n2207
+-11 1
+1-1 1
+.names n2089 n1794 n1735 n1733 n1919 n2208
+--001 1
+-1-01 1
+0--01 1
+.names Ni32 Ni30 n2206 n1797 n18 n2209
+---00 0
+--0-- 0
+11--- 0
+.names Ni32 Ni30 n2211 n1798 n18 n2210
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1794 n2089 n1735 n2211
+-011 0
+1--- 0
+.names n2093 n2218 n2219 n1991 n2213 n2212
+-1011 1
+0-011 1
+.names n2216 n2096 n2214 n2097 n2213
+--01 0
+01-- 0
+.names Ni32 Ni30 n2215 n1800 n18 n2214
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1757 n1801 n2089 n1749 n2215
+-0011 0
+1---- 0
+.names Ni32 Ni30 n2217 n1802 n18 n2216
+---00 0
+--0-- 0
+11--- 0
+.names n1733 n1759 n1801 n2089 n1752 n2217
+-0011 0
+1---- 0
+.names n18 n1800 n1919 n2215 n2218
+-111 1
+1-11 1
+.names n1919 n2217 n1802 n18 n2092 n2219
+--001 1
+-0--1 1
+0---1 1
+.names n2233 n569 Ni12 n2221 n2220
+---1 0
+000- 0
+.names n568 n2227 n2232 n2231 n2222 n2221
+---01 0
+-10-- 0
+0---- 0
+.names n2226 n1807 n2225 n2223 n2224 n2222
+-0100 1
+0-100 1
+.names n1814 n1788 n796 n1093 Pi19 n2223
+-1110 1
+0-111 1
+.names n1780 n1745 n796 n1219 Pi19 n2224
+-1110 1
+0-111 1
+.names n1075 n1811 n1778 Pi17 n2225
+-111 1
+0-11 1
+.names n796 Pi19 n2226
+10 1
+.names n1075 n1804 n2230 n2228 n2229 n2227
+-0100 1
+0-100 1
+.names n1799 n1796 n796 n1093 Pi19 n2228
+-1110 1
+1-111 1
+.names n1725 n1754 n796 n1219 Pi19 n2229
+-1111 1
+1-110 1
+.names n2226 n1792 n1778 Pi17 n2230
+-010 1
+0-10 1
+.names n1783 n1769 n796 n1551 Pi19 n2231
+-1110 1
+0-111 1
+.names n1761 n1737 n796 n1551 Pi19 n2232
+-1110 1
+1-111 1
+.names n2244 n2252 n2234 n2239 Pi17 n2233
+--111 1
+11--0 1
+.names n2237 n2235 Pi16 Pi15 n2234
+-000 0
+0-11 0
+.names n2236 n2139 n1076 n2137 n1081 n2235
+---01 0
+-01-- 0
+0---- 0
+.names n1075 n2152 n1903 n1778 n2236
+-111 1
+0--1 1
+.names n2238 n2195 n1076 n2193 n1081 n2237
+---01 0
+-01-- 0
+0---- 0
+.names n1075 n2199 n1838 n1778 n2238
+-111 1
+0--1 1
+.names n1219 n1075 n2184 n2243 n2240 n2239
+--110 1
+-0-10 1
+0---0 1
+.names n2242 n2241 n2119 n1076 n1082_1 n2240
+--011 1
+-1--1 1
+0---1 1
+.names n669 n2118 n1808 n18 n1081 n2241
+--001 1
+-0--1 1
+1---1 1
+.names n1075 n2100 n1836 n1778 n2242
+-111 1
+0--1 1
+.names n1778 n2172 n1076 n1081 n2170 n2243
+---10 0
+-01-- 0
+0---- 0
+.names Pi15 n2250 n2251 n2245 Pi16 n2244
+---10 1
+-11-1 1
+1---- 1
+.names n2246 n2247 n2248 n2249 n1778 n2245
+00001 1
+.names n669 n2129 n1762 n18 n1127 n2246
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2126 n1766 n18 n1131 n2247
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2146 n1742 n18 n1076 n2248
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2144 n1738 n18 n1081 n2249
+--001 1
+-0--1 1
+1---1 1
+.names n1778 n2182 n1076 n1081 n2181 n2250
+---10 0
+-01-- 0
+0---- 0
+.names n2163 n1131 n2161 n1127 n2251
+--01 0
+01-- 0
+.names Pi15 n2255 n2254 n2253 Pi16 n2252
+--110 1
+-1--1 1
+0---- 1
+.names n1778 n2095 n1076 n1081 n2094 n2253
+---10 0
+-01-- 0
+0---- 0
+.names n2110 n1131 n2108 n1127 n2254
+--01 0
+01-- 0
+.names n2256 n2257 n2258 n2259 n1778 n2255
+00001 1
+.names n669 n2217 n1802 n18 n1131 n2256
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2211 n1798 n18 n1076 n2257
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2215 n1800 n18 n1127 n2258
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2206 n1797 n18 n1081 n2259
+--001 1
+-0--1 1
+1---1 1
+.names n2261 n2300 n2334 n2233 n2036 n2260
+---01 0
+001-- 0
+.names n844 n2285 n2262 n2288 n2280 n2261
+-1110 1
+0-110 1
+.names n690 n2273 n2272 n2275 n2263 n2262
+-1000 1
+0--00 1
+.names n827 n2266 n2268 n2270 n2264 n2263
+-0000 0
+0---- 0
+.names n669 n2194 n1789 n18 n2265 n2264
+--001 1
+-0--1 1
+1---1 1
+.names n796 Pi27 Pi20 n2265
+101 1
+.names n669 n2191 n1791 n18 n2267 n2266
+--001 1
+-0--1 1
+1---1 1
+.names n1077_1 Pi27 n2267
+10 1
+.names n1919 n2191 n1791 n18 n2269 n2268
+--001 1
+-0--1 1
+0---1 1
+.names n1077_1 Pi27 n2269
+11 1
+.names n1919 n2194 n1789 n18 n2271 n2270
+--001 1
+-0--1 1
+0---1 1
+.names n796 Pi27 Pi20 n2271
+111 1
+.names n2209 n2265 n2272
+01 1
+.names n1077_1 n2210 n2207 Pi27 n2274 n2273
+--110 1
+-1-00 1
+0---0 1
+.names n1919 n2206 n1797 n18 n2271 n2274
+--001 1
+-0--1 1
+0---1 1
+.names n836 n2277 n2278 n2279 n2276 n2275
+-0000 0
+0---- 0
+.names n669 n2215 n1800 n18 n2265 n2276
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2217 n1802 n18 n2267 n2277
+--001 1
+-0--1 1
+1---1 1
+.names n1919 n2217 n1802 n18 n2269 n2278
+--001 1
+-0--1 1
+0---1 1
+.names n1919 n2215 n1800 n18 n2271 n2279
+--001 1
+-0--1 1
+0---1 1
+.names n817 n2282 n2283 n2284 n2281 n2280
+-0000 0
+0---- 0
+.names n2117 n2265 n2281
+01 1
+.names n2119 n2267 n2282
+01 1
+.names n2114 n1978 n18 n2269 n2283
+-001 1
+0--1 1
+.names n1919 n2118 n1808 n18 n2271 n2284
+--001 1
+-0--1 1
+0---1 1
+.names n2110 n2267 n2108 n2265 n2286 n2285
+----0 0
+--01- 0
+01--- 0
+.names n18 n2269 n1974 n2105 n2287 n2286
+--110 1
+-0--0 1
+1--10 1
+.names n1919 n2109 n1805 n18 n2271 n2287
+--001 1
+-0--1 1
+0---1 1
+.names n2265 n800 n2094 n2289 n2291 n2288
+--111 1
+-0--1 1
+0--11 1
+.names n1077_1 n2095 n2090 Pi27 n2290 n2289
+--110 1
+-1-00 1
+0---0 1
+.names n1919 n2088 n1793 n18 n2271 n2290
+--001 1
+-0--1 1
+0---1 1
+.names n2299 n2102 n2295 n2297 n2292 n2291
+-1001 1
+0-001 1
+.names n18 n2293 n1929 n2201 n2294 n2292
+--111 1
+-0--1 1
+1--11 1
+.names n1839 Pi27 Pi16 n2293
+111 1
+.names n1922 Pi15 n2294
+01 1
+.names n2100 n1836 n2296 n2295
+-01 1
+0-1 1
+.names n1839 Pi27 Pi16 n2296
+100 1
+.names n2199 n1838 n2298 n2297
+-01 1
+0-1 1
+.names n1839 Pi27 Pi16 n2298
+101 1
+.names n1839 Pi27 Pi16 n2299
+110 1
+.names n2331 n817 n844 n2328 n2301 n2300
+----0 0
+--10- 0
+01--- 0
+.names n2302 n2308 n2313 n2318 n2323 n2301
+10000 1
+.names n2303 n2304 n2305 n2306 n2307 n2302
+00001 1
+.names n1919 n2185 n1781 n18 n2293 n2303
+--001 1
+-0--1 1
+0---1 1
+.names n1919 n2152 n2154 n18 n2299 n2304
+--001 1
+-0--1 1
+0---1 1
+.names n2152 n1903 n2296 n2305
+-01 1
+0-1 1
+.names n669 n2185 n1781 n18 n2298 n2306
+--001 1
+-0--1 1
+1---1 1
+.names n1922 Pi15 n2307
+00 1
+.names n800 n2310 n2311 n2312 n2309 n2308
+-0000 0
+0---- 0
+.names n669 n2144 n1738 n18 n2265 n2309
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2146 n1742 n18 n2267 n2310
+--001 1
+-0--1 1
+1---1 1
+.names n1919 n2146 n1742 n18 n2269 n2311
+--001 1
+-0--1 1
+0---1 1
+.names n1919 n2144 n1738 n18 n2271 n2312
+--001 1
+-0--1 1
+0---1 1
+.names n690 n2315 n2316 n2317 n2314 n2313
+-0000 0
+0---- 0
+.names n669 n2177 n1726 n18 n2265 n2314
+--001 1
+-0--1 1
+1---1 1
+.names n2179 n1896 n2267 n2315
+-01 1
+0-1 1
+.names n1919 n2179 n1734 n18 n2269 n2316
+--001 1
+-0--1 1
+0---1 1
+.names n1919 n2177 n1726 n18 n2271 n2317
+--001 1
+-0--1 1
+0---1 1
+.names n836 n2320 n2321 n2322 n2319 n2318
+-0000 0
+0---- 0
+.names n669 n2162 n1755 n18 n2265 n2319
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2159 n1758 n18 n2267 n2320
+--001 1
+-0--1 1
+1---1 1
+.names n1919 n2159 n1758 n18 n2269 n2321
+--001 1
+-0--1 1
+0---1 1
+.names n1919 n2162 n1755 n18 n2271 n2322
+--001 1
+-0--1 1
+0---1 1
+.names n827 n2325 n2326 n2327 n2324 n2323
+-0000 0
+0---- 0
+.names n669 n2171 n1746 n18 n2265 n2324
+--001 1
+-0--1 1
+1---1 1
+.names n669 n2168 n1751 n18 n2267 n2325
+--001 1
+-0--1 1
+1---1 1
+.names n1919 n2168 n1751 n18 n2269 n2326
+--001 1
+-0--1 1
+0---1 1
+.names n1919 n2171 n1746 n18 n2271 n2327
+--001 1
+-0--1 1
+0---1 1
+.names n2130 n2267 n2128 n2265 n2329 n2328
+----0 0
+--01- 0
+01--- 0
+.names n18 n2269 n1959 n2125 n2330 n2329
+--110 1
+-0--0 1
+1--10 1
+.names n1919 n2129 n1762 n18 n2271 n2330
+--001 1
+-0--1 1
+0---1 1
+.names n2139 n2267 n2137 n2265 n2332 n2331
+----0 0
+--01- 0
+01--- 0
+.names n18 n2269 n1963 n2134 n2333 n2332
+--110 1
+-0--0 1
+1--10 1
+.names n1919 n2138 n1770 n18 n2271 n2333
+--001 1
+-0--1 1
+0---1 1
+.names n569 Ni12 n2334
+11 1
+.names n1642 Ni12 n2335
+11 1
+.names Ni11 n2233 n2337 n568 Ni10 n2336
+--111 1
+-1-01 1
+0---1 1
+.names n1219 n2369 n2338 n2381 n2356 n2337
+-1000 1
+0-000 1
+.names n1082_1 n2347 n2351 n2339 n2338
+-010 0
+0--- 0
+.names n743 n2342 n2345 n2340 n2339
+-101 0
+0--- 0
+.names n18 n2341 n1974 n2105 n2043 n2340
+--111 1
+-0--1 1
+1--11 1
+.names n1077_1 n655 n2341
+11 1
+.names n2110 n2343 n2108 n2344 n2342
+--01 0
+01-- 0
+.names n1077_1 n655 n2343
+10 1
+.names n655 n796 Pi20 n2344
+011 1
+.names n1919 n2109 n1805 n18 n2346 n2345
+--001 1
+-0--1 1
+0---1 1
+.names n655 n796 Pi20 n2346
+111 1
+.names n736 n2349 n2350 n2348 n2347
+-101 0
+0--- 0
+.names n18 n2341 n1978 n2114 n2043 n2348
+--111 1
+-0--1 1
+1--11 1
+.names n2119 n2343 n2117 n2344 n2349
+--01 0
+01-- 0
+.names n1919 n2118 n1808 n18 n2346 n2350
+--001 1
+-0--1 1
+0---1 1
+.names n691 n2353 n2352 n2354 n2351
+-111 1
+0--1 1
+.names n2043 n2090 n2341 n2087 n2346 n2352
+---01 0
+-01-- 0
+0---- 0
+.names n2095 n2343 n2094 n2344 n2353
+--01 0
+01-- 0
+.names n1839 n2102 n2099 n655 n2355 n2354
+--100 1
+-1-10 1
+0---0 1
+.names n2043 n699 n2355
+01 1
+.names n1551 n2361 n2365 n2357 n2356
+-010 0
+0--- 0
+.names n743 n2359 n2360 n2358 n2357
+-101 0
+0--- 0
+.names n18 n2341 n1959 n2125 n2043 n2358
+--111 1
+-0--1 1
+1--11 1
+.names n2130 n2343 n2128 n2344 n2359
+--01 0
+01-- 0
+.names n1919 n2129 n1762 n18 n2346 n2360
+--001 1
+-0--1 1
+0---1 1
+.names n736 n2363 n2364 n2362 n2361
+-101 0
+0--- 0
+.names n18 n2341 n1963 n2134 n2043 n2362
+--111 1
+-0--1 1
+1--11 1
+.names n2139 n2343 n2137 n2344 n2363
+--01 0
+01-- 0
+.names n1919 n2138 n1770 n18 n2346 n2364
+--001 1
+-0--1 1
+0---1 1
+.names n691 n2367 n2366 n2368 n2365
+-111 1
+0--1 1
+.names n2043 n2145 n2341 n2143 n2346 n2366
+---01 0
+-01-- 0
+0---- 0
+.names n2149 n2343 n2148 n2344 n2367
+--01 0
+01-- 0
+.names n1839 n2153 n2151 n655 n2355 n2368
+--100 1
+-1-10 1
+0---0 1
+.names n691 n2378 n2370 n2380 n2374 n2369
+-1010 1
+0-010 1
+.names n743 n2372 n2373 n2371 n2370
+-101 0
+0--- 0
+.names n18 n2341 n1942 n2158 n2043 n2371
+--111 1
+-0--1 1
+1--11 1
+.names n2163 n2343 n2161 n2344 n2372
+--01 0
+01-- 0
+.names n1919 n2162 n1755 n18 n2346 n2373
+--001 1
+-0--1 1
+0---1 1
+.names n736 n2376 n2377 n2375 n2374
+-101 0
+0--- 0
+.names n18 n2341 n1946 n2167 n2043 n2375
+--111 1
+-0--1 1
+1--11 1
+.names n2172 n2343 n2170 n2344 n2376
+--01 0
+01-- 0
+.names n1919 n2171 n1746 n18 n2346 n2377
+--001 1
+-0--1 1
+0---1 1
+.names n2182 n2343 n2181 n2344 n2379 n2378
+----0 0
+--01- 0
+01--- 0
+.names n2043 n2178 n2341 n2176 n2346 n2379
+---01 0
+-01-- 0
+0---- 0
+.names n1839 n2186 n2184 n655 n2355 n2380
+--100 1
+-1-10 1
+0---0 1
+.names n2387 n2382 n1093 n2381
+-01 1
+0-1 1
+.names n736 n2384 n2386 n2383 n2385 n2382
+-1011 1
+0---1 1
+.names n18 n2341 n1925 n2190 n2043 n2383
+--111 1
+-0--1 1
+1--11 1
+.names n2195 n2343 n2193 n2344 n2384
+--01 0
+01-- 0
+.names n1839 n2200 n2198 n655 n2355 n2385
+--100 1
+-1-10 1
+0---0 1
+.names n1919 n2194 n1789 n18 n2346 n2386
+--001 1
+-0--1 1
+0---1 1
+.names Pi17 n2392 n2394 n2388 Pi19 n2387
+---10 1
+-11-1 1
+1---- 1
+.names n2344 n2209 n2390 n2391 n2389 n2388
+-1100 1
+0-100 1
+.names n1919 n2206 n1797 n18 n2346 n2389
+--001 1
+-0--1 1
+0---1 1
+.names n18 n2341 n1933 n2208 n2043 n2390
+--111 1
+-0--1 1
+1--11 1
+.names n669 n2211 n1798 n18 n2343 n2391
+--001 1
+-0--1 1
+1---1 1
+.names n2346 n2218 n2043 n2393 n2392
+-110 1
+0-10 1
+.names n1919 n2217 n1802 n18 n2341 n2393
+--001 1
+-0--1 1
+0---1 1
+.names n2216 n2343 n2214 n2344 n2394
+--01 0
+01-- 0
+.names n2423 n2419 n2396 Ni11 n2425 n2395
+--000 1
+-0-00 1
+0---0 1
+.names n2418 n2407 n2397 n569 Ni12 n2396
+-0010 0
+0--00 0
+.names n2405 n2403 n2398 Pi16 Pi15 n2397
+--0-- 0
+-0-01 0
+0--10 0
+.names Pi17 n2401 n2399 Pi16 Pi15 n2398
+--000 0
+-0-11 0
+0---- 0
+.names n1075 n1901 n2400 n1778 n2399
+-111 1
+0-11 1
+.names n1884 n1081 n1076 n1882 n2400
+--10 0
+01-- 0
+.names n1857 n1081 n1076 n1855 n2402 n2401
+----0 0
+--10- 0
+01--- 0
+.names n1075 n1837 n1778 n2402
+-11 1
+0-1 1
+.names n1823 n1081 n2404 n1076 n1819 n2403
+---10 0
+--0-- 0
+01--- 0
+.names n1075 n1835 n1778 n2404
+-11 1
+0-1 1
+.names n1075 n1904 n2406 n2405
+-11 1
+0-1 1
+.names n1778 n1877 n1081 n1076 n1875 n2406
+---10 0
+-01-- 0
+0---- 0
+.names Pi16 n2416 n2414 Pi15 n2408 n2407
+--101 1
+-1-11 1
+1---1 1
+.names Pi16 n2412 n2409 Pi15 Pi17 n2408
+--110 1
+-1-00 1
+0---0 1
+.names n1076 n1849 n2410 n2411 n1778 n2409
+-1011 1
+0-011 1
+.names n1829 n1131 n2410
+01 1
+.names n1831 n1127 n1081 n1851 n2411
+--10 0
+01-- 0
+.names n1871 n1127 n1131 n1869 n2413 n2412
+----0 0
+--10- 0
+01--- 0
+.names n1778 n1897 n1081 n1076 n1894 n2413
+---10 0
+-01-- 0
+0---- 0
+.names n1888 n1127 n1131 n1890 n2415 n2414
+----0 0
+--10- 0
+01--- 0
+.names n1778 n1909 n1081 n1076 n1907 n2415
+---10 0
+-01-- 0
+0---- 0
+.names n1863 n1127 n1131 n1861 n2417 n2416
+----0 0
+--10- 0
+01--- 0
+.names n1778 n1845 n1081 n1076 n1843 n2417
+---10 0
+-01-- 0
+0---- 0
+.names n796 n1776 n1778 n2418
+-11 1
+0-1 1
+.names n2335 n2422 n2420 n2419
+-11 1
+0-1 1
+.names n2421 n2334 n2418 n2036 n2420
+--01 0
+01-- 0
+.names n796 n1921 n1922 n2421
+-10 1
+0-0 1
+.names n796 n1995 n1991 n2422
+-11 1
+0-1 1
+.names n2424 n2418 n568 Ni11 n2423
+-001 0
+0-11 0
+.names n796 n2046 n2043 n2424
+-11 1
+0-1 1
+.names Ni7 Ni8 Ni10 Ni9 n2425
+-010 1
+0--0 1
+.names n661 n2587 n2427 Ni10 n2528 n2426
+--100 1
+-1-10 1
+0---0 1
+.names n567 n2458 n2428 n2527 n2511 n2427
+-1010 1
+0--10 1
+.names n1082_1 n2443 n2449 n2429 n2428
+-010 0
+0--- 0
+.names n1863 n2442 n2430 n743 n2429
+--01 1
+01-1 1
+.names n2441 n1861 n2431 n2430
+-11 1
+0-1 1
+.names n2435 n2434 n2439 n2432 n2440 n2431
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1805 n2433 n1864 n2432
+-111 1
+1-11 1
+.names Ni31 Ni33 Ni30 Ni32 n2433
+-111 0
+1--1 0
+.names n18 n1806 n2433 n1862 n2434
+-111 1
+1-11 1
+.names n2437 n633 n2436 n2438 n2435
+--01 1
+11-1 1
+.names n1779 Pi21 n2436
+11 1
+.names n1994 n2433 n2437
+11 1
+.names Ni32 Pi21 n633 Ni30 n2433 n2438
+--111 1
+-1--- 1
+0---1 1
+.names n1077_1 n633 n2439
+11 1
+.names n633 n796 Pi20 n2440
+111 1
+.names n1077_1 n633 n2441
+10 1
+.names n633 n796 Pi20 n2442
+011 1
+.names n2448 n1819 n2441 n2444 n736 n2443
+---01 1
+-01-1 1
+1---1 1
+.names n2435 n2447 n2440 n2439 n2445 n2444
+---10 0
+-01-- 0
+0---- 0
+.names n18 n1809 n2446 n2445
+-11 1
+1-1 1
+.names n1822 n1821 n1733 n2433 n2446
+-001 1
+0-01 1
+.names n18 n1808 n2433 n1824 n2447
+-111 1
+1-11 1
+.names n1823 n2442 n2448
+01 1
+.names n691 n2450 n2454 n2449
+-11 1
+0-1 1
+.names n1845 n2442 n2441 n1843 n2451 n2450
+----0 0
+--10- 0
+01--- 0
+.names n2435 n2453 n2439 n2452 n2440 n2451
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1793 n2433 n1846 n2452
+-111 1
+1-11 1
+.names n18 n1795 n2433 n1844 n2453
+-111 1
+1-11 1
+.names n1839 n2456 n1835 n633 n2455 n2454
+--100 1
+-1-10 1
+0---0 1
+.names n2435 n699 n2455
+01 1
+.names n18 n1812 n2457 n2456
+-11 1
+1-1 1
+.names n1822 n1813 n1733 n2433 n2457
+-001 1
+0-01 1
+.names Pi16 n2493 n2476 Pi15 n2459 n2458
+--100 1
+-1-10 1
+0---0 1
+.names n1551 n2465 n2470 n2460 n2459
+-010 0
+0--- 0
+.names n1890 n2441 n2462 n2461 n743 n2460
+---11 1
+--0-1 1
+01--1 1
+.names n1888 n2442 n2461
+01 1
+.names n2435 n2464 n2439 n2463 n2440 n2462
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1762 n2433 n1889 n2463
+-111 1
+1-11 1
+.names n18 n1766 n2433 n1891 n2464
+-111 1
+1-11 1
+.names n1882 n2441 n2467 n2466 n736 n2465
+---11 1
+--0-1 1
+01--1 1
+.names n1884 n2442 n2466
+01 1
+.names n2435 n2469 n2439 n2468 n2440 n2467
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1770 n2433 n1885 n2468
+-111 1
+1-11 1
+.names n18 n1772 n2433 n1883 n2469
+-111 1
+1-11 1
+.names n691 n2442 n1909 n2471 n2474 n2470
+--111 1
+-0-11 1
+0---1 1
+.names n2441 n1907 n2473 n2472 n2435 n2471
+-1001 1
+0-001 1
+.names n2433 n1910 n1738 n18 n2440 n2472
+--001 1
+-0--1 1
+0---1 1
+.names n2433 n1908 n1742 n18 n2439 n2473
+--001 1
+-0--1 1
+0---1 1
+.names n1839 n2475 n1901 n633 n2455 n2474
+--100 1
+-1-10 1
+0---0 1
+.names n18 n2154 n2433 n1902 n2475
+-111 1
+1-11 1
+.names n691 n2487 n2477 n2491 n2482 n2476
+-1010 1
+0-010 1
+.names n1869 n2441 n2479 n2478 n743 n2477
+---11 1
+--0-1 1
+01--1 1
+.names n1871 n2442 n2478
+01 1
+.names n2435 n2481 n2439 n2480 n2440 n2479
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1755 n2433 n1872 n2480
+-111 1
+1-11 1
+.names n18 n1758 n2433 n1870 n2481
+-111 1
+1-11 1
+.names n1875 n2441 n2484 n2483 n736 n2482
+---11 1
+--0-1 1
+01--1 1
+.names n1877 n2442 n2483
+01 1
+.names n2435 n2486 n2439 n2485 n2440 n2484
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1746 n2433 n1878 n2485
+-111 1
+1-11 1
+.names n18 n1751 n2433 n1876 n2486
+-111 1
+1-11 1
+.names n1897 n2442 n2441 n1894 n2488 n2487
+----0 0
+--10- 0
+01--- 0
+.names n2435 n2490 n2439 n2489 n2440 n2488
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1726 n2433 n1898 n2489
+-111 1
+1-11 1
+.names n18 n1734 n2433 n1895 n2490
+-111 1
+1-11 1
+.names n1839 n2492 n1904 n633 n2455 n2491
+--100 1
+-1-10 1
+0---0 1
+.names n18 n1781 n2433 n1905 n2492
+-111 1
+1-11 1
+.names n691 n2499 n2503 n2508 n2494 n2493
+-1010 1
+0-010 1
+.names n1855 n2441 n2496 n2495 n736 n2494
+---11 1
+--0-1 1
+01--1 1
+.names n1857 n2442 n2495
+01 1
+.names n2435 n2498 n2439 n2497 n2440 n2496
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1789 n2433 n1858 n2497
+-111 1
+1-11 1
+.names n18 n1791 n2433 n1856 n2498
+-111 1
+1-11 1
+.names n1851 n2442 n2441 n1849 n2500 n2499
+----0 0
+--10- 0
+01--- 0
+.names n2435 n2502 n2439 n2501 n2440 n2500
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1797 n2433 n1852 n2501
+-111 1
+1-11 1
+.names n18 n1798 n2433 n1850 n2502
+-111 1
+1-11 1
+.names n1829 n2441 n2505 n2504 n743 n2503
+---11 1
+--0-1 1
+01--1 1
+.names n1831 n2442 n2504
+01 1
+.names n2435 n2507 n2439 n2506 n2440 n2505
+---01 0
+-01-- 0
+0---- 0
+.names n18 n1800 n2433 n1832 n2506
+-111 1
+1-11 1
+.names n18 n1802 n2433 n1830 n2507
+-111 1
+1-11 1
+.names n1839 n2509 n1837 n633 n2455 n2508
+--100 1
+-1-10 1
+0---0 1
+.names n1822 n1815 n2510 n1733 n2433 n2509
+-0001 1
+0-001 1
+.names n1733 n1732 n1815 n18 n2510
+-110 1
+1--0 1
+.names n2526 Ni13 n2522 n2512 n2033 n2511
+---11 1
+--1-1 1
+01--1 1
+.names n2422 n2513 n1642 Pi23 n2512
+-010 1
+0-11 1
+.names n2520 n2517 n2514 Pi22 Pi21 n2513
+--111 1
+-1--0 1
+1--01 1
+.names Pi26 n2515 n1995 n2516 Pi24 n2514
+--111 1
+-1-10 1
+0--10 1
+.names n1777 n2433 n2515
+11 1
+.names Pi27 n686 n1777 n674 n2516
+-010 1
+0-10 1
+.names Pi26 n2518 n1992 n2519 Pi24 n2517
+--111 1
+-1-10 1
+0--10 1
+.names n1733 n2433 n2518
+01 1
+.names Pi27 n686 n1733 n674 n2519
+-000 1
+0-00 1
+.names Pi26 n2437 n1993 n2521 Pi24 n2520
+--111 1
+-1-10 1
+0--10 1
+.names Pi27 n686 n1994 n674 n2521
+-010 1
+0-10 1
+.names n2523 n2421 n569 n633 n2522
+-010 1
+0-11 1
+.names n796 n674 n1777 n2524 n2523
+-011 1
+0--1 1
+.names Pi21 Pi22 n1994 n674 n2525 n2524
+--101 1
+-1--1 1
+0---1 1
+.names Pi27 n686 n1733 n674 n2525
+-000 1
+1-00 1
+.names n796 n633 n1776 n2515 n2435 n2526
+--111 1
+-1-11 1
+0---1 1
+.names n569 n2424 Ni12 Ni11 n2526 n2527
+--110 0
+-0-10 0
+0-0-0 0
+.names n2581 n2548 n2529 n567 n660 n2528
+--111 1
+-0-11 1
+0---1 1
+.names n1082_1 n2540 n2543 n2530 n2529
+-010 0
+0--- 0
+.names n1863 n2539 n2531 n743 n2530
+--01 1
+01-1 1
+.names n2538 n1861 n2532 n2531
+-11 1
+0-1 1
+.names n2533 n2434 n2536 n2432 n2537 n2532
+---01 0
+-01-- 0
+0---- 0
+.names n2437 n2535 n2436 n2534 n2533
+--01 1
+11-1 1
+.names Ni32 Pi21 n2535 Ni30 n2433 n2534
+--111 1
+-1--- 1
+0---1 1
+.names Pi24 Pi23 n2535
+01 1
+.names n1077_1 n2535 n2536
+11 1
+.names n2535 n796 Pi20 n2537
+111 1
+.names n1077_1 n2535 n2538
+10 1
+.names n2535 n796 Pi20 n2539
+011 1
+.names n2542 n1819 n2538 n2541 n736 n2540
+---01 1
+-01-1 1
+1---1 1
+.names n2533 n2447 n2537 n2536 n2445 n2541
+---10 0
+-01-- 0
+0---- 0
+.names n1823 n2539 n2542
+01 1
+.names n691 n2544 n2546 n2543
+-11 1
+0-1 1
+.names n1845 n2539 n2538 n1843 n2545 n2544
+----0 0
+--10- 0
+01--- 0
+.names n2533 n2453 n2536 n2452 n2537 n2545
+---01 0
+-01-- 0
+0---- 0
+.names n1839 n2456 n1835 n2535 n2547 n2546
+--100 1
+-1-10 1
+0---0 1
+.names n2533 n699 n2547
+01 1
+.names Pi16 n2571 n2561 Pi15 n2549 n2548
+--100 1
+-1-10 1
+0---0 1
+.names n1551 n2553 n2556 n2550 n2549
+-010 0
+0--- 0
+.names n1890 n2538 n2552 n2551 n743 n2550
+---11 1
+--0-1 1
+01--1 1
+.names n1888 n2539 n2551
+01 1
+.names n2533 n2464 n2536 n2463 n2537 n2552
+---01 0
+-01-- 0
+0---- 0
+.names n1882 n2538 n2555 n2554 n736 n2553
+---11 1
+--0-1 1
+01--1 1
+.names n1884 n2539 n2554
+01 1
+.names n2533 n2469 n2536 n2468 n2537 n2555
+---01 0
+-01-- 0
+0---- 0
+.names n691 n2539 n1909 n2557 n2560 n2556
+--111 1
+-0-11 1
+0---1 1
+.names n2538 n1907 n2559 n2558 n2533 n2557
+-1001 1
+0-001 1
+.names n2433 n1910 n1738 n18 n2537 n2558
+--001 1
+-0--1 1
+0---1 1
+.names n2433 n1908 n1742 n18 n2536 n2559
+--001 1
+-0--1 1
+0---1 1
+.names n1839 n2475 n1901 n2535 n2547 n2560
+--100 1
+-1-10 1
+0---0 1
+.names n691 n2568 n2562 n2570 n2565 n2561
+-1010 1
+0-010 1
+.names n1869 n2538 n2564 n2563 n743 n2562
+---11 1
+--0-1 1
+01--1 1
+.names n1871 n2539 n2563
+01 1
+.names n2533 n2481 n2536 n2480 n2537 n2564
+---01 0
+-01-- 0
+0---- 0
+.names n1875 n2538 n2567 n2566 n736 n2565
+---11 1
+--0-1 1
+01--1 1
+.names n1877 n2539 n2566
+01 1
+.names n2533 n2486 n2536 n2485 n2537 n2567
+---01 0
+-01-- 0
+0---- 0
+.names n1897 n2539 n2538 n1894 n2569 n2568
+----0 0
+--10- 0
+01--- 0
+.names n2533 n2490 n2536 n2489 n2537 n2569
+---01 0
+-01-- 0
+0---- 0
+.names n1839 n2492 n1904 n2535 n2547 n2570
+--100 1
+-1-10 1
+0---0 1
+.names n691 n2575 n2577 n2580 n2572 n2571
+-1010 1
+0-010 1
+.names n1855 n2538 n2574 n2573 n736 n2572
+---11 1
+--0-1 1
+01--1 1
+.names n1857 n2539 n2573
+01 1
+.names n2533 n2498 n2536 n2497 n2537 n2574
+---01 0
+-01-- 0
+0---- 0
+.names n1851 n2539 n2538 n1849 n2576 n2575
+----0 0
+--10- 0
+01--- 0
+.names n2533 n2502 n2536 n2501 n2537 n2576
+---01 0
+-01-- 0
+0---- 0
+.names n1829 n2538 n2579 n2578 n743 n2577
+---11 1
+--0-1 1
+01--1 1
+.names n1831 n2539 n2578
+01 1
+.names n2533 n2507 n2536 n2506 n2537 n2579
+---01 0
+-01-- 0
+0---- 0
+.names n1839 n2509 n1837 n2535 n2547 n2580
+--100 1
+-1-10 1
+0---0 1
+.names n2033 n2582 n2586 n2581
+-11 1
+0-1 1
+.names n2585 n2584 n2583 Ni14 Ni13 n2582
+--100 1
+-1-10 1
+1---1 1
+.names n2422 n2513 Pi23 n2583
+-11 1
+1-0 1
+.names n2523 n2421 n2535 n2584
+-10 1
+1-1 1
+.names n796 n2535 n1776 n2515 n2533 n2585
+--111 1
+-1-11 1
+0---1 1
+.names n569 n2424 Ni12 Ni11 n2585 n2586
+--110 0
+-0-10 0
+0-0-0 0
+.names n567 n2615 n2588 Pi15 n2637 n2587
+--111 1
+-1-01 1
+0---1 1
+.names n844 n2613 n2599 n2589 n2594 n2588
+-1101 1
+0-101 1
+.names n1851 n2593 n2590 n690 n2589
+--01 1
+01-1 1
+.names n2592 n1849 n2591 n2590
+-11 1
+0-1 1
+.names n2502 n2501 n796 Pi24 Pi20 n2591
+-0111 0
+0-110 0
+.names n1077_1 Pi24 n2592
+10 1
+.names n796 Pi24 Pi20 n2593
+101 1
+.names n2597 n800 n836 n2595 n2594
+--10 0
+01-- 0
+.names n1831 n2593 n2592 n1829 n2596 n2595
+----0 0
+--10- 0
+01--- 0
+.names n2507 n2506 n796 Pi24 Pi20 n2596
+-0111 0
+0-110 0
+.names n1845 n2593 n2592 n1843 n2598 n2597
+----0 0
+--10- 0
+01--- 0
+.names n2453 n2452 n796 Pi24 Pi20 n2598
+-0111 0
+0-110 0
+.names Pi24 n1834 n2600 n2608 n2605 n2599
+-1010 1
+1-010 1
+.names n817 n2602 n2603 n2604 n2601 n2600
+-0000 0
+0---- 0
+.names n1823 n2593 n2601
+01 1
+.names n669 n1809 n18 n1820 n2592 n2602
+---01 1
+-00-1 1
+1---1 1
+.names n1809 n18 n2446 Pi24 n1077_1 n2603
+--011 1
+00-11 1
+.names n2447 n796 Pi24 Pi20 n2604
+0111 1
+.names n1857 n2593 n2607 n2606 n827 n2605
+---11 1
+--0-1 1
+01--1 1
+.names n1855 n2592 n2606
+01 1
+.names n2498 n2497 n796 Pi24 Pi20 n2607
+-0111 0
+0-110 0
+.names n2609 n2509 n2611 n2456 n2612 n2608
+---01 0
+-01-- 0
+0---- 0
+.names n2437 Pi24 n2436 n2610 n2609
+--01 1
+11-1 1
+.names Pi24 Ni32 n2518 Pi21 n2610
+--00 0
+01-0 0
+.names n1839 Pi24 Pi16 n2611
+111 1
+.names n1839 Pi24 Pi16 n2612
+110 1
+.names n1863 n2593 n2592 n1861 n2614 n2613
+----0 0
+--10- 0
+01--- 0
+.names n2434 n2432 n796 Pi24 Pi20 n2614
+-0111 0
+0-110 0
+.names n836 n2635 n2616 n2619 n2615
+-111 1
+0-11 1
+.names n1900 Pi24 n827 n2617 n2616
+--10 0
+00-- 0
+.names n1877 n2593 n2592 n1875 n2618 n2617
+----0 0
+--10- 0
+01--- 0
+.names n2486 n2485 n796 Pi24 Pi20 n2618
+-0111 0
+0-110 0
+.names n2620 n2623 n2626 n2629 n2634 n2619
+00001 1
+.names n1890 n2592 n2622 n2621 n844 n2620
+---11 1
+--0-1 1
+01--1 1
+.names n1888 n2593 n2621
+01 1
+.names n2464 n2463 n796 Pi24 Pi20 n2622
+-0111 0
+0-110 0
+.names n1884 n2593 n2625 n2624 n817 n2623
+---11 1
+--0-1 1
+01--1 1
+.names n1882 n2592 n2624
+01 1
+.names n2469 n2468 n796 Pi24 Pi20 n2625
+-0111 0
+0-110 0
+.names n1897 n2593 n2628 n2627 n690 n2626
+---11 1
+--0-1 1
+01--1 1
+.names n1894 n2592 n2627
+01 1
+.names n2490 n2489 n796 Pi24 Pi20 n2628
+-0111 0
+0-110 0
+.names n1909 n2593 n2631 n2630 n800 n2629
+---11 1
+--0-1 1
+01--1 1
+.names n1907 n2592 n2630
+01 1
+.names n2633 n2632 n796 Pi24 Pi20 n2631
+-0111 0
+0-110 0
+.names n18 n1738 n2433 n1910 n2632
+-111 1
+1-11 1
+.names n18 n1742 n2433 n1908 n2633
+-111 1
+1-11 1
+.names n2609 n2492 n2611 n2475 n2612 n2634
+---01 0
+-01-- 0
+0---- 0
+.names n1871 n2593 n2592 n1869 n2636 n2635
+----0 0
+--10- 0
+01--- 0
+.names n2481 n2480 n796 Pi24 Pi20 n2636
+-0111 0
+0-110 0
+.names n2033 n2642 n2638 n2645 n2637
+-101 1
+0--1 1
+.names n2422 n2639 n1642 Pi24 n2638
+-011 1
+0-10 1
+.names n2641 n2640 Pi26 n2639
+-10 1
+1-1 1
+.names Pi21 n2521 n2516 Pi22 n2519 n2640
+--111 1
+-1-01 1
+0---1 1
+.names n2518 n2437 n2515 Pi22 Pi21 n2641
+--111 1
+-1-01 1
+1---0 1
+.names n2644 n2643 Ni14 Ni13 n2642
+-010 0
+0--1 0
+.names n2523 n2421 Pi24 n2643
+-10 1
+1-1 1
+.names Pi24 n796 n1776 n2515 n2609 n2644
+--111 1
+-0--1 1
+1--11 1
+.names n2646 n2644 n569 Ni11 Ni12 n2645
+-0-11 0
+-00-0 0
+0-110 0
+.names n2641 n2640 n2424 Pi26 Pi24 n2646
+--1-0 1
+-1-11 1
+1--01 1
+.names n2649 n2651 n2648 n2652 n2647
+--00 0
+01-- 0
+.names Ni12 n2418 n2396 Ni11 n2648
+-1-1 1
+-11- 1
+0-10 1
+.names Ni11 n2220 n1720 Ni10 n2650 n2649
+--100 1
+-1-10 1
+1---0 1
+.names n2233 n2035 n581 Ni10 n2650
+-100 1
+0-01 1
+.names n760 n575 n2651
+11 1
+.names n575 Ni7 n720 n2652
+--0 1
+10- 1
+.names n2654 n803 n796 Ni31 n1017_1
+-110 0
+0--0 0
+.names P__cmxcl_1 Ni32 Ni30 n2654
+100 1
+.names n3402 n3189 n2656 P__cmxcl_1 n721 n1022_1
+--110 1
+-0-10 1
+0---- 1
+.names n2913 n2826 n2657 Ni11 n2955 n2656
+--101 1
+-0-01 1
+0---1 1
+.names n2786 n1551 n2658 n2335 n2657
+--01 1
+01-1 1
+.names n2747 n2714 n2659 Pi16 Pi15 n2658
+--010 0
+-0-11 0
+0--01 0
+.names n2692 n2679 n2660 Pi19 Pi17 n2659
+--010 0
+-0-01 0
+0---- 0
+.names n2678 n2096 n2677 n2097 n2661 n2660
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2671 n2092 n2662 n2093 n2661
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2663 n2670 n2662
+--01 1
+11-1 1
+.names n2665 n1415 n2664 n793 n2663
+-011 1
+1-11 1
+.names n792 n2665 n2667 Ni38 n2664
+-1-1 1
+-11- 1
+0-10 1
+.names n851 Ni41 Ni40 n2666 n2665
+---0 0
+101- 0
+.names Ni47 Ni45 Ni43 n2666
+000 1
+.names Ni47 Ni45 n2667
+00 1
+.names Ni42 n2669 n2666 n750 Ni33 n2668
+--000 1
+-1--0 1
+0--00 1
+.names Ni45 Ni47 Ni38 n2669
+-10 1
+1-0 1
+.names Ni30 Ni31 Ni33 n2670
+-01 1
+0-- 1
+.names n2668 n18 n2672 n2670 n2671
+--01 1
+11-1 1
+.names n2674 n1439 n2673 n793 n2672
+-011 1
+1-11 1
+.names n792 n2674 n2667 Ni38 n2673
+-1-1 1
+-11- 1
+0-10 1
+.names n788 Ni41 Ni40 n2666 n2674
+---0 0
+101- 0
+.names Pi22 Pi21 n2676 n2675
+--1 1
+11- 1
+.names Ni30 n601 n2670 n2676
+-11 1
+0-1 1
+.names n2668 n18 n2663 Ni30 n2677
+--00 1
+11-0 1
+.names n2668 n18 n2672 Ni30 n2678
+--00 1
+11-0 1
+.names n2691 n2096 n2690 n2097 n2680 n2679
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2685 n2092 n2681 n2093 n2680
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2682 n2670 n2681
+--01 1
+11-1 1
+.names n2684 n1399 n2683 n793 n2682
+-011 1
+1-11 1
+.names n792 n2684 n2667 Ni38 n2683
+-1-1 1
+-11- 1
+0-10 1
+.names n851 Ni41 Ni40 n2666 n2684
+---0 0
+100- 0
+.names n2668 n18 n2686 n2670 n2685
+--01 1
+11-1 1
+.names n2687 n2689 n2686
+11 1
+.names n2688 n1385 n793 n2687
+-01 1
+1-1 1
+.names n788 Ni41 Ni40 n2666 n2688
+---0 0
+100- 0
+.names n792 n2688 n2667 Ni38 n2689
+-1-1 1
+-11- 1
+0-10 1
+.names n2668 n18 n2682 Ni30 n2690
+--00 1
+11-0 1
+.names n2668 n18 n2686 Ni30 n2691
+--00 1
+11-0 1
+.names n2712 n2713 n2708 n2693 n691 n2692
+---01 0
+--0-- 0
+10--- 0
+.names n2707 n2096 n2706 n2097 n2694 n2693
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2701 n2092 n2695 n2093 n2694
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2696 n2670 n2695
+--01 1
+11-1 1
+.names n2697 n2700 n2696
+11 1
+.names Ni41 n2699 n851 n2666 n2698 n2697
+--011 1
+-1--1 1
+1--11 1
+.names Ni37 Ni36 Ni38 Ni47 Ni45 n2698
+---00 1
+--1-- 1
+01--- 1
+.names Ni38 Ni39 Ni37 Ni36 n2699
+-100 0
+1--0 0
+.names Ni41 n1406 n851 n2666 n793 n2700
+--011 1
+-0--1 1
+1--11 1
+.names n2668 n18 n2702 n2670 n2701
+--01 1
+11-1 1
+.names n2703 n2705 n2702
+11 1
+.names Ni41 n2704 n788 n2666 n2698 n2703
+--011 1
+-1--1 1
+1--11 1
+.names Ni38 Ni39 Ni37 Ni36 n2704
+-000 0
+1--0 0
+.names Ni41 n1406 n788 n2666 n793 n2705
+--011 1
+-0--1 1
+1--11 1
+.names n2668 n18 n2696 Ni30 n2706
+--00 1
+11-0 1
+.names n2668 n18 n2702 Ni30 n2707
+--00 1
+11-0 1
+.names n2675 n699 n2710 n2709 n2708
+--01 0
+01-- 0
+.names n1839 n601 n2709
+11 1
+.names n2711 n2668 n18 n2670 n2710
+-111 1
+0--1 1
+.names Ni43 n792 Ni38 n793 n2667 n2711
+-0011 1
+0--11 1
+.names n1839 n601 n2712
+10 1
+.names n2711 n2668 n18 Ni30 n2713
+-110 1
+0--0 1
+.names n2739 n2731 n2715 Pi19 Pi17 n2714
+--0-- 0
+-0-10 0
+0--01 0
+.names n2712 n2730 n2727 n2716 n691 n2715
+---01 0
+--0-- 0
+10--- 0
+.names n2726 n2096 n2725 n2097 n2717 n2716
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2722 n2092 n2718 n2093 n2717
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2719 n2670 n2718
+--01 1
+11-1 1
+.names n738 n2720 n2721 n2697 n2719
+-111 1
+0-11 1
+.names Ni41 n851 n2666 n2720
+-01 1
+1-1 1
+.names n793 n2669 n2721
+10 1
+.names n2668 n18 n2723 n2670 n2722
+--01 1
+11-1 1
+.names n738 n2724 n2721 n2703 n2723
+-111 1
+0-11 1
+.names Ni41 n788 n2666 n2724
+-01 1
+1-1 1
+.names n2668 n18 n2719 Ni30 n2725
+--00 1
+11-0 1
+.names n2668 n18 n2723 Ni30 n2726
+--00 1
+11-0 1
+.names n2675 n699 n2728 n2709 n2727
+--01 0
+01-- 0
+.names n2729 n2668 n18 n2670 n2728
+-111 1
+0--1 1
+.names Ni38 Ni43 n793 n2667 n2729
+-011 1
+0-11 1
+.names n2729 n2668 n18 Ni30 n2730
+-110 1
+0--0 1
+.names n2738 n2096 n2737 n2097 n2732 n2731
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2735 n2092 n2733 n2093 n2732
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2734 n2670 n2733
+--01 1
+11-1 1
+.names n1415 n2665 n2667 Ni38 n793 n2734
+-1-11 1
+-11-1 1
+0-101 1
+.names n2668 n18 n2736 n2670 n2735
+--01 1
+11-1 1
+.names n1439 n2674 n2667 Ni38 n793 n2736
+-1-11 1
+-11-1 1
+0-101 1
+.names n2668 n18 n2734 Ni30 n2737
+--00 1
+11-0 1
+.names n2668 n18 n2736 Ni30 n2738
+--00 1
+11-0 1
+.names n2746 n2096 n2745 n2097 n2740 n2739
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2743 n2092 n2741 n2093 n2740
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2742 n2670 n2741
+--01 1
+11-1 1
+.names n1399 n2684 n2667 Ni38 n793 n2742
+-1-11 1
+-11-1 1
+0-101 1
+.names n2668 n18 n2744 n2670 n2743
+--01 1
+11-1 1
+.names n1385 n2688 n2667 Ni38 n793 n2744
+-1-11 1
+-11-1 1
+0-101 1
+.names n2668 n18 n2742 Ni30 n2745
+--00 1
+11-0 1
+.names n2668 n18 n2744 Ni30 n2746
+--00 1
+11-0 1
+.names n2776 n2766 n2748 Pi19 Pi17 n2747
+--0-- 0
+-0-10 0
+0--01 0
+.names n2712 n2765 n2762 n2749 n691 n2748
+---01 0
+--0-- 0
+10--- 0
+.names n2761 n2096 n2760 n2097 n2750 n2749
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2756 n2092 n2751 n2093 n2750
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2752 n2670 n2751
+--01 1
+11-1 1
+.names n738 n2753 n2721 n2755 n2752
+-111 1
+0-11 1
+.names Ni41 n851 n2754 n2753
+-01 1
+1-1 1
+.names Ni41 Ni42 Ni43 Ni47 Ni45 n2754
+-1000 1
+0-000 1
+.names Ni41 n2699 n851 n2754 n2698 n2755
+--011 1
+-1--1 1
+1--11 1
+.names n2668 n18 n2757 n2670 n2756
+--01 1
+11-1 1
+.names n738 n2758 n2721 n2759 n2757
+-111 1
+0-11 1
+.names Ni41 n788 n2754 n2758
+-01 1
+1-1 1
+.names Ni41 n2704 n788 n2754 n2698 n2759
+--011 1
+-1--1 1
+1--11 1
+.names n2668 n18 n2752 Ni30 n2760
+--00 1
+11-0 1
+.names n2668 n18 n2757 Ni30 n2761
+--00 1
+11-0 1
+.names n2675 n699 n2763 n2709 n2762
+--01 0
+01-- 0
+.names n2764 n2668 n18 n2670 n2763
+-111 1
+0--1 1
+.names n2754 n2667 n793 Ni38 n2764
+-110 1
+1-11 1
+.names n2764 n2668 n18 Ni30 n2765
+-110 1
+0--0 1
+.names n2775 n2096 n2774 n2097 n2767 n2766
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2771 n2092 n2768 n2093 n2767
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2769 n2670 n2768
+--01 1
+11-1 1
+.names n1415 n2770 n2667 Ni38 n793 n2769
+-1-11 1
+-11-1 1
+0-101 1
+.names n2754 n851 Ni41 Ni40 n2770
+-101 0
+0--- 0
+.names n2668 n18 n2772 n2670 n2771
+--01 1
+11-1 1
+.names n1439 n2773 n2667 Ni38 n793 n2772
+-1-11 1
+-11-1 1
+0-101 1
+.names n2754 n788 Ni41 Ni40 n2773
+-101 0
+0--- 0
+.names n2668 n18 n2769 Ni30 n2774
+--00 1
+11-0 1
+.names n2668 n18 n2772 Ni30 n2775
+--00 1
+11-0 1
+.names n2785 n2096 n2784 n2097 n2777 n2776
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2781 n2092 n2778 n2093 n2777
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2779 n2670 n2778
+--01 1
+11-1 1
+.names n1399 n2780 n2667 Ni38 n793 n2779
+-1-11 1
+-11-1 1
+0-101 1
+.names n2754 n851 Ni41 Ni40 n2780
+-100 0
+0--- 0
+.names n2668 n18 n2782 n2670 n2781
+--01 1
+11-1 1
+.names n1385 n2783 n2667 Ni38 n793 n2782
+-1-11 1
+-11-1 1
+0-101 1
+.names n2754 n788 Ni41 Ni40 n2783
+-100 0
+0--- 0
+.names n2668 n18 n2779 Ni30 n2784
+--00 1
+11-0 1
+.names n2668 n18 n2782 Ni30 n2785
+--00 1
+11-0 1
+.names n2811 n2799 n2787 Pi19 Pi17 n2786
+--010 0
+-0-01 0
+0---- 0
+.names n2798 n2096 n2797 n2097 n2788 n2787
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2793 n2092 n2789 n2093 n2788
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2790 n2670 n2789
+--01 1
+11-1 1
+.names n2791 n2792 n2790
+11 1
+.names n2770 n1415 n793 n2791
+-01 1
+1-1 1
+.names n792 n2770 n2667 Ni38 n2792
+-1-1 1
+-11- 1
+0-10 1
+.names n2668 n18 n2794 n2670 n2793
+--01 1
+11-1 1
+.names n2795 n2796 n2794
+11 1
+.names n2773 n1439 n793 n2795
+-01 1
+1-1 1
+.names n792 n2773 n2667 Ni38 n2796
+-1-1 1
+-11- 1
+0-10 1
+.names n2668 n18 n2790 Ni30 n2797
+--00 1
+11-0 1
+.names n2668 n18 n2794 Ni30 n2798
+--00 1
+11-0 1
+.names n2810 n2096 n2809 n2097 n2800 n2799
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2805 n2092 n2801 n2093 n2800
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2802 n2670 n2801
+--01 1
+11-1 1
+.names n2803 n2804 n2802
+11 1
+.names n2780 n1399 n793 n2803
+-01 1
+1-1 1
+.names n792 n2780 n2667 Ni38 n2804
+-1-1 1
+-11- 1
+0-10 1
+.names n2668 n18 n2806 n2670 n2805
+--01 1
+11-1 1
+.names n2807 n2808 n2806
+11 1
+.names n2783 n1385 n793 n2807
+-01 1
+1-1 1
+.names n792 n2783 n2667 Ni38 n2808
+-1-1 1
+-11- 1
+0-10 1
+.names n2668 n18 n2804 n2803 Ni30 n2809
+---00 1
+--0-0 1
+11--0 1
+.names n2668 n18 n2808 n2807 Ni30 n2810
+---00 1
+--0-0 1
+11--0 1
+.names n2712 n2825 n2822 n2812 n691 n2811
+---01 0
+--0-- 0
+10--- 0
+.names n2821 n2096 n2820 n2097 n2813 n2812
+----0 0
+--01- 0
+01--- 0
+.names n2675 n2817 n2092 n2814 n2093 n2813
+---01 0
+-01-- 0
+0---- 0
+.names n2668 n18 n2815 n2670 n2814
+--01 1
+11-1 1
+.names n2755 n2816 n2815
+11 1
+.names Ni41 n1406 n851 n2754 n793 n2816
+--011 1
+-0--1 1
+1--11 1
+.names n2668 n18 n2818 n2670 n2817
+--01 1
+11-1 1
+.names n2759 n2819 n2818
+11 1
+.names Ni41 n1406 n788 n2754 n793 n2819
+--011 1
+-0--1 1
+1--11 1
+.names n2668 n18 n2815 Ni30 n2820
+--00 1
+11-0 1
+.names n2668 n18 n2818 Ni30 n2821
+--00 1
+11-0 1
+.names n2675 n699 n2823 n2709 n2822
+--01 0
+01-- 0
+.names n2824 n2668 n18 n2670 n2823
+-111 1
+0--1 1
+.names n792 n2667 n2754 Ni38 n793 n2824
+--111 1
+-11-1 1
+01-01 1
+.names n2824 n2668 n18 Ni30 n2825
+-110 1
+0--0 1
+.names n2036 n2828 n2827 n2874 n2826
+-110 1
+0-10 1
+.names n2848 n2828 n569 Ni12 n2827
+-000 0
+1--- 0
+.names n1219 n2846 n2829 n2839 Pi17 n2828
+--1-1 1
+-1-10 1
+0--10 1
+.names n1219 n1081 n2690 n2830 n2832 n2829
+--111 1
+-0-11 1
+0---1 1
+.names n2831 n2713 n1075 n1076 n2691 n2830
+---10 0
+-01-- 0
+0---- 0
+.names Ni30 Pi21 Pi22 n2831
+-11 1
+0-- 1
+.names n2837 n2835 n2833 Pi16 Pi15 n2832
+--000 0
+-0-01 0
+0--11 0
+.names n2834 n2810 n1076 n2809 n1081 n2833
+---01 0
+-01-- 0
+0---- 0
+.names n1075 n2825 n2831 n2834
+-11 1
+0-1 1
+.names n2836 n2785 n1076 n2784 n1081 n2835
+---01 0
+-01-- 0
+0---- 0
+.names n1075 n2765 n2831 n2836
+-11 1
+0-1 1
+.names n2838 n2746 n1076 n2745 n1081 n2837
+---01 0
+-01-- 0
+0---- 0
+.names n1075 n2730 n2831 n2838
+-11 1
+0-1 1
+.names n2844 n2842 n2840 Pi16 Pi15 n2839
+--000 0
+-0-01 0
+0--11 0
+.names n2841 n2798 n1131 n2797 n1127 n2840
+---01 0
+-01-- 0
+0---- 0
+.names n2831 n2821 n1076 n1081 n2820 n2841
+---10 0
+-01-- 0
+0---- 0
+.names n2775 n1131 n2774 n1127 n2843 n2842
+----0 0
+--01- 0
+01--- 0
+.names n2831 n2761 n1076 n1081 n2760 n2843
+---10 0
+-01-- 0
+0---- 0
+.names n2738 n1131 n2737 n1127 n2845 n2844
+----0 0
+--01- 0
+01--- 0
+.names n2831 n2726 n1076 n1081 n2725 n2845
+---10 0
+-01-- 0
+0---- 0
+.names n2847 n2678 n1131 n2677 n1127 n2846
+---01 0
+-01-- 0
+0---- 0
+.names n2831 n2707 n1076 n1081 n2706 n2847
+---10 0
+-01-- 0
+0---- 0
+.names n568 n2861 n2864 n2852 n2849 n2848
+---10 0
+-01-- 0
+0---- 0
+.names n2851 n2850 n796 n1219 Pi19 n2849
+-1110 1
+0-111 1
+.names n2686 n2682 Pi20 Ni30 n2850
+-010 0
+0-00 0
+.names n2711 Ni30 n2851
+00 1
+.names n2226 n2859 n2853 n2860 n2856 n2852
+-0010 1
+0-010 1
+.names n2855 n2854 n796 n1093 Pi19 n2853
+-1110 1
+0-111 1
+.names n2744 n2742 Pi20 Ni30 n2854
+-010 0
+0-00 0
+.names n2729 Ni30 n2855
+00 1
+.names n2858 n2857 n796 n1082_1 Pi19 n2856
+-1110 1
+0-111 1
+.names n2782 n2779 Pi20 Ni30 n2857
+-010 0
+0-00 0
+.names n2764 Ni30 n2858
+00 1
+.names n2806 n2802 Pi20 Ni30 n2859
+-010 0
+0-00 0
+.names n2824 Ni30 n1075 Pi17 n2831 n2860
+--011 1
+00-11 1
+.names n2863 n2862 n796 n1219 Pi19 n2861
+-1111 1
+1-110 1
+.names n2672 n2663 Pi20 Ni30 n2862
+-010 0
+0-00 0
+.names n2702 n2696 Pi20 Ni30 n2863
+-010 0
+0-00 0
+.names n1075 n2871 n2865 n2872 n2868 n2864
+-0010 1
+0-010 1
+.names n2867 n2866 n796 n1082_1 Pi19 n2865
+-1110 1
+1-111 1
+.names n2757 n2752 Pi20 Ni30 n2866
+-010 0
+0-00 0
+.names n2772 n2769 Pi20 Ni30 n2867
+-010 0
+0-00 0
+.names n2870 n2869 n796 n1093 Pi19 n2868
+-1110 1
+1-111 1
+.names n2723 n2719 Pi20 Ni30 n2869
+-010 0
+0-00 0
+.names n2736 n2734 Pi20 Ni30 n2870
+-010 0
+0-00 0
+.names n2794 n2790 Pi20 Ni30 n2871
+-010 0
+0-00 0
+.names n2226 n2873 n2831 Pi17 n2872
+-010 1
+0-10 1
+.names n2818 n2815 Pi20 Ni30 n2873
+-010 0
+0-00 0
+.names n2334 n2895 n2905 n2887 n2875 n2874
+---11 0
+-11-- 0
+0---- 0
+.names n2885 n690 n2878 n2876 n836 n2875
+---01 0
+--0-- 0
+01--- 0
+.names n2678 n2267 n2677 n2265 n2877 n2876
+----0 0
+--01- 0
+01--- 0
+.names n2671 n2269 n2662 n2271 n2877
+--01 0
+01-- 0
+.names n2296 n2825 n2881 n2879 n800 n2878
+---01 0
+--0-- 0
+10--- 0
+.names n2821 n2267 n2820 n2265 n2880 n2879
+----0 0
+--01- 0
+01--- 0
+.names n2817 n2269 n2814 n2271 n2880
+--01 0
+01-- 0
+.names n2298 n2713 n2823 n2299 n2882 n2881
+----0 0
+--01- 0
+10--- 0
+.names n2710 n2293 n2883 Pi15 n2882
+-010 1
+1-10 1
+.names Pi22 Pi21 n2884 n2883
+--1 1
+11- 1
+.names Ni30 Pi27 n2670 n2884
+-11 1
+0-1 1
+.names n2707 n2267 n2706 n2265 n2886 n2885
+----0 0
+--01- 0
+01--- 0
+.names n2701 n2269 n2695 n2271 n2886
+--01 0
+01-- 0
+.names n736 n2893 n2888 Pi16 n2890 n2887
+--110 1
+-1-00 1
+0---0 1
+.names n2691 n2267 n2690 n2265 n2889 n2888
+----0 0
+--01- 0
+01--- 0
+.names n2685 n2269 n2681 n2271 n2889
+--01 0
+01-- 0
+.names n2797 n2265 n2891 n844 n2890
+--01 1
+01-1 1
+.names n1077_1 n2798 n2793 Pi27 n2892 n2891
+--110 1
+-1-00 1
+0---0 1
+.names n18 n2670 n2668 n2790 n2271 n2892
+--011 1
+-0--1 1
+0--11 1
+.names n2810 n2267 n2809 n2265 n2894 n2893
+----0 0
+--01- 0
+01--- 0
+.names n2805 n2269 n2801 n2271 n2894
+--01 0
+01-- 0
+.names n2903 n690 n2901 n844 n2896 n2895
+----0 0
+--01- 0
+01--- 0
+.names n2296 n2765 n2899 n2897 n800 n2896
+---01 0
+--0-- 0
+10--- 0
+.names n2761 n2267 n2760 n2265 n2898 n2897
+----0 0
+--01- 0
+01--- 0
+.names n2756 n2269 n2751 n2271 n2898
+--01 0
+01-- 0
+.names n2298 n2730 n2299 n2763 n2900 n2899
+----0 0
+--10- 0
+10--- 0
+.names n2728 n2293 n2883 Pi15 n2900
+-011 1
+1-11 1
+.names n2775 n2267 n2774 n2265 n2902 n2901
+----0 0
+--01- 0
+01--- 0
+.names n2771 n2269 n2768 n2271 n2902
+--01 0
+01-- 0
+.names n2726 n2267 n2725 n2265 n2904 n2903
+----0 0
+--01- 0
+01--- 0
+.names n2722 n2269 n2718 n2271 n2904
+--01 0
+01-- 0
+.names n2265 n827 n2745 n2911 n2906 n2905
+--111 1
+-0--1 1
+0--11 1
+.names n2909 n817 n836 n2907 n2906
+--10 0
+01-- 0
+.names n2738 n2267 n2737 n2265 n2908 n2907
+----0 0
+--01- 0
+01--- 0
+.names n2735 n2269 n2733 n2271 n2908
+--01 0
+01-- 0
+.names n2785 n2267 n2784 n2265 n2910 n2909
+----0 0
+--01- 0
+01--- 0
+.names n2781 n2269 n2778 n2271 n2910
+--01 0
+01-- 0
+.names n1077_1 n2746 n2743 Pi27 n2912 n2911
+--110 1
+-1-00 1
+0---0 1
+.names n2741 n2271 n2912
+01 1
+.names n1551 n653 n2946 n2914 n2945 n2913
+--111 1
+-0--1 1
+0--11 1
+.names n2936 n2927 n2915 Pi16 Pi15 n2914
+--010 0
+-0-11 0
+0--01 0
+.names n2921 n2919 n2916 Pi19 Pi17 n2915
+--010 0
+-0-01 0
+0---- 0
+.names n2678 n2343 n2677 n2344 n2917 n2916
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2671 n2341 n2346 n2662 n2917
+---10 0
+-01-- 0
+1---- 0
+.names n2670 n655 Ni30 n796 n2918
+-010 1
+0--0 1
+.names n2691 n2343 n2690 n2344 n2920 n2919
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2685 n2341 n2346 n2681 n2920
+---10 0
+-01-- 0
+1---- 0
+.names n2926 n2713 n2924 n2922 n691 n2921
+---01 0
+--0-- 0
+10--- 0
+.names n2707 n2343 n2706 n2344 n2923 n2922
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2701 n2341 n2346 n2695 n2923
+---10 0
+-01-- 0
+1---- 0
+.names n2918 n699 n2925 n2710 n2924
+--10 0
+11-- 0
+.names n1839 n655 n2925
+11 1
+.names n1839 n655 n2926
+10 1
+.names n2934 n2932 n2928 Pi19 Pi17 n2927
+--0-- 0
+-0-10 0
+0--01 0
+.names n2926 n2730 n2931 n2929 n691 n2928
+---01 0
+--0-- 0
+10--- 0
+.names n2726 n2343 n2725 n2344 n2930 n2929
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2722 n2341 n2346 n2718 n2930
+---10 0
+-01-- 0
+1---- 0
+.names n2918 n699 n2925 n2728 n2931
+--10 0
+11-- 0
+.names n2738 n2343 n2737 n2344 n2933 n2932
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2735 n2341 n2346 n2733 n2933
+---10 0
+-01-- 0
+1---- 0
+.names n2746 n2343 n2745 n2344 n2935 n2934
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2743 n2341 n2346 n2741 n2935
+---10 0
+-01-- 0
+1---- 0
+.names n2943 n2941 n2937 Pi19 Pi17 n2936
+--0-- 0
+-0-10 0
+0--01 0
+.names n2926 n2765 n2940 n2938 n691 n2937
+---01 0
+--0-- 0
+10--- 0
+.names n2761 n2343 n2760 n2344 n2939 n2938
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2756 n2341 n2346 n2751 n2939
+---10 0
+-01-- 0
+1---- 0
+.names n2918 n699 n2925 n2763 n2940
+--10 0
+11-- 0
+.names n2775 n2343 n2774 n2344 n2942 n2941
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2771 n2341 n2346 n2768 n2942
+---10 0
+-01-- 0
+1---- 0
+.names n2785 n2343 n2784 n2344 n2944 n2943
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2781 n2341 n2346 n2778 n2944
+---10 0
+-01-- 0
+1---- 0
+.names Ni10 n568 Ni11 n2828 n2945
+-010 0
+0--- 0
+.names n2951 n2949 n2947 Pi19 Pi17 n2946
+--010 0
+-0-01 0
+0---- 0
+.names n2798 n2343 n2797 n2344 n2948 n2947
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2793 n2341 n2346 n2789 n2948
+---10 0
+-01-- 0
+1---- 0
+.names n2810 n2343 n2809 n2344 n2950 n2949
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2805 n2341 n2346 n2801 n2950
+---10 0
+-01-- 0
+1---- 0
+.names n2926 n2825 n2954 n2952 n691 n2951
+---01 0
+--0-- 0
+10--- 0
+.names n2821 n2343 n2820 n2344 n2953 n2952
+----0 0
+--01- 0
+01--- 0
+.names n2918 n2817 n2341 n2346 n2814 n2953
+---10 0
+-01-- 0
+1---- 0
+.names n2918 n699 n2925 n2823 n2954
+--10 0
+11-- 0
+.names n3030 n3029 n2956 Ni11 n574 n2955
+--001 1
+-1--1 1
+0---1 1
+.names n2972 n2957 n569 Ni12 n2956
+-100 0
+0-10 0
+.names n2967 n2963 n2971 n2958 Pi15 n2957
+---10 0
+010-1 0
+.names n1390 n2961 n2959 n2966 n2963 n2958
+-1101 1
+0--01 1
+.names n844 n2871 n2960 n2959
+-01 1
+0-1 1
+.names n2873 n800 n690 n2863 n2960
+--11 0
+11-- 0
+.names n736 n2859 n2850 Pi16 n2962 n2961
+--010 1
+-0-00 1
+0---0 1
+.names Ni30 n2672 n2663 Pi20 n836 n2962
+--111 1
+-1-01 1
+1---1 1
+.names n1181 n2964 n2831 n2963
+-11 1
+0-1 1
+.names n2965 Ni30 n2964
+00 1
+.names n2666 Ni42 n750 n2669 n793 n2965
+--101 1
+11-01 1
+.names Ni30 n2711 Pi16 n2824 n1182 n2966
+---11 1
+-11-1 1
+1---1 1
+.names n2867 n844 n2970 n2968 n1390 n2967
+---01 1
+--0-1 1
+11--1 1
+.names n827 n2854 n2969 n2968
+-01 1
+0-1 1
+.names n2870 n836 n2857 n817 n2969
+--11 0
+11-- 0
+.names n2869 n690 n2866 n800 n2970
+--11 0
+11-- 0
+.names n2858 n2855 Pi16 n1182 n2971
+-011 1
+0--1 1
+.names n3001 n3017 n3021 n2973 Pi15 n2972
+---11 1
+101-0 1
+.names n836 n2974 n2990 n2994 n2979 n2973
+-1011 1
+0-011 1
+.names n1390 n2870 n2975 n2974
+-01 1
+0-1 1
+.names n2978 n1826 n1825 n2976 n2975
+--10 0
+01-- 0
+.names n2977 n18 n2736 Ni30 n2976
+--00 1
+11-0 1
+.names Ni42 n2669 n2666 n750 Ni33 n2977
+--001 1
+-1--1 1
+0--01 1
+.names n2977 n18 n2734 Ni30 n2978
+--00 1
+11-0 1
+.names n691 n2983 n2980 Pi16 n2986 n2979
+--101 1
+-1-11 1
+0---1 1
+.names n2982 n2981 n1825 n2866 n1390 n2980
+---11 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2757 Ni30 n2981
+--00 1
+11-0 1
+.names n18 Ni30 n2977 n2752 n1826 n2982
+--011 1
+-1--1 1
+0--11 1
+.names n2985 n2984 n1825 n2869 n1390 n2983
+---11 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2723 Ni30 n2984
+--00 1
+11-0 1
+.names n18 Ni30 n2977 n2719 n1826 n2985
+--011 1
+-1--1 1
+0--11 1
+.names n2971 n2987 n2831 n2986
+011 1
+.names n2989 n2988 n1839 Pi16 n2987
+-010 0
+0-11 0
+.names n2977 n18 n2764 Ni30 n2988
+--00 1
+11-0 1
+.names n2977 n18 n2729 Ni30 n2989
+--00 1
+11-0 1
+.names n2854 n1390 n2991 n827 n2990
+--01 1
+11-1 1
+.names n2993 n1826 n1825 n2992 n2991
+--10 0
+01-- 0
+.names n2977 n18 n2744 Ni30 n2992
+--00 1
+11-0 1
+.names n2977 n18 n2742 Ni30 n2993
+--00 1
+11-0 1
+.names n2998 n844 n2995 n817 n2994
+--01 0
+01-- 0
+.names n2997 n2996 n1825 n2857 n1390 n2995
+---11 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2782 Ni30 n2996
+--00 1
+11-0 1
+.names n18 Ni30 n2977 n2779 n1826 n2997
+--011 1
+-1--1 1
+0--11 1
+.names n3000 n2999 n1825 n2867 n1390 n2998
+---11 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2772 Ni30 n2999
+--00 1
+11-0 1
+.names n18 Ni30 n2977 n2769 n1826 n3000
+--011 1
+-1--1 1
+0--11 1
+.names n1390 n836 n2862 n3002 n3005 n3001
+--011 1
+-0--1 1
+0--11 1
+.names n3004 n1826 n1825 n3003 n3002
+--10 0
+01-- 0
+.names n2977 n18 n2672 Ni30 n3003
+--00 1
+11-0 1
+.names n2977 n18 n2663 Ni30 n3004
+--00 1
+11-0 1
+.names n3006 n3010 n3014 n2966 n2831 n3005
+00101 1
+.names n3007 n2873 n1390 n800 n3006
+-111 1
+0--1 1
+.names n3009 n1826 n1825 n3008 n3007
+--10 0
+01-- 0
+.names n2977 n18 n2819 n2759 Ni30 n3008
+---00 1
+--0-0 1
+11--0 1
+.names n2977 n18 n2816 n2755 Ni30 n3009
+---00 1
+--0-0 1
+11--0 1
+.names n3011 n2863 n1390 n690 n3010
+-111 1
+0--1 1
+.names n3013 n1826 n1825 n3012 n3011
+--10 0
+01-- 0
+.names n2977 n18 n2705 n2703 Ni30 n3012
+---00 1
+--0-0 1
+11--0 1
+.names n2977 n18 n2700 n2697 Ni30 n3013
+---00 1
+--0-0 1
+11--0 1
+.names n3016 n3015 n1839 Pi16 n3014
+-010 0
+0-11 0
+.names n2977 n18 n2824 Ni30 n3015
+--00 1
+11-0 1
+.names n2977 n18 n2711 Ni30 n3016
+--00 1
+11-0 1
+.names n2850 n1390 n3018 n827 n3017
+--01 1
+11-1 1
+.names n3020 n1826 n1825 n3019 n3018
+--10 0
+01-- 0
+.names n2977 n18 n2686 Ni30 n3019
+--00 1
+11-0 1
+.names n2977 n18 n2682 Ni30 n3020
+--00 1
+11-0 1
+.names n1390 n844 n2871 n3026 n3022 n3021
+--010 1
+-0--0 1
+0--10 1
+.names n3023 n2859 n1390 n817 n3022
+-111 1
+0--1 1
+.names n3025 n1826 n1825 n3024 n3023
+--10 0
+01-- 0
+.names n2977 n18 n2808 n2807 Ni30 n3024
+---00 1
+--0-0 1
+11--0 1
+.names n2977 n18 n2804 n2803 Ni30 n3025
+---00 1
+--0-0 1
+11--0 1
+.names n3028 n1826 n1825 n3027 n3026
+--10 0
+01-- 0
+.names n2977 n18 n2794 Ni30 n3027
+--00 1
+11-0 1
+.names n2977 n18 n2790 Ni30 n3028
+--00 1
+11-0 1
+.names n2036 n568 Ni11 n2957 n3029
+-011 1
+1--1 1
+.names n2032 n3087 n3031 n3138 Ni10 n3030
+--100 1
+-1-00 1
+0--00 1
+.names n3032 n3048 n3062 n3075 Ni14 n3031
+00001 1
+.names n3038 n3033 n743 n1082_1 n3032
+-011 1
+0--1 1
+.names n1930 n2867 n3037 n3034 n3033
+-001 1
+0-01 1
+.names n2772 n2670 n1926 n3035 n3034
+--01 1
+01-1 1
+.names n1181 n3036 n2883 n3035
+-11 1
+0-1 1
+.names Ni30 Pi27 n2965 n2670 n3036
+-101 1
+0-01 1
+.names n2670 n2769 n1918 n3037
+-11 1
+0-1 1
+.names n736 n3039 n3046 n3047 n3042 n3038
+-1010 1
+0-010 1
+.names n1930 n2857 n3040 n3041 n3035 n3039
+-0001 1
+0-001 1
+.names n2670 n2779 n1918 n3040
+-11 1
+0-1 1
+.names n2670 n2782 n1176 Pi27 n3041
+-111 1
+0-11 1
+.names n691 n3043 n3044 n3045 n3035 n3042
+-0001 0
+0---- 0
+.names Ni30 n2757 n2752 Pi20 n1930 n3043
+--111 1
+-1-01 1
+1---1 1
+.names n2670 n2752 n1918 n3044
+-11 1
+0-1 1
+.names n2670 n2757 n1176 Pi27 n3045
+-111 1
+0-11 1
+.names n3035 n699 n3046
+01 1
+.names Ni30 n2670 n1182 Pi27 n2764 n3047
+--0-- 1
+-1-10 1
+0--00 1
+.names n3052 n3049 n743 n1093 n3048
+-011 1
+0--1 1
+.names n2870 n1930 n3051 n1918 n3050 n3049
+----0 0
+--01- 0
+11--- 0
+.names n2736 n2670 n1926 n3035 n3050
+--01 1
+01-1 1
+.names n2734 n2670 n3051
+01 1
+.names n3046 n3053 n3057 n3061 n3052
+0001 1
+.names n736 n3054 n3055 n3056 n3035 n3053
+-0001 0
+0---- 0
+.names Ni30 n2744 n2742 Pi20 n1930 n3054
+--111 1
+-1-01 1
+1---1 1
+.names n2670 n2742 n1918 n3055
+-11 1
+0-1 1
+.names n2670 n2744 n1176 Pi27 n3056
+-111 1
+0-11 1
+.names n691 n3058 n3059 n3060 n3035 n3057
+-0001 0
+0---- 0
+.names Ni30 n2723 n2719 Pi20 n1930 n3058
+--111 1
+-1-01 1
+1---1 1
+.names n2670 n2719 n1918 n3059
+-11 1
+0-1 1
+.names n2670 n2723 n1176 Pi27 n3060
+-111 1
+0-11 1
+.names Ni30 n2670 n1182 Pi27 n2729 n3061
+--0-- 1
+-1-10 1
+0--00 1
+.names n3069 n3066 n3063 n743 n1219 n3062
+--011 1
+-1--1 1
+0---1 1
+.names n1918 n2663 n2670 n3065 n3064 n3063
+-0110 1
+0--10 1
+.names Ni30 n2672 n2663 Pi20 n1930 n3064
+--111 1
+-1-01 1
+1---1 1
+.names n2672 n2670 n1926 n3035 n3065
+--01 1
+01-1 1
+.names n3067 n2850 n1930 n736 n3066
+-111 1
+0--1 1
+.names n1918 n2682 n2670 n3035 n3068 n3067
+-0110 1
+0--10 1
+.names n2670 n2689 n2687 n1176 Pi27 n3068
+-1111 1
+0--11 1
+.names n691 n1930 n2863 n3070 n3073 n3069
+--011 1
+-0-11 1
+0---1 1
+.names n3035 n3071 n1918 n1926 n3072 n3070
+---10 0
+-01-- 0
+0---- 0
+.names n2696 n2670 n3071
+01 1
+.names n2702 n2670 n3072
+01 1
+.names n699 n3035 n3074 n3073
+-11 1
+0-1 1
+.names Ni30 n2670 n1182 Pi27 n2711 n3074
+--0-- 1
+-1-10 1
+0--00 1
+.names n3082 n3079 n3076 n743 n1551 n3075
+--011 1
+-1--1 1
+0---1 1
+.names n1918 n2790 n2670 n3078 n3077 n3076
+-0110 1
+0--10 1
+.names Ni30 n2794 n2790 Pi20 n1930 n3077
+--111 1
+-1-01 1
+1---1 1
+.names n2794 n2670 n1926 n3035 n3078
+--01 1
+01-1 1
+.names n3080 n2859 n1930 n736 n3079
+-111 1
+0--1 1
+.names n1918 n2802 n2670 n3035 n3081 n3080
+-0110 1
+0--10 1
+.names n2670 n2808 n2807 n1176 Pi27 n3081
+-1111 1
+0--11 1
+.names n691 n1930 n2873 n3083 n3085 n3082
+--011 1
+-0-11 1
+0---1 1
+.names n2815 n2670 n1918 n3084 n3035 n3083
+--001 1
+01-01 1
+.names n2670 n2818 n1176 Pi27 n3084
+-111 1
+0-11 1
+.names n699 n3035 n3086 n3085
+-11 1
+0-1 1
+.names Ni30 n2670 n1182 Pi27 n2824 n3086
+--0-- 1
+-1-10 1
+0--00 1
+.names Pi15 n3127 n3116 Pi16 n3088 n3087
+--111 1
+-1-01 1
+1---1 1
+.names Pi15 n3104 n3089 Pi16 Ni14 n3088
+--100 1
+-1-10 1
+0---0 1
+.names n3090 n3096 n3100 n3102 n3103 n3089
+00001 1
+.names n743 n3092 n3093 n3095 n3091 n3090
+-0100 0
+0---- 0
+.names Ni30 n2772 n2769 Pi20 n2000 n3091
+--111 1
+-1-01 1
+1---1 1
+.names n2670 n2769 n1997 n3092
+-11 1
+0-1 1
+.names n1181 n3094 n2675 n3093
+-11 1
+0-1 1
+.names Ni30 Pi26 Pi27 n2670 n2965 n3094
+-0010 1
+0--10 1
+.names n2670 n2772 n1996 n3095
+-11 1
+0-1 1
+.names n736 n3097 n3098 n3099 n3093 n3096
+-0001 0
+0---- 0
+.names Ni30 n2782 n2779 Pi20 n2000 n3097
+--111 1
+-1-01 1
+1---1 1
+.names n2670 n2779 n1997 n3098
+-11 1
+0-1 1
+.names n2670 n2782 n1996 n3099
+-11 1
+0-1 1
+.names n3101 n3093 n2866 n2000 n691 n3100
+--111 1
+-0--1 1
+0---1 1
+.names n1996 n1997 n2752 n2757 n2670 n3101
+--001 1
+-0-01 1
+0-0-1 1
+00--- 1
+.names n3093 n699 n3102
+01 1
+.names Ni30 n2670 n1182 n2764 n601 n3103
+--0-- 1
+-1-01 1
+0--00 1
+.names n3102 n3105 n3109 n3113 n3115 n3104
+00001 1
+.names n743 n3106 n3107 n3108 n3093 n3105
+-0001 0
+0---- 0
+.names Ni30 n2736 n2734 Pi20 n2000 n3106
+--111 1
+-1-01 1
+1---1 1
+.names n2670 n2734 n1997 n3107
+-11 1
+0-1 1
+.names n2670 n2736 n1996 n3108
+-11 1
+0-1 1
+.names n736 n3110 n3111 n3112 n3093 n3109
+-0001 0
+0---- 0
+.names Ni30 n2744 n2742 Pi20 n2000 n3110
+--111 1
+-1-01 1
+1---1 1
+.names n2670 n2742 n1997 n3111
+-11 1
+0-1 1
+.names n2670 n2744 n1996 n3112
+-11 1
+0-1 1
+.names n3114 n3093 n2869 n2000 n691 n3113
+--111 1
+-0--1 1
+0---1 1
+.names n1996 n1997 n2719 n2723 n2670 n3114
+--001 1
+-0-01 1
+0-0-1 1
+00--- 1
+.names Ni30 n2670 n1182 n2729 n601 n3115
+--0-- 1
+-1-01 1
+0--00 1
+.names n3123 n3120 n3117 Pi19 Pi17 n3116
+--010 0
+-0-01 0
+0---- 0
+.names n1997 n2663 n2670 n3119 n3118 n3117
+-0110 1
+0--10 1
+.names Ni30 n2672 n2663 Pi20 n2000 n3118
+--111 1
+-1-01 1
+1---1 1
+.names n1996 n2672 n2670 n3093 n3119
+-011 1
+0--1 1
+.names n1997 n2682 n2670 n3122 n3121 n3120
+-0110 1
+0--10 1
+.names Ni30 n2686 n2682 Pi20 n2000 n3121
+--111 1
+-1-01 1
+1---1 1
+.names n1996 n2686 n2670 n3093 n3122
+-011 1
+0--1 1
+.names n691 n2000 n2863 n3124 n3125 n3123
+--011 1
+-0-11 1
+0---1 1
+.names n3093 n3072 n1996 n3071 n1997 n3124
+---01 0
+-01-- 0
+0---- 0
+.names n699 n3093 n3126 n3125
+-11 1
+0-1 1
+.names Ni30 n2670 n1182 n2711 n601 n3126
+--0-- 1
+-1-01 1
+0--00 1
+.names n3134 n3131 n3128 Pi19 Pi17 n3127
+--010 0
+-0-01 0
+0---- 0
+.names n1997 n2790 n2670 n3130 n3129 n3128
+-0110 1
+0--10 1
+.names Ni30 n2794 n2790 Pi20 n2000 n3129
+--111 1
+-1-01 1
+1---1 1
+.names n1996 n2794 n2670 n3093 n3130
+-011 1
+0--1 1
+.names n1997 n2802 n2670 n3133 n3132 n3131
+-0110 1
+0--10 1
+.names Ni30 n2806 n2802 Pi20 n2000 n3132
+--111 1
+-1-01 1
+1---1 1
+.names n1996 n2806 n2670 n3093 n3133
+-011 1
+0--1 1
+.names n691 n3135 n3137 n3102 n3134
+-110 1
+0-10 1
+.names n2000 n2873 n3136 n3093 n3135
+-011 1
+0-11 1
+.names n1996 n1997 n2815 n2818 n2670 n3136
+--001 1
+-0-01 1
+0-0-1 1
+00--- 1
+.names Ni30 n2670 n1182 n2824 n601 n3137
+--0-- 1
+-1-01 1
+0--00 1
+.names n3164 n3153 n1219 n3139 n653 n3138
+---11 1
+-01-1 1
+0---1 1
+.names n3145 n3140 n743 n1551 n3139
+-011 1
+0--1 1
+.names n2047 n2790 n2670 n3142 n3141 n3140
+-0110 1
+0--10 1
+.names Ni30 n2794 n2790 Pi20 n2049 n3141
+--111 1
+-1-01 1
+1---1 1
+.names n2048 n2794 n2670 n3143 n3142
+-011 1
+0--1 1
+.names n1181 n3144 n2918 n3143
+-10 1
+0-0 1
+.names Ni30 Pi26 Pi27 n2670 n2965 n3144
+-1010 1
+0--10 1
+.names n736 n2049 n2859 n3146 n3148 n3145
+--011 1
+-0-11 1
+0---1 1
+.names n2047 n2802 n2670 n3143 n3147 n3146
+-0110 1
+0--10 1
+.names n2670 n2808 n2807 n2048 n3147
+-111 1
+0--1 1
+.names n691 n3149 n3150 n3143 n3151 n3148
+-0111 1
+0---1 1
+.names Ni30 n2818 n2815 Pi20 n2049 n3149
+--111 1
+-1-01 1
+1---1 1
+.names n2047 n2048 n2815 n2818 n2670 n3150
+--001 1
+-00-1 1
+0--01 1
+00--- 1
+.names n699 n1181 n3144 n2918 n3152 n3151
+--101 1
+-0-01 1
+0---1 1
+.names Ni30 n2670 n1182 n2824 n655 n3152
+--0-- 1
+-1-01 1
+0--00 1
+.names n3160 n3157 n3154 Pi19 Pi17 n3153
+--010 0
+-0-01 0
+0---- 0
+.names n2047 n2663 n2670 n3156 n3155 n3154
+-0110 1
+0--10 1
+.names Ni30 n2672 n2663 Pi20 n2049 n3155
+--111 1
+-1-01 1
+1---1 1
+.names n2048 n2672 n2670 n3143 n3156
+-011 1
+0--1 1
+.names n2047 n2682 n2670 n3159 n3158 n3157
+-0110 1
+0--10 1
+.names Ni30 n2686 n2682 Pi20 n2049 n3158
+--111 1
+-1-01 1
+1---1 1
+.names n2048 n2686 n2670 n3143 n3159
+-011 1
+0--1 1
+.names n691 n2049 n2863 n3161 n3162 n3160
+--011 1
+-0-11 1
+0---1 1
+.names n3143 n3072 n2048 n2047 n3071 n3161
+---10 0
+-01-- 0
+0---- 0
+.names n699 n3143 n3163 n3162
+-11 1
+0-1 1
+.names Ni30 n2670 n1182 n2711 n655 n3163
+--0-- 1
+-1-01 1
+0--00 1
+.names n1093 n3168 n3165 n3176 n3164
+-100 1
+0--0 1
+.names n2870 n2049 n3166 n743 n3165
+--01 1
+11-1 1
+.names n2047 n3051 n3167 n3143 n3166
+-101 1
+0-01 1
+.names n2670 n2736 n2048 n3167
+-11 1
+0-1 1
+.names n736 n3169 n3174 n3172 n3168
+-110 1
+0-10 1
+.names n2049 n2854 n3170 n3171 n3143 n3169
+-0001 1
+0-001 1
+.names n2670 n2742 n2047 n3170
+-11 1
+0-1 1
+.names n2670 n2744 n2048 n3171
+-11 1
+0-1 1
+.names n3173 n3143 n2869 n2049 n691 n3172
+--111 1
+-0--1 1
+0---1 1
+.names n2047 n2048 n2719 n2723 n2670 n3173
+--001 1
+-00-1 1
+0--01 1
+00--- 1
+.names n699 n3143 n3175 n3174
+-11 1
+0-1 1
+.names Ni30 n2670 n1182 n2729 n655 n3175
+--0-- 1
+-1-01 1
+0--00 1
+.names n3184 n3180 n3177 n743 n1082_1 n3176
+--011 1
+-1--1 1
+0---1 1
+.names n2049 n2867 n3178 n3179 n3143 n3177
+-0001 1
+0-001 1
+.names n2670 n2769 n2047 n3178
+-11 1
+0-1 1
+.names n2670 n2772 n2048 n3179
+-11 1
+0-1 1
+.names n736 n3181 n3182 n3183 n3143 n3180
+-0001 0
+0---- 0
+.names Ni30 n2782 n2779 Pi20 n2049 n3181
+--111 1
+-1-01 1
+1---1 1
+.names n2670 n2779 n2047 n3182
+-11 1
+0-1 1
+.names n2670 n2782 n2048 n3183
+-11 1
+0-1 1
+.names n691 n3185 n3186 n3143 n3187 n3184
+-0111 1
+0---1 1
+.names Ni30 n2757 n2752 Pi20 n2049 n3185
+--111 1
+-1-01 1
+1---1 1
+.names n2047 n2048 n2752 n2757 n2670 n3186
+--001 1
+-00-1 1
+0--01 1
+00--- 1
+.names n699 n1181 n3144 n2918 n3188 n3187
+--101 1
+-0-01 1
+0---1 1
+.names Ni30 n2670 n1182 n2764 n655 n3188
+--0-- 1
+-1-01 1
+0--00 1
+.names n3401 n3281 n3329 n3356 n3190 n3189
+-1000 1
+0-000 1
+.names n3277 n3191 n660 n3190
+-11 1
+0-1 1
+.names n3266 n3212 n3192 n568 Ni11 n3191
+--110 1
+-0-10 1
+0---0 1
+.names n3211 n3208 n3193 n743 n1219 n3192
+--0-1 1
+-0-11 1
+0--11 1
+.names n736 n3199 n3194 n3205 n3200 n3193
+-1110 1
+0--10 1
+.names n3198 n3197 n2536 n3195 n2537 n3194
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2682 n3196 n3195
+--01 1
+11-1 1
+.names n657 n667 n3196
+00 1
+.names n2977 n18 n2686 n3196 n3197
+--01 1
+11-1 1
+.names Ni30 Pi22 Pi21 n2535 n3196 n3198
+---11 0
+-11-- 0
+0---- 0
+.names n3020 n2539 n2538 n3019 n3199
+--10 0
+01-- 0
+.names n2538 n3012 n3204 n3201 n691 n3200
+---01 1
+--1-1 1
+10--1 1
+.names n3198 n3203 n2536 n3202 n2537 n3201
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2696 n3196 n3202
+--01 1
+11-1 1
+.names n2977 n18 n2702 n3196 n3203
+--01 1
+11-1 1
+.names n3013 n2539 n3204
+01 1
+.names n1839 n3207 n3016 n2535 n3206 n3205
+--100 1
+-1-10 1
+0---0 1
+.names n3198 n699 n3206
+11 1
+.names n2977 n18 n2711 n3196 n3207
+--01 1
+11-1 1
+.names n3198 n3210 n2536 n3209 n2537 n3208
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2663 n3196 n3209
+--01 1
+11-1 1
+.names n2977 n18 n2672 n3196 n3210
+--01 1
+11-1 1
+.names n3004 n2539 n2538 n3003 n3211
+--10 0
+01-- 0
+.names n3249 n3230 n3213 Pi16 Pi15 n3212
+--000 0
+-0-01 0
+0--11 0
+.names n691 n3224 n3214 n3228 n3219 n3213
+-1010 1
+0-010 1
+.names n3218 n3215 n3027 n2538 n743 n3214
+--011 1
+-0--1 1
+1---1 1
+.names n3198 n3217 n2536 n3216 n2537 n3215
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2792 n2791 n3196 n3216
+---01 1
+--0-1 1
+11--1 1
+.names n2977 n18 n2796 n2795 n3196 n3217
+---01 1
+--0-1 1
+11--1 1
+.names n18 Ni30 n2977 n2790 n2539 n3218
+--011 1
+-1--1 1
+0--11 1
+.names n3024 n2538 n3223 n3220 n736 n3219
+---01 1
+--1-1 1
+01--1 1
+.names n3198 n3222 n2536 n3221 n2537 n3220
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2804 n2803 n3196 n3221
+---01 1
+--0-1 1
+11--1 1
+.names n2977 n18 n2808 n2807 n3196 n3222
+---01 1
+--0-1 1
+11--1 1
+.names n3025 n2539 n3223
+01 1
+.names n3009 n2539 n3008 n2538 n3225 n3224
+----0 0
+--01- 0
+01--- 0
+.names n3198 n3227 n2536 n3226 n2537 n3225
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2815 n3196 n3226
+--01 1
+11-1 1
+.names n2977 n18 n2818 n3196 n3227
+--01 1
+11-1 1
+.names n1839 n3229 n3015 n2535 n3206 n3228
+--100 1
+-1-10 1
+0---0 1
+.names n2977 n18 n2824 n3196 n3229
+--01 1
+11-1 1
+.names n3241 n3236 n3231 Pi19 Pi17 n3230
+--010 0
+-0-01 0
+0---- 0
+.names n3235 n2539 n2538 n2999 n3232 n3231
+----0 0
+--10- 0
+01--- 0
+.names n3198 n3234 n2536 n3233 n2537 n3232
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2769 n3196 n3233
+--01 1
+11-1 1
+.names n2977 n18 n2772 n3196 n3234
+--01 1
+11-1 1
+.names n2977 n18 n2769 Ni30 n3235
+--00 1
+11-0 1
+.names n3240 n2539 n2538 n2996 n3237 n3236
+----0 0
+--10- 0
+01--- 0
+.names n3198 n3239 n2536 n3238 n2537 n3237
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2779 n3196 n3238
+--01 1
+11-1 1
+.names n2977 n18 n2782 n3196 n3239
+--01 1
+11-1 1
+.names n2977 n18 n2779 Ni30 n3240
+--00 1
+11-0 1
+.names n691 n3245 n3242 n3247 n3241
+-111 1
+0--1 1
+.names n3198 n3244 n2536 n3243 n2537 n3242
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2752 n3196 n3243
+--01 1
+11-1 1
+.names n2977 n18 n2757 n3196 n3244
+--01 1
+11-1 1
+.names n3246 n2539 n2538 n2981 n3245
+--10 0
+01-- 0
+.names n2977 n18 n2752 Ni30 n3246
+--00 1
+11-0 1
+.names n1839 n3248 n2988 n2535 n3206 n3247
+--100 1
+-1-10 1
+0---0 1
+.names n2977 n18 n2764 n3196 n3248
+--01 1
+11-1 1
+.names n3258 n3254 n3250 Pi19 Pi17 n3249
+--010 0
+-0-01 0
+0---- 0
+.names n2978 n2539 n2538 n2976 n3251 n3250
+----0 0
+--10- 0
+01--- 0
+.names n3198 n3253 n2536 n3252 n2537 n3251
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2734 n3196 n3252
+--01 1
+11-1 1
+.names n2977 n18 n2736 n3196 n3253
+--01 1
+11-1 1
+.names n2993 n2539 n2538 n2992 n3255 n3254
+----0 0
+--10- 0
+01--- 0
+.names n3198 n3257 n2536 n3256 n2537 n3255
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2742 n3196 n3256
+--01 1
+11-1 1
+.names n2977 n18 n2744 n3196 n3257
+--01 1
+11-1 1
+.names n691 n3262 n3259 n3264 n3258
+-111 1
+0--1 1
+.names n3198 n3261 n2536 n3260 n2537 n3259
+---01 0
+-01-- 0
+1---- 0
+.names n2977 n18 n2719 n3196 n3260
+--01 1
+11-1 1
+.names n2977 n18 n2723 n3196 n3261
+--01 1
+11-1 1
+.names n3263 n2539 n2538 n2984 n3262
+--10 0
+01-- 0
+.names n2977 n18 n2719 Ni30 n3263
+--00 1
+11-0 1
+.names n1839 n3265 n2989 n2535 n3206 n3264
+--100 1
+-1-10 1
+0---0 1
+.names n2977 n18 n2729 n3196 n3265
+--01 1
+11-1 1
+.names Ni13 Ni14 n3267 n3275 Ni12 n3266
+--0-1 0
+-0-00 0
+1--0- 0
+.names Pi23 n2883 n3274 Ni14 n3268 n3267
+--001 1
+-1-11 1
+1---1 1
+.names n3036 n2535 n796 Ni14 n3269 n3268
+----0 0
+0011- 0
+.names Ni14 n3273 n2535 n2676 n3270 n3269
+---11 1
+-11-1 1
+1---1 1
+.names Ni14 n3272 Pi24 n2884 n3271 n3270
+---10 1
+-10-0 1
+0---0 1
+.names n2965 n796 n3271
+11 1
+.names Pi27 n657 n667 n3272
+-00 1
+1-0 1
+.names n657 n601 n667 n3273
+-10 1
+0-0 1
+.names n3094 n796 n3274
+01 1
+.names n796 n2535 n2964 n3198 n3276 n3275
+--100 1
+-1-00 1
+0--00 1
+.names n3196 n2965 n796 n3276
+-11 1
+0-1 1
+.names n3275 n568 Ni11 n3278 n3277
+---0 0
+001- 0
+.names n3196 n2535 n3280 n3279 n3278
+--00 1
+11-0 1
+.names n653 n2965 n796 n3279
+111 1
+.names n2670 n655 Ni30 n653 n3280
+-011 1
+0--1 1
+.names n568 n3327 n3282 n3328 Ni11 n3281
+--110 1
+-1-11 1
+1--11 1
+.names n1219 n568 n3283 n3294 n3323 n3282
+--111 1
+-0--1 1
+0--11 1
+.names n3289 n3287 n3284 Pi19 Pi17 n3283
+--010 0
+-0-01 0
+0---- 0
+.names n3004 n2442 n2441 n3003 n3285 n3284
+----0 0
+--10- 0
+01--- 0
+.names n3286 n3210 n2439 n3209 n2440 n3285
+---01 0
+-01-- 0
+1---- 0
+.names Ni30 Pi22 Pi21 n633 n3196 n3286
+---11 0
+-11-- 0
+0---- 0
+.names n3020 n2442 n2441 n3019 n3288 n3287
+----0 0
+--10- 0
+01--- 0
+.names n3286 n3197 n2439 n3195 n2440 n3288
+---01 0
+-01-- 0
+1---- 0
+.names n691 n3293 n3290 n3291 n3289
+-111 1
+0--1 1
+.names n3286 n3203 n2439 n3202 n2440 n3290
+---01 0
+-01-- 0
+1---- 0
+.names n1839 n3207 n3016 n633 n3292 n3291
+--100 1
+-1-10 1
+0---0 1
+.names n3286 n699 n3292
+11 1
+.names n3013 n2442 n2441 n3012 n3293
+--10 0
+01-- 0
+.names n3314 n3305 n3295 Pi16 Pi15 n3294
+--000 0
+-0-01 0
+0--11 0
+.names n691 n3302 n3296 n3304 n3299 n3295
+-1010 1
+0-010 1
+.names n3298 n3297 n3027 n2441 n743 n3296
+--011 1
+-0--1 1
+1---1 1
+.names n3286 n3217 n2439 n3216 n2440 n3297
+---01 0
+-01-- 0
+1---- 0
+.names n18 Ni30 n2977 n2790 n2442 n3298
+--011 1
+-1--1 1
+0--11 1
+.names n3024 n2441 n3301 n3300 n736 n3299
+---01 1
+--1-1 1
+01--1 1
+.names n3286 n3222 n2439 n3221 n2440 n3300
+---01 0
+-01-- 0
+1---- 0
+.names n3025 n2442 n3301
+01 1
+.names n3009 n2442 n3008 n2441 n3303 n3302
+----0 0
+--01- 0
+01--- 0
+.names n3286 n3227 n2439 n3226 n2440 n3303
+---01 0
+-01-- 0
+1---- 0
+.names n1839 n3229 n3015 n633 n3292 n3304
+--100 1
+-1-10 1
+0---0 1
+.names n3310 n3308 n3306 Pi19 Pi17 n3305
+--010 0
+-0-01 0
+0---- 0
+.names n3235 n2442 n2441 n2999 n3307 n3306
+----0 0
+--10- 0
+01--- 0
+.names n3286 n3234 n2439 n3233 n2440 n3307
+---01 0
+-01-- 0
+1---- 0
+.names n3240 n2442 n2441 n2996 n3309 n3308
+----0 0
+--10- 0
+01--- 0
+.names n3286 n3239 n2439 n3238 n2440 n3309
+---01 0
+-01-- 0
+1---- 0
+.names n691 n3312 n3311 n3313 n3310
+-111 1
+0--1 1
+.names n3286 n3244 n2439 n3243 n2440 n3311
+---01 0
+-01-- 0
+1---- 0
+.names n3246 n2442 n2441 n2981 n3312
+--10 0
+01-- 0
+.names n1839 n3248 n2988 n633 n3292 n3313
+--100 1
+-1-10 1
+0---0 1
+.names n3319 n3317 n3315 Pi19 Pi17 n3314
+--010 0
+-0-01 0
+0---- 0
+.names n2978 n2442 n2441 n2976 n3316 n3315
+----0 0
+--10- 0
+01--- 0
+.names n3286 n3253 n2439 n3252 n2440 n3316
+---01 0
+-01-- 0
+1---- 0
+.names n2993 n2442 n2441 n2992 n3318 n3317
+----0 0
+--10- 0
+01--- 0
+.names n3286 n3257 n2439 n3256 n2440 n3318
+---01 0
+-01-- 0
+1---- 0
+.names n691 n3321 n3320 n3322 n3319
+-111 1
+0--1 1
+.names n3286 n3261 n2439 n3260 n2440 n3320
+---01 0
+-01-- 0
+1---- 0
+.names n3263 n2442 n2441 n2984 n3321
+--10 0
+01-- 0
+.names n1839 n3265 n2989 n633 n3292 n3322
+--100 1
+-1-10 1
+0---0 1
+.names Ni13 Ni14 n3324 n3327 Ni12 n3323
+--0-1 0
+-0-00 0
+1--0- 0
+.names Pi23 n2883 n3274 Ni14 n3325 n3324
+--001 1
+-1-11 1
+0---1 1
+.names n3036 n633 n796 Ni14 n3326 n3325
+----0 0
+0011- 0
+.names Ni14 n3273 n633 n2676 n3270 n3326
+---11 1
+-11-1 1
+1---1 1
+.names n796 n633 n2964 n3276 n3286 n3327
+--100 1
+-1-00 1
+0--00 1
+.names n3196 n633 n3280 n3279 n3328
+--00 1
+11-0 1
+.names n3354 n3351 n3330 Ni11 n2425 n3329
+--000 1
+-0-00 1
+0---0 1
+.names n3350 n3340 n3331 n569 Ni12 n3330
+-0010 0
+0--00 0
+.names n1551 n3339 n3338 n3336 n3332 n3331
+-1001 1
+0--01 1
+.names n1093 n1081 n2993 n3335 n3333 n3332
+--111 1
+-0-11 1
+0---1 1
+.names n1082_1 n1081 n3240 n3334 Pi17 n3333
+--111 1
+-0-11 1
+0---1 1
+.names n2831 n2988 n1075 n1076 n2996 n3334
+---10 0
+-01-- 0
+0---- 0
+.names n2831 n2989 n1075 n1076 n2992 n3335
+---10 0
+-01-- 0
+0---- 0
+.names n3020 n1081 n3337 n1219 n3336
+--01 1
+01-1 1
+.names n2831 n3016 n1075 n1076 n3019 n3337
+---10 0
+-01-- 0
+0---- 0
+.names n3025 n1081 n3338
+01 1
+.names n2831 n3015 n1075 n1076 n3024 n3339
+---10 0
+-01-- 0
+0---- 0
+.names Pi15 n3348 n3346 Pi16 n3341 n3340
+--111 1
+-1-01 1
+1---1 1
+.names Pi15 n3344 n3342 Pi16 Pi17 n3341
+--100 1
+-1-10 1
+0---0 1
+.names n3235 n1127 n1131 n2999 n3343 n3342
+----0 0
+--10- 0
+01--- 0
+.names n2831 n3246 n1081 n1076 n2981 n3343
+---10 0
+-01-- 0
+0---- 0
+.names n2978 n1127 n1131 n2976 n3345 n3344
+----0 0
+--10- 0
+01--- 0
+.names n2831 n3263 n1081 n1076 n2984 n3345
+---10 0
+-01-- 0
+0---- 0
+.names n3347 n3004 n1127 n1131 n3003 n3346
+---10 0
+-01-- 0
+0---- 0
+.names n2831 n3013 n1081 n3012 n1076 n3347
+---01 0
+-01-- 0
+0---- 0
+.names n3349 n3028 n1127 n1131 n3027 n3348
+---10 0
+-01-- 0
+0---- 0
+.names n2831 n3009 n1081 n3008 n1076 n3349
+---01 0
+-01-- 0
+0---- 0
+.names n796 n2964 n2831 n3350
+-11 1
+0-1 1
+.names n3353 n3350 n2036 n2335 n3352 n3351
+---10 0
+-01-- 0
+1---- 0
+.names n3274 n2675 n3352
+01 1
+.names n3036 n796 n2883 n2334 n3353
+--01 1
+01-1 1
+.names n653 n3144 n796 n3355 n3354
+---0 0
+101- 0
+.names n2918 n3350 n568 Ni11 n3355
+-001 0
+1-11 0
+.names n3400 n3376 n3393 n3357 n3356
+-010 0
+0--- 0
+.names n3373 n836 n3368 n3358 n3375 n3357
+---01 1
+--0-1 1
+01--1 1
+.names n3366 n690 n3364 n817 n3359 n3358
+----0 0
+--01- 0
+01--- 0
+.names n3362 n3014 Pi24 n800 n3360 n3359
+---10 0
+-00-- 0
+0---- 0
+.names n3009 n2593 n3008 n2592 n3361 n3360
+----0 0
+--01- 0
+01--- 0
+.names n3227 n3226 n796 Pi24 Pi20 n3361
+-0111 0
+0-110 0
+.names n3363 n2612 n3229 n3207 n2611 n3362
+---01 0
+-10-- 0
+0---- 0
+.names Ni30 Pi22 Pi21 Pi24 n3196 n3363
+---11 1
+-11-- 1
+0---1 1
+.names n3025 n2593 n2592 n3024 n3365 n3364
+----0 0
+--10- 0
+01--- 0
+.names n3222 n3221 n796 Pi24 Pi20 n3365
+-0111 0
+0-110 0
+.names n3013 n2593 n3012 n2592 n3367 n3366
+----0 0
+--01- 0
+01--- 0
+.names n3203 n3202 n796 Pi24 Pi20 n3367
+-0111 0
+0-110 0
+.names n3371 n844 n827 n3369 n3368
+--10 0
+01-- 0
+.names n3020 n2593 n2592 n3019 n3370 n3369
+----0 0
+--10- 0
+01--- 0
+.names n3197 n3195 n796 Pi24 Pi20 n3370
+-0111 0
+0-110 0
+.names n3372 n3028 n2593 n2592 n3027 n3371
+---10 0
+-01-- 0
+0---- 0
+.names n3217 n3216 n796 Pi24 Pi20 n3372
+-0111 0
+0-110 0
+.names n3004 n2593 n2592 n3003 n3374 n3373
+----0 0
+--10- 0
+01--- 0
+.names n3210 n3209 n796 Pi24 Pi20 n3374
+-0111 0
+0-110 0
+.names n567 Pi15 n3375
+10 1
+.names n3391 n844 n3386 n3377 n1367 n3376
+---01 1
+--0-1 1
+01--1 1
+.names n3384 n690 n3382 n817 n3378 n3377
+----0 0
+--01- 0
+01--- 0
+.names n3381 n2987 Pi24 n800 n3379 n3378
+---10 0
+-00-- 0
+0---- 0
+.names n3246 n2593 n2592 n2981 n3380 n3379
+----0 0
+--10- 0
+01--- 0
+.names n3244 n3243 n796 Pi24 Pi20 n3380
+-0111 0
+0-110 0
+.names n3363 n2612 n3248 n3265 n2611 n3381
+---01 0
+-10-- 0
+0---- 0
+.names n3240 n2593 n2592 n2996 n3383 n3382
+----0 0
+--10- 0
+01--- 0
+.names n3239 n3238 n796 Pi24 Pi20 n3383
+-0111 0
+0-110 0
+.names n3263 n2593 n2592 n2984 n3385 n3384
+----0 0
+--10- 0
+01--- 0
+.names n3261 n3260 n796 Pi24 Pi20 n3385
+-0111 0
+0-110 0
+.names n3389 n836 n827 n3387 n3386
+--10 0
+01-- 0
+.names n2993 n2593 n2592 n2992 n3388 n3387
+----0 0
+--10- 0
+01--- 0
+.names n3257 n3256 n796 Pi24 Pi20 n3388
+-0111 0
+0-110 0
+.names n2978 n2593 n2592 n2976 n3390 n3389
+----0 0
+--10- 0
+01--- 0
+.names n3253 n3252 n796 Pi24 Pi20 n3390
+-0111 0
+0-110 0
+.names n3235 n2593 n2592 n2999 n3392 n3391
+----0 0
+--10- 0
+01--- 0
+.names n3234 n3233 n796 Pi24 Pi20 n3392
+-0111 0
+0-110 0
+.names n3395 n3394 n3399 n2032 n3393
+-001 0
+0--- 0
+.names Pi24 n3352 n3273 n3271 Ni14 n3394
+-1100 1
+1-100 1
+.names n3398 n3396 Ni12 Ni11 n3397 n3395
+-0010 0
+0---0 0
+.names n3144 Ni14 n3396
+11 1
+.names Pi24 n796 n2964 n3276 n3363 n3397
+--101 1
+-0-01 1
+1--01 1
+.names Ni14 Ni12 Ni13 Ni11 n3398
+-001 1
+-100 1
+1-00 1
+.names Pi24 n2884 n3272 n3271 Ni14 n3399
+-1101 1
+1-101 1
+.names n661 Ni10 n3400
+11 1
+.names n661 Ni10 n3401
+10 1
+.names P__cmxcl_1 Ni30 n3405 n3403 n2651 n3402
+---01 0
+--1-- 0
+01--- 0
+.names Ni11 n2956 n2827 Ni10 n3404 n3403
+--110 1
+-1-00 1
+1---0 1
+.names n2957 n2828 n581 Ni10 n3404
+-001 1
+1-00 1
+.names Ni12 n3330 n3350 Ni11 n2652 n3405
+--010 1
+-0-00 1
+1-0-0 1
+.names n18 n3407 P__cmxcl_1 n1027
+-01 1
+1-0 1
+.names n3408 n3852 n575 Ni7 n3407
+-1-1 1
+-10- 1
+1-10 1
+.names Ni10 n567 n3666 n3409 n3817 n3408
+--11- 0
+-1--1 0
+1---1 0
+.names n1082_1 n3410 n567 n3550 Ni10 n3409
+-1000 1
+0-000 1
+.names n3411 n3471 n3511 n3540 n3410
+0001 1
+.names n743 n3451 n3467 n3412 n3411
+-111 0
+0--- 0
+.names n3413 n3432 n3450 n3412
+011 1
+.names n3425 n3414 Pi22 Pi21 Pi20 n3413
+-0010 1
+0-011 1
+.names n3423 n3424 n3422 n3415 n3414
+--10 1
+00-0 1
+.names n3420 n3419 n3416 n814 n753 n3415
+--011 1
+-0--1 1
+1---1 1
+.names Ni40 n3418 n3417 n3416
+-11 1
+0-1 1
+.names Ni45 Ni43 Ni42 Ni41 n3417
+0000 1
+.names Ni45 Ni44 Ni43 Ni42 Ni41 n3418
+01000 1
+.names Ni37 Ni40 n3418 Ni38 n3417 n3419
+--111 1
+-0-11 1
+0---- 1
+.names n1258 n3421 n3420
+10 1
+.names Ni42 Ni43 Ni45 n3421
+-10 1
+0-0 1
+.names n3421 Ni37 n3416 Ni38 n3422
+--11 1
+10-0 1
+.names Ni35 Ni32 n3423
+01 1
+.names Ni36 Ni32 n3424
+11 1
+.names n3423 n3424 n3431 n3426 n3425
+--10 1
+00-0 1
+.names n3430 n3429 n3427 n864 n753 n3426
+--011 1
+-0--1 1
+1---1 1
+.names Ni40 n3428 n3417 n3427
+-11 1
+0-1 1
+.names Ni45 Ni44 Ni43 Ni42 Ni41 n3428
+00000 1
+.names Ni37 Ni40 n3428 Ni38 n3417 n3429
+--111 1
+-0-11 1
+0---- 1
+.names n1289 n3421 n3430
+10 1
+.names n3421 Ni37 n3427 Ni38 n3431
+--11 1
+10-0 1
+.names Pi21 n3442 n3433 Pi20 n3449 n3432
+--111 1
+-1-01 1
+1---1 1
+.names n3441 n812 Ni32 n3434 n3433
+---1 0
+000- 0
+.names n3439 n3438 n3435 n864 n773 n3434
+--011 1
+-0--1 1
+1---1 1
+.names Ni40 n3437 n3436 n3435
+-11 1
+0-1 1
+.names Ni47 Ni43 Ni42 Ni41 n3436
+0000 1
+.names Ni47 Ni44 Ni43 Ni42 Ni41 n3437
+00000 1
+.names Ni37 Ni40 n3437 Ni38 n3436 n3438
+--111 1
+-0-11 1
+0---- 1
+.names n1289 n3440 n3439
+10 1
+.names Ni42 Ni43 Ni47 n3440
+-10 1
+0-0 1
+.names n3440 Ni37 n3435 Ni38 n3441
+--11 1
+10-0 1
+.names n3448 n812 Ni32 n3443 n3442
+---1 0
+000- 0
+.names n3447 n3446 n3444 n814 n773 n3443
+--011 1
+-0--1 1
+1---1 1
+.names Ni40 n3445 n3436 n3444
+-11 1
+0-1 1
+.names Ni47 Ni44 Ni43 Ni42 Ni41 n3445
+01000 1
+.names Ni37 Ni40 n3445 Ni38 n3436 n3446
+--111 1
+-0-11 1
+0---- 1
+.names n1258 n3440 n3447
+10 1
+.names n3440 Ni37 n3444 Ni38 n3448
+--11 1
+10-0 1
+.names n18 Pi21 n680 n3449
+-11 1
+1-1 1
+.names Pi22 n674 Ni30 n18 n3450
+-101 1
+1--- 1
+.names n3462 n1826 n1825 n3452 n3451
+--10 0
+01-- 0
+.names n3461 n3442 n3414 n3453 n3452
+-111 1
+0--1 1
+.names n3454 n841 n920 n3455 n3459 n3453
+-0110 1
+0--10 1
+.names n1732 n18 n3454
+11 1
+.names Ni35 n3458 Ni37 n3456 n3457 n3455
+---0- 1
+-00-1 1
+0---1 1
+.names Ni32 Ni30 n18 n3456
+111 1
+.names Ni47 Ni45 Ni38 Ni37 n3457
+0000 1
+.names Ni36 Ni45 Ni39 Ni38 Ni47 n3458
+-0100 0
+1---- 0
+.names n788 n811 n705 Ni40 n3460 n3459
+--011 1
+-0--1 1
+1--11 1
+.names Ni32 Ni30 n18 n3460
+011 1
+.names Ni31 Ni30 n18 n3461
+101 1
+.names n3461 n3433 n3425 n3463 n3462
+-111 1
+0--1 1
+.names n3454 n888 n950 n3464 n3466 n3463
+-0110 1
+0--10 1
+.names Ni35 n3465 Ni37 n3456 n3457 n3464
+---0- 1
+-00-1 1
+0---1 1
+.names Ni36 Ni45 Ni39 Ni38 Ni47 n3465
+-0000 0
+1---- 0
+.names n851 n811 n705 Ni40 n3460 n3466
+--011 1
+-0--1 1
+1--11 1
+.names n3469 n1177 n3468 n3452 n1176 n3467
+---01 0
+--0-1 0
+01--- 0
+.names n18 n793 n919 n3468
+-11 1
+1-- 1
+.names n3461 n3433 n3425 n3470 n3463 n3469
+-1111 1
+0--11 1
+.names n18 n888 n793 n950 n3470
+-011 1
+1--- 1
+.names n736 n3489 n3505 n3508 n3472 n3471
+-1100 0
+0---- 0
+.names n3473 n1176 n3472
+01 1
+.names n3461 n3479 n3474 n3488 n3485 n3473
+-1111 1
+0--11 1
+.names n753 n3424 n3478 n3475 n3474
+--10 1
+00-0 1
+.names n3477 n3420 n3476 n814 n3423 n3475
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3418 n3417 n3476
+-11 1
+1-1 1
+.names Ni37 Ni40 n3418 Ni38 n3417 n3477
+--111 1
+-1-11 1
+0---- 1
+.names n3421 Ni37 n3476 Ni38 n3478
+--11 1
+10-0 1
+.names n3484 n832 Ni32 n3480 n3479
+---1 0
+000- 0
+.names n3482 n3447 n3481 n814 n3483 n3480
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3445 n3436 n3481
+-11 1
+1-1 1
+.names Ni37 Ni40 n3445 Ni38 n3436 n3482
+--111 1
+-1-11 1
+0---- 1
+.names Ni35 Ni32 n3483
+00 1
+.names n3440 Ni37 n3481 Ni38 n3484
+--11 1
+10-0 1
+.names n3454 n813 n925 n3486 n3487 n3485
+-0110 1
+0--10 1
+.names Ni35 n3458 Ni37 n3456 n3457 n3486
+---0- 1
+-00-1 1
+1---1 1
+.names n788 n811 n705 Ni40 n3460 n3487
+--001 1
+-0--1 1
+1--01 1
+.names n18 n813 n793 n925 n3488
+-011 1
+1--- 1
+.names n3491 n1826 n1825 n3490 n3489
+--10 0
+01-- 0
+.names n3461 n3479 n3474 n3485 n3490
+-111 1
+0--1 1
+.names n3461 n3497 n3492 n3502 n3491
+-111 1
+0--1 1
+.names n753 n3424 n3496 n3493 n3492
+--10 1
+00-0 1
+.names n3495 n3430 n3494 n864 n3423 n3493
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3428 n3417 n3494
+-11 1
+1-1 1
+.names Ni37 Ni40 n3428 Ni38 n3417 n3495
+--111 1
+-1-11 1
+0---- 1
+.names n3421 Ni37 n3494 Ni38 n3496
+--11 1
+10-0 1
+.names n3501 n832 Ni32 n3498 n3497
+---1 0
+000- 0
+.names n3500 n3439 n3499 n864 n3483 n3498
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3437 n3436 n3499
+-11 1
+1-1 1
+.names Ni37 Ni40 n3437 Ni38 n3436 n3500
+--111 1
+-1-11 1
+0---- 1
+.names n3440 Ni37 n3499 Ni38 n3501
+--11 1
+10-0 1
+.names n3454 n863 n955 n3503 n3504 n3502
+-0110 1
+0--10 1
+.names Ni35 n3465 Ni37 n3456 n3457 n3503
+---0- 1
+-00-1 1
+1---1 1
+.names n851 n811 n705 Ni40 n3460 n3504
+--001 1
+-0--1 1
+1--01 1
+.names n3506 n3507 n3450 n3505
+011 1
+.names n3492 n3474 Pi22 Pi21 Pi20 n3506
+-0010 1
+0-011 1
+.names Pi21 n3497 n3479 Pi20 n3449 n3507
+--101 1
+-1-11 1
+1---1 1
+.names n3509 n1177 n3508
+01 1
+.names n3461 n3497 n3492 n3510 n3502 n3509
+-1111 1
+0--11 1
+.names n18 n863 n793 n955 n3510
+-011 1
+1--- 1
+.names n691 n3536 n3539 n3512 n3511
+-111 0
+0--- 0
+.names n3525 n1177 n1176 n3513 n3512
+--10 0
+01-- 0
+.names n18 n793 n930 n3514 n3513
+-111 1
+1--1 1
+.names n3461 n3519 n3515 n3522 n3514
+-111 1
+0--1 1
+.names Ni32 n3418 n790 n3516 n3517 n3515
+--111 1
+-1-11 1
+0---1 1
+.names n3421 n1258 n750 n3516
+-00 1
+1-0 1
+.names n3518 n3418 n671 n3424 n3517
+-011 0
+1--1 0
+.names Ni43 Ni42 Ni45 Ni38 n3518
+--10 1
+01-0 1
+.names Ni32 n3445 n790 n3520 n3521 n3519
+--111 1
+-1-11 1
+1---1 1
+.names n3440 n1258 n750 n3520
+-00 1
+1-0 1
+.names n3445 n3440 n792 Ni38 Ni32 n3521
+-0100 0
+0-110 0
+.names n3454 n931 n787 n3523 n3524 n3522
+-0100 1
+0--00 1
+.names n3457 n3458 Ni37 n3456 n3523
+---0 0
+100- 0
+.names n788 n705 n3460 n3524
+-01 1
+1-1 1
+.names n18 n793 n960 n3526 n3525
+-111 1
+1--1 1
+.names n3461 n3530 n3527 n3533 n3526
+-111 1
+0--1 1
+.names Ni32 n3428 n852 n3528 n3529 n3527
+--111 1
+-1-11 1
+0---1 1
+.names n3421 n1289 n750 n3528
+-00 1
+1-0 1
+.names n3518 n671 n3428 n3424 n3529
+-101 0
+1--1 0
+.names Ni32 n3437 n852 n3531 n3532 n3530
+--111 1
+-1-11 1
+1---1 1
+.names n3440 n1289 n750 n3531
+-00 1
+1-0 1
+.names n3440 n3437 n792 Ni38 Ni32 n3532
+-0110 0
+0-100 0
+.names n3454 n961 n850 n3534 n3535 n3533
+-0100 1
+0--00 1
+.names n3457 n3465 Ni37 n3456 n3534
+---0 0
+100- 0
+.names n851 n705 n3460 n3535
+-01 1
+1-1 1
+.names n3537 n3538 n3450 n3536
+011 1
+.names n3527 n3515 Pi22 Pi21 Pi20 n3537
+-0010 1
+0-011 1
+.names Pi21 n3519 n3530 Pi20 n3449 n3538
+--111 1
+-1-01 1
+1---1 1
+.names n3526 n1826 n1825 n3514 n3539
+--10 0
+01-- 0
+.names Pi25 n1839 n3549 n3546 n3541 n3540
+--111 1
+-0--1 1
+0--11 1
+.names n912 Pi25 n699 n3542 n3541
+--10 0
+10-- 0
+.names n3545 Pi21 Pi22 n3544 n3543 n3542
+----0 0
+--00- 0
+00--- 0
+.names n3450 n3449 n3543
+11 1
+.names n3421 Ni37 n3417 Ni38 n3544
+--11 1
+10-0 1
+.names n3440 Ni37 n3436 Ni38 n3545
+--11 1
+10-0 1
+.names n677 n3544 n3547 n3454 n894 n3546
+---10 0
+--0-- 0
+10--- 0
+.names n3548 n3545 n3461 Ni32 n3547
+-010 0
+0--- 0
+.names n3456 n3457 n811 n3460 n3548
+--01 0
+10-- 0
+.names n18 n793 n894 n3549
+-11 1
+1-- 1
+.names n1093 n3594 n3631 n3657 n3551 n3550
+-0010 0
+0---- 0
+.names n743 n3571 n3588 n3591 n3552 n3551
+-1100 0
+0---- 0
+.names n3553 n1176 n3552
+01 1
+.names n3461 n3561 n3554 n3570 n3568 n3553
+-1111 1
+0--11 1
+.names n3423 n3424 n3560 n3555 n3554
+--10 1
+00-0 1
+.names n3559 n3420 n3556 n814 n753 n3555
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3558 n3557 n3556
+-11 1
+0-1 1
+.names Ni45 Ni43 Ni42 n3557
+000 1
+.names Ni41 Ni44 Ni43 Ni42 Ni45 n3558
+-1000 1
+1-000 1
+.names Ni37 Ni40 n3558 Ni38 n3557 n3559
+--111 1
+-0-11 1
+0---- 1
+.names n3421 Ni37 n3556 Ni38 n3560
+--11 1
+10-0 1
+.names n3567 n812 Ni32 n3562 n3561
+---1 0
+000- 0
+.names n3566 n3447 n3563 n814 n773 n3562
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3565 n3564 n3563
+-11 1
+0-1 1
+.names Ni47 Ni43 Ni42 n3564
+000 1
+.names Ni41 Ni44 Ni43 Ni42 Ni47 n3565
+-1000 1
+1-000 1
+.names Ni37 Ni40 n3565 Ni38 n3564 n3566
+--111 1
+-0-11 1
+0---- 1
+.names n3440 Ni37 n3563 Ni38 n3567
+--11 1
+10-0 1
+.names n3454 n833 n909 n3455 n3569 n3568
+-0110 1
+0--10 1
+.names n788 Ni41 Ni40 n805 n3460 n3569
+---01 1
+101-1 1
+.names n18 n833 n793 n909 n3570
+-011 1
+1--- 1
+.names n3573 n1826 n1825 n3572 n3571
+--10 0
+01-- 0
+.names n3461 n3561 n3554 n3568 n3572
+-111 1
+0--1 1
+.names n3461 n3580 n3574 n3586 n3573
+-111 1
+0--1 1
+.names n3423 n3424 n3579 n3575 n3574
+--10 1
+00-0 1
+.names n3578 n3430 n3576 n864 n753 n3575
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3577 n3557 n3576
+-11 1
+0-1 1
+.names Ni41 Ni44 Ni43 Ni42 Ni45 n3577
+-0000 1
+1-000 1
+.names Ni37 Ni40 n3577 Ni38 n3557 n3578
+--111 1
+-0-11 1
+0---- 1
+.names n3421 Ni37 n3576 Ni38 n3579
+--11 1
+10-0 1
+.names n3585 n812 Ni32 n3581 n3580
+---1 0
+000- 0
+.names n3584 n3439 n3582 n864 n773 n3581
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3583 n3564 n3582
+-11 1
+0-1 1
+.names Ni41 Ni44 Ni43 Ni42 Ni47 n3583
+-0000 1
+1-000 1
+.names Ni37 Ni40 n3583 Ni38 n3564 n3584
+--111 1
+-0-11 1
+0---- 1
+.names n3440 Ni37 n3582 Ni38 n3585
+--11 1
+10-0 1
+.names n3454 n880 n941 n3464 n3587 n3586
+-0110 1
+0--10 1
+.names n851 Ni41 Ni40 n805 n3460 n3587
+---01 1
+101-1 1
+.names n3589 n3590 n3450 n3588
+011 1
+.names n3574 n3554 Pi22 Pi21 Pi20 n3589
+-0010 1
+0-011 1
+.names Pi21 n3580 n3561 Pi20 n3449 n3590
+--101 1
+-1-11 1
+1---1 1
+.names n3592 n1177 n3591
+01 1
+.names n3461 n3580 n3574 n3593 n3586 n3592
+-1111 1
+0--11 1
+.names n18 n880 n793 n941 n3593
+-011 1
+1--- 1
+.names n736 n3610 n3625 n3628 n3595 n3594
+-1100 0
+0---- 0
+.names n3596 n1176 n3595
+01 1
+.names n3461 n3602 n3597 n3609 n3607 n3596
+-1111 1
+0--11 1
+.names n753 n3424 n3601 n3598 n3597
+--10 1
+00-0 1
+.names n3600 n3420 n3599 n814 n3423 n3598
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3558 n3557 n3599
+-11 1
+1-1 1
+.names Ni37 Ni40 n3558 Ni38 n3557 n3600
+--111 1
+-1-11 1
+0---- 1
+.names n3421 Ni37 n3599 Ni38 n3601
+--11 1
+10-0 1
+.names n3606 n832 Ni32 n3603 n3602
+---1 0
+000- 0
+.names n3605 n3447 n3604 n814 n3483 n3603
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3565 n3564 n3604
+-11 1
+1-1 1
+.names Ni37 Ni40 n3565 Ni38 n3564 n3605
+--111 1
+-1-11 1
+0---- 1
+.names n3440 Ni37 n3604 Ni38 n3606
+--11 1
+10-0 1
+.names n3454 n824 n915 n3486 n3608 n3607
+-0110 1
+0--10 1
+.names n788 Ni41 Ni40 n805 n3460 n3608
+---01 1
+100-1 1
+.names n18 n824 n793 n915 n3609
+-011 1
+1--- 1
+.names n3612 n1826 n1825 n3611 n3610
+--10 0
+01-- 0
+.names n3461 n3602 n3597 n3607 n3611
+-111 1
+0--1 1
+.names n3461 n3618 n3613 n3623 n3612
+-111 1
+0--1 1
+.names n753 n3424 n3617 n3614 n3613
+--10 1
+00-0 1
+.names n3616 n3430 n3615 n864 n3423 n3614
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3577 n3557 n3615
+-11 1
+1-1 1
+.names Ni37 Ni40 n3577 Ni38 n3557 n3616
+--111 1
+-1-11 1
+0---- 1
+.names n3421 Ni37 n3615 Ni38 n3617
+--11 1
+10-0 1
+.names n3622 n832 Ni32 n3619 n3618
+---1 0
+000- 0
+.names n3621 n3439 n3620 n864 n3483 n3619
+--011 1
+-1--1 1
+0---1 1
+.names Ni40 n3583 n3564 n3620
+-11 1
+1-1 1
+.names Ni37 Ni40 n3583 Ni38 n3564 n3621
+--111 1
+-1-11 1
+0---- 1
+.names n3440 Ni37 n3620 Ni38 n3622
+--11 1
+10-0 1
+.names n3454 n873 n945 n3503 n3624 n3623
+-0110 1
+0--10 1
+.names n851 Ni41 Ni40 n805 n3460 n3624
+---01 1
+100-1 1
+.names n3626 n3627 n3450 n3625
+011 1
+.names n3613 n3597 Pi22 Pi21 Pi20 n3626
+-0010 1
+0-011 1
+.names Pi21 n3618 n3602 Pi20 n3449 n3627
+--101 1
+-1-11 1
+1---1 1
+.names n3629 n1177 n3628
+01 1
+.names n3461 n3618 n3613 n3630 n3623 n3629
+-1111 1
+0--11 1
+.names n18 n873 n793 n945 n3630
+-011 1
+1--- 1
+.names n3656 n1176 n3651 n3632 n691 n3631
+---01 1
+--0-1 1
+01--1 1
+.names n3642 n1826 n1825 n3633 n3632
+--10 0
+01-- 0
+.names n3634 n3641 n3633
+01 1
+.names n3638 n3635 n3461 n3634
+-01 1
+0-1 1
+.names Ni32 n3636 n3637 n3635
+-11 1
+0-1 1
+.names n1258 n3421 n790 n3558 n750 n3636
+----1 0
+--00- 0
+10--- 0
+.names n3518 n671 n3558 n3424 n3637
+-101 0
+1--1 0
+.names Ni32 n3639 n3640 n3638
+-11 1
+1-1 1
+.names n1258 n3440 n790 n3565 n750 n3639
+----1 0
+--00- 0
+10--- 0
+.names n3565 n3440 n792 Ni38 Ni32 n3640
+-0100 0
+0-110 0
+.names n3523 n804 n3460 n934 n3454 n3641
+---01 0
+-01-- 0
+1---- 0
+.names n3643 n3650 n3642
+01 1
+.names n3647 n3644 n3461 n3643
+-01 1
+0-1 1
+.names Ni32 n3645 n3646 n3644
+-11 1
+0-1 1
+.names n1289 n3421 n852 n3577 n750 n3645
+----1 0
+--00- 0
+10--- 0
+.names n3518 n671 n3577 n3424 n3646
+-101 0
+1--1 0
+.names Ni32 n3648 n3649 n3647
+-11 1
+1-1 1
+.names n1289 n3440 n852 n3583 n750 n3648
+----1 0
+--00- 0
+10--- 0
+.names n3583 n3440 n792 Ni38 Ni32 n3649
+-0100 0
+0-110 0
+.names n3534 n857 n3460 n964 n3454 n3650
+---01 0
+-01-- 0
+1---- 0
+.names n1177 n3655 n3652 n3651
+-11 1
+0-1 1
+.names n3653 n3654 n3450 n3652
+011 1
+.names n3644 n3635 Pi22 Pi21 Pi20 n3653
+-0010 1
+0-011 1
+.names Pi21 n3647 n3638 Pi20 n3449 n3654
+--101 1
+-1-11 1
+1---1 1
+.names n18 n793 n964 n3650 n3643 n3655
+-1110 1
+1--10 1
+.names n18 n793 n934 n3641 n3634 n3656
+-1110 1
+1--10 1
+.names Pi25 n1839 n3665 n3662 n3658 n3657
+--111 1
+-0--1 1
+0--11 1
+.names n912 Pi25 n699 n3659 n3658
+--10 0
+10-- 0
+.names n3661 Pi22 n3660 Pi21 n3543 n3659
+----0 0
+--00- 0
+00--- 0
+.names n3440 Ni37 n3564 Ni38 n3660
+--11 1
+10-0 1
+.names n3421 Ni37 n3557 Ni38 n3661
+--11 1
+10-0 1
+.names Ni32 n3461 n3660 n3663 n3664 n3662
+--111 1
+-0-11 1
+1--11 1
+.names n899 n3454 n677 n3661 n3663
+--10 0
+01-- 0
+.names n3456 n3457 n805 n3460 n3664
+--01 0
+10-- 0
+.names n18 n793 n899 n3665
+-11 1
+1-- 1
+.names n3747 n3667 Pi16 Pi15 n3666
+-010 0
+0-00 0
+.names n3668 n3692 n3714 n3738 n3667
+0001 1
+.names n743 n3679 n3688 n3691 n3669 n3668
+-1100 0
+0---- 0
+.names n793 n829 n3670 n18 n1176 n3669
+--0-1 1
+-0-01 1
+0--01 1
+.names n3461 n3673 n3671 n3675 n3670
+-111 1
+0--1 1
+.names Ni32 n832 n3560 n3555 n3672 n3671
+--101 1
+-0-01 1
+0--01 1
+.names n3559 n3556 Ni37 n3424 n3672
+-001 0
+0--1 0
+.names Ni32 n832 n3567 n3562 n3674 n3673
+--101 1
+-0-01 1
+1--01 1
+.names Ni38 Ni37 n3563 Ni36 Ni32 n3674
+--010 0
+01-10 0
+.names n3454 n833 n834 n830 n3676 n3675
+-0101 1
+0---1 1
+.names n3456 n3678 n3677 Ni35 n3569 n3676
+--100 1
+-1-10 1
+0---0 1
+.names n3457 Ni36 n3677
+10 1
+.names n3458 Ni37 Ni36 n3678
+000 1
+.names n3680 n1826 n1825 n3670 n3679
+--10 0
+01-- 0
+.names n3461 n3683 n3681 n3685 n3680
+-111 1
+0--1 1
+.names Ni32 n832 n3579 n3575 n3682 n3681
+--101 1
+-0-01 1
+0--01 1
+.names n3578 n3576 Ni37 n3424 n3682
+-001 0
+0--1 0
+.names Ni32 n832 n3585 n3581 n3684 n3683
+--101 1
+-0-01 1
+1--01 1
+.names Ni38 Ni37 n3582 Ni36 Ni32 n3684
+--010 0
+01-10 0
+.names n3454 n880 n881 n878 n3686 n3685
+-0101 1
+0---1 1
+.names n3456 n3687 n3677 Ni35 n3587 n3686
+--100 1
+-1-10 1
+0---0 1
+.names n3465 Ni37 Ni36 n3687
+000 1
+.names n3689 n3690 n3450 n3688
+011 1
+.names n3681 n3671 Pi22 Pi21 Pi20 n3689
+-0010 1
+0-011 1
+.names Pi21 n3683 n3673 Pi20 n3449 n3690
+--101 1
+-1-11 1
+1---1 1
+.names n793 n877 n3680 n18 n1177 n3691
+--0-1 1
+-0-01 1
+0--01 1
+.names n736 n3702 n3710 n3713 n3693 n3692
+-1100 0
+0---- 0
+.names n3701 n3694 n1176 n3693
+-01 1
+0-1 1
+.names n3461 n3697 n3695 n3699 n3694
+-111 1
+0--1 1
+.names Ni36 n753 n3601 n3598 n3696 n3695
+--101 1
+-0-01 1
+1--01 1
+.names n3600 n3599 Ni37 n3424 n3696
+-001 0
+0--1 0
+.names Ni32 n812 n3606 n3603 n3698 n3697
+--101 1
+-0-01 1
+1--01 1
+.names Ni38 Ni37 n3604 Ni36 Ni32 n3698
+--010 0
+01-10 0
+.names n3454 n824 n825 n822 n3700 n3699
+-0101 1
+0---1 1
+.names n3456 n3678 n3677 Ni35 n3608 n3700
+--110 1
+-1-00 1
+0---0 1
+.names n18 n793 n821 n3701
+-11 1
+1-- 1
+.names n3703 n1826 n1825 n3694 n3702
+--10 0
+01-- 0
+.names n3461 n3706 n3704 n3708 n3703
+-111 1
+0--1 1
+.names Ni36 n753 n3617 n3614 n3705 n3704
+--101 1
+-0-01 1
+1--01 1
+.names n3616 n3615 Ni37 n3424 n3705
+-001 0
+0--1 0
+.names Ni32 n812 n3622 n3619 n3707 n3706
+--101 1
+-0-01 1
+1--01 1
+.names Ni38 Ni37 n3620 Ni36 Ni32 n3707
+--010 0
+01-10 0
+.names n3454 n873 n874 n871 n3709 n3708
+-0101 1
+0---1 1
+.names n3456 n3687 n3677 Ni35 n3624 n3709
+--110 1
+-1-00 1
+0---0 1
+.names n3711 n3712 n3450 n3710
+011 1
+.names n3704 n3695 Pi22 Pi21 Pi20 n3711
+-0010 1
+0-011 1
+.names Pi21 n3706 n3697 Pi20 n3449 n3712
+--101 1
+-1-11 1
+1---1 1
+.names n793 n870 n3703 n18 n1177 n3713
+--0-1 1
+-0-01 1
+0--01 1
+.names n3737 n1177 n3730 n3715 n691 n3714
+---01 1
+--0-1 1
+01--1 1
+.names n1825 n3729 n1176 n3723 n3716 n3715
+--010 1
+-1-10 1
+0-0-0 1
+.names n3717 n1826 n3716
+01 1
+.names n3721 n3718 n3461 n3454 n856 n3717
+---10 0
+-01-- 0
+0---- 0
+.names n3648 n3645 n3719 n3720 Ni32 n3718
+-1001 1
+1-000 1
+.names n3424 n3577 Ni37 n3719
+100 1
+.names n792 n3583 Ni32 n3720
+100 1
+.names n3460 n857 n3722 n3721
+-10 1
+0-0 1
+.names n3465 Ni37 Ni36 n3456 n3722
+---0 0
+000- 0
+.names n3727 n3724 n3461 n3454 n802 n3723
+---10 0
+-01-- 0
+0---- 0
+.names n3639 n3636 n3725 n3726 Ni32 n3724
+-1001 1
+1-000 1
+.names n3424 n3558 Ni37 n3725
+100 1
+.names n792 n3565 Ni32 n3726
+100 1
+.names n3460 n804 n3728 n3727
+-10 1
+0-0 1
+.names n3458 Ni37 Ni36 n3456 n3728
+---0 0
+000- 0
+.names n18 n793 n802 n3729
+-11 1
+1-- 1
+.names n3731 n3734 n3450 n3730
+011 1
+.names n3733 n3732 Pi22 Pi21 Pi20 n3731
+-0010 1
+0-011 1
+.names Ni32 n3636 n3725 n3732
+-10 1
+0-0 1
+.names Ni32 n3645 n3719 n3733
+-10 1
+0-0 1
+.names Pi21 n3736 n3735 Pi20 n3449 n3734
+--101 1
+-1-11 1
+1---1 1
+.names Ni32 n3639 n3726 n3735
+-10 1
+1-0 1
+.names Ni32 n3648 n3720 n3736
+-10 1
+1-0 1
+.names n18 n793 n856 n3717 n3737
+-111 1
+1--1 1
+.names Pi25 n1839 n3746 n3739 n3743 n3738
+--111 1
+-0--1 1
+0--11 1
+.names n3742 n898 n3454 n3740 n3461 n3739
+---01 0
+-01-- 0
+0---- 0
+.names Ni32 Ni36 n3557 n3661 n3741 n3740
+--111 1
+-0-11 1
+0---1 1
+.names Ni32 n750 n3564 n3660 Ni36 n3741
+---10 1
+-01-1 1
+1---- 1
+.names n805 n3460 n3456 n3677 n3742
+--10 0
+01-- 0
+.names n912 Pi25 n699 n3744 n3743
+--10 0
+10-- 0
+.names Pi21 n3741 n3745 n3543 n3744
+-101 1
+1-01 1
+.names n3557 Ni36 n3661 Pi22 Ni32 n3745
+--001 1
+01-01 1
+.names n18 n793 n898 n3746
+-11 1
+1-- 1
+.names n736 n3769 n3792 n3808 n3748 n3747
+-1010 1
+0-010 1
+.names n743 n3760 n3767 n3768 n3749 n3748
+-1001 0
+0---- 0
+.names n3750 n3755 n3450 n3749
+011 1
+.names n3753 n3751 Pi22 Pi21 Pi20 n3750
+-0010 1
+0-011 1
+.names Ni32 n832 n3422 n3415 n3752 n3751
+--101 1
+-0-01 1
+0--01 1
+.names n3419 n3416 Ni37 n3424 n3752
+-001 0
+0--1 0
+.names Ni32 n832 n3431 n3426 n3754 n3753
+--101 1
+-0-01 1
+0--01 1
+.names n3429 n3427 Ni37 n3424 n3754
+-001 0
+0--1 0
+.names Pi21 n3758 n3756 Pi20 n3449 n3755
+--111 1
+-1-01 1
+1---1 1
+.names Ni32 n832 n3441 n3434 n3757 n3756
+--101 1
+-0-01 1
+1--01 1
+.names Ni38 Ni37 n3435 Ni36 Ni32 n3757
+--010 0
+01-10 0
+.names Ni32 n832 n3448 n3443 n3759 n3758
+--101 1
+-0-01 1
+1--01 1
+.names Ni38 Ni37 n3444 Ni36 Ni32 n3759
+--010 0
+01-10 0
+.names n3764 n1826 n1825 n3761 n3760
+--10 0
+01-- 0
+.names n3461 n3758 n3751 n3762 n3761
+-111 1
+0--1 1
+.names n3454 n841 n842 n839 n3763 n3762
+-0101 1
+0---1 1
+.names n3456 n3678 n3677 Ni35 n3459 n3763
+--100 1
+-1-10 1
+0---0 1
+.names n3461 n3756 n3753 n3765 n3764
+-111 1
+0--1 1
+.names n3454 n888 n889 n886 n3766 n3765
+-0101 1
+0---1 1
+.names n3456 n3687 n3677 Ni35 n3466 n3766
+--100 1
+-1-10 1
+0---0 1
+.names n793 n838 n3761 n18 n1176 n3767
+--0-1 1
+-0-01 1
+0--01 1
+.names n793 n885 n3764 n18 n1177 n3768
+--0-1 1
+-0-01 1
+0--01 1
+.names n1177 n3791 n3788 n3770 n3779 n3769
+-1101 1
+0-101 1
+.names n3771 n1176 n3770
+01 1
+.names n3461 n3774 n3772 n3778 n3776 n3771
+-1111 1
+0--11 1
+.names Ni36 n753 n3478 n3475 n3773 n3772
+--101 1
+-0-01 1
+1--01 1
+.names n3477 n3476 Ni37 n3424 n3773
+-001 0
+0--1 0
+.names Ni32 n812 n3484 n3480 n3775 n3774
+--101 1
+-0-01 1
+1--01 1
+.names Ni38 Ni37 n3481 Ni36 Ni32 n3775
+--010 0
+01-10 0
+.names n3454 n813 n815 n809 n3777 n3776
+-0101 1
+0---1 1
+.names n3456 n3678 n3677 Ni35 n3487 n3777
+--110 1
+-1-00 1
+0---0 1
+.names n18 n813 n815 n793 n809 n3778
+-0110 1
+1---- 1
+.names n3781 n1826 n1825 n3780 n3779
+--10 0
+01-- 0
+.names n3461 n3774 n3772 n3776 n3780
+-111 1
+0--1 1
+.names n3461 n3784 n3782 n3786 n3781
+-111 1
+0--1 1
+.names Ni36 n753 n3496 n3493 n3783 n3782
+--101 1
+-0-01 1
+1--01 1
+.names n3495 n3494 Ni37 n3424 n3783
+-001 0
+0--1 0
+.names Ni32 n812 n3501 n3498 n3785 n3784
+--101 1
+-0-01 1
+1--01 1
+.names Ni38 Ni37 n3499 Ni36 Ni32 n3785
+--010 0
+01-10 0
+.names n3454 n863 n865 n861 n3787 n3786
+-0101 1
+0---1 1
+.names n3456 n3687 n3677 Ni35 n3504 n3787
+--110 1
+-1-00 1
+0---0 1
+.names n3789 n3790 n3450 n3788
+011 1
+.names n3782 n3772 Pi22 Pi21 Pi20 n3789
+-0010 1
+0-011 1
+.names Pi21 n3784 n3774 Pi20 n3449 n3790
+--101 1
+-1-11 1
+1---1 1
+.names n18 n793 n860 n3781 n3791
+-111 1
+1--1 1
+.names n691 n3801 n3806 n3807 n3793 n3792
+-1001 0
+0---- 0
+.names n3794 n3798 n3450 n3793
+011 1
+.names n3797 n3795 Pi22 Pi21 Pi20 n3794
+-0010 1
+0-011 1
+.names n790 n3796 n3516 n3418 Ni32 n3795
+--0-1 0
+-1-0- 0
+0--01 0
+.names n3424 Ni37 n3796
+10 1
+.names n852 n3796 n3528 n3428 Ni32 n3797
+--0-1 0
+-1-0- 0
+0--01 0
+.names Pi21 n3800 n3799 Pi20 n3449 n3798
+--111 1
+-1-01 1
+1---1 1
+.names Ni32 n3437 n852 n792 n3531 n3799
+--101 1
+-1--1 1
+1---- 1
+.names Ni32 n3445 n790 n792 n3520 n3800
+--101 1
+-1--1 1
+1---- 1
+.names n3804 n1826 n1825 n3802 n3801
+--10 0
+01-- 0
+.names n3461 n3800 n3795 n3803 n3802
+-111 1
+0--1 1
+.names n3454 n791 n787 n3524 n3728 n3803
+-0100 1
+0--00 1
+.names n3461 n3799 n3797 n3805 n3804
+-111 1
+0--1 1
+.names n3454 n853 n850 n3535 n3722 n3805
+-0100 1
+0--00 1
+.names n793 n786 n3802 n18 n1176 n3806
+--0-1 1
+-0-01 1
+0--01 1
+.names n793 n849 n3804 n18 n1177 n3807
+--0-1 1
+-0-01 1
+0--01 1
+.names Pi25 n1839 n3813 n3809 n3814 n3808
+--111 1
+-0--1 1
+0--11 1
+.names n3812 n3810 n3461 n3454 n893 n3809
+---10 0
+-01-- 0
+0---- 0
+.names Ni32 Ni36 n3417 n3544 n3811 n3810
+--111 1
+-0-11 1
+0---1 1
+.names Ni32 n750 n3436 n3545 Ni36 n3811
+---10 1
+-01-1 1
+1---- 1
+.names n811 n3460 n3456 n3677 n3812
+--10 0
+01-- 0
+.names n18 n793 n893 n3813
+-11 1
+1-- 1
+.names n912 Pi25 n699 n3815 n3814
+--10 0
+10-- 0
+.names Pi21 n3811 n3816 n3543 n3815
+-101 1
+1-01 1
+.names n3417 Ni36 n3544 Pi22 Ni32 n3816
+--001 1
+01-01 1
+.names n1219 n3838 n3818 n3842 Pi17 n3817
+--1-0 1
+-1-11 1
+0--11 1
+.names n1093 n3835 n3831 n3819 n3825 n3818
+-1000 1
+0-000 1
+.names n1219 n3820 n3823 n3824 n3688 n3819
+-1001 0
+0---- 0
+.names Pi19 n1077_1 n3821 n3730 n3822 n3820
+--110 1
+-0-10 1
+1---0 1
+.names n3723 n3729 n3821
+11 1
+.names n793 n856 n3717 n18 n1081 n3822
+--0-1 1
+-0-01 1
+0--01 1
+.names n793 n829 n3670 n18 n1131 n3823
+--0-1 1
+-0-01 1
+0--01 1
+.names n793 n877 n3680 n18 n1127 n3824
+--0-1 1
+-0-01 1
+0--01 1
+.names n1551 n3826 n3829 n3830 n3749 n3825
+-1001 0
+0---- 0
+.names Pi19 n3793 n3828 n3827 n3826
+-100 1
+1-00 1
+.names n793 n786 n3802 n18 n1076 n3827
+--0-1 1
+-0-01 1
+0--01 1
+.names n793 n849 n3804 n18 n1081 n3828
+--0-1 1
+-0-01 1
+0--01 1
+.names n793 n838 n3761 n18 n1131 n3829
+--0-1 1
+-0-01 1
+0--01 1
+.names n793 n885 n3764 n18 n1127 n3830
+--0-1 1
+-0-01 1
+0--01 1
+.names n1082_1 n3832 n3834 n3412 n3831
+-111 0
+0--- 0
+.names Pi19 n1077_1 n3513 n3536 n3833 n3832
+--110 1
+-0-10 1
+1---0 1
+.names n793 n960 n3526 n18 n1081 n3833
+--0-1 1
+-0-01 1
+0--01 1
+.names n3469 n1127 n3468 n3452 n1131 n3834
+---01 0
+--0-1 0
+01--- 0
+.names Pi19 n3652 n3837 n3588 n3836 n3835
+-1111 1
+1-111 1
+.names n3655 n1081 n1076 n3656 n3836
+--10 0
+01-- 0
+.names n3592 n1127 n1131 n3553 n3837
+--10 0
+01-- 0
+.names n3744 n3710 n3841 n3839 Pi19 n3838
+-1010 1
+1-011 1
+.names n1076 n3701 n3694 n3840 n3839
+-110 1
+0--0 1
+.names n3746 n3739 n1075 n3840
+-01 1
+0-1 1
+.names n793 n870 n3703 n18 n1081 n3841
+--0-1 1
+-0-01 1
+0--01 1
+.names n3849 n3846 n3843 Pi16 Pi15 n3842
+--000 0
+-0-01 0
+0--11 0
+.names n3815 n3788 n3845 n3844 Pi19 n3843
+-1100 1
+1-101 1
+.names n793 n860 n3781 n18 n1081 n3844
+--0-1 1
+-0-01 1
+0--01 1
+.names n3813 n3809 n3771 n1076 n1075 n3845
+--01- 0
+-0--1 0
+0---1 0
+.names n3542 n3505 n3847 Pi19 n3846
+-110 1
+1-11 1
+.names n3848 n3509 n1081 n1076 n3473 n3847
+---10 0
+-01-- 0
+1---- 0
+.names n3549 n3546 n1075 n3848
+-01 1
+0-1 1
+.names n3659 n3625 n3850 Pi19 n3849
+-110 1
+1-11 1
+.names n3851 n3629 n1081 n1076 n3596 n3850
+---10 0
+-01-- 0
+1---- 0
+.names n3665 n3662 n1075 n3851
+-01 1
+0-1 1
+.names n3866 n3853 n3817 Pi15 n567 n3852
+--0-1 1
+-0-00 1
+0--10 1
+.names n817 n3863 n3854 n3864 n3860 n3853
+-1101 1
+0-101 1
+.names n691 n3859 n3858 Pi16 n3855 n3854
+--111 1
+-1-01 1
+0---1 1
+.names n901 n3815 n3856 n18 n3855
+-111 1
+0-11 1
+.names n1839 n3809 n3739 Pi16 n3857 n3856
+--110 1
+-1-00 1
+0---0 1
+.names n3744 n699 Pi16 n3857
+011 1
+.names n796 n3717 n3723 Pi20 n3730 n3858
+--101 1
+-1-11 1
+0---1 1
+.names n796 n3804 n3802 Pi20 n3793 n3859
+--101 1
+-1-11 1
+0---1 1
+.names n3862 n836 n827 n3861 n3860
+--10 0
+01-- 0
+.names n796 n3703 n3694 Pi20 n3710 n3861
+--101 1
+-1-11 1
+0---1 1
+.names n796 n3680 n3670 Pi20 n3688 n3862
+--101 1
+-1-11 1
+0---1 1
+.names n796 n3781 n3780 Pi20 n3788 n3863
+--101 1
+-1-11 1
+0---1 1
+.names n3865 n3749 n844 n3864
+-01 1
+0-1 1
+.names n3764 n3761 n796 Pi20 n3865
+-010 0
+0-11 0
+.names n844 n3878 n3867 n3875 n3866
+-111 1
+0-11 1
+.names n817 n3868 n3869 n3867
+-11 1
+0-1 1
+.names n796 n3491 n3490 Pi20 n3505 n3868
+--101 1
+-1-11 1
+0---1 1
+.names n691 n3871 n3870 Pi16 n3872 n3869
+--111 1
+-1-01 1
+0---1 1
+.names n796 n3642 n3633 Pi20 n3652 n3870
+--101 1
+-1-11 1
+0---1 1
+.names n796 n3526 n3514 Pi20 n3536 n3871
+--101 1
+-1-11 1
+0---1 1
+.names Pi16 n1839 n3546 n3874 n3873 n3872
+--111 1
+-0-11 1
+1--11 1
+.names n901 n3542 n18 n3873
+-11 1
+0-1 1
+.names n3659 n3662 n796 n699 Pi16 n3874
+-0111 0
+0--11 0
+.names n3877 n836 n827 n3876 n3875
+--10 0
+01-- 0
+.names n796 n3612 n3611 Pi20 n3625 n3876
+--101 1
+-1-11 1
+0---1 1
+.names n796 n3573 n3572 Pi20 n3588 n3877
+--101 1
+-1-11 1
+0---1 1
+.names n796 n3462 n3452 Pi20 n3412 n3878
+--101 1
+-1-11 1
+0---1 1
+.names Ni11 n3880 Ni14 Ni3 Ni2 n1032_1
+--1-1 1
+--11- 1
+-1-00 1
+1-000 1
+.names n601 Ni12 n3881 Ni13 Ni14 n3880
+---10 1
+--10- 1
+01--0 1
+.names P__cmxig_1 n581 Ni14 n3881
+011 1
+.names n3883 P__cmxcl_1 Ni14 Ni13 n1037_1
+--01 1
+-0-1 1
+0110 1
+.names Pi26 P__cmxig_1 Pi27 Ni12 Ni11 n3883
+--110 1
+-0-00 1
+1-001 1
+.names n654 n582 P__cmxcl_1 Ni12 n1042
+--01 1
+-110 1
+00-1 1
+.names Ni11 n3886 P__cmxcl_1 n1047_1
+-11 1
+1-0 1
+.names n655 Ni14 Ni13 Ni12 Ni11 n3886
+--011 1
+--101 1
+-0--1 1
+-1110 1
+0--01 1
+.names Ni7 Ni9 n3888 P__cmxcl_1 Ni10 n1052_1
+---01 1
+--010 1
+-00-1 1
+1--10 1
+.names n3889 n576 Ni7 Ni8 n3888
+-000 0
+0--1 0
+.names Ni10 n633 Ni9 n3889
+-10 1
+1-0 1
+.names n3891 P__cmxcl_1 Ni10 Ni9 n1057
+--01 1
+-0-1 1
+0110 1
+.names Pi23 P__cmxig_0 Pi24 Ni8 Ni7 n3891
+--110 1
+-0-00 1
+1-001 1
+.names n3893 n614 P__cmxcl_1 Ni8 n1062_1
+--01 1
+-110 1
+00-1 1
+.names Pi23 Pi24 Ni10 Ni9 Ni7 n3893
+-1100 1
+00000 1
+.names P__cmxcl_1 n614 Ni8 n3895 Ni7 n1067_1
+--001 1
+-0-01 1
+0---1 1
+11100 1
+.names n575 n2535 Ni10 n3895
+111 1
+.names Ni6 n3912 n3897 n3908 n1072
+-001 0
+1--1 0
+.names n3898 P__cmxcl_1 n3897
+11 1
+.names Ni11 n3906 n3907 n3905 n3899 n3898
+-0101 1
+1---1 1
+.names Pi26 n3904 n653 n3900 n3902 n3899
+--001 1
+-1-01 1
+0--01 1
+.names Pi23 n661 Pi24 n3901 Ni10 n3900
+-1101 1
+01000 1
+.names n2670 Ni30 n3901
+11 1
+.names Ni33 n3903 n3895 Ni31 Ni30 n3902
+-0001 1
+1--01 1
+.names n614 Ni8 Ni7 n3903
+000 1
+.names Ni33 Pi27 Ni31 Ni30 n3904
+-101 1
+0-01 1
+.names Ni30 Ni31 Ni33 Pi27 n2334 n3905
+--111 1
+-1--1 1
+0---1 1
+.names n2335 n3904 Pi26 n3906
+100 1
+.names Ni12 Ni33 n582 Ni30 Ni31 n3907
+--110 1
+-0-10 1
+1--10 1
+.names n3911 n646 n663 P__cmxcl_1 n3909 n3908
+---11 0
+-11-- 0
+1---- 0
+.names n3903 n3907 n3910 n3909
+-01 1
+1-1 1
+.names n582 Ni12 Ni11 n3901 Ni6 n3910
+---01 1
+000-1 1
+.names Ni2 Ni3 Ni31 Ni6 n3911
+-101 1
+1--1 1
+.names Ni4 Ni5 Ni30 Ni31 n1091_1 n3912
+--011 1
+-0-11 1
+1--11 1
+.names n3939 n3938 Ni6 n3914 Ni5 n1077
+---01 1
+-01-0 1
+0---- 1
+.names Ni31 n647 n3915 Ni2 n3914
+-000 1
+1-00 1
+.names n3909 n3916 Ni6 P__cmxcl_1 n3915
+-001 1
+1--1 1
+.names n660 n3930 n3932 n3935 n3917 n3916
+-1000 1
+0-000 1
+.names n3929 Pi23 n3918 n3401 n3917
+--01 1
+01-1 1
+.names n633 n3904 n3928 n3926 n3919 n3918
+--001 1
+11-01 1
+.names Pi24 n3920 n3924 n3922 n3919
+-100 1
+0-00 1
+.names n653 n3921 n2335 Pi26 n3920
+-101 1
+0-0- 1
+01-0 1
+.names n3901 Pi27 n3921
+10 1
+.names n653 n3923 n3922
+10 1
+.names Ni33 Pi26 Pi27 Ni31 Ni30 n3923
+-1001 1
+0--01 1
+.names n2335 n3925 n3924
+10 1
+.names Ni33 Pi26 Pi27 Ni31 Ni30 n3925
+-0001 1
+0--01 1
+.names n3927 n3196 Pi24 Ni30 n3926
+-101 0
+1--- 0
+.names Ni14 Ni13 Ni12 Ni11 n3927
+-010 1
+1001 1
+.names Pi27 n3901 n2334 n3928
+-01 1
+0-1 1
+.names n3920 n3927 n3929
+11 1
+.names Pi23 n3929 n3931 n3926 n3919 n3930
+-1001 1
+1-001 1
+.names n3904 n2535 n3928 n3931
+-01 1
+0-1 1
+.names n3928 n3920 n3933 Pi24 n3400 n3932
+--0-1 1
+-0-01 1
+1--01 1
+.names n3904 n2334 n3934 n3922 n3924 n3933
+-0000 1
+1-000 1
+.names n3927 n3196 Pi24 Ni30 n3934
+-111 0
+1--- 0
+.names Ni10 n3936 Ni9 Ni8 Ni7 n3935
+--010 0
+-1--- 0
+1-001 0
+.names n3921 Pi26 Ni14 Ni12 n3937 n3936
+--111 1
+10-11 1
+111-1 1
+.names Ni12 Ni14 Pi27 n3901 n3927 n3937
+--111 1
+-0--1 1
+0---1 1
+.names n667 n647 n3897 n3938
+-00 1
+0-0 1
+.names n650 Ni30 n646 n3940 n3939
+--00 1
+11-0 1
+.names n663 Ni31 Ni6 n649 Ni5 n3940
+--011 1
+-0-11 1
+01110 1
+.names Ni4 n3945 Ni3 n3942 Ni2 n1082
+---10 1
+-01-0 1
+1---1 1
+.names Ni6 n3944 n3916 Ni5 n3943 n3942
+--001 1
+-0-11 1
+0-0-1 1
+.names Ni4 Ni6 Ni5 n3898 Ni3 n3943
+-1110 1
+1---0 1
+.names n3909 Ni4 n3944
+01 1
+.names n663 Ni31 Ni6 Ni5 Ni4 n3945
+--0-1 0
+-0-11 0
+-1110 0
+0--01 0
+.names P__cmx1ad_35
+ 0
+.names P__cmx1ad_34
+ 0
+.names P__cmx1ad_33
+ 0
+.names P__cmx1ad_32
+ 0
+.names P__cmx1ad_11
+ 0
+.names P__cmx1ad_10
+ 0
+.names P__cmx1ad_8
+ 0
+.names P__cmx0ad_35
+ 0
+.names P__cmx0ad_34
+ 0
+.names P__cmx0ad_33
+ 0
+.names P__cmx0ad_32
+ 0
+.names P__cmx0ad_11
+ 0
+.names P__cmx0ad_10
+ 0
+.names P__cmx0ad_8
+ 0
+.names P__cmxcl_1 P__cmxcl_0
+1 1
+.names P__cmxcl_1 n1086
+1 1
+.end

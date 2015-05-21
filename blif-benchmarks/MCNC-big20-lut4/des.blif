@@ -1,0 +1,3928 @@
+# Benchmark "TOP" written by ABC on Thu May 21 18:20:20 2015
+.model TOP
+.inputs Preset_0_ Poutreg_63_ Poutreg_62_ Poutreg_61_ Poutreg_60_ \
+ Poutreg_59_ Poutreg_58_ Poutreg_57_ Poutreg_56_ Poutreg_55_ Poutreg_54_ \
+ Poutreg_53_ Poutreg_52_ Poutreg_51_ Poutreg_50_ Poutreg_49_ Poutreg_48_ \
+ Poutreg_47_ Poutreg_46_ Poutreg_45_ Poutreg_44_ Poutreg_43_ Poutreg_42_ \
+ Poutreg_41_ Poutreg_40_ Poutreg_39_ Poutreg_38_ Poutreg_37_ Poutreg_36_ \
+ Poutreg_35_ Poutreg_34_ Poutreg_33_ Poutreg_32_ Poutreg_31_ Poutreg_30_ \
+ Poutreg_29_ Poutreg_28_ Poutreg_27_ Poutreg_26_ Poutreg_25_ Poutreg_24_ \
+ Poutreg_23_ Poutreg_22_ Poutreg_21_ Poutreg_20_ Poutreg_19_ Poutreg_18_ \
+ Poutreg_17_ Poutreg_16_ Poutreg_15_ Poutreg_14_ Poutreg_13_ Poutreg_12_ \
+ Poutreg_11_ Poutreg_10_ Poutreg_9_ Poutreg_8_ Poutreg_7_ Poutreg_6_ \
+ Poutreg_5_ Poutreg_4_ Poutreg_3_ Poutreg_2_ Poutreg_1_ Poutreg_0_ \
+ Pload_key_0_ Pinreg_55_ Pinreg_54_ Pinreg_53_ Pinreg_52_ Pinreg_51_ \
+ Pinreg_50_ Pinreg_49_ Pinreg_48_ Pinreg_47_ Pinreg_46_ Pinreg_45_ \
+ Pinreg_44_ Pinreg_43_ Pinreg_42_ Pinreg_41_ Pinreg_40_ Pinreg_39_ \
+ Pinreg_38_ Pinreg_37_ Pinreg_36_ Pinreg_35_ Pinreg_34_ Pinreg_33_ \
+ Pinreg_32_ Pinreg_31_ Pinreg_30_ Pinreg_29_ Pinreg_28_ Pinreg_27_ \
+ Pinreg_26_ Pinreg_25_ Pinreg_24_ Pinreg_23_ Pinreg_22_ Pinreg_21_ \
+ Pinreg_20_ Pinreg_19_ Pinreg_18_ Pinreg_17_ Pinreg_16_ Pinreg_15_ \
+ Pinreg_14_ Pinreg_13_ Pinreg_12_ Pinreg_11_ Pinreg_10_ Pinreg_9_ Pinreg_8_ \
+ Pinreg_7_ Pinreg_6_ Pinreg_5_ Pinreg_4_ Pinreg_3_ Pinreg_2_ Pinreg_1_ \
+ Pinreg_0_ Pencrypt_mode_0_ Pencrypt_0_ Pdata_in_7_ Pdata_in_6_ Pdata_in_5_ \
+ Pdata_in_4_ Pdata_in_3_ Pdata_in_2_ Pdata_in_1_ Pdata_in_0_ Pdata_63_ \
+ Pdata_62_ Pdata_61_ Pdata_60_ Pdata_59_ Pdata_58_ Pdata_57_ Pdata_56_ \
+ Pdata_55_ Pdata_54_ Pdata_53_ Pdata_52_ Pdata_51_ Pdata_50_ Pdata_49_ \
+ Pdata_48_ Pdata_47_ Pdata_46_ Pdata_45_ Pdata_44_ Pdata_43_ Pdata_42_ \
+ Pdata_41_ Pdata_40_ Pdata_39_ Pdata_38_ Pdata_37_ Pdata_36_ Pdata_35_ \
+ Pdata_34_ Pdata_33_ Pdata_32_ Pdata_31_ Pdata_30_ Pdata_29_ Pdata_28_ \
+ Pdata_27_ Pdata_26_ Pdata_25_ Pdata_24_ Pdata_23_ Pdata_22_ Pdata_21_ \
+ Pdata_20_ Pdata_19_ Pdata_18_ Pdata_17_ Pdata_16_ Pdata_15_ Pdata_14_ \
+ Pdata_13_ Pdata_12_ Pdata_11_ Pdata_10_ Pdata_9_ Pdata_8_ Pdata_7_ \
+ Pdata_6_ Pdata_5_ Pdata_4_ Pdata_3_ Pdata_2_ Pdata_1_ Pdata_0_ Pcount_3_ \
+ Pcount_2_ Pcount_1_ Pcount_0_ PD_27_ PD_26_ PD_25_ PD_24_ PD_23_ PD_22_ \
+ PD_21_ PD_20_ PD_19_ PD_18_ PD_17_ PD_16_ PD_15_ PD_14_ PD_13_ PD_12_ \
+ PD_11_ PD_10_ PD_9_ PD_8_ PD_7_ PD_6_ PD_5_ PD_4_ PD_3_ PD_2_ PD_1_ PD_0_ \
+ PC_27_ PC_26_ PC_25_ PC_24_ PC_23_ PC_22_ PC_21_ PC_20_ PC_19_ PC_18_ \
+ PC_17_ PC_16_ PC_15_ PC_14_ PC_13_ PC_12_ PC_11_ PC_10_ PC_9_ PC_8_ PC_7_ \
+ PC_6_ PC_5_ PC_4_ PC_3_ PC_2_ PC_1_ PC_0_
+.outputs Poutreg_new_63_ Poutreg_new_62_ Poutreg_new_61_ Poutreg_new_60_ \
+ Poutreg_new_59_ Poutreg_new_58_ Poutreg_new_57_ Poutreg_new_56_ \
+ Poutreg_new_55_ Poutreg_new_54_ Poutreg_new_53_ Poutreg_new_52_ \
+ Poutreg_new_51_ Poutreg_new_50_ Poutreg_new_49_ Poutreg_new_48_ \
+ Poutreg_new_47_ Poutreg_new_46_ Poutreg_new_45_ Poutreg_new_44_ \
+ Poutreg_new_43_ Poutreg_new_42_ Poutreg_new_41_ Poutreg_new_40_ \
+ Poutreg_new_39_ Poutreg_new_38_ Poutreg_new_37_ Poutreg_new_36_ \
+ Poutreg_new_35_ Poutreg_new_34_ Poutreg_new_33_ Poutreg_new_32_ \
+ Poutreg_new_31_ Poutreg_new_30_ Poutreg_new_29_ Poutreg_new_28_ \
+ Poutreg_new_27_ Poutreg_new_26_ Poutreg_new_25_ Poutreg_new_24_ \
+ Poutreg_new_23_ Poutreg_new_22_ Poutreg_new_21_ Poutreg_new_20_ \
+ Poutreg_new_19_ Poutreg_new_18_ Poutreg_new_17_ Poutreg_new_16_ \
+ Poutreg_new_15_ Poutreg_new_14_ Poutreg_new_13_ Poutreg_new_12_ \
+ Poutreg_new_11_ Poutreg_new_10_ Poutreg_new_9_ Poutreg_new_8_ \
+ Poutreg_new_7_ Poutreg_new_6_ Poutreg_new_5_ Poutreg_new_4_ Poutreg_new_3_ \
+ Poutreg_new_2_ Poutreg_new_1_ Poutreg_new_0_ Pinreg_new_55_ Pinreg_new_54_ \
+ Pinreg_new_53_ Pinreg_new_52_ Pinreg_new_51_ Pinreg_new_50_ Pinreg_new_49_ \
+ Pinreg_new_48_ Pinreg_new_47_ Pinreg_new_46_ Pinreg_new_45_ Pinreg_new_44_ \
+ Pinreg_new_43_ Pinreg_new_42_ Pinreg_new_41_ Pinreg_new_40_ Pinreg_new_39_ \
+ Pinreg_new_38_ Pinreg_new_37_ Pinreg_new_36_ Pinreg_new_35_ Pinreg_new_34_ \
+ Pinreg_new_33_ Pinreg_new_32_ Pinreg_new_31_ Pinreg_new_30_ Pinreg_new_29_ \
+ Pinreg_new_28_ Pinreg_new_27_ Pinreg_new_26_ Pinreg_new_25_ Pinreg_new_24_ \
+ Pinreg_new_23_ Pinreg_new_22_ Pinreg_new_21_ Pinreg_new_20_ Pinreg_new_19_ \
+ Pinreg_new_18_ Pinreg_new_17_ Pinreg_new_16_ Pinreg_new_15_ Pinreg_new_14_ \
+ Pinreg_new_13_ Pinreg_new_12_ Pinreg_new_11_ Pinreg_new_10_ Pinreg_new_9_ \
+ Pinreg_new_8_ Pinreg_new_7_ Pinreg_new_6_ Pinreg_new_5_ Pinreg_new_4_ \
+ Pinreg_new_3_ Pinreg_new_2_ Pinreg_new_1_ Pinreg_new_0_ \
+ Pencrypt_mode_new_0_ Pdata_new_63_ Pdata_new_62_ Pdata_new_61_ \
+ Pdata_new_60_ Pdata_new_59_ Pdata_new_58_ Pdata_new_57_ Pdata_new_56_ \
+ Pdata_new_55_ Pdata_new_54_ Pdata_new_53_ Pdata_new_52_ Pdata_new_51_ \
+ Pdata_new_50_ Pdata_new_49_ Pdata_new_48_ Pdata_new_47_ Pdata_new_46_ \
+ Pdata_new_45_ Pdata_new_44_ Pdata_new_43_ Pdata_new_42_ Pdata_new_41_ \
+ Pdata_new_40_ Pdata_new_39_ Pdata_new_38_ Pdata_new_37_ Pdata_new_36_ \
+ Pdata_new_35_ Pdata_new_34_ Pdata_new_33_ Pdata_new_32_ Pdata_new_31_ \
+ Pdata_new_30_ Pdata_new_29_ Pdata_new_28_ Pdata_new_27_ Pdata_new_26_ \
+ Pdata_new_25_ Pdata_new_24_ Pdata_new_23_ Pdata_new_22_ Pdata_new_21_ \
+ Pdata_new_20_ Pdata_new_19_ Pdata_new_18_ Pdata_new_17_ Pdata_new_16_ \
+ Pdata_new_15_ Pdata_new_14_ Pdata_new_13_ Pdata_new_12_ Pdata_new_11_ \
+ Pdata_new_10_ Pdata_new_9_ Pdata_new_8_ Pdata_new_7_ Pdata_new_6_ \
+ Pdata_new_5_ Pdata_new_4_ Pdata_new_3_ Pdata_new_2_ Pdata_new_1_ \
+ Pdata_new_0_ Pcount_new_3_ Pcount_new_2_ Pcount_new_1_ Pcount_new_0_ \
+ PD_new_27_ PD_new_26_ PD_new_25_ PD_new_24_ PD_new_23_ PD_new_22_ \
+ PD_new_21_ PD_new_20_ PD_new_19_ PD_new_18_ PD_new_17_ PD_new_16_ \
+ PD_new_15_ PD_new_14_ PD_new_13_ PD_new_12_ PD_new_11_ PD_new_10_ \
+ PD_new_9_ PD_new_8_ PD_new_7_ PD_new_6_ PD_new_5_ PD_new_4_ PD_new_3_ \
+ PD_new_2_ PD_new_1_ PD_new_0_ PC_new_27_ PC_new_26_ PC_new_25_ PC_new_24_ \
+ PC_new_23_ PC_new_22_ PC_new_21_ PC_new_20_ PC_new_19_ PC_new_18_ \
+ PC_new_17_ PC_new_16_ PC_new_15_ PC_new_14_ PC_new_13_ PC_new_12_ \
+ PC_new_11_ PC_new_10_ PC_new_9_ PC_new_8_ PC_new_7_ PC_new_6_ PC_new_5_ \
+ PC_new_4_ PC_new_3_ PC_new_2_ PC_new_1_ PC_new_0_
+.names Poutreg_63_ Pcount_0_ n504 n553 Poutreg_new_63_
+--11 1
+10-- 1
+.names n505 n529 n543 Pdata_24_ n504
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n506 n514 n521 n505
+001 1
+.names n507 n512 n513 n506
+001 1
+.names n511 n510 n508 n509 n507
+-100 0
+1-10 0
+.names Pdata_52_ PD_26_ n508
+00 1
+11 1
+.names Pdata_48_ PD_23_ n509
+00 1
+11 1
+.names Pdata_51_ Pdata_50_ PD_18_ PD_8_ n510
+0010 1
+0111 1
+1000 1
+1101 1
+.names Pdata_51_ Pdata_50_ PD_18_ PD_8_ n511
+0000 1
+0101 1
+1010 1
+1111 1
+.names Pdata_47_ PD_12_ n512
+00 1
+11 1
+.names Pdata_49_ PD_2_ n513
+00 1
+11 1
+.names n518 n520 n515 n513 n514
+--11 1
+11-1 1
+.names n516 n512 n517 n515
+111 1
+.names Pdata_52_ Pdata_48_ PD_26_ PD_23_ n516
+0001 1
+0100 1
+1011 1
+1110 1
+.names Pdata_51_ Pdata_50_ PD_18_ PD_8_ n517
+0011 1
+0110 1
+1001 1
+1100 1
+.names n512 n519 n518
+11 1
+.names Pdata_51_ Pdata_50_ PD_18_ PD_8_ n519
+0001 1
+0100 1
+1011 1
+1110 1
+.names Pdata_52_ Pdata_48_ PD_26_ PD_23_ n520
+0011 1
+0110 1
+1001 1
+1100 1
+.names n528 n522 n527 n525 n521
+-100 1
+0-00 1
+.names n523 n524 n512 n513 n522
+0001 0
+0110 0
+.names Pdata_50_ PD_8_ n523
+00 1
+11 1
+.names Pdata_51_ PD_18_ n524
+00 1
+11 1
+.names n510 n512 n513 n526 n525
+1111 1
+.names Pdata_52_ Pdata_48_ PD_26_ PD_23_ n526
+0010 1
+0111 1
+1000 1
+1101 1
+.names n511 n512 n513 n526 n527
+1011 1
+.names Pdata_52_ Pdata_48_ PD_26_ PD_23_ n528
+0000 1
+0101 1
+1010 1
+1111 1
+.names n530 n533 n538 n541 n529
+0100 1
+.names n531 n509 n523 n530
+101 1
+.names n513 n532 n531
+01 1
+.names Pdata_52_ Pdata_47_ PD_26_ PD_12_ n532
+0001 1
+0100 1
+1011 1
+1110 1
+.names n534 n535 n536 n537 n533
+0000 1
+.names n520 n511 n512 n534
+110 1
+.names n512 n513 n528 n535
+101 1
+.names n511 n513 n532 n536
+101 1
+.names n512 n513 n519 n526 n537
+0011 1
+.names n539 n518 n540 n513 n538
+-101 1
+1--1 1
+.names n523 n524 n512 n528 n539
+1001 1
+1111 1
+.names n516 n526 n540
+00 1
+.names n512 n517 n542 n520 n541
+--11 1
+11-1 1
+.names n517 n511 n513 n542
+-10 1
+1-0 1
+.names n544 n549 n543
+11 1
+.names n545 n546 n547 n548 n544
+0000 1
+.names n516 n512 n513 n519 n545
+1101 1
+.names n509 n513 n517 n532 n546
+0011 1
+.names n511 n512 n513 n526 n547
+1111 1
+.names n510 n512 n513 n526 n548
+1001 1
+.names n526 n551 n552 n550 n549
+-100 1
+0-00 1
+.names n509 n513 n519 n532 n550
+1011 1
+.names n517 n510 n513 n512 n551
+-101 0
+1-10 0
+.names n511 n512 n513 n528 n552
+1101 1
+.names Pcount_3_ Pcount_2_ Pcount_1_ Pcount_0_ n553
+1111 1
+.names Poutreg_62_ Pcount_0_ Pdata_56_ n553 Poutreg_new_62_
+--11 1
+10-- 1
+.names Poutreg_61_ Pcount_0_ n556 n553 Poutreg_new_61_
+--11 1
+10-- 1
+.names n557 n588 n603 Pdata_16_ n556
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n558 n572 n577 n583 n557
+1011 1
+.names n566 n569 n559 n563 n558
+--01 0
+01-- 0
+.names n562 n561 n560 n559
+-00 1
+0-0 1
+.names Pdata_36_ PC_4_ n560
+00 1
+11 1
+.names Pdata_33_ PC_10_ n561
+00 1
+11 1
+.names Pdata_35_ Pdata_32_ PC_16_ PC_0_ n562
+0000 1
+0110 1
+1001 1
+1111 1
+.names n561 n565 n560 n564 n563
+--01 1
+11-1 1
+.names Pdata_63_ Pdata_34_ PC_23_ PC_13_ n564
+0001 1
+0111 1
+1000 1
+1110 1
+.names Pdata_35_ Pdata_32_ PC_16_ PC_0_ n565
+0010 1
+0100 1
+1011 1
+1101 1
+.names n568 n567 n561 n566
+-01 1
+0-0 1
+.names Pdata_63_ Pdata_36_ PC_13_ PC_4_ n567
+0001 1
+0100 1
+1011 1
+1110 1
+.names Pdata_63_ Pdata_36_ PC_13_ PC_4_ n568
+0000 1
+0101 1
+1010 1
+1111 1
+.names n570 n571 n569
+01 1
+.names Pdata_35_ PC_0_ n570
+00 1
+11 1
+.names Pdata_34_ Pdata_32_ PC_23_ PC_16_ n571
+0000 1
+0101 1
+1010 1
+1111 1
+.names n560 n573 n576 n575 n572
+-101 1
+1--1 1
+.names n570 n574 n573
+01 1
+.names Pdata_34_ Pdata_32_ PC_23_ PC_16_ n574
+0011 1
+0110 1
+1001 1
+1100 1
+.names n562 n564 n560 n561 n575
+--00 1
+11-0 1
+.names Pdata_63_ PC_13_ n576
+00 1
+11 1
+.names n581 n578 n560 n576 n577
+-101 0
+1-11 0
+.names n579 n570 n580 n578
+111 1
+.names Pdata_32_ PC_16_ n579
+00 1
+11 1
+.names Pdata_34_ Pdata_33_ PC_23_ PC_10_ n580
+0011 1
+0110 1
+1001 1
+1100 1
+.names n561 n562 n582 n581
+110 1
+.names Pdata_34_ PC_23_ n582
+00 1
+11 1
+.names n584 n573 n585 n587 n583
+-000 1
+1-00 1
+.names n560 n561 Pdata_63_ PC_13_ n584
+1000 0
+1011 0
+1101 0
+1110 0
+.names n579 n576 n580 n586 n585
+1011 1
+.names Pdata_36_ Pdata_35_ PC_4_ PC_0_ n586
+0011 1
+0110 1
+1001 1
+1100 1
+.names n561 n562 n582 n567 n587
+1101 1
+.names n561 n589 n599 n597 n588
+-110 1
+0-10 1
+.names n590 n591 n593 n595 n589
+0000 1
+.names n576 n570 n560 n571 n590
+-111 1
+1-11 1
+.names n570 n560 n579 n592 n591
+-101 1
+1-01 1
+.names Pdata_63_ Pdata_34_ PC_23_ PC_13_ n592
+0010 1
+0100 1
+1011 1
+1101 1
+.names n579 n586 n594 n593
+110 1
+.names Pdata_63_ Pdata_34_ PC_23_ PC_13_ n594
+0000 1
+0011 1
+0101 1
+0110 1
+1001 1
+1010 1
+1100 1
+1111 1
+.names n579 n564 n596 n595
+010 1
+.names Pdata_36_ Pdata_35_ PC_4_ PC_0_ n596
+0000 1
+0011 1
+0101 1
+0110 1
+1001 1
+1010 1
+1100 1
+1111 1
+.names n598 n561 n576 n597
+000 1
+.names n560 n579 n570 n582 n598
+-010 0
+0111 0
+1101 0
+.names n601 n586 n568 n600 n599
+--11 0
+11-- 0
+.names n561 n582 n565 n600
+011 1
+.names n576 n602 n601
+11 1
+.names Pdata_34_ Pdata_32_ PC_23_ PC_16_ n602
+0001 1
+0100 1
+1011 1
+1110 1
+.names n604 n606 n607 n609 n603
+0000 1
+.names n561 n562 n582 n605 n604
+1101 1
+.names Pdata_63_ Pdata_36_ PC_13_ PC_4_ n605
+0010 1
+0111 1
+1000 1
+1101 1
+.names n561 n562 n582 n568 n606
+1111 1
+.names n560 n570 n574 n608 n607
+0011 1
+.names Pdata_63_ Pdata_33_ PC_13_ PC_10_ n608
+0010 1
+0111 1
+1000 1
+1101 1
+.names n561 n570 n567 n571 n609
+0111 1
+.names Poutreg_60_ Pcount_0_ Pdata_48_ n553 Poutreg_new_60_
+--11 1
+10-- 1
+.names Poutreg_59_ Pcount_0_ n612 n553 Poutreg_new_59_
+--11 1
+10-- 1
+.names n613 n619 n624 Pdata_8_ n612
+--10 1
+-0-0 1
+0--0 1
+1101 1
+.names n558 n572 n577 n614 n613
+1011 1
+.names n616 n615 n617 n618 n614
+-100 1
+0-00 1
+.names n560 n579 Pdata_35_ PC_0_ n615
+0100 0
+0111 0
+1000 0
+1011 0
+1101 0
+1110 0
+.names n582 n608 n616
+01 1
+.names n561 n579 n576 n596 n617
+1010 1
+.names n560 n561 n582 n565 n618
+0011 1
+.names n561 n620 n622 n603 n619
+-111 1
+0-11 1
+.names n621 n586 n567 n573 n620
+--11 0
+11-- 0
+.names n579 n564 n621
+01 1
+.names n623 n560 n570 n576 n622
+1100 0
+1111 0
+.names n579 n580 n623
+11 1
+.names n570 n627 n628 n625 n624
+-000 0
+1--- 0
+.names n560 n626 n579 n582 n625
+-100 1
+1-01 1
+.names n561 n567 n626
+01 1
+.names n623 n568 n627
+11 1
+.names n560 n579 n564 n628
+011 1
+.names Poutreg_58_ Pcount_0_ Pdata_40_ n553 Poutreg_new_58_
+--11 1
+10-- 1
+.names n683 n553 n631 Pdata_0_ Poutreg_new_57_
+-100 1
+-111 1
+1--- 1
+.names n632 n659 n664 n676 n631
+1011 1
+.names n633 n648 n632
+11 1
+.names n647 n634 n643 n639 n633
+-100 1
+0-00 1
+.names n635 n636 n637 n638 n634
+1000 0
+1111 0
+.names Pdata_44_ PC_6_ n635
+00 1
+11 1
+.names Pdata_45_ PC_26_ n636
+00 1
+11 1
+.names Pdata_46_ PC_19_ n637
+00 1
+11 1
+.names Pdata_43_ PC_15_ n638
+00 1
+11 1
+.names n640 n637 n641 n642 n639
+0111 1
+.names Pdata_47_ PC_12_ n640
+00 1
+11 1
+.names Pdata_45_ Pdata_44_ PC_26_ PC_6_ n641
+0011 1
+0110 1
+1001 1
+1100 1
+.names Pdata_48_ Pdata_43_ PC_15_ PC_1_ n642
+0011 1
+0101 1
+1010 1
+1100 1
+.names n644 n635 n645 n646 n643
+0011 1
+.names Pdata_48_ PC_1_ n644
+00 1
+11 1
+.names Pdata_46_ Pdata_45_ PC_26_ PC_19_ n645
+0000 1
+0110 1
+1001 1
+1111 1
+.names Pdata_47_ Pdata_43_ PC_15_ PC_12_ n646
+0001 1
+0111 1
+1000 1
+1110 1
+.names Pdata_48_ Pdata_47_ PC_12_ PC_1_ n647
+0000 1
+0110 1
+1001 1
+1111 1
+.names n649 n652 n654 n657 n648
+0000 1
+.names n637 n638 n650 n651 n649
+1111 1
+.names Pdata_47_ Pdata_44_ PC_12_ PC_6_ n650
+0001 1
+0100 1
+1011 1
+1110 1
+.names Pdata_48_ Pdata_45_ PC_26_ PC_1_ n651
+0010 1
+0100 1
+1011 1
+1101 1
+.names n640 n635 n642 n653 n652
+0011 1
+.names Pdata_46_ Pdata_45_ PC_26_ PC_19_ n653
+0001 1
+0111 1
+1000 1
+1110 1
+.names n640 n637 n655 n656 n654
+0111 1
+.names Pdata_45_ Pdata_44_ PC_26_ PC_6_ n655
+0010 1
+0111 1
+1000 1
+1101 1
+.names Pdata_48_ Pdata_43_ PC_15_ PC_1_ n656
+0010 1
+0100 1
+1011 1
+1101 1
+.names n635 n638 n653 n658 n657
+1111 1
+.names Pdata_48_ Pdata_47_ PC_12_ PC_1_ n658
+0001 1
+0111 1
+1000 1
+1110 1
+.names n663 n635 n660 n636 n659
+--11 1
+11-1 1
+.names n662 n661 n637 n660
+-11 1
+0-0 1
+.names n635 n640 n644 n638 n661
+-100 1
+0-10 1
+.names n635 n644 n640 n638 n662
+-101 0
+-110 0
+0-10 0
+.names n637 n646 n663
+01 1
+.names n665 n667 n672 n664
+011 1
+.names n666 n663 n641 n644 n665
+-111 1
+1--1 1
+.names n645 n638 n650 n666
+101 1
+.names n670 n671 n668 n669 n667
+--11 0
+11-- 0
+.names n635 n645 n668
+11 1
+.names n640 n642 n669
+01 1
+.names n644 n646 n670
+01 1
+.names n637 n655 n671
+11 1
+.names n673 n674 n668 n675 n672
+--10 0
+10-- 0
+.names n637 n655 n673
+01 1
+.names n644 n638 Pdata_47_ PC_12_ n674
+0000 0
+0011 0
+1001 0
+1010 0
+.names n644 n638 Pdata_47_ PC_12_ n675
+0100 0
+0111 0
+1101 0
+1110 0
+.names n637 n677 n682 n680 n676
+-100 1
+0-00 1
+.names n655 n669 n678 n677
+-00 1
+0-0 1
+.names n644 n650 n679 n678
+111 1
+.names Pdata_45_ Pdata_43_ PC_26_ PC_15_ n679
+0000 1
+0011 1
+0101 1
+0110 1
+1001 1
+1010 1
+1100 1
+1111 1
+.names n681 n644 n636 n680
+000 1
+.names n635 n640 n637 n638 n681
+-001 0
+0111 0
+.names n673 n644 n640 n638 n682
+1111 1
+.names Poutreg_57_ Pcount_0_ n683
+10 1
+.names Poutreg_56_ Pcount_0_ Pdata_32_ n553 Poutreg_new_56_
+--11 1
+10-- 1
+.names n703 n686 n553 Poutreg_new_55_
+-11 1
+0-- 1
+.names n664 n687 n700 Pdata_25_ n686
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n637 n698 n688 n694 n687
+-110 1
+1-10 1
+.names n689 n691 n692 n693 n688
+0000 1
+.names n644 n637 n650 n690 n689
+0011 1
+.names Pdata_45_ Pdata_43_ PC_26_ PC_15_ n690
+0010 1
+0111 1
+1000 1
+1101 1
+.names n640 n635 n653 n656 n691
+0011 1
+.names n647 n635 n638 n653 n692
+1111 1
+.names n640 n637 n641 n642 n693
+0011 1
+.names n638 n696 n697 n695 n694
+-000 0
+1--- 0
+.names n640 n637 n655 n695
+111 1
+.names n647 n635 n636 n696
+111 1
+.names n644 n637 n650 n697
+011 1
+.names n655 n669 n678 n699 n698
+-000 1
+0-00 1
+.names n644 n635 n646 n699
+001 1
+.names n670 n668 n648 n701 n700
+-011 1
+0-11 1
+.names n702 n673 n644 n638 n701
+-111 0
+1--- 0
+.names n637 n641 n646 n702
+111 1
+.names Poutreg_55_ Poutreg_63_ n553 Pcount_0_ n703
+-101 0
+1--0 0
+.names n553 Poutreg_62_ Pcount_0_ n705 Poutreg_new_54_
+---0 1
+011- 1
+.names Poutreg_54_ Pcount_0_ Pdata_57_ n553 n705
+--11 0
+10-- 0
+.names n754 n707 n553 Poutreg_new_53_
+-11 1
+0-- 1
+.names n708 n733 n743 Pdata_17_ n707
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n709 n726 n731 n708
+110 1
+.names n710 n715 n720 n723 n709
+0000 1
+.names n711 n712 n713 n714 n710
+1111 1
+.names Pdata_39_ Pdata_38_ PC_20_ PC_5_ n711
+0010 1
+0111 1
+1000 1
+1101 1
+.names Pdata_35_ PC_2_ n712
+00 1
+11 1
+.names Pdata_40_ Pdata_37_ PC_14_ PC_9_ n713
+0010 1
+0100 1
+1011 1
+1101 1
+.names Pdata_36_ PC_27_ n714
+00 1
+11 1
+.names n716 n717 n718 n719 n715
+0011 1
+.names Pdata_37_ PC_14_ n716
+00 1
+11 1
+.names Pdata_40_ PC_9_ n717
+00 1
+11 1
+.names Pdata_36_ Pdata_35_ PC_27_ PC_2_ n718
+0010 1
+0111 1
+1000 1
+1101 1
+.names Pdata_39_ Pdata_38_ PC_20_ PC_5_ n719
+0001 1
+0100 1
+1011 1
+1110 1
+.names n712 n714 n721 n722 n720
+0111 1
+.names Pdata_39_ Pdata_38_ PC_20_ PC_5_ n721
+0011 1
+0110 1
+1001 1
+1100 1
+.names Pdata_40_ Pdata_37_ PC_14_ PC_9_ n722
+0000 1
+0110 1
+1001 1
+1111 1
+.names n717 n714 n724 n725 n723
+0011 1
+.names Pdata_39_ Pdata_38_ PC_20_ PC_5_ n724
+0000 1
+0101 1
+1010 1
+1111 1
+.names Pdata_37_ Pdata_35_ PC_14_ PC_2_ n725
+0001 1
+0100 1
+1011 1
+1110 1
+.names n722 n727 n729 n728 n726
+-100 1
+0-00 1
+.names n719 n711 n714 n712 n727
+-101 0
+1-10 0
+.names n717 n714 n719 n725 n728
+0011 1
+.names n716 n717 n721 n730 n729
+1011 1
+.names Pdata_36_ Pdata_35_ PC_27_ PC_2_ n730
+0000 1
+0101 1
+1010 1
+1111 1
+.names n732 n717 n724 n731
+101 1
+.names n716 n730 n732
+11 1
+.names n734 n739 n741 n733
+111 1
+.names n724 n735 n737 n736 n734
+-100 1
+0-00 1
+.names n712 n716 n717 n714 n735
+1001 0
+1111 0
+.names n712 n713 n714 n721 n736
+0101 1
+.names n711 n712 n714 n738 n737
+1011 1
+.names Pdata_40_ Pdata_37_ PC_14_ PC_9_ n738
+0011 1
+0101 1
+1010 1
+1100 1
+.names n718 n721 n722 n740 n739
+---1 0
+111- 0
+.names n717 n714 n724 n725 n740
+0111 1
+.names n742 n732 n711 n717 n741
+-110 0
+1--- 0
+.names n712 n713 n714 n719 n742
+0111 1
+.names n714 n744 n751 n749 n743
+-110 1
+1-10 1
+.names n724 n722 n745 n746 n744
+-001 1
+0-01 1
+.names n716 n717 n719 n745
+101 1
+.names n748 n747 n717 n716 n746
+-000 0
+1-10 0
+.names Pdata_39_ PC_20_ n747
+00 1
+11 1
+.names Pdata_38_ Pdata_35_ PC_5_ PC_2_ n748
+0001 1
+0100 1
+1011 1
+1110 1
+.names n750 n712 n714 n749
+001 1
+.names n724 n721 n717 n716 n750
+-101 0
+-110 0
+1-00 0
+.names n753 n719 n711 n752 n751
+--11 0
+11-- 0
+.names n716 n717 n730 n752
+111 1
+.names n712 n713 n753
+11 1
+.names Poutreg_53_ Poutreg_61_ n553 Pcount_0_ n754
+-101 0
+1--0 0
+.names n553 Poutreg_60_ Pcount_0_ n756 Poutreg_new_52_
+---0 1
+011- 1
+.names Poutreg_52_ Pcount_0_ Pdata_49_ n553 n756
+--11 0
+10-- 0
+.names n770 n758 n553 Poutreg_new_51_
+-11 1
+0-- 1
+.names n632 n759 n764 Pdata_9_ n758
+--00 1
+-1-0 1
+0--0 1
+1011 1
+.names n761 n763 n760 n644 n759
+--10 0
+11-1 0
+.names n637 n650 n679 n702 n760
+---1 0
+011- 0
+.names n638 n650 n653 n762 n761
+---1 0
+011- 0
+.names n640 n635 n637 n679 n762
+0011 1
+.names n637 n636 n635 n646 n763
+-011 0
+0-11 0
+.names n665 n667 n688 n765 n764
+0111 1
+.names n766 n767 n768 n769 n765
+0000 1
+.names n637 n655 n658 n766
+111 1
+.names n640 n642 n653 n767
+011 1
+.names n635 n645 n638 n768
+110 1
+.names n637 n655 n646 n769
+011 1
+.names Poutreg_51_ Poutreg_59_ n553 Pcount_0_ n770
+-101 0
+1--0 0
+.names n553 Poutreg_58_ Pcount_0_ n772 Poutreg_new_50_
+---0 1
+011- 1
+.names Poutreg_50_ Pcount_0_ Pdata_41_ n553 n772
+--11 0
+10-- 0
+.names n792 n774 n553 Poutreg_new_49_
+-11 1
+0-- 1
+.names n708 n775 n784 Pdata_1_ n774
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n725 n782 n776 n781 n775
+-110 1
+0-10 1
+.names n778 n777 n779 n780 n776
+-000 1
+0-00 1
+.names n716 n717 n719 n777
+001 1
+.names n712 n714 n778
+00 1
+.names n716 n717 n721 n730 n779
+0011 1
+1111 1
+.names n711 n712 n714 n722 n780
+1011 1
+.names n719 n722 n750 n718 n781
+--01 1
+11-1 1
+.names n714 n783 n717 n747 n782
+-001 0
+0010 0
+0100 0
+.names Pdata_38_ PC_5_ n783
+00 1
+11 1
+.names n791 n785 n787 n734 n784
+-011 1
+1-11 1
+.names n786 n716 n714 n785
+001 1
+.names n721 n717 n712 n724 n786
+-100 1
+0-00 1
+.names n747 n788 n789 n787
+-00 1
+0-0 1
+.names n712 n713 n714 n788
+111 1
+.names n712 n713 n714 n790 n789
+0100 1
+.names Pdata_39_ Pdata_38_ PC_20_ PC_5_ n790
+0000 1
+0011 1
+0101 1
+0110 1
+1001 1
+1010 1
+1100 1
+1111 1
+.names n717 n711 n712 n791
+-01 1
+1-1 1
+.names Poutreg_49_ Poutreg_57_ n553 Pcount_0_ n792
+-101 0
+1--0 0
+.names n553 Poutreg_56_ Pcount_0_ n794 Poutreg_new_48_
+---0 1
+011- 1
+.names Poutreg_48_ Pcount_0_ Pdata_33_ n553 n794
+--11 0
+10-- 0
+.names n856 n796 n553 Pdata_26_ Poutreg_new_47_
+-010 1
+-111 1
+0--- 1
+.names n797 n823 n839 n850 n796
+1111 1
+.names n809 n798 n816 n807 n797
+-111 1
+1-11 1
+.names n803 n799 n804 n806 n798
+-111 0
+1--0 0
+.names n800 n801 n802 n799
+001 1
+.names Pdata_62_ PD_7_ n800
+00 1
+11 1
+.names Pdata_32_ PD_3_ n801
+00 1
+11 1
+.names Pdata_59_ PD_17_ n802
+00 1
+11 1
+.names n804 n801 n805 n803
+011 1
+.names Pdata_63_ PD_0_ n804
+00 1
+11 1
+.names Pdata_62_ Pdata_59_ PD_17_ PD_7_ n805
+0001 1
+0111 1
+1000 1
+1110 1
+.names Pdata_60_ PD_13_ n806
+00 1
+11 1
+.names n812 n814 n808 n811 n807
+--11 0
+11-- 0
+.names n809 n810 n808
+11 1
+.names Pdata_61_ PD_21_ n809
+00 1
+11 1
+.names Pdata_63_ Pdata_60_ PD_13_ PD_0_ n810
+0001 1
+0111 1
+1000 1
+1110 1
+.names n800 n801 n802 n811
+000 1
+.names n809 n813 n812
+11 1
+.names Pdata_63_ Pdata_60_ PD_13_ PD_0_ n813
+0000 1
+0110 1
+1001 1
+1111 1
+.names n801 n815 n814
+11 1
+.names Pdata_62_ Pdata_59_ PD_17_ PD_7_ n815
+0010 1
+0100 1
+1011 1
+1101 1
+.names n817 n812 n818 n821 n816
+-000 1
+1-00 1
+.names n801 n802 Pdata_62_ PD_7_ n817
+0101 0
+0110 0
+1100 0
+1111 0
+.names n804 n802 n819 n820 n818
+0011 1
+.names Pdata_61_ Pdata_60_ PD_21_ PD_13_ n819
+0001 1
+0100 1
+1011 1
+1110 1
+.names Pdata_62_ Pdata_32_ PD_7_ PD_3_ n820
+0010 1
+0111 1
+1000 1
+1101 1
+.names n801 n802 n810 n822 n821
+0011 1
+.names Pdata_62_ Pdata_61_ PD_21_ PD_7_ n822
+0011 1
+0101 1
+1010 1
+1100 1
+.names n824 n827 n834 n835 n823
+0101 1
+.names n825 n808 n826 n801 n824
+-110 1
+1--0 1
+.names n809 n804 n806 n815 n825
+1101 1
+.names Pdata_62_ Pdata_59_ PD_17_ PD_7_ n826
+0000 1
+0110 1
+1001 1
+1111 1
+.names n829 n831 n828 n832 n827
+--11 0
+11-- 0
+.names n806 n815 n828
+01 1
+.names n804 n806 n830 n829
+011 1
+.names Pdata_62_ Pdata_61_ PD_21_ PD_7_ n830
+0010 1
+0100 1
+1011 1
+1101 1
+.names n801 n802 n831
+11 1
+.names n804 n833 n832
+11 1
+.names Pdata_61_ Pdata_32_ PD_21_ PD_3_ n833
+0010 1
+0111 1
+1000 1
+1101 1
+.names n803 n819 n834
+11 1
+.names n812 n811 n836 n837 n835
+-000 1
+0-00 1
+.names n813 n801 n802 n822 n836
+1101 1
+.names n809 n801 n826 n838 n837
+0011 1
+.names Pdata_63_ Pdata_60_ PD_13_ PD_0_ n838
+0011 1
+0101 1
+1010 1
+1100 1
+.names n804 n849 n840 n843 n839
+-001 1
+1-01 1
+.names n842 n841 n802 n840
+-10 1
+1-0 1
+.names n809 n813 n820 n841
+111 1
+.names n804 n806 n801 n830 n842
+1101 1
+.names n844 n845 n846 n848 n843
+0000 1
+.names n804 n806 n833 n844
+101 1
+.names n809 n804 n806 n815 n845
+1001 1
+.names n802 n822 n847 n846
+011 1
+.names Pdata_63_ Pdata_60_ PD_13_ PD_0_ n847
+0010 1
+0100 1
+1011 1
+1101 1
+.names n804 n826 n833 n848
+111 1
+.names n806 n801 n802 n830 n849
+1101 1
+.names n801 n855 n853 n851 n850
+-010 1
+1--0 1
+.names n852 n803 n809 n851
+-11 1
+1-0 1
+.names n804 n806 n801 n805 n852
+0101 1
+.names n804 n828 n854 n853
+-00 1
+1-0 1
+.names n804 n802 n819 n854
+111 1
+.names n826 n819 n855
+11 1
+.names Poutreg_47_ Poutreg_55_ n553 Pcount_0_ n856
+-101 0
+1--0 0
+.names n553 Poutreg_54_ Pcount_0_ n858 Poutreg_new_46_
+---0 1
+011- 1
+.names Poutreg_46_ Pcount_0_ Pdata_58_ n553 n858
+--11 0
+10-- 0
+.names n911 n860 n553 Poutreg_new_45_
+-11 1
+0-- 1
+.names n861 n886 n896 Pdata_18_ n860
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n862 n874 n880 n861
+111 1
+.names n872 n868 n863 n871 n862
+-000 1
+0--0 1
+.names n864 n865 n866 n867 n863
+1001 1
+1100 1
+.names Pdata_56_ Pdata_52_ PD_19_ PD_11_ n864
+0000 1
+0101 1
+1010 1
+1111 1
+.names Pdata_55_ PD_4_ n865
+00 1
+11 1
+.names Pdata_54_ PD_16_ n866
+00 1
+11 1
+.names Pdata_51_ PD_1_ n867
+00 1
+11 1
+.names n866 n869 n870 n868
+111 1
+.names Pdata_55_ Pdata_51_ PD_4_ PD_1_ n869
+0010 1
+0111 1
+1000 1
+1101 1
+.names Pdata_56_ Pdata_52_ PD_19_ PD_11_ n870
+0010 1
+0111 1
+1000 1
+1101 1
+.names n872 n865 n873 n870 n871
+0111 1
+.names Pdata_53_ PD_22_ n872
+00 1
+11 1
+.names Pdata_54_ Pdata_51_ PD_16_ PD_1_ n873
+0011 1
+0110 1
+1001 1
+1100 1
+.names n877 n875 n872 n879 n874
+-111 0
+1--- 0
+.names n865 n876 n875
+11 1
+.names Pdata_54_ Pdata_51_ PD_16_ PD_1_ n876
+0001 1
+0100 1
+1011 1
+1110 1
+.names n872 n866 n870 n878 n877
+0111 1
+.names Pdata_55_ Pdata_51_ PD_4_ PD_1_ n878
+0000 1
+0101 1
+1010 1
+1111 1
+.names Pdata_56_ Pdata_52_ PD_19_ PD_11_ n879
+0001 1
+0100 1
+1011 1
+1110 1
+.names n883 n885 n881 n882 n880
+--11 0
+11-- 0
+.names n866 n869 n881
+11 1
+.names n872 n879 n882
+01 1
+.names n872 n884 n883
+11 1
+.names Pdata_56_ Pdata_52_ PD_19_ PD_11_ n884
+0011 1
+0110 1
+1001 1
+1100 1
+.names n865 n873 n885
+01 1
+.names n887 n892 n886
+11 1
+.names n888 n889 n890 n891 n887
+0000 1
+.names n872 n865 n873 n884 n888
+0011 1
+.names n872 n866 n878 n884 n889
+1011 1
+.names n872 n865 n876 n879 n890
+0011 1
+.names n872 n866 n869 n879 n891
+1111 1
+.names n882 n893 n894 n895 n892
+-100 1
+0-00 1
+.names n865 n866 Pdata_51_ PD_1_ n893
+0000 0
+0011 0
+1001 0
+1010 0
+.names n872 n866 n869 n884 n894
+0111 1
+.names n872 n865 n876 n884 n895
+1111 1
+.names n909 n897 n903 n872 n896
+-110 1
+0-11 1
+.names n898 n900 n901 n902 n897
+0000 1
+.names n899 n866 n878 n898
+001 1
+.names Pdata_52_ PD_11_ n899
+00 1
+11 1
+.names n865 n876 n879 n900
+111 1
+.names n866 n870 Pdata_51_ PD_1_ n901
+0100 1
+0111 1
+1101 1
+1110 1
+.names n864 n866 n878 n902
+111 1
+.names n904 n883 n905 n908 n903
+-000 1
+1-00 1
+.names n865 n866 Pdata_51_ PD_1_ n904
+0100 0
+0111 0
+1001 0
+1010 0
+.names n906 n899 n866 n907 n905
+0111 1
+1101 1
+.names Pdata_56_ PD_19_ n906
+00 1
+11 1
+.names Pdata_55_ Pdata_51_ PD_4_ PD_1_ n907
+0011 1
+0110 1
+1001 1
+1100 1
+.names n866 n879 n878 n908
+011 1
+.names n864 n866 n910 n909
+110 1
+.names Pdata_55_ Pdata_51_ PD_4_ PD_1_ n910
+0000 1
+0011 1
+0101 1
+0110 1
+1001 1
+1010 1
+1100 1
+1111 1
+.names Poutreg_45_ Poutreg_53_ n553 Pcount_0_ n911
+-101 0
+1--0 0
+.names n553 Poutreg_52_ Pcount_0_ n913 Poutreg_new_44_
+---0 1
+011- 1
+.names Poutreg_44_ Pcount_0_ Pdata_50_ n553 n913
+--11 0
+10-- 0
+.names n929 n915 n553 Poutreg_new_43_
+-11 1
+0-- 1
+.names n861 n916 n926 Pdata_10_ n915
+--10 1
+-0-0 1
+0--0 1
+1101 1
+.names n892 n917 n920 n924 n916
+1011 1
+.names n872 n918 n919 n909 n917
+-000 0
+1--- 0
+.names n865 n866 n867 n884 n918
+1011 1
+1101 1
+.names n899 n865 n873 n919
+101 1
+.names n921 n883 n922 n923 n920
+-000 1
+1-00 1
+.names n865 n866 Pdata_51_ PD_1_ n921
+0000 0
+0011 0
+0101 0
+0110 0
+.names n872 n864 n866 n907 n922
+1111 1
+.names n872 n866 n879 n878 n923
+0111 1
+.names n925 n885 n906 n899 n924
+-110 0
+1-11 0
+.names n866 n878 n925
+01 1
+.names n928 n927 n870 n872 n926
+-011 1
+1--1 1
+.names n865 n866 Pdata_51_ PD_1_ n927
+0000 0
+0011 0
+0101 0
+0110 0
+1001 0
+1010 0
+.names n906 n866 n878 n928
+011 1
+101 1
+.names Poutreg_43_ Poutreg_51_ n553 Pcount_0_ n929
+-101 0
+1--0 0
+.names n553 Poutreg_50_ Pcount_0_ n931 Poutreg_new_42_
+---0 1
+011- 1
+.names Poutreg_42_ Pcount_0_ Pdata_42_ n553 n931
+--11 0
+10-- 0
+.names n951 n933 n553 Poutreg_new_41_
+-01 1
+0-- 1
+.names n934 n938 n948 Pdata_2_ n933
+--01 1
+-0-1 1
+0--1 1
+1110 1
+.names n549 n935 n936 n937 n934
+1000 1
+.names n512 n513 n517 n935
+011 1
+.names n520 n511 n512 n936
+111 1
+.names n513 n512 n510 n516 n937
+-011 1
+1-11 1
+.names n513 n946 n944 n939 n938
+-101 1
+1--1 1
+.names n940 n941 n942 n943 n939
+0000 1
+.names n512 n513 n519 n526 n940
+1011 1
+.names n509 n510 n513 n532 n941
+1101 1
+.names n511 n516 n512 n513 n942
+1110 1
+.names n512 n513 n517 n526 n943
+0011 1
+.names n520 n523 n945 n512 n944
+--10 1
+10-0 1
+.names n511 n526 n945
+11 1
+.names n520 n523 n512 n947 n946
+---1 0
+111- 0
+.names n508 n509 n512 n517 n947
+0111 1
+1011 1
+.names n506 n514 n521 n949 n948
+0010 1
+.names n950 n508 n513 n949
+011 1
+.names n509 n523 n524 n512 n950
+0011 0
+1001 0
+1010 0
+.names Poutreg_41_ Poutreg_49_ n553 Pcount_0_ n951
+-101 0
+1--0 0
+.names n553 Poutreg_48_ Pcount_0_ n953 Poutreg_new_40_
+---0 1
+011- 1
+.names Poutreg_40_ Pcount_0_ Pdata_34_ n553 n953
+--11 0
+10-- 0
+.names n967 n955 n553 Poutreg_new_39_
+-11 1
+0-- 1
+.names n956 n957 n961 Pdata_27_ n955
+--00 1
+-1-0 1
+0--0 1
+1011 1
+.names n734 n739 n741 n776 n956
+1111 1
+.names n960 n717 n958 n714 n957
+--00 1
+00-0 1
+.names n783 n725 n959 n747 n958
+--01 0
+01-0 0
+.names n712 n717 Pdata_37_ PC_14_ n959
+0100 0
+0111 0
+1101 0
+1110 0
+.names n716 n783 n712 n747 n960
+-100 0
+-111 0
+0010 0
+.names n726 n962 n963 n965 n961
+1011 1
+.names n732 n717 n719 n962
+101 1
+.names n712 n713 n724 n964 n963
+---1 0
+111- 0
+.names n711 n712 n713 n714 n964
+1011 1
+.names n966 n777 n712 n714 n965
+-101 0
+1--- 0
+.names n712 n713 n714 n721 n966
+1111 1
+.names Poutreg_39_ Poutreg_47_ n553 Pcount_0_ n967
+-101 0
+1--0 0
+.names n553 Poutreg_46_ Pcount_0_ n969 Poutreg_new_38_
+---0 1
+011- 1
+.names Poutreg_38_ Pcount_0_ Pdata_59_ n553 n969
+--11 0
+10-- 0
+.names n983 n971 n553 Poutreg_new_37_
+-11 1
+0-- 1
+.names n972 n975 n982 Pdata_19_ n971
+--00 1
+-0-0 1
+0111 1
+1--0 1
+.names n974 n644 n973 n636 n972
+--11 1
+00-1 1
+.names n646 n669 n637 n635 n973
+-110 1
+1-00 1
+.names n638 n635 n637 n640 n974
+-100 0
+0001 0
+1011 0
+.names n981 n662 n688 n976 n975
+-111 1
+0-11 1
+.names n979 n977 n978 n980 n976
+-000 1
+1-00 1
+.names n640 n656 n977
+01 1
+.names n637 n650 n690 n978
+011 1
+.names n635 n637 Pdata_45_ PC_26_ n979
+0001 0
+0010 0
+1100 0
+1111 0
+.names n637 n638 n655 n658 n980
+1111 1
+.names n636 n637 n981
+01 1
+.names n633 n665 n667 n672 n982
+1011 1
+.names Poutreg_37_ Poutreg_45_ n553 Pcount_0_ n983
+-101 0
+1--0 0
+.names n553 Poutreg_44_ Pcount_0_ n985 Poutreg_new_36_
+---0 1
+011- 1
+.names Poutreg_36_ Pcount_0_ Pdata_51_ n553 n985
+--11 0
+10-- 0
+.names n1038 n987 n553 Poutreg_new_35_
+-11 1
+0-- 1
+.names n988 n1010 n1028 Pdata_11_ n987
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n989 n1002 n988
+11 1
+.names n1001 n990 n998 n995 n989
+-100 1
+0-00 1
+.names n991 n992 n993 n994 n990
+0101 0
+1111 0
+.names Pdata_58_ PD_27_ n991
+00 1
+11 1
+.names Pdata_56_ PD_20_ n992
+00 1
+11 1
+.names Pdata_55_ PD_15_ n993
+00 1
+11 1
+.names Pdata_59_ PD_5_ n994
+00 1
+11 1
+.names n991 n992 n996 n997 n995
+0111 1
+.names Pdata_60_ Pdata_57_ PD_24_ PD_10_ n996
+0001 1
+0100 1
+1011 1
+1110 1
+.names Pdata_59_ Pdata_55_ PD_15_ PD_5_ n997
+0001 1
+0111 1
+1000 1
+1110 1
+.names n991 n992 n999 n1000 n998
+0111 1
+.names Pdata_60_ Pdata_57_ PD_24_ PD_10_ n999
+0000 1
+0101 1
+1010 1
+1111 1
+.names Pdata_59_ Pdata_55_ PD_15_ PD_5_ n1000
+0011 1
+0101 1
+1010 1
+1100 1
+.names Pdata_60_ Pdata_57_ PD_24_ PD_10_ n1001
+0010 1
+0111 1
+1000 1
+1101 1
+.names n994 n1003 n1008 n1006 n1002
+-100 1
+1-00 1
+.names n1004 n992 n993 n1005 n1003
+0111 0
+1011 0
+.names Pdata_60_ PD_24_ n1004
+00 1
+11 1
+.names Pdata_58_ Pdata_57_ PD_27_ PD_10_ n1005
+0010 1
+0111 1
+1000 1
+1101 1
+.names n991 n992 n1000 n1007 n1006
+0111 1
+.names Pdata_60_ Pdata_57_ PD_24_ PD_10_ n1007
+0011 1
+0110 1
+1001 1
+1100 1
+.names n991 n992 n1009 n996 n1008
+0111 1
+.names Pdata_59_ Pdata_55_ PD_15_ PD_5_ n1009
+0010 1
+0100 1
+1011 1
+1101 1
+.names n1011 n1019 n1021 n1023 n1010
+1011 1
+.names n1018 n1012 n1016 n1014 n1011
+-100 1
+0-00 1
+.names n1004 n1013 n993 n994 n1012
+0010 0
+1100 0
+.names Pdata_57_ PD_10_ n1013
+00 1
+11 1
+.names n1001 n1000 n1015 n1014
+111 1
+.names Pdata_58_ Pdata_56_ PD_27_ PD_20_ n1015
+0011 1
+0110 1
+1001 1
+1100 1
+.names n991 n992 n1017 n996 n1016
+1111 1
+.names Pdata_59_ Pdata_55_ PD_15_ PD_5_ n1017
+0000 1
+0110 1
+1001 1
+1111 1
+.names Pdata_58_ Pdata_56_ PD_27_ PD_20_ n1018
+0001 1
+0100 1
+1011 1
+1110 1
+.names n1020 n1004 n1019
+10 1
+.names n992 n993 n1005 n1020
+011 1
+.names n992 n1017 n996 n1022 n1021
+---1 0
+011- 0
+.names n1009 n999 n1015 n1022
+111 1
+.names n1025 n1024 n1026 n1027 n1023
+-101 0
+1--0 0
+.names n991 n992 n1024
+11 1
+.names n991 n992 n1009 n1025
+111 1
+.names Pdata_59_ Pdata_55_ PD_15_ PD_5_ n1026
+0001 1
+0010 1
+0100 1
+0111 1
+1000 1
+1011 1
+1101 1
+1110 1
+.names Pdata_60_ Pdata_57_ PD_24_ PD_10_ n1027
+0000 1
+0011 1
+0101 1
+0110 1
+1001 1
+1010 1
+1100 1
+1111 1
+.names n994 n1031 n1029 n1033 n1028
+-101 1
+1--1 1
+.names n1030 n1013 n1029
+11 1
+.names n1004 n993 n1018 n1030
+111 1
+.names n1015 n1032 n1013 n1004 n1031
+-101 0
+-110 0
+1-00 0
+.names n993 n1018 n1032
+01 1
+.names n1018 n1034 n1037 n1035 n1033
+-100 1
+0-00 1
+.names n1004 n1013 n993 n994 n1034
+0001 0
+0111 0
+.names n992 n993 n1005 n1036 n1035
+1111 1
+.names Pdata_60_ Pdata_59_ PD_24_ PD_5_ n1036
+0001 1
+0100 1
+1011 1
+1110 1
+.names n991 n992 n996 n1000 n1037
+0111 1
+.names Poutreg_35_ Poutreg_43_ n553 Pcount_0_ n1038
+-101 0
+1--0 0
+.names n553 Poutreg_42_ Pcount_0_ n1040 Poutreg_new_34_
+---0 1
+011- 1
+.names Poutreg_34_ Pcount_0_ Pdata_43_ n553 n1040
+--11 0
+10-- 0
+.names n1054 n1042 n553 Poutreg_new_33_
+-11 1
+0-- 1
+.names n1043 n1047 n862 Pdata_3_ n1042
+--00 1
+-0-0 1
+0111 1
+1--0 1
+.names n1046 n872 n1044 n899 n1043
+--01 1
+00-1 1
+.names n866 n1045 n906 n885 n1044
+-0-0 1
+-01- 1
+0-00 1
+.names n872 n878 n1045
+11 1
+.names n906 n865 n866 n867 n1046
+0011 0
+0101 0
+0110 0
+1001 0
+1100 0
+.names n887 n892 n920 n1048 n1047
+1111 1
+.names n1050 n1049 n1051 n1053 n1048
+-000 1
+1-00 1
+.names n864 n866 n1049
+11 1
+.names n872 n865 Pdata_51_ PD_1_ n1050
+-000 1
+-011 1
+0101 1
+0110 1
+.names n872 n899 n910 n1052 n1051
+0001 1
+.names Pdata_56_ Pdata_54_ PD_19_ PD_16_ n1052
+0011 1
+0110 1
+1001 1
+1100 1
+.names n872 n865 n873 n879 n1053
+1011 1
+.names Poutreg_33_ Poutreg_41_ n553 Pcount_0_ n1054
+-101 0
+1--0 0
+.names n553 Poutreg_40_ Pcount_0_ n1056 Poutreg_new_32_
+---0 1
+011- 1
+.names Poutreg_32_ Pcount_0_ Pdata_35_ n553 n1056
+--11 0
+10-- 0
+.names n1070 n1058 n553 Poutreg_new_31_
+-11 1
+0-- 1
+.names n861 n1059 n1068 Pdata_28_ n1058
+--00 1
+-1-0 1
+0--0 1
+1011 1
+.names n1063 n1065 n1060 n872 n1059
+--11 0
+11-0 0
+.names n902 n919 n1061 n1062 n1060
+0000 1
+.names n865 n866 n867 n870 n1061
+1011 1
+1101 1
+.names n879 n910 n1062
+10 1
+.names n864 n865 n866 n1064 n1063
+---1 0
+110- 0
+.names n865 n873 n879 n1064
+011 1
+.names n906 n925 n1067 n1066 n1065
+-000 1
+0-00 1
+.names n865 n876 n884 n1066
+111 1
+.names n865 n873 n870 n1067
+001 1
+.names n887 n920 n1069 n1068
+110 1
+.names n883 n866 n878 n1069
+111 1
+.names Poutreg_31_ Poutreg_39_ n553 Pcount_0_ n1070
+-101 0
+1--0 0
+.names n553 Poutreg_38_ Pcount_0_ n1072 Poutreg_new_30_
+---0 1
+011- 1
+.names Poutreg_30_ Pcount_0_ Pdata_60_ n553 n1072
+--11 0
+10-- 0
+.names n1091 n1074 n553 Pdata_20_ Poutreg_new_29_
+-010 1
+-111 1
+0--- 1
+.names n797 n1075 n1080 n1086 n1074
+1011 1
+.names n846 n1076 n801 n1075
+-00 1
+1-1 1
+.names n826 n812 n1078 n1077 n1076
+-000 1
+0-00 1
+.names n809 n806 n815 n1077
+001 1
+.names n800 n847 n1079 n1078
+011 1
+.names Pdata_61_ Pdata_59_ PD_21_ PD_17_ n1079
+0001 1
+0010 1
+0100 1
+0111 1
+1000 1
+1011 1
+1101 1
+1110 1
+.names n824 n827 n1081 n1084 n1080
+0111 1
+.names n806 n848 n1083 n1082 n1081
+-000 1
+1-00 1
+.names n804 n802 n819 n820 n1082
+1111 1
+.names n800 n838 n1079 n1083
+110 1
+.names n804 n849 n1085 n1084
+-00 1
+0-0 1
+.names n800 n801 n810 n1079 n1085
+0111 1
+1011 1
+.names n1087 n1088 n1089 n1090 n1086
+0000 1
+.names n801 n802 n822 n838 n1087
+0011 1
+.names n809 n801 n810 n815 n1088
+1111 1
+.names n804 n806 n805 n833 n1089
+1111 1
+.names n804 n801 n805 n819 n1090
+0011 1
+.names Poutreg_29_ Poutreg_37_ n553 Pcount_0_ n1091
+-101 0
+1--0 0
+.names n553 Poutreg_36_ Pcount_0_ n1093 Poutreg_new_28_
+---0 1
+011- 1
+.names Poutreg_28_ Pcount_0_ Pdata_52_ n553 n1093
+--11 0
+10-- 0
+.names n1104 n1095 n553 Poutreg_new_27_
+-11 1
+0-- 1
+.names n956 n1096 n1103 Pdata_12_ n1095
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n1102 n1101 n1097 n1099 n1096
+-101 1
+0-01 1
+.names n1098 n716 n714 n1097
+010 1
+.names n712 n717 n747 n783 n1098
+-000 0
+0101 0
+0110 0
+1-11 0
+.names n719 n752 n1100 n1099
+-00 1
+0-0 1
+.names n713 n724 n730 n1100
+110 1
+.names n790 n716 n714 n1101
+-01 1
+1-1 1
+.names n721 n714 n712 n717 n1102
+-100 1
+1-00 1
+.names n782 n712 n716 n709 n1103
+---0 0
+010- 0
+.names Poutreg_27_ Poutreg_35_ n553 Pcount_0_ n1104
+-101 0
+1--0 0
+.names n553 Poutreg_34_ Pcount_0_ n1106 Poutreg_new_26_
+---0 1
+011- 1
+.names Poutreg_26_ Pcount_0_ Pdata_44_ n553 n1106
+--11 0
+10-- 0
+.names n1118 n1108 n553 Poutreg_new_25_
+-11 1
+0-- 1
+.names n823 n1109 n1111 Pdata_4_ n1108
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n816 n1086 n1110 n1109
+110 1
+.names n841 n842 n829 n802 n1110
+--00 0
+00-1 0
+.names n1112 n1113 n1115 n1117 n1111
+0101 1
+.names n845 n801 n1112
+10 1
+.names n852 n809 n1114 n813 n1113
+--11 0
+11-- 0
+.names n801 n802 n822 n1114
+001 1
+.names n855 n1116 n838 n801 n1115
+-111 1
+1--1 1
+.names n802 n822 n1116
+01 1
+.names n800 n854 n1078 n849 n1117
+-000 1
+0-00 1
+.names Poutreg_25_ Poutreg_33_ n553 Pcount_0_ n1118
+-101 0
+1--0 0
+.names n553 Poutreg_32_ Pcount_0_ n1120 Poutreg_new_24_
+---0 1
+011- 1
+.names Poutreg_24_ Pcount_0_ Pdata_36_ n553 n1120
+--11 0
+10-- 0
+.names n1172 n1122 n553 Poutreg_new_23_
+-11 1
+0-- 1
+.names n1123 n1132 n1155 Pdata_29_ n1122
+--00 1
+-0-0 1
+0111 1
+1--0 1
+.names n1124 n1130 n1131 n1123
+011 1
+.names n1129 n1125 n1128 n1124
+-10 1
+0-1 1
+.names n1126 n1127 Pdata_40_ PC_18_ n1125
+0000 0
+0011 0
+0101 0
+0110 0
+1001 0
+1010 0
+.names Pdata_39_ PC_22_ n1126
+00 1
+11 1
+.names Pdata_41_ PC_11_ n1127
+00 1
+11 1
+.names Pdata_42_ PC_3_ n1128
+00 1
+11 1
+.names Pdata_40_ Pdata_39_ PC_22_ PC_18_ n1129
+0000 1
+0110 1
+1001 1
+1111 1
+.names Pdata_43_ PC_25_ n1130
+00 1
+11 1
+.names Pdata_44_ PC_7_ n1131
+00 1
+11 1
+.names n1133 n1142 n1148 n1132
+111 1
+.names n1141 n1140 n1134 n1137 n1133
+-000 1
+0-00 1
+.names n1126 n1135 n1130 n1136 n1134
+0111 1
+1101 1
+.names Pdata_41_ Pdata_40_ PC_18_ PC_11_ n1135
+0010 1
+0100 1
+1011 1
+1101 1
+.names Pdata_44_ Pdata_42_ PC_7_ PC_3_ n1136
+0011 1
+0110 1
+1001 1
+1100 1
+.names n1126 n1138 n1130 n1139 n1137
+0111 1
+.names Pdata_41_ Pdata_40_ PC_18_ PC_11_ n1138
+0011 1
+0101 1
+1010 1
+1100 1
+.names Pdata_44_ Pdata_42_ PC_7_ PC_3_ n1139
+0001 1
+0100 1
+1011 1
+1110 1
+.names n1129 n1130 n1140
+10 1
+.names n1127 n1139 n1141
+11 1
+.names n1147 n1143 n1145 n1142
+-11 1
+0-1 1
+.names n1126 n1144 n1127 n1130 n1143
+0011 0
+1001 0
+.names Pdata_40_ PC_18_ n1144
+00 1
+11 1
+.names n1126 n1138 n1130 n1146 n1145
+0111 0
+1101 0
+.names Pdata_44_ Pdata_42_ PC_7_ PC_3_ n1146
+0010 1
+0111 1
+1000 1
+1101 1
+.names Pdata_44_ Pdata_42_ PC_7_ PC_3_ n1147
+0000 1
+0101 1
+1010 1
+1111 1
+.names n1149 n1152 n1153 n1154 n1148
+0000 1
+.names n1128 n1150 n1130 n1151 n1149
+1101 1
+.names Pdata_40_ Pdata_39_ PC_22_ PC_18_ n1150
+0010 1
+0100 1
+1011 1
+1101 1
+.names Pdata_44_ Pdata_41_ PC_11_ PC_7_ n1151
+0010 1
+0100 1
+1011 1
+1101 1
+.names n1126 n1138 n1130 n1136 n1152
+1111 1
+.names n1129 n1127 n1130 n1139 n1153
+1011 1
+.names n1126 n1135 n1130 n1146 n1154
+0101 1
+.names n1126 n1162 n1166 n1156 n1155
+-111 1
+1-11 1
+.names n1157 n1159 n1160 n1161 n1156
+0000 1
+.names n1126 n1127 n1139 n1158 n1157
+1111 1
+.names Pdata_43_ Pdata_40_ PC_25_ PC_18_ n1158
+0011 1
+0110 1
+1001 1
+1100 1
+.names n1129 n1127 n1130 n1146 n1159
+1101 1
+.names n1126 n1138 n1130 n1139 n1160
+0101 1
+.names n1127 n1150 n1130 n1136 n1161
+0101 1
+.names n1164 n1163 n1128 n1131 n1162
+-111 0
+1-00 0
+.names n1138 n1130 n1163
+10 1
+.names n1144 n1165 n1164
+00 1
+.names Pdata_43_ Pdata_41_ PC_25_ PC_11_ n1165
+0000 1
+0011 1
+0101 1
+0110 1
+1001 1
+1010 1
+1100 1
+1111 1
+.names n1169 n1167 n1168 n1170 n1166
+-000 1
+1-00 1
+.names n1130 n1146 n1167
+11 1
+.names n1128 n1127 n1150 n1130 n1168
+1110 1
+.names n1126 n1127 Pdata_40_ PC_18_ n1169
+-000 0
+-011 0
+1101 0
+1110 0
+.names n1129 n1127 n1171 n1170
+100 1
+.names Pdata_44_ Pdata_42_ PC_7_ PC_3_ n1171
+0001 1
+0010 1
+0100 1
+0111 1
+1000 1
+1011 1
+1101 1
+1110 1
+.names Poutreg_23_ Poutreg_31_ n553 Pcount_0_ n1172
+-101 0
+1--0 0
+.names n553 Poutreg_30_ Pcount_0_ n1174 Poutreg_new_22_
+---0 1
+011- 1
+.names Poutreg_22_ Pcount_0_ Pdata_61_ n553 n1174
+--11 0
+10-- 0
+.names n1192 n1176 n553 Poutreg_new_21_
+-11 1
+0-- 1
+.names n1177 n1182 n1002 Pdata_21_ n1176
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n999 n1181 n1011 n1178 n1177
+-111 1
+0-11 1
+.names n1180 n1179 n1004 n994 n1178
+-101 0
+1--- 0
+.names n992 n993 n1005 n1179
+111 1
+.names n1001 n991 n992 n1000 n1180
+1111 1
+.names n991 n992 n993 n994 n1181
+0101 0
+1110 0
+.names n1033 n1183 n1185 n1189 n1182
+1011 1
+.names n1184 n992 n1183
+11 1
+.names n991 n996 n1000 n1184
+111 1
+.names n1187 n1186 n1188 n1026 n1185
+-100 1
+0-01 1
+.names n1004 n1013 n991 n992 n1186
+0010 0
+1000 0
+.names n991 n1007 n1187
+01 1
+.names n997 n1018 n1027 n1188
+110 1
+.names n1191 n994 n1190 n1004 n1189
+--10 0
+01-1 0
+.names n1013 n991 n992 n1009 n1190
+1111 1
+.names n991 n993 n992 n1013 n1191
+-001 0
+0111 0
+1-01 0
+.names Poutreg_21_ Poutreg_29_ n553 Pcount_0_ n1192
+-101 0
+1--0 0
+.names n553 Poutreg_28_ Pcount_0_ n1194 Poutreg_new_20_
+---0 1
+011- 1
+.names Poutreg_20_ Pcount_0_ Pdata_53_ n553 n1194
+--11 0
+10-- 0
+.names n1207 n1196 n553 Poutreg_new_19_
+-11 1
+0-- 1
+.names n1197 n1201 n1203 Pdata_13_ n1196
+--00 1
+-0-0 1
+0111 1
+1--0 1
+.names n1200 n508 n1198 n513 n1197
+--01 1
+01-1 1
+.names n511 n1199 n509 n508 n1198
+-110 0
+1-00 0
+.names n523 n524 n512 n1199
+001 1
+010 1
+.names n509 n524 n523 n512 n1200
+-011 0
+-110 0
+0-00 0
+1101 0
+.names n506 n514 n549 n1202 n1201
+0010 1
+.names n531 n509 n511 n1202
+101 1
+.names n513 n1204 n544 n939 n1203
+-111 1
+1-11 1
+.names n512 n945 n1206 n1205 n1204
+-000 1
+0-00 1
+.names n520 n523 n524 n512 n1205
+1001 1
+1010 1
+1100 1
+.names n512 n517 n528 n1206
+111 1
+.names Poutreg_19_ Poutreg_27_ n553 Pcount_0_ n1207
+-101 0
+1--0 0
+.names n553 Poutreg_26_ Pcount_0_ n1209 Poutreg_new_18_
+---0 1
+011- 1
+.names Poutreg_18_ Pcount_0_ Pdata_45_ n553 n1209
+--11 0
+10-- 0
+.names n1229 n1211 n553 Poutreg_new_17_
+-01 1
+0-- 1
+.names n1212 n1218 n1221 Pdata_5_ n1211
+--01 1
+-1-1 1
+0--1 1
+1010 1
+.names n1148 n1156 n1213 n1217 n1212
+1110 1
+.names n1147 n1214 n1216 n1215 n1213
+-000 1
+0-00 1
+.names n1126 n1135 n1130 n1214
+110 1
+.names n1127 n1150 n1130 n1171 n1215
+1110 1
+.names n1129 n1127 n1130 n1146 n1216
+1111 1
+.names n1126 n1138 n1130 n1147 n1217
+0111 1
+.names n1167 n1129 n1219 n1127 n1218
+--00 1
+11-0 1
+.names n1126 n1130 n1146 n1220 n1219
+---1 0
+001- 0
+.names n1129 n1130 n1131 n1220
+101 1
+.names n1142 n1222 n1226 n1228 n1221
+1100 1
+.names n1131 n1223 n1225 n1224 n1222
+-000 1
+1-00 1
+.names n1128 n1126 n1138 n1130 n1223
+0110 1
+.names n1150 n1139 n1165 n1224
+110 1
+.names n1129 n1127 n1130 n1139 n1225
+1111 1
+.names n1227 n1167 n1150 n1127 n1226
+-111 1
+1--1 1
+.names n1129 n1130 n1136 n1227
+101 1
+.names n1126 n1135 n1130 n1171 n1228
+0100 1
+1110 1
+.names Poutreg_17_ Poutreg_25_ n553 Pcount_0_ n1229
+-101 0
+1--0 0
+.names n553 Poutreg_24_ Pcount_0_ n1231 Poutreg_new_16_
+---0 1
+011- 1
+.names Poutreg_16_ Pcount_0_ Pdata_37_ n553 n1231
+--11 0
+10-- 0
+.names n1241 n1233 n553 Poutreg_new_15_
+-11 1
+0-- 1
+.names n557 n1234 n1239 Pdata_30_ n1233
+--10 1
+-0-0 1
+0--0 1
+1101 1
+.names n561 n620 n1235 n622 n1234
+-111 1
+0-11 1
+.names n560 n578 n1238 n1236 n1235
+-000 1
+1-00 1
+.names n579 n570 n594 n1237 n1236
+1000 1
+.names Pdata_36_ Pdata_33_ PC_10_ PC_4_ n1237
+0001 1
+0010 1
+0100 1
+0111 1
+1000 1
+1011 1
+1101 1
+1110 1
+.names n561 n576 n602 n1238
+011 1
+.names n1240 n565 n1239
+01 1
+.names n582 n561 n560 n576 n1240
+-000 1
+-101 1
+0-11 1
+1110 1
+.names Poutreg_15_ Poutreg_23_ n553 Pcount_0_ n1241
+-101 0
+1--0 0
+.names n553 Poutreg_22_ Pcount_0_ n1243 Poutreg_new_14_
+---0 1
+011- 1
+.names Poutreg_14_ Pcount_0_ Pdata_62_ n553 n1243
+--11 0
+10-- 0
+.names n1254 n1245 n553 Poutreg_new_13_
+-11 1
+0-- 1
+.names n619 n1246 n1252 Pdata_22_ n1245
+--10 1
+-0-0 1
+0--0 1
+1101 1
+.names n558 n583 n1247 n1250 n1246
+1101 1
+.names n576 n579 n596 n1248 n1247
+-111 1
+0--1 1
+.names n1249 n576 n561 n582 n1248
+-101 1
+1-01 1
+.names Pdata_36_ Pdata_35_ PC_4_ PC_0_ n1249
+0001 1
+0100 1
+1011 1
+1110 1
+.names n1251 n561 n600 n576 n1250
+--10 0
+01-- 0
+.names n602 n565 n560 n576 n1251
+-111 0
+1--1 0
+.names n1253 n582 n578 n560 n1252
+--11 1
+00-0 1
+.names n576 n579 n570 n561 n1253
+--00 1
+-11- 1
+1--1 1
+.names Poutreg_13_ Poutreg_21_ n553 Pcount_0_ n1254
+-101 0
+1--0 0
+.names n553 Poutreg_20_ Pcount_0_ n1256 Poutreg_new_12_
+---0 1
+011- 1
+.names Poutreg_12_ Pcount_0_ Pdata_54_ n553 n1256
+--11 0
+10-- 0
+.names n1269 n1258 n553 Pdata_14_ Poutreg_new_11_
+-010 1
+-111 1
+0--- 1
+.names n1259 n823 n1260 n1266 n1258
+1110 1
+.names n809 n798 n807 n1259
+-11 1
+1-1 1
+.names n801 n1261 n1264 n1086 n1260
+-111 1
+1-11 1
+.names n815 n812 n1262 n829 n1261
+-000 1
+0-00 1
+.names n800 n804 n802 n1263 n1262
+-101 1
+0011 1
+.names Pdata_61_ Pdata_60_ PD_21_ PD_13_ n1263
+0011 1
+0110 1
+1001 1
+1100 1
+.names n854 n800 n1265 n802 n1264
+--11 0
+10-- 0
+.names n806 n830 n1265
+11 1
+.names n801 n1267 n1268 n853 n1266
+-001 0
+0--- 0
+.names n826 n1116 n810 n1267
+-11 1
+1-1 1
+.names n804 n800 n819 n1268
+101 1
+.names Poutreg_11_ Poutreg_19_ n553 Pcount_0_ n1269
+-101 0
+1--0 0
+.names n553 Poutreg_18_ Pcount_0_ n1271 Poutreg_new_10_
+---0 1
+011- 1
+.names Poutreg_10_ Pcount_0_ Pdata_46_ n553 n1271
+--11 0
+10-- 0
+.names n1283 n1273 n553 Poutreg_new_9_
+-01 1
+0-- 1
+.names n988 n1177 n1274 Pdata_6_ n1273
+--01 1
+-0-1 1
+0--1 1
+1110 1
+.names n1275 n1277 n1278 n1279 n1274
+0001 1
+.names n1276 n992 n1007 n1275
+011 1
+.names n1000 n1017 n991 n1276
+-10 0
+001 0
+.names n1190 n1004 n1277
+11 1
+.names n1030 n1020 n994 n1278
+-11 1
+1-1 1
+.names n1184 n1280 n1281 n1282 n1279
+0000 1
+.names n1013 n1009 n1015 n1280
+011 1
+.names n996 n997 n1015 n1281
+111 1
+.names n1001 n1017 n1018 n1282
+101 1
+.names Poutreg_9_ Poutreg_17_ n553 Pcount_0_ n1283
+-101 0
+1--0 0
+.names n553 Poutreg_16_ Pcount_0_ n1285 Poutreg_new_8_
+---0 1
+011- 1
+.names Poutreg_8_ Pcount_0_ Pdata_38_ n553 n1285
+--11 0
+10-- 0
+.names n1297 n1287 n553 Poutreg_new_7_
+-11 1
+0-- 1
+.names n1177 n1288 n1295 Pdata_31_ n1287
+--10 1
+-0-0 1
+0--0 1
+1101 1
+.names n989 n1033 n1289 n1291 n1288
+1110 1
+.names n1013 n1009 n1018 n1290 n1289
+---1 0
+111- 0
+.names n991 n992 n1009 n996 n1290
+0011 1
+1111 1
+.names n991 n1293 n1294 n1292 n1291
+-000 0
+1--- 0
+.names n992 n1026 n1027 n1292
+001 1
+.names n992 n1017 n996 n1293
+111 1
+.names n992 n1009 n1007 n1294
+111 1
+.names n1296 n1004 n1030 n994 n1295
+--10 1
+00-0 1
+.names n991 n1013 n992 n993 n1296
+-011 0
+0101 0
+0110 0
+.names Poutreg_7_ Poutreg_15_ n553 Pcount_0_ n1297
+-101 0
+1--0 0
+.names n553 Poutreg_14_ Pcount_0_ n1299 Poutreg_new_6_
+---0 1
+011- 1
+.names Poutreg_6_ Pcount_0_ Pdata_63_ n553 n1299
+--11 0
+10-- 0
+.names n1310 n1301 n553 Poutreg_new_5_
+-11 1
+0-- 1
+.names n1132 n1302 n1308 Pdata_23_ n1301
+--00 1
+-0-0 1
+0--0 1
+1111 1
+.names n1131 n1307 n1303 n1304 n1302
+-011 1
+1-11 1
+.names n1141 n1126 n1130 n1227 n1303
+-010 1
+-100 1
+0--0 1
+.names n1306 n1305 n1126 n1171 n1304
+-000 0
+1--- 0
+.names n1127 n1130 Pdata_40_ PC_18_ n1305
+0001 0
+0010 0
+0100 0
+0111 0
+.names n1126 n1144 n1146 n1165 n1306
+1010 1
+.names n1128 n1150 n1130 n1307
+110 1
+.names n1131 n1309 n1213 n1308
+-11 1
+0-1 1
+.names n1129 n1127 n1130 n1223 n1309
+---1 0
+111- 0
+.names Poutreg_5_ Poutreg_13_ n553 Pcount_0_ n1310
+-101 0
+1--0 0
+.names n553 Poutreg_12_ Pcount_0_ n1312 Poutreg_new_4_
+---0 1
+011- 1
+.names Poutreg_4_ Pcount_0_ Pdata_55_ n553 n1312
+--11 0
+10-- 0
+.names n1325 n1314 n553 Poutreg_new_3_
+-11 1
+0-- 1
+.names n1212 n1315 n1321 Pdata_15_ n1314
+--00 1
+-1-0 1
+0--0 1
+1011 1
+.names n1163 n1147 n1316 n1126 n1315
+--00 1
+11-1 1
+.names n1319 n1318 n1317 n1320 n1316
+-100 1
+0-00 1
+.names n1127 n1139 n1158 n1317
+111 1
+.names n1139 n1127 n1130 n1318
+-01 1
+0-1 1
+.names n1147 n1130 n1144 n1319
+-11 1
+1-1 1
+.names n1138 n1130 n1131 n1320
+100 1
+.names n1167 n1125 n1133 n1322 n1321
+-111 1
+0-11 1
+.names n1130 n1170 n1324 n1323 n1322
+-000 1
+0-00 1
+.names n1129 n1127 n1130 n1171 n1323
+1001 1
+.names n1128 n1126 n1135 n1130 n1324
+0111 1
+.names Poutreg_3_ Poutreg_11_ n553 Pcount_0_ n1325
+-101 0
+1--0 0
+.names n553 Poutreg_10_ Pcount_0_ n1327 Poutreg_new_2_
+---0 1
+011- 1
+.names Poutreg_2_ Pcount_0_ Pdata_47_ n553 n1327
+--11 0
+10-- 0
+.names n1340 n1329 n553 Poutreg_new_1_
+-11 1
+0-- 1
+.names n1330 n1334 n1338 Pdata_7_ n1329
+--10 1
+-0-0 1
+0--0 1
+1101 1
+.names n506 n514 n521 n1331 n1330
+0011 1
+.names n1332 n1333 n523 n524 n1331
+-001 1
+-010 1
+0-00 1
+0-11 1
+.names n509 n513 n532 n1332
+101 1
+.names n508 n509 n512 n513 n1333
+0101 1
+1001 1
+.names n544 n939 n1335 n1334
+110 1
+.names n1337 n520 n1336 n513 n1335
+--11 1
+01-0 1
+.names n512 n509 n508 n517 n1336
+-001 1
+1-01 1
+.names n523 n512 Pdata_51_ PD_18_ n1337
+0100 0
+0111 0
+1000 0
+1011 0
+1101 0
+1110 0
+.names n1339 n508 n512 n1338
+011 1
+.names n513 n523 n524 n509 n1339
+-101 0
+0000 0
+1110 0
+.names Poutreg_1_ Poutreg_9_ n553 Pcount_0_ n1340
+-101 0
+1--0 0
+.names n553 Poutreg_8_ Pcount_0_ n1342 Poutreg_new_0_
+---0 1
+011- 1
+.names Poutreg_0_ Pcount_0_ Pdata_39_ n553 n1342
+--11 0
+10-- 0
+.names Pinreg_55_ n553 Pinreg_47_ Pcount_0_ Pinreg_new_55_
+-011 1
+1--0 1
+.names Pinreg_54_ n553 Pinreg_46_ Pcount_0_ Pinreg_new_54_
+-011 1
+1--0 1
+.names Pinreg_53_ n553 Pinreg_45_ Pcount_0_ Pinreg_new_53_
+-011 1
+1--0 1
+.names Pinreg_52_ n553 Pinreg_44_ Pcount_0_ Pinreg_new_52_
+-011 1
+1--0 1
+.names Pinreg_51_ n553 Pinreg_43_ Pcount_0_ Pinreg_new_51_
+-011 1
+1--0 1
+.names Pinreg_50_ n553 Pinreg_42_ Pcount_0_ Pinreg_new_50_
+-011 1
+1--0 1
+.names Pinreg_49_ n553 Pinreg_41_ Pcount_0_ Pinreg_new_49_
+-011 1
+1--0 1
+.names Pinreg_48_ n553 Pinreg_40_ Pcount_0_ Pinreg_new_48_
+-011 1
+1--0 1
+.names Pinreg_47_ n553 Pinreg_39_ Pcount_0_ Pinreg_new_47_
+-011 1
+1--0 1
+.names Pinreg_46_ n553 Pinreg_38_ Pcount_0_ Pinreg_new_46_
+-011 1
+1--0 1
+.names Pinreg_45_ n553 Pinreg_37_ Pcount_0_ Pinreg_new_45_
+-011 1
+1--0 1
+.names Pinreg_44_ n553 Pinreg_36_ Pcount_0_ Pinreg_new_44_
+-011 1
+1--0 1
+.names Pinreg_43_ n553 Pinreg_35_ Pcount_0_ Pinreg_new_43_
+-011 1
+1--0 1
+.names Pinreg_42_ n553 Pinreg_34_ Pcount_0_ Pinreg_new_42_
+-011 1
+1--0 1
+.names Pinreg_41_ n553 Pinreg_33_ Pcount_0_ Pinreg_new_41_
+-011 1
+1--0 1
+.names Pinreg_40_ n553 Pinreg_32_ Pcount_0_ Pinreg_new_40_
+-011 1
+1--0 1
+.names Pinreg_39_ n553 Pinreg_31_ Pcount_0_ Pinreg_new_39_
+-011 1
+1--0 1
+.names Pinreg_38_ n553 Pinreg_30_ Pcount_0_ Pinreg_new_38_
+-011 1
+1--0 1
+.names Pinreg_37_ n553 Pinreg_29_ Pcount_0_ Pinreg_new_37_
+-011 1
+1--0 1
+.names Pinreg_36_ n553 Pinreg_28_ Pcount_0_ Pinreg_new_36_
+-011 1
+1--0 1
+.names Pinreg_35_ n553 Pinreg_27_ Pcount_0_ Pinreg_new_35_
+-011 1
+1--0 1
+.names Pinreg_34_ n553 Pinreg_26_ Pcount_0_ Pinreg_new_34_
+-011 1
+1--0 1
+.names Pinreg_33_ n553 Pinreg_25_ Pcount_0_ Pinreg_new_33_
+-011 1
+1--0 1
+.names Pinreg_32_ n553 Pinreg_24_ Pcount_0_ Pinreg_new_32_
+-011 1
+1--0 1
+.names Pinreg_31_ n553 Pinreg_23_ Pcount_0_ Pinreg_new_31_
+-011 1
+1--0 1
+.names Pinreg_30_ n553 Pinreg_22_ Pcount_0_ Pinreg_new_30_
+-011 1
+1--0 1
+.names Pinreg_29_ n553 Pinreg_21_ Pcount_0_ Pinreg_new_29_
+-011 1
+1--0 1
+.names Pinreg_28_ n553 Pinreg_20_ Pcount_0_ Pinreg_new_28_
+-011 1
+1--0 1
+.names Pinreg_27_ n553 Pinreg_19_ Pcount_0_ Pinreg_new_27_
+-011 1
+1--0 1
+.names Pinreg_26_ n553 Pinreg_18_ Pcount_0_ Pinreg_new_26_
+-011 1
+1--0 1
+.names Pinreg_25_ n553 Pinreg_17_ Pcount_0_ Pinreg_new_25_
+-011 1
+1--0 1
+.names Pinreg_24_ n553 Pinreg_16_ Pcount_0_ Pinreg_new_24_
+-011 1
+1--0 1
+.names Pinreg_23_ n553 Pinreg_15_ Pcount_0_ Pinreg_new_23_
+-011 1
+1--0 1
+.names Pinreg_22_ n553 Pinreg_14_ Pcount_0_ Pinreg_new_22_
+-011 1
+1--0 1
+.names Pinreg_21_ n553 Pinreg_13_ Pcount_0_ Pinreg_new_21_
+-011 1
+1--0 1
+.names Pinreg_20_ n553 Pinreg_12_ Pcount_0_ Pinreg_new_20_
+-011 1
+1--0 1
+.names Pinreg_19_ n553 Pinreg_11_ Pcount_0_ Pinreg_new_19_
+-011 1
+1--0 1
+.names Pinreg_18_ n553 Pinreg_10_ Pcount_0_ Pinreg_new_18_
+-011 1
+1--0 1
+.names Pinreg_17_ n553 Pinreg_9_ Pcount_0_ Pinreg_new_17_
+-011 1
+1--0 1
+.names Pinreg_16_ n553 Pinreg_8_ Pcount_0_ Pinreg_new_16_
+-011 1
+1--0 1
+.names Pinreg_15_ n553 Pinreg_7_ Pcount_0_ Pinreg_new_15_
+-011 1
+1--0 1
+.names Pinreg_14_ n553 Pinreg_6_ Pcount_0_ Pinreg_new_14_
+-011 1
+1--0 1
+.names Pinreg_13_ n553 Pinreg_5_ Pcount_0_ Pinreg_new_13_
+-011 1
+1--0 1
+.names Pinreg_12_ n553 Pinreg_4_ Pcount_0_ Pinreg_new_12_
+-011 1
+1--0 1
+.names Pinreg_11_ n553 Pinreg_3_ Pcount_0_ Pinreg_new_11_
+-011 1
+1--0 1
+.names Pinreg_10_ n553 Pinreg_2_ Pcount_0_ Pinreg_new_10_
+-011 1
+1--0 1
+.names Pinreg_9_ n553 Pinreg_1_ Pcount_0_ Pinreg_new_9_
+-011 1
+1--0 1
+.names Pinreg_8_ n553 Pinreg_0_ Pcount_0_ Pinreg_new_8_
+-011 1
+1--0 1
+.names Pinreg_7_ n553 Pdata_in_7_ Pcount_0_ Pinreg_new_7_
+-011 1
+1--0 1
+.names Pinreg_6_ n553 Pdata_in_6_ Pcount_0_ Pinreg_new_6_
+-011 1
+1--0 1
+.names Pinreg_5_ n553 Pdata_in_5_ Pcount_0_ Pinreg_new_5_
+-011 1
+1--0 1
+.names Pinreg_4_ n553 Pdata_in_4_ Pcount_0_ Pinreg_new_4_
+-011 1
+1--0 1
+.names Pinreg_3_ n553 Pdata_in_3_ Pcount_0_ Pinreg_new_3_
+-011 1
+1--0 1
+.names Pinreg_2_ n553 Pdata_in_2_ Pcount_0_ Pinreg_new_2_
+-011 1
+1--0 1
+.names Pinreg_1_ n553 Pdata_in_1_ Pcount_0_ Pinreg_new_1_
+-011 1
+1--0 1
+.names Pinreg_0_ n553 Pdata_in_0_ Pcount_0_ Pinreg_new_0_
+-011 1
+1--0 1
+.names Pencrypt_0_ Pencrypt_mode_0_ n553 Pencrypt_mode_new_0_
+-10 1
+1-1 1
+.names Pdata_in_6_ n1287 n553 Pdata_new_63_
+-10 1
+1-1 1
+.names Pinreg_6_ n1233 n553 Pdata_new_62_
+-10 1
+1-1 1
+.names Pinreg_14_ n1122 n553 Pdata_new_61_
+-10 1
+1-1 1
+.names Pinreg_22_ n1058 n553 Pdata_new_60_
+-10 1
+1-1 1
+.names Pinreg_30_ n955 n553 Pdata_new_59_
+-10 1
+1-1 1
+.names Pinreg_38_ n796 Pdata_26_ n553 Pdata_new_58_
+-000 1
+-110 1
+1--1 1
+.names Pinreg_46_ n686 n553 Pdata_new_57_
+-10 1
+1-1 1
+.names Pinreg_54_ n504 n553 Pdata_new_56_
+-10 1
+1-1 1
+.names Pdata_in_4_ n1301 n553 Pdata_new_55_
+-10 1
+1-1 1
+.names Pinreg_4_ n1245 n553 Pdata_new_54_
+-10 1
+1-1 1
+.names Pinreg_12_ n1176 n553 Pdata_new_53_
+-10 1
+1-1 1
+.names Pinreg_20_ n1074 Pdata_20_ n553 Pdata_new_52_
+-000 1
+-110 1
+1--1 1
+.names Pinreg_28_ n971 n553 Pdata_new_51_
+-10 1
+1-1 1
+.names Pinreg_36_ n860 n553 Pdata_new_50_
+-10 1
+1-1 1
+.names Pinreg_44_ n707 n553 Pdata_new_49_
+-10 1
+1-1 1
+.names Pinreg_52_ n556 n553 Pdata_new_48_
+-10 1
+1-1 1
+.names Pdata_in_2_ n1314 n553 Pdata_new_47_
+-10 1
+1-1 1
+.names Pinreg_2_ n1258 Pdata_14_ n553 Pdata_new_46_
+-000 1
+-110 1
+1--1 1
+.names Pinreg_10_ n1196 n553 Pdata_new_45_
+-10 1
+1-1 1
+.names Pinreg_18_ n1095 n553 Pdata_new_44_
+-10 1
+1-1 1
+.names Pinreg_26_ n987 n553 Pdata_new_43_
+-10 1
+1-1 1
+.names Pinreg_34_ n915 n553 Pdata_new_42_
+-10 1
+1-1 1
+.names Pinreg_42_ n758 n553 Pdata_new_41_
+-10 1
+1-1 1
+.names Pinreg_50_ n612 n553 Pdata_new_40_
+-10 1
+1-1 1
+.names Pdata_in_0_ n1329 n553 Pdata_new_39_
+-10 1
+1-1 1
+.names Pinreg_0_ n1273 n553 Pdata_new_38_
+-00 1
+1-1 1
+.names Pinreg_8_ n1211 n553 Pdata_new_37_
+-00 1
+1-1 1
+.names Pinreg_16_ n1108 n553 Pdata_new_36_
+-10 1
+1-1 1
+.names Pinreg_24_ n1042 n553 Pdata_new_35_
+-10 1
+1-1 1
+.names Pinreg_32_ n933 n553 Pdata_new_34_
+-00 1
+1-1 1
+.names Pinreg_40_ n774 n553 Pdata_new_33_
+-10 1
+1-1 1
+.names Pinreg_48_ n631 Pdata_0_ n553 Pdata_new_32_
+-000 1
+-110 1
+1--1 1
+.names Pdata_63_ Pdata_in_7_ n553 Pdata_new_31_
+-11 1
+1-0 1
+.names Pdata_62_ Pinreg_7_ n553 Pdata_new_30_
+-11 1
+1-0 1
+.names Pdata_61_ Pinreg_15_ n553 Pdata_new_29_
+-11 1
+1-0 1
+.names Pdata_60_ Pinreg_23_ n553 Pdata_new_28_
+-11 1
+1-0 1
+.names Pdata_59_ Pinreg_31_ n553 Pdata_new_27_
+-11 1
+1-0 1
+.names Pdata_58_ Pinreg_39_ n553 Pdata_new_26_
+-11 1
+1-0 1
+.names Pdata_57_ Pinreg_47_ n553 Pdata_new_25_
+-11 1
+1-0 1
+.names Pdata_56_ Pinreg_55_ n553 Pdata_new_24_
+-11 1
+1-0 1
+.names Pdata_55_ Pdata_in_5_ n553 Pdata_new_23_
+-11 1
+1-0 1
+.names Pdata_54_ Pinreg_5_ n553 Pdata_new_22_
+-11 1
+1-0 1
+.names Pdata_53_ Pinreg_13_ n553 Pdata_new_21_
+-11 1
+1-0 1
+.names Pdata_52_ Pinreg_21_ n553 Pdata_new_20_
+-11 1
+1-0 1
+.names Pdata_51_ Pinreg_29_ n553 Pdata_new_19_
+-11 1
+1-0 1
+.names Pdata_50_ Pinreg_37_ n553 Pdata_new_18_
+-11 1
+1-0 1
+.names Pdata_49_ Pinreg_45_ n553 Pdata_new_17_
+-11 1
+1-0 1
+.names Pdata_48_ Pinreg_53_ n553 Pdata_new_16_
+-11 1
+1-0 1
+.names Pdata_47_ Pdata_in_3_ n553 Pdata_new_15_
+-11 1
+1-0 1
+.names Pdata_46_ Pinreg_3_ n553 Pdata_new_14_
+-11 1
+1-0 1
+.names Pdata_45_ Pinreg_11_ n553 Pdata_new_13_
+-11 1
+1-0 1
+.names Pdata_44_ Pinreg_19_ n553 Pdata_new_12_
+-11 1
+1-0 1
+.names Pdata_43_ Pinreg_27_ n553 Pdata_new_11_
+-11 1
+1-0 1
+.names Pdata_42_ Pinreg_35_ n553 Pdata_new_10_
+-11 1
+1-0 1
+.names Pdata_41_ Pinreg_43_ n553 Pdata_new_9_
+-11 1
+1-0 1
+.names Pdata_40_ Pinreg_51_ n553 Pdata_new_8_
+-11 1
+1-0 1
+.names Pdata_39_ Pdata_in_1_ n553 Pdata_new_7_
+-11 1
+1-0 1
+.names Pdata_38_ Pinreg_1_ n553 Pdata_new_6_
+-11 1
+1-0 1
+.names Pdata_37_ Pinreg_9_ n553 Pdata_new_5_
+-11 1
+1-0 1
+.names Pdata_36_ Pinreg_17_ n553 Pdata_new_4_
+-11 1
+1-0 1
+.names Pdata_35_ Pinreg_25_ n553 Pdata_new_3_
+-11 1
+1-0 1
+.names Pdata_34_ Pinreg_33_ n553 Pdata_new_2_
+-11 1
+1-0 1
+.names Pdata_33_ Pinreg_41_ n553 Pdata_new_1_
+-11 1
+1-0 1
+.names Pdata_32_ Pinreg_49_ n553 Pdata_new_0_
+-11 1
+1-0 1
+.names n1466 n1467 n1465 Pcount_3_ Pcount_new_3_
+--01 1
+11-0 1
+.names Pcount_2_ Pcount_1_ Pcount_0_ n1466 n1465
+---0 1
+111- 1
+.names Pload_key_0_ n553 Preset_0_ n1466
+-00 1
+0-0 1
+.names Pcount_2_ Pcount_1_ Pcount_0_ n1467
+111 1
+.names Pcount_1_ Pcount_0_ n1466 Pcount_2_ Pcount_new_2_
+-011 1
+0-11 1
+1110 1
+.names n1466 Pcount_1_ Pcount_0_ Pcount_new_1_
+101 1
+110 1
+.names n1466 Pcount_0_ Pcount_new_0_
+10 1
+.names PD_1_ n1485 n1472 n1481 PD_new_27_
+-011 0
+0-11 0
+.names PD_26_ n1473 n1476 n1472
+-01 1
+0-1 1
+.names n1474 n1475 n1473
+10 1
+.names Pencrypt_0_ n553 Pencrypt_mode_0_ n1466 n1474
+-001 1
+0-01 1
+.names Pcount_3_ Pcount_0_ Pcount_1_ Pcount_2_ n1475
+-111 0
+0000 0
+1-11 0
+.names PD_27_ n1477 n1478 n1476
+-01 1
+0-1 1
+.names n1466 n553 Pencrypt_mode_0_ Pencrypt_0_ n1477
+1101 1
+1110 1
+.names n1480 Pdata_in_3_ Pinreg_54_ n1479 n1478
+--11 0
+11-- 0
+.names n553 Preset_0_ Pload_key_0_ Pencrypt_0_ n1479
+1011 1
+.names n553 Preset_0_ Pload_key_0_ Pencrypt_0_ n1480
+1010 1
+.names n1484 PD_25_ n1482 PD_0_ n1481
+--11 0
+11-- 0
+.names n1483 n1475 n1482
+10 1
+.names Pencrypt_0_ n553 Pencrypt_mode_0_ n1466 n1483
+-011 1
+1-11 1
+.names n1474 n1475 n1484
+11 1
+.names n1483 n1475 n1485
+11 1
+.names PD_0_ n1485 n1490 n1487 PD_new_26_
+-011 0
+0-11 0
+.names PD_27_ n1482 n1488 n1487
+-01 1
+0-1 1
+.names PD_26_ n1477 n1489 n1488
+-01 1
+0-1 1
+.names n1480 Pinreg_3_ n1479 Pdata_in_3_ n1489
+--11 0
+11-- 0
+.names PD_24_ PD_25_ n1474 n1475 n1490
+-110 0
+1-11 0
+.names PD_23_ n1484 n1492 n1495 PD_new_25_
+-011 0
+0-11 0
+.names PD_26_ n1482 n1493 n1492
+-01 1
+0-1 1
+.names PD_25_ n1477 n1494 n1493
+-01 1
+0-1 1
+.names n1480 Pinreg_11_ n1479 Pinreg_3_ n1494
+--11 0
+11-- 0
+.names n1485 PD_27_ n1473 PD_24_ n1495
+--11 0
+11-- 0
+.names PD_22_ n1484 n1497 n1500 PD_new_24_
+-011 0
+0-11 0
+.names PD_25_ n1482 n1498 n1497
+-01 1
+0-1 1
+.names PD_24_ n1477 n1499 n1498
+-01 1
+0-1 1
+.names n1480 Pinreg_19_ n1479 Pinreg_11_ n1499
+--11 0
+11-- 0
+.names n1485 PD_26_ n1473 PD_23_ n1500
+--11 0
+11-- 0
+.names PD_21_ n1484 n1502 n1505 PD_new_23_
+-011 0
+0-11 0
+.names PD_24_ n1482 n1503 n1502
+-01 1
+0-1 1
+.names PD_23_ n1477 n1504 n1503
+-01 1
+0-1 1
+.names n1480 Pdata_in_4_ Pinreg_19_ n1479 n1504
+--11 0
+11-- 0
+.names n1485 PD_25_ n1473 PD_22_ n1505
+--11 0
+11-- 0
+.names PD_20_ n1484 n1507 n1510 PD_new_22_
+-011 0
+0-11 0
+.names PD_23_ n1482 n1508 n1507
+-01 1
+0-1 1
+.names PD_22_ n1477 n1509 n1508
+-01 1
+0-1 1
+.names n1480 Pinreg_4_ n1479 Pdata_in_4_ n1509
+--11 0
+11-- 0
+.names n1485 PD_24_ n1473 PD_21_ n1510
+--11 0
+11-- 0
+.names PD_19_ n1484 n1512 n1515 PD_new_21_
+-011 0
+0-11 0
+.names PD_22_ n1482 n1513 n1512
+-01 1
+0-1 1
+.names PD_21_ n1477 n1514 n1513
+-01 1
+0-1 1
+.names n1480 Pinreg_12_ n1479 Pinreg_4_ n1514
+--11 0
+11-- 0
+.names n1485 PD_23_ n1473 PD_20_ n1515
+--11 0
+11-- 0
+.names PD_18_ n1484 n1517 n1520 PD_new_20_
+-011 0
+0-11 0
+.names PD_21_ n1482 n1518 n1517
+-01 1
+0-1 1
+.names PD_20_ n1477 n1519 n1518
+-01 1
+0-1 1
+.names n1480 Pinreg_20_ n1479 Pinreg_12_ n1519
+--11 0
+11-- 0
+.names n1485 PD_22_ n1473 PD_19_ n1520
+--11 0
+11-- 0
+.names PD_17_ n1484 n1522 n1525 PD_new_19_
+-011 0
+0-11 0
+.names PD_20_ n1482 n1523 n1522
+-01 1
+0-1 1
+.names PD_19_ n1477 n1524 n1523
+-01 1
+0-1 1
+.names n1480 Pinreg_28_ n1479 Pinreg_20_ n1524
+--11 0
+11-- 0
+.names n1485 PD_21_ n1473 PD_18_ n1525
+--11 0
+11-- 0
+.names PD_16_ n1484 n1527 n1530 PD_new_18_
+-011 0
+0-11 0
+.names PD_19_ n1482 n1528 n1527
+-01 1
+0-1 1
+.names PD_18_ n1477 n1529 n1528
+-01 1
+0-1 1
+.names n1480 Pinreg_36_ n1479 Pinreg_28_ n1529
+--11 0
+11-- 0
+.names n1485 PD_20_ n1473 PD_17_ n1530
+--11 0
+11-- 0
+.names PD_15_ n1484 n1532 n1535 PD_new_17_
+-011 0
+0-11 0
+.names PD_18_ n1482 n1533 n1532
+-01 1
+0-1 1
+.names PD_17_ n1477 n1534 n1533
+-01 1
+0-1 1
+.names n1480 Pinreg_44_ n1479 Pinreg_36_ n1534
+--11 0
+11-- 0
+.names n1485 PD_19_ n1473 PD_16_ n1535
+--11 0
+11-- 0
+.names PD_14_ n1484 n1537 n1540 PD_new_16_
+-011 0
+0-11 0
+.names PD_17_ n1482 n1538 n1537
+-01 1
+0-1 1
+.names PD_16_ n1477 n1539 n1538
+-01 1
+0-1 1
+.names n1480 Pinreg_52_ n1479 Pinreg_44_ n1539
+--11 0
+11-- 0
+.names n1485 PD_18_ n1473 PD_15_ n1540
+--11 0
+11-- 0
+.names PD_13_ n1484 n1542 n1545 PD_new_15_
+-011 0
+0-11 0
+.names PD_16_ n1482 n1543 n1542
+-01 1
+0-1 1
+.names PD_15_ n1477 n1544 n1543
+-01 1
+0-1 1
+.names n1480 Pdata_in_5_ Pinreg_52_ n1479 n1544
+--11 0
+11-- 0
+.names n1485 PD_17_ n1473 PD_14_ n1545
+--11 0
+11-- 0
+.names PD_12_ n1484 n1547 n1550 PD_new_14_
+-011 0
+0-11 0
+.names PD_15_ n1482 n1548 n1547
+-01 1
+0-1 1
+.names PD_14_ n1477 n1549 n1548
+-01 1
+0-1 1
+.names n1480 Pinreg_5_ n1479 Pdata_in_5_ n1549
+--11 0
+11-- 0
+.names n1485 PD_16_ n1473 PD_13_ n1550
+--11 0
+11-- 0
+.names PD_11_ n1484 n1552 n1555 PD_new_13_
+-011 0
+0-11 0
+.names PD_14_ n1482 n1553 n1552
+-01 1
+0-1 1
+.names PD_13_ n1477 n1554 n1553
+-01 1
+0-1 1
+.names n1480 Pinreg_13_ n1479 Pinreg_5_ n1554
+--11 0
+11-- 0
+.names n1485 PD_15_ n1473 PD_12_ n1555
+--11 0
+11-- 0
+.names PD_10_ n1484 n1557 n1560 PD_new_12_
+-011 0
+0-11 0
+.names PD_13_ n1482 n1558 n1557
+-01 1
+0-1 1
+.names PD_12_ n1477 n1559 n1558
+-01 1
+0-1 1
+.names n1480 Pinreg_21_ n1479 Pinreg_13_ n1559
+--11 0
+11-- 0
+.names n1485 PD_14_ n1473 PD_11_ n1560
+--11 0
+11-- 0
+.names PD_9_ n1484 n1562 n1565 PD_new_11_
+-011 0
+0-11 0
+.names PD_12_ n1482 n1563 n1562
+-01 1
+0-1 1
+.names PD_11_ n1477 n1564 n1563
+-01 1
+0-1 1
+.names n1480 Pinreg_29_ n1479 Pinreg_21_ n1564
+--11 0
+11-- 0
+.names n1485 PD_13_ n1473 PD_10_ n1565
+--11 0
+11-- 0
+.names PD_8_ n1484 n1567 n1570 PD_new_10_
+-011 0
+0-11 0
+.names PD_11_ n1482 n1568 n1567
+-01 1
+0-1 1
+.names PD_10_ n1477 n1569 n1568
+-01 1
+0-1 1
+.names n1480 Pinreg_37_ n1479 Pinreg_29_ n1569
+--11 0
+11-- 0
+.names n1485 PD_12_ n1473 PD_9_ n1570
+--11 0
+11-- 0
+.names PD_7_ n1484 n1572 n1575 PD_new_9_
+-011 0
+0-11 0
+.names PD_10_ n1482 n1573 n1572
+-01 1
+0-1 1
+.names PD_9_ n1477 n1574 n1573
+-01 1
+0-1 1
+.names n1480 Pinreg_45_ n1479 Pinreg_37_ n1574
+--11 0
+11-- 0
+.names n1485 PD_11_ n1473 PD_8_ n1575
+--11 0
+11-- 0
+.names PD_6_ n1484 n1577 n1580 PD_new_8_
+-011 0
+0-11 0
+.names PD_9_ n1482 n1578 n1577
+-01 1
+0-1 1
+.names PD_8_ n1477 n1579 n1578
+-01 1
+0-1 1
+.names n1480 Pinreg_53_ n1479 Pinreg_45_ n1579
+--11 0
+11-- 0
+.names n1485 PD_10_ n1473 PD_7_ n1580
+--11 0
+11-- 0
+.names PD_5_ n1484 n1582 n1585 PD_new_7_
+-011 0
+0-11 0
+.names PD_8_ n1482 n1583 n1582
+-01 1
+0-1 1
+.names PD_7_ n1477 n1584 n1583
+-01 1
+0-1 1
+.names n1480 Pdata_in_6_ Pinreg_53_ n1479 n1584
+--11 0
+11-- 0
+.names n1485 PD_9_ n1473 PD_6_ n1585
+--11 0
+11-- 0
+.names PD_4_ n1484 n1587 n1590 PD_new_6_
+-011 0
+0-11 0
+.names PD_7_ n1482 n1588 n1587
+-01 1
+0-1 1
+.names PD_6_ n1477 n1589 n1588
+-01 1
+0-1 1
+.names n1480 Pinreg_6_ n1479 Pdata_in_6_ n1589
+--11 0
+11-- 0
+.names n1485 PD_8_ n1473 PD_5_ n1590
+--11 0
+11-- 0
+.names PD_3_ n1484 n1592 n1595 PD_new_5_
+-011 0
+0-11 0
+.names PD_6_ n1482 n1593 n1592
+-01 1
+0-1 1
+.names PD_5_ n1477 n1594 n1593
+-01 1
+0-1 1
+.names n1480 Pinreg_14_ n1479 Pinreg_6_ n1594
+--11 0
+11-- 0
+.names n1485 PD_7_ n1473 PD_4_ n1595
+--11 0
+11-- 0
+.names PD_2_ n1484 n1597 n1600 PD_new_4_
+-011 0
+0-11 0
+.names PD_5_ n1482 n1598 n1597
+-01 1
+0-1 1
+.names PD_4_ n1477 n1599 n1598
+-01 1
+0-1 1
+.names n1480 Pinreg_22_ n1479 Pinreg_14_ n1599
+--11 0
+11-- 0
+.names n1485 PD_6_ n1473 PD_3_ n1600
+--11 0
+11-- 0
+.names PD_1_ n1484 n1602 n1605 PD_new_3_
+-011 0
+0-11 0
+.names PD_4_ n1482 n1603 n1602
+-01 1
+0-1 1
+.names PD_3_ n1477 n1604 n1603
+-01 1
+0-1 1
+.names n1480 Pinreg_30_ n1479 Pinreg_22_ n1604
+--11 0
+11-- 0
+.names n1485 PD_5_ n1473 PD_2_ n1605
+--11 0
+11-- 0
+.names PD_0_ n1484 n1607 n1610 PD_new_2_
+-011 0
+0-11 0
+.names PD_3_ n1482 n1608 n1607
+-01 1
+0-1 1
+.names PD_2_ n1477 n1609 n1608
+-01 1
+0-1 1
+.names n1480 Pinreg_38_ n1479 Pinreg_30_ n1609
+--11 0
+11-- 0
+.names n1485 PD_4_ n1473 PD_1_ n1610
+--11 0
+11-- 0
+.names PD_3_ n1485 n1615 n1612 PD_new_1_
+-011 0
+0-11 0
+.names PD_2_ n1482 n1613 n1612
+-01 1
+0-1 1
+.names PD_1_ n1477 n1614 n1613
+-01 1
+0-1 1
+.names n1480 Pinreg_46_ n1479 Pinreg_38_ n1614
+--11 0
+11-- 0
+.names PD_0_ PD_27_ n1474 n1475 n1615
+-111 0
+1-10 0
+.names PD_2_ n1485 n1617 n1620 PD_new_0_
+-011 0
+0-11 0
+.names PD_27_ n1473 n1618 n1617
+-01 1
+0-1 1
+.names PD_0_ n1477 n1619 n1618
+-01 1
+0-1 1
+.names n1480 Pinreg_54_ n1479 Pinreg_46_ n1619
+--11 0
+11-- 0
+.names n1484 PD_26_ n1482 PD_1_ n1620
+--11 0
+11-- 0
+.names PC_1_ n1485 n1622 n1625 PC_new_27_
+-011 0
+0-11 0
+.names PC_26_ n1473 n1623 n1622
+-01 1
+0-1 1
+.names PC_27_ n1477 n1624 n1623
+-01 1
+0-1 1
+.names n1480 Pinreg_27_ Pinreg_48_ n1479 n1624
+--11 0
+11-- 0
+.names n1484 PC_25_ n1482 PC_0_ n1625
+--11 0
+11-- 0
+.names PC_0_ n1485 n1630 n1627 PC_new_26_
+-011 0
+0-11 0
+.names PC_27_ n1482 n1628 n1627
+-01 1
+0-1 1
+.names PC_26_ n1477 n1629 n1628
+-01 1
+0-1 1
+.names n1480 Pinreg_35_ n1479 Pinreg_27_ n1629
+--11 0
+11-- 0
+.names PC_24_ PC_25_ n1474 n1475 n1630
+-110 0
+1-11 0
+.names PC_23_ n1484 n1632 n1635 PC_new_25_
+-011 0
+0-11 0
+.names PC_26_ n1482 n1633 n1632
+-01 1
+0-1 1
+.names PC_25_ n1477 n1634 n1633
+-01 1
+0-1 1
+.names n1480 Pinreg_43_ n1479 Pinreg_35_ n1634
+--11 0
+11-- 0
+.names n1485 PC_27_ n1473 PC_24_ n1635
+--11 0
+11-- 0
+.names PC_22_ n1484 n1637 n1640 PC_new_24_
+-011 0
+0-11 0
+.names PC_25_ n1482 n1638 n1637
+-01 1
+0-1 1
+.names PC_24_ n1477 n1639 n1638
+-01 1
+0-1 1
+.names n1480 Pinreg_51_ n1479 Pinreg_43_ n1639
+--11 0
+11-- 0
+.names n1485 PC_26_ n1473 PC_23_ n1640
+--11 0
+11-- 0
+.names PC_21_ n1484 n1642 n1645 PC_new_23_
+-011 0
+0-11 0
+.names PC_24_ n1482 n1643 n1642
+-01 1
+0-1 1
+.names PC_23_ n1477 n1644 n1643
+-01 1
+0-1 1
+.names n1480 Pdata_in_2_ Pinreg_51_ n1479 n1644
+--11 0
+11-- 0
+.names n1485 PC_25_ n1473 PC_22_ n1645
+--11 0
+11-- 0
+.names PC_20_ n1484 n1647 n1650 PC_new_22_
+-011 0
+0-11 0
+.names PC_23_ n1482 n1648 n1647
+-01 1
+0-1 1
+.names PC_22_ n1477 n1649 n1648
+-01 1
+0-1 1
+.names n1480 Pinreg_2_ n1479 Pdata_in_2_ n1649
+--11 0
+11-- 0
+.names n1485 PC_24_ n1473 PC_21_ n1650
+--11 0
+11-- 0
+.names PC_19_ n1484 n1652 n1655 PC_new_21_
+-011 0
+0-11 0
+.names PC_22_ n1482 n1653 n1652
+-01 1
+0-1 1
+.names PC_21_ n1477 n1654 n1653
+-01 1
+0-1 1
+.names n1480 Pinreg_10_ n1479 Pinreg_2_ n1654
+--11 0
+11-- 0
+.names n1485 PC_23_ n1473 PC_20_ n1655
+--11 0
+11-- 0
+.names PC_18_ n1484 n1657 n1660 PC_new_20_
+-011 0
+0-11 0
+.names PC_21_ n1482 n1658 n1657
+-01 1
+0-1 1
+.names PC_20_ n1477 n1659 n1658
+-01 1
+0-1 1
+.names n1480 Pinreg_18_ n1479 Pinreg_10_ n1659
+--11 0
+11-- 0
+.names n1485 PC_22_ n1473 PC_19_ n1660
+--11 0
+11-- 0
+.names PC_17_ n1484 n1662 n1665 PC_new_19_
+-011 0
+0-11 0
+.names PC_20_ n1482 n1663 n1662
+-01 1
+0-1 1
+.names PC_19_ n1477 n1664 n1663
+-01 1
+0-1 1
+.names n1480 Pinreg_26_ n1479 Pinreg_18_ n1664
+--11 0
+11-- 0
+.names n1485 PC_21_ n1473 PC_18_ n1665
+--11 0
+11-- 0
+.names PC_16_ n1484 n1667 n1670 PC_new_18_
+-011 0
+0-11 0
+.names PC_19_ n1482 n1668 n1667
+-01 1
+0-1 1
+.names PC_18_ n1477 n1669 n1668
+-01 1
+0-1 1
+.names n1480 Pinreg_34_ n1479 Pinreg_26_ n1669
+--11 0
+11-- 0
+.names n1485 PC_20_ n1473 PC_17_ n1670
+--11 0
+11-- 0
+.names PC_15_ n1484 n1672 n1675 PC_new_17_
+-011 0
+0-11 0
+.names PC_18_ n1482 n1673 n1672
+-01 1
+0-1 1
+.names PC_17_ n1477 n1674 n1673
+-01 1
+0-1 1
+.names n1480 Pinreg_42_ n1479 Pinreg_34_ n1674
+--11 0
+11-- 0
+.names n1485 PC_19_ n1473 PC_16_ n1675
+--11 0
+11-- 0
+.names PC_14_ n1484 n1677 n1680 PC_new_16_
+-011 0
+0-11 0
+.names PC_17_ n1482 n1678 n1677
+-01 1
+0-1 1
+.names PC_16_ n1477 n1679 n1678
+-01 1
+0-1 1
+.names n1480 Pinreg_50_ n1479 Pinreg_42_ n1679
+--11 0
+11-- 0
+.names n1485 PC_18_ n1473 PC_15_ n1680
+--11 0
+11-- 0
+.names PC_13_ n1484 n1682 n1685 PC_new_15_
+-011 0
+0-11 0
+.names PC_16_ n1482 n1683 n1682
+-01 1
+0-1 1
+.names PC_15_ n1477 n1684 n1683
+-01 1
+0-1 1
+.names n1480 Pdata_in_1_ Pinreg_50_ n1479 n1684
+--11 0
+11-- 0
+.names n1485 PC_17_ n1473 PC_14_ n1685
+--11 0
+11-- 0
+.names PC_12_ n1484 n1687 n1690 PC_new_14_
+-011 0
+0-11 0
+.names PC_15_ n1482 n1688 n1687
+-01 1
+0-1 1
+.names PC_14_ n1477 n1689 n1688
+-01 1
+0-1 1
+.names n1480 Pinreg_1_ n1479 Pdata_in_1_ n1689
+--11 0
+11-- 0
+.names n1485 PC_16_ n1473 PC_13_ n1690
+--11 0
+11-- 0
+.names PC_11_ n1484 n1692 n1695 PC_new_13_
+-011 0
+0-11 0
+.names PC_14_ n1482 n1693 n1692
+-01 1
+0-1 1
+.names PC_13_ n1477 n1694 n1693
+-01 1
+0-1 1
+.names n1480 Pinreg_9_ n1479 Pinreg_1_ n1694
+--11 0
+11-- 0
+.names n1485 PC_15_ n1473 PC_12_ n1695
+--11 0
+11-- 0
+.names PC_10_ n1484 n1697 n1700 PC_new_12_
+-011 0
+0-11 0
+.names PC_13_ n1482 n1698 n1697
+-01 1
+0-1 1
+.names PC_12_ n1477 n1699 n1698
+-01 1
+0-1 1
+.names n1480 Pinreg_17_ n1479 Pinreg_9_ n1699
+--11 0
+11-- 0
+.names n1485 PC_14_ n1473 PC_11_ n1700
+--11 0
+11-- 0
+.names PC_9_ n1484 n1702 n1705 PC_new_11_
+-011 0
+0-11 0
+.names PC_12_ n1482 n1703 n1702
+-01 1
+0-1 1
+.names PC_11_ n1477 n1704 n1703
+-01 1
+0-1 1
+.names n1480 Pinreg_25_ n1479 Pinreg_17_ n1704
+--11 0
+11-- 0
+.names n1485 PC_13_ n1473 PC_10_ n1705
+--11 0
+11-- 0
+.names PC_8_ n1484 n1707 n1710 PC_new_10_
+-011 0
+0-11 0
+.names PC_11_ n1482 n1708 n1707
+-01 1
+0-1 1
+.names PC_10_ n1477 n1709 n1708
+-01 1
+0-1 1
+.names n1480 Pinreg_33_ n1479 Pinreg_25_ n1709
+--11 0
+11-- 0
+.names n1485 PC_12_ n1473 PC_9_ n1710
+--11 0
+11-- 0
+.names PC_7_ n1484 n1712 n1715 PC_new_9_
+-011 0
+0-11 0
+.names PC_10_ n1482 n1713 n1712
+-01 1
+0-1 1
+.names PC_9_ n1477 n1714 n1713
+-01 1
+0-1 1
+.names n1480 Pinreg_41_ n1479 Pinreg_33_ n1714
+--11 0
+11-- 0
+.names n1485 PC_11_ n1473 PC_8_ n1715
+--11 0
+11-- 0
+.names PC_6_ n1484 n1717 n1720 PC_new_8_
+-011 0
+0-11 0
+.names PC_9_ n1482 n1718 n1717
+-01 1
+0-1 1
+.names PC_8_ n1477 n1719 n1718
+-01 1
+0-1 1
+.names n1480 Pinreg_49_ n1479 Pinreg_41_ n1719
+--11 0
+11-- 0
+.names n1485 PC_10_ n1473 PC_7_ n1720
+--11 0
+11-- 0
+.names PC_5_ n1484 n1722 n1725 PC_new_7_
+-011 0
+0-11 0
+.names PC_8_ n1482 n1723 n1722
+-01 1
+0-1 1
+.names PC_7_ n1477 n1724 n1723
+-01 1
+0-1 1
+.names n1480 Pdata_in_0_ Pinreg_49_ n1479 n1724
+--11 0
+11-- 0
+.names n1485 PC_9_ n1473 PC_6_ n1725
+--11 0
+11-- 0
+.names PC_4_ n1484 n1727 n1730 PC_new_6_
+-011 0
+0-11 0
+.names PC_7_ n1482 n1728 n1727
+-01 1
+0-1 1
+.names PC_6_ n1477 n1729 n1728
+-01 1
+0-1 1
+.names n1480 Pinreg_0_ n1479 Pdata_in_0_ n1729
+--11 0
+11-- 0
+.names n1485 PC_8_ n1473 PC_5_ n1730
+--11 0
+11-- 0
+.names PC_3_ n1484 n1732 n1735 PC_new_5_
+-011 0
+0-11 0
+.names PC_6_ n1482 n1733 n1732
+-01 1
+0-1 1
+.names PC_5_ n1477 n1734 n1733
+-01 1
+0-1 1
+.names n1480 Pinreg_8_ n1479 Pinreg_0_ n1734
+--11 0
+11-- 0
+.names n1485 PC_7_ n1473 PC_4_ n1735
+--11 0
+11-- 0
+.names PC_2_ n1484 n1737 n1740 PC_new_4_
+-011 0
+0-11 0
+.names PC_5_ n1482 n1738 n1737
+-01 1
+0-1 1
+.names PC_4_ n1477 n1739 n1738
+-01 1
+0-1 1
+.names n1480 Pinreg_16_ n1479 Pinreg_8_ n1739
+--11 0
+11-- 0
+.names n1485 PC_6_ n1473 PC_3_ n1740
+--11 0
+11-- 0
+.names PC_1_ n1484 n1742 n1745 PC_new_3_
+-011 0
+0-11 0
+.names PC_4_ n1482 n1743 n1742
+-01 1
+0-1 1
+.names PC_3_ n1477 n1744 n1743
+-01 1
+0-1 1
+.names n1480 Pinreg_24_ n1479 Pinreg_16_ n1744
+--11 0
+11-- 0
+.names n1485 PC_5_ n1473 PC_2_ n1745
+--11 0
+11-- 0
+.names PC_0_ n1484 n1747 n1750 PC_new_2_
+-011 0
+0-11 0
+.names PC_3_ n1482 n1748 n1747
+-01 1
+0-1 1
+.names PC_2_ n1477 n1749 n1748
+-01 1
+0-1 1
+.names n1480 Pinreg_32_ n1479 Pinreg_24_ n1749
+--11 0
+11-- 0
+.names n1485 PC_4_ n1473 PC_1_ n1750
+--11 0
+11-- 0
+.names PC_3_ n1485 n1755 n1752 PC_new_1_
+-011 0
+0-11 0
+.names PC_2_ n1482 n1753 n1752
+-01 1
+0-1 1
+.names PC_1_ n1477 n1754 n1753
+-01 1
+0-1 1
+.names n1480 Pinreg_40_ n1479 Pinreg_32_ n1754
+--11 0
+11-- 0
+.names PC_0_ PC_27_ n1474 n1475 n1755
+-111 0
+1-10 0
+.names PC_2_ n1485 n1757 n1760 PC_new_0_
+-011 0
+0-11 0
+.names PC_27_ n1473 n1758 n1757
+-01 1
+0-1 1
+.names PC_0_ n1477 n1759 n1758
+-01 1
+0-1 1
+.names n1480 Pinreg_48_ n1479 Pinreg_40_ n1759
+--11 0
+11-- 0
+.names n1484 PC_26_ n1482 PC_1_ n1760
+--11 0
+11-- 0
+.end

@@ -1,0 +1,7759 @@
+# Benchmark "top" written by ABC on Thu May 21 18:20:33 2015
+.model top
+.inputs tin_pdata_8_8_ tin_pdata_0_0_ tin_pdata_7_7_ preset_0_0_ \
+ tin_pdata_2_2_ tin_pdata_9_9_ tin_pdata_1_1_ tin_pdata_4_4_ pclk pirq_0_0_ \
+ tin_pdata_10_10_ tin_pdata_3_3_ tin_pdata_6_6_ tin_pdata_15_15_ \
+ tin_pdata_11_11_ tin_pdata_14_14_ tin_pdata_12_12_ tin_pdata_5_5_ preset \
+ tin_pdata_13_13_
+.outputs ppeakb_7_7_ ppeakp_12_12_ ppeakp_0_0_ ppeaka_7_7_ ppeaki_15_15_ \
+ ppeaki_11_11_ ppeaki_3_3_ paddress_3_3_ pdata_8_8_ pdata_0_0_ \
+ ppeakb_14_14_ ppeakb_10_10_ ppeakb_8_8_ ppeakp_1_1_ ppeaka_14_14_ \
+ ppeaka_10_10_ ppeaka_8_8_ ppeaki_4_4_ paddress_15_15_ paddress_11_11_ \
+ paddress_2_2_ ppeakb_9_9_ ppeakp_2_2_ ppeaka_9_9_ ppeaks_12_12_ \
+ ppeaks_0_0_ ppeaki_5_5_ paddress_5_5_ pdata_7_7_ ppeakb_15_15_ ppeakp_3_3_ \
+ pwr_0_0_ ppeaks_1_1_ ppeaki_6_6_ paddress_4_4_ piack_0_0_ ppeakp_13_13_ \
+ ppeakp_4_4_ ppeaka_15_15_ ppeaka_11_11_ ppeaks_2_2_ ppeaki_7_7_ \
+ paddress_10_10_ paddress_7_7_ pdata_2_2_ ppeakp_5_5_ ppeaks_13_13_ \
+ ppeaks_3_3_ ppeaki_14_14_ ppeaki_10_10_ ppeaki_8_8_ paddress_6_6_ \
+ ppeakp_6_6_ ppeaks_4_4_ ppeaki_9_9_ paddress_9_9_ pdata_9_9_ pdata_1_1_ \
+ ppeakb_11_11_ ppeakp_7_7_ ppeaks_5_5_ paddress_13_13_ paddress_8_8_ \
+ ppeakp_14_14_ ppeakp_10_10_ ppeakp_8_8_ ppeaks_6_6_ ppeaki_13_13_ \
+ pdata_4_4_ ppeakb_0_0_ ppeakp_9_9_ ppeaka_0_0_ ppeaks_7_7_ ppeakb_1_1_ \
+ ppeaka_1_1_ ppeaks_10_10_ ppeaks_8_8_ pdata_10_10_ pdata_3_3_ \
+ ppeakb_12_12_ ppeakb_2_2_ ppeaka_12_12_ ppeaka_2_2_ ppeaks_15_15_ \
+ ppeaks_9_9_ ppeakb_3_3_ ppeakp_15_15_ ppeakp_11_11_ ppeaka_13_13_ \
+ ppeaka_3_3_ paddress_14_14_ paddress_12_12_ pdata_6_6_ ppeakb_13_13_ \
+ ppeakb_4_4_ pdn ppeaka_4_4_ ppeaki_0_0_ prd_0_0_ pdata_15_15_ pdata_11_11_ \
+ ppeakb_5_5_ ppeaka_5_5_ ppeaks_14_14_ ppeaki_1_1_ paddress_1_1_ \
+ pdata_14_14_ pdata_12_12_ pdata_5_5_ ppeakb_6_6_ ppeaka_6_6_ ppeaks_11_11_ \
+ ppeaki_12_12_ ppeaki_2_2_ paddress_0_0_ pdata_13_13_
+
+.latch       n274      ndout  2
+.latch       n279 ppeakb_12_12_  2
+.latch       n283 ppeakb_1_1_  2
+.latch       n287 ppeaka_6_6_  2
+.latch       n291     [4295]  2
+.latch       n296     [4310]  2
+.latch       n301 ppeaks_5_5_  2
+.latch       n305 ppeakp_10_10_  2
+.latch       n309     [4355]  2
+.latch       n314     [4370]  2
+.latch       n319     [4385]  2
+.latch       n324     [4400]  2
+.latch       n329     [4415]  2
+.latch       n334     [4430]  2
+.latch       n339     [4445]  2
+.latch       n344     [4460]  2
+.latch       n349     [4475]  2
+.latch       n354     [4490]  2
+.latch       n359     [4505]  2
+.latch       n364     [4520]  2
+.latch       n369     [4535]  2
+.latch       n374     [4550]  2
+.latch       n379     [4565]  2
+.latch       n384     [4580]  2
+.latch       n389     [4595]  2
+.latch       n394     [4610]  2
+.latch       n399     [4625]  2
+.latch       n404     [4640]  2
+.latch       n409     [4655]  2
+.latch       n414     [4670]  2
+.latch       n419     [4700]  2
+.latch       n424     [4715]  2
+.latch       n429     [4730]  2
+.latch       n434     [4745]  2
+.latch       n439     [4760]  2
+.latch       n444     [4775]  2
+.latch       n449     [4790]  2
+.latch       n454     [4805]  2
+.latch       n459     [4820]  2
+.latch       n464     [4835]  2
+.latch       n469     [4850]  2
+.latch       n474     [4865]  2
+.latch       n479     [4880]  2
+.latch       n484     [4895]  2
+.latch       n489     [4910]  2
+.latch       n494     [4925]  2
+.latch       n499     [4940]  2
+.latch       n504     [4955]  2
+.latch       n509     [4970]  2
+.latch       n514 ppeakb_0_0_  2
+.latch       n518 ppeaka_7_7_  2
+.latch       n522     [5015]  2
+.latch       n527     [5030]  2
+.latch       n532 ppeaks_4_4_  2
+.latch       n536 ppeakp_11_11_  2
+.latch       n540     [5075]  2
+.latch       n545     [5090]  2
+.latch       n550     [5105]  2
+.latch       n555     [5120]  2
+.latch       n560     [5135]  2
+.latch       n565     [5150]  2
+.latch       n570     [5165]  2
+.latch       n575     [5180]  2
+.latch       n580     [5195]  2
+.latch       n585     [5210]  2
+.latch       n590     [5225]  2
+.latch       n595     [5240]  2
+.latch       n600     [5255]  2
+.latch       n605     [5270]  2
+.latch       n610     [5285]  2
+.latch       n615     [5300]  2
+.latch       n620     [5315]  2
+.latch       n625     [5330]  2
+.latch       n630     [5345]  2
+.latch       n635     [5360]  2
+.latch       n640     [5375]  2
+.latch       n645     [5390]  2
+.latch       n650     [5405]  2
+.latch       n655     [5420]  2
+.latch       n660     [5435]  2
+.latch       n665     [5450]  2
+.latch       n670     [5465]  2
+.latch       n675     [5480]  2
+.latch       n680     [5495]  2
+.latch       n685     [5510]  2
+.latch       n690     [5525]  2
+.latch       n695     [5540]  2
+.latch       n700     [5555]  2
+.latch       n705     [5570]  2
+.latch       n710     [5600]  2
+.latch       n715     [5615]  2
+.latch       n720     [5630]  2
+.latch       n725     [5645]  2
+.latch       n730     [5660]  2
+.latch       n735     [5675]  2
+.latch       n740 ppeakb_10_10_  2
+.latch       n744 ppeaka_8_8_  2
+.latch       n748     [5720]  2
+.latch       n753 ppeaks_14_14_  2
+.latch       n757 ppeaks_7_7_  2
+.latch       n761 ppeakp_12_12_  2
+.latch       n765     [5780]  2
+.latch       n770     [5795]  2
+.latch       n775     [5810]  2
+.latch       n780     [5825]  2
+.latch       n785     [5840]  2
+.latch       n790     [5855]  2
+.latch       n795     [5870]  2
+.latch       n800     [5885]  2
+.latch       n805     [5900]  2
+.latch       n810     [5915]  2
+.latch       n815     [5930]  2
+.latch       n820     [5945]  2
+.latch       n825     [5960]  2
+.latch       n830     [5975]  2
+.latch       n835     [5990]  2
+.latch       n840     [6005]  2
+.latch       n845     [6020]  2
+.latch       n850     [6035]  2
+.latch       n855     [6050]  2
+.latch       n860     [6065]  2
+.latch       n865     [6080]  2
+.latch       n870     [6095]  2
+.latch       n875     [6110]  2
+.latch       n880     [6125]  2
+.latch       n885     [6140]  2
+.latch       n890     [6155]  2
+.latch       n895     [6170]  2
+.latch       n900     [6185]  2
+.latch       n905     [6200]  2
+.latch       n910     [6215]  2
+.latch       n915     [6230]  2
+.latch       n920     [6245]  2
+.latch       n925     [6260]  2
+.latch       n930     [6275]  2
+.latch       n935     [6290]  2
+.latch       n940     [6305]  2
+.latch       n945     [6320]  2
+.latch       n950     [6335]  2
+.latch       n955     [6350]  2
+.latch       n960     [6365]  2
+.latch       n965 ppeakb_11_11_  2
+.latch       n969 ppeakb_2_2_  2
+.latch       n973     [6410]  2
+.latch       n978 ppeaks_15_15_  2
+.latch       n982 ppeaks_6_6_  2
+.latch       n986 ppeakp_13_13_  2
+.latch       n990     [6470]  2
+.latch       n995     [6485]  2
+.latch      n1000     [6500]  2
+.latch      n1005     [6515]  2
+.latch      n1010     [6530]  2
+.latch      n1015     [6545]  2
+.latch      n1020     [6560]  2
+.latch      n1025     [6575]  2
+.latch      n1030     [6590]  2
+.latch      n1035     [6605]  2
+.latch      n1040     [6620]  2
+.latch      n1045     [6635]  2
+.latch      n1050     [6650]  2
+.latch      n1055     [6665]  2
+.latch      n1060     [6680]  2
+.latch      n1065     [6695]  2
+.latch      n1070     [6710]  2
+.latch      n1075     [6725]  2
+.latch      n1080     [6740]  2
+.latch      n1085     [6755]  2
+.latch      n1090     [6770]  2
+.latch      n1095     [6785]  2
+.latch      n1100     [6815]  2
+.latch      n1105     [6830]  2
+.latch      n1110     [6845]  2
+.latch      n1115     [6860]  2
+.latch      n1120     [6875]  2
+.latch      n1125     [6890]  2
+.latch      n1130     [6905]  2
+.latch      n1135     [6920]  2
+.latch      n1140     [6935]  2
+.latch      n1145     [6950]  2
+.latch      n1150     [6965]  2
+.latch      n1155     [6980]  2
+.latch      n1160     [6995]  2
+.latch      n1165     [7010]  2
+.latch      n1170     [7025]  2
+.latch      n1175     [7055]  2
+.latch      n1180 ppeaks_12_12_  2
+.latch      n1184 ppeaks_1_1_  2
+.latch      n1188 ppeakp_3_3_  2
+.latch      n1192     [7115]  2
+.latch      n1197     [7130]  2
+.latch      n1202     [7145]  2
+.latch      n1207     [7160]  2
+.latch      n1212     [7175]  2
+.latch      n1217     [7190]  2
+.latch      n1222     [7205]  2
+.latch      n1227     [7220]  2
+.latch      n1232     [7235]  2
+.latch      n1237     [7250]  2
+.latch      n1242     [7265]  2
+.latch      n1247     [7280]  2
+.latch      n1252     [7295]  2
+.latch      n1257     [7310]  2
+.latch      n1262     [7325]  2
+.latch      n1267     [7340]  2
+.latch      n1272     [7355]  2
+.latch      n1277     [7370]  2
+.latch      n1282     [7385]  2
+.latch      n1287     [7400]  2
+.latch      n1292     [7415]  2
+.latch      n1297     [7430]  2
+.latch      n1302     [7445]  2
+.latch      n1307     [7460]  2
+.latch      n1312     [7475]  2
+.latch      n1317     [7490]  2
+.latch      n1322     [7505]  2
+.latch      n1327     [7520]  2
+.latch      n1332     [7535]  2
+.latch      n1337     [7550]  2
+.latch      n1342     [7565]  2
+.latch      n1347     [7580]  2
+.latch      n1352     [7595]  2
+.latch      n1357     [7625]  2
+.latch      n1362     [7640]  2
+.latch      n1367     [7655]  2
+.latch      n1372     [7670]  2
+.latch      n1377     [7685]  2
+.latch      n1382 ppeaks_13_13_  2
+.latch      n1386 ppeakp_7_7_  2
+.latch      n1390 ppeakp_2_2_  2
+.latch      n1394     [7745]  2
+.latch      n1399     [7760]  2
+.latch      n1404     [7775]  2
+.latch      n1409     [7790]  2
+.latch      n1414     [7805]  2
+.latch      n1419     [7820]  2
+.latch      n1424     [7835]  2
+.latch      n1429     [7850]  2
+.latch      n1434     [7865]  2
+.latch      n1439     [7880]  2
+.latch      n1444     [7895]  2
+.latch      n1449     [7910]  2
+.latch      n1454     [7925]  2
+.latch      n1459     [7940]  2
+.latch      n1464     [7955]  2
+.latch      n1469     [7970]  2
+.latch      n1474     [8000]  2
+.latch      n1479     [8015]  2
+.latch      n1484     [8030]  2
+.latch      n1489     [8045]  2
+.latch      n1494     [8060]  2
+.latch      n1499     [8075]  2
+.latch      n1504     [8090]  2
+.latch      n1509     [8105]  2
+.latch      n1514     [8120]  2
+.latch      n1519     [8135]  2
+.latch      n1524     [8150]  2
+.latch      n1529     [8165]  2
+.latch      n1534     [8180]  2
+.latch      n1539     [8195]  2
+.latch      n1544     [8210]  2
+.latch      n1549     [8225]  2
+.latch      n1554     [8240]  2
+.latch      n1559     [8255]  2
+.latch      n1564     [8285]  2
+.latch      n1569     [8300]  2
+.latch      n1574     [8315]  2
+.latch      n1579     [8330]  2
+.latch      n1584 ppeaks_3_3_  2
+.latch      n1588 ppeakp_8_8_  2
+.latch      n1592 ppeakp_1_1_  2
+.latch      n1596     [8390]  2
+.latch      n1601     [8405]  2
+.latch      n1606     [8420]  2
+.latch      n1611     [8435]  2
+.latch      n1616     [8450]  2
+.latch      n1621     [8465]  2
+.latch      n1626     [8480]  2
+.latch      n1631     [8495]  2
+.latch      n1636     [8510]  2
+.latch      n1641     [8525]  2
+.latch      n1646     [8540]  2
+.latch      n1651     [8555]  2
+.latch      n1656     [8570]  2
+.latch      n1661     [8585]  2
+.latch      n1666     [8600]  2
+.latch      n1671     [8615]  2
+.latch      n1676     [8630]  2
+.latch      n1681     [8645]  2
+.latch      n1686     [8660]  2
+.latch      n1691     [8675]  2
+.latch      n1696     [8690]  2
+.latch      n1701     [8705]  2
+.latch      n1706     [8720]  2
+.latch      n1711     [8735]  2
+.latch      n1716     [8750]  2
+.latch      n1721     [8765]  2
+.latch      n1726     [8780]  2
+.latch      n1731     [8810]  2
+.latch      n1736     [8825]  2
+.latch      n1741     [8840]  2
+.latch      n1746     [8855]  2
+.latch      n1751     [8870]  2
+.latch      n1756     [8885]  2
+.latch      n1761     [8900]  2
+.latch      n1766     [8915]  2
+.latch      n1771     [8930]  2
+.latch      n1776     [8945]  2
+.latch      n1781     [8960]  2
+.latch      n1786     [8975]  2
+.latch      n1791 ppeaks_11_11_  2
+.latch      n1795 ppeaks_2_2_  2
+.latch      n1799 ppeakp_9_9_  2
+.latch      n1803 ppeakp_0_0_  2
+.latch      n1807     [9050]  2
+.latch      n1812     [9065]  2
+.latch      n1817     [9080]  2
+.latch      n1822     [9095]  2
+.latch      n1827     [9110]  2
+.latch      n1832     [9125]  2
+.latch      n1837     [9140]  2
+.latch      n1842     [9155]  2
+.latch      n1847     [9170]  2
+.latch      n1852     [9185]  2
+.latch      n1857     [9200]  2
+.latch      n1862     [9215]  2
+.latch      n1867     [9230]  2
+.latch      n1872     [9245]  2
+.latch      n1877     [9260]  2
+.latch      n1882     [9275]  2
+.latch      n1887     [9290]  2
+.latch      n1892     [9305]  2
+.latch      n1897     [9320]  2
+.latch      n1902     [9335]  2
+.latch      n1907     [9350]  2
+.latch      n1912     [9365]  2
+.latch      n1917     [9380]  2
+.latch      n1922     [9395]  2
+.latch      n1927     [9410]  2
+.latch      n1932     [9440]  2
+.latch      n1937     [9455]  2
+.latch      n1942     [9470]  2
+.latch      n1947     [9485]  2
+.latch      n1952     [9500]  2
+.latch      n1957     [9515]  2
+.latch      n1962     [9530]  2
+.latch      n1967     [9545]  2
+.latch      n1972     [9560]  2
+.latch      n1977     [9575]  2
+.latch      n1982     [9590]  2
+.latch      n1987     [9605]  2
+.latch      n1992     [9620]  2
+.latch      n1997     [9635]  2
+.latch      n2002     [9650]  2
+.latch      n2007     [9665]  2
+.latch      n2012     [9680]  2
+.latch      n2017 ppeaki_6_6_  2
+.latch      n2021     [9710]  2
+.latch      n2026     [9725]  2
+.latch      n2031     [9740]  2
+.latch      n2036     [9770]  2
+.latch      n2041     [9785]  2
+.latch      n2046     [9800]  2
+.latch      n2051     [9815]  2
+.latch      n2056     [9830]  2
+.latch      n2061     [9845]  2
+.latch      n2066     [9860]  2
+.latch      n2071     [9875]  2
+.latch      n2076     [9890]  2
+.latch      n2081     [9905]  2
+.latch      n2086     [9920]  2
+.latch      n2091     [9935]  2
+.latch      n2096     [9950]  2
+.latch      n2101     [9980]  2
+.latch      n2106     [9995]  2
+.latch      n2111    [10010]  2
+.latch      n2116    [10025]  2
+.latch      n2121    [10040]  2
+.latch      n2126    [10055]  2
+.latch      n2131    [10070]  2
+.latch      n2136    [10085]  2
+.latch      n2141    [10100]  2
+.latch      n2146    [10115]  2
+.latch      n2151    [10130]  2
+.latch      n2156    [10145]  2
+.latch      n2161    [10175]  2
+.latch      n2166    [10190]  2
+.latch      n2171    [10205]  2
+.latch      n2176    [10220]  2
+.latch      n2181 ppeaki_15_15_  2
+.latch      n2185 ppeaki_4_4_  2
+.latch      n2189    [10265]  2
+.latch      n2194    [10280]  2
+.latch      n2199    [10310]  2
+.latch      n2204    [10325]  2
+.latch      n2209    [10340]  2
+.latch      n2214    [10355]  2
+.latch      n2219    [10370]  2
+.latch      n2224    [10400]  2
+.latch      n2229    [10415]  2
+.latch      n2234    [10430]  2
+.latch      n2239    [10445]  2
+.latch      n2244    [10460]  2
+.latch      n2249    [10475]  2
+.latch      n2254    [10490]  2
+.latch      n2259    [10505]  2
+.latch      n2264 ppeaki_14_14_  2
+.latch      n2268 ppeaki_5_5_  2
+.latch      n2272    [10550]  2
+.latch      n2277    [10565]  2
+.latch      n2282    [10580]  2
+.latch      n2287    [10595]  2
+.latch      n2292    [10610]  2
+.latch      n2297    [10625]  2
+.latch      n2302    [10655]  2
+.latch      n2307    [10670]  2
+.latch      n2312    [10685]  2
+.latch      n2317    [10700]  2
+.latch      n2322    [10715]  2
+.latch      n2327    [10730]  2
+.latch      n2332    [10745]  2
+.latch      n2337    [10760]  2
+.latch      n2342    [10775]  2
+.latch      n2347    [10790]  2
+.latch      n2352    [10805]  2
+.latch      n2357    [10820]  2
+.latch      n2362    [10850]  2
+.latch      n2367    [10865]  2
+.latch      n2372    [10880]  2
+.latch      n2377    [10895]  2
+.latch      n2382    [10925]  2
+.latch      n2387    [10940]  2
+.latch      n2392    [10955]  2
+.latch      n2397    [10970]  2
+.latch      n2402    [10985]  2
+.latch      n2407    [11015]  2
+.latch      n2412    [11030]  2
+.latch      n2417    [11045]  2
+.latch      n2422    [11060]  2
+.latch      n2427    [11075]  2
+.latch      n2432    [11090]  2
+.latch      n2437    [11120]  2
+.latch      n2442    [11135]  2
+.latch      n2447    [11150]  2
+.latch      n2452    [11165]  2
+.latch      n2457    [11180]  2
+.latch      n2462    [11195]  2
+.latch      n2467    [11210]  2
+.latch      n2472    [11225]  2
+.latch      n2477    [11240]  2
+.latch      n2482    [11255]  2
+.latch      n2487    [11270]  2
+.latch      n2492    [11285]  2
+.latch      n2497    [11300]  2
+.latch      n2502    [11315]  2
+.latch      n2507    [11330]  2
+.latch      n2512    [11345]  2
+.latch      n2517    [11375]  2
+.latch      n2522    [11390]  2
+.latch      n2527    [11405]  2
+.latch      n2532    [11420]  2
+.latch      n2537    [11435]  2
+.latch      n2542    [11450]  2
+.latch      n2547    [11465]  2
+.latch      n2552    [11480]  2
+.latch      n2557    [11495]  2
+.latch      n2562    [11510]  2
+.latch      n2567    [11525]  2
+.latch      n2572    [11540]  2
+.latch      n2577    [11555]  2
+.latch      n2582    [11570]  2
+.latch      n2587    [11585]  2
+.latch      n2592    [11600]  2
+.latch      n2597    [11615]  2
+.latch      n2602    [11630]  2
+.latch      n2607    [11645]  2
+.latch      n2612    [11660]  2
+.latch      n2617    [11675]  2
+.latch      n2622    [11690]  2
+.latch      n2627    [11705]  2
+.latch      n2632    [11720]  2
+.latch      n2637    [11735]  2
+.latch      n2642    [11750]  2
+.latch      n2647    [11765]  2
+.latch      n2652    [11780]  2
+.latch      n2657    [11795]  2
+.latch      n2662    [11810]  2
+.latch      n2667 ppeaki_9_9_  2
+.latch      n2671 ppeakb_14_14_  2
+.latch      n2675    [11885]  2
+.latch      n2680    [11900]  2
+.latch      n2685    [11915]  2
+.latch      n2690    [11930]  2
+.latch      n2695 ppeaki_8_8_  2
+.latch      n2699 ppeakb_15_15_  2
+.latch      n2703    [12005]  2
+.latch      n2708    [12020]  2
+.latch      n2713    [12035]  2
+.latch      n2718    [12050]  2
+.latch      n2723    [12065]  2
+.latch      n2728    [12080]  2
+.latch      n2733 ppeaki_7_7_  2
+.latch      n2737    [12125]  2
+.latch      n2742    [12140]  2
+.latch      n2747    [12155]  2
+.latch      n2752    [12170]  2
+.latch      n2757    [12185]  2
+.latch      n2762    [12200]  2
+.latch      n2767 ppeakb_13_13_  2
+.latch      n2771    [12245]  2
+.latch      n2776    [12260]  2
+.latch      n2781    [12275]  2
+.latch      n2786 ppeaki_13_13_  2
+.latch      n2790 ppeaki_2_2_  2
+.latch      n2794    [12335]  2
+.latch      n2799    [12350]  2
+.latch      n2804    [12365]  2
+.latch      n2809    [12380]  2
+.latch      n2814    [12395]  2
+.latch      n2819    [12410]  2
+.latch      n2824    [12425]  2
+.latch      n2829    [12440]  2
+.latch      n2834    [12455]  2
+.latch      n2839    [12470]  2
+.latch      n2844    [12485]  2
+.latch      n2849 ppeaki_12_12_  2
+.latch      n2853 ppeaki_3_3_  2
+.latch      n2857    [12545]  2
+.latch      n2862    [12560]  2
+.latch      n2867    [12575]  2
+.latch      n2872    [12590]  2
+.latch      n2877    [12605]  2
+.latch      n2882    [12620]  2
+.latch      n2887    [12635]  2
+.latch      n2892    [12650]  2
+.latch      n2897    [12665]  2
+.latch      n2902    [12680]  2
+.latch      n2907    [12695]  2
+.latch      n2912 ppeaki_11_11_  2
+.latch      n2916 ppeaki_0_0_  2
+.latch      n2920    [12770]  2
+.latch      n2925    [12800]  2
+.latch      n2930    [12815]  2
+.latch      n2935    [12830]  2
+.latch      n2940    [12845]  2
+.latch      n2945    [12860]  2
+.latch      n2950    [12875]  2
+.latch      n2955    [12890]  2
+.latch      n2960    [12905]  2
+.latch      n2965    [12920]  2
+.latch      n2970    [12935]  2
+.latch      n2975 ppeaki_10_10_  2
+.latch      n2979 ppeaki_1_1_  2
+.latch      n2983    [13010]  2
+.latch      n2988    [13025]  2
+.latch      n2993    [13040]  2
+.latch      n2998    [13055]  2
+.latch      n3003    [13070]  2
+.latch      n3008    [13085]  2
+.latch      n3013    [13100]  2
+.latch      n3018    [13115]  2
+.latch      n3023    [13130]  2
+.latch      n3028    [13160]  2
+.latch      n3033    [13175]  2
+.latch      n3038 ppeakb_4_4_  2
+.latch      n3042 ppeaka_9_9_  2
+.latch      n3046    [13220]  2
+.latch      n3051    [13235]  2
+.latch      n3056    [13250]  2
+.latch      n3061    [13265]  2
+.latch      n3066    [13280]  2
+.latch      n3071    [13295]  2
+.latch      n3076    [13310]  2
+.latch      n3081    [13325]  2
+.latch      n3086    [13340]  2
+.latch      n3091    [13355]  2
+.latch      n3096    [13370]  2
+.latch      n3101    [13385]  2
+.latch      n3106    [13400]  2
+.latch      n3111    [13415]  2
+.latch      n3116    [13430]  2
+.latch      n3121    [13445]  2
+.latch      n3126    [13460]  2
+.latch      n3131    [13475]  2
+.latch      n3136    [13490]  2
+.latch      n3141    [13505]  2
+.latch      n3146 ppeakb_5_5_  2
+.latch      n3150    [13550]  2
+.latch      n3155 ppeakp_6_6_  2
+.latch      n3159    [13580]  2
+.latch      n3164    [13595]  2
+.latch      n3169    [13610]  2
+.latch      n3174    [13625]  2
+.latch      n3179    [13640]  2
+.latch      n3184    [13655]  2
+.latch      n3189    [13670]  2
+.latch      n3194    [13685]  2
+.latch      n3199    [13700]  2
+.latch      n3204    [13715]  2
+.latch      n3209    [13730]  2
+.latch      n3214    [13745]  2
+.latch      n3219    [13775]  2
+.latch      n3224    [13790]  2
+.latch      n3229    [13805]  2
+.latch      n3234    [13820]  2
+.latch      n3239    [13835]  2
+.latch      n3244    [13850]  2
+.latch      n3249    [13865]  2
+.latch      n3254    [13880]  2
+.latch      n3259    [13895]  2
+.latch      n3264 ppeaka_11_11_  2
+.latch      n3268 ppeaka_0_0_  2
+.latch      n3272 ppeakp_5_5_  2
+.latch      n3276    [13955]  2
+.latch      n3281    [13970]  2
+.latch      n3286    [13985]  2
+.latch      n3291    [14000]  2
+.latch      n3296    [14015]  2
+.latch      n3301    [14030]  2
+.latch      n3306    [14045]  2
+.latch      n3311    [14060]  2
+.latch      n3316    [14075]  2
+.latch      n3321    [14090]  2
+.latch      n3326    [14105]  2
+.latch      n3331    [14120]  2
+.latch      n3336    [14135]  2
+.latch      n3341    [14150]  2
+.latch      n3346    [14165]  2
+.latch      n3351    [14180]  2
+.latch      n3356    [14210]  2
+.latch      n3361    [14225]  2
+.latch      n3366    [14240]  2
+.latch      n3371    [14255]  2
+.latch      n3376    [14270]  2
+.latch      n3381    [14285]  2
+.latch      n3386 ppeakb_3_3_  2
+.latch      n3390 ppeaka_10_10_  2
+.latch      n3394 ppeaka_1_1_  2
+.latch      n3398 ppeakp_4_4_  2
+.latch      n3402    [14360]  2
+.latch      n3407    [14375]  2
+.latch      n3412    [14390]  2
+.latch      n3417    [14405]  2
+.latch      n3422    [14420]  2
+.latch      n3427    [14435]  2
+.latch      n3432    [14450]  2
+.latch      n3437    [14465]  2
+.latch      n3442    [14480]  2
+.latch      n3447    [14495]  2
+.latch      n3452    [14510]  2
+.latch      n3457    [14525]  2
+.latch      n3462    [14540]  2
+.latch      n3467    [14555]  2
+.latch      n3472    [14570]  2
+.latch      n3477    [14585]  2
+.latch      n3482    [14600]  2
+.latch      n3487    [14615]  2
+.latch      n3492    [14630]  2
+.latch      n3497    [14660]  2
+.latch      n3502    [14675]  2
+.latch      n3507    [14690]  2
+.latch      n3512    [14705]  2
+.latch      n3517 ppeakb_8_8_  2
+.latch      n3521 ppeaka_13_13_  2
+.latch      n3525 ppeaka_2_2_  2
+.latch      n3529    [14765]  2
+.latch      n3534 ppeaks_9_9_  2
+.latch      n3538 ppeakp_14_14_  2
+.latch      n3542    [14810]  2
+.latch      n3547    [14825]  2
+.latch      n3552    [14840]  2
+.latch      n3557    [14855]  2
+.latch      n3562    [14870]  2
+.latch      n3567    [14885]  2
+.latch      n3572    [14900]  2
+.latch      n3577    [14915]  2
+.latch      n3582    [14930]  2
+.latch      n3587    [14960]  2
+.latch      n3592    [14975]  2
+.latch      n3597    [14990]  2
+.latch      n3602    [15005]  2
+.latch      n3607    [15020]  2
+.latch      n3612    [15035]  2
+.latch      n3617    [15050]  2
+.latch      n3622    [15065]  2
+.latch      n3627    [15080]  2
+.latch      n3632 ppeakb_9_9_  2
+.latch      n3636 ppeaka_12_12_  2
+.latch      n3640 ppeaka_3_3_  2
+.latch      n3644    [15140]  2
+.latch      n3649 ppeaks_8_8_  2
+.latch      n3653 ppeakp_15_15_  2
+.latch      n3657    [15185]  2
+.latch      n3662    [15200]  2
+.latch      n3667    [15215]  2
+.latch      n3672    [15230]  2
+.latch      n3677    [15245]  2
+.latch      n3682    [15260]  2
+.latch      n3687    [15275]  2
+.latch      n3692    [15290]  2
+.latch      n3697    [15305]  2
+.latch      n3702    [15320]  2
+.latch      n3707    [15335]  2
+.latch      n3712    [15350]  2
+.latch      n3717    [15365]  2
+.latch      n3722    [15380]  2
+.latch      n3727    [15395]  2
+.latch      n3732    [15410]  2
+.latch      n3737    [15425]  2
+.latch      n3742    [15440]  2
+.latch      n3747 ppeakb_6_6_  2
+.latch      n3751 ppeaka_15_15_  2
+.latch      n3755 ppeaka_4_4_  2
+.latch      n3759    [15500]  2
+.latch      n3764    [15515]  2
+.latch      n3769 ppeaks_0_0_  2
+.latch      n3773    [15545]  2
+.latch      n3778    [15560]  2
+.latch      n3783    [15575]  2
+.latch      n3788    [15590]  2
+.latch      n3793    [15605]  2
+.latch      n3798    [15620]  2
+.latch      n3803    [15635]  2
+.latch      n3808    [15650]  2
+.latch      n3813    [15665]  2
+.latch      n3818    [15680]  2
+.latch      n3823    [15695]  2
+.latch      n3828    [15710]  2
+.latch      n3833    [15725]  2
+.latch      n3838    [15755]  2
+.latch      n3843    [15770]  2
+.latch      n3848    [15785]  2
+.latch      n3853 ppeakb_7_7_  2
+.latch      n3857 ppeaka_14_14_  2
+.latch      n3861 ppeaka_5_5_  2
+.latch      n3865    [15845]  2
+.latch      n3870    [15860]  2
+.latch      n3875 ppeaks_10_10_  2
+.latch      n3879    [15890]  2
+.latch      n3884    [15905]  2
+.latch      n3889    [15920]  2
+.latch      n3894    [15935]  2
+.latch      n3899    [15950]  2
+.latch      n3904    [15965]  2
+.latch      n3909    [15980]  2
+.latch      n3914    [15995]  2
+.latch      n3919    [16010]  2
+.latch      n3924    [16025]  2
+.latch      n3929    [16040]  2
+.latch      n3934    [16055]  2
+.latch      n3939    [16070]  2
+.latch      n3944    [16085]  2
+.latch      n3949    [16100]  2
+.latch      n3954 paddress_8_8_  2
+.latch      n3958    [16907]  2
+.latch      n3963    [16920]  2
+.latch      n3968    [16933]  2
+.latch      n3973 paddress_9_9_  2
+.latch      n3977    [16959]  2
+.latch      n3982    [16972]  2
+.latch      n3987    [16985]  2
+.latch      n3992    [16998]  2
+.latch      n3997    [17011]  2
+.latch      n4002    [17024]  2
+.latch      n4007    [17037]  2
+.latch      n4012    [17050]  2
+.latch      n4017    [17063]  2
+.latch      n4022    [17076]  2
+.latch      n4027    [17089]  2
+.latch      n4032    [17102]  2
+.latch      n4037    [17115]  2
+.latch      n4042    [17128]  2
+.latch      n4047    [17141]  2
+.latch      n4052    [17154]  2
+.latch      n4057    [17167]  2
+.latch      n4062    [17180]  2
+.latch      n4067    [17193]  2
+.latch      n4072    [17206]  2
+.latch      n4077    [17219]  2
+.latch      n4082    [17232]  2
+.latch      n4087    [17245]  2
+.latch      n4092    [17258]  2
+.latch      n4097    [17271]  2
+.latch      n4102    [17284]  2
+.latch      n4107    [17297]  2
+.latch      n4112    [17310]  2
+.latch      n4117    [17323]  2
+.latch      n4122    [17336]  2
+.latch      n4127    [17349]  2
+.latch      n4132    [17362]  2
+.latch      n4137    [17375]  2
+.latch      n4142    [17388]  2
+.latch      n4147 paddress_11_11_  2
+.latch      n4151    [17414]  2
+.latch      n4156    [17427]  2
+.latch      n4161    [17453]  2
+.latch      n4166 paddress_10_10_  2
+.latch      n4170    [17479]  2
+.latch      n4175    [17492]  2
+.latch      n4180    [17505]  2
+.latch      n4185    [17518]  2
+.latch      n4190    [17531]  2
+.latch      n4195    [17544]  2
+.latch      n4200 paddress_13_13_  2
+.latch      n4204    [17570]  2
+.latch      n4209    [17583]  2
+.latch      n4214    [17596]  2
+.latch      n4219    [17609]  2
+.latch      n4224 paddress_12_12_  2
+.latch      n4228    [17635]  2
+.latch      n4233    [17648]  2
+.latch      n4238    [17661]  2
+.latch      n4243    [17674]  2
+.latch      n4248 paddress_15_15_  2
+.latch      n4252    [17700]  2
+.latch      n4257    [17713]  2
+.latch      n4262 paddress_14_14_  2
+.latch      n4266    [17739]  2
+.latch      n4271    [17752]  2
+.latch      n4276    [17765]  2
+.latch      n4281    [17778]  2
+.latch      n4286    [17791]  2
+.latch      n4291    [17804]  2
+.latch      n4296    [17817]  2
+.latch      n4301   pwr_0_0_  2
+.latch      n4305    [17843]  2
+.latch      n4310    [17856]  2
+.latch      n4315    [17869]  2
+.latch      n4320    [17882]  2
+.latch      n4325   prd_0_0_  2
+.latch      n4329    [17908]  2
+.latch      n4334    [17921]  2
+.latch      n4339    [17934]  2
+.latch      n4344    [17947]  2
+.latch      n4349    [17960]  2
+.latch      n4354    [17973]  2
+.latch      n4359    [17986]  2
+.latch      n4364    [17999]  2
+.latch      n4369    [18012]  2
+.latch      n4374    [18025]  2
+.latch      n4379    [18038]  2
+.latch      n4384        pdn  2
+.latch      n4388    [18064]  2
+.latch      n4393    [18077]  2
+.latch      n4398    [18090]  2
+.latch      n4403    [18103]  2
+.latch      n4408    [18116]  2
+.latch      n4413    [18129]  2
+.latch      n4418    [18142]  2
+.latch      n4423    [18155]  2
+.latch      n4428    [18168]  2
+.latch      n4433    [18181]  2
+.latch      n4438    [18194]  2
+.latch      n4443    [18207]  2
+.latch      n4448    [18220]  2
+.latch      n4453    [18233]  2
+.latch      n4458    [18246]  2
+.latch      n4463 paddress_0_0_  2
+.latch      n4467 piack_0_0_  2
+.latch      n4471    [18285]  2
+.latch      n4476    [18298]  2
+.latch      n4481    [18311]  2
+.latch      n4486 paddress_1_1_  2
+.latch      n4490    [18337]  2
+.latch      n4495    [18350]  2
+.latch      n4500    [18363]  2
+.latch      n4505    [18376]  2
+.latch      n4510    [18389]  2
+.latch      n4515 paddress_2_2_  2
+.latch      n4519    [18415]  2
+.latch      n4524    [18428]  2
+.latch      n4529    [18441]  2
+.latch      n4534 paddress_3_3_  2
+.latch      n4538    [18467]  2
+.latch      n4543    [18480]  2
+.latch      n4548    [18493]  2
+.latch      n4553    [18506]  2
+.latch      n4558 paddress_4_4_  2
+.latch      n4562 paddress_5_5_  2
+.latch      n4566    [18545]  2
+.latch      n4571 paddress_6_6_  2
+.latch      n4575    [18571]  2
+.latch      n4580    [18584]  2
+.latch      n4585    [18597]  2
+.latch      n4590    [18610]  2
+.latch      n4595 paddress_7_7_  2
+.latch      n4599    [18636]  2
+
+.names [16959] tin_pdata_8_8_ [17882] pdata_8_8_
+-10 1
+1-1 1
+.names [18337] tin_pdata_0_0_ [17479] pdata_0_0_
+-10 1
+1-1 1
+.names [16907] tin_pdata_7_7_ [17869] pdata_7_7_
+-10 1
+1-1 1
+.names [17323] tin_pdata_2_2_ [18181] pdata_2_2_
+-10 1
+1-1 1
+.names [17765] tin_pdata_9_9_ [18571] pdata_9_9_
+-10 1
+1-1 1
+.names [17258] tin_pdata_1_1_ [18116] pdata_1_1_
+-10 1
+1-1 1
+.names [17193] tin_pdata_4_4_ [18038] pdata_4_4_
+-10 1
+1-1 1
+.names [17921] tin_pdata_10_10_ [17011] pdata_10_10_
+-10 1
+1-1 1
+.names [17128] tin_pdata_3_3_ [17960] pdata_3_3_
+-10 1
+1-1 1
+.names [17063] tin_pdata_6_6_ [17934] pdata_6_6_
+-10 1
+1-1 1
+.names [17076] tin_pdata_15_15_ [17947] pdata_15_15_
+-10 1
+1-1 1
+.names [18194] tin_pdata_11_11_ [17336] pdata_11_11_
+-10 1
+1-1 1
+.names [17778] tin_pdata_14_14_ [18584] pdata_14_14_
+-10 1
+1-1 1
+.names [17973] tin_pdata_12_12_ [17141] pdata_12_12_
+-10 1
+1-1 1
+.names [16998] tin_pdata_5_5_ [17908] pdata_5_5_
+-10 1
+1-1 1
+.names [17492] tin_pdata_13_13_ [18350] pdata_13_13_
+-10 1
+1-1 1
+.names pdata_2_2_ ndout [17791] [17843] preset n274
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_12_12_ n2814_1 n2882_1 n2887_1 n2890 n2868 n279
+-11111 0
+0-1111 0
+.names n2867_1 n2866 n2815 n2814_1
+-01 1
+1-1 1
+.names [18129] pirq_0_0_ n2816 [18064] n2818 preset n2815
+--0--0 0
+-0-000 0
+0--100 0
+.names n2863 [17089] pdn n2817 n2816
+---1 0
+001- 0
+.names n2818 n2824_1 n2817
+11 1
+.names [17089] pdn [17596] n2819_1 n2818
+--01 0
+01-- 0
+.names [18207] [17856] n2820 [17986] [17804] n2819_1
+-1010 1
+0-010 1
+.names n2821 n2823 [12695] [12935] [18207] n2820
+11000 1
+.names n2822 [12185] [12200] [12275] [12485] n2821
+10000 1
+.names [11810] [11930] [12065] [12080] n2822
+0000 1
+.names [10805] [10820] [11090] [11345] [11585] [11600] n2823
+000000 1
+.names [18636] [17596] [17661] [18597] n2825 n2824_1
+-1001 0
+1---- 0
+.names n2856 n2841 n2826 n2862_1 n2825
+-110 0
+1--- 0
+.names n2827 n2830 n2834_1 n2835 n2837 n2826
+11111 1
+.names n2829_1 [17609] [17713] ppeaki_5_5_ n2828 ppeaki_4_4_ n2827
+---011 0
+101--- 0
+.names ppeaki_6_6_ ppeaki_7_7_ [17752] n2828
+010 1
+.names [17544] [17674] [17752] n2829_1
+101 1
+.names n2832 n2833 n2831 [17674] [17713] n2830
+--111 0
+11--- 0
+.names [17544] [17609] [17752] n2831
+011 1
+.names ppeaki_4_4_ ppeaki_5_5_ n2832
+11 1
+.names ppeaki_6_6_ ppeaki_7_7_ [17752] n2833
+100 1
+.names n2829_1 [17609] [17713] ppeaki_5_5_ n2828 ppeaki_4_4_ n2834_1
+---010 0
+100--- 0
+.names n2836 ppeaki_6_6_ ppeaki_4_4_ n2831 [17674] [17713] n2835
+---101 0
+111--- 0
+.names ppeaki_5_5_ ppeaki_7_7_ [17752] n2836
+000 1
+.names ppeaki_4_4_ n2839_1 ppeaki_5_5_ n2840 n2838 n2837
+-0-00 1
+1--00 1
+.names [17544] [17609] [17674] [17713] [17752] n2838
+11001 1
+.names ppeaki_6_6_ ppeaki_7_7_ [17752] n2839_1
+110 1
+.names [17544] [17609] [17674] [17713] [17752] n2840
+11101 1
+.names n2842 n2845 n2847 n2850 n2851 n2852 n2841
+111111 1
+.names [17752] n2832 ppeaki_6_6_ ppeaki_7_7_ n2844_1 n2843 n2842
+--0100 1
+--1000 1
+-0--00 1
+1---00 1
+.names [17544] [17609] [17674] [17713] [17752] n2843
+00111 1
+.names [17544] [17609] [17674] [17713] [17752] n2844_1
+11111 1
+.names ppeaki_6_6_ ppeaki_4_4_ ppeaki_5_5_ ppeaki_7_7_ [17752] n2846 n2845
+-----1 0
+00100- 0
+.names [17544] [17609] [17674] [17713] [17752] n2846
+00101 1
+.names n2848 n2849_1 [17713] ppeaki_4_4_ ppeaki_5_5_ n2828 n2847
+---011 0
+110--- 0
+.names [17544] [17752] n2848
+11 1
+.names [17609] [17674] n2849_1
+01 1
+.names n2848 n2849_1 [17713] n2828 n2832 n2850
+---11 0
+111-- 0
+.names n2833 ppeaki_4_4_ ppeaki_5_5_ n2831 [17674] [17713] n2851
+---110 0
+101--- 0
+.names [17713] [17609] n2829_1 n2855 n2853_1 n2854 n2852
+--0000 1
+-0-000 1
+0--000 1
+.names ppeaki_6_6_ ppeaki_4_4_ ppeaki_5_5_ ppeaki_7_7_ [17752] n2853_1
+10000 1
+.names [17544] [17609] [17674] [17713] [17752] n2854
+01001 1
+.names ppeaki_6_6_ ppeaki_4_4_ ppeaki_5_5_ ppeaki_7_7_ [17752] n2855
+11010 1
+.names n2859 n2857_1 n2858 n2860 n2861 n2856
+--111 0
+-0--- 0
+1-100 0
+.names [17596] [17661] [18597] [18636] n2857_1
+1000 1
+.names [18233] ppeaki_1_1_ [17531] n2858
+-00 1
+0-1 1
+.names [18155] ppeaki_0_0_ [17531] n2859
+-00 1
+0-1 1
+.names [18012] ppeaki_2_2_ [17531] n2860
+-00 1
+0-1 1
+.names [18090] ppeaki_3_3_ [17531] n2861
+-00 1
+0-1 1
+.names n2857_1 n2858 n2859 n2860 n2861 n2862_1
+-1100 1
+-1111 1
+0---- 1
+.names n2864 n2865 n2863
+01 1
+.names [18207] [17856] n2820 n2864
+-10 1
+0-0 1
+.names [18545] preset_0_0_ [17024] n2865
+-00 1
+0-1 1
+.names n2824_1 preset n2866
+00 1
+.names n2845 n2858 n2859 n2860 n2861 n2867_1
+-0000 0
+-0101 0
+-1100 0
+01011 0
+.names n2879 [15545] [6470] n2875 n2869 n2868
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [8495] n2870 [15845] n2817 n2869
+---110 0
+111--0 0
+.names n2871 n2873 n2870
+00 1
+.names n2819_1 preset [17596] n2863 n2872_1 n2871
+---11 0
+100-- 0
+.names preset [17089] pdn n2872_1
+001 1
+.names [18129] pirq_0_0_ [18064] n2873
+-00 1
+0-1 1
+.names n2858 n2859 n2860 n2861 n2874
+0001 1
+.names n2817 n2866 n2876 n2877_1 n2875
+0110 1
+.names n2858 n2859 n2860 n2861 n2876
+1011 1
+.names n2878 n2836 ppeaki_6_6_ ppeaki_4_4_ n2877_1
+-100 0
+1--- 0
+.names [17544] [17609] [17674] [17713] [17752] n2878
+00001 1
+.names n2817 n2866 n2876 n2880 n2879
+0110 1
+.names [17544] [17609] [17674] [17713] [17752] n2881 n2880
+-----1 0
+00011- 0
+.names ppeaki_6_6_ ppeaki_4_4_ ppeaki_5_5_ ppeaki_7_7_ [17752] n2881
+01000 1
+.names n2817 n2866 n2886 ppeaka_12_12_ n2883 n2882_1
+----0 0
+0101- 0
+.names n2885 [6545] n2884 [15260] n2817 n2866 n2883
+--1101 0
+11--01 0
+.names n2858 n2859 n2860 n2861 n2884
+1110 1
+.names n2858 n2859 n2860 n2861 n2885
+1101 1
+.names n2859 n2861 n2860 n2858 n2886
+-110 0
+0-10 0
+0101 0
+.names n2889 [5945] n2888 [7955] n2817 n2866 n2887_1
+--1101 0
+11--01 0
+.names n2858 n2859 n2860 n2861 n2888
+0100 1
+.names n2858 n2859 n2860 n2861 n2889
+0110 1
+.names n2892_1 [13325] [9230] n2891 n2817 n2866 n2890
+--1101 0
+11--01 0
+.names n2858 n2859 n2860 n2861 n2891
+1000 1
+.names n2858 n2859 n2860 n2861 n2892_1
+1010 1
+.names ppeakb_1_1_ n2814_1 n2896 n2898 n2899 n2894 n283
+-11111 0
+0-1111 0
+.names n2879 [9065] [5075] n2875 n2895 n2894
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [8480] [5030] n2870 n2817 n2895
+---110 0
+111--0 0
+.names n2817 n2866 n2886 ppeaka_1_1_ n2897_1 n2896
+----0 0
+0101- 0
+.names n2885 [5150] n2884 [13295] n2817 n2866 n2897_1
+--1101 0
+11--01 0
+.names n2889 [15650] [14510] n2888 n2817 n2866 n2898
+--1101 0
+11--01 0
+.names n2892_1 [13310] [5285] n2891 n2817 n2866 n2899
+--1101 0
+11--01 0
+.names ppeakp_6_6_ n2905 n2907_1 n2913 n2901 n287
+-0111 0
+0-111 0
+.names n2902_1 n2903 n2875 ppeaka_6_6_ ppeakb_6_6_ n2901
+--000 1
+-000- 1
+1-0-0 1
+10-11 1
+.names n2891 n2866 n2815 n2902_1
+-01 1
+0-1 1
+.names n2817 n2866 n2904 n2903
+010 1
+.names n2858 n2859 n2860 n2861 n2904
+-110 0
+0001 0
+1-10 0
+.names n2906 n2817 n2905
+00 1
+.names n2866 n2858 n2859 n2860 n2861 n2870 n2906
+-----1 0
+11100- 0
+.names n2879 n2912_1 ppeaka_7_7_ [12560] n2909 n2908 n2907_1
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n2888 [10745] n2885 [15935] n2817 n2866 n2908
+--1101 0
+11--01 0
+.names n2911 [5870] [4955] n2910 n2817 n2866 n2909
+--1101 0
+11--01 0
+.names n2858 n2859 n2860 n2861 n2910
+0000 1
+.names n2858 n2859 n2860 n2861 n2911
+0101 1
+.names n2817 n2866 n2876 n2845 n2912_1
+0110 1
+.names n2817 n2866 n2917 [15200] n2914 n2913
+----0 0
+0111- 0
+.names n2916_1 [11690] [7685] n2915 n2817 n2866 n2914
+--1101 0
+11--01 0
+.names n2858 n2859 n2860 n2861 n2915
+0010 1
+1001 1
+.names n2858 n2859 n2860 n2861 n2916_1
+0011 1
+.names n2858 n2859 n2860 n2861 n2917
+0111 1
+.names n2866 n2921 [7655] n2920_1 [4295] n2919 n291
+----10 1
+---0-- 1
+111--- 1
+.names n2866 n2858 n2859 n2860 n2861 n2815 n2919
+-00101 1
+-10001 1
+-11111 1
+0----1 1
+.names n2866 n2891 [8540] n2870 [8825] n2920_1
+---11 0
+111-- 0
+.names n2858 n2859 n2860 n2861 n2921
+0010 1
+.names n2866 n2921 [7640] n2923 [4310] n2919 n296
+----10 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [8525] n2870 [14225] n2923
+---11 0
+111-- 0
+.names n2879 [14555] n2875 [13700] n2928 n2925_1 n301
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [10895] n2927 n2926 n2925_1
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [11885] n2870 [15395] n2817 n2926
+---110 0
+011--0 0
+.names n2885 [10280] [5420] n2874 n2817 n2866 n2927
+--1101 0
+11--01 0
+.names ppeaks_5_5_ n2929 n2933 n2934 n2936 n2932 n2928
+-11111 1
+0-1111 1
+.names n2867_1 n2818 preset n2930_1 n2824_1 n2929
+--11- 1
+-0-11 1
+-11-1 1
+1--10 1
+.names n2873 n2871 n2931 n2930_1
+-10 1
+0-0 1
+.names [18207] [17856] n2872_1 n2820 n2865 n2931
+-1101 1
+0-101 1
+.names n2891 [6185] n2889 [13430] n2817 n2866 n2932
+--1101 0
+11--01 0
+.names n2892_1 [13055] [7445] n2884 n2817 n2866 n2933
+--1101 0
+11--01 0
+.names n2921 [6995] n2935_1 [13505] n2817 n2866 n2934
+--1101 0
+11--01 0
+.names n2858 n2859 n2860 n2861 n2935_1
+1001 1
+.names n2916_1 [11465] [9545] n2917 n2817 n2866 n2936
+--1101 0
+11--01 0
+.names n2948 ppeaka_10_10_ n2946 ppeakp_10_10_ n2938 n305
+---10 1
+--0-- 1
+01--- 1
+.names preset n2817 n2939 n2940_1 n2938
+-011 1
+1-11 1
+.names n2860 n2859 n2858 n2866 n2861 n2939
+--010 0
+-0111 0
+0--11 0
+.names n2916_1 n2941 n2892_1 n2863 n2945_1 n2866 n2940_1
+---01- 0
+-11--1 0
+1----1 0
+.names n2942 n2944 ppeakb_11_11_ ppeakb_2_2_ ppeakb_14_14_ ppeakb_15_15_ \
+ n2941
+110000 1
+.names n2943 ppeakb_8_8_ ppeakb_9_9_ ppeakb_6_6_ ppeakb_7_7_ n2942
+10000 1
+.names ppeakb_13_13_ ppeakb_4_4_ ppeakb_5_5_ ppeakb_3_3_ n2943
+0000 1
+.names ppeakb_12_12_ ppeakb_1_1_ ppeakb_0_0_ ppeakb_10_10_ n2944
+0000 1
+.names [18545] preset_0_0_ [17024] n2872_1 n2945_1
+-001 1
+0-11 1
+.names n2917 [6965] ppeakb_10_10_ n2891 n2947 n2866 n2946
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [12140] [4850] n2871 n2947
+---10 0
+011-- 0
+.names n2859 n2941 n2860 n2866 n2858 n2861 n2948
+-01110 0
+1--110 0
+.names pdata_0_0_ [4355] [17453] [18246] preset n309
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_11_11_ [4370] [17453] [18246] preset n314
+-1-10 1
+-10-0 1
+1-100 1
+.names [4385] pdata_6_6_ preset n2952 n319
+-101 1
+1-00 1
+.names n2825 n2953 n2952
+01 1
+.names n2826 n2841 n2954 n2955_1 n2953
+1111 1
+.names n2876 [18610] n2954
+10 1
+.names n2880 [18168] n2955_1
+00 1
+.names pdata_1_1_ [4400] [17102] [17154] preset n324
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_12_12_ [4415] [17102] [17154] preset n329
+-1-10 1
+-10-0 1
+1-100 1
+.names [4430] pdata_7_7_ preset n2959 n334
+-101 1
+1-00 1
+.names n2825 n2960_1 n2959
+01 1
+.names n2885 [18285] n2960_1
+10 1
+.names [4445] pdata_2_2_ preset n2959 n339
+-101 1
+1-00 1
+.names [4460] pdata_13_13_ preset n2959 n344
+-101 1
+1-00 1
+.names pdata_8_8_ [4475] [17167] [17362] preset n349
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_3_3_ [4490] [17284] [18376] preset n354
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_14_14_ [4505] [17284] [18376] preset n359
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_9_9_ n2967 n2825 [4520] preset n364
+--110 1
+-0-10 1
+110-0 1
+.names n2884 [18493] n2967
+10 1
+.names pdata_15_15_ n2969 n2825 [4535] preset n369
+--110 1
+-0-10 1
+110-0 1
+.names n2892_1 [16920] n2969
+10 1
+.names pdata_10_10_ n2971 n2825 [4550] preset n374
+--110 1
+-0-10 1
+110-0 1
+.names n2889 [17297] n2971
+10 1
+.names [4565] pdata_5_5_ preset n2973 n379
+-101 1
+1-00 1
+.names n2825 n2974 n2973
+01 1
+.names n2891 [18506] n2974
+10 1
+.names [4580] pdata_0_0_ preset n2973 n384
+-101 1
+1-00 1
+.names [4595] pdata_11_11_ preset n2973 n389
+-101 1
+1-00 1
+.names pdata_6_6_ [4610] [17310] [17388] preset n394
+-1-00 1
+-11-0 1
+1-010 1
+.names n3007 [4625] n2979_1 n4161 n399
+--01 1
+11-- 1
+.names n2993_1 n2997 n2980 n3003_1 n2979_1
+-001 1
+-010 1
+0100 1
+0111 1
+1-01 1
+1-10 1
+.names ppeaks_1_1_ n2981 n2987 n2980
+-11 1
+0-1 1
+.names n2982 n2969 n2971 n2825 n2983_1 n2986 n2981
+---110 1
+100-10 1
+.names n2967 n2841 n2954 n2826 n2877_1 [17453] n2982
+-11100 0
+1----- 0
+.names n2862_1 n2984 n2985 n2841 n2826 n2856 n2983_1
+----00 1
+---0-0 1
+-00--- 1
+1----0 1
+.names n2888 [16933] n2984
+10 1
+.names n2874 [17284] n2985
+10 1
+.names [18103] [18168] n2986
+01 1
+.names n2992 n2891 n2825 n2988_1 n2989 n2990 n2987
+--1--1 1
+-0-001 1
+0--001 1
+.names n2826 n2841 n2954 n2955_1 ppeakb_1_1_ n2988_1
+11111 1
+.names n2885 ppeaka_1_1_ [18285] n2989
+110 1
+.names [9290] [18285] [18363] n2991 [10310] n2990
+---11 0
+110-- 0
+.names [18311] [18506] n2991
+01 1
+.names [5030] [18506] n2992
+10 1
+.names n2981 n2994 n2993_1
+11 1
+.names n2995 n2960_1 n2974 n2825 n2991 n2996 n2994
+---100 1
+000-00 1
+.names n2826 n2841 n2954 n2955_1 ppeaka_0_0_ n2995
+11111 1
+.names [18285] [18363] n2996
+10 1
+.names ppeaks_0_0_ n2981 n2998_1 n2997
+-11 1
+0-1 1
+.names n3002 n2891 n2825 n2999 n3000 n3001 n2998_1
+--1--1 1
+-0-001 1
+0--001 1
+.names n2826 n2841 n2954 n2955_1 ppeakb_0_0_ n2999
+11111 1
+.names n2885 ppeaka_0_0_ [18285] n3000
+110 1
+.names [8630] [18285] [18363] n2991 [10025] n3001
+---11 0
+110-- 0
+.names [4310] [18506] n3002
+10 1
+.names n2825 n2953 ppeaka_1_1_ n3003_1
+011 1
+.names n3005 n2825 n2877_1 preset [17453] n4161
+10000 1
+.names n3006 n2954 n3005
+11 1
+.names n2826 n2841 n3006
+11 1
+.names preset n2825 n2877_1 n3005 [17453] n3007
+-0010 0
+1---- 0
+.names n3007 [4640] n3109 n3009 n4161 n404
+---11 1
+--1-1 1
+11--- 1
+.names n3010 n3100 n3104 n3009
+000 1
+011 1
+.names n3093 n3011 n3094 n3095 n3085 n3010
+--110 1
+-1-10 1
+-11-0 1
+1---0 1
+.names n3012 n3026 n3027 n3075 n3080 n3011
+--111 1
+-1-1- 1
+-11-1 1
+1--11 1
+1-11- 1
+11--1 1
+111-- 1
+.names ppeaka_7_7_ n2952 n3013_1 ppeaka_8_8_ n3012
+-00- 1
+-111 1
+0-00 1
+11-1 1
+.names n3014 n3020 n3013_1
+00 1
+.names n3017 n3015 n2952 n3014
+-10 1
+1-0 1
+.names n3016 n2994 n2983_1 n3003_1 n3015
+--01 1
+-0-1 1
+0--1 1
+1110 1
+.names n2982 n2969 n2971 n2825 n2986 n3016
+---10 1
+100-0 1
+.names ppeaka_1_1_ n2994 n2983_1 n3016 n3018_1 n3019 n3017
+---011 1
+--0-11 1
+-0--11 1
+-11101 1
+1---11 1
+.names n2825 n2953 ppeaka_2_2_ n3018_1
+011 1
+.names ppeaka_1_1_ n2953 n2825 ppeaka_2_2_ ppeaka_3_3_ n3019
+--100 1
+-0-00 1
+0--00 1
+.names ppeaka_4_4_ n3023_1 n3017 n3024 n3025 n3021 n3020
+--1010 1
+-00110 1
+-1-010 1
+1--110 1
+.names n3022 ppeaka_5_5_ n3021
+10 1
+.names n2825 n2953 ppeaka_4_4_ n3022
+011 1
+.names n3016 n2994 n2983_1 n2952 n3003_1 n3023_1
+--001 1
+-0-01 1
+0--01 1
+11100 1
+.names n2825 n2953 ppeaka_5_5_ n3024
+011 1
+.names ppeaka_6_6_ ppeaka_5_5_ n3025
+00 1
+.names ppeaka_7_7_ ppeaka_8_8_ n3013_1 n2952 ppeaka_9_9_ n3026
+--00- 1
+--111 1
+-1-11 1
+000-0 1
+1--11 1
+.names n3028_1 n3029 n3033_1 n3063 n3065 n3070 n3027
+--0011 1
+-0--11 1
+-000-1 1
+1----1 1
+1-001- 1
+10--1- 1
+1000-- 1
+.names n2825 n2953 ppeaka_7_7_ n3020 n3014 n3028_1
+--000 0
+-0-00 0
+011-1 0
+0111- 0
+1--00 0
+.names n3030 n3031 n3032 ppeaka_5_5_ ppeaka_6_6_ n2952 n3029
+---111 0
+--1-11 0
+-0--11 0
+-1000- 0
+0----0 0
+.names n3015 n3017 n3030
+00 1
+.names ppeaka_4_4_ n3024 n3023_1 n3017 n3021 n3031
+--000 1
+-0--0 1
+1---0 1
+.names n3017 n3023_1 n3024 n3032
+000 1
+.names n3041 n3042_1 n3047 n3056_1 n3058 n3034 n3033_1
+--0000 1
+-0-000 1
+-00-00 1
+0---00 1
+0-00-0 1
+00-0-0 1
+000--0 1
+.names ppeaka_4_4_ n3023_1 n3017 n3035 n3024 n3021 n3034
+--1100 1
+-00110 1
+-1-100 1
+1--110 1
+.names ppeaks_5_5_ n2981 n3036 n3035
+-11 1
+0-1 1
+.names n3040 n2891 n2825 n3037 n3038_1 n3039 n3036
+--1--1 1
+-0-001 1
+0--001 1
+.names n2826 n2841 n2954 n2955_1 ppeakb_5_5_ n3037
+11111 1
+.names n2885 ppeaka_5_5_ [18285] n3038_1
+110 1
+.names [4670] [18285] [18363] n2991 [8105] n3039
+---11 0
+110-- 0
+.names [8330] [18506] n3040
+10 1
+.names n3017 n3023_1 n3022 n3041
+-10 1
+001 1
+1-0 1
+.names ppeaks_3_3_ n2981 n3043 n3042_1
+-11 1
+0-1 1
+.names n3046_1 n3044 n2955_1 n3005 ppeakb_3_3_ n2825 n3043
+--1110 0
+-0---- 0
+1----0 0
+.names n3045 n2885 n2825 ppeaka_3_3_ [18285] n3044
+-1010 0
+0---- 0
+.names [9995] [18285] [18363] [6845] n2991 n3045
+---11 0
+110-- 0
+.names n2891 [15860] [18506] n3046_1
+110 1
+.names n2980 n2993_1 n2997 n3048 n3050 n3003_1 n3047
+---11- 1
+-01-11 1
+-011-1 1
+-1--10 1
+-1-1-0 1
+1---11 1
+1--1-1 1
+1-1-1- 1
+1-11-- 1
+.names ppeaka_1_1_ n2994 n2983_1 n3016 n3018_1 n3049 n3048
+---010 1
+--0-10 1
+-0--10 1
+-11100 1
+1---10 1
+.names n2825 n2953 ppeaka_1_1_ ppeaka_2_2_ n3049
+0110 1
+.names ppeaks_2_2_ n2981 n3051_1 n3050
+-11 1
+0-1 1
+.names n3055 n2891 n2825 n3052 n3053 n3054 n3051_1
+--1--1 1
+-0-001 1
+0--001 1
+.names n2826 n2841 n2954 n2955_1 ppeakb_2_2_ n3052
+11111 1
+.names n2885 ppeaka_2_2_ [18285] n3053
+110 1
+.names [9725] [18285] [18363] [4760] n2991 n3054
+---11 0
+110-- 0
+.names [15515] [18506] n3055
+10 1
+.names ppeaka_3_3_ n3015 n3057 n2993_1 n2952 n3017 n3056_1
+--1110 0
+-0--00 0
+0---10 0
+.names ppeaka_1_1_ n2952 ppeaka_2_2_ n3057
+-00 1
+0-0 1
+.names ppeaks_4_4_ n2981 n3059 n3058
+-11 1
+0-1 1
+.names n3062 n3060 n2955_1 n3005 ppeakb_4_4_ n2825 n3059
+--1110 0
+-0---- 0
+1----0 0
+.names n3061_1 n2885 n2825 ppeaka_4_4_ [18285] n3060
+-1010 0
+0---- 0
+.names [5375] [18285] [18363] n2991 [6170] n3061_1
+---11 0
+110-- 0
+.names n2891 [14765] [18506] n3062
+110 1
+.names n3064 n3035 n3063
+00 1
+.names ppeaka_4_4_ n3023_1 n3017 n3024 n3021 n3064
+--100 1
+-0010 1
+-1-00 1
+1--10 1
+.names ppeaks_6_6_ n2981 n3066_1 n3065
+-11 1
+0-1 1
+.names n3069 n3067 n2955_1 n3005 ppeakb_6_6_ n2825 n3066_1
+--1110 0
+-0---- 0
+1----0 0
+.names n3068 n2885 n2825 ppeaka_6_6_ [18285] n3067
+-1010 0
+0---- 0
+.names [6740] [18285] [18363] n2991 [7475] n3068
+---11 0
+110-- 0
+.names n2891 [7685] [18506] n3069
+110 1
+.names ppeaks_7_7_ n2981 n3071_1 n3070
+-11 1
+0-1 1
+.names n3074 n3072 n2955_1 n3005 ppeakb_7_7_ n2825 n3071_1
+--1110 0
+-0---- 0
+1----0 0
+.names n3073 n2885 n2825 ppeaka_7_7_ [18285] n3072
+-1010 0
+0---- 0
+.names [6065] [18285] [18363] n2991 [9410] n3073
+---11 0
+110-- 0
+.names n2891 [7055] [18506] n3074
+110 1
+.names ppeaks_9_9_ n2981 n3076_1 n3075
+-11 1
+0-1 1
+.names n3079 n3077 n2955_1 n3005 ppeakb_9_9_ n2825 n3076_1
+--1110 0
+-0---- 0
+1----0 0
+.names n3078 n2885 n2825 ppeaka_9_9_ [18285] n3077
+-1010 0
+0---- 0
+.names [7370] [18285] [18363] n2991 [10040] n3078
+---11 0
+110-- 0
+.names n2891 [5720] [18506] n3079
+110 1
+.names ppeaks_8_8_ n2981 n3081_1 n3080
+-11 1
+0-1 1
+.names n3084 n3082 n2955_1 n3005 ppeakb_8_8_ n2825 n3081_1
+--1110 0
+-0---- 0
+1----0 0
+.names n3083 n2885 n2825 ppeaka_8_8_ [18285] n3082
+-1010 0
+0---- 0
+.names [8000] [18285] [18363] n2991 [8750] n3083
+---11 0
+110-- 0
+.names n2891 [6410] [18506] n3084
+110 1
+.names n3086_1 n3088 n3085
+00 1
+.names ppeaka_10_10_ n2825 n2953 ppeaka_11_11_ n3087 n3086_1
+--0-0 1
+-0111 1
+-1--0 1
+0--00 1
+1011- 1
+.names ppeaka_7_7_ ppeaka_8_8_ ppeaka_9_9_ n3030 n2952 n3020 n3087
+----01 0
+---00- 0
+000--1 0
+.names ppeaks_11_11_ n2981 n3089 n3088
+-11 1
+0-1 1
+.names n3092 n3090 n2955_1 n3005 ppeakb_11_11_ n2825 n3089
+--1110 0
+-0---- 0
+1----0 0
+.names n3091_1 n2885 n2825 ppeaka_11_11_ [18285] n3090
+-1010 0
+0---- 0
+.names [8645] [18285] [18363] n2991 [10595] n3091_1
+---11 0
+110-- 0
+.names n2891 [4295] [18506] n3092
+110 1
+.names ppeaka_10_10_ n2825 n2953 ppeaka_11_11_ n3087 n3088 n3093
+--0-01 1
+-01111 1
+-1--01 1
+0--001 1
+1011-1 1
+.names n2825 n2953 ppeaka_10_10_ n3087 n3094
+--00 1
+-0-0 1
+0111 1
+1--0 1
+.names ppeaks_10_10_ n2981 n3096_1 n3095
+-11 1
+0-1 1
+.names n3099 n3097 n2955_1 n3005 ppeakb_10_10_ n2825 n3096_1
+--1110 0
+-0---- 0
+1----0 0
+.names n3098 n2885 n2825 ppeaka_10_10_ [18285] n3097
+-1010 0
+0---- 0
+.names [9305] [18285] [18363] n2991 [9770] n3098
+---11 0
+110-- 0
+.names n2891 [5015] [18506] n3099
+110 1
+.names n3087 n3103 ppeaka_12_12_ n3101_1 n2952 n3100
+---11 0
+-10-- 0
+1---0 0
+.names ppeaka_10_10_ n2952 n3102 ppeaka_11_11_ n3087 n3101_1
+-0000 1
+0-000 1
+.names ppeaka_10_10_ n2953 n2825 ppeaka_11_11_ n3087 ppeaka_12_12_ n3102
+--1000 1
+-0-000 1
+0--000 1
+.names n2952 n3013_1 ppeaka_9_9_ ppeaka_8_8_ ppeaka_7_7_ n3102 n3103
+-1---0 1
+1----0 1
+.names ppeaks_12_12_ n2981 n3105 n3104
+-11 1
+0-1 1
+.names n3108 n3106_1 n2955_1 n3005 ppeakb_12_12_ n2825 n3105
+--1110 0
+-0---- 0
+1----0 0
+.names n3107 n2885 n2825 ppeaka_12_12_ [18285] n3106_1
+-1010 0
+0---- 0
+.names [10010] [18285] [18363] [6860] n2991 n3107
+---11 0
+110-- 0
+.names n2891 [15845] [18506] n3108
+110 1
+.names n3110 n3100 n3085 n3104 n3109
+0001 1
+0100 1
+.names n3011 n3094 n3095 n3093 n3110
+-000 1
+0-00 1
+00-0 1
+.names n3112 [4655] [18103] [18168] preset n409
+-1-00 1
+-11-0 1
+0-010 1
+.names n3011 n3094 n3095 n3088 n3086_1 n3112
+-0001 1
+-0010 1
+-1100 1
+-1111 1
+0-001 1
+0-010 1
+00-01 1
+00-10 1
+1-100 1
+1-111 1
+11-00 1
+11-11 1
+.names n3116_1 [4670] n3117 n3114 n414
+--10 1
+11-- 1
+.names n3115 n3041 n3058 n3064 n3035 n3114
+-0001 1
+-0010 1
+-1100 1
+-1111 1
+0-001 1
+0-010 1
+00-01 1
+00-10 1
+1-100 1
+1-111 1
+11-00 1
+11-11 1
+.names n3042_1 n3047 n3056_1 n3115
+-11 1
+1-1 1
+11- 1
+.names n2959 preset n3116_1
+00 1
+.names n2825 n2885 preset [18285] n3117
+0100 1
+.names n3119 [4700] [18285] [18363] preset n419
+-1-10 1
+-10-0 1
+0-100 1
+.names n3011 n3094 n3095 n3119
+001 1
+010 1
+100 1
+111 1
+.names n3123 [4715] n3121_1 n3122 n424
+--01 1
+11-- 1
+.names n3115 n3041 n3058 n3121_1
+001 1
+010 1
+100 1
+111 1
+.names n2825 n2874 preset [17284] n3122
+0100 1
+.names n2985 n2825 preset n3123
+-10 1
+0-0 1
+.names n3148 n3136_1 n3126_1 n3143 n3125 n3122 n429
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n3126_1 n3131_1 n2981 ppeaks_15_15_ n3129 n3132 n3125
+---001 1
+--1-01 1
+-0--10 1
+-0011- 1
+0---10 1
+0-011- 1
+11-0-1 1
+111--1 1
+.names ppeaka_14_14_ n3128 n3103 n3127 n3126_1
+-001 1
+1--1 1
+.names ppeaka_13_13_ ppeaka_14_14_ n3087 n3102 n2952 n3127
+--100 0
+01-11 0
+.names n2825 n2953 ppeaka_13_13_ n3128
+011 1
+.names ppeaka_14_14_ ppeaka_15_15_ n2952 n3128 n3103 n3130 n3129
+--0000 1
+-1---0 1
+0--000 1
+.names n3102 n3087 n2952 n3130
+010 1
+.names n3005 n2825 n2955_1 ppeaka_15_15_ ppeaka_14_14_ n3131_1
+10110 1
+.names n3135 n3133 n2955_1 n3005 ppeakb_15_15_ n2825 n3132
+--1110 0
+-0---- 0
+1----0 0
+.names n3134 n2885 n2825 ppeaka_15_15_ [18285] n3133
+-1010 0
+0---- 0
+.names [6755] [18285] [18363] n2991 [8765] n3134
+---11 0
+110-- 0
+.names n2891 [13550] [18506] n3135
+110 1
+.names n3010 n3100 n3137 n3104 n3138 n3136_1
+--1-1 1
+-1-11 1
+-111- 1
+1--11 1
+1-11- 1
+11--1 1
+111-- 1
+.names n3103 n3128 n3137
+00 1
+11 1
+.names ppeaks_13_13_ n2981 n3139 n3138
+-11 1
+0-1 1
+.names n3142 n3140 n2955_1 n3005 ppeakb_13_13_ n2825 n3139
+--1110 0
+-0---- 0
+1----0 0
+.names n3141_1 n2885 n2825 ppeaka_13_13_ [18285] n3140
+-1010 0
+0---- 0
+.names [9740] [18285] [18363] [4775] n2991 n3141_1
+---11 0
+110-- 0
+.names n2891 [15500] [18506] n3142
+110 1
+.names ppeaks_14_14_ n2981 n3144 n3143
+-11 1
+0-1 1
+.names n3147 n3145 n2955_1 n3005 ppeakb_14_14_ n2825 n3144
+--1110 0
+-0---- 0
+1----0 0
+.names n3146_1 n2885 n2825 ppeaka_14_14_ [18285] n3145
+-1010 0
+0---- 0
+.names [6080] [18285] [18363] [5480] n2991 n3146_1
+---11 0
+110-- 0
+.names n2891 [15140] [18506] n3147
+110 1
+.names n3123 [4730] n3148
+11 1
+.names n3154 preset [4745] n3150_1 n434
+---1 1
+001- 1
+.names n3151 n3152 n3026 n3075 n4548 n3150_1
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n3080 n3012 n3027 n3151
+-00 1
+0-0 1
+.names n3012 n3080 n3152
+00 1
+.names n2825 n2884 preset [18493] n4548
+0100 1
+.names n2825 n2967 n3154
+01 1
+.names n3158 [4760] n3156 n3157 n439
+--01 1
+11-- 1
+.names n2997 n2993_1 n2980 n3003_1 n3050 n3048 n3156
+--1100 1
+--1111 1
+-00001 1
+-00010 1
+-1-000 1
+-1-011 1
+-10101 1
+-10110 1
+0-0101 1
+0-0110 1
+00-001 1
+00-010 1
+1-1-00 1
+1-1-11 1
+10-100 1
+10-111 1
+.names n2825 n2891 preset [18506] n3157
+0100 1
+.names preset n2891 n2825 [18506] n3158
+-100 0
+1--- 0
+.names n3158 [4775] n3160 n3157 n444
+--01 1
+11-- 1
+.names n3010 n3100 n3104 n3137 n3138 n3160
+-0001 1
+-0010 1
+-1100 1
+-1111 1
+0-001 1
+0-010 1
+00-01 1
+00-10 1
+1-100 1
+1-111 1
+11-00 1
+11-11 1
+.names n3162 [4790] [18311] [18506] preset n449
+-1-00 1
+-11-0 1
+0-010 1
+.names n3163 n3028_1 n3070 n3162
+001 1
+010 1
+100 1
+111 1
+.names n3029 n3033_1 n3063 n3065 n3163
+-001 1
+0--1 1
+000- 1
+.names n3166 [4805] n2979_1 n3165 n454
+--01 1
+11-- 1
+.names n2825 n2888 preset [16933] n3165
+0100 1
+.names preset n2888 n2825 [16933] n3166
+-100 0
+1--- 0
+.names n3166 [4820] n3109 n3009 n3165 n459
+---11 1
+--1-1 1
+11--- 1
+.names [4835] n3169_1 preset n3177 n464
+-001 1
+1-00 1
+.names n3248 ppeaka_6_6_ n3170 n3241 n3169_1
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n3171 n3233 n2825 n3240 n3170
+-001 0
+0-01 0
+00-- 0
+.names n3172 n3216 n3224_1 n3231 n3232 n3171
+--1-0 1
+-1-00 1
+-110- 1
+1--00 1
+1-10- 1
+11--0 1
+111-- 1
+.names n3173 n3190 n3204_1 n3205 n3206 n3207 n3172
+----01 1
+-001-1 1
+-0010- 1
+1--1-1 1
+1--10- 1
+100--1 1
+100-0- 1
+.names ppeaks_1_1_ n3175 n3179_1 n3174_1 n3184_1 n3182 n3173
+-11010 1
+0---10 1
+.names n2856 n2841 n2826 n2862_1 n2917 [18025] n3174_1
+-11010 1
+1---10 1
+.names n3177 n2856 n2841 n2862_1 n2826 n3176 n3175
+--1011 0
+-1---1 0
+1----- 0
+.names n2916_1 [17206] n3176
+10 1
+.names n2873 n3178 [17817] [18467] n3177
+0100 1
+.names [18545] preset_0_0_ pdn [17024] n3178
+-000 1
+0-01 1
+.names n2862_1 n3180 n3181 n2841 n2826 n2856 n3179_1
+----00 1
+---0-0 1
+-00--- 1
+1----0 1
+.names n2935_1 [17115] n3180
+10 1
+.names n2921 [17180] n3181
+10 1
+.names n2856 n2841 n2826 n2862_1 n3183 n3182
+-1101 1
+1---1 1
+.names n2888 ppeakb_1_1_ [16933] n3183
+110 1
+.names n2856 n3186 n2841 n2826 n2862_1 n3185 n3184_1
+--1101 0
+-0---- 0
+1----1 0
+.names n2910 ppeaka_1_1_ [17245] n3185
+110 1
+.names [17232] [17180] [12920] n3187 n3188 n3189_1 n3186
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_1_1_ n3187
+--1011 1
+01---1 1
+.names n2873 [11315] [17635] [17986] n3188
+0110 1
+.names [12380] [17999] [18077] [17648] [9485] [17427] n3189_1
+---011 0
+101--- 0
+.names n3196 n3198 n3191 n3192 n3190
+--01 0
+01-- 0
+.names n2856 n2841 n2826 n2862_1 n2910 [17245] n3191
+-11010 1
+1---10 1
+.names n3194_1 n2856 n2841 n2862_1 n2826 n3193 n3192
+--1011 0
+-1---1 0
+0----- 0
+.names n2888 ppeaka_0_0_ [16933] n3193
+110 1
+.names [17635] [17986] [17037] [18025] n3195 n3194_1
+----0 0
+--01- 0
+10--- 0
+.names [17999] [18077] [17427] [17648] n3195
+--10 0
+01-- 0
+.names n2856 n2841 n2826 n2862_1 n3197 n3196
+-1101 1
+1---1 1
+.names n2888 ppeakb_0_0_ [16933] n3197
+110 1
+.names n2856 n3200 n2841 n2826 n2862_1 n3199_1 n3198
+--1101 0
+-0---- 0
+1----1 0
+.names n2910 ppeaka_0_0_ [17245] n3199_1
+110 1
+.names [17232] [17180] [13175] n3201 n3202 n3203 n3200
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_0_0_ n3201
+--1011 1
+01---1 1
+.names n2873 [11555] [17635] [17986] n3202
+0110 1
+.names [12605] [17999] [18077] [17648] [11630] [17427] n3203
+---011 0
+101--- 0
+.names n3196 n3198 ppeaks_0_0_ n3174_1 n3175 n3179_1 n3204_1
+---011 0
+010--- 0
+.names [17180] [17232] ppeaka_1_1_ [16933] n2825 n2888 n3205
+--1001 0
+10---- 0
+.names n2825 n2888 ppeaka_2_2_ [16933] n3206
+0110 1
+.names ppeaks_2_2_ n3175 n3179_1 n3174_1 n3210 n3208 n3207
+-11010 1
+0---10 1
+.names n2856 n2841 n2826 n2862_1 n3209_1 n3208
+-1101 1
+1---1 1
+.names n2888 ppeakb_2_2_ [16933] n3209_1
+110 1
+.names n2856 n3212 n2841 n2826 n2862_1 n3211 n3210
+--1101 0
+-0---- 0
+1----1 0
+.names n2910 ppeaka_2_2_ [17245] n3211
+110 1
+.names [17232] [17180] [12680] n3213 n3214_1 n3215 n3212
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_2_2_ n3213
+--1011 1
+01---1 1
+.names n2873 [11060] [17635] [17986] n3214_1
+0110 1
+.names [13100] [17999] [18077] [17648] [7535] [17427] n3215
+---011 0
+101--- 0
+.names ppeaks_3_3_ n3217 n3218 n3216
+-11 1
+0-1 1
+.names n3174_1 n3175 n3179_1 n3217
+011 1
+.names n2910 ppeaka_3_3_ [17245] n3220 n3219_1 n2825 n3218
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_3_3_ [16933] n3219_1
+110 1
+.names [17232] [17180] [12455] n3221 n3222 n3223 n3220
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_3_3_ n3221
+--1011 1
+01---1 1
+.names n2873 [10790] [17635] [17986] n3222
+0110 1
+.names [12845] [17999] [18077] [17648] [8165] [17427] n3223
+---011 0
+101--- 0
+.names ppeaks_4_4_ n3217 n3225 n3224_1
+-11 1
+0-1 1
+.names n2910 ppeaka_4_4_ [17245] n3227 n3226 n2825 n3225
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_4_4_ [16933] n3226
+110 1
+.names [17232] [17180] [12245] n3228 n3229_1 n3230 n3227
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_4_4_ n3228
+--1011 1
+01---1 1
+.names n2873 [10505] [17635] [17986] n3229_1
+0110 1
+.names [15035] [17999] [18077] [17648] [6230] [17427] n3230
+---011 0
+101--- 0
+.names n2825 n2888 ppeaka_3_3_ [16933] n3231
+0110 1
+.names n2825 n2888 ppeaka_4_4_ [16933] n3232
+0110 1
+.names ppeaks_5_5_ n3217 n3234_1 n3233
+-11 1
+0-1 1
+.names n2910 ppeaka_5_5_ [17245] n3236 n3235 n2825 n3234_1
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_5_5_ [16933] n3235
+110 1
+.names [17232] [17180] [6995] n3237 n3238 n3239_1 n3236
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_5_5_ n3237
+--1011 1
+01---1 1
+.names n2873 [10220] [17635] [17986] n3238
+0110 1
+.names [15395] [17999] [18077] [17648] [6905] [17427] n3239_1
+---011 0
+101--- 0
+.names n2888 ppeaka_5_5_ [16933] n3240
+110 1
+.names ppeaks_6_6_ n3217 n3242 n3241
+-11 1
+0-1 1
+.names n2910 ppeaka_6_6_ [17245] n3244_1 n3243 n2825 n3242
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_6_6_ [16933] n3243
+110 1
+.names [17232] [17180] [7625] n3245 n3246 n3247 n3244_1
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_6_6_ n3245
+--1011 1
+01---1 1
+.names n2873 [9950] [17635] [17986] n3246
+0110 1
+.names [14210] [17999] [18077] [17648] [4835] [17427] n3247
+---011 0
+101--- 0
+.names n2825 n2984 n3248
+01 1
+.names n3250 [4850] [17635] [17986] preset n469
+-1-10 1
+-10-0 1
+0-100 1
+.names n3248 ppeaka_10_10_ n3251 n3279 n3250
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n3252 n3271 n2825 n3278 n3251
+-001 0
+0-01 0
+00-- 0
+.names n3253 n3255 n3262 n3269 n3270 n2825 n3252
+--0-10 0
+-0-110 0
+-001-0 0
+0--110 0
+0-01-0 0
+00--10 0
+000--- 0
+.names n3171 n3241 n3233 n3240 n3254_1 n2825 n3253
+--0110 0
+-0--10 0
+-001-0 0
+0--110 0
+0-0-10 0
+00-1-0 0
+000--- 0
+.names n2888 ppeaka_6_6_ [16933] n3254_1
+110 1
+.names ppeaks_7_7_ n3217 n3256 n3255
+-11 1
+0-1 1
+.names n2910 ppeaka_7_7_ [17245] n3258 n3257 n2825 n3256
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_7_7_ [16933] n3257
+110 1
+.names [17232] [17180] [8255] n3259_1 n3260 n3261 n3258
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_7_7_ n3259_1
+--1011 1
+01---1 1
+.names n2873 [11075] [17635] [17986] n3260
+0110 1
+.names [14630] [17999] [18077] [17648] [5540] [17427] n3261
+---011 0
+101--- 0
+.names ppeaks_8_8_ n3217 n3263 n3262
+-11 1
+0-1 1
+.names n2910 ppeaka_8_8_ [17245] n3265 n3264_1 n2825 n3263
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_8_8_ [16933] n3264_1
+110 1
+.names [17232] [17180] [8915] n3266 n3267 n3268_1 n3265
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_8_8_ n3266
+--1011 1
+01---1 1
+.names n2873 [11330] [17635] [17986] n3267
+0110 1
+.names [13460] [17999] [18077] [17648] [11420] [17427] n3268_1
+---011 0
+101--- 0
+.names n2888 ppeaka_7_7_ [16933] n3269
+110 1
+.names n2888 ppeaka_8_8_ [16933] n3270
+110 1
+.names ppeaks_9_9_ n3217 n3272_1 n3271
+-11 1
+0-1 1
+.names n2910 ppeaka_9_9_ [17245] n3274 n3273 n2825 n3272_1
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_9_9_ [16933] n3273
+110 1
+.names [17232] [17180] [9590] n3275 n3276_1 n3277 n3274
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_9_9_ n3275
+--1011 1
+01---1 1
+.names n2873 [11570] [17635] [17986] n3276_1
+0110 1
+.names [13820] [17999] [18077] [17648] [11645] [17427] n3277
+---011 0
+101--- 0
+.names n2888 ppeaka_9_9_ [16933] n3278
+110 1
+.names ppeaks_10_10_ n3217 n3280 n3279
+-11 1
+0-1 1
+.names n2910 ppeaka_10_10_ [17245] n3282 n3281_1 n2825 n3280
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_10_10_ [16933] n3281_1
+110 1
+.names [17232] [17180] [9860] n3283 n3284 n3285 n3282
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_10_10_ n3283
+--1011 1
+01---1 1
+.names n2873 [11795] [17635] [17986] n3284
+0110 1
+.names [12860] [17999] [18077] [17648] [10925] [17427] n3285
+---011 0
+101--- 0
+.names n3174_1 preset [4865] n3288 n3287 n474
+---10 1
+001-- 1
+.names n3172 n3216 n3248 n3231 ppeaka_4_4_ n3224_1 n3287
+-0-100 1
+-001-0 1
+-01111 1
+-1-001 1
+-100-1 1
+-11010 1
+0--100 1
+0-01-0 1
+0-1111 1
+00--00 1
+000--0 1
+001-11 1
+1--001 1
+1-00-1 1
+1-1010 1
+11--01 1
+110--1 1
+111-10 1
+.names n2825 n2917 preset [18025] n3288
+0100 1
+.names n3174_1 preset [4880] n3290 n3288 n3333 n479
+---010 1
+---111 1
+001--- 1
+.names n3291_1 n3317 n3324 n3331_1 n3332 n3310 n3290
+--0-10 1
+--1-01 1
+-0-110 1
+-001-0 1
+-1-001 1
+-110-1 1
+0--110 1
+0-01-0 1
+00--10 1
+000--0 1
+1--001 1
+1-10-1 1
+11--01 1
+111--1 1
+.names n3292 n3294 n3301_1 n3308 n3309 n2825 n3291_1
+--0-10 0
+-0-110 0
+-001-0 0
+0--110 0
+0-01-0 0
+00--10 0
+000--- 0
+.names n3252 n3279 n3271 n3278 n3293 n2825 n3292
+--0110 0
+-0--10 0
+-001-0 0
+0--110 0
+0-0-10 0
+00-1-0 0
+000--- 0
+.names n2888 ppeaka_10_10_ [16933] n3293
+110 1
+.names ppeaks_11_11_ n3217 n3295 n3294
+-11 1
+0-1 1
+.names n2910 ppeaka_11_11_ [17245] n3297 n3296_1 n2825 n3295
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_11_11_ [16933] n3296_1
+110 1
+.names [17232] [17180] [10130] n3298 n3299 n3300 n3297
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_11_11_ n3298
+--1011 1
+01---1 1
+.names n2873 [11915] [17635] [17986] n3299
+0110 1
+.names [16100] [17427] [17648] [13115] [17999] [18077] n3300
+---101 0
+110--- 0
+.names ppeaks_12_12_ n3217 n3302 n3301_1
+-11 1
+0-1 1
+.names n2910 ppeaka_12_12_ [17245] n3304 n3303 n2825 n3302
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_12_12_ [16933] n3303
+110 1
+.names [17232] [17180] [10415] n3305 n3306_1 n3307 n3304
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_12_12_ n3305
+--1011 1
+01---1 1
+.names n2873 [12050] [17635] [17986] n3306_1
+0110 1
+.names [15755] [17427] [17648] [12395] [17999] [18077] n3307
+---101 0
+110--- 0
+.names n2888 ppeaka_11_11_ [16933] n3308
+110 1
+.names n2888 ppeaka_12_12_ [16933] n3309
+110 1
+.names ppeaks_15_15_ n3217 n3311_1 n3310
+-11 1
+0-1 1
+.names n2910 ppeaka_15_15_ [17245] n3313 n3312 n2825 n3311_1
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_15_15_ [16933] n3312
+110 1
+.names [17232] [17180] [6320] n3314 n3315 n3316_1 n3313
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_15_15_ n3314
+--1011 1
+01---1 1
+.names n2873 [12470] [17635] [17986] n3315
+0110 1
+.names [15050] [17999] [18077] [17648] [14615] [17427] n3316_1
+---011 0
+101--- 0
+.names ppeaks_13_13_ n3217 n3318 n3317
+-11 1
+0-1 1
+.names n2910 ppeaka_13_13_ [17245] n3320 n3319 n2825 n3318
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_13_13_ [16933] n3319
+110 1
+.names [17232] [17180] [10700] n3321_1 n3322 n3323 n3320
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_13_13_ n3321_1
+--1011 1
+01---1 1
+.names n2873 [12170] [17635] [17986] n3322
+0110 1
+.names [13805] [17427] [17648] [12620] [17999] [18077] n3323
+---101 0
+110--- 0
+.names ppeaks_14_14_ n3217 n3325 n3324
+-11 1
+0-1 1
+.names n2910 ppeaka_14_14_ [17245] n3327 n3326_1 n2825 n3325
+----10 0
+---0-- 0
+110--0 0
+.names n2888 ppeakb_14_14_ [16933] n3326_1
+110 1
+.names [17232] [17180] [10985] n3328 n3329 n3330 n3327
+--0001 1
+-0-001 1
+1--001 1
+.names [17037] [18025] [17635] [17986] n2873 ppeakp_14_14_ n3328
+--1011 1
+01---1 1
+.names n2873 [12260] [17635] [17986] n3329
+0110 1
+.names [15410] [17999] [18077] [17648] [13445] [17427] n3330
+---011 0
+101--- 0
+.names n2825 n2888 ppeaka_13_13_ [16933] n3331_1
+0110 1
+.names n2825 n2888 ppeaka_14_14_ [16933] n3332
+0110 1
+.names n2825 n2888 ppeaka_15_15_ [16933] n3333
+0110 1
+.names n3335 [4895] [17037] [18025] preset n484
+-1-00 1
+-11-0 1
+0-010 1
+.names n3248 ppeaka_9_9_ n3252 n3271 n3335
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n3339 [4910] n3337 n3338 n489
+--01 1
+11-- 1
+.names n3248 ppeaka_3_3_ n3172 n3216 n3337
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n2825 n2916_1 preset [17206] n3338
+0100 1
+.names n3176 n2825 preset n3339
+-10 1
+0-0 1
+.names n3166 [4925] n3341_1 n3165 n494
+--01 1
+11-- 1
+.names n3342 ppeaks_0_0_ n3217 n3343 n3205 n3173 n3341_1
+--0001 1
+--0010 1
+--1100 1
+--1111 1
+-0-100 1
+-0-111 1
+-10-01 1
+-10-10 1
+0--001 1
+0--010 1
+1-1-00 1
+1-1-11 1
+.names n3191 n3192 n3342
+01 1
+.names n3196 n3198 n3343
+01 1
+.names n3166 [4940] n3345 n3165 n499
+--01 1
+11-- 1
+.names n3248 ppeaka_12_12_ n3346_1 n3301_1 n3345
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n3292 n3294 n2825 n3308 n3346_1
+-001 0
+0-01 0
+00-- 0
+.names n3191 preset [4955] n3348 n3169_1 n504
+---10 1
+001-- 1
+.names n2825 n2910 preset [17245] n3348
+0100 1
+.names pdata_1_1_ [4970] [17791] [17843] preset n509
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_0_0_ n2814_1 n3353 n3355 n3356_1 n3351_1 n514
+-11111 0
+0-1111 0
+.names n2879 [8405] [4355] n2875 n3352 n3351_1
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [7835] [4310] n2870 n2817 n3352
+---110 0
+111--0 0
+.names n2817 n2866 n2886 ppeaka_0_0_ n3354 n3353
+----0 0
+0101- 0
+.names n2885 [15605] [5900] n2884 n2817 n2866 n3354
+--1101 0
+11--01 0
+.names n2889 [15995] [10550] n2888 n2817 n2866 n3355
+--1101 0
+11--01 0
+.names n2892_1 [13655] [4580] n2891 n2817 n2866 n3356_1
+--1101 0
+11--01 0
+.names ppeakp_7_7_ n2905 n3359 n3362 n3358 n518
+-0111 0
+0-111 0
+.names n2902_1 n2903 n2875 ppeaka_7_7_ ppeakb_7_7_ n3358
+--000 1
+-000- 1
+1-0-0 1
+10-11 1
+.names n2879 n2912_1 ppeaka_8_8_ [12335] n3360 n3361_1 n3359
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n2888 [10460] [4430] n2885 n2817 n2866 n3360
+--1101 0
+11--01 0
+.names n2911 [5180] n2910 [7025] n2817 n2866 n3361_1
+--1101 0
+11--01 0
+.names n2817 n2866 n2917 [13985] n3363 n3362
+----0 0
+0111- 0
+.names n2916_1 [10970] [7055] n2915 n2817 n2866 n3363
+--1101 0
+11--01 0
+.names n2866 n2921 [9620] n3365 [5015] n2919 n522
+----10 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [9200] [8180] n2870 n3365
+---11 0
+111-- 0
+.names n2866 n2921 [9605] n3367 [5030] n2919 n527
+----10 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [9185] n2870 [13835] n3367
+---11 0
+111-- 0
+.names n2879 [14975] n2875 [11120] n3372 n3369 n532
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [6875] n3371_1 n3370 n3369
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [11765] n2870 [15035] n2817 n3370
+---110 0
+011--0 0
+.names n2885 [8015] [4715] n2874 n2817 n2866 n3371_1
+--1101 0
+11--01 0
+.names ppeaks_4_4_ n2929 n3374 n3375 n3376_1 n3373 n3372
+-11111 1
+0-1111 1
+.names n2891 [9785] n2889 [13790] n2817 n2866 n3373
+--1101 0
+11--01 0
+.names n2892_1 [12350] [9380] n2884 n2817 n2866 n3374
+--1101 0
+11--01 0
+.names n2921 [12245] n2935_1 [14675] n2817 n2866 n3375
+--1101 0
+11--01 0
+.names n2916_1 [5615] [4865] n2917 n2817 n2866 n3376_1
+--1101 0
+11--01 0
+.names n2948 ppeaka_11_11_ n3378 ppeakp_11_11_ n2938 n536
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [6290] n2891 ppeakb_11_11_ n3379 n2866 n3378
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [12020] [5555] n2871 n3379
+---10 0
+011-- 0
+.names pdata_1_1_ [5075] [17453] [18246] preset n540
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_10_10_ [5090] [17453] [18246] preset n545
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_2_2_ [5105] [17102] [17154] preset n550
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_11_11_ [5120] [17102] [17154] preset n555
+-1-10 1
+-10-0 1
+1-100 1
+.names [5135] pdata_8_8_ preset n2959 n560
+-101 1
+1-00 1
+.names [5150] pdata_1_1_ preset n2959 n565
+-101 1
+1-00 1
+.names [5165] pdata_14_14_ preset n2959 n570
+-101 1
+1-00 1
+.names pdata_7_7_ [5180] [17167] [17362] preset n575
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_4_4_ [5195] [17284] [18376] preset n580
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_13_13_ [5210] [17284] [18376] preset n585
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_10_10_ n2967 n2825 [5225] preset n590
+--110 1
+-0-10 1
+110-0 1
+.names pdata_5_5_ n2969 n2825 [5240] preset n595
+--110 1
+-0-10 1
+110-0 1
+.names pdata_11_11_ n2971 n2825 [5255] preset n600
+--110 1
+-0-10 1
+110-0 1
+.names [5270] pdata_4_4_ preset n2973 n605
+-101 1
+1-00 1
+.names [5285] pdata_1_1_ preset n2973 n610
+-101 1
+1-00 1
+.names [5300] pdata_10_10_ preset n2973 n615
+-101 1
+1-00 1
+.names pdata_7_7_ [5315] [17310] [17388] preset n620
+-1-00 1
+-11-0 1
+1-010 1
+.names n3007 [5330] n3398_1 n4161 n625
+--01 1
+11-- 1
+.names n2993_1 n2997 n3398_1
+00 1
+11 1
+.names n3007 [5345] n3160 n4161 n630
+--01 1
+11-- 1
+.names n2986 preset [5360] n3109 n3009 n3401 n635
+----11 1
+---1-1 1
+001--- 1
+.names preset [18103] [18168] n3401
+001 1
+.names n3116_1 [5375] n3117 n3121_1 n640
+--10 1
+11-- 1
+.names n3398_1 [5390] [18285] [18363] preset n645
+-1-10 1
+-10-0 1
+0-100 1
+.names n2996 preset [5405] n3405 n650
+---1 1
+001- 1
+.names n3151 n3152 n3026 n3075 n3406 n3405
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names preset [18285] [18363] n3406
+010 1
+.names n3123 [5420] n3114 n3122 n655
+--01 1
+11-- 1
+.names n3123 [5435] n3409 n3122 n660
+--01 1
+11-- 1
+.names n3010 n3100 n3137 n3104 n3138 n3410 n3409
+--0-01 1
+--1-10 1
+-0-001 1
+-000-1 1
+-1-110 1
+-111-0 1
+0--001 1
+0-00-1 1
+00--01 1
+000--1 1
+1--110 1
+1-11-0 1
+11--10 1
+111--0 1
+.names n3103 n3128 n3127 ppeaka_14_14_ n3143 n3410
+--0-1 1
+--110 1
+-1-01 1
+001-0 1
+1--01 1
+.names n3154 preset [5450] n3119 n4548 n665
+---01 1
+001-- 1
+.names n3415 preset [5465] n3413 n670
+---1 1
+001- 1
+.names n3151 n3152 n3026 n3075 n4107 n3413
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n2825 n2889 preset [17297] n4107
+0100 1
+.names n2825 n2971 n3415
+01 1
+.names n3158 [5480] n3409 n3157 n675
+--01 1
+11-- 1
+.names n3418 [5495] [18311] [18506] preset n680
+-1-00 1
+-11-0 1
+0-010 1
+.names n3033_1 n3063 n3029 n3065 n3418
+-100 1
+-111 1
+0001 1
+0010 1
+1-00 1
+1-11 1
+.names n3166 [5510] n3156 n3165 n685
+--01 1
+11-- 1
+.names n3166 [5525] n3112 n3165 n690
+--01 1
+11-- 1
+.names [5540] n3422_1 preset n3177 n695
+-001 1
+1-00 1
+.names n3248 ppeaka_7_7_ n3253 n3255 n3422_1
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n3424 [5555] [17635] [17986] preset n700
+-1-10 1
+-10-0 1
+0-100 1
+.names n3248 ppeaka_11_11_ n3292 n3294 n3424
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n3174_1 preset [5570] n3288 n3337 n705
+---10 1
+001-- 1
+.names n3427_1 [5600] [17037] [18025] preset n710
+-1-00 1
+-11-0 1
+0-010 1
+.names n3248 ppeaka_8_8_ n3428 n3262 n3427_1
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n3253 n3255 n2825 n3269 n3428
+-001 0
+0-01 0
+00-- 0
+.names n3339 [5615] n3287 n3338 n715
+--01 1
+11-- 1
+.names n3427_1 [5630] [17180] [17232] preset n720
+-1-10 1
+-10-0 1
+0-100 1
+.names n3166 [5645] n3432_1 n3165 n725
+--01 1
+11-- 1
+.names n3248 ppeaka_13_13_ n3291_1 n3317 n3432_1
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n3191 preset [5660] n3348 n3434 n730
+---10 1
+001-- 1
+.names n3248 ppeaka_5_5_ n3171 n3233 n3434
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names pdata_0_0_ [5675] [17791] [17843] preset n735
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_10_10_ n2814_1 n3439 n3441 n3442_1 n3437_1 n740
+-11111 0
+0-1111 0
+.names n2879 [14810] [5090] n2875 n3438 n3437_1
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [7220] [5015] n2870 n2817 n3438
+---110 0
+111--0 0
+.names n2817 n2866 n2886 ppeaka_10_10_ n3440 n3439
+----0 0
+0101- 0
+.names n2885 [15230] [5225] n2884 n2817 n2866 n3440
+--1101 0
+11--01 0
+.names n2889 [4550] n2888 [10850] n2817 n2866 n3441
+--1101 0
+11--01 0
+.names n2892_1 [14060] [5300] n2891 n2817 n2866 n3442_1
+--1101 0
+11--01 0
+.names ppeakp_8_8_ n2905 n3445 n3448 n3444 n744
+-0111 0
+0-111 0
+.names n2902_1 n2903 n2875 ppeaka_8_8_ ppeakb_8_8_ n3444
+--000 1
+-000- 1
+1-0-0 1
+10-11 1
+.names n2879 n2912_1 ppeaka_9_9_ [15695] n3446 n3447_1 n3445
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n2888 [10175] [5135] n2885 n2817 n2866 n3446
+--1101 0
+11--01 0
+.names n2911 [4475] n2910 [6350] n2817 n2866 n3447_1
+--1101 0
+11--01 0
+.names n2817 n2866 n2917 [14405] n3449 n3448
+----0 0
+0111- 0
+.names n2916_1 [11225] [6410] n2915 n2817 n2866 n3449
+--1101 0
+11--01 0
+.names n2866 n2921 [8945] n3451 [5720] n2919 n748
+----10 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [7265] n2870 [7550] n3451
+---11 0
+111-- 0
+.names n2879 [6725] n2875 [11375] n3456 n3453 n753
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [6215] n3455 n3454 n3453
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [11900] n2870 [15410] n2817 n3454
+---110 0
+011--0 0
+.names n2885 [7400] [5435] n2874 n2817 n2866 n3455
+--1101 0
+11--01 0
+.names ppeaks_14_14_ n2929 n3458 n3459 n3460 n3457_1 n3456
+-11111 1
+0-1111 1
+.names n2891 [10055] [8735] n2889 n2817 n2866 n3457_1
+--1101 0
+11--01 0
+.names n2892_1 [13070] n2884 [16070] n2817 n2866 n3458
+--1101 0
+11--01 0
+.names n2921 [10985] n2935_1 [14270] n2817 n2866 n3459
+--1101 0
+11--01 0
+.names n2916_1 [12650] [9560] n2917 n2817 n2866 n3460
+--1101 0
+11--01 0
+.names n2879 [13745] n2875 [9275] n3465 n3462_1 n757
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2916_1 [10970] n3464 n3463 n3462_1
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [11540] n2870 [14630] n2817 n3463
+---110 0
+011--0 0
+.names n2888 [11405] [6785] n2874 n2817 n2866 n3464
+--1101 0
+11--01 0
+.names ppeaks_7_7_ n2929 n3467_1 n3468 n3469 n3466 n3465
+-11111 1
+0-1111 1
+.names n2891 [4790] n2889 [12830] n2817 n2866 n3466
+--1101 0
+11--01 0
+.names n2892_1 [15005] [6140] n2884 n2817 n2866 n3467_1
+--1101 0
+11--01 0
+.names n2921 [8255] [6770] n2885 n2817 n2866 n3468
+--1101 0
+11--01 0
+.names n2935_1 [12905] [8225] n2917 n2817 n2866 n3469
+--1101 0
+11--01 0
+.names n2948 ppeaka_12_12_ n3471 ppeakp_12_12_ n2938 n761
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [11210] ppeakb_12_12_ n2891 n3472_1 n2866 n3471
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [11030] [8855] n2871 n3472_1
+---10 0
+011-- 0
+.names pdata_2_2_ [5780] [17453] [18246] preset n765
+-1-10 1
+-10-0 1
+1-100 1
+.names [5795] pdata_4_4_ preset n2952 n770
+-101 1
+1-00 1
+.names [5810] pdata_8_8_ preset n2952 n775
+-101 1
+1-00 1
+.names [5825] pdata_9_9_ preset n2959 n780
+-101 1
+1-00 1
+.names [5840] pdata_4_4_ preset n2959 n785
+-101 1
+1-00 1
+.names [5855] pdata_11_11_ preset n2959 n790
+-101 1
+1-00 1
+.names pdata_6_6_ [5870] [17167] [17362] preset n795
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_5_5_ [5885] [17284] [18376] preset n800
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_0_0_ n2967 n2825 [5900] preset n805
+--110 1
+-0-10 1
+110-0 1
+.names pdata_7_7_ n2967 n2825 [5915] preset n810
+--110 1
+-0-10 1
+110-0 1
+.names pdata_11_11_ n2967 n2825 [5930] preset n815
+--110 1
+-0-10 1
+110-0 1
+.names pdata_12_12_ n2971 n2825 [5945] preset n820
+--110 1
+-0-10 1
+110-0 1
+.names [5960] pdata_7_7_ preset n2973 n825
+-101 1
+1-00 1
+.names [5975] pdata_14_14_ preset n2973 n830
+-101 1
+1-00 1
+.names [5990] pdata_9_9_ preset n2973 n835
+-101 1
+1-00 1
+.names pdata_8_8_ [6005] [17310] [17388] preset n840
+-1-00 1
+-11-0 1
+1-010 1
+.names n3007 [6020] n3490 n4161 n845
+--01 1
+11-- 1
+.names n3042_1 n3047 n3056_1 n3490
+001 1
+010 1
+100 1
+111 1
+.names n3007 [6035] n3119 n4161 n850
+--01 1
+11-- 1
+.names n3160 [6050] [18103] [18168] preset n855
+-1-00 1
+-11-0 1
+0-010 1
+.names n3116_1 [6065] n3117 n3162 n860
+--10 1
+11-- 1
+.names n3116_1 [6080] n3117 n3409 n865
+--10 1
+11-- 1
+.names n2996 preset [6095] n3496 n870
+---1 1
+001- 1
+.names n3497_1 n3012 n3080 n3406 n3496
+0001 1
+0111 1
+1011 1
+1101 1
+.names n3163 n3028_1 n3070 n3497_1
+-11 1
+1-1 1
+11- 1
+.names n3123 [6110] n3418 n3122 n875
+--01 1
+11-- 1
+.names n3154 preset [6125] n3398_1 n4548 n880
+---01 1
+001-- 1
+.names n3154 preset [6140] n3162 n4548 n885
+---01 1
+001-- 1
+.names n3415 preset [6155] n3119 n4107 n890
+---01 1
+001-- 1
+.names n3158 [6170] n3121_1 n3157 n895
+--01 1
+11-- 1
+.names n3114 [6185] [18311] [18506] preset n900
+-1-00 1
+-11-0 1
+0-010 1
+.names n3166 [6200] n3490 n3165 n905
+--01 1
+11-- 1
+.names n3166 [6215] n3409 n3165 n910
+--01 1
+11-- 1
+.names [6230] n3287 preset n3177 n915
+-001 1
+1-00 1
+.names n3422_1 [6245] [17999] [18077] preset n920
+-1-00 1
+-11-0 1
+0-010 1
+.names n3341_1 [6260] [17635] [17986] preset n925
+-1-10 1
+-10-0 1
+0-100 1
+.names n3510 [6275] [17037] [18025] preset n930
+-1-00 1
+-11-0 1
+0-010 1
+.names ppeaks_0_0_ n3342 n3343 n3217 n3510
+-011 0
+-101 0
+0-10 0
+.names n3424 [6290] [17037] [18025] preset n935
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [6305] n3341_1 n3338 n940
+--01 1
+11-- 1
+.names n3514 [6320] n3290 n3515 n3333 n945
+--010 1
+--111 1
+11--- 1
+.names n3181 n2825 preset n3514
+-10 1
+0-0 1
+.names n2825 n2921 preset [17180] n3515
+0100 1
+.names n3166 [6335] n3517_1 n3165 n950
+--01 1
+11-- 1
+.names n3291_1 n3317 n3248 n3331_1 ppeaka_14_14_ n3324 n3517_1
+-0-100 1
+-001-0 1
+-01111 1
+-1-001 1
+-100-1 1
+-11010 1
+0--100 1
+0-01-0 1
+0-1111 1
+00--00 1
+000--0 1
+001-11 1
+1--001 1
+1-00-1 1
+1-1010 1
+11--01 1
+110--1 1
+111-10 1
+.names n3191 preset [6350] n3348 n3427_1 n955
+---10 1
+001-- 1
+.names n3191 preset [6365] n3290 n3333 n3348 n960
+---001 1
+---111 1
+001--- 1
+.names ppeakb_11_11_ n2814_1 n3523 n3525_1 n3526 n3521_1 n965
+-11111 0
+0-1111 0
+.names n2879 [15890] [4370] n2875 n3522 n3521_1
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [9155] [4295] n2870 n2817 n3522
+---110 0
+111--0 0
+.names n2817 n2866 n2886 ppeaka_11_11_ n3524 n3523
+----0 0
+0101- 0
+.names n2885 [5855] n2884 [5930] n2817 n2866 n3524
+--1101 0
+11--01 0
+.names n2889 [5255] n2888 [14090] n2817 n2866 n3525_1
+--1101 0
+11--01 0
+.names n2892_1 [14480] [4595] n2891 n2817 n2866 n3526
+--1101 0
+11--01 0
+.names ppeakb_2_2_ n2814_1 n3530 n3532 n3533 n3528 n969
+-11111 0
+0-1111 0
+.names n2879 [7130] [5780] n2875 n3529_1 n3528
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [9140] n2870 [15515] n2817 n3529_1
+---110 0
+111--0 0
+.names n2817 n2866 n2886 ppeaka_2_2_ n3531 n3530
+----0 0
+0101- 0
+.names n2885 [4445] n2884 [13640] n2817 n2866 n3531
+--1101 0
+11--01 0
+.names n2889 [15290] [7310] n2888 n2817 n2866 n3532
+--1101 0
+11--01 0
+.names n2892_1 [14465] [8555] n2891 n2817 n2866 n3533
+--1101 0
+11--01 0
+.names n2866 n2921 [5630] n3535 n2919 [6410] n973
+----01 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [7895] [6920] n2870 n3535
+---11 0
+111-- 0
+.names n2879 [7355] n2875 [15320] n3540 n3537 n978
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [11180] n3539 n3538_1 n3537
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [11780] n2870 [15050] n2817 n3538_1
+---110 0
+011--0 0
+.names n2885 [10580] [4730] n2874 n2817 n2866 n3539
+--1101 0
+11--01 0
+.names ppeaks_15_15_ n2929 n3542_1 n3543 n3544 n3541 n3540
+-11111 1
+0-1111 1
+.names n2891 [8150] n2889 [9395] n2817 n2866 n3541
+--1101 0
+11--01 0
+.names n2892_1 [12365] n2884 [15725] n2817 n2866 n3542_1
+--1101 0
+11--01 0
+.names n2921 [6320] n2935_1 [13880] n2817 n2866 n3543
+--1101 0
+11--01 0
+.names n2916_1 [12425] [4880] n2917 n2817 n2866 n3544
+--1101 0
+11--01 0
+.names n2879 [14135] n2875 [8615] n3549 n3546 n982
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2916_1 [11690] n3548 n3547_1 n3546
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [11300] n2870 [14210] n2817 n3547_1
+---110 0
+011--0 0
+.names n2888 [11165] [6110] n2874 n2817 n2866 n3548
+--1101 0
+11--01 0
+.names ppeaks_6_6_ n2929 n3551 n3552_1 n3553 n3550 n3549
+-11111 1
+0-1111 1
+.names n2891 [5495] n2889 [13085] n2817 n2866 n3550
+--1101 0
+11--01 0
+.names n2892_1 [16085] [8075] n2884 n2817 n2866 n3551
+--1101 0
+11--01 0
+.names n2921 [7625] n2885 [10565] n2817 n2866 n3552_1
+--1101 0
+11--01 0
+.names n2935_1 [13865] [8870] n2917 n2817 n2866 n3553
+--1101 0
+11--01 0
+.names n2948 ppeaka_13_13_ n3555 ppeakp_13_13_ n2938 n986
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [10955] n2891 ppeakb_13_13_ n3556 n2866 n3555
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [10760] [9530] n2871 n3556
+---10 0
+011-- 0
+.names pdata_12_12_ [6470] [17453] [18246] preset n990
+-1-10 1
+-10-0 1
+1-100 1
+.names [6485] pdata_5_5_ preset n2952 n995
+-101 1
+1-00 1
+.names [6500] pdata_7_7_ preset n2952 n1000
+-101 1
+1-00 1
+.names [6515] pdata_10_10_ preset n2959 n1005
+-101 1
+1-00 1
+.names [6530] pdata_3_3_ preset n2959 n1010
+-101 1
+1-00 1
+.names [6545] pdata_12_12_ preset n2959 n1015
+-101 1
+1-00 1
+.names pdata_5_5_ [6560] [17167] [17362] preset n1020
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_6_6_ [6575] [17284] [18376] preset n1025
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_15_15_ [6590] [17284] [18376] preset n1030
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_8_8_ n2967 n2825 [6605] preset n1035
+--110 1
+-0-10 1
+110-0 1
+.names pdata_13_13_ n2971 n2825 [6620] preset n1040
+--110 1
+-0-10 1
+110-0 1
+.names [6635] pdata_6_6_ preset n2973 n1045
+-101 1
+1-00 1
+.names [6650] pdata_15_15_ preset n2973 n1050
+-101 1
+1-00 1
+.names [6665] pdata_8_8_ preset n2973 n1055
+-101 1
+1-00 1
+.names pdata_9_9_ [6680] [17310] [17388] preset n1060
+-1-00 1
+-11-0 1
+1-010 1
+.names n3007 [6695] n3156 n4161 n1065
+--01 1
+11-- 1
+.names n3007 [6710] n3112 n4161 n1070
+--01 1
+11-- 1
+.names n3409 [6725] [18103] [18168] preset n1075
+-1-00 1
+-11-0 1
+0-010 1
+.names n3116_1 [6740] n3117 n3418 n1080
+--10 1
+11-- 1
+.names n3577_1 n3136_1 n3126_1 n3143 n3125 n3117 n1085
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n3116_1 [6755] n3577_1
+11 1
+.names n3162 [6770] [18285] [18363] preset n1090
+-1-10 1
+-10-0 1
+0-100 1
+.names n3123 [6785] n3162 n3122 n1095
+--01 1
+11-- 1
+.names n3154 preset [6815] n3581 n1100
+---1 1
+001- 1
+.names n3497_1 n3012 n3080 n4548 n3581
+0001 1
+0111 1
+1011 1
+1101 1
+.names n3415 preset [6830] n3112 n4107 n1105
+---01 1
+001-- 1
+.names n3158 [6845] n3490 n3157 n1110
+--01 1
+11-- 1
+.names n3158 [6860] n3109 n3009 n3157 n1115
+---11 1
+--1-1 1
+11--- 1
+.names n3166 [6875] n3121_1 n3165 n1120
+--01 1
+11-- 1
+.names n3166 [6890] n3160 n3165 n1125
+--01 1
+11-- 1
+.names [6905] n3434 preset n3177 n1130
+-001 1
+1-00 1
+.names n3427_1 [6920] [17999] [18077] preset n1135
+-1-00 1
+-11-0 1
+0-010 1
+.names n3510 [6935] [17635] [17986] preset n1140
+-1-10 1
+-10-0 1
+0-100 1
+.names n3341_1 [6950] [17037] [18025] preset n1145
+-1-00 1
+-11-0 1
+0-010 1
+.names n3250 [6965] [17037] [18025] preset n1150
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [6980] n3593 n3338 n1155
+--01 1
+11-- 1
+.names n3248 ppeaka_2_2_ n3207 n3594 n3593
+-000 1
+-011 1
+0-00 1
+0-11 1
+1101 1
+1110 1
+.names n3173 n3190 n3204_1 n3205 n3594
+-001 1
+1--1 1
+100- 1
+.names n3514 [6995] n3515 n3434 n1160
+--10 1
+11-- 1
+.names n3166 [7010] n3290 n3333 n3165 n1165
+--001 1
+--111 1
+11--- 1
+.names n3191 preset [7025] n3348 n3422_1 n1170
+---10 1
+001-- 1
+.names n2866 n2921 [11240] n3599 [7055] n2919 n1175
+----10 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [5960] n2870 [6245] n3599
+---11 0
+111-- 0
+.names n2879 [5360] n2875 [4640] n3604 n3601 n1180
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [4820] n3603 n3602_1 n3601
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [9680] n2870 [12395] n2817 n3602_1
+---110 0
+011--0 0
+.names n2885 [8675] n2874 [9365] n2817 n2866 n3603
+--1101 0
+11--01 0
+.names ppeaks_12_12_ n2929 n3606 n3607_1 n3608 n3605 n3604
+-11111 1
+0-1111 1
+.names n2891 [10625] [7460] n2889 n2817 n2866 n3605
+--1101 0
+11--01 0
+.names n2892_1 [13775] [11615] n2884 n2817 n2866 n3606
+--1101 0
+11--01 0
+.names n2921 [10415] n2935_1 [15065] n2817 n2866 n3607_1
+--1101 0
+11--01 0
+.names n2916_1 [14660] [9845] n2917 n2817 n2866 n3608
+--1101 0
+11--01 0
+.names n2879 [16055] n2875 [4625] n3613 n3610 n1184
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [4805] n3612_1 n3611 n3610
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [9665] n2870 [12380] n2817 n3611
+---110 0
+011--0 0
+.names n2885 [8660] [8045] n2874 n2817 n2866 n3612_1
+--1101 0
+11--01 0
+.names ppeaks_1_1_ n2929 n3615 n3616 n3617_1 n3614 n3613
+-11111 1
+0-1111 1
+.names n2891 [8120] n2889 [15020] n2817 n2866 n3614
+--1101 0
+11--01 0
+.names n2892_1 [14570] [11150] n2884 n2817 n2866 n3615
+--1101 0
+11--01 0
+.names n2921 [12920] [12005] n2935_1 n2817 n2866 n3616
+--1101 0
+11--01 0
+.names n2916_1 [6305] n2917 [9830] n2817 n2866 n3617_1
+--1101 0
+11--01 0
+.names n2948 ppeaka_3_3_ n3619 ppeakp_3_3_ n2938 n1188
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [11195] n2891 ppeakb_3_3_ n3620 n2866 n3619
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [15785] [7565] n2871 n3620
+---10 0
+011-- 0
+.names pdata_7_7_ [7115] [17453] [18246] preset n1192
+-1-10 1
+-10-0 1
+1-100 1
+.names [7130] pdata_2_2_ preset n2952 n1197
+-101 1
+1-00 1
+.names [7145] pdata_11_11_ preset n2959 n1202
+-101 1
+1-00 1
+.names [7160] pdata_6_6_ preset n2959 n1207
+-101 1
+1-00 1
+.names pdata_1_1_ [7175] [17167] [17362] preset n1212
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_12_12_ [7190] [17167] [17362] preset n1217
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_15_15_ [7205] [17167] [17362] preset n1222
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_10_10_ [7220] [17284] [18376] preset n1227
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_5_5_ n2967 n2825 [7235] preset n1232
+--110 1
+-0-10 1
+110-0 1
+.names pdata_14_14_ n2971 n2825 [7250] preset n1237
+--110 1
+-0-10 1
+110-0 1
+.names [7265] pdata_9_9_ preset n2973 n1242
+-101 1
+1-00 1
+.names [7280] pdata_4_4_ preset n2973 n1247
+-101 1
+1-00 1
+.names [7295] pdata_15_15_ preset n2973 n1252
+-101 1
+1-00 1
+.names pdata_2_2_ [7310] [17310] [17388] preset n1257
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_13_13_ [7325] [17310] [17388] preset n1262
+-1-00 1
+-11-0 1
+1-010 1
+.names n3007 [7340] n3080 n4161 n3497_1 n3012 n1267
+--0100 1
+--0111 1
+--1101 1
+--1110 1
+11---- 1
+.names n3638 n3136_1 n3126_1 n3143 n3125 n3401 n1272
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n2986 preset [7355] n3638
+001 1
+.names n3116_1 [7370] n3640_1 n1277
+--1 1
+11- 1
+.names n3151 n3152 n3026 n3075 n3117 n3640_1
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n3490 [7385] [18285] [18363] preset n1282
+-1-10 1
+-10-0 1
+0-100 1
+.names n3409 [7400] [18285] [18363] preset n1287
+-1-10 1
+-10-0 1
+0-100 1
+.names n3123 [7415] n3398_1 n3122 n1292
+--01 1
+11-- 1
+.names n3123 [7430] n3112 n3122 n1297
+--01 1
+11-- 1
+.names n3154 preset [7445] n3114 n4548 n1302
+---01 1
+001-- 1
+.names n3415 preset [7460] n3109 n3009 n4107 n1307
+----11 1
+---1-1 1
+001--- 1
+.names n3158 [7475] n3418 n3157 n1312
+--01 1
+11-- 1
+.names n3398_1 [7490] [18311] [18506] preset n1317
+-1-00 1
+-11-0 1
+0-010 1
+.names n3112 [7505] [18311] [18506] preset n1322
+-1-00 1
+-11-0 1
+0-010 1
+.names n3166 [7520] n3080 n3165 n3497_1 n3012 n1327
+--0100 1
+--0111 1
+--1101 1
+--1110 1
+11---- 1
+.names [7535] n3593 preset n3177 n1332
+-001 1
+1-00 1
+.names n3335 [7550] [17999] [18077] preset n1337
+-1-00 1
+-11-0 1
+0-010 1
+.names n3337 [7565] [17635] [17986] preset n1342
+-1-10 1
+-10-0 1
+0-100 1
+.names n3517_1 [7580] [17635] [17986] preset n1347
+-1-10 1
+-10-0 1
+0-100 1
+.names n3174_1 preset [7595] n3288 n3427_1 n1352
+---10 1
+001-- 1
+.names n3514 [7625] n3515 n3169_1 n1357
+--10 1
+11-- 1
+.names n3510 [7640] [17180] [17232] preset n1362
+-1-10 1
+-10-0 1
+0-100 1
+.names n3424 [7655] [17180] [17232] preset n1367
+-1-10 1
+-10-0 1
+0-100 1
+.names n3166 [7670] n3434 n3165 n1372
+--01 1
+11-- 1
+.names n2866 n2921 [10430] n3661 [7685] n2919 n1377
+----10 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [6635] n2870 [12410] n3661
+---11 0
+111-- 0
+.names n2879 [6050] n2875 [5345] n3666 n3663 n1382
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [6890] n3665 n3664 n3663
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [12035] n2870 [12620] n2817 n3664
+---110 0
+011--0 0
+.names n2885 [8030] n2874 [8705] n2817 n2866 n3665
+--1101 0
+11--01 0
+.names ppeaks_13_13_ n2929 n3668 n3669 n3670 n3667_1 n3666
+-11111 1
+0-1111 1
+.names n2891 [10340] [8090] n2889 n2817 n2866 n3667_1
+--1101 0
+11--01 0
+.names n2892_1 [12815] n2884 [14990] n2817 n2866 n3668
+--1101 0
+11--01 0
+.names n2921 [10700] n2935_1 [14690] n2817 n2866 n3669
+--1101 0
+11--01 0
+.names n2916_1 [14240] [8885] n2917 n2817 n2866 n3670
+--1101 0
+11--01 0
+.names n2948 ppeaka_7_7_ n3672_1 n2938 ppeakp_7_7_ n1386
+---01 1
+--0-- 1
+01--- 1
+.names n2917 [8900] n2891 ppeakb_7_7_ n3673 n2866 n3672_1
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [14285] [9815] n2871 n3673
+---10 0
+011-- 0
+.names n2948 ppeaka_2_2_ n3675 ppeakp_2_2_ n2938 n1390
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [10940] ppeakb_2_2_ n2891 n3676 n2866 n3675
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 ndout n2871 [8195] n3676
+---01 0
+011-- 0
+.names pdata_6_6_ [7745] [17453] [18246] preset n1394
+-1-10 1
+-10-0 1
+1-100 1
+.names [7760] pdata_3_3_ preset n2952 n1399
+-101 1
+1-00 1
+.names [7775] pdata_12_12_ preset n2959 n1404
+-101 1
+1-00 1
+.names [7790] pdata_5_5_ preset n2959 n1409
+-101 1
+1-00 1
+.names pdata_2_2_ [7805] [17167] [17362] preset n1414
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_11_11_ [7820] [17167] [17362] preset n1419
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_0_0_ [7835] [17284] [18376] preset n1424
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_9_9_ [7850] [17284] [18376] preset n1429
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_6_6_ n2967 n2825 [7865] preset n1434
+--110 1
+-0-10 1
+110-0 1
+.names pdata_15_15_ n2971 n2825 [7880] preset n1439
+--110 1
+-0-10 1
+110-0 1
+.names [7895] pdata_8_8_ preset n2973 n1444
+-101 1
+1-00 1
+.names [7910] pdata_5_5_ preset n2973 n1449
+-101 1
+1-00 1
+.names [7925] pdata_14_14_ preset n2973 n1454
+-101 1
+1-00 1
+.names pdata_3_3_ [7940] [17310] [17388] preset n1459
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_12_12_ [7955] [17310] [17388] preset n1464
+-1-00 1
+-11-0 1
+1-010 1
+.names n3007 [7970] n3693 n1469
+--1 1
+11- 1
+.names n3151 n3152 n3026 n3075 n4161 n3693
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n3116_1 [8000] n3080 n3497_1 n3117 n3012 n1474
+--0010 1
+--0111 1
+--1011 1
+--1110 1
+11---- 1
+.names n3121_1 [8015] [18285] [18363] preset n1479
+-1-10 1
+-10-0 1
+0-100 1
+.names n3160 [8030] [18285] [18363] preset n1484
+-1-10 1
+-10-0 1
+0-100 1
+.names n3123 [8045] n2979_1 n3122 n1489
+--01 1
+11-- 1
+.names n3123 [8060] n3119 n3122 n1494
+--01 1
+11-- 1
+.names n3154 preset [8075] n3418 n4548 n1499
+---01 1
+001-- 1
+.names n3415 preset [8090] n3160 n4107 n1504
+---01 1
+001-- 1
+.names n3158 [8105] n3114 n3157 n1509
+--01 1
+11-- 1
+.names n2979_1 [8120] [18311] [18506] preset n1514
+-1-00 1
+-11-0 1
+0-010 1
+.names n3119 [8135] [18311] [18506] preset n1519
+-1-00 1
+-11-0 1
+0-010 1
+.names n3705 n3136_1 n3126_1 n3143 n3125 n3706 n1524
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n2991 preset [8150] n3705
+001 1
+.names preset [18311] [18506] n3706
+001 1
+.names [8165] n3337 preset n3177 n1529
+-001 1
+1-00 1
+.names n3250 [8180] [17999] [18077] preset n1534
+-1-00 1
+-11-0 1
+0-010 1
+.names n3593 [8195] [17635] [17986] preset n1539
+-1-10 1
+-10-0 1
+0-100 1
+.names n3290 n3333 [8210] [17635] [17986] preset n1544
+--1-10 1
+--10-0 1
+00-100 1
+11-100 1
+.names n3174_1 preset [8225] n3288 n3422_1 n1549
+---10 1
+001-- 1
+.names n3339 [8240] n3510 n3338 n1554
+--01 1
+11-- 1
+.names n3514 [8255] n3515 n3422_1 n1559
+--10 1
+11-- 1
+.names n3345 [8285] [17180] [17232] preset n1564
+-1-10 1
+-10-0 1
+0-100 1
+.names n3166 [8300] n3287 n3165 n1569
+--01 1
+11-- 1
+.names n3191 preset [8315] n3348 n3517_1 n1574
+---10 1
+001-- 1
+.names n2866 n2921 [10715] n3718 [8330] n2919 n1579
+----10 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [4565] n2870 [12635] n3718
+---11 0
+111-- 0
+.names n2879 [15350] n2875 [6020] n3723 n3720 n1584
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [6200] n3722_1 n3721 n3720
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [12155] n2870 [12845] n2817 n3721
+---110 0
+011--0 0
+.names n2885 [7385] n2874 [9350] n2817 n2866 n3722_1
+--1101 0
+11--01 0
+.names ppeaks_3_3_ n2929 n3725 n3726 n3727_1 n3724 n3723
+-11111 1
+0-1111 1
+.names n2891 [10610] n2889 [14180] n2817 n2866 n3724
+--1101 0
+11--01 0
+.names n2892_1 [12575] [8720] n2884 n2817 n2866 n3725
+--1101 0
+11--01 0
+.names n2921 [12455] n2935_1 [14255] n2817 n2866 n3726
+--1101 0
+11--01 0
+.names n2916_1 [4910] n2917 [5570] n2817 n2866 n3727_1
+--1101 0
+11--01 0
+.names n2948 ppeaka_8_8_ n3729 n2938 ppeakp_8_8_ n1588
+---01 1
+--0-- 1
+01--- 1
+.names n2917 [5600] n2891 ppeakb_8_8_ n3730 n2866 n3729
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [13895] [10655] n2871 n3730
+---10 0
+011-- 0
+.names n2948 ppeaka_1_1_ n3732_1 ppeakp_1_1_ n2938 n1592
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [6950] ppeakb_1_1_ n2891 n3733 n2866 n3732_1
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [4970] n2871 [6260] n3733
+---01 0
+011-- 0
+.names pdata_9_9_ [8390] [17453] [18246] preset n1596
+-1-10 1
+-10-0 1
+1-100 1
+.names [8405] pdata_0_0_ preset n2952 n1601
+-101 1
+1-00 1
+.names [8420] pdata_13_13_ preset n2959 n1606
+-101 1
+1-00 1
+.names [8435] pdata_8_8_ preset n2959 n1611
+-101 1
+1-00 1
+.names [8450] pdata_15_15_ preset n2959 n1616
+-101 1
+1-00 1
+.names pdata_10_10_ [8465] [17167] [17362] preset n1621
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_1_1_ [8480] [17284] [18376] preset n1626
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_12_12_ [8495] [17284] [18376] preset n1631
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_3_3_ n2967 n2825 [8510] preset n1636
+--110 1
+-0-10 1
+110-0 1
+.names [8525] pdata_0_0_ preset n2973 n1641
+-101 1
+1-00 1
+.names [8540] pdata_11_11_ preset n2973 n1646
+-101 1
+1-00 1
+.names [8555] pdata_2_2_ preset n2973 n1651
+-101 1
+1-00 1
+.names [8570] pdata_13_13_ preset n2973 n1656
+-101 1
+1-00 1
+.names pdata_4_4_ [8585] [17310] [17388] preset n1661
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_15_15_ [8600] [17310] [17388] preset n1666
+-1-00 1
+-11-0 1
+1-010 1
+.names n3007 [8615] n3418 n4161 n1671
+--01 1
+11-- 1
+.names n3116_1 [8630] n3117 n3398_1 n1676
+--10 1
+11-- 1
+.names n3116_1 [8645] n3117 n3112 n1681
+--10 1
+11-- 1
+.names n2979_1 [8660] [18285] [18363] preset n1686
+-1-10 1
+-10-0 1
+0-100 1
+.names n2996 preset [8675] n3109 n3009 n3406 n1691
+----11 1
+---1-1 1
+001--- 1
+.names n3123 [8690] n3156 n3122 n1696
+--01 1
+11-- 1
+.names n3123 [8705] n3160 n3122 n1701
+--01 1
+11-- 1
+.names n3154 preset [8720] n3490 n4548 n1706
+---01 1
+001-- 1
+.names n3415 preset [8735] n3409 n4107 n1711
+---01 1
+001-- 1
+.names n3158 [8750] n3080 n3157 n3497_1 n3012 n1716
+--0100 1
+--0111 1
+--1101 1
+--1110 1
+11---- 1
+.names n3760 n3136_1 n3126_1 n3143 n3125 n3157 n1721
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n3158 [8765] n3760
+11 1
+.names n2991 preset [8780] n3762 n1726
+---1 1
+001- 1
+.names n3151 n3152 n3026 n3075 n3706 n3762
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n3166 [8810] n3119 n3165 n1731
+--01 1
+11-- 1
+.names n3424 [8825] [17999] [18077] preset n1736
+-1-00 1
+-11-0 1
+0-010 1
+.names n3434 [8840] [17635] [17986] preset n1741
+-1-10 1
+-10-0 1
+0-100 1
+.names n3345 [8855] [17635] [17986] preset n1746
+-1-10 1
+-10-0 1
+0-100 1
+.names n3174_1 preset [8870] n3288 n3169_1 n1751
+---10 1
+001-- 1
+.names n3174_1 preset [8885] n3288 n3432_1 n1756
+---10 1
+001-- 1
+.names n3422_1 [8900] [17037] [18025] preset n1761
+-1-00 1
+-11-0 1
+0-010 1
+.names n3514 [8915] n3515 n3427_1 n1766
+--10 1
+11-- 1
+.names n3593 [8930] [17180] [17232] preset n1771
+-1-10 1
+-10-0 1
+0-100 1
+.names n3335 [8945] [17180] [17232] preset n1776
+-1-10 1
+-10-0 1
+0-100 1
+.names n3166 [8960] n3337 n3165 n1781
+--01 1
+11-- 1
+.names n3191 preset [8975] n3348 n3287 n1786
+---10 1
+001-- 1
+.names n2879 [4655] n2875 [6710] n3779 n3776 n1791
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [5525] n3778_1 n3777 n3776
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [10490] n2870 [13115] n2817 n3777
+---110 0
+011--0 0
+.names n2885 [9335] [7430] n2874 n2817 n2866 n3778_1
+--1101 0
+11--01 0
+.names ppeaks_11_11_ n2929 n3781 n3782 n3783_1 n3780 n3779
+-11111 1
+0-1111 1
+.names n2891 [7505] [6830] n2889 n2817 n2866 n3780
+--1101 0
+11--01 0
+.names n2892_1 [13415] [11390] n2884 n2817 n2866 n3781
+--1101 0
+11--01 0
+.names n2921 [10130] n2935_1 [12125] n2817 n2866 n3782
+--1101 0
+11--01 0
+.names n2916_1 [13490] [10115] n2917 n2817 n2866 n3783_1
+--1101 0
+11--01 0
+.names n2879 [15710] n2875 [6695] n3788_1 n3785 n1795
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [5510] n3787 n3786 n3785
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [10475] n2870 [13100] n2817 n3786
+---110 0
+011--0 0
+.names n2885 [9320] [8690] n2874 n2817 n2866 n3787
+--1101 0
+11--01 0
+.names ppeaks_2_2_ n2929 n3790 n3791 n3792 n3789 n3788_1
+-11111 1
+0-1111 1
+.names n2891 [10325] n2889 [14600] n2817 n2866 n3789
+--1101 0
+11--01 0
+.names n2892_1 [14150] [10880] n2884 n2817 n2866 n3790
+--1101 0
+11--01 0
+.names n2921 [12680] n2935_1 [15425] n2817 n2866 n3791
+--1101 0
+11--01 0
+.names n2916_1 [6980] n2917 [10100] n2817 n2866 n3792
+--1101 0
+11--01 0
+.names n2948 ppeaka_9_9_ n3794 ppeakp_9_9_ n2938 n1799
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [4895] n2891 ppeakb_9_9_ n3795 n2866 n3794
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [11750] [10370] n2871 n3795
+---10 0
+011-- 0
+.names n2948 ppeaka_0_0_ n3797 ppeakp_0_0_ n2938 n1803
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [6275] ppeakb_0_0_ n2891 n3798_1 n2866 n3797
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [5675] n2871 [6935] n3798_1
+---01 0
+011-- 0
+.names pdata_8_8_ [9050] [17453] [18246] preset n1807
+-1-10 1
+-10-0 1
+1-100 1
+.names [9065] pdata_1_1_ preset n2952 n1812
+-101 1
+1-00 1
+.names [9080] pdata_14_14_ preset n2959 n1817
+-101 1
+1-00 1
+.names [9095] pdata_7_7_ preset n2959 n1822
+-101 1
+1-00 1
+.names pdata_0_0_ [9110] [17167] [17362] preset n1827
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_9_9_ [9125] [17167] [17362] preset n1832
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_2_2_ [9140] [17284] [18376] preset n1837
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_11_11_ [9155] [17284] [18376] preset n1842
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_4_4_ n2967 n2825 [9170] preset n1847
+--110 1
+-0-10 1
+110-0 1
+.names [9185] pdata_1_1_ preset n2973 n1852
+-101 1
+1-00 1
+.names [9200] pdata_10_10_ preset n2973 n1857
+-101 1
+1-00 1
+.names [9215] pdata_3_3_ preset n2973 n1862
+-101 1
+1-00 1
+.names [9230] pdata_12_12_ preset n2973 n1867
+-101 1
+1-00 1
+.names pdata_5_5_ [9245] [17310] [17388] preset n1872
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_14_14_ [9260] [17310] [17388] preset n1877
+-1-00 1
+-11-0 1
+1-010 1
+.names n3007 [9275] n3162 n4161 n1882
+--01 1
+11-- 1
+.names n3116_1 [9290] n3117 n2979_1 n1887
+--10 1
+11-- 1
+.names n3116_1 [9305] n3117 n3119 n1892
+--10 1
+11-- 1
+.names n3156 [9320] [18285] [18363] preset n1897
+-1-10 1
+-10-0 1
+0-100 1
+.names n3112 [9335] [18285] [18363] preset n1902
+-1-10 1
+-10-0 1
+0-100 1
+.names n3123 [9350] n3490 n3122 n1907
+--01 1
+11-- 1
+.names n3123 [9365] n3109 n3009 n3122 n1912
+---11 1
+--1-1 1
+11--- 1
+.names n3154 preset [9380] n3121_1 n4548 n1917
+---01 1
+001-- 1
+.names n3823_1 n3136_1 n3126_1 n3143 n3125 n4107 n1922
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n3415 preset [9395] n3823_1
+001 1
+.names n3158 [9410] n3162 n3157 n1927
+--01 1
+11-- 1
+.names n2991 preset [9440] n3826 n1932
+---1 1
+001- 1
+.names n3497_1 n3012 n3080 n3706 n3826
+0001 1
+0111 1
+1011 1
+1101 1
+.names n3166 [9455] n3398_1 n3165 n1937
+--01 1
+11-- 1
+.names n3166 [9470] n3829 n1942
+--1 1
+11- 1
+.names n3151 n3152 n3026 n3075 n3165 n3829
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names [9485] n3341_1 preset n3177 n1947
+-001 1
+1-00 1
+.names n3345 [9500] [17999] [18077] preset n1952
+-1-00 1
+-11-0 1
+0-010 1
+.names n3287 [9515] [17635] [17986] preset n1957
+-1-10 1
+-10-0 1
+0-100 1
+.names n3432_1 [9530] [17635] [17986] preset n1962
+-1-10 1
+-10-0 1
+0-100 1
+.names n3174_1 preset [9545] n3288 n3434 n1967
+---10 1
+001-- 1
+.names n3174_1 preset [9560] n3288 n3517_1 n1972
+---10 1
+001-- 1
+.names n3169_1 [9575] [17037] [18025] preset n1977
+-1-00 1
+-11-0 1
+0-010 1
+.names n3514 [9590] n3515 n3335 n1982
+--10 1
+11-- 1
+.names n3341_1 [9605] [17180] [17232] preset n1987
+-1-10 1
+-10-0 1
+0-100 1
+.names n3250 [9620] [17180] [17232] preset n1992
+-1-10 1
+-10-0 1
+0-100 1
+.names n3166 [9635] n3593 n3165 n1997
+--01 1
+11-- 1
+.names n3166 [9650] n3424 n3165 n2002
+--01 1
+11-- 1
+.names pdata_1_1_ [9665] [17414] [17505] preset n2007
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_12_12_ [9680] [17414] [17505] preset n2012
+-1-10 1
+-10-0 1
+1-100 1
+.names n2871 [12185] n3845 preset ppeaki_6_6_ n2816 n2017
+---010 1
+--1--- 1
+01---- 1
+.names n3846 ppeaki_10_10_ ppeaki_14_14_ n2876 n2866 n3845
+--111 1
+01--1 1
+.names n2858 n2860 n2861 n3846
+111 1
+.names [9710] pdata_2_2_ preset n2973 n2021
+-101 1
+1-00 1
+.names n3116_1 [9725] n3117 n3156 n2026
+--10 1
+11-- 1
+.names n3116_1 [9740] n3117 n3160 n2031
+--10 1
+11-- 1
+.names n3158 [9770] n3119 n3157 n2036
+--01 1
+11-- 1
+.names n3121_1 [9785] [18311] [18506] preset n2041
+-1-00 1
+-11-0 1
+0-010 1
+.names n3432_1 [9800] [17999] [18077] preset n2046
+-1-00 1
+-11-0 1
+0-010 1
+.names n3422_1 [9815] [17635] [17986] preset n2051
+-1-10 1
+-10-0 1
+0-100 1
+.names n3174_1 preset [9830] n3288 n3341_1 n2056
+---10 1
+001-- 1
+.names n3174_1 preset [9845] n3288 n3345 n2061
+---10 1
+001-- 1
+.names n3514 [9860] n3515 n3250 n2066
+--10 1
+11-- 1
+.names n3287 [9875] [17180] [17232] preset n2071
+-1-10 1
+-10-0 1
+0-100 1
+.names n3290 n3333 [9890] [17180] [17232] preset n2076
+--1-10 1
+--10-0 1
+00-100 1
+11-100 1
+.names n3166 [9905] n3335 n3165 n2081
+--01 1
+11-- 1
+.names n3191 preset [9920] n3348 n3337 n2086
+---10 1
+001-- 1
+.names pdata_0_0_ [9935] [17414] [17505] preset n2091
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_6_6_ [9950] [18142] [18220] preset n2096
+-1-00 1
+-11-0 1
+1-010 1
+.names [9980] pdata_12_12_ preset n2973 n2101
+-101 1
+1-00 1
+.names n3116_1 [9995] n3117 n3490 n2106
+--10 1
+11-- 1
+.names n3116_1 [10010] n3109 n3009 n3117 n2111
+---11 1
+--1-1 1
+11--- 1
+.names n3158 [10025] n3398_1 n3157 n2116
+--01 1
+11-- 1
+.names n3158 [10040] n3868 n2121
+--1 1
+11- 1
+.names n3151 n3152 n3026 n3075 n3157 n3868
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n3409 [10055] [18311] [18506] preset n2126
+-1-00 1
+-11-0 1
+0-010 1
+.names n3517_1 [10070] [17999] [18077] preset n2131
+-1-00 1
+-11-0 1
+0-010 1
+.names n3169_1 [10085] [17635] [17986] preset n2136
+-1-10 1
+-10-0 1
+0-100 1
+.names n3174_1 preset [10100] n3288 n3593 n2141
+---10 1
+001-- 1
+.names n3174_1 preset [10115] n3288 n3424 n2146
+---10 1
+001-- 1
+.names n3514 [10130] n3515 n3424 n2151
+--10 1
+11-- 1
+.names n3337 [10145] [17180] [17232] preset n2156
+-1-10 1
+-10-0 1
+0-100 1
+.names n3166 [10175] n3427_1 n3165 n2161
+--01 1
+11-- 1
+.names n3191 preset [10190] n3348 n3432_1 n2166
+---10 1
+001-- 1
+.names pdata_10_10_ [10205] [17414] [17505] preset n2171
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_5_5_ [10220] [18142] [18220] preset n2176
+-1-00 1
+-11-0 1
+1-010 1
+.names n2871 [12200] preset ppeaki_15_15_ n2816 n2181
+--010 1
+01--- 1
+.names n2871 [11930] n3882 preset ppeaki_4_4_ n2816 n2185
+---010 1
+--1--- 1
+01---- 1
+.names n3846 ppeaki_8_8_ n2876 ppeaki_12_12_ n2866 n3882
+--111 1
+01--1 1
+.names [10265] pdata_6_6_ preset n2973 n2189
+-101 1
+1-00 1
+.names n3114 [10280] [18285] [18363] preset n2194
+-1-10 1
+-10-0 1
+0-100 1
+.names n3158 [10310] n2979_1 n3157 n2199
+--01 1
+11-- 1
+.names n3156 [10325] [18311] [18506] preset n2204
+-1-00 1
+-11-0 1
+0-010 1
+.names n3160 [10340] [18311] [18506] preset n2209
+-1-00 1
+-11-0 1
+0-010 1
+.names n3290 n3333 [10355] [17999] [18077] preset n2214
+--1-00 1
+--11-0 1
+00-010 1
+11-010 1
+.names n3335 [10370] [17635] [17986] preset n2219
+-1-10 1
+-10-0 1
+0-100 1
+.names n3174_1 preset [10400] n3288 n3250 n2224
+---10 1
+001-- 1
+.names n3514 [10415] n3515 n3345 n2229
+--10 1
+11-- 1
+.names n3169_1 [10430] [17180] [17232] preset n2234
+-1-10 1
+-10-0 1
+0-100 1
+.names n3432_1 [10445] [17180] [17232] preset n2239
+-1-10 1
+-10-0 1
+0-100 1
+.names n3166 [10460] n3422_1 n3165 n2244
+--01 1
+11-- 1
+.names pdata_2_2_ [10475] [17414] [17505] preset n2249
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_11_11_ [10490] [17414] [17505] preset n2254
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_4_4_ [10505] [18142] [18220] preset n2259
+-1-00 1
+-11-0 1
+1-010 1
+.names n2871 [12080] preset ppeaki_14_14_ n2816 n2264
+--010 1
+01--- 1
+.names n2871 [11810] n3900 preset ppeaki_5_5_ n2816 n2268
+---010 1
+--1--- 1
+01---- 1
+.names n3846 ppeaki_9_9_ n2876 ppeaki_13_13_ n2866 n3900
+--111 1
+01--1 1
+.names pdata_0_0_ [10550] [17310] [17388] preset n2272
+-1-00 1
+-11-0 1
+1-010 1
+.names n3418 [10565] [18285] [18363] preset n2277
+-1-10 1
+-10-0 1
+0-100 1
+.names n3904_1 n3136_1 n3126_1 n3143 n3125 n3406 n2282
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n2996 preset [10580] n3904_1
+001 1
+.names n3158 [10595] n3112 n3157 n2287
+--01 1
+11-- 1
+.names n3490 [10610] [18311] [18506] preset n2292
+-1-00 1
+-11-0 1
+0-010 1
+.names n2991 preset [10625] n3109 n3009 n3706 n2297
+----11 1
+---1-1 1
+001--- 1
+.names n3427_1 [10655] [17635] [17986] preset n2302
+-1-10 1
+-10-0 1
+0-100 1
+.names n3174_1 preset [10670] n3288 n3510 n2307
+---10 1
+001-- 1
+.names n3174_1 preset [10685] n3288 n3335 n2312
+---10 1
+001-- 1
+.names n3514 [10700] n3515 n3432_1 n2317
+--10 1
+11-- 1
+.names n3434 [10715] [17180] [17232] preset n2322
+-1-10 1
+-10-0 1
+0-100 1
+.names n3517_1 [10730] [17180] [17232] preset n2327
+-1-10 1
+-10-0 1
+0-100 1
+.names n3166 [10745] n3169_1 n3165 n2332
+--01 1
+11-- 1
+.names pdata_13_13_ [10760] [17791] [17843] preset n2337
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_8_8_ [10775] [17414] [17505] preset n2342
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_3_3_ [10790] [18142] [18220] preset n2347
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_1_1_ [10805] [17570] [17635] preset n2352
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_12_12_ [10820] [17570] [17635] preset n2357
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_10_10_ [10850] [17310] [17388] preset n2362
+-1-00 1
+-11-0 1
+1-010 1
+.names n3123 [10865] n3080 n3122 n3497_1 n3012 n2367
+--0100 1
+--0111 1
+--1101 1
+--1110 1
+11---- 1
+.names n3154 preset [10880] n3156 n4548 n2372
+---01 1
+001-- 1
+.names n3166 [10895] n3114 n3165 n2377
+--01 1
+11-- 1
+.names [10925] n3250 preset n3177 n2382
+-001 1
+1-00 1
+.names n3593 [10940] [17037] [18025] preset n2387
+-1-00 1
+-11-0 1
+0-010 1
+.names n3432_1 [10955] [17037] [18025] preset n2392
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [10970] n3422_1 n3338 n2397
+--01 1
+11-- 1
+.names n3514 [10985] n3515 n3517_1 n2402
+--10 1
+11-- 1
+.names n3191 preset [11015] n3348 n3250 n2407
+---10 1
+001-- 1
+.names pdata_12_12_ [11030] [17791] [17843] preset n2412
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_9_9_ [11045] [17414] [17505] preset n2417
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_2_2_ [11060] [18142] [18220] preset n2422
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_7_7_ [11075] [18142] [18220] preset n2427
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_13_13_ [11090] [17570] [17635] preset n2432
+-1-10 1
+-10-0 1
+1-100 1
+.names n3007 [11120] n3121_1 n4161 n2437
+--01 1
+11-- 1
+.names n3123 [11135] n3937 n2442
+--1 1
+11- 1
+.names n3151 n3152 n3026 n3075 n3122 n3937
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n3154 preset [11150] n2979_1 n4548 n2447
+---01 1
+001-- 1
+.names n3166 [11165] n3418 n3165 n2452
+--01 1
+11-- 1
+.names n3941 n3136_1 n3126_1 n3143 n3125 n3165 n2457
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n3166 [11180] n3941
+11 1
+.names n3337 [11195] [17037] [18025] preset n2462
+-1-00 1
+-11-0 1
+0-010 1
+.names n3345 [11210] [17037] [18025] preset n2467
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [11225] n3427_1 n3338 n2472
+--01 1
+11-- 1
+.names n3422_1 [11240] [17180] [17232] preset n2477
+-1-10 1
+-10-0 1
+0-100 1
+.names n3191 preset [11255] n3348 n3510 n2482
+---10 1
+001-- 1
+.names n3191 preset [11270] n3348 n3335 n2487
+---10 1
+001-- 1
+.names pdata_15_15_ [11285] [17791] [17843] preset n2492
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_6_6_ [11300] [17414] [17505] preset n2497
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_1_1_ [11315] [18142] [18220] preset n2502
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_8_8_ [11330] [18142] [18220] preset n2507
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_3_3_ [11345] [17570] [17635] preset n2512
+-1-10 1
+-10-0 1
+1-100 1
+.names n3007 [11375] n3409 n4161 n2517
+--01 1
+11-- 1
+.names n3154 preset [11390] n3112 n4548 n2522
+---01 1
+001-- 1
+.names n3166 [11405] n3162 n3165 n2527
+--01 1
+11-- 1
+.names [11420] n3427_1 preset n3177 n2532
+-001 1
+1-00 1
+.names n3287 [11435] [17037] [18025] preset n2537
+-1-00 1
+-11-0 1
+0-010 1
+.names n3290 n3333 [11450] [17037] [18025] preset n2542
+--1-00 1
+--11-0 1
+00-010 1
+11-010 1
+.names n3339 [11465] n3434 n3338 n2547
+--01 1
+11-- 1
+.names n3166 [11480] n3510 n3165 n2552
+--01 1
+11-- 1
+.names n3191 preset [11495] n3348 n3341_1 n2557
+---10 1
+001-- 1
+.names n3191 preset [11510] n3348 n3345 n2562
+---10 1
+001-- 1
+.names pdata_14_14_ [11525] [17791] [17843] preset n2567
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_7_7_ [11540] [17414] [17505] preset n2572
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_0_0_ [11555] [18142] [18220] preset n2577
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_9_9_ [11570] [18142] [18220] preset n2582
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_2_2_ [11585] [17570] [17635] preset n2587
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_11_11_ [11600] [17570] [17635] preset n2592
+-1-10 1
+-10-0 1
+1-100 1
+.names n3154 preset [11615] n3109 n3009 n4548 n2597
+----11 1
+---1-1 1
+001--- 1
+.names [11630] n3510 preset n3177 n2602
+-001 1
+1-00 1
+.names [11645] n3335 preset n3177 n2607
+-001 1
+1-00 1
+.names n3434 [11660] [17037] [18025] preset n2612
+-1-00 1
+-11-0 1
+0-010 1
+.names n3517_1 [11675] [17037] [18025] preset n2617
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [11690] n3169_1 n3338 n2622
+--01 1
+11-- 1
+.names n3166 [11705] n3250 n3165 n2627
+--01 1
+11-- 1
+.names n3191 preset [11720] n3348 n3593 n2632
+---10 1
+001-- 1
+.names n3191 preset [11735] n3348 n3424 n2637
+---10 1
+001-- 1
+.names pdata_9_9_ [11750] [17791] [17843] preset n2642
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_4_4_ [11765] [17414] [17505] preset n2647
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_15_15_ [11780] [17414] [17505] preset n2652
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_10_10_ [11795] [18142] [18220] preset n2657
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_5_5_ [11810] [17570] [17635] preset n2662
+-1-10 1
+-10-0 1
+1-100 1
+.names n3984 n2816 preset ppeaki_9_9_ n2667
+-001 1
+0--- 1
+.names n2871 [12275] n3846 n2866 ppeaki_13_13_ n3984
+--011 0
+01--- 0
+.names ppeakb_14_14_ n2814_1 n3988 n3990 n3991 n3986 n2671
+-11111 0
+0-1111 0
+.names n2879 [13250] [13235] n2875 n3987_1 n3986
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [4505] n2870 [15140] n2817 n3987_1
+---110 0
+111--0 0
+.names n2817 n2866 n2886 ppeaka_14_14_ n3989 n3988
+----0 0
+0101- 0
+.names n2885 [5165] n2884 [15965] n2817 n2866 n3989
+--1101 0
+11--01 0
+.names n2889 [7250] n2888 [9260] n2817 n2866 n3990
+--1101 0
+11--01 0
+.names n2892_1 [12770] [7925] n2891 n2817 n2866 n3991
+--1101 0
+11--01 0
+.names pdata_5_5_ [11885] [17414] [17505] preset n2675
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_14_14_ [11900] [17414] [17505] preset n2680
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_11_11_ [11915] [18142] [18220] preset n2685
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_4_4_ [11930] [17570] [17635] preset n2690
+-1-10 1
+-10-0 1
+1-100 1
+.names n3997_1 n2816 preset ppeaki_8_8_ n2695
+-001 1
+0--- 1
+.names n2871 [12485] n3846 n2866 ppeaki_12_12_ n3997_1
+--011 0
+01--- 0
+.names ppeakb_15_15_ n2814_1 n4001 n4003 n3999 n2699
+-1111 0
+0-111 0
+.names n2891 [7295] n2888 [8600] n4000 n2866 n3999
+----0- 0
+--11-1 0
+11---1 0
+.names n2885 [8450] n2876 n2880 [14390] n2866 n4000
+--1011 0
+11---1 0
+.names n2884 [15620] ppeaka_15_15_ n2886 n4002_1 n2866 n4001
+----0- 0
+--10-1 0
+11---1 0
+.names n2892_1 [4535] n2874 [6590] n2866 n4002_1
+--111 0
+11--1 0
+.names n2889 [7880] n4004 n2870 [13550] n2866 n4003
+---11- 0
+--1--1 0
+11---1 0
+.names n2876 n2877_1 [13580] n4004
+101 1
+.names n4007_1 [12005] n3341_1 n4006 n2703
+--01 1
+11-- 1
+.names n2825 n2935_1 preset [17115] n4006
+0100 1
+.names n3180 n2825 preset n4007_1
+-10 1
+0-0 1
+.names pdata_11_11_ [12020] [17791] [17843] preset n2708
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_13_13_ [12035] [17414] [17505] preset n2713
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_12_12_ [12050] [18142] [18220] preset n2718
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_7_7_ [12065] [17570] [17635] preset n2723
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_14_14_ [12080] [17570] [17635] preset n2728
+-1-10 1
+-10-0 1
+1-100 1
+.names n2871 [12065] n4014 preset n2816 ppeaki_7_7_ n2733
+---001 1
+--1--- 1
+01---- 1
+.names n3846 ppeaki_11_11_ ppeaki_15_15_ n2876 n2866 n4014
+--111 1
+01--1 1
+.names n4007_1 [12125] n3424 n4006 n2737
+--01 1
+11-- 1
+.names pdata_10_10_ [12140] [17791] [17843] preset n2742
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_3_3_ [12155] [17414] [17505] preset n2747
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_13_13_ [12170] [18142] [18220] preset n2752
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_6_6_ [12185] [17570] [17635] preset n2757
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_15_15_ [12200] [17570] [17635] preset n2762
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_13_13_ n2814_1 n4024 n4026 n4022_1 n2767
+-1111 0
+0-111 0
+.names n2891 [8570] [7325] n2888 n4023 n2866 n4022_1
+----0- 0
+--11-1 0
+11---1 0
+.names n2885 [4460] n2876 n2880 [13595] n2866 n4023
+--1011 0
+11---1 0
+.names n2884 [14885] ppeaka_13_13_ n2886 n4025 n2866 n4024
+----0- 0
+--10-1 0
+11---1 0
+.names n2892_1 [13670] [5210] n2874 n2866 n4025
+--111 0
+11--1 0
+.names n2889 [6620] n4027_1 n2870 [15500] n2866 n4026
+---11- 0
+--1--1 0
+11---1 0
+.names n2876 n2877_1 [14375] n4027_1
+101 1
+.names n3514 [12245] n3515 n3287 n2771
+--10 1
+11-- 1
+.names pdata_14_14_ [12260] [18142] [18220] preset n2776
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_9_9_ [12275] [17570] [17635] preset n2781
+-1-10 1
+-10-0 1
+1-100 1
+.names n2871 [11090] preset n2816 ppeaki_13_13_ n2786
+--001 1
+01--- 1
+.names n2871 [11585] n4033 preset n2816 ppeaki_2_2_ n2790
+---001 1
+--1--- 1
+01---- 1
+.names n3846 ppeaki_6_6_ n2876 ppeaki_10_10_ n2866 n4033
+--111 1
+01--1 1
+.names n4036 [12335] n3162 n4428 n2794
+--01 1
+11-- 1
+.names n3005 n2825 n2955_1 preset n4428
+1010 1
+.names n2952 preset n4036
+00 1
+.names n4038 preset [12350] n3121_1 n3963 n2799
+---01 1
+001-- 1
+.names n2825 n2969 n4038
+01 1
+.names n2825 n2892_1 preset [16920] n3963
+0100 1
+.names n4041 n3136_1 n3126_1 n3143 n3125 n3963 n2804
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n4038 preset [12365] n4041
+001 1
+.names n3341_1 [12380] [17427] [17648] preset n2809
+-1-10 1
+-10-0 1
+0-100 1
+.names n3345 [12395] [17427] [17648] preset n2814
+-1-10 1
+-10-0 1
+0-100 1
+.names n3169_1 [12410] [17999] [18077] preset n2819
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [12425] n3338 n3290 n3333 n2824
+--100 1
+--111 1
+11--- 1
+.names n4007_1 [12440] n3335 n4006 n2829
+--01 1
+11-- 1
+.names n3514 [12455] n3515 n3337 n2834
+--10 1
+11-- 1
+.names pdata_15_15_ [12470] [18142] [18220] preset n2839
+-1-00 1
+-11-0 1
+1-010 1
+.names pdata_8_8_ [12485] [17570] [17635] preset n2844
+-1-10 1
+-10-0 1
+1-100 1
+.names n2871 [10820] preset n2816 ppeaki_12_12_ n2849
+--001 1
+01--- 1
+.names n2871 [11345] n4052_1 preset n2816 ppeaki_3_3_ n2853
+---001 1
+--1--- 1
+01---- 1
+.names n3846 ppeaki_7_7_ n2876 ppeaki_11_11_ n2866 n4052_1
+--111 1
+01--1 1
+.names pdata_4_4_ n2969 n2825 [12545] preset n2857
+--110 1
+-0-10 1
+110-0 1
+.names n4036 [12560] n3418 n4428 n2862
+--01 1
+11-- 1
+.names n4038 preset [12575] n3490 n3963 n2867
+---01 1
+001-- 1
+.names n3415 preset [12590] n4057_1 n2872
+---1 1
+001- 1
+.names n3497_1 n3012 n3080 n4107 n4057_1
+0001 1
+0111 1
+1011 1
+1101 1
+.names n3510 [12605] [17427] [17648] preset n2877
+-1-10 1
+-10-0 1
+0-100 1
+.names n3432_1 [12620] [17427] [17648] preset n2882
+-1-10 1
+-10-0 1
+0-100 1
+.names n3434 [12635] [17999] [18077] preset n2887
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [12650] n3517_1 n3338 n2892
+--01 1
+11-- 1
+.names n4007_1 [12665] n3250 n4006 n2897
+--01 1
+11-- 1
+.names n3514 [12680] n3515 n3593 n2902
+--10 1
+11-- 1
+.names pdata_0_0_ [12695] [17570] [17635] preset n2907
+-1-10 1
+-10-0 1
+1-100 1
+.names n4066 n2816 preset ppeaki_11_11_ n2912
+-001 1
+0--- 1
+.names n2871 [11600] n3846 ppeaki_15_15_ n2866 n4066
+--011 0
+01--- 0
+.names n2871 [12695] n4068 preset n2816 ppeaki_0_0_ n2916
+---001 1
+--1--- 1
+01---- 1
+.names n3846 ppeaki_4_4_ n2876 ppeaki_8_8_ n2866 n4068
+--111 1
+01--1 1
+.names pdata_14_14_ n2969 n2825 [12770] preset n2920
+--110 1
+-0-10 1
+110-0 1
+.names n3119 [12800] [18103] [18168] preset n2925
+-1-00 1
+-11-0 1
+0-010 1
+.names n4038 preset [12815] n3160 n3963 n2930
+---01 1
+001-- 1
+.names n3415 preset [12830] n3162 n4107 n2935
+---01 1
+001-- 1
+.names n3337 [12845] [17427] [17648] preset n2940
+-1-10 1
+-10-0 1
+0-100 1
+.names n3250 [12860] [17427] [17648] preset n2945
+-1-10 1
+-10-0 1
+0-100 1
+.names n3287 [12875] [17999] [18077] preset n2950
+-1-00 1
+-11-0 1
+0-010 1
+.names n4007_1 [12890] n3510 n4006 n2955
+--01 1
+11-- 1
+.names n4007_1 [12905] n3422_1 n4006 n2960
+--01 1
+11-- 1
+.names n3514 [12920] n3515 n3341_1 n2965
+--10 1
+11-- 1
+.names pdata_10_10_ [12935] [17570] [17635] preset n2970
+-1-10 1
+-10-0 1
+1-100 1
+.names n4081 n2816 preset ppeaki_10_10_ n2975
+-001 1
+0--- 1
+.names n2871 [12935] n3846 ppeaki_14_14_ n2866 n4081
+--011 0
+01--- 0
+.names n2871 [10805] n4083 preset n2816 ppeaki_1_1_ n2979
+---001 1
+--1--- 1
+01---- 1
+.names n3846 ppeaki_5_5_ n2876 ppeaki_9_9_ n2866 n4083
+--111 1
+01--1 1
+.names pdata_8_8_ n2971 n2825 [13010] preset n2983
+--110 1
+-0-10 1
+110-0 1
+.names n3398_1 [13025] [18103] [18168] preset n2988
+-1-00 1
+-11-0 1
+0-010 1
+.names n2986 preset [13040] n4087_1 n2993
+---1 1
+001- 1
+.names n3151 n3152 n3026 n3075 n3401 n4087_1
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n4038 preset [13055] n3114 n3963 n2998
+---01 1
+001-- 1
+.names n4038 preset [13070] n3409 n3963 n3003
+---01 1
+001-- 1
+.names n3415 preset [13085] n3418 n4107 n3008
+---01 1
+001-- 1
+.names n3593 [13100] [17427] [17648] preset n3013
+-1-10 1
+-10-0 1
+0-100 1
+.names n3424 [13115] [17427] [17648] preset n3018
+-1-10 1
+-10-0 1
+0-100 1
+.names n3337 [13130] [17999] [18077] preset n3023
+-1-00 1
+-11-0 1
+0-010 1
+.names n4007_1 [13160] n3427_1 n4006 n3028
+--01 1
+11-- 1
+.names n3514 [13175] n3515 n3510 n3033
+--10 1
+11-- 1
+.names ppeakb_4_4_ n2814_1 n4099 n4101 n4102_1 n4097_1 n3038
+-11111 0
+0-1111 0
+.names n2879 [5795] n2875 [14360] n4098 n4097_1
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [5195] n2870 [14765] n2817 n4098
+---110 0
+111--0 0
+.names n2817 n2866 n2886 ppeaka_4_4_ n4100 n4099
+----0 0
+0101- 0
+.names n2885 [5840] n2884 [9170] n2817 n2866 n4100
+--1101 0
+11--01 0
+.names n2889 [14495] [8585] n2888 n2817 n2866 n4101
+--1101 0
+11--01 0
+.names n2892_1 [12545] [7280] n2891 n2817 n2866 n4102_1
+--1101 0
+11--01 0
+.names ppeakp_9_9_ n2905 n4105 n4108 n4104 n3042
+-0111 0
+0-111 0
+.names n2902_1 n2903 n2875 ppeaka_9_9_ ppeakb_9_9_ n4104
+--000 1
+-000- 1
+1-0-0 1
+10-11 1
+.names n2879 n2912_1 ppeaka_10_10_ [16040] n4106 n4107_1 n4105
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n2888 [9905] [5825] n2885 n2817 n2866 n4106
+--1101 0
+11--01 0
+.names n2911 [9125] n2910 [11270] n2817 n2866 n4107_1
+--1101 0
+11--01 0
+.names n2817 n2866 n2917 [13265] n4109 n4108
+----0 0
+0111- 0
+.names n2916_1 [15770] [5720] n2915 n2817 n2866 n4109
+--1101 0
+11--01 0
+.names pdata_3_3_ [13220] [17453] [18246] preset n3046
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_14_14_ [13235] [17453] [18246] preset n3051
+-1-10 1
+-10-0 1
+1-100 1
+.names [13250] pdata_14_14_ preset n2952 n3056
+-101 1
+1-00 1
+.names pdata_9_9_ [13265] [17102] [17154] preset n3061
+-1-10 1
+-10-0 1
+1-100 1
+.names [13280] pdata_4_4_ preset n2959 n3066
+-101 1
+1-00 1
+.names pdata_1_1_ n2967 n2825 [13295] preset n3071
+--110 1
+-0-10 1
+110-0 1
+.names pdata_1_1_ n2969 n2825 [13310] preset n3076
+--110 1
+-0-10 1
+110-0 1
+.names pdata_12_12_ n2969 n2825 [13325] preset n3081
+--110 1
+-0-10 1
+110-0 1
+.names pdata_7_7_ n2971 n2825 [13340] preset n3086
+--110 1
+-0-10 1
+110-0 1
+.names n4036 [13355] n3490 n4428 n3091
+--01 1
+11-- 1
+.names n4036 [13370] n3409 n4428 n3096
+--01 1
+11-- 1
+.names n2986 preset [13385] n4122_1 n3101
+---1 1
+001- 1
+.names n3497_1 n3012 n3080 n3401 n4122_1
+0001 1
+0111 1
+1011 1
+1101 1
+.names n4038 preset [13400] n3398_1 n3963 n3106
+---01 1
+001-- 1
+.names n4038 preset [13415] n3112 n3963 n3111
+---01 1
+001-- 1
+.names n3415 preset [13430] n3114 n4107 n3116
+---01 1
+001-- 1
+.names [13445] n3517_1 preset n3177 n3121
+-001 1
+1-00 1
+.names n3427_1 [13460] [17427] [17648] preset n3126
+-1-10 1
+-10-0 1
+0-100 1
+.names n3593 [13475] [17999] [18077] preset n3131
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [13490] n3424 n3338 n3136
+--01 1
+11-- 1
+.names n4007_1 [13505] n3434 n4006 n3141
+--01 1
+11-- 1
+.names ppeakb_5_5_ n2814_1 n4134 n4136 n4137_1 n4132_1 n3146
+-11111 0
+0-1111 0
+.names n2879 [6485] n2875 [13955] n4133 n4132_1
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [5885] n2870 [8330] n2817 n4133
+---110 0
+111--0 0
+.names n2817 n2866 n2886 ppeaka_5_5_ n4135 n4134
+----0 0
+0101- 0
+.names n2885 [7790] [7235] n2884 n2817 n2866 n4135
+--1101 0
+11--01 0
+.names n2889 [14075] [9245] n2888 n2817 n2866 n4136
+--1101 0
+11--01 0
+.names n2892_1 [5240] n2891 [7910] n2817 n2866 n4137_1
+--1101 0
+11--01 0
+.names n2866 n2921 [9890] n4139 n2919 [13550] n3150
+----01 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [6650] n2870 [10355] n4139
+---11 0
+111-- 0
+.names n2948 ppeaka_6_6_ n4141 n2938 ppeakp_6_6_ n3155
+---01 1
+--0-- 1
+01--- 1
+.names n2917 [9575] n2891 ppeakb_6_6_ n4142_1 n2866 n4141
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [14705] [10085] n2871 n4142_1
+---10 0
+011-- 0
+.names pdata_15_15_ [13580] [17453] [18246] preset n3159
+-1-10 1
+-10-0 1
+1-100 1
+.names [13595] pdata_13_13_ preset n2952 n3164
+-101 1
+1-00 1
+.names pdata_10_10_ [13610] [17102] [17154] preset n3169
+-1-10 1
+-10-0 1
+1-100 1
+.names [13625] pdata_3_3_ preset n2959 n3174
+-101 1
+1-00 1
+.names pdata_2_2_ n2967 n2825 [13640] preset n3179
+--110 1
+-0-10 1
+110-0 1
+.names pdata_0_0_ n2969 n2825 [13655] preset n3184
+--110 1
+-0-10 1
+110-0 1
+.names pdata_13_13_ n2969 n2825 [13670] preset n3189
+--110 1
+-0-10 1
+110-0 1
+.names pdata_6_6_ n2971 n2825 [13685] preset n3194
+--110 1
+-0-10 1
+110-0 1
+.names n3007 [13700] n3114 n4161 n3199
+--01 1
+11-- 1
+.names n4036 [13715] n3156 n4428 n3204
+--01 1
+11-- 1
+.names n4154 n3136_1 n3126_1 n3143 n3125 n4428 n3209
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n4036 [13730] n4154
+11 1
+.names n3162 [13745] [18103] [18168] preset n3214
+-1-00 1
+-11-0 1
+0-010 1
+.names n4038 preset [13775] n3109 n3009 n3963 n3219
+----11 1
+---1-1 1
+001--- 1
+.names n3415 preset [13790] n3121_1 n4107 n3224
+---01 1
+001-- 1
+.names [13805] n3432_1 preset n3177 n3229
+-001 1
+1-00 1
+.names n3335 [13820] [17427] [17648] preset n3234
+-1-10 1
+-10-0 1
+0-100 1
+.names n3341_1 [13835] [17999] [18077] preset n3239
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [13850] n3250 n3338 n3244
+--01 1
+11-- 1
+.names n4007_1 [13865] n3169_1 n4006 n3249
+--01 1
+11-- 1
+.names n4007_1 [13880] n4006 n3290 n3333 n3254
+--100 1
+--111 1
+11--- 1
+.names pdata_8_8_ [13895] [17791] [17843] preset n3259
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_11_11_ n2902_1 n2875 ppeaka_11_11_ n4166_1 n4171 n3264
+--0011 0
+-10-11 0
+11-111 0
+.names ppeakp_11_11_ n2905 n4168 n4169 n4170_1 n4167 n4166_1
+-01111 1
+0-1111 1
+.names n2911 [7820] n2910 [11735] n2817 n2866 n4167
+--1101 0
+11--01 0
+.names n2915 [4295] n2917 [5120] n2817 n2866 n4168
+--1101 0
+11--01 0
+.names n2916_1 [13490] [7145] n2885 n2817 n2866 n4169
+--1101 0
+11--01 0
+.names n2904 ppeakb_11_11_ n2888 [9650] n2817 n2866 n4170_1
+--1101 0
+01--01 0
+.names n2912_1 ppeaka_12_12_ n2879 [15335] n4171
+--11 0
+11-- 0
+.names n4178 n2906 ppeakp_0_0_ n4173 n2902_1 ppeaka_0_0_ n3268
+----01 1
+---0-- 1
+-01--- 1
+0----- 1
+.names n4174 n4176 n4173
+11 1
+.names n2917 [13970] [9110] n2911 n4175_1 n2866 n4174
+----0- 0
+--11-1 0
+11---1 0
+.names n2916_1 [8240] n2885 [14840] n2866 n4175_1
+--111 0
+11--1 0
+.names n2915 [4310] n2910 [11255] n4177 n2866 n4176
+----0- 0
+--11-1 0
+11---1 0
+.names n2888 [11480] n2876 n2880 [16025] n2866 n4177
+--1011 0
+11---1 0
+.names n2904 ppeakb_0_0_ n4180_1 ppeaka_1_1_ n4179 n2866 n4178
+----0- 0
+--11-1 0
+01---1 0
+.names ppeaka_0_0_ ppeakb_0_0_ n2877_1 n2866 n2876 n4179
+-0011 0
+0-011 0
+.names n2876 n2845 n4180_1
+10 1
+.names n2948 ppeaka_5_5_ n4182 ppeakp_5_5_ n2938 n3272
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [11660] n2891 ppeakb_5_5_ n4183 n2866 n4182
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [15080] [8840] n2871 n4183
+---10 0
+011-- 0
+.names pdata_5_5_ [13955] [17453] [18246] preset n3276
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_0_0_ [13970] [17102] [17154] preset n3281
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_7_7_ [13985] [17102] [17154] preset n3286
+-1-10 1
+-10-0 1
+1-100 1
+.names [14000] pdata_2_2_ preset n2959 n3291
+-101 1
+1-00 1
+.names pdata_13_13_ [14015] [17167] [17362] preset n3296
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_8_8_ [14030] [17284] [18376] preset n3301
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_3_3_ n2969 n2825 [14045] preset n3306
+--110 1
+-0-10 1
+110-0 1
+.names pdata_10_10_ n2969 n2825 [14060] preset n3311
+--110 1
+-0-10 1
+110-0 1
+.names pdata_5_5_ n2971 n2825 [14075] preset n3316
+--110 1
+-0-10 1
+110-0 1
+.names pdata_11_11_ [14090] [17310] [17388] preset n3321
+-1-00 1
+-11-0 1
+1-010 1
+.names n4036 [14105] n3114 n4428 n3326
+--01 1
+11-- 1
+.names n4036 [14120] n3109 n3009 n4428 n3331
+---11 1
+--1-1 1
+11--- 1
+.names n3418 [14135] [18103] [18168] preset n3336
+-1-00 1
+-11-0 1
+0-010 1
+.names n4038 preset [14150] n3156 n3963 n3341
+---01 1
+001-- 1
+.names n4038 preset [14165] n4199 n3346
+---1 1
+001- 1
+.names n3151 n3152 n3026 n3075 n3963 n4199
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n3415 preset [14180] n3490 n4107 n3351
+---01 1
+001-- 1
+.names n3169_1 [14210] [17427] [17648] preset n3356
+-1-10 1
+-10-0 1
+0-100 1
+.names n3510 [14225] [17999] [18077] preset n3361
+-1-00 1
+-11-0 1
+0-010 1
+.names n3339 [14240] n3432_1 n3338 n3366
+--01 1
+11-- 1
+.names n4007_1 [14255] n3337 n4006 n3371
+--01 1
+11-- 1
+.names n4007_1 [14270] n3517_1 n4006 n3376
+--01 1
+11-- 1
+.names pdata_7_7_ [14285] [17791] [17843] preset n3381
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_3_3_ n2814_1 n4210 n4212 n4208 n3386
+-1111 0
+0-111 0
+.names n2889 [14915] n2886 ppeaka_3_3_ n4209_1 n2866 n4208
+----0- 0
+--01-1 0
+11---1 0
+.names n2866 n2876 n2877_1 [13220] n2870 [15860] n4209_1
+----11 0
+1101-- 0
+.names n2884 [8510] [4490] n2874 n4211 n2866 n4210
+----0- 0
+--11-1 0
+11---1 0
+.names n2892_1 [14045] [6530] n2885 n2866 n4211
+--111 0
+11--1 0
+.names n2891 [9215] [7940] n2888 n4213 n2866 n4212
+----11 0
+--11-1 0
+11---1 0
+.names n2876 n2880 [7760] n4213
+101 1
+.names n4220 n2906 ppeakp_10_10_ n4215 n2902_1 ppeaka_10_10_ n3390
+----01 1
+---0-- 1
+-01--- 1
+0----- 1
+.names n4216 n4218 n4215
+11 1
+.names n2917 [13610] [8465] n2911 n4217 n2866 n4216
+----0- 0
+--11-1 0
+11---1 0
+.names n2916_1 [13850] [6515] n2885 n2866 n4217
+--111 0
+11--1 0
+.names n2915 [5015] n2910 [11015] n4219_1 n2866 n4218
+----0- 0
+--11-1 0
+11---1 0
+.names n2888 [11705] n2876 n2880 [14960] n2866 n4219_1
+--1011 0
+11---1 0
+.names n2904 ppeakb_10_10_ n4180_1 ppeaka_11_11_ n4221 n2866 n4220
+----0- 0
+--11-1 0
+01---1 0
+.names ppeaka_10_10_ ppeakb_10_10_ n2877_1 n2866 n2876 n4221
+-0011 0
+0-011 0
+.names n4223 n2902_1 ppeaka_1_1_ n3394
+-01 1
+0-- 1
+.names ppeakp_1_1_ n2906 n4226 n4228_1 n4229 n4224_1 n4223
+-11111 1
+0-1111 1
+.names n2904 ppeakb_1_1_ n4180_1 ppeaka_2_2_ n4225 n2866 n4224_1
+----0- 0
+--11-1 0
+01---1 0
+.names n2916_1 [6305] n2876 n2877_1 ppeaka_1_1_ n2866 n4225
+--1001 0
+11---1 0
+.names n2917 [4400] n2888 [4925] n4227 n2866 n4226
+----0- 0
+--11-1 0
+11---1 0
+.names n2911 [7175] n2885 [14420] n2866 n4227
+--111 0
+11--1 0
+.names n2915 [5030] n2876 ppeakb_1_1_ n2877_1 n2866 n4228_1
+--1001 0
+11---1 0
+.names n2910 [11495] n2876 n2880 [15680] n2866 n4229
+--1011 0
+11---1 0
+.names n2948 ppeaka_4_4_ n4231 ppeakp_4_4_ n2938 n3398
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [11435] n2891 ppeakb_4_4_ n4232 n2866 n4231
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [15440] [9515] n2871 n4232
+---10 0
+011-- 0
+.names pdata_4_4_ [14360] [17453] [18246] preset n3402
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_13_13_ [14375] [17453] [18246] preset n3407
+-1-10 1
+-10-0 1
+1-100 1
+.names [14390] pdata_15_15_ preset n2952 n3412
+-101 1
+1-00 1
+.names pdata_8_8_ [14405] [17102] [17154] preset n3417
+-1-10 1
+-10-0 1
+1-100 1
+.names [14420] pdata_1_1_ preset n2959 n3422
+-101 1
+1-00 1
+.names pdata_14_14_ [14435] [17167] [17362] preset n3427
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_7_7_ [14450] [17284] [18376] preset n3432
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_2_2_ n2969 n2825 [14465] preset n3437
+--110 1
+-0-10 1
+110-0 1
+.names pdata_11_11_ n2969 n2825 [14480] preset n3442
+--110 1
+-0-10 1
+110-0 1
+.names pdata_4_4_ n2971 n2825 [14495] preset n3447
+--110 1
+-0-10 1
+110-0 1
+.names pdata_1_1_ [14510] [17310] [17388] preset n3452
+-1-00 1
+-11-0 1
+1-010 1
+.names n4036 [14525] n3121_1 n4428 n3457
+--01 1
+11-- 1
+.names n4036 [14540] n3160 n4428 n3462
+--01 1
+11-- 1
+.names n3114 [14555] [18103] [18168] preset n3467
+-1-00 1
+-11-0 1
+0-010 1
+.names n4038 preset [14570] n2979_1 n3963 n3472
+---01 1
+001-- 1
+.names n4038 preset [14585] n3119 n3963 n3477
+---01 1
+001-- 1
+.names n3415 preset [14600] n3156 n4107 n3482
+---01 1
+001-- 1
+.names [14615] n3333 n3290 preset n3177 n3487
+-0001 1
+-1101 1
+1--00 1
+.names n3422_1 [14630] [17427] [17648] preset n3492
+-1-10 1
+-10-0 1
+0-100 1
+.names n3339 [14660] n3345 n3338 n3497
+--01 1
+11-- 1
+.names n4007_1 [14675] n3287 n4006 n3502
+--01 1
+11-- 1
+.names n4007_1 [14690] n3432_1 n4006 n3507
+--01 1
+11-- 1
+.names pdata_6_6_ [14705] [17791] [17843] preset n3512
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_8_8_ n2814_1 n4259 n4261 n4257_1 n3517
+-1111 0
+0-111 0
+.names n2891 [6665] [6005] n2888 n4258 n2866 n4257_1
+----0- 0
+--11-1 0
+11---1 0
+.names n2885 [8435] n2876 [5810] n2880 n2866 n4258
+--1101 0
+11---1 0
+.names n2884 [6605] ppeaka_8_8_ n2886 n4260 n2866 n4259
+----0- 0
+--10-1 0
+11---1 0
+.names n2892_1 [14900] [14030] n2874 n2866 n4260
+--111 0
+11--1 0
+.names n2889 [13010] n4262_1 [6410] n2870 n2866 n4261
+---11- 0
+--1--1 0
+11---1 0
+.names n2876 n2877_1 [9050] n4262_1
+101 1
+.names ppeakb_13_13_ n2902_1 n2875 ppeaka_13_13_ n4264 n4269 n3521
+--0011 0
+-10-11 0
+11-111 0
+.names ppeakp_13_13_ n2905 n4266_1 n4267 n4268 n4265 n4264
+-01111 1
+0-1111 1
+.names n2911 [14015] [10190] n2910 n2817 n2866 n4265
+--1101 0
+11--01 0
+.names n2915 [15500] n2917 [15920] n2817 n2866 n4266_1
+--1101 0
+11--01 0
+.names n2916_1 [14240] [8420] n2885 n2817 n2866 n4267
+--1101 0
+11--01 0
+.names n2904 ppeakb_13_13_ [5645] n2888 n2817 n2866 n4268
+--1101 0
+01--01 0
+.names n2912_1 ppeaka_14_14_ [14540] n2879 n4269
+--11 0
+11-- 0
+.names n4271_1 n2902_1 ppeaka_2_2_ n3525
+-01 1
+0-- 1
+.names ppeakp_2_2_ n2906 n4274 n4276_1 n4277 n4272 n4271_1
+-11111 1
+0-1111 1
+.names n2904 ppeakb_2_2_ n4180_1 ppeaka_3_3_ n4273 n2866 n4272
+----0- 0
+--11-1 0
+01---1 0
+.names n2916_1 [6980] n2876 n2877_1 ppeaka_2_2_ n2866 n4273
+--1001 0
+11---1 0
+.names n2917 [5105] n2888 [9635] n4275 n2866 n4274
+----0- 0
+--11-1 0
+11---1 0
+.names n2911 [7805] n2885 [14000] n2866 n4275
+--111 0
+11--1 0
+.names n2915 [15515] n2876 ppeakb_2_2_ n2877_1 n2866 n4276_1
+--1001 0
+11---1 0
+.names n2910 [11720] n2876 n2880 [13715] n2866 n4277
+--1011 0
+11---1 0
+.names n2866 n2921 [9875] n4279 n2919 [14765] n3529
+----01 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [5270] n2870 [12875] n4279
+---11 0
+111-- 0
+.names n2879 [13040] n2875 [7970] n4284 n4281_1 n3534
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2916_1 [15770] n4283 n4282 n4281_1
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [11045] n2870 [13820] n2817 n4282
+---110 0
+011--0 0
+.names n2888 [9470] n2874 [11135] n2817 n2866 n4283
+--1101 0
+11--01 0
+.names ppeaks_9_9_ n2929 n4286_1 n4287 n4288 n4285 n4284
+-11111 1
+0-1111 1
+.names n2891 [8780] [5465] n2889 n2817 n2866 n4285
+--1101 0
+11--01 0
+.names n2892_1 [14165] [4745] n2884 n2817 n2866 n4286_1
+--1101 0
+11--01 0
+.names n2921 [9590] [5405] n2885 n2817 n2866 n4287
+--1101 0
+11--01 0
+.names n2935_1 [12440] [10685] n2917 n2817 n2866 n4288
+--1101 0
+11--01 0
+.names n2948 ppeaka_14_14_ n4290 ppeakp_14_14_ n2938 n3538
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [11675] n2891 ppeakb_14_14_ n4291_1 n2866 n4290
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [11525] [7580] n2871 n4291_1
+---10 0
+011-- 0
+.names [14810] pdata_10_10_ preset n2952 n3542
+-101 1
+1-00 1
+.names pdata_5_5_ [14825] [17102] [17154] preset n3547
+-1-10 1
+-10-0 1
+1-100 1
+.names [14840] pdata_0_0_ preset n2959 n3552
+-101 1
+1-00 1
+.names [14855] pdata_9_9_ preset n2959 n3557
+-101 1
+1-00 1
+.names pdata_4_4_ [14870] [17167] [17362] preset n3562
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_13_13_ n2967 n2825 [14885] preset n3567
+--110 1
+-0-10 1
+110-0 1
+.names pdata_8_8_ n2969 n2825 [14900] preset n3572
+--110 1
+-0-10 1
+110-0 1
+.names pdata_3_3_ n2971 n2825 [14915] preset n3577
+--110 1
+-0-10 1
+110-0 1
+.names [14930] pdata_7_7_ preset n2973 n3582
+-101 1
+1-00 1
+.names n4036 [14960] n3119 n4428 n3587
+--01 1
+11-- 1
+.names n3121_1 [14975] [18103] [18168] preset n3592
+-1-00 1
+-11-0 1
+0-010 1
+.names n3154 preset [14990] n3160 n4548 n3597
+---01 1
+001-- 1
+.names n4038 preset [15005] n3162 n3963 n3602
+---01 1
+001-- 1
+.names n3415 preset [15020] n2979_1 n4107 n3607
+---01 1
+001-- 1
+.names n3287 [15035] [17427] [17648] preset n3612
+-1-10 1
+-10-0 1
+0-100 1
+.names n3290 n3333 [15050] [17427] [17648] preset n3617
+--1-10 1
+--10-0 1
+00-100 1
+11-100 1
+.names n4007_1 [15065] n3345 n4006 n3622
+--01 1
+11-- 1
+.names pdata_5_5_ [15080] [17791] [17843] preset n3627
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_9_9_ n2814_1 n4313 n4315_1 n4311 n3632
+-1111 0
+0-111 0
+.names n2891 [5990] n2888 [6680] n4312 n2866 n4311
+----0- 0
+--11-1 0
+11---1 0
+.names n2885 [14855] n2876 n2880 [15185] n2866 n4312
+--1011 0
+11---1 0
+.names n2884 [4520] n2886 ppeaka_9_9_ n4314 n2866 n4313
+----0- 0
+--01-1 0
+11---1 0
+.names n2892_1 [15275] [7850] n2874 n2866 n4314
+--111 0
+11--1 0
+.names n2889 [16010] n4316 [5720] n2870 n2866 n4315_1
+---11- 0
+--1--1 0
+11---1 0
+.names n2876 n2877_1 [8390] n4316
+101 1
+.names ppeakp_12_12_ n2905 n4319 n4322 n4318 n3636
+-0111 0
+0-111 0
+.names n2902_1 n2903 n2875 ppeakb_12_12_ ppeaka_12_12_ n4318
+--000 1
+-00-0 1
+1-00- 1
+10-11 1
+.names n2879 n2912_1 [14120] ppeaka_13_13_ n4320_1 n4321 n4319
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n2916_1 [14660] [7775] n2885 n2817 n2866 n4320_1
+--1101 0
+11--01 0
+.names n2910 [11510] [4940] n2888 n2817 n2866 n4321
+--1101 0
+11--01 0
+.names n2817 n2866 n2917 [4415] n4323 n4322
+----0 0
+0111- 0
+.names n2915 [15845] [7190] n2911 n2817 n2866 n4323
+--1101 0
+11--01 0
+.names n4325_1 n2902_1 ppeaka_3_3_ n3640
+-01 1
+0-- 1
+.names ppeakp_3_3_ n2906 n4328 n4330 n4331 n4326 n4325_1
+-11111 1
+0-1111 1
+.names n2904 ppeakb_3_3_ n4180_1 ppeaka_4_4_ n4327 n2866 n4326
+----0- 0
+--11-1 0
+01---1 0
+.names n2916_1 [4910] n2876 n2877_1 ppeaka_3_3_ n2866 n4327
+--1001 0
+11---1 0
+.names n2917 [15560] [8960] n2888 n4329_1 n2866 n4328
+----0- 0
+--11-1 0
+11---1 0
+.names n2911 [15245] [13625] n2885 n2866 n4329_1
+--111 0
+11--1 0
+.names n2915 [15860] n2876 ppeakb_3_3_ n2877_1 n2866 n4330
+--1001 0
+11---1 0
+.names n2910 [9920] n2876 n2880 [13355] n2866 n4331
+--1011 0
+11---1 0
+.names n2866 n2921 [10730] n4333 n2919 [15140] n3644
+----01 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [5975] n2870 [10070] n4333
+---11 0
+111-- 0
+.names n2879 [13385] n2875 [7340] n4338 n4335 n3649
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2916_1 [11225] n4337 n4336 n4335
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [10775] n2870 [13460] n2817 n4336
+---110 0
+011--0 0
+.names n2888 [7520] n2874 [10865] n2817 n2866 n4337
+--1101 0
+11--01 0
+.names ppeaks_8_8_ n2929 n4340 n4341 n4342 n4339_1 n4338
+-11111 1
+0-1111 1
+.names n2891 [9440] n2889 [12590] n2817 n2866 n4339_1
+--1101 0
+11--01 0
+.names n2892_1 [15365] [6815] n2884 n2817 n2866 n4340
+--1101 0
+11--01 0
+.names n2921 [8915] [6095] n2885 n2817 n2866 n4341
+--1101 0
+11--01 0
+.names n2935_1 [13160] [7595] n2917 n2817 n2866 n4342
+--1101 0
+11--01 0
+.names n2948 ppeaka_15_15_ n4344_1 ppeakp_15_15_ n2938 n3653
+---10 1
+--0-- 1
+01--- 1
+.names n2917 [11450] n2891 ppeakb_15_15_ n4345 n2866 n4344_1
+----0- 0
+--11-1 0
+11---1 0
+.names n2865 n2872_1 [11285] [8210] n2871 n4345
+---10 0
+011-- 0
+.names [15185] pdata_9_9_ preset n2952 n3657
+-101 1
+1-00 1
+.names pdata_6_6_ [15200] [17102] [17154] preset n3662
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_15_15_ [15215] [17102] [17154] preset n3667
+-1-10 1
+-10-0 1
+1-100 1
+.names [15230] pdata_10_10_ preset n2959 n3672
+-101 1
+1-00 1
+.names pdata_3_3_ [15245] [17167] [17362] preset n3677
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_12_12_ n2967 n2825 [15260] preset n3682
+--110 1
+-0-10 1
+110-0 1
+.names pdata_9_9_ n2969 n2825 [15275] preset n3687
+--110 1
+-0-10 1
+110-0 1
+.names pdata_2_2_ n2971 n2825 [15290] preset n3692
+--110 1
+-0-10 1
+110-0 1
+.names [15305] pdata_13_13_ preset n2973 n3697
+-101 1
+1-00 1
+.names n4356 n3136_1 n3126_1 n3143 n3125 n4161 n3702
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n3007 [15320] n4356
+11 1
+.names n4036 [15335] n3112 n4428 n3707
+--01 1
+11-- 1
+.names n3490 [15350] [18103] [18168] preset n3712
+-1-00 1
+-11-0 1
+0-010 1
+.names n4038 preset [15365] n4360 n3717
+---1 1
+001- 1
+.names n3497_1 n3012 n3080 n3963 n4360
+0001 1
+0111 1
+1011 1
+1101 1
+.names n3415 preset [15380] n3398_1 n4107 n3722
+---01 1
+001-- 1
+.names n3434 [15395] [17427] [17648] preset n3727
+-1-10 1
+-10-0 1
+0-100 1
+.names n3517_1 [15410] [17427] [17648] preset n3732
+-1-10 1
+-10-0 1
+0-100 1
+.names n4007_1 [15425] n3593 n4006 n3737
+--01 1
+11-- 1
+.names pdata_4_4_ [15440] [17791] [17843] preset n3742
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_6_6_ n2814_1 n4369_1 n4371 n4367 n3747
+-1111 0
+0-111 0
+.names n2889 [13685] ppeaka_6_6_ n2886 n4368 n2866 n4367
+----0- 0
+--10-1 0
+11---1 0
+.names n2866 n2876 n2877_1 [7745] [7685] n2870 n4368
+----11 0
+1101-- 0
+.names n2884 [7865] [6575] n2874 n4370 n2866 n4369_1
+----0- 0
+--11-1 0
+11---1 0
+.names n2892_1 [15635] [7160] n2885 n2866 n4370
+--111 0
+11--1 0
+.names n2891 [10265] [4610] n2888 n4372 n2866 n4371
+----11 0
+--11-1 0
+11---1 0
+.names n2876 n2880 [4385] n4372
+101 1
+.names n4378 n2906 ppeakp_15_15_ n4374_1 n2902_1 ppeaka_15_15_ n3751
+----01 1
+---0-- 1
+-01--- 1
+0----- 1
+.names ppeakb_15_15_ n2904 n2866 n4377 n4375 n4374_1
+--011 1
+-1-11 1
+0--11 1
+.names n2911 [7205] [6365] n2910 n4376 n2866 n4375
+----0- 0
+--11-1 0
+11---1 0
+.names n2888 [7010] n2885 [15950] n2866 n4376
+--111 0
+11--1 0
+.names n2916_1 [12425] n2915 [13550] n2866 n4377
+--111 0
+11--1 0
+.names ppeaka_15_15_ ppeakb_15_15_ n4379_1 n2877_1 n2866 n2876 n4378
+--0--- 0
+-0-011 0
+0--011 0
+.names n2917 [15215] n2876 [13730] n2880 n2866 n4379_1
+--1101 0
+11---1 0
+.names n4381 n2902_1 ppeaka_4_4_ n3755
+-01 1
+0-- 1
+.names ppeakp_4_4_ n2906 n4384_1 n4386 n4387 n4382 n4381
+-11111 1
+0-1111 1
+.names n2904 ppeakb_4_4_ n4180_1 ppeaka_5_5_ n4383 n2866 n4382
+----0- 0
+--11-1 0
+01---1 0
+.names n2916_1 [5615] n2876 n2877_1 ppeaka_4_4_ n2866 n4383
+--1001 0
+11---1 0
+.names n2917 [15905] [8300] n2888 n4385 n2866 n4384_1
+----0- 0
+--11-1 0
+11---1 0
+.names n2911 [14870] [13280] n2885 n2866 n4385
+--111 0
+11--1 0
+.names n2915 [14765] n2876 ppeakb_4_4_ n2877_1 n2866 n4386
+--1001 0
+11---1 0
+.names n2910 [8975] n2876 n2880 [14525] n2866 n4387
+--1011 0
+11---1 0
+.names n2866 n2921 [10445] n4389 n2919 [15500] n3759
+----01 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [15305] [9800] n2870 n4389
+---11 0
+111-- 0
+.names n2866 n2921 [8930] n4391 n2919 [15515] n3764
+----01 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [9710] n2870 [13475] n4391
+---11 0
+111-- 0
+.names n2879 [13025] n2875 [5330] n4396 n4393_1 n3769
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [9455] n4395 n4394 n4393_1
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [9935] n2870 [12605] n2817 n4394
+---110 0
+011--0 0
+.names n2885 [5390] n2874 [7415] n2817 n2866 n4395
+--1101 0
+11--01 0
+.names ppeaks_0_0_ n2929 n4398_1 n4399 n4400 n4397 n4396
+-11111 1
+0-1111 1
+.names n2891 [7490] n2889 [15380] n2817 n2866 n4397
+--1101 0
+11--01 0
+.names n2892_1 [13400] [6125] n2884 n2817 n2866 n4398_1
+--1101 0
+11--01 0
+.names n2921 [13175] [12890] n2935_1 n2817 n2866 n4399
+--1101 0
+11--01 0
+.names n2916_1 [8240] n2917 [10670] n2817 n2866 n4400
+--1101 0
+11--01 0
+.names [15545] pdata_12_12_ preset n2952 n3773
+-101 1
+1-00 1
+.names pdata_3_3_ [15560] [17102] [17154] preset n3778
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_14_14_ [15575] [17102] [17154] preset n3783
+-1-10 1
+-10-0 1
+1-100 1
+.names [15590] pdata_5_5_ preset n2959 n3788
+-101 1
+1-00 1
+.names [15605] pdata_0_0_ preset n2959 n3793
+-101 1
+1-00 1
+.names pdata_15_15_ n2967 n2825 [15620] preset n3798
+--110 1
+-0-10 1
+110-0 1
+.names pdata_6_6_ n2969 n2825 [15635] preset n3803
+--110 1
+-0-10 1
+110-0 1
+.names pdata_1_1_ n2971 n2825 [15650] preset n3808
+--110 1
+-0-10 1
+110-0 1
+.names [15665] pdata_3_3_ preset n2973 n3813
+-101 1
+1-00 1
+.names n4036 [15680] n2979_1 n4428 n3818
+--01 1
+11-- 1
+.names n4036 [15695] n3080 n4428 n3497_1 n3012 n3823
+--0100 1
+--0111 1
+--1101 1
+--1110 1
+11---- 1
+.names n3156 [15710] [18103] [18168] preset n3828
+-1-00 1
+-11-0 1
+0-010 1
+.names n4414 n3136_1 n3126_1 n3143 n3125 n4548 n3833
+--0001 1
+--1111 1
+-0-001 1
+-00-01 1
+-1-111 1
+-11-11 1
+1----- 1
+.names n3154 preset [15725] n4414
+001 1
+.names [15755] n3345 preset n3177 n3838
+-001 1
+1-00 1
+.names n3339 [15770] n3335 n3338 n3843
+--01 1
+11-- 1
+.names pdata_3_3_ [15785] [17791] [17843] preset n3848
+-1-10 1
+-10-0 1
+1-100 1
+.names ppeakb_7_7_ n2814_1 n4421 n4423_1 n4424 n4419 n3853
+-11111 0
+0-1111 0
+.names n2879 [6500] n2875 [7115] n4420 n4419
+----0 0
+--11- 0
+11--- 0
+.names n2866 n2874 [14450] [7055] n2870 n2817 n4420
+---110 0
+111--0 0
+.names n2817 n2866 n2886 ppeaka_7_7_ n4422 n4421
+----0 0
+0101- 0
+.names n2885 [9095] [5915] n2884 n2817 n2866 n4422
+--1101 0
+11--01 0
+.names n2889 [13340] [5315] n2888 n2817 n2866 n4423_1
+--1101 0
+11--01 0
+.names n2892_1 [15980] [14930] n2891 n2817 n2866 n4424
+--1101 0
+11--01 0
+.names ppeakp_14_14_ n2905 n4427 n4430 n4426 n3857
+-0111 0
+0-111 0
+.names n2902_1 n2903 n2875 ppeakb_14_14_ ppeaka_14_14_ n4426
+--000 1
+-00-0 1
+1-00- 1
+10-11 1
+.names n2879 n2912_1 [13370] ppeaka_15_15_ n4428_1 n4429 n4427
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n2916_1 [12650] [9080] n2885 n2817 n2866 n4428_1
+--1101 0
+11--01 0
+.names n2910 [8315] [6335] n2888 n2817 n2866 n4429
+--1101 0
+11--01 0
+.names n2817 n2866 n2917 [15575] n4431 n4430
+----0 0
+0111- 0
+.names n2915 [15140] [14435] n2911 n2817 n2866 n4431
+--1101 0
+11--01 0
+.names n4433_1 n2902_1 ppeaka_5_5_ n3861
+-01 1
+0-- 1
+.names ppeakp_5_5_ n2906 n4436 n4438_1 n4439 n4434 n4433_1
+-11111 1
+0-1111 1
+.names n2904 ppeakb_5_5_ ppeaka_6_6_ n4180_1 n4435 n2866 n4434
+----0- 0
+--11-1 0
+01---1 0
+.names n2916_1 [11465] n2876 n2877_1 ppeaka_5_5_ n2866 n4435
+--1001 0
+11---1 0
+.names n2917 [14825] [7670] n2888 n4437 n2866 n4436
+----0- 0
+--11-1 0
+11---1 0
+.names n2911 [6560] n2885 [15590] n2866 n4437
+--111 0
+11--1 0
+.names n2915 [8330] n2876 n2877_1 ppeakb_5_5_ n2866 n4438_1
+--1001 0
+11---1 0
+.names n2910 [5660] n2876 n2880 [14105] n2866 n4439
+--1011 0
+11---1 0
+.names n2866 n2921 [8285] n4441 n2919 [15845] n3865
+----01 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [9980] [9500] n2870 n4441
+---11 0
+111-- 0
+.names n2866 n2921 [10145] n4443_1 n2919 [15860] n3870
+----01 1
+---0-- 1
+111--- 1
+.names n2866 n2891 [15665] [13130] n2870 n4443_1
+---11 0
+111-- 0
+.names n2879 [12800] n2875 [6035] n4448_1 n4445 n3875
+-----0 1
+----0- 1
+--11-- 1
+11---- 1
+.names n2817 n2866 n2888 [8810] n4447 n4446 n4445
+-----0 0
+----0- 0
+0111-- 0
+.names n2865 n2872_1 [10205] n2870 [12860] n2817 n4446
+---110 0
+011--0 0
+.names n2885 [4700] n2874 [8060] n2817 n2866 n4447
+--1101 0
+11--01 0
+.names ppeaks_10_10_ n2929 n4450 n4451 n4452 n4449 n4448_1
+-11111 1
+0-1111 1
+.names n2891 [8135] [6155] n2889 n2817 n2866 n4449
+--1101 0
+11--01 0
+.names n2892_1 [14585] [5450] n2884 n2817 n2866 n4450
+--1101 0
+11--01 0
+.names n2921 [9860] n2935_1 [12665] n2817 n2866 n4451
+--1101 0
+11--01 0
+.names n2916_1 [13850] [10400] n2917 n2817 n2866 n4452
+--1101 0
+11--01 0
+.names [15890] pdata_11_11_ preset n2952 n3879
+-101 1
+1-00 1
+.names pdata_4_4_ [15905] [17102] [17154] preset n3884
+-1-10 1
+-10-0 1
+1-100 1
+.names pdata_13_13_ [15920] [17102] [17154] preset n3889
+-1-10 1
+-10-0 1
+1-100 1
+.names [15935] pdata_6_6_ preset n2959 n3894
+-101 1
+1-00 1
+.names [15950] pdata_15_15_ preset n2959 n3899
+-101 1
+1-00 1
+.names pdata_14_14_ n2967 n2825 [15965] preset n3904
+--110 1
+-0-10 1
+110-0 1
+.names pdata_7_7_ n2969 n2825 [15980] preset n3909
+--110 1
+-0-10 1
+110-0 1
+.names pdata_0_0_ n2971 n2825 [15995] preset n3914
+--110 1
+-0-10 1
+110-0 1
+.names pdata_9_9_ n2971 n2825 [16010] preset n3919
+--110 1
+-0-10 1
+110-0 1
+.names n4036 [16025] n3398_1 n4428 n3924
+--01 1
+11-- 1
+.names n4036 [16040] n4464 n3929
+--1 1
+11- 1
+.names n3151 n3152 n3026 n3075 n4428 n4464
+-1001 1
+-1111 1
+00011 1
+00101 1
+1-001 1
+1-111 1
+.names n2979_1 [16055] [18103] [18168] preset n3934
+-1-00 1
+-11-0 1
+0-010 1
+.names n3154 preset [16070] n3409 n4548 n3939
+---01 1
+001-- 1
+.names n4038 preset [16085] n3418 n3963 n3944
+---01 1
+001-- 1
+.names [16100] n3424 preset n3177 n3949
+-001 1
+1-00 1
+.names ppeakp_8_8_ n4515_1 n4470 n4501 n3954
+-111 0
+0-11 0
+.names n4495_1 n4499 [13160] ppeaks_8_8_ n4471_1 n4490_1 n4470
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n4489 [13460] n4472 ppeakb_8_8_ n4471_1
+--11 0
+11-- 0
+.names n4473 n2825 n2985 preset n4472
+0010 1
+.names n4474 n4487 n4473
+11 1
+.names n2982 n2969 n2971 n4486_1 n2825 n4475 n4474
+----11 1
+1000-1 1
+.names n2952 n4476_1 n4482 n4484 n4475
+0111 1
+.names n4477 n4480 n4481_1 n4476_1
+111 1
+.names [17180] [17232] [17115] [17050] n4478 n4477
+----0 0
+--10- 0
+10--- 0
+.names [17102] [17037] n4479 n4478
+-00 1
+1-0 1
+.names [17284] [18376] n4479
+10 1
+.names [17518] [17817] [17037] [18025] n4480
+--01 0
+01-- 0
+.names [18311] [18389] [17414] [17843] n4481_1
+--01 0
+10-- 0
+.names [17570] n3178 n2873 [18467] n4483 n4482
+--001 1
+-0-01 1
+1---1 1
+.names [17999] [18220] n2865 pdn [17791] n4483
+--000 0
+10--- 0
+.names [18363] [18415] [17271] [17206] n4485 n4484
+----1 0
+--01- 0
+10--- 0
+.names [16933] [17388] n4485
+10 1
+.names n2911 [17167] n4486_1
+10 1
+.names n2959 n2973 n4488 n4487
+001 1
+.names [17583] [17648] n2825 n2985 n4488
+--01 0
+01-- 0
+.names n4473 preset [17583] [17648] n4489
+0001 1
+.names n4494 n4493 n2873 [11330] ppeaka_8_8_ n4491 n4490_1
+----10 0
+-101-- 0
+1----- 0
+.names n4057 n2959 preset n4473 n4491
+-100 0
+1--0 0
+.names n2825 n2911 preset [17167] n4057
+0100 1
+.names [18467] n3178 n2873 preset [17570] n4473 n4493
+-11000 1
+1--000 1
+.names n4474 n4487 preset paddress_8_8_ n4494
+1101 1
+.names n4473 n4496 n4495_1
+00 1
+.names preset n4038 n4161 n4497 n4428 n4496
+-0010 1
+1-010 1
+.names preset n2967 n2971 n2825 n4479 n4142 n4497
+---100 1
+-00-00 1
+1----0 1
+.names preset [16933] [17388] n4142
+010 1
+.names n4473 n4012 n4499
+01 1
+.names preset [17050] [17115] n4012
+001 1
+.names n4513 n4514 [7595] [11420] n4502 n4509 n4501
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [8750] [8000] n4505_1 n4503 [11225] n4502
+----11 0
+--11-- 0
+11---- 0
+.names n4473 n4097 n4503
+01 1
+.names preset [17206] [17271] n4097
+010 1
+.names n4473 n4519 n4505_1
+01 1
+.names preset [18363] [18415] n4519
+010 1
+.names n4473 n4510 n4507
+01 1
+.names preset [18311] [18389] n4510
+010 1
+.names n4511 [8915] [6410] n4510_1 n4509
+--11 0
+11-- 0
+.names n4473 n2973 preset n4510_1
+010 1
+.names n4473 n4082 n4511
+01 1
+.names preset [17180] [17232] n4082
+010 1
+.names n4473 preset [17037] [18025] n4513
+0001 1
+.names n4473 preset [17518] [17817] n4514
+0001 1
+.names n4473 n4032 n2873 n4493 n4515_1
+--11 0
+01-- 0
+.names preset [17037] [17102] n4032
+010 1
+.names [16907] ppeakb_7_7_ ppeaka_7_7_ n4488 n4518 preset n3958
+--10-0 1
+-1--00 1
+1--110 1
+.names n3176 n2825 n3179_1 n4480 n4518
+-111 1
+0-11 1
+.names [16933] n2888 n2825 preset [17388] n3968
+-1000 1
+1--00 1
+.names ppeakp_9_9_ n4515_1 n4521 n4525 n3973
+-111 0
+0-11 0
+.names n4495_1 n4499 [12440] ppeaks_9_9_ n4522 n4523 n4521
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n4489 [13820] n4472 ppeakb_9_9_ n4522
+--11 0
+11-- 0
+.names n4524_1 n4493 n2873 [11570] n4491 ppeaka_9_9_ n4523
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_9_9_ n4524_1
+1101 1
+.names n4513 n4514 [10685] [11645] n4526 n4527 n4525
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [10040] [7370] n4505_1 n4503 [15770] n4526
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [9590] [5720] n4510_1 n4527
+--11 0
+11-- 0
+.names [16959] ppeakb_8_8_ ppeaka_8_8_ n4488 n4518 preset n3977
+--10-0 1
+-1--00 1
+1--110 1
+.names preset [16920] [16972] n3982
+001 1
+.names preset [16985] [18389] n3987
+010 1
+.names [16998] ppeaka_5_5_ ppeakb_5_5_ n4488 n4518 preset n3992
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [17011] n4533 preset n3997
+-00 1
+1-0 1
+.names n4488 n4518 n4533
+11 1
+.names preset pdn n4002
+00 1
+.names [18025] [17037] [17102] preset n4007
+-100 1
+1-00 1
+.names [17063] ppeakb_6_6_ ppeaka_6_6_ n4488 n4518 preset n4017
+--10-0 1
+-1--00 1
+1--110 1
+.names [17076] ppeaka_15_15_ ppeakb_15_15_ n4488 n4518 preset n4022
+--1-00 1
+-1-0-0 1
+1--110 1
+.names n4002 [17089] n4027
+11 1
+.names [17115] n2935_1 n2825 [17050] preset n4037
+-1000 1
+1--00 1
+.names [17128] ppeaka_3_3_ ppeakb_3_3_ n4488 n4518 preset n4042
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [17141] n4533 preset n4047
+-00 1
+1-0 1
+.names preset [17102] [17154] n4052
+001 1
+.names [17180] n2921 n2825 preset [17232] n4062
+-1000 1
+1--00 1
+.names [17193] ppeaka_4_4_ ppeakb_4_4_ n4488 n4518 preset n4067
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [17206] n2916_1 n2825 preset [17271] n4072
+-1000 1
+1--00 1
+.names preset [17050] [17219] n4077
+001 1
+.names n2910 n2825 preset [17245] n4087
+-101 1
+0-01 1
+.names [17258] ppeaka_1_1_ ppeakb_1_1_ n4488 n4518 preset n4092
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [17284] n2874 n2825 preset [18376] n4102
+-1000 1
+1--00 1
+.names preset [17310] [17388] n4112
+010 1
+.names [17323] ppeaka_2_2_ ppeakb_2_2_ n4488 n4518 preset n4117
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [17336] n4533 preset n4122
+-00 1
+1-0 1
+.names preset [17271] [17349] n4127
+001 1
+.names preset [17167] [17362] n4132
+001 1
+.names preset [17297] [17375] n4137
+001 1
+.names ppeakp_11_11_ n4515_1 n4557 n4561 n4147
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_11_11_ [12125] n4558_1 n4559 n4557
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [13115] ppeakb_11_11_ n4472 n4558_1
+--11 0
+11-- 0
+.names n4560 n4493 n2873 [11915] n4491 ppeaka_11_11_ n4559
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_11_11_ n4560
+1101 1
+.names n4513 n4514 [10115] [16100] n4562_1 n4563 n4561
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [10595] [8645] n4505_1 n4503 [13490] n4562_1
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [10130] [4295] n4510_1 n4563
+--11 0
+11-- 0
+.names preset [17414] [17843] n4151
+001 1
+.names [17518] [17427] preset [17700] n4156
+-100 1
+1-00 1
+.names ppeakp_10_10_ n4515_1 n4567 n4571_1 n4166
+-111 0
+0-11 0
+.names n4495_1 n4499 [12665] ppeaks_10_10_ n4568 n4569 n4567
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n4489 [12860] ppeakb_10_10_ n4472 n4568
+--11 0
+11-- 0
+.names n4570 n4493 n2873 [11795] n4491 ppeaka_10_10_ n4569
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_10_10_ n4570
+1101 1
+.names n4513 n4514 [10400] [10925] n4572 n4573 n4571_1
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [9770] [9305] n4505_1 n4503 [13850] n4572
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [9860] [5015] n4510_1 n4573
+--11 0
+11-- 0
+.names [17479] n4533 preset n4170
+-00 1
+1-0 1
+.names [17492] ppeaka_13_13_ ppeakb_13_13_ n4488 n4518 preset n4175
+--1-00 1
+-1-0-0 1
+1--110 1
+.names preset [17414] [17505] n4180
+001 1
+.names [17817] [17518] [17700] preset n4185
+-100 1
+1-00 1
+.names n2825 [18636] [17531] n2824_1 preset n4190
+--110 1
+00--0 1
+.names [17544] ppeaki_7_7_ n4580_1 preset n4195
+-110 1
+1-00 1
+.names n3006 n2825 n2954 [17752] n4580_1
+1010 1
+.names ppeakp_13_13_ n4515_1 n4582 n4586 n4200
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_13_13_ [14690] n4583 n4584 n4582
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [12620] ppeakb_13_13_ n4472 n4583
+--11 0
+11-- 0
+.names n4585_1 n4493 n2873 [12170] n4491 ppeaka_13_13_ n4584
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_13_13_ n4585_1
+1101 1
+.names n4513 n4510_1 [8885] [15500] n4587 n4588 n4586
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [4775] n4505_1 [9740] n4503 [14240] n4587
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [10700] n4514 [13805] n4588
+--11 0
+11-- 0
+.names [18467] [17570] n3178 n2873 n4590_1 preset n4204
+--1110 1
+-1--10 1
+1---10 1
+.names n4598 n4594 n4591 [17596] [17986] n4590_1
+-1111 0
+0---- 0
+.names n2824_1 n4592 n4593 n4591
+011 1
+.names n2876 n3846 ppeaki_6_6_ ppeaki_7_7_ ppeaki_11_11_ ppeaki_10_10_ \
+ n4592
+--0000 1
+-1--00 1
+0-00-- 1
+01---- 1
+.names n2876 n3846 ppeaki_4_4_ ppeaki_5_5_ ppeaki_9_9_ ppeaki_8_8_ n4593
+--0000 1
+-1--00 1
+0-00-- 1
+01---- 1
+.names ppeaki_15_15_ ppeaki_14_14_ ppeaki_13_13_ ppeaki_12_12_ n3846 \
+ n4595_1 n4594
+----11 1
+0000-1 1
+.names n4596 n4597 n4595_1
+11 1
+.names n2876 n3846 ppeaki_14_14_ ppeaki_8_8_ ppeaki_12_12_ ppeaki_10_10_ \
+ n4596
+--0000 1
+-10-0- 1
+0--0-0 1
+01---- 1
+.names n2876 n3846 ppeaki_15_15_ ppeaki_9_9_ ppeaki_13_13_ ppeaki_11_11_ \
+ n4597
+--0000 1
+-10-0- 1
+0--0-0 1
+01---- 1
+.names [17986] n2864 [18597] [17804] n4598
+-100 1
+0--0 1
+.names [17648] [17583] preset [17700] n4209
+-100 1
+1-00 1
+.names n4601 [18597] n2819_1 n4590_1 [17596] preset n4214
+--1100 1
+00--10 1
+.names n4591 n4594 n4601
+11 1
+.names [17609] ppeaki_6_6_ n4580_1 preset n4219
+-110 1
+1-00 1
+.names ppeakp_12_12_ n4515_1 n4604 n4608 n4224
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_12_12_ [15065] n4605 n4606 n4604
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [12395] ppeakb_12_12_ n4472 n4605
+--11 0
+11-- 0
+.names n4607 n4493 n2873 [12050] n4491 ppeaka_12_12_ n4606
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_12_12_ n4607
+1101 1
+.names n4513 n4510_1 [9845] [15845] n4609 n4610 n4608
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [6860] n4505_1 [10010] n4503 [14660] n4609
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [10415] n4514 [15755] n4610
+--11 0
+11-- 0
+.names [17635] [17570] n4590_1 preset n4228
+-110 1
+1-10 1
+.names [17648] [17427] preset [17700] n4233
+-100 1
+1-00 1
+.names n4591 n4595_1 n4614 n4238
+111 1
+.names ppeaki_15_15_ ppeaki_14_14_ ppeaki_13_13_ ppeaki_12_12_ n3846 preset \
+ n4614
+----10 1
+0000-0 1
+.names [17674] ppeaki_5_5_ n4580_1 preset n4243
+-110 1
+1-00 1
+.names ppeakp_15_15_ n4515_1 n4617 n4621 n4248
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_15_15_ [13880] n4618 n4619 n4617
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [15050] ppeakb_15_15_ n4472 n4618
+--11 0
+11-- 0
+.names n4620 n4493 n2873 [12470] n4491 ppeaka_15_15_ n4619
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_15_15_ n4620
+1101 1
+.names n4513 n4514 [4880] [14615] n4622 n4623 n4621
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [8765] [6755] n4505_1 n4503 [12425] n4622
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [6320] n4510_1 [13550] n4623
+--11 0
+11-- 0
+.names preset [17700] [18142] n4252
+001 1
+.names [17713] ppeaki_4_4_ n4580_1 preset n4257
+-110 1
+1-00 1
+.names ppeakp_14_14_ n4515_1 n4627 n4631 n4262
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_14_14_ [14270] n4628 n4629 n4627
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [15410] ppeakb_14_14_ n4472 n4628
+--11 0
+11-- 0
+.names n4630 n4493 n2873 [12260] n4491 ppeaka_14_14_ n4629
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_14_14_ n4630
+1101 1
+.names n4513 n4510_1 [9560] [15140] n4632 n4633 n4631
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [5480] n4505_1 [6080] n4503 [12650] n4632
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [10985] n4514 [13445] n4633
+--11 0
+11-- 0
+.names preset [17700] [17739] n4266
+001 1
+.names [17752] n2825 n3005 preset n2824_1 n4271
+-0101 1
+1--01 1
+.names [17765] ppeakb_9_9_ ppeaka_9_9_ n4488 n4518 preset n4276
+--10-0 1
+-1--00 1
+1--110 1
+.names [17778] ppeaka_14_14_ ppeakb_14_14_ n4488 n4518 preset n4281
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [17791] n2865 pdn preset [17414] n4286
+-0000 1
+1--00 1
+.names n4590_1 n4002 n4291
+01 1
+.names [17817] n3178 n2873 [18467] preset [17700] n4296
+-10000 1
+1---00 1
+.names n4642 n4646 n4301
+11 0
+.names pwr_0_0_ preset n4082 n4012 n4488 n4643 n4642
+--00-0 1
+--000- 1
+-1--11 1
+0---11 1
+.names [17427] [17518] [17583] [18077] n4644 n4645 n4643
+-0-111 1
+-00-11 1
+1--111 1
+1-0-11 1
+.names [17206] [17232] [17271] [18441] n4477 n4480 n4644
+--1111 1
+-01-11 1
+0--111 1
+00--11 1
+.names [17271] [17349] [17050] [17219] n4645
+--10 0
+10-- 0
+.names [17206] [17271] n4480 n4488 n4643 preset n4646
+---0-0 0
+--0-00 0
+10--00 0
+.names [17843] [17791] preset [17414] n4305
+-100 1
+1-00 1
+.names [17856] n2819_1 preset n4310
+-10 1
+1-0 1
+.names [17869] n4533 preset n4315
+-00 1
+1-0 1
+.names [17882] n4533 preset n4320
+-00 1
+1-0 1
+.names n4652 n4664 n4325
+11 0
+.names preset n4482 n4654 n3157 n3117 n4653 n4652
+--1--1 1
+-1-001 1
+1--001 1
+.names n4496 n4519 n4510 n4151 n4654 n4653
+----1 1
+1000- 1
+.names n4655 n3016 n4654
+11 1
+.names n2960_1 n2974 n4486_1 n2825 n4656 n4655
+---11 1
+000-1 1
+.names n2952 n4482 n4657 n4659 n4661 n4656
+01111 1
+.names [17453] [17791] [17843] [18246] n4478 n4658 n4657
+--1111 1
+-0-111 1
+0-1-11 1
+00--11 1
+.names [17167] [17362] [17102] [17154] n4658
+--10 0
+10-- 0
+.names [17570] [17635] [18142] [18220] n4660 n4481_1 n4659
+-1-011 1
+-11-11 1
+0--011 1
+0-1-11 1
+.names [17310] [17388] [17414] [17505] n2991 n2996 n4660
+-0-100 1
+-00-00 1
+1--100 1
+1-0-00 1
+.names [16985] [18298] [18376] [18389] n4662 n4663 n4661
+--0011 1
+-1-011 1
+1-0-11 1
+11--11 1
+.names [18363] [18428] [18480] [18493] [18415] n4485 n4662
+--1010 1
+-11-10 1
+0--000 1
+01--00 1
+.names [17297] [17375] [16920] [16972] n4663
+--10 0
+10-- 0
+.names prd_0_0_ preset n4057 n4032 n4655 n3016 n4664
+--00-0 1
+--000- 1
+-1--11 1
+0---11 1
+.names [17908] n4533 preset n4329
+-00 1
+1-0 1
+.names [17921] ppeaka_10_10_ ppeakb_10_10_ n4488 n4518 preset n4334
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [17934] n4533 preset n4339
+-00 1
+1-0 1
+.names [17947] n4533 preset n4344
+-00 1
+1-0 1
+.names [17960] n4533 preset n4349
+-00 1
+1-0 1
+.names [17973] ppeaka_12_12_ ppeakb_12_12_ n4488 n4518 preset n4354
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [17986] [17635] n4590_1 preset n4359
+-110 1
+1-10 1
+.names [18077] [17999] preset [17700] n4364
+-100 1
+1-00 1
+.names ppeaki_2_2_ n2825 [17531] [18012] preset n4369
+--110 1
+-1-10 1
+100-0 1
+.names [18025] n2917 n2825 [17102] preset n4374
+-1000 1
+1--00 1
+.names [18038] n4533 preset n4379
+-00 1
+1-0 1
+.names [17414] n4590_1 n4002 n4384
+-01 1
+1-1 1
+.names [18064] n3178 n2873 [18467] n4002 n4388
+-1001 1
+1---1 1
+.names [18077] [17583] [17700] preset n4393
+-100 1
+1-00 1
+.names ppeaki_3_3_ n2825 [17531] [18090] preset n4398
+--110 1
+-1-10 1
+100-0 1
+.names preset [18103] [18168] n4403
+010 1
+.names [18116] n4533 preset n4408
+-00 1
+1-0 1
+.names [18129] n3178 n2873 [18467] preset n4413
+-1000 1
+1---0 1
+.names [18220] [18142] preset [17700] n4418
+-100 1
+1-00 1
+.names ppeaki_0_0_ n2825 [17531] [18155] preset n4423
+--110 1
+-1-10 1
+100-0 1
+.names [18181] n4533 preset n4433
+-00 1
+1-0 1
+.names [18194] ppeaka_11_11_ ppeakb_11_11_ n4488 n4518 preset n4438
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [18207] n2819_1 n4002 n4443
+-11 1
+1-1 1
+.names [18220] [17999] preset [17700] n4448
+-100 1
+1-00 1
+.names ppeaki_1_1_ n2825 [17531] [18233] preset n4453
+--110 1
+-1-10 1
+100-0 1
+.names preset [17453] [18246] n4458
+001 1
+.names ppeakp_0_0_ n4515_1 n4692 n4696 n4463
+-111 0
+0-11 0
+.names n4499 n4513 [10670] [12890] n4693 n4694 n4692
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n4489 [12605] ppeakb_0_0_ n4472 n4693
+--11 0
+11-- 0
+.names n4695 n4493 n2873 [11555] n4491 ppeaka_0_0_ n4694
+----01 0
+-101-- 0
+0----- 0
+.names preset paddress_0_0_ n4151 n4474 n4487 n4695
+--1-0 0
+--10- 0
+01-11 0
+.names n4510_1 n4511 [4310] [13175] n4697 n4698 n4696
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [10025] [8240] n4503 n4495_1 ppeaks_0_0_ n4697
+----11 0
+--11-- 0
+11---- 0
+.names n4514 [11630] [8630] n4505_1 n4698
+--11 0
+11-- 0
+.names [18142] [17739] [17700] piack_0_0_ preset n4467
+--010 1
+-1-10 1
+1-0-0 1
+.names [18285] n2885 n2825 preset [18415] n4471
+-1000 1
+1--00 1
+.names preset [18298] [18376] n4476
+010 1
+.names [18506] [18311] [18389] preset n4481
+-100 1
+1-00 1
+.names ppeakp_1_1_ n4515_1 n4704 n4708 n4486
+-111 0
+0-11 0
+.names n4499 n4513 [9830] [12005] n4705 n4706 n4704
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n4489 [12380] ppeakb_1_1_ n4472 n4705
+--11 0
+11-- 0
+.names n4707 n4493 n2873 [11315] n4491 ppeaka_1_1_ n4706
+----01 0
+-101-- 0
+0----- 0
+.names paddress_1_1_ n4487 [17999] [18220] n4474 preset n4707
+--1000 0
+-010-0 0
+11--10 0
+.names n4505_1 n4510_1 [5030] [9290] n4709 n4710 n4708
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n4507 [10310] [6305] n4503 ppeaks_1_1_ n4495_1 n4709
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [12920] [9485] n4514 n4710
+--11 0
+11-- 0
+.names [18337] ppeaka_0_0_ ppeakb_0_0_ n4488 n4518 preset n4490
+--1-00 1
+-1-0-0 1
+1--110 1
+.names [18350] n4533 preset n4495
+-00 1
+1-0 1
+.names [18363] [18285] preset [18415] n4500
+-100 1
+1-00 1
+.names preset [17284] [18376] n4505
+010 1
+.names ppeakp_2_2_ n4515_1 n4716 n4720 n4515
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_2_2_ [15425] n4717 n4718 n4716
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [13100] ppeakb_2_2_ n4472 n4717
+--11 0
+11-- 0
+.names n4719 n4493 n2873 [11060] n4491 ppeaka_2_2_ n4718
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_2_2_ n4719
+1101 1
+.names n4513 n4510_1 [10100] [15515] n4721 n4722 n4720
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [4760] n4505_1 [9725] [6980] n4503 n4721
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [12680] [7535] n4514 n4722
+--11 0
+11-- 0
+.names preset [18428] [18493] n4524
+010 1
+.names preset [17232] [18441] n4529
+001 1
+.names ppeakp_3_3_ n4515_1 n4726 n4730 n4534
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_3_3_ [14255] n4727 n4728 n4726
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [12845] n4472 ppeakb_3_3_ n4727
+--11 0
+11-- 0
+.names n4729 n4493 n2873 [10790] n4491 ppeaka_3_3_ n4728
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_3_3_ n4729
+1101 1
+.names n4513 n4510_1 [5570] [15860] n4731 n4732 n4730
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [6845] n4505_1 [9995] n4503 [4910] n4731
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [12455] [8165] n4514 n4732
+--11 0
+11-- 0
+.names [18467] [17700] n2873 n3178 n4002 n4538
+--111 1
+-1-11 1
+1---1 1
+.names preset [18415] [18480] n4543
+001 1
+.names [18506] n2891 n2825 [18389] preset n4553
+-1000 1
+1--00 1
+.names ppeakp_4_4_ n4515_1 n4737 n4741 n4558
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_4_4_ [14675] n4738 n4739 n4737
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [15035] ppeakb_4_4_ n4472 n4738
+--11 0
+11-- 0
+.names n4740 n4493 n2873 [10505] n4491 ppeaka_4_4_ n4739
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_4_4_ n4740
+1101 1
+.names n4513 n4510_1 [4865] [14765] n4742 n4743 n4741
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4507 [6170] [5375] n4505_1 [5615] n4503 n4742
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [12245] [6230] n4514 n4743
+--11 0
+11-- 0
+.names ppeakp_5_5_ n4515_1 n4745 n4749 n4562
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_5_5_ [13505] n4746 n4747 n4745
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [15395] ppeakb_5_5_ n4472 n4746
+--11 0
+11-- 0
+.names n4748 n4493 n2873 [10220] n4491 ppeaka_5_5_ n4747
+----01 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_5_5_ n4748
+1101 1
+.names n4513 n4510_1 [8330] [9545] n4750 n4751 n4749
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n4507 [8105] [4670] n4505_1 n4503 [11465] n4750
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [6995] [6905] n4514 n4751
+--11 0
+11-- 0
+.names [18545] n2865 pdn preset n4566
+-000 1
+1-10 1
+.names ppeakp_6_6_ n4515_1 n4754 n4758 n4571
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_6_6_ [13865] n4755 n4756 n4754
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [14210] n4472 ppeakb_6_6_ n4755
+--11 0
+11-- 0
+.names n4757 n4493 n2873 [9950] ppeaka_6_6_ n4491 n4756
+----10 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_6_6_ n4757
+1101 1
+.names n4513 n4510_1 [7685] [8870] n4759 n4760 n4758
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n4507 [7475] [6740] n4505_1 n4503 [11690] n4759
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [7625] [4835] n4514 n4760
+--11 0
+11-- 0
+.names [18571] n4533 preset n4575
+-00 1
+1-0 1
+.names [18584] n4533 preset n4580
+-00 1
+1-0 1
+.names [18597] n4594 [17596] n4591 pdn preset n4585
+-11100 1
+1---00 1
+.names preset [18610] n4766 n4765 n2824_1 n4590
+---01 1
+--0-1 1
+01--1 1
+.names [17453] n3005 n2876 preset n2825 n4765
+-0100 0
+1-100 0
+.names [18168] n3006 n2876 preset n2825 n4766
+-0100 0
+1-100 0
+.names ppeakp_7_7_ n4515_1 n4768 n4772 n4595
+-111 0
+0-11 0
+.names n4495_1 n4499 ppeaks_7_7_ [12905] n4769 n4770 n4768
+--0011 1
+-00-11 1
+0--011 1
+00--11 1
+.names n4489 [14630] n4472 ppeakb_7_7_ n4769
+--11 0
+11-- 0
+.names n4771 n4493 n2873 [11075] ppeaka_7_7_ n4491 n4770
+----10 0
+-101-- 0
+1----- 0
+.names n4474 n4487 preset paddress_7_7_ n4771
+1101 1
+.names n4513 n4510_1 [7055] [8225] n4773 n4774 n4772
+--0011 1
+-0-011 1
+0-0-11 1
+00--11 1
+.names n4507 [9410] [6065] n4505_1 n4503 [10970] n4773
+----11 0
+--11-- 0
+11---- 0
+.names n4511 [8255] [5540] n4514 n4774
+--11 0
+11-- 0
+.names n2825 n4590 n4778 n4779 n4776 n4599
+-0111 0
+1-111 0
+.names preset n2910 n4777 [16920] [18493] n2825 n4776
+-----1 1
+-0100- 1
+1----- 1
+.names [17050] [17102] n4777
+00 1
+.names [17388] [18376] [18389] [18415] preset n2825 n4778
+-----1 1
+----1- 1
+0000-- 1
+.names [17167] [17232] [17271] [17297] preset n2825 n4779
+-----1 1
+----1- 1
+0000-- 1
+.end
